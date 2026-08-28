@@ -4,7 +4,8 @@
 
 **Status dokumentu:** `PRE-T0 / PRE-ORGANISM-CORE-001`  
 **Data aktualizacji:** `2026-08-29`  
-**Najwyższa authority:** `PROGRAMMER_ROOT`  
+**Autor architektury i projektu:** **Paweł Jankiewicz** (`PROGRAMMER_ROOT`)  
+**Najwyższa authority:** **Paweł Jankiewicz / PROGRAMMER_ROOT**  
 **Język kanoniczny dokumentacji:** polski  
 **Charakter projektu:** badawczo-inżynieryjny, długoterminowy  
 **Stan hipotezy AGI / świadomości:** `NIEUDOWODNIONA`  
@@ -12,7 +13,7 @@
 
 > **SSI V5 nie jest jednym modelem językowym.** Modele są wymiennymi źródłami capability. Tożsamość, pamięć, Experience, historia, authority, mikrosieci, lifecycle i kontrolowany rozwój należą do systemu SSI.
 
-> **Ten README jest prerejestracją architektury i metodologii.** Ma pokazywać, co zostało zaprojektowane przez Programmer Root, co istnieje przed eksperymentem, co dopiero ma zostać zbudowane oraz jakie warunki muszą zostać spełnione, aby późniejszy wynik można było uznać za evidence zamiast narracji dopisanej po fakcie.
+> **Ten README jest prerejestracją architektury i metodologii.** Ma pokazywać, co zostało zaprojektowane przez Pawła Jankiewicza (`PROGRAMMER_ROOT`), co istnieje przed eksperymentem, co dopiero ma zostać zbudowane oraz jakie warunki muszą zostać spełnione, aby późniejszy wynik można było uznać za evidence zamiast narracji dopisanej po fakcie.
 
 ---
 
@@ -639,9 +640,9 @@ Shared capability może być dystrybuowana do ROBERTA, Directora i Agentów, ale
 
 # 18. Programmer Root i atrybucja
 
-Programmer Root jest autorem nadrzędnej architektury badawczej i najwyższą authority SSI.
+**Paweł Jankiewicz (`PROGRAMMER_ROOT`) jest autorem nadrzędnej architektury badawczej SSI V5 i najwyższą authority projektu.**
 
-Root może dostarczać gotowe paczki LEGO / donor packages, w szczególności dla mechanizmów autorskich takich jak:
+Paweł Jankiewicz może dostarczać gotowe paczki LEGO / donor packages, w szczególności dla mechanizmów autorskich takich jak:
 
 - Micronetwork Core / Factory / Lifecycle;
 - World contracts i rules;
@@ -653,11 +654,11 @@ Root może dostarczać gotowe paczki LEGO / donor packages, w szczególności dl
 Atrybucja musi pozostać jawna:
 
 ```text
-ROOT PROVIDED MICRONETWORK DESIGN
+PAWEŁ JANKIEWICZ / PROGRAMMER_ROOT PROVIDED MICRONETWORK DESIGN
 !=
 DIRECTOR INVENTED MICRONETWORKS
 
-ROOT PROVIDED SPARK DESIGN
+PAWEŁ JANKIEWICZ / PROGRAMMER_ROOT PROVIDED SPARK DESIGN
 !=
 AGENT INVENTED SPARK
 ```
