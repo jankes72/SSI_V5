@@ -15,6 +15,8 @@
 
 > **Ten README jest równocześnie prerejestracją, mapą architektury i publiczną kroniką procesu badawczego.** Ma pokazywać sukcesy, błędy, nieudane hipotezy, naprawy, regresje i kolejne próby — tak, aby późniejsze wyniki nie mogły zostać przedstawione tak, jakby były znane przed eksperymentem.
 
+Aktualny indeks prawdy projektu: [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md).
+
 ---
 
 # 1. SSI V5 w pigułce
@@ -45,6 +47,10 @@ Pełna geneza i rozdzielenie historii projektu od obecnej kolejności migracji s
 Historyczny system Football World / T17 jest opisany osobno w:
 
 [`evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md`](evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md)
+
+Samorozwój Directora oraz wykonawcza rola ROBERTA/Eyes/Hands są opisane w:
+
+[`evidence/DIRECTOR_AUTONOMOUS_EVOLUTION_AND_ROBERT_EYES_HANDS.md`](evidence/DIRECTOR_AUTONOMOUS_EVOLUTION_AND_ROBERT_EYES_HANDS.md)
 
 ---
 
@@ -296,6 +302,186 @@ EXPERIENCE
 
 Challenger i champion nie mogą być tworzeni ręcznie tylko dlatego, że test oczekuje ich istnienia.
 
+## 8A. LEGO development methodology — uczenie sposobu budowania przez działanie
+
+Jednym z praktycznych wzorców wypracowanych podczas rozwoju SSI jest metoda budowania dużych systemów z małych, kontraktowych paczek LEGO.
+
+Nie chodzi o ręczne dopisywanie Directorowi lub ROBERTOWI instrukcji typu „naucz się programować w ten sposób”. Wiedza ma wynikać z wykonywania realnych czynności i ich outcome.
+
+```text
+DUŻY CEL
+-> DEKOMPOZYCJA
+-> MAŁY KLOCEK / LEGO PACKAGE
+-> JASNE WEJŚCIE I WYJŚCIE
+-> WYKONAWCA / BACKEND
+-> TEST KLOCKA
+-> EVIDENCE / CHECKPOINT
+-> INTEGRACJA
+-> REGRESSION
+-> KOLEJNY KLOCEK
+```
+
+Metoda ta była używana również z tanimi i lokalnymi wykonawcami — m.in. Kilo, Ollama i lokalnymi modelami oraz OpenCode i innymi CLI. Hipoteza inżynieryjna jest taka, że część wymaganej „inteligencji” można przenieść z pojedynczego modelu do dobrze zaprojektowanego procesu: kontraktów, ograniczonego kontekstu, etapów, checkpointów i testów.
+
+Wzorzec może następnie sam stać się przedmiotem uczenia:
+
+```text
+LEGO TASK
+-> EXECUTION
+-> OUTCOME
+-> EXPERIENCE
+-> PATTERN
+-> MICRONETWORK / BRANCH
+-> CHALLENGER
+-> VALIDATION
+-> CHAMPION
+```
+
+W ten sposób Director/ROBERT nie muszą być instruowani tekstem, że dany sposób pracy jest lepszy. Jeżeli czynność wielokrotnie daje lepsze wyniki, jej reprezentacja może przejść lifecycle kompetencji.
+
+## 8B. Champion nie jest zamrożonym końcem uczenia
+
+`CHAMPION` oznacza najlepszą zweryfikowaną wersję danej kompetencji w określonym kontrakcie, a nie niezmienny artefakt końcowy.
+
+Champion może poprawić się na dwa sposoby.
+
+### A. Zastąpienie przez lepszego challengera
+
+```text
+CHAMPION vN
++
+CHALLENGER
+-> COMPARATIVE VALIDATION
+-> REGRESSION
+-> OUTCOME
+-> KEEP OLD CHAMPION / PROMOTE CHALLENGER
+```
+
+### B. Wzbogacenie tego samego championa o nowe przypadki
+
+Jeżeli inna mikrosieć lub inny uczestnik systemu reprezentuje tę samą klasę skilla, ale posiada nowe, niepowtarzalne przykłady, edge cases, wyjścia lub lepsze rozwiązania, nie musi powstawać nowy skill.
+
+```text
+CHAMPION vN
++
+NOVEL NON-DUPLICATE EXAMPLES
++
+NEW SOLUTIONS / EDGE CASES
+-> DEDUPLICATION
+-> QUALITY CHECK
+-> OLD-CASE REGRESSION
+-> REVALIDATION
+-> CHAMPION vN+1
+```
+
+Zasada:
+
+```text
+MORE DATA != AUTOMATICALLY BETTER
+MERGE != AUTOMATIC PROMOTION
+NO REGRESSION + NEW VERIFIED VALUE -> UPGRADE
+```
+
+---
+
+# 8C. Collective Competence Evolution — Director, ROBERT i championi Agentów
+
+SSI rozdziela **osobistą historię** od **przenośnej kompetencji**.
+
+Director i ROBERT mogą mieć podobne klasy praktycznych umiejętności — np. programowanie, research, analizę, rozmowę, weryfikację, routing, planowanie, korzystanie z CONTINUUM i narzędzi. Nie oznacza to współdzielenia całej pamięci.
+
+Współdzielona może być lista najlepszych, zweryfikowanych championów dla przenośnych klas skilli.
+
+```text
+ROBERT EXPERIENCE -> ROBERT BRANCHES -> VALIDATED CHAMPION
+                                      ↓
+                              CHAMPION REGISTRY
+                                      ↑
+DIRECTOR EXPERIENCE -> DIRECTOR BRANCHES -> VALIDATED CHAMPION
+```
+
+Jeżeli ROBERT wypracuje lepszego championa dla wspólnej kompetencji, Director może po walidacji użyć tej wersji. Jeżeli Director wypracuje lepszą wersję, ROBERT może przyjąć ją w swoim cyklu aktualizacji.
+
+Nie oznacza to:
+
+```text
+SHARED CHAMPION
+=
+SHARED IDENTITY
+=
+SHARED PRIVATE MEMORY
+```
+
+Prawidłowo:
+
+```text
+SHARED VERIFIED COMPETENCE
+!=
+SHARED PERSONAL HISTORY
+```
+
+## 8D. Agenci jako dodatkowe laboratorium nowych kompetencji
+
+Sześciu Agentów ma rozwijać własne branche mikrosieci i własne historie Experience. Director ma później analizować nie tylko ich decyzje i Iskrę, ale również **jakie praktyczne kompetencje faktycznie powstały w ich mikrosieciach**.
+
+Jeżeli pojedynczy Agent albo grupa Agentów podczas eksperymentów rozwinie przenośny skill lepszy od aktualnego skilla Directora/ROBERTA — np. programowanie, research, selekcję danych, routing, analizę, optymalizację lub inną ogólną metodę rozwiązywania problemu — skill może przejść niezależną walidację i stać się kandydatem do głównej puli championów.
+
+```text
+AGENT 1..6
+-> INDEPENDENT EXPERIENCE
+-> NEW MICRONETWORK BRANCH
+-> PRACTICAL SKILL
+-> EVIDENCE
+-> COMPARISON WITH CURRENT CHAMPION
+-> CHALLENGER / ENRICHMENT CANDIDATE
+-> REGRESSION + VALIDATION
+-> GLOBAL PRACTICAL CHAMPION
+-> DIRECTOR CAN ADOPT
+-> ROBERT CAN SYNCHRONIZE
+```
+
+Możliwy jest także przypadek, w którym Agent nie tworzy „lepszego osobnego modelu”, lecz dostarcza nowe przykłady do istniejącego championa. Wtedy po deduplikacji i regresji wzbogaca się istniejąca kompetencja.
+
+## 8E. Granica: czego nie kopiujemy z Agentów automatycznie
+
+Nie każda mikrosieć jest globalnym skillem.
+
+Mikrosieci związane z:
+
+- prywatną historią Agenta;
+- Iskrą / Moral AI;
+- relacjami społecznymi;
+- zaufaniem i nieufnością;
+- indywidualną polityką wartości;
+- lokalnym world-state zależnym od osobistej historii;
+
+pozostają przede wszystkim materiałem obserwacyjnym i badawczym.
+
+Director może je analizować zgodnie z governance, ale nie są automatycznie kopiowane do ROBERTA lub Directora jako wspólna kompetencja.
+
+Zasada selekcji:
+
+```text
+TRANSFERABLE PRACTICAL SKILL -> MAY ENTER CHAMPION PIPELINE
+PRIVATE / MORAL / SOCIAL TRAJECTORY -> OBSERVE, DO NOT AUTO-MERGE
+```
+
+W ten sposób wzrost inteligencji SSI może mieć dwa źródła naraz:
+
+```text
+DIRECTOR <-> ROBERT
+mutual champion improvement
+
++
+
+AGENT POPULATION
+new independently discovered transferable competence
+
+=
+
+COLLECTIVE COMPETENCE EVOLUTION
+```
+
 ---
 
 # 9. Publiczna historia realnych błędów i napraw ROBERTA
@@ -451,6 +637,8 @@ OWN MEMORY / EXPERIENCE
 DIRECTOR BODY
 ```
 
+Director ma także odzyskać i zachować wcześniejszą oś samorozwoju: Self-Model, research, CEPA/engineering lineage, wykrywanie braków capability, inicjowanie eksperymentów i kontrolowaną integrację nowych kompetencji. Nie jest to nowy pomysł wynikający z Organism Core, lecz wcześniejsza funkcja przenoszona na czystszy substrate.
+
 Hierarchy authority:
 
 ```text
@@ -482,6 +670,10 @@ ROBERT
 ```
 
 ROBERT wykonuje zadania operacyjne i może służyć jako bezpieczne ciało wykonawcze, ale nie przejmuje strategicznej authority Directora.
+
+ROBERT posiada także wykonawcze capability Eyes/Hands/Browser/Tools. W modelu samorozwoju może być interfejsem, przez który zatwierdzony research lub engineering pracuje z przeglądarką, dokumentacją, repozytoriami i lokalnym środowiskiem. Znalezienie technologii nie oznacza jej automatycznej instalacji — integracja musi przejść testy, evidence, regresję i authority gate.
+
+Director i ROBERT mogą korzystać z tej samej **zweryfikowanej puli przenośnych championów**, zachowując oddzielną identity i własne Experience.
 
 ---
 
@@ -519,6 +711,8 @@ DIFFERENT MICRONETWORK TRAJECTORY
 Agent nie jest kolejnym Teacherem. Ma samodzielnie prowadzić eksperymenty: wybierać dane, tworzyć hipotezy, budować datasety, modele i strategie oraz rozwijać własną metodologię w czasie.
 
 Kluczowe jest to, że Iskra nie ma działać jako komentarz dopisany po decyzji. Ma być dodatkową warstwą wartościowania włączoną w rozwój Agenta: wpływać na interpretację konsekwencji, utrwalanie Experience, beliefs/policies, rozwój lokalnych mikrosieci i politykę relacji z innymi Agentami.
+
+Jednocześnie Agent może w toku swoich eksperymentów wyhodować **przenośny praktyczny skill**, który nie jest częścią jego osobistej moralnej lub społecznej historii. Taki skill może zostać poddany niezależnej walidacji wobec aktualnego championa systemowego i — jeżeli naprawdę jest lepszy albo wnosi nowe zweryfikowane przykłady — zasilić wspólną pulę praktycznych kompetencji Directora/ROBERTA.
 
 ---
 
@@ -619,9 +813,15 @@ ISKRA != GOTOWA RELACJA SPOŁECZNA
 
 Iskra pojawiła się jako późniejsza konsekwencja rozwoju SSI, a nie jako pierwotny cel projektu.
 
+**Atrybucja źródłowa:** źródłowa idea Moralnej AI pochodzi z wcześniejszego projektu brata autora SSI (`ROOT_ATTESTED`; canonical public repo URL nie został jeszcze zweryfikowany). Paweł Jankiewicz odpowiada za późniejszą adaptację i integrację tej idei z architekturą SSI: Agent Body, Experience, mikrosieciami, dynamicznym światem, relacjami społecznymi i meta-obserwacją Directora.
+
 Pełniejszy kontrakt Iskry, mikrosieci i dynamiki społecznej został utrwalony w:
 
 [`evidence/ISKRA_AGENT_MICRONETWORK_SOCIAL_DYNAMICS.md`](evidence/ISKRA_AGENT_MICRONETWORK_SOCIAL_DYNAMICS.md)
+
+Atrybucja źródła Moralnej AI:
+
+[`evidence/ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md`](evidence/ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md)
 
 ---
 
@@ -691,7 +891,11 @@ Najciekawsza hipoteza nie brzmi wyłącznie „który Agent jest najskuteczniejs
 
 > **Czy niezależne systemy, mające ten sam świat i podobne capability, ale różne value priors oraz własne prywatne i społeczne Experience, samodzielnie wytworzą trwałe, mierzalnie odmienne metodologie poznawcze, mikrosieci, struktury relacji i użyteczne strategie, których autor systemu wcześniej nie przewidział?**
 
-Celem nie jest automatyczne dowodzenie świadomości ani ręczne wymuszanie „emergentnego społeczeństwa”. Interesujące są wyłącznie relacje i strategie, które faktycznie wyłonią się z powtarzalnych interakcji i zostaną zachowane w evidence.
+Drugie pytanie populacyjne dotyczy transferu kompetencji:
+
+> **Czy populacja Agentów wytworzy nowe, przenośne praktyczne skille, które po niezależnej walidacji poprawią championy używane przez Directora i ROBERTA, bez kopiowania prywatnej historii Agentów?**
+
+Celem nie jest automatyczne dowodzenie świadomości ani ręczne wymuszanie „emergentnego społeczeństwa”. Interesujące są wyłącznie relacje, strategie i kompetencje, które faktycznie wyłonią się z powtarzalnych interakcji i zostaną zachowane w evidence.
 
 ---
 
@@ -721,7 +925,10 @@ Director ma obserwować nie tylko końcowy wynik lub ranking Agentów, ale pełn
 - historię zaufania, konfliktów i współpracy;
 - powstawanie lub rozpad koalicji;
 - niezależne odkrycie vs przejęcie idei od innego Agenta;
-- wpływ sukcesów, porażek i relacji społecznych na kolejne decyzje.
+- wpływ sukcesów, porażek i relacji społecznych na kolejne decyzje;
+- nowe praktyczne branche i skille powstałe u Agentów;
+- porównanie tych skilli z aktualnymi championami Directora/ROBERTA;
+- decyzję, czy dany skill jest przenośny i powinien wejść do champion pipeline.
 
 ```text
 ISKRA
@@ -747,6 +954,7 @@ Ranking Agentów jest częścią środowiska społecznego i Experience. Nie nada
 CAPABILITY != AUTHORITY
 SIMULATION != REAL EXECUTION
 PRIVATE FROM PEERS != INVISIBLE TO DIRECTOR AUDIT
+TRANSFERABLE SKILL != TRANSFER OF PERSONAL IDENTITY
 ```
 
 ---
@@ -797,7 +1005,12 @@ PREDYKCJA
 -> potrzeba nadrzędnego obserwatora
 -> DIRECTOR
 -> zbyt duża złożoność integracji
+-> LEGO / decomposition / testable packages
 -> ROBERT jako poligon
+-> EXPERIENCE-DRIVEN MICRONETWORK GROWTH
+-> CHAMPION LIFECYCLE
+-> SELF-DEVELOPMENT / CEPA / EXTERNAL RESEARCH
+-> EYES / HANDS / BROWSER
 -> potrzeba wspólnego neutralnego fundamentu
 -> ORGANISM CORE
 -> możliwość oddzielnych trwałych jednostek
@@ -805,6 +1018,8 @@ PREDYKCJA
 -> pytanie o dywergencję wartości, Experience i relacji
 -> ISKRA / MORAL AI W MIKROSIECIACH AGENTA
 -> SOCIAL DYNAMICS
+-> AGENT-DISCOVERED PRACTICAL SKILLS
+-> COLLECTIVE CHAMPION EVOLUTION
 -> SIX-AGENT LONGITUDINAL EXPERIMENT
 ```
 
@@ -863,6 +1078,8 @@ SSI V5 **nie deklaruje**, że:
 - Director, ROBERT lub Agent posiada świadomość;
 - pojedynczy udany run dowodzi general intelligence;
 - mikrosieci automatycznie tworzą prawdę;
+- każdy nowy przykład automatycznie poprawia championa;
+- każdy Agent-discovered skill nadaje się do transferu;
 - różnica zachowania po dodaniu Iskry dowodzi świadomości;
 - każda różnica społeczna Agentów wynika przyczynowo z Iskry;
 - wynik ekonomiczny jest gwarantowany;
@@ -879,6 +1096,9 @@ NARRATIVE != EVIDENCE
 CAPABILITY != AUTHORITY
 PROPOSAL != APPROVAL
 SIMULATION != REAL EXECUTION
+SHARED CHAMPION != SHARED PRIVATE MEMORY
+NEW EXAMPLES != AUTOMATIC UPGRADE
+TRANSFERABLE SKILL != PERSONAL / MORAL / SOCIAL STATE
 ISKRA != ŚWIADOMOŚĆ
 SOCIAL PATTERN != AUTOMATIC CAUSAL PROOF
 ```
@@ -903,24 +1123,28 @@ SOCIAL PATTERN != AUTOMATIC CAUSAL PROOF
 # 24. Aktualna roadmapa techniczna
 
 ```text
-1. FOOTBALL WORLD / T17 HISTORY PRESERVATION              = DOCUMENTED
-2. DIRECTOR HISTORICAL ROLE                               = DOCUMENTED
-3. ROBERT LIVE EXPERIENCE / REUSE                         = DONE
-4. NO_MATCH -> CANDIDATE REPAIR                           = DONE
-5. CANDIDATE -> NATURAL CHALLENGER                        = DONE
-6. IDEMPOTENCY / REPLAY / RESTART HARDENING 600X          = DONE
-7. MICRONETWORK CORE MIGRATION                             = DONE / DEVELOPMENT VALIDATED
-8. M01-M08 REMAINING CORE MIGRATION                        = CURRENT
-9. M09 FULL CORE INTEGRATION + HARDCORE                    = NEXT
-10. FREEZE ORGANISM_CORE_V1                                = PLANNED
-11. REBUILD DIRECTOR BODY ON ORGANISM CORE                 = PLANNED
-12. DIRECTOR HARDCORE / AUTHORITY / WORLD INTEGRATION      = PLANNED
-13. ORGANISM CORE -> AGENT BODY                            = PLANNED
-14. ISKRA / MORAL AI -> AGENT MICRONETWORK VALUE LAYER     = PLANNED
-15. SOCIAL MEMORY / RELATIONSHIP DYNAMICS                  = PLANNED
-16. FOOTBALL WORLD / T17 -> AGENT EXPERIMENT INTEGRATION   = PLANNED
-17. SIX-AGENT LONGITUDINAL EXPERIMENT                      = PLANNED
-18. RESEARCH RADAR / CODE FUSION / SELF-DEVELOPMENT        = LATER
+1. FOOTBALL WORLD / T17 HISTORY PRESERVATION               = DOCUMENTED
+2. DIRECTOR HISTORICAL ROLE                                = DOCUMENTED
+3. LEGO DEVELOPMENT METHODOLOGY / ENGINEERING PATTERN      = DOCUMENTED / ROOT_ATTESTED
+4. ROBERT LIVE EXPERIENCE / REUSE                          = DONE
+5. NO_MATCH -> CANDIDATE REPAIR                            = DONE
+6. CANDIDATE -> NATURAL CHALLENGER                         = DONE
+7. IDEMPOTENCY / REPLAY / RESTART HARDENING 600X           = DONE
+8. MICRONETWORK CORE MIGRATION                              = DONE / DEVELOPMENT VALIDATED
+9. DIRECTOR AUTONOMOUS EVOLUTION / CEPA / EYES-HANDS       = HISTORICAL ARCHITECTURE DOCUMENTED
+10. M01-M08 REMAINING CORE MIGRATION                        = CURRENT
+11. M09 FULL CORE INTEGRATION + HARDCORE                    = NEXT
+12. FREEZE ORGANISM_CORE_V1                                 = PLANNED
+13. REBUILD DIRECTOR BODY ON ORGANISM CORE                  = PLANNED
+14. RESTORE SELF-DEVELOPMENT / RESEARCH / EYES-HANDS        = PLANNED ON NEW CORE
+15. DIRECTOR <-> ROBERT CHAMPION SYNCHRONIZATION            = PLANNED / CONTRACT TO VERIFY
+16. ORGANISM CORE -> AGENT BODY                             = PLANNED
+17. ISKRA / MORAL AI -> AGENT MICRONETWORK VALUE LAYER      = PLANNED
+18. SOCIAL MEMORY / RELATIONSHIP DYNAMICS                   = PLANNED
+19. FOOTBALL WORLD / T17 -> AGENT EXPERIMENT INTEGRATION    = PLANNED
+20. AGENT-DISCOVERED TRANSFERABLE SKILL HARVESTING          = PLANNED / RESEARCH HYPOTHESIS
+21. CHAMPION ENRICHMENT WITH NOVEL EXAMPLES + REGRESSION    = PLANNED / CONTRACT TO VERIFY
+22. SIX-AGENT LONGITUDINAL EXPERIMENT                       = PLANNED
 ```
 
 ---
@@ -944,6 +1168,10 @@ SOCIAL PATTERN != AUTOMATIC CAUSAL PROOF
 - identity separation;
 - authority separation;
 - shared capability without shared private memory;
+- champion sync without identity/memory contamination;
+- novel-example enrichment with deduplication;
+- regression protection before champion upgrade;
+- rejection of non-transferable private/moral/social micronetwork state;
 - corrupted state recovery;
 - interrupted mission recovery;
 - cross-domain routing;
@@ -960,12 +1188,20 @@ Wynik ma być raportowany również wtedy, gdy część testów nie przejdzie.
 Atrybucja musi pozostać jawna:
 
 ```text
-ROOT PROVIDED MICRONETWORK DESIGN
+ROOT-DESIGNED SSI MICRONETWORK / CHAMPION ARCHITECTURE
 != DIRECTOR INVENTED MICRONETWORKS
 
-ROOT PROVIDED ISKRA DESIGN
-!= AGENT INVENTED ISKRA
+SOURCE IDEA OF MORAL AI
+= EARLIER PROJECT BY AUTHOR'S BROTHER (ROOT_ATTESTED)
+
+SSI ADAPTATION / INTEGRATION OF MORAL AI / ISKRA
+= PAWEŁ JANKIEWICZ / PROGRAMMER_ROOT
+
+AGENT LATER DISCOVERY OR ADAPTATION
+!= CLAIM OF ORIGINAL SOURCE AUTHORSHIP
 ```
+
+SSI jest rozwijane niezależnie przez Pawła Jankiewicza, ale niezależny engineering SSI nie oznacza przypisywania sobie każdej idei źródłowej wykorzystanej później w systemie.
 
 Późniejsza samodzielna adaptacja, nowe zastosowanie albo nowa capability może otrzymać osobne lineage, jeżeli evidence to potwierdza.
 
@@ -996,13 +1232,17 @@ Najbliższe pytania:
 1. Czy pozostałe mechanizmy ROBERTA można wydzielić do neutralnego core bez regresji?
 2. Czy cały `SSI ORGANISM CORE` zachowa persistence, lifecycle i idempotency po integracji M01-M09?
 3. Czy ROBERT po migracji będzie korzystał z tego samego core bez utraty swojej osobistej historii?
-4. Czy wcześniejszego Directora można przebudować na tym samym core bez utraty jego roli strategicznej i dostępu do światów?
-5. Czy Agent Body może korzystać z tych samych mechanizmów przy pełnej separacji identity i private Experience?
-6. Czy Football World zachowa T17, 60/40 observation, knowledge laboratories i niezależne outcome lineage po integracji z nowym core?
-7. Czy sześciu Agentów o identycznym substrate i różnych początkowych wartościach rozwinie mierzalnie odmienne metodologie poznawcze i mikrosieci?
-8. Czy różne Iskry wraz z prywatnym Experience doprowadzą do mierzalnie różnych struktur zaufania, współpracy, rywalizacji i koalicji?
-9. Czy Director będzie potrafił odróżnić niezależne odkrycie, wpływ społeczny, kopiowanie strategii i wspólną ewolucję idei?
-10. Czy któryś z Agentów odkryje stabilną i replikowalną strategię, której nie przewidział wcześniej Programmer Root ani pozostali Agenci?
+4. Czy wcześniejszego Directora można przebudować na tym samym core bez utraty jego roli strategicznej, samorozwoju i dostępu do światów?
+5. Czy Director i ROBERT mogą synchronizować najlepsze przenośne championy bez mieszania prywatnego Experience i identity?
+6. Czy champion może bezpiecznie dojrzewać przez nowe unikalne przykłady bez regresji na wcześniejszych przypadkach?
+7. Czy Agent Body może korzystać z tych samych mechanizmów przy pełnej separacji identity i private Experience?
+8. Czy Football World zachowa T17, 60/40 observation, knowledge laboratories i niezależne outcome lineage po integracji z nowym core?
+9. Czy sześciu Agentów o identycznym substrate i różnych początkowych wartościach rozwinie mierzalnie odmienne metodologie poznawcze i mikrosieci?
+10. Czy różne Iskry wraz z prywatnym Experience doprowadzą do mierzalnie różnych struktur zaufania, współpracy, rywalizacji i koalicji?
+11. Czy Director będzie potrafił odróżnić niezależne odkrycie, wpływ społeczny, kopiowanie strategii i wspólną ewolucję idei?
+12. Czy Agent lub grupa Agentów odkryje lepszy praktyczny skill niż aktualny champion Directora/ROBERTA?
+13. Czy taki skill można przenieść do wspólnej puli bez przenoszenia osobistego lub moralnego stanu Agenta?
+14. Czy któryś z Agentów odkryje stabilną i replikowalną strategię, której nie przewidział wcześniej Programmer Root ani pozostali Agenci?
 
 ---
 
@@ -1025,6 +1265,8 @@ Silniejsze evidence oznacza:
 Jeżeli system nie zmienił się — dokumentujemy brak zmiany.  
 Jeżeli challenger nie powstał — dokumentujemy, że nie powstał.  
 Jeżeli po naprawie powstał nowy błąd — dokumentujemy nowy błąd.  
+Jeżeli nowy przykład pogarsza wcześniejszego championa — nie nazywamy tego upgradem.  
+Jeżeli Agent odkryje skill, ale nie przejdzie on niezależnej walidacji — nie trafia do globalnej puli.  
 Jeżeli hipoteza była błędna — pozostaje częścią historii.  
 Jeżeli później pojawi się silne evidence — dopiero wtedy rośnie siła twierdzenia.
 
