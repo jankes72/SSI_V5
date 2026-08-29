@@ -79,6 +79,8 @@ GitHub pozwala obecnie odtworzyć bardzo wczesną chronologię SSI/MSDI. Ważne 
 
 Na dzień 29 sierpnia 2026 daje to około **41 dni od root commita historii Git** oraz około **33 dni od utworzenia pierwszego publicznego repo `msdi-ai`** do obecnego etapu. To potwierdza bardzo szybkie tempo udokumentowanej ewolucji architektury.
 
+**SSI V5 jest rozwijany niezależnie przez Pawła Jankiewicza jako projekt realizowany po godzinach, równolegle z normalną pracą zawodową.** Publiczna chronologia pokazuje więc tempo projektu prowadzonego indywidualnie i w ograniczonym czasie, a nie pracę pełnoetatowego zespołu badawczego lub inżynieryjnego.
+
 Nie interpretujemy tego jako dowodu, że wszystkie dane, wcześniejsze skrypty lub całe doświadczenie autora powstały w 33–41 dni. Takie twierdzenie byłoby zbyt mocne. Publicznie weryfikowalne jest natomiast to, że **udokumentowana architektura MSDI/SSI przeszła w tym krótkim okresie od v0.01/foundation przez SSI Core i SSI V5 do ROBERTA, stress-testów replay/idempotency oraz rozpoczęcia migracji neutralnego Organism Core**.
 
 Pełna oś czasu wraz z SHA commitów i zasadami interpretacji znajduje się w [`evidence/DEVELOPMENT_TIMELINE.md`](evidence/DEVELOPMENT_TIMELINE.md).
