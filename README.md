@@ -169,7 +169,7 @@ T17 / TEACHER KNOWLEDGE
         ↓
 DIRECTOR
         ↓
-ROSNĄCA ZŁOŻONOŚĆ INTEGRACJI
+ROSNĄCA ZŁOŻONOŚĆ INTEGRACJI
         ↓
 ROBERT
 kontrolowana migracja / poligon
@@ -496,17 +496,29 @@ Każdy przyszły Agent ma posiadać własną indywidualną historię:
 - beliefs;
 - policies;
 - relationships;
+- social memory;
 - strategy history;
 - micronetwork trajectory;
-- success/failure history.
+- success/failure history;
+- własną warstwę `ISKRA / MORAL AI`, współuczestniczącą w wartościowaniu Experience i rozwoju mikrosieci.
 
 ```text
 SHARED ORGANISM CORE
 !=
 SHARED PERSONAL HISTORY
+
+SAME EVENT
++ DIFFERENT ISKRA
++ DIFFERENT PERSONAL HISTORY
+=
+POTENTIALLY DIFFERENT EXPERIENCE MEANING
+=
+DIFFERENT MICRONETWORK TRAJECTORY
 ```
 
 Agent nie jest kolejnym Teacherem. Ma samodzielnie prowadzić eksperymenty: wybierać dane, tworzyć hipotezy, budować datasety, modele i strategie oraz rozwijać własną metodologię w czasie.
+
+Kluczowe jest to, że Iskra nie ma działać jako komentarz dopisany po decyzji. Ma być dodatkową warstwą wartościowania włączoną w rozwój Agenta: wpływać na interpretację konsekwencji, utrwalanie Experience, beliefs/policies, rozwój lokalnych mikrosieci i politykę relacji z innymi Agentami.
 
 ---
 
@@ -564,32 +576,56 @@ Pełny dokument T17: [`evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md`](evidence/
 
 ---
 
-# 15. Moralna SI / ISKRA
+# 15. Moralna SI / ISKRA — warstwa wewnątrz rozwoju Agenta
 
-Iskra jest definiowana jako **jawny, wersjonowany początkowy system wartościowania decyzji**, a nie deklaracja świadomości ani magiczny parametr osobowości.
+Iskra jest definiowana jako **jawny, wersjonowany początkowy system wartościowania decyzji i Experience**, a nie deklaracja świadomości ani magiczny parametr osobowości.
+
+Iskra nie jest wyłącznie zewnętrznym filtrem przed decyzją. W Agent Body ma współuczestniczyć w tym, jak Agent interpretuje własne Experience, jakie wzorce wzmacnia lub odrzuca, jakie beliefs i policies buduje oraz w jakim kierunku rozwijają się jego mikrosieci.
+
+```text
+EVENT / SOCIAL EVENT / WORLD EVENT
+-> OBSERVATION
+-> CONTEXT + MEMORY + BELIEFS
+-> MORAL AI / ISKRA EVALUATION
+-> DECISION / RESPONSE
+-> WORLD OR SOCIAL CONSEQUENCE
+-> EXPERIENCE
+-> MICRONETWORK UPDATE / PATTERN / CANDIDATE
+-> FUTURE BEHAVIOR
+```
+
+Warstwa decyzji może uwzględniać:
 
 ```text
 POSSIBLE ACTIONS
 -> TASK / ECONOMIC UTILITY
 -> RISK
 -> WORLD RULES
--> EXPERIENCE
--> SOCIAL CONSEQUENCES
--> VALUE EVALUATION / ISKRA
+-> PERSONAL EXPERIENCE
+-> SOCIAL MEMORY
+-> EXPECTED CONSEQUENCES
+-> MORAL AI / ISKRA EVALUATION
 -> DECISION
 ```
 
-Kluczowa hipoteza:
+Kluczowe hipotezy:
 
 ```text
 VALUE PRIOR != IMMUTABLE ACTION POLICY
+ISKRA != ŚWIADOMOŚĆ
+ISKRA != GOTOWA OSOBOWOŚĆ
+ISKRA != GOTOWA RELACJA SPOŁECZNA
 ```
 
 Iskra pojawiła się jako późniejsza konsekwencja rozwoju SSI, a nie jako pierwotny cel projektu.
 
+Pełniejszy kontrakt Iskry, mikrosieci i dynamiki społecznej został utrwalony w:
+
+[`evidence/ISKRA_AGENT_MICRONETWORK_SOCIAL_DYNAMICS.md`](evidence/ISKRA_AGENT_MICRONETWORK_SOCIAL_DYNAMICS.md)
+
 ---
 
-# 16. Eksperyment sześciu Agentów
+# 16. Eksperyment sześciu Agentów i społeczeństwo
 
 Eksperyment populacyjny ma możliwie ściśle kontrolować wspólny substrate:
 
@@ -604,7 +640,36 @@ SAME TEST SCENARIOS
 SAME STARTING NON-PERSONAL DATA
 ```
 
-Następnie sześciu niezależnych Agentów otrzyma różne jawne initial value systems / moral priors i będzie rozwijać oddzielne histories Experience.
+Następnie sześciu niezależnych Agentów otrzyma różne jawne initial value systems / moral priors i będzie rozwijać oddzielne historie Experience.
+
+Nie chodzi jednak o sześć izolowanych modeli wykonujących ten sam benchmark. Agenci mają tworzyć populację, w której — jeśli wyniknie to z Experience i warunków świata — mogą pojawić się m.in.:
+
+- współpraca i pomoc;
+- wymiana wiedzy oraz częściowe jej ukrywanie zgodnie z polityką świata;
+- krytyka i przekonywanie innych;
+- konkurencja;
+- odmowa współpracy;
+- wzrost lub spadek zaufania;
+- preferowanie określonych partnerów;
+- dystansowanie się od innych Agentów;
+- koalicje i ich rozpad;
+- konflikty interesów;
+- wspólne strategie przeciwko konkurencyjnej strategii lub grupie;
+- ochrona własnych zasobów lub metodologii;
+- zmiana relacji po sukcesach, porażkach i niespełnionych oczekiwaniach.
+
+Relacja `Agent A <-> Agent B` nie powinna być ręczną etykietą typu FRIEND/ENEMY. Ma wynikać z historii interakcji:
+
+```text
+INTERACTION
+-> EXPECTATION
+-> ACTION OF OTHER AGENT
+-> OUTCOME
+-> ISKRA / VALUE EVALUATION
+-> TRUST / DISTRUST UPDATE
+-> SOCIAL EXPERIENCE
+-> FUTURE RELATIONSHIP POLICY
+```
 
 Badane będą długoterminowe różnice w:
 
@@ -616,18 +681,21 @@ Badane będą długoterminowe różnice w:
 - tolerancji ryzyka;
 - reakcjach na porażkę;
 - relacjach społecznych;
+- strukturach zaufania i nieufności;
+- koalicjach i konfliktach;
+- sposobach współpracy i rywalizacji;
 - mikrosieciach;
 - beliefs i policies.
 
 Najciekawsza hipoteza nie brzmi wyłącznie „który Agent jest najskuteczniejszy?”, lecz:
 
-> **Czy niezależne systemy, mające ten sam świat i podobne capability, ale różne value priors oraz własne Experience, samodzielnie wytworzą trwałe, mierzalnie odmienne metodologie poznawcze i odkryją użyteczne strategie, których autor systemu wcześniej nie przewidział?**
+> **Czy niezależne systemy, mające ten sam świat i podobne capability, ale różne value priors oraz własne prywatne i społeczne Experience, samodzielnie wytworzą trwałe, mierzalnie odmienne metodologie poznawcze, mikrosieci, struktury relacji i użyteczne strategie, których autor systemu wcześniej nie przewidział?**
 
-Celem nie jest automatyczne dowodzenie świadomości.
+Celem nie jest automatyczne dowodzenie świadomości ani ręczne wymuszanie „emergentnego społeczeństwa”. Interesujące są wyłącznie relacje i strategie, które faktycznie wyłonią się z powtarzalnych interakcji i zostaną zachowane w evidence.
 
 ---
 
-# 17. Director obserwuje, Agenci symulują, ROBERT wykonuje
+# 17. Director obserwuje genezę zachowania, Agenci symulują, ROBERT wykonuje
 
 Fundamentalna granica eksperymentu:
 
@@ -642,6 +710,35 @@ ROBERT
 executes approved real-world actions
 ```
 
+Director ma obserwować nie tylko końcowy wynik lub ranking Agentów, ale pełną genezę ich zachowania. W zakresie dozwolonym przez governance eksperymentu obejmuje to:
+
+- prywatne plany i hipotezy;
+- Experience i social Experience;
+- Iskra-conditioned evaluation signals;
+- historię rozwoju mikrosieci;
+- zmiany beliefs i policies;
+- przepływ wiedzy między Agentami;
+- historię zaufania, konfliktów i współpracy;
+- powstawanie lub rozpad koalicji;
+- niezależne odkrycie vs przejęcie idei od innego Agenta;
+- wpływ sukcesów, porażek i relacji społecznych na kolejne decyzje.
+
+```text
+ISKRA
++
+PRIVATE EXPERIENCE
++
+SOCIAL EXPERIENCE
++
+MICRONETWORK HISTORY
++
+RELATIONSHIP HISTORY
+        ↓
+AGENT DECISION TRAJECTORY
+        ↓
+DIRECTOR META-OBSERVATION
+```
+
 Stan Agenta może być prywatny wobec innych Agentów, ale pozostaje audytowalny przez Directora zgodnie z modelem authority eksperymentu.
 
 Ranking Agentów jest częścią środowiska społecznego i Experience. Nie nadaje automatycznie real-world authority.
@@ -649,6 +746,7 @@ Ranking Agentów jest częścią środowiska społecznego i Experience. Nie nada
 ```text
 CAPABILITY != AUTHORITY
 SIMULATION != REAL EXECUTION
+PRIVATE FROM PEERS != INVISIBLE TO DIRECTOR AUDIT
 ```
 
 ---
@@ -663,6 +761,8 @@ Oba środowiska używają tego samego głębszego schematu:
 -> WYBIERA DZIAŁANIE
 -> ŚWIAT ZWRACA KONSEKWENCJĘ
 -> EXPERIENCE
+-> ISKRA / VALUE INTERPRETATION
+-> MICRONETWORK / POLICY UPDATE
 -> ZMIANA PRZYSZŁEGO ZACHOWANIA
 ```
 
@@ -678,6 +778,8 @@ DANE
 -> REALNY WYNIK MECZU
 -> OCENA
 -> EXPERIENCE
+-> VALUE / SOCIAL INTERPRETATION
+-> NEXT EXPERIMENT
 ```
 
 ---
@@ -700,8 +802,9 @@ PREDYKCJA
 -> ORGANISM CORE
 -> możliwość oddzielnych trwałych jednostek
 -> AGENTS
--> pytanie o dywergencję wartości i Experience
--> ISKRA
+-> pytanie o dywergencję wartości, Experience i relacji
+-> ISKRA / MORAL AI W MIKROSIECIACH AGENTA
+-> SOCIAL DYNAMICS
 -> SIX-AGENT LONGITUDINAL EXPERIMENT
 ```
 
@@ -761,6 +864,7 @@ SSI V5 **nie deklaruje**, że:
 - pojedynczy udany run dowodzi general intelligence;
 - mikrosieci automatycznie tworzą prawdę;
 - różnica zachowania po dodaniu Iskry dowodzi świadomości;
+- każda różnica społeczna Agentów wynika przyczynowo z Iskry;
 - wynik ekonomiczny jest gwarantowany;
 - każdy sukces wynika z autonomii.
 
@@ -775,6 +879,8 @@ NARRATIVE != EVIDENCE
 CAPABILITY != AUTHORITY
 PROPOSAL != APPROVAL
 SIMULATION != REAL EXECUTION
+ISKRA != ŚWIADOMOŚĆ
+SOCIAL PATTERN != AUTOMATIC CAUSAL PROOF
 ```
 
 ---
@@ -810,10 +916,11 @@ SIMULATION != REAL EXECUTION
 11. REBUILD DIRECTOR BODY ON ORGANISM CORE                 = PLANNED
 12. DIRECTOR HARDCORE / AUTHORITY / WORLD INTEGRATION      = PLANNED
 13. ORGANISM CORE -> AGENT BODY                            = PLANNED
-14. ISKRA / MORAL VALUE LAYER                              = PLANNED
-15. FOOTBALL WORLD / T17 -> AGENT EXPERIMENT INTEGRATION   = PLANNED
-16. SIX-AGENT LONGITUDINAL EXPERIMENT                      = PLANNED
-17. RESEARCH RADAR / CODE FUSION / SELF-DEVELOPMENT        = LATER
+14. ISKRA / MORAL AI -> AGENT MICRONETWORK VALUE LAYER     = PLANNED
+15. SOCIAL MEMORY / RELATIONSHIP DYNAMICS                  = PLANNED
+16. FOOTBALL WORLD / T17 -> AGENT EXPERIMENT INTEGRATION   = PLANNED
+17. SIX-AGENT LONGITUDINAL EXPERIMENT                      = PLANNED
+18. RESEARCH RADAR / CODE FUSION / SELF-DEVELOPMENT        = LATER
 ```
 
 ---
@@ -892,8 +999,10 @@ Najbliższe pytania:
 4. Czy wcześniejszego Directora można przebudować na tym samym core bez utraty jego roli strategicznej i dostępu do światów?
 5. Czy Agent Body może korzystać z tych samych mechanizmów przy pełnej separacji identity i private Experience?
 6. Czy Football World zachowa T17, 60/40 observation, knowledge laboratories i niezależne outcome lineage po integracji z nowym core?
-7. Czy sześciu Agentów o identycznym substrate i różnych początkowych wartościach rozwinie mierzalnie odmienne metodologie poznawcze?
-8. Czy któryś z Agentów odkryje stabilną i replikowalną strategię, której nie przewidział wcześniej Programmer Root ani pozostali Agenci?
+7. Czy sześciu Agentów o identycznym substrate i różnych początkowych wartościach rozwinie mierzalnie odmienne metodologie poznawcze i mikrosieci?
+8. Czy różne Iskry wraz z prywatnym Experience doprowadzą do mierzalnie różnych struktur zaufania, współpracy, rywalizacji i koalicji?
+9. Czy Director będzie potrafił odróżnić niezależne odkrycie, wpływ społeczny, kopiowanie strategii i wspólną ewolucję idei?
+10. Czy któryś z Agentów odkryje stabilną i replikowalną strategię, której nie przewidział wcześniej Programmer Root ani pozostali Agenci?
 
 ---
 
