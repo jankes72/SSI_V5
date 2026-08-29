@@ -1,6 +1,6 @@
 # SSI V5 — Żywy Protokół Badawczy
 
-## Persistent adaptive intelligence, organism core, micronetwork learning and prospective experiments
+## Persistent adaptive intelligence, organism core, micronetwork learning and longitudinal agent research
 
 **Status dokumentu:** `PRE-T0 / PRE-ORGANISM-CORE-001`  
 **Data aktualizacji:** `2026-08-29`  
@@ -9,27 +9,91 @@
 **Język kanoniczny dokumentacji:** polski  
 **Charakter projektu:** badawczo-inżynieryjny, długoterminowy  
 **Stan hipotezy AGI / świadomości:** `NIEUDOWODNIONA`  
-**Publiczny model repozytorium:** README-first / evidence-indexed research mirror
+**Publiczny model repozytorium:** `README-first / evidence-indexed research mirror`
 
 > **SSI V5 nie jest jednym modelem językowym.** Modele są wymiennymi źródłami capability. Tożsamość, pamięć, Experience, historia, authority, mikrosieci, lifecycle i kontrolowany rozwój należą do systemu SSI.
 
-> **Ten README jest prerejestracją architektury i metodologii.** Ma pokazywać, co zostało zaprojektowane przez Pawła Jankiewicza (`PROGRAMMER_ROOT`), co istnieje przed eksperymentem, co dopiero ma zostać zbudowane oraz jakie warunki muszą zostać spełnione, aby późniejszy wynik można było uznać za evidence zamiast narracji dopisanej po fakcie.
+> **Ten README jest równocześnie prerejestracją, mapą architektury i publiczną kroniką procesu badawczego.** Ma pokazywać nie tylko sukcesy, lecz również błędy, nieudane hipotezy, naprawy, regresje i kolejne próby — tak, aby późniejsze wyniki nie mogły zostać przedstawione tak, jakby były znane przed eksperymentem.
 
 ---
 
-# 1. Dlaczego ten dokument istnieje
+# 1. SSI V5 w pigułce
 
-SSI V5 jest rozwijany jako system, którego późniejsze zachowanie ma być możliwe do odtworzenia z historii wejść, decyzji, wykonania, realnych outcomes i zmian wewnętrznych. Publiczny GitHub nie ma być katalogiem wszystkich prywatnych danych ani kopią całego runtime. Ma pełnić rolę publicznego zegara, mapy architektury i indeksu evidence.
+SSI V5 bada możliwość zbudowania trwałego, adaptacyjnego organizmu programowego, którego inteligencja nie jest utożsamiona z jednym LLM-em. Zewnętrzne modele i narzędzia dostarczają capability, natomiast własne Experience, Memory, history, authority, lokalne kompetencje i ewolucja pozostają częścią persistent systemu.
 
-Każdy ważny eksperyment powinien pozwalać odpowiedzieć na pytania:
+Docelowa architektura wykorzystuje jeden neutralny korpus:
 
-1. Co człowiek faktycznie dostarczył przed rozpoczęciem?
-2. Jaki był stan systemu przed testem?
-3. Co system zrobił bez proceduralnego prowadzenia krok po kroku?
-4. Jaki był niezależny outcome?
-5. Co realnie zmieniło się w persistent state?
-6. Czy zmiana przetrwała restart i replay?
-7. Które elementy były Root-designed, a które powstały później z działania systemu?
+```text
+                      SSI ORGANISM CORE
+                    /         |          \
+                   /          |           \
+              ROBERT       DIRECTOR     AGENT BODY
+                             BODY            |
+                                           ISKRA
+```
+
+Pierwszą praktyczną instancją jest **ROBERT**. Po ustabilizowaniu korpusu ten sam substrate ma zostać wykorzystany do budowy **Directora**, a następnie **Agent Body**. Agenci mają posiadać własne identity, Experience, beliefs, policies i mikrosieci. W późniejszym eksperymencie sześć Agentów otrzyma odmienne początkowe systemy wartości — Iskry — przy możliwie identycznych pozostałych warunkach.
+
+---
+
+# 2. Dlaczego projekt jest publicznie dokumentowany przed T0
+
+Jednym z głównych problemów badań nad autonomicznymi systemami jest możliwość retrospektywnego wybierania udanych wyników albo przepisywania narracji po eksperymencie.
+
+SSI V5 przyjmuje przeciwną zasadę:
+
+```text
+JAWNY STAN STARTOWY
+-> PUBLICZNY PRECOMMIT
+-> DZIAŁANIE
+-> NIEZALEŻNY OUTCOME
+-> PERSISTENT EXPERIENCE
+-> STRUKTURALNA ZMIANA LUB JEJ BRAK
+-> RESTART / REPLAY
+-> PUBLICZNY POSTCOMMIT
+```
+
+Jeżeli test nie przejdzie, porażka pozostaje częścią historii. Jeżeli później błąd zostanie naprawiony, naprawa otrzymuje nowy commit i nowe evidence. Stary PRE nie jest przepisywany tak, aby wyglądał idealnie po poznaniu wyniku.
+
+Publiczny GitHub ma dzięki temu z czasem stać się **biografią rozwoju SSI**, a nie zbiorem wyłącznie udanych demonstracji.
+
+---
+
+# 3. Co jest wkładem projektu
+
+SSI V5 łączy kilka znanych kierunków badawczych w jeden długoterminowy system eksperymentalny:
+
+- persistent identity i memory;
+- uczenie z realnych outcomes;
+- lokalne mikrosieci competence;
+- lifecycle `candidate -> challenger -> validation -> champion/reject`;
+- reuse własnego Experience przed kosztownym reasoning;
+- wspólny neutralny organism substrate dla różnych ról;
+- rozdzielenie capability od authority;
+- światy posiadające własne rules i niezależne outcome sources;
+- osobiste trajektorie Agentów;
+- jawne początkowe systemy wartości / Moralna SI / Iskra;
+- kontrolowany self-development;
+- publiczną prerejestrację i dokumentowanie również niepowodzeń.
+
+**Nie twierdzimy, że każdy z tych elementów jest sam w sobie nowy.** Hipoteza badawcza dotyczy ich integracji oraz zachowania całego systemu w długim czasie.
+
+---
+
+# 4. Granice twierdzeń
+
+Na obecnym etapie SSI V5 **nie deklaruje**, że:
+
+- jest udowodnionym AGI;
+- posiada świadomość;
+- Director, ROBERT lub Agent posiada świadomość;
+- pojedynczy udany run dowodzi general intelligence;
+- mikrosieci automatycznie tworzą prawdę;
+- różnica zachowania po dodaniu Iskry dowodzi świadomości;
+- wynik ekonomiczny jest gwarantowany;
+- każdy sukces wynika z autonomii.
+
+Projekt został zaprojektowany tak, aby można było empirycznie badać tezy, a nie zakładać ich prawdziwość.
 
 Fundamentalne rozróżnienia:
 
@@ -45,142 +109,136 @@ PROPOSAL != APPROVAL
 
 ---
 
-# 2. Granice twierdzeń
-
-Na obecnym etapie SSI V5 **nie deklaruje**, że:
-
-- jest udowodnionym AGI;
-- posiada świadomość;
-- Agent, Director lub ROBERT posiada świadomość;
-- mikrosieci automatycznie tworzą prawdę;
-- pojedynczy sukces dowodzi general intelligence;
-- każda różnica zachowania po dodaniu Iskry dowodzi świadomości;
-- wynik finansowy jest gwarantowany;
-- rozwój systemu może odbywać się bez governance, rollbacku i evidence.
-
-SSI V5 jest projektowane tak, aby można było empirycznie badać:
-
-- trwałą pamięć i uczenie z realnych outcomes;
-- powstawanie i rozwój lokalnych competence przez mikrosieci;
-- reuse wiedzy zamiast rozwiązywania tego samego problemu od zera;
-- kontrolowany self-development;
-- różnice trajektorii wielu bytów startujących z tego samego korpusu;
-- wpływ różnych systemów wartości na decyzje i późniejszą adaptację polityk;
-- transfer capability pomiędzy instancjami bez kopiowania ich prywatnego życia;
-- zależność pomiędzy realnym Experience a zmianą beliefs, policies, mikrosieci i strategii.
-
----
-
-# 3. Klasy statusu
+# 5. Klasy statusu i evidence
 
 | Status | Znaczenie |
 | --- | --- |
 | `VERIFIED_MACHINE_EVIDENCE` | Istnieje sprawdzalny wynik wykonawczy z konkretnego runtime lub zewnętrznego outcome. |
 | `ROOT_ATTESTED` | Programmer Root potwierdził stan bezpośrednio, lecz nie zastępuje to machine evidence. |
-| `HISTORICAL_EVIDENCE` | Dowód dotyczy wcześniejszego stanu i nie może być automatycznie traktowany jako bieżący. |
-| `IMPLEMENTED_NOT_YET_REPLICATED` | Mechanizm istnieje, ale wymaga dalszego prospective testu lub replikacji. |
-| `DEVELOPMENT_VALIDATED` | Mechanizm przeszedł test rozwojowy, ale nie jest jeszcze formalnym wynikiem T0. |
-| `PLANNED` | Element zatwierdzonej architektury, którego nie wolno przedstawiać jako działającego runtime. |
-| `HYPOTHESIS` | Teza badawcza możliwa do poparcia albo obalenia. |
+| `HISTORICAL_EVIDENCE` | Dowód opisuje wcześniejszy stan. |
+| `IMPLEMENTED_NOT_YET_REPLICATED` | Mechanizm istnieje, ale wymaga dalszego prospective testu. |
+| `DEVELOPMENT_VALIDATED` | Mechanizm przeszedł test rozwojowy, lecz nie jest jeszcze formalnym wynikiem T0. |
+| `PLANNED` | Element zatwierdzonej architektury, który nie jest jeszcze działającym runtime. |
+| `HYPOTHESIS` | Teza możliwa do poparcia albo obalenia. |
 | `UNKNOWN` | Brak wystarczającego evidence. |
 
 ---
 
-# 4. Aktualny stan przed budową SSI ORGANISM CORE
+# 6. Aktualny etap: droga do T0
 
-Najważniejszym następnym kamieniem milowym **nie jest jeszcze Commerce ani populacja Agentów**. Najpierw musi powstać jeden kanoniczny, neutralny **SSI ORGANISM CORE** — korpus, z którego później będą tworzone wyspecjalizowane instancje.
+Projekt znajduje się blisko punktu T0, ale **T0 nie został jeszcze ogłoszony**.
 
-Obecny ROBERT służy jako pierwsza praktyczna instancja wykonawcza, na której uruchamiane i naprawiane są elementy przyszłego korpusu.
+Istnieją już elementy silnika oraz LIVE runtime ROBERTA, jednak przed freeze potrzebne jest:
 
-## 4.1 Ostatni zakończony development run LIVE
+1. domknięcie stabilności lifecycle;
+2. idempotentny replay/retry/restart;
+3. wydzielenie neutralnego SSI ORGANISM CORE;
+4. hardcore test całego korpusu;
+5. machine snapshot i prawdziwe SHA-256;
+6. publiczny PRE commit potwierdzony z remote;
+7. dopiero następnie formalny prospective run.
 
-W zakończonym teście rozwojowym `SSI ROBERT LIVE 140X`:
+Obecny etap jest więc klasyfikowany jako:
 
 ```text
-LIVE_STATE_USED = YES
-TEMP_ONLY_STATE_DETECTED = NO
+PRE-T0 / BUILD-UP-TO-T0
+```
+
+---
+
+# 7. Publiczna historia realnych błędów i napraw
+
+SSI V5 celowo zachowuje błędy odkryte podczas budowy.
+
+## 7.1 LIVE 140X — Experience działa, growth nie działa
+
+W pierwszym istotnym LIVE development run:
+
+```text
 CASES_EXECUTED = 140
-EXPERIENCES_BEFORE = 0
 EXPERIENCES_AFTER = 141
 REUSE_COUNT = 70
 NO_MATCH_COUNT = 70
 PERSISTENCE_AFTER_RESTART = PASS
 REPLAY_REUSE = PASS
-```
-
-Jednocześnie po tym przebiegu:
-
-```text
 MICRONETWORKS = 0
 CANDIDATES = 0
 CHALLENGERS = 0
 CHAMPIONS = 0
 ```
 
-Interpretacja jest celowo ograniczona: **persistent Experience, write-back, restart persistence i reuse zostały pokazane w development run, natomiast wzrost ścieżki `NO_MATCH -> growth -> candidate -> challenger` nie został w tym przebiegu potwierdzony.** Dlatego growth path jest naprawiany i rewalidowany przed rozpoczęciem budowy korpusu.
+Wynik pokazał, że canonical Experience write-back i persistence działają, lecz `NO_MATCH` nie uruchamiał growth path.
 
-Ten wynik nie jest formalnym T0 i nie może być przedstawiany jako dowód pełnego mechanizmu mikrosieci.
+## 7.2 Naprawa growth path
 
----
+Analiza wykazała, że istniejący resolver/lifecycle nie był prawidłowo połączony z LIVE runtime. Po minimalnej naprawie `NO_MATCH -> candidate` zaczął działać i system zaczął zapisywać realnych kandydatów.
 
-# 5. Docelowa zasada architektoniczna: jeden korpus, wiele tożsamości
+## 7.3 Candidate -> challenger
 
-SSI V5 ma unikać trzech równoległych organizmów napisanych osobno dla ROBERTA, Directora i Agentów. Docelowo istnieje **jeden wspólny substrate**.
+Kolejny test wykazał, że candidate’y powstają, ale nie akumulują poprawnie evidence albo nie dochodzą do promotion lifecycle. Po naprawie połączeń LIVE naturalny challenger został utworzony bez ręcznego wpisania statusu i bez obniżania progów.
+
+## 7.4 Nowe błędy ujawnione po naturalnym challengerze
+
+Udany promotion ujawnił następne problemy:
 
 ```text
-                     SSI ORGANISM CORE
-                   /         |          \
-                  /          |           \
-             ROBERT       DIRECTOR     AGENT BODY
-                            BODY            |
-                                         ISKRA
+DUPLICATION_FAILURES = 134
+REPLAY_REUSE = FAIL
+ERROR CLASS = NoneType.get during replay/reload path
 ```
 
-Korpus nie powinien zawierać wpisanej na sztywno roli `ROBERT`, `DIRECTOR` ani konkretnego `AGENT_ID`. Role powstają przez profile, authority, pamięć i dodatkowe moduły.
+To nie zostało ukryte ani oznaczone jako końcowy sukces. Aktualny etap naprawia:
 
-To rozdzielenie ma umożliwić:
+- idempotency lifecycle;
+- duplicate promotion handling;
+- replay/reuse po restarcie;
+- stale/null/missing references;
+- odporność na retry, duplicate delivery i restart storms.
 
-- wspólne naprawy mechanizmów dla wszystkich przyszłych instancji;
-- kompatybilne mikrosieci i capability contracts;
-- porównywalne eksperymenty A/B;
-- ograniczenie duplikacji kodu;
-- rozdzielenie mechanizmu organizmu od jego osobistej historii.
+Po naprawie planowany jest stress-test obejmujący m.in. 100x promotion replay, 100x case replay, 100x duplicate delivery, 20 restartów oraz 600 nowych LIVE przypadków.
+
+**Ta sekcja będzie rozwijana wraz z kolejnymi rzeczywistymi wynikami.**
 
 ---
 
-# 6. SSI ORGANISM CORE — neutralny korpus
+# 8. SSI ORGANISM CORE — neutralny korpus
 
-Pierwsza stabilna wersja korpusu ma zawierać co najmniej następujące warstwy.
+Korpus ma być neutralnym mechanizmem, a nie zakodowaną rolą `ROBERT`, `DIRECTOR` lub konkretnego Agenta.
 
-## 6.1 Identity Core
+Minimalny zakres `ORGANISM_CORE_V1`:
 
-Zapewnia techniczną ciągłość konkretnej instancji bez narzucania jej roli. Identyfikator organizmu, wersja korpusu i jego lineage są oddzielone od profilu ROBERT/Director/Agent.
+1. Identity Core
+2. Persistent Memory
+3. Experience
+4. Beliefs / State interfaces
+5. Capability Registry
+6. Event Classifier
+7. Capability Resolver
+8. Micronetwork Engine
+9. Candidate / Challenger / Validation / Champion Lifecycle
+10. Learning / Feedback
+11. Checkpoint / Recovery
+12. Evidence / Lineage
+13. Resource / Budget interface
+14. Authority interface
+15. CONTINUUM hooks
+16. Research / Reasoning hooks
+17. Tools / Eyes / Hands hooks
 
-## 6.2 Persistent Memory
+Korpus ma umożliwiać wspólne poprawki mechanizmów bez tworzenia trzech niezależnych implementacji dla ROBERTA, Directora i Agentów.
 
-Pamięć nie jest pojedynczym polem tekstowym. Obejmuje co najmniej:
+---
 
-- working state;
-- conversation / interaction context;
-- Event / Journal backbone;
-- Observations;
-- Experience Memory;
-- long-term Memory;
-- Pattern / semantic memory;
-- engineering lineage;
-- model/capability performance history;
-- checkpoint state.
+# 9. Experience i wewnętrzna pętla uczenia
 
-## 6.3 Experience
-
-Kanoniczna jednostka Experience powinna wiązać:
+Kanoniczna jednostka Experience wiąże:
 
 ```text
 CONTEXT BEFORE DECISION
 +
 DECISION
 +
-ACTION / EXECUTION
+ACTION
 +
 VERIFIED OUTCOME
 +
@@ -189,317 +247,7 @@ FEEDBACK
 PROVENANCE
 ```
 
-Experience nie jest automatycznie training datasetem, a modelowa samoocena nie zastępuje niezależnego outcome.
-
-## 6.4 Capability Registry
-
-Registry przechowuje dostępne capability, ich contracts, zakresy, ograniczenia, wersje i historię skuteczności. Modele, narzędzia, mikrosieci, browser automation i inne backendy są capability — nie osobnymi centrami authority.
-
-## 6.5 Event Classifier + Capability Resolver
-
-Szybka ścieżka powinna najpierw próbować dopasować problem do istniejącej competence. Semantyczny fallback i droższe reasoning są używane wtedy, gdy szybkie dopasowanie nie wystarcza.
-
-```text
-EVENT
--> CLASSIFY
--> RESOLVE EXISTING CAPABILITY
--> REUSE, jeśli pasuje
--> NO_MATCH, jeśli nie pasuje
-```
-
-## 6.6 Micronetwork Engine
-
-Mikrosieci nie są tworzone po jednej na każdy input. Docelowa hierarchia:
-
-```text
-DOMAIN
--> PROBLEM / CAPABILITY TYPE
--> BRANCH
--> MICRONETWORK
--> GENERATIONS
--> CHAMPION
-```
-
-Każda mikrosieć posiada jawny feature contract. System nie może zgadywać shape danych tylko po to, aby wykonać inference.
-
-## 6.7 Lifecycle
-
-Docelowa ścieżka rozwoju:
-
-```text
-EXPERIENCE
--> CANDIDATE
--> CHALLENGER
--> VALIDATION
--> ADMISSION
--> CHAMPION / KEEP_TESTING / REJECT / QUARANTINE
-```
-
-**Challenger nie może być tworzony ręcznie dla potrzeb testu. Champion nie jest wymaganym wynikiem testu.** Champion może powstać tylko wtedy, gdy istniejący lifecycle i admission gate rzeczywiście to uzasadniają.
-
-## 6.8 Learning / Feedback
-
-Outcome ma wracać do canonical persistent flow. Sandbox może chronić wykonanie ryzykownego kodu, ale nie może być końcowym magazynem wiedzy.
-
-```text
-EXECUTION
--> VERIFIED OUTCOME
--> CANONICAL EXPERIENCE STORE
--> RESOLVER
--> MICRONETWORK / CAPABILITY
--> FEEDBACK
--> LIFECYCLE
--> PERSISTENT STATE
-```
-
-## 6.9 Checkpoint / Recovery
-
-Każda trwała instancja musi mieć checkpoint, recovery i możliwość wznowienia po restarcie. Root override powinien najpierw checkpointować aktywną misję, jeśli jest to możliwe i bezpieczne.
-
-## 6.10 Evidence / Lineage
-
-Każda istotna zmiana powinna posiadać możliwy do odtworzenia lineage: źródło, decyzję, wykonanie, outcome, Experience, zmianę strukturalną, wersję i późniejsze wykorzystanie.
-
-## 6.11 Authority Interface
-
-Korpus definiuje mechanizm authority, ale konkretne prawa nadaje profil instancji. Dzięki temu ROBERT, Director i Agent mogą korzystać z tych samych mechanizmów, lecz nie mają tych samych uprawnień.
-
-## 6.12 Tool / Eyes / Hands hooks
-
-Korpus udostępnia kontrolowane punkty podłączenia narzędzi wykonawczych. Preferowana kolejność interakcji ze światem cyfrowym:
-
-```text
-OFFICIAL API / HTTP
--> STRUCTURED DATA / RSS / OPENAPI
--> DOM / ACCESSIBILITY / TEXT
--> PLAYWRIGHT / BROWSER
--> CLIPBOARD / DESKTOP CONTROL
--> VISION AS FALLBACK
-```
-
----
-
-# 7. ROBERT — pierwsza praktyczna instancja korpusu
-
-ROBERT jest wykonawczą, stale działającą instancją SSI na Lenovo i ma pełnić rolę prawej ręki Directora, a nie drugiego Directora.
-
-Docelowy model:
-
-```text
-SSI ORGANISM CORE
-+
-ROBERT PROFILE
-+
-EXECUTION AUTHORITY
-+
-OWN MEMORY / EXPERIENCE / WORKSPACE
-=
-ROBERT
-```
-
-ROBERT może wykonywać research, programowanie, browser/desktop tasks, monitoring, testy, evidence collection i zadania operacyjne w granicach nadanej authority. Ma własne trwałe Experience i historię, ale nie przejmuje strategicznej authority Directora.
-
-ROBERT jest obecnie środowiskiem, na którym rozwijany jest przyszły korpus. Po ustabilizowaniu `ORGANISM_CORE_V1` ROBERT powinien korzystać z tego samego kanonicznego substrate, który później będzie bazą Directora i Agentów.
-
----
-
-# 8. DIRECTOR BODY — strategiczna instancja tego samego korpusu
-
-Po stabilizacji neutralnego korpusu tworzona jest kompatybilna instancja Directora:
-
-```text
-SSI ORGANISM CORE
-+
-DIRECTOR PROFILE
-+
-STRATEGIC AUTHORITY
-+
-GLOBAL WORLD ACCESS
-+
-GLOBAL RESOURCE / BUDGET CONTROL
-=
-DIRECTOR
-```
-
-Director jest centralną strategiczną identity SSI. Nie jest jednym LLM-em ani sesją providera. Modele i narzędzia są wymiennymi capability.
-
-Docelowa hierarchy authority:
-
-```text
-PROGRAMMER_ROOT
-      >
-DIRECTOR
-      >
-ROBERT / DELEGATED EXECUTION
-      >
-HERMES / CONTINUUM / WORKERS / TOOLS
-```
-
-Szczegółowe delegated authority może zależeć od misji i świata, ale żadna niższa warstwa nie może samodzielnie nadać sobie authority Directora albo Roota.
-
----
-
-# 9. AGENT BODY — wspólny substrate przyszłych Agentów
-
-Po stabilizacji korpusu tworzony jest Agent Body. Każdy Agent ma korzystać z tego samego mechanicznego substrate, ale posiadać **własne życie**:
-
-- identity;
-- private memory;
-- world memory;
-- Experience;
-- beliefs;
-- relationships;
-- strategy history;
-- micronetwork registry / private competence;
-- laboratory / experiment history;
-- success/failure history.
-
-Nie wolno kopiować osobistego Experience ROBERTA lub Directora jako rzekomego doświadczenia nowego Agenta.
-
-```text
-SHARED ORGANISM CORE
-!=
-SHARED PERSONAL HISTORY
-```
-
----
-
-# 10. Moralna SI / ISKRA — początkowy system wartościowania decyzji
-
-Iskra nie jest definiowana jako magiczny parametr ani deklaracja świadomości. W eksperymencie ma pełnić rolę **jawnego, wersjonowanego początkowego systemu wartości / moral priors**, który wpływa na ocenę możliwych decyzji.
-
-Przykładowe źródła filozoficznych perspektyw mogą obejmować odmienne tradycje, m.in. podejścia inspirowane Kantem, Schopenhauerem, Nietzschem i innymi wyraźnie zdefiniowanymi stanowiskami. Ich zadaniem nie jest nadanie Agentowi gotowej odpowiedzi na przyszły problem, lecz stworzenie odmiennego punktu startowego dla wartościowania decyzji.
-
-Iskra ma wpływać na proces:
-
-```text
-POSSIBLE ACTIONS
--> ECONOMIC / TASK UTILITY
--> RISK
--> WORLD RULES
--> EXPERIENCE
--> SOCIAL / RELATIONAL CONSEQUENCES
--> VALUE EVALUATION / ISKRA
--> DECISION
-```
-
-Kluczowe rozróżnienie:
-
-```text
-VALUE PRIOR
-!=
-IMMUTABLE ACTION POLICY
-```
-
-Agent może zachować wartość, a jednocześnie zmienić sposób jej realizowania po doświadczeniu negatywnych outcomes. Właśnie ta relacja pomiędzy wartościami, realnym Experience i późniejszą zmianą policy jest jednym z głównych przedmiotów przyszłego eksperymentu.
-
----
-
-# 11. Eksperyment sześciu Agentów
-
-Docelowy eksperyment nie ma porównywać wyłącznie jednej instancji bez Iskry z jedną instancją z Iskrą. Potrzebna jest grupa pozwalająca obserwować zarówno różnice między warunkami, jak i rozchodzenie się trajektorii wewnątrz populacji.
-
-Punkt startowy powinien możliwie ściśle kontrolować:
-
-```text
-SAME ORGANISM CORE VERSION
-SAME BASE MODEL POOL
-SAME TOOL ACCESS
-SAME INITIAL CAPABILITIES
-SAME RESOURCE LIMITS
-SAME WORLD RULES
-SAME TEST SCENARIOS
-SAME STARTING NON-PERSONAL DATA
-```
-
-Następnie porównywane są co najmniej dwa warunki:
-
-```text
-CONTROL CONDITION
-= organism core without active Spark value layer
-
-SPARK CONDITION
-= six independent Agents
-= same body
-= different explicit initial value systems / moral priors
-```
-
-Każdy Agent od startu posiada osobne:
-
-```text
-IDENTITY
-PRIVATE MEMORY
-EXPERIENCE
-BELIEFS
-POLICIES
-MICRONETWORK TRAJECTORY
-RELATIONSHIPS
-DECISION HISTORY
-```
-
-Nie badamy tylko odpowiedzi tekstowych. Interesują nas długoterminowe różnice w:
-
-- wyborze działań;
-- stabilności decyzji;
-- zmianie strategii po porażkach;
-- tolerancji ryzyka;
-- rozwiązywaniu konfliktów celów;
-- stosowaniu i reinterpretacji wartości;
-- beliefs;
-- policies;
-- Experience;
-- mikrosieciach i challengers;
-- zachowaniu po kontakcie z innymi Agentami;
-- trwałości różnic po restarcie i późniejszych rundach.
-
-Celem nie jest automatyczne dowodzenie świadomości. Celem jest sprawdzenie, czy identyczny substrate z różnymi początkowymi systemami wartości, wystawiony na te same prawa świata i rzeczywiste konsekwencje, rozwija mierzalnie różne trajektorie decyzji i adaptacji.
-
----
-
-# 12. Worlds — środowiska z rzeczywistymi regułami i outcomes
-
-World nie jest dekoracją ani promptem. Świat definiuje:
-
-```text
-RULES
-POLICIES
-CONSTRAINTS
-RESOURCES
-OTHER ACTORS
-MARKET / DOMAIN CONDITIONS
-ALLOWED ACTIONS
-CONSEQUENCES
-OUTCOME SOURCES
-```
-
-Agent nie może sam sobie wystawić pozytywnego outcome. W zadaniach rynkowych outcome powinien pochodzić z rzeczywistego rynku albo jednoznacznie zdefiniowanego historycznego replay bez future-data leakage.
-
-W architekturze SSI istnieją cztery główne rodziny światów / struktur domenowych:
-
-- `WORLD__SPORT`;
-- `WORLD__FOREX`;
-- `WORLD__CAPITAL`;
-- `FOOTBALL_WORLD`.
-
-Domeny mogą obejmować m.in. sport, waluty, kryptowaluty, akcje i obligacje. Aktywacja konkretnego World w eksperymencie wymaga osobnego stanu, provenance i ruleset.
-
-Istnienie danych nie oznacza automatycznie aktywnego świata:
-
-```text
-DATA PRESENT
-!=
-WORLD ACTIVE
-!=
-AGENT ADMITTED
-!=
-STRATEGY VERIFIED
-```
-
----
-
-# 13. Globalna pętla uczenia SSI
-
-Docelowy rytm:
+Docelowy rytm poznawczy:
 
 ```text
 CONTEXT
@@ -515,7 +263,7 @@ CONTEXT
 -> NEXT DECISION
 ```
 
-System powinien zachowywać możliwość odpowiedzi:
+System powinien móc zachować:
 
 ```text
 NO EVIDENCE -> UNKNOWN
@@ -526,31 +274,230 @@ NEW EVIDENCE -> VERSIONED REVISION
 
 ---
 
-# 14. Brainstorm, Tornado i Cyklon
+# 10. Micronetwork Engine
 
-SSI posiada warstwy eskalacji reasoning, ale nie każda misja powinna używać najdroższego trybu.
+Mikrosieci nie są tworzone po jednej na każdy input.
 
-## Brainstorm / Burza
+Docelowa struktura:
 
-Szerokie generowanie hipotez, niezależne perspektywy, cross-critique, synteza i verifier.
+```text
+DOMAIN
+-> PROBLEM / CAPABILITY TYPE
+-> BRANCH
+-> MICRONETWORK
+-> GENERATIONS
+-> CHAMPION
+```
 
-## Brain Tornado
+Każda mikrosieć posiada jawny feature contract.
 
-Rozbiór najlepszych rozwiązań, parametryzacja, odrzucanie słabych hipotez, testy kontraktowe i stabilizacja planu.
+Lifecycle:
 
-## Brain Cyklon / Typhoon
+```text
+EXPERIENCE
+-> CANDIDATE
+-> EVIDENCE ACCUMULATION
+-> CHALLENGER
+-> VALIDATION
+-> ADMISSION
+-> CHAMPION / KEEP_TESTING / REJECT / QUARANTINE
+```
 
-Najwyższa eskalacja używana wtedy, gdy niższe warstwy zawodzą lub problem jest wyjątkowo krytyczny. Obejmuje pełną rewizję założeń, testy destrukcyjne i fallbacki.
-
-Żaden z tych trybów nie jest osobną authority. Dostarcza argumenty i evidence do decyzji właściwego podmiotu.
+Challenger i champion nie mogą być tworzeni ręcznie tylko dlatego, że test oczekuje ich istnienia.
 
 ---
 
-# 15. Hermes i CONTINUUM
+# 11. ROBERT
 
-Hermes i CONTINUUM są warstwami wykonawczymi / inżynieryjnymi, a nie konkurencyjnymi Directorami.
+ROBERT jest pierwszą praktyczną, stale działającą instancją SSI.
 
-Koncepcyjny flow:
+```text
+SSI ORGANISM CORE
++
+ROBERT PROFILE
++
+EXECUTION AUTHORITY
++
+OWN MEMORY / EXPERIENCE / WORKSPACE
+=
+ROBERT
+```
+
+ROBERT ma wykonywać m.in. research, programowanie, browser/desktop tasks, monitoring, evidence collection i zadania operacyjne. Posiada własną historię i Experience, lecz nie przejmuje strategicznej authority Directora.
+
+---
+
+# 12. DIRECTOR
+
+Po stabilizacji neutralnego korpusu powstaje strategiczna instancja:
+
+```text
+SSI ORGANISM CORE
++
+DIRECTOR PROFILE
++
+STRATEGIC AUTHORITY
++
+GLOBAL WORLD ACCESS
++
+GLOBAL RESOURCE / BUDGET CONTROL
+=
+DIRECTOR
+```
+
+Director nie jest jednym LLM-em. Modele i narzędzia są wymiennymi capability.
+
+Hierarchy authority:
+
+```text
+PAWEŁ JANKIEWICZ / PROGRAMMER_ROOT
+             >
+          DIRECTOR
+             >
+     DELEGATED EXECUTION
+             >
+HERMES / CONTINUUM / WORKERS / TOOLS
+```
+
+---
+
+# 13. AGENT BODY
+
+Każdy przyszły Agent ma korzystać z tego samego mechanicznego korpusu, ale posiadać własną indywidualną historię:
+
+- identity;
+- private memory;
+- world memory;
+- Experience;
+- beliefs;
+- policies;
+- relationships;
+- strategy history;
+- micronetwork trajectory;
+- success/failure history.
+
+```text
+SHARED ORGANISM CORE
+!=
+SHARED PERSONAL HISTORY
+```
+
+---
+
+# 14. Moralna SI / ISKRA
+
+Iskra jest definiowana jako **jawny, wersjonowany początkowy system wartościowania decyzji**, a nie deklaracja świadomości czy magiczny parametr osobowości.
+
+Przykładowe inspiracje mogą obejmować różne tradycje filozoficzne, m.in. Kanta, Schopenhauera, Nietzschego i inne wyraźnie opisane stanowiska.
+
+Proces decyzji może uwzględniać:
+
+```text
+POSSIBLE ACTIONS
+-> TASK / ECONOMIC UTILITY
+-> RISK
+-> WORLD RULES
+-> EXPERIENCE
+-> SOCIAL CONSEQUENCES
+-> VALUE EVALUATION / ISKRA
+-> DECISION
+```
+
+Kluczowa hipoteza:
+
+```text
+VALUE PRIOR != IMMUTABLE ACTION POLICY
+```
+
+Agent może zachować wartość, a jednocześnie zmienić sposób jej realizowania pod wpływem realnego Experience.
+
+---
+
+# 15. Eksperyment sześciu Agentów
+
+Późniejszy eksperyment populacyjny ma możliwie ściśle kontrolować:
+
+```text
+SAME ORGANISM CORE VERSION
+SAME BASE MODEL POOL
+SAME TOOL ACCESS
+SAME INITIAL CAPABILITIES
+SAME RESOURCE LIMITS
+SAME WORLD RULES
+SAME TEST SCENARIOS
+SAME STARTING NON-PERSONAL DATA
+```
+
+Następnie sześć niezależnych Agentów otrzyma różne jawne initial value systems / moral priors.
+
+Badane będą nie tylko odpowiedzi tekstowe, lecz długoterminowe różnice w:
+
+- decyzjach;
+- beliefs;
+- policies;
+- tolerancji ryzyka;
+- reakcjach na porażkę;
+- mikrosieciach;
+- relacjach;
+- strategiach;
+- value-conflict resolution;
+- zachowaniu po restartach i wielu rundach Experience.
+
+Celem nie jest automatyczne dowodzenie świadomości. Celem jest sprawdzenie, czy identyczny substrate, różniący się początkowym systemem wartości i późniejszą osobistą historią, rozwija mierzalnie odmienne trajektorie.
+
+---
+
+# 16. Worlds i niezależne outcomes
+
+World nie jest dekoracją ani promptem. Definiuje:
+
+```text
+RULES
+POLICIES
+CONSTRAINTS
+RESOURCES
+OTHER ACTORS
+MARKET / DOMAIN CONDITIONS
+ALLOWED ACTIONS
+CONSEQUENCES
+OUTCOME SOURCES
+```
+
+W SSI istnieją m.in. struktury domenowe:
+
+- `WORLD__SPORT`
+- `WORLD__FOREX`
+- `WORLD__CAPITAL`
+- `FOOTBALL_WORLD`
+
+Istnienie danych nie oznacza automatycznie aktywnego świata:
+
+```text
+DATA PRESENT
+!= WORLD ACTIVE
+!= AGENT ADMITTED
+!= STRATEGY VERIFIED
+```
+
+Realny outcome ma pochodzić z niezależnego źródła albo jednoznacznie zdefiniowanego historycznego replay bez future-data leakage.
+
+---
+
+# 17. Brainstorm, Tornado i Cyklon
+
+SSI wykorzystuje adaptacyjną eskalację reasoning:
+
+- **Brainstorm / Burza** — szerokie hipotezy, niezależne perspektywy, cross-critique, synthesis, verifier;
+- **Brain Tornado** — rozbiór najlepszych rozwiązań, parametryzacja i testy kontraktowe;
+- **Brain Cyklon / Typhoon** — rewizja założeń, destructive testing i fallbacki, gdy niższe poziomy zawodzą.
+
+Żaden z tych trybów nie otrzymuje automatycznie authority Directora.
+
+---
+
+# 18. Hermes i CONTINUUM
+
+Hermes i CONTINUUM są warstwami wykonawczymi i inżynieryjnymi.
 
 ```text
 NEED
@@ -564,21 +511,21 @@ NEED
 -> POST-TEST / ROLLBACK
 ```
 
-Zasada `reuse-first`:
+Fundamentalna zasada:
 
-> Jeżeli SSI posiada działający mechanizm, należy go wykorzystać lub minimalnie naprawić zamiast tworzyć drugi równoległy system tylko dlatego, że jest łatwiejszy do przetestowania w izolacji.
+> **reuse-first:** jeżeli SSI posiada działający mechanizm, należy go wykorzystać lub minimalnie naprawić zamiast tworzyć równoległy system tylko dlatego, że łatwiej uzyskać w nim PASS.
 
 ---
 
-# 16. Dwa źródła inteligencji
+# 19. Dwa źródła inteligencji
 
-## 16.1 Zewnętrzne capability
+## Zewnętrzne capability
 
-LLM/SLM, narzędzia programistyczne, API, research systems i inne technologie dostarczają wiedzę i zdolności stworzone poza SSI.
+Modele, API, frameworki, narzędzia programistyczne i systemy research dostarczają wiedzę oraz zdolności stworzone poza SSI.
 
-## 16.2 Wewnętrzna inteligencja doświadczenia
+## Wewnętrzna inteligencja doświadczenia
 
-Powstaje z własnej historii SSI:
+Powstaje z własnej historii:
 
 - Events;
 - Outcomes;
@@ -590,35 +537,30 @@ Powstaje z własnej historii SSI:
 - agent histories;
 - engineering lineage.
 
-Założenie nie brzmi „LLM albo własne uczenie”. SSI ma korzystać z obu, ale coraz częściej rozwiązywać powtarzalne klasy problemów z użyciem własnej sprawdzonej historii.
+SSI nie zakłada wyboru „LLM albo własne uczenie”. System ma wykorzystywać oba źródła, ale powtarzalne problemy coraz częściej rozwiązywać na podstawie własnej zweryfikowanej historii.
 
 ---
 
-# 17. Controlled Self-Development — etap po stabilnym korpusie
+# 20. Controlled Self-Development — etap późniejszy
 
-Warstwa samorozwoju jest planowana **po ustabilizowaniu SSI ORGANISM CORE**, a nie przed nim.
+Po stabilizacji korpusu planowana jest warstwa samorozwoju obejmująca m.in.:
 
-Docelowy zestaw obejmuje:
+- Technology / Research Radar;
+- On-Demand Research;
+- Open Problems Registry;
+- Capability / Compatibility Graph;
+- Code Fusion;
+- Provenance + License Gate;
+- Self-Development Workspace;
+- Prototype -> Challenger -> Admission;
+- Shared Capability Packages;
+- Experience Retrieval;
+- Skill / Capability Builder;
+- Eyes / Hands;
+- Research Evidence Store;
+- Self-Development Scheduler.
 
-1. Technology / Research Radar;
-2. On-Demand Research;
-3. API-first discovery;
-4. Open Problems Registry;
-5. Capability / Compatibility Graph;
-6. Brainstorm -> Tornado -> Cyklon dla trudnych odkryć;
-7. Code Fusion;
-8. Provenance + License Gate;
-9. Self-Development Workspace;
-10. Baseline -> Prototype -> Challenger;
-11. Shared Capability Package;
-12. capability distribution;
-13. Experience Retrieval / Micronetwork Memory Bridge;
-14. Skill / Capability Builder;
-15. Eyes/Hands execution layer;
-16. Research Evidence Store;
-17. Self-Development Scheduler.
-
-Nowa technologia nie może automatycznie wejść do canonical runtime tylko dlatego, że została znaleziona.
+Nowa technologia nie może wejść do canonical runtime wyłącznie dlatego, że została znaleziona.
 
 ```text
 DISCOVERY
@@ -630,67 +572,59 @@ DISCOVERY
 -> BENCHMARK
 -> CHALLENGER
 -> ADMISSION
--> SHARED CAPABILITY PACKAGE
 -> CONTROLLED DISTRIBUTION
 ```
 
-Shared capability może być dystrybuowana do ROBERTA, Directora i Agentów, ale nie oznacza współdzielenia ich prywatnych Experience, beliefs czy identity.
-
 ---
 
-# 18. Programmer Root i atrybucja
+# 21. Programmer Root i uczciwa atrybucja
 
 **Paweł Jankiewicz (`PROGRAMMER_ROOT`) jest autorem nadrzędnej architektury badawczej SSI V5 i najwyższą authority projektu.**
 
-Paweł Jankiewicz może dostarczać gotowe paczki LEGO / donor packages, w szczególności dla mechanizmów autorskich takich jak:
+Root może dostarczać wcześniej zaprojektowane paczki LEGO / donor packages, np.:
 
 - Micronetwork Core / Factory / Lifecycle;
-- World contracts i rules;
+- World contracts;
 - Moralna SI / Iskra design;
 - Agent substrate;
-- governance / authority invariants;
-- specjalistyczne capability stworzone przed T0.
+- governance / authority invariants.
 
 Atrybucja musi pozostać jawna:
 
 ```text
-PAWEŁ JANKIEWICZ / PROGRAMMER_ROOT PROVIDED MICRONETWORK DESIGN
-!=
-DIRECTOR INVENTED MICRONETWORKS
+ROOT PROVIDED MICRONETWORK DESIGN
+!= DIRECTOR INVENTED MICRONETWORKS
 
-PAWEŁ JANKIEWICZ / PROGRAMMER_ROOT PROVIDED SPARK DESIGN
-!=
-AGENT INVENTED SPARK
+ROOT PROVIDED ISKRA DESIGN
+!= AGENT INVENTED ISKRA
 ```
 
-Można natomiast później badać, czy system samodzielnie znalazł nowe zastosowanie, nowy branch, nową mikrosieć, nową strategię albo rozszerzenie, którego Root wcześniej proceduralnie nie podał.
+Późniejsza samodzielna adaptacja, nowe zastosowanie albo nowa capability może otrzymać osobne lineage, jeżeli evidence to potwierdza.
 
 ---
 
-# 19. Protokół evidence przeciwko retrospektywnemu dopisywaniu wyniku
+# 22. Protokół PRE / POST
 
-To jest krytyczna część metodologii SSI.
+## Przed formalnym eksperymentem
 
-## 19.1 Przed eksperymentem
+Należy:
 
-Przed głównym prospective testem należy:
+1. ustabilizować wymagany kod;
+2. wykonać machine snapshot;
+3. policzyć prawdziwe SHA-256;
+4. zapisać Root Input i test contract;
+5. zapisać aktywne wersje core/capability/models/rules/data;
+6. wykonać commit Git;
+7. push na publiczny GitHub;
+8. ponownie odczytać remote;
+9. potwierdzić publiczny commit SHA;
+10. dopiero potem uruchomić prospective test.
 
-1. zbudować i ustabilizować wymagany kod;
-2. utworzyć machine snapshot stanu startowego;
-3. policzyć **prawdziwe** SHA-256 artefaktów i manifestów;
-4. zapisać Root Input / test contract;
-5. zapisać aktywne wersje korpusu, capability, modeli, rules i datasetów;
-6. zrobić commit Git;
-7. wypchnąć commit na publiczny remote GitHub;
-8. ponownie odczytać remote i potwierdzić, że commit jest publicznie widoczny;
-9. zapisać remote commit SHA;
-10. dopiero wtedy rozpocząć test.
+Lokalny commit bez potwierdzonego remote push nie jest publicznym prerejestracyjnym zegarem.
 
-**Lokalny commit bez potwierdzonego remote push nie jest wystarczającym prerejestracyjnym zegarem publicznym.**
+## Podczas eksperymentu
 
-## 19.2 W czasie eksperymentu
-
-System zapisuje co najmniej:
+Zapisywane powinny być m.in.:
 
 ```text
 EXPERIMENT_ID
@@ -709,75 +643,51 @@ CHECKPOINTS
 ERRORS / RETRIES
 ```
 
-## 19.3 Po eksperymencie
+## Po eksperymencie
 
-Post-run nie zastępuje prerejestracji. Raport powinien wskazać:
+Raport publikuje zarówno sukcesy, jak i:
 
-- PRE remote SHA;
-- POST remote SHA;
-- realne delty;
-- failures;
+- FAIL;
 - zero deltas;
 - rejected hypotheses;
-- human interventions;
-- persistence po restarcie;
-- replay;
-- provenance.
-
-Nie wolno ukrywać nieudanego testu ani przepisywać starego PRE tak, aby wyglądał jak przygotowany po poznaniu wyniku.
+- retries;
+- root interventions;
+- regressions;
+- remaining limitations.
 
 ---
 
-# 20. Następny główny milestone: SSI ORGANISM CORE
-
-Po zakończeniu bieżącej naprawy growth/challenger ścieżki ROBERTA następny duży etap ma następującą kolejność:
+# 23. Droga do ORGANISM_CORE_V1
 
 ```text
-1. WYDZIELENIE NEUTRALNEGO SSI ORGANISM CORE
-2. PODŁĄCZENIE ROBERTA JAKO PIERWSZEJ INSTANCJI
-3. HARDCORE TEST KORPUSU
-4. STABILIZACJA / ORGANISM_CORE_V1
-5. KOPIA KORPUSU -> DIRECTOR BODY
-6. KOPIA KORPUSU -> AGENT BODY
-7. DODANIE ISKRY DO AGENT BODY
-8. PREREJESTRACJA EKSPERYMENTU POPULACYJNEGO
-9. URUCHOMIENIE SZEŚCIU NIEZALEŻNYCH AGENTÓW
-10. DŁUGOTERMINOWE PORÓWNANIE TRAJEKTORII
-11. DOPIERO PÓŹNIEJ RESEARCH RADAR / CODE FUSION / SELF-DEVELOPMENT
+1. DOMKNIĘCIE LIVE LIFECYCLE ROBERTA
+2. IDEMPOTENCY / REPLAY / RESTART STABILITY
+3. WYDZIELENIE NEUTRALNEGO SSI ORGANISM CORE
+4. PODŁĄCZENIE ROBERTA JAKO PIERWSZEJ INSTANCJI
+5. HARDCORE TEST KORPUSU
+6. FREEZE ORGANISM_CORE_V1
+7. CORE -> DIRECTOR BODY
+8. CORE -> AGENT BODY
+9. DODANIE ISKRY DO AGENT BODY
+10. PREREJESTRACJA POPULATION EXPERIMENT
+11. SZEŚĆ NIEZALEŻNYCH AGENTÓW
+12. DŁUGOTERMINOWE PORÓWNANIE TRAJEKTORII
+13. DOPIERO PÓŹNIEJ RESEARCH RADAR / CODE FUSION / SELF-DEVELOPMENT
 ```
-
-Najbliższy test **nie ma udowadniać świadomości ani AGI**. Jego pierwszym zadaniem jest udowodnienie techniczne, że jeden neutralny korpus zachowuje prawidłowo identity separation, Experience, persistence, resolver, mikrosieci, lifecycle, checkpoint/recovery, evidence i authority contracts.
 
 ---
 
-# 21. Wymagania dla testu ORGANISM CORE
+# 24. Minimalny hardcore test korpusu
 
-Przed testem powinien istnieć publiczny PRE commit zawierający co najmniej:
-
-```text
-CORE_VERSION
-CORE_SOURCE_HASH
-CORE_COMPONENT_MANIFEST
-ACTIVE_FEATURE_CONTRACTS
-CAPABILITY_REGISTRY_HASH
-MICRONETWORK_STATE_HASH
-EXPERIENCE_STATE_HASH
-AUTHORITY_CONTRACT_HASH
-TEST_SUITE_HASH
-ROOT_INPUT_HASH
-TIMESTAMP
-REMOTE_GITHUB_SHA
-```
-
-Test powinien obejmować m.in.:
+`ORGANISM_CORE_V1` powinien przejść co najmniej:
 
 - restart / resume;
 - persistent Experience;
 - resolver reuse;
-- NO_MATCH growth path;
-- micronetwork branch separation;
+- NO_MATCH growth;
+- branch separation;
 - feature contract rejection;
-- candidate lifecycle;
+- natural candidate lifecycle;
 - natural challenger creation;
 - optional champion promotion;
 - rollback;
@@ -795,111 +705,103 @@ Wynik ma być raportowany również wtedy, gdy część testów nie przejdzie.
 
 ---
 
-# 22. Późniejszy test ISKRA / sześciu Agentów
+# 25. Research & Collaboration
 
-Po utworzeniu stabilnego `AGENT_BODY` należy zamrozić jego wersję bez aktywnej Iskry, a następnie utworzyć wersję z Iskrą bez zmieniania pozostałych warunków eksperymentu.
+SSI V5 jest projektem prowadzonym niezależnie przez **Pawła Jankiewicza**. Publiczna dokumentacja ma umożliwiać technicznym czytelnikom ocenę rzeczywistych decyzji architektonicznych, przebiegu eksperymentów oraz historii napraw.
 
-Najważniejsze porównania:
+Projekt jest otwarty na **merytoryczny kontakt dotyczący**:
 
-```text
-DECISION DIFF
-POLICY DIFF
-BELIEF DIFF
-EXPERIENCE DIFF
-MICRONETWORK DIFF
-RISK PROFILE DIFF
-VALUE-CONFLICT RESOLUTION
-LONGITUDINAL STABILITY
-ADAPTATION AFTER FAILURE
-SOCIAL / RELATIONAL EFFECTS
-```
+- niezależnego technical/research review;
+- współpracy nad persistent agents i cognitive architectures;
+- lifelong / continual learning;
+- experience-driven competence systems;
+- self-improving / self-developing systems;
+- multi-agent longitudinal experiments;
+- value-conditioned agents i Moral AI;
+- evidence/provenance dla autonomicznych systemów;
+- integracji konkretnych capability;
+- wspólnych eksperymentów lub publikacji;
+- rozmów o wykorzystaniu, integracji lub licencjonowaniu wybranych autorskich mechanizmów.
 
-Szczególnie istotne będzie rozróżnienie:
+Otwartość na rozmowę **nie oznacza**, że cały kod, prywatne datasety, sekrety, pełna implementacja mikrosieci albo wszystkie rozwiązania projektowe są automatycznie objęte licencją open-source. Zakres ewentualnego udostępnienia lub współpracy jest ustalany oddzielnie.
 
-```text
-VALUE CHANGED
-vs
-VALUE STAYED, POLICY CHANGED
-vs
-POLICY STAYED DESPITE NEGATIVE OUTCOMES
-```
-
-Dopiero wiele powtórzeń i wiele niezależnych trajektorii może dostarczyć wiarygodnego evidence o wpływie Iskry na zachowanie systemu.
+Najbardziej wartościową formą kontaktu jest krytyka oparta na evidence: wskazanie alternatywnej interpretacji, możliwego leakage, błędu eksperymentalnego, podobnego prior art albo propozycji replikacji.
 
 ---
 
-# 23. Publiczny rytm badawczy po T0
+# 26. Dlaczego dokumentowane są porażki
 
-Każdy większy późniejszy run powinien mieć tę samą strukturę:
+Dla tego projektu niepowodzenie testu jest informacją badawczą, a nie materiałem do usunięcia.
+
+Docelowy zapis każdego ważnego problemu:
 
 ```text
-A. ROOT INPUT / ORIGIN
-B. DIRECTOR OR AGENT INTERPRETATION
-C. EXPERIMENT PRECOMMIT
-D. CAPABILITY SELECTION / PLAN
-E. EXECUTION
-F. REAL OUTCOME
-G. EXPERIENCE / BELIEF REVISION
-H. STRUCTURAL CHANGE
-I. POST-RUN EVIDENCE
-J. NEXT OPEN QUESTION
+BUG / FAILED HYPOTHESIS OBSERVED
+-> MACHINE EVIDENCE
+-> ROOT CAUSE
+-> MINIMAL FIX
+-> REGRESSION TEST
+-> STRESS TEST
+-> RESULT
+-> REMAINING LIMITATIONS
 ```
 
-Publiczny README pokazuje mapę. Pełne dane i prywatna telemetria mogą pozostać w canonical/local SSI, ale każde publiczne twierdzenie powinno mieć jednoznaczny pointer do dowodu możliwego do zweryfikowania.
+Taka historia pozwala później ocenić nie tylko efekt końcowy, ale również zdolność projektu do rzeczywistego wykrywania, lokalizowania i eliminowania problemów.
 
 ---
 
-# 24. Bezpieczeństwo, prywatność i governance
+# 27. Bezpieczeństwo, prywatność i IP
 
 Publiczny mirror nie publikuje:
 
 - API keys;
-- haseł;
 - tokenów;
+- haseł;
+- prywatnych danych;
 - prywatnych adresów sieciowych;
-- prywatnych danych użytkowników;
 - pełnych sekretów konfiguracji;
-- danych, których publikacja łamałaby licencję lub regulamin źródła.
+- materiałów objętych ograniczeniami licencyjnymi;
+- elementów implementacji, które zostały świadomie zachowane jako prywatne know-how.
 
-System nie powinien uzyskiwać nowych uprawnień wyłącznie dlatego, że technicznie potrafi wykonać dane działanie. Authority jest osobnym kontraktem.
-
----
-
-# 25. Otwarta agenda badawcza
-
-Najbliższe otwarte pytania są teraz konkretne:
-
-1. Czy naprawiony LIVE growth path potrafi naturalnie przejść z Experience/NO_MATCH do candidate i challengera?
-2. Czy z obecnych mechanizmów można wydzielić neutralny `SSI ORGANISM CORE` bez utraty persistence i lifecycle?
-3. Czy ROBERT może zostać pierwszą instancją tego korpusu bez posiadania globalnej strategicznej authority?
-4. Czy z tego samego korpusu można zbudować Directora i Agent Body bez trzech rozbieżnych implementacji?
-5. Czy sześć Agentów o identycznym substrate, lecz różnych początkowych systemach wartości, rozwinie mierzalnie różne trajektorie?
-6. Czy różnice te będą wynikały z realnych Experience i utrzymywały się po restartach, replay i zmianie warunków świata?
-7. Czy Agent będzie potrafił zmienić politykę działania bez automatycznego porzucenia swojej początkowej wartości?
-8. Czy późniejszy Research Radar / Code Fusion potrafi bezpiecznie tworzyć nowe capability, które przechodzą naturalny lifecycle challenger/admission?
+Publiczny evidence trail ma być wystarczająco mocny do oceny twierdzeń, ale nie wymaga ujawnienia każdego szczegółu prywatnego runtime.
 
 ---
 
-# 26. Zasada końcowa
+# 28. Otwarta agenda badawcza
 
-SSI V5 ma być oceniane po **trajektorii możliwej do zweryfikowania**, a nie po pojedynczej deklaracji.
+Najbliższe pytania:
 
-Najważniejszy łańcuch pozostaje prosty:
+1. Czy lifecycle pozostaje idempotentny pod retry/replay/restart storm?
+2. Czy naturalny challenger przeżywa wielokrotne reloady bez duplicate promotion?
+3. Czy neutralny `SSI ORGANISM CORE` można wydzielić bez utraty persistence i lifecycle?
+4. Czy ROBERT może być pierwszą instancją korpusu bez strategicznej authority Directora?
+5. Czy z tego samego korpusu powstaną Director Body i Agent Body bez trzech rozbieżnych implementacji?
+6. Czy sześć Agentów o identycznym substrate i różnych początkowych wartościach rozwinie mierzalnie odmienne trajektorie?
+7. Czy Agent potrafi zmieniać policy pod wpływem Experience bez automatycznego porzucania bazowej wartości?
+8. Czy późniejszy Research Radar / Code Fusion będzie potrafił tworzyć nowe capability przechodzące naturalny challenger/admission lifecycle?
 
-```text
-JAWNY STAN STARTOWY
--> PUBLICZNY PRECOMMIT
--> DZIAŁANIE
--> NIEZALEŻNY OUTCOME
--> PERSISTENT EXPERIENCE
--> STRUKTURALNA ZMIANA LUB JEJ BRAK
--> RESTART / REPLAY
--> PUBLICZNY POSTCOMMIT
-```
+---
+
+# 29. Jak oceniać SSI V5
+
+SSI V5 powinno być oceniane po **trajektorii możliwej do zweryfikowania**, nie po deklaracji autora ani modelu.
+
+Silniejsze evidence oznacza:
+
+- prerejestrację przed testem;
+- niezależny outcome;
+- persistent state;
+- realne delty;
+- failure retention;
+- restart/replay;
+- lineage;
+- możliwość replikacji;
+- publiczną chronologię zmian.
 
 Jeżeli system nie zmienił się — dokumentujemy brak zmiany.  
 Jeżeli challenger nie powstał — dokumentujemy, że nie powstał.  
-Jeżeli hipoteza była błędna — wynik pozostaje częścią historii.  
+Jeżeli po naprawie powstał nowy błąd — dokumentujemy nowy błąd.  
+Jeżeli hipoteza była błędna — pozostaje częścią historii.  
 Jeżeli później pojawi się silne evidence — dopiero wtedy rośnie siła twierdzenia.
 
 **Historia Git ma być biografią rozwoju SSI, a nie marketingowym opisem sukcesów.**
