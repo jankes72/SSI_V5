@@ -1,0 +1,24 @@
+{
+  "cases_total": 600,
+  "rounds": 40,
+  "cases_per_round": 15,
+  "duration_seconds": 67.85,
+  "start_counters": {
+    "candidates_total": 125,
+    "challengers": 30,
+    "experiences": 886
+  },
+  "end_counters": {
+    "candidates_total": 125,
+    "challengers": 30,
+    "experiences": 886,
+    "new_challengers": 0,
+    "new_candidates": 25
+  },
+  "duplication_failures": 0,
+  "none_get_errors": 0,
+  "half_promoted_objects": 0,
+  "pass": true,
+  "new_challengers_created": 0,
+  "new_candidates_created": 25
+}
