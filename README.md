@@ -57,6 +57,32 @@ Jeżeli test nie przejdzie, porażka pozostaje częścią historii. Jeżeli pó�
 
 Publiczny GitHub ma dzięki temu z czasem stać się **biografią rozwoju SSI**, a nie zbiorem wyłącznie udanych demonstracji.
 
+## 2.1 Zweryfikowane tempo rozwoju
+
+GitHub pozwala obecnie odtworzyć bardzo wczesną chronologię SSI/MSDI. Ważne jest rozróżnienie między **datą zapisaną w historii Git** a **datą utworzenia publicznego repozytorium GitHub**.
+
+```text
+2026-07-19 19:58 CEST  root commit: MSDI AI v0.01 - start projektu
+2026-07-19 20:06 CEST  documentation foundation
+2026-07-19 20:32 CEST  system architecture foundation
+2026-07-27 16:55 CEST  publiczne repo jankes72/msdi-ai utworzone na GitHubie
+2026-07-28 07:46 CEST  SSI Core - podstawowa struktura systemu
+2026-07-28 07:56 CEST  Data World Foundation + PROJECT_JOURNAL
+2026-07-28 09:21 CEST  V2 Model Laboratory / V2ToV3 bridge
+2026-07-28 09:25 CEST  PROJECT_RULES: MSDI AI / SSI, V2/V3/V4/CORE
+2026-08-01 20:08 CEST  SSI V5 FAZA 1 - runtime, memory, teacher integration
+2026-08-14 09:59 CEST  publiczne repo CONTINUUM
+2026-08-16 15:27 CEST  publiczne repo SSI_V5_MASTER
+2026-08-25 19:27 CEST  obecny publiczny research mirror SSI_V5
+2026-08-29              ROBERT po hardening 600X + migracja SSI ORGANISM CORE
+```
+
+Na dzień 29 sierpnia 2026 daje to około **41 dni od root commita historii Git** oraz około **33 dni od utworzenia pierwszego publicznego repo `msdi-ai`** do obecnego etapu. To potwierdza bardzo szybkie tempo udokumentowanej ewolucji architektury.
+
+Nie interpretujemy tego jako dowodu, że wszystkie dane, wcześniejsze skrypty lub całe doświadczenie autora powstały w 33–41 dni. Takie twierdzenie byłoby zbyt mocne. Publicznie weryfikowalne jest natomiast to, że **udokumentowana architektura MSDI/SSI przeszła w tym krótkim okresie od v0.01/foundation przez SSI Core i SSI V5 do ROBERTA, stress-testów replay/idempotency oraz rozpoczęcia migracji neutralnego Organism Core**.
+
+Pełna oś czasu wraz z SHA commitów i zasadami interpretacji znajduje się w [`evidence/DEVELOPMENT_TIMELINE.md`](evidence/DEVELOPMENT_TIMELINE.md).
+
 ---
 
 # 3. Co jest wkładem projektu
