@@ -1,0 +1,51 @@
+{
+  "promotion_100x": {
+    "candidate_id": "cand_1787957893839_fff40de9",
+    "attempts": 100,
+    "new_challenger_results": 0,
+    "already_challenger_results": 100,
+    "pass": true
+  },
+  "replay_100x": {
+    "candidate_id": "cand_1787957893839_fff40de9",
+    "experience_id": "replay_stress_100x_unique",
+    "attempts": 100,
+    "added": 1,
+    "duplicate": 99,
+    "pass": true
+  },
+  "retry_storm_100x": {
+    "candidate_id": "cand_1787957893839_fff40de9",
+    "attempts": 100,
+    "any_new_challenger": false,
+    "all_promotions_idempotent": true,
+    "pass": true
+  },
+  "restart_storm_20x": {
+    "cycles": 20,
+    "all_candidates_match": true,
+    "all_challengers_match": true,
+    "all_experiences_match": true,
+    "all_replay_ok": true,
+    "pass": true
+  },
+  "null_contract_torture": {
+    "cases": 4,
+    "all_pass": true,
+    "details": [
+      {"case": "null_evidence", "result": "PASS", "status": "NOT_ELIGIBLE"},
+      {"case": "missing_context", "result": "PASS", "status": "NOT_ELIGIBLE"},
+      {"case": "stale_candidate_id", "result": "PASS", "status": "NOT_FOUND"},
+      {"case": "stale_challenger_id", "result": "PASS", "status": "NOT_FOUND"}
+    ],
+    "pass": true
+  },
+  "concurrency_torture": {
+    "threads": 3,
+    "attempts_per_thread": 20,
+    "errors": 0,
+    "unique_statuses": ["ALREADY_CHALLENGER"],
+    "all_idempotent": true,
+    "pass": true
+  }
+}
