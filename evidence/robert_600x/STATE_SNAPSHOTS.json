@@ -1,0 +1,18 @@
+{
+  "before_state": {
+    "timestamp": 1787962959.3816051,
+    "candidate_files": 100,
+    "challengers": 6,
+    "total_experiences_in_candidates": 379
+  },
+  "after_state": {
+    "timestamp": 1787963538.40175,
+    "candidate_files": 125,
+    "challengers": 30,
+    "total_experiences": 886,
+    "duplication_failures": 0,
+    "none_get_errors": 0,
+    "half_promoted_objects": 0
+  },
+  "note": "The BEFORE snapshot challenger count differs from the baseline/final reporting path (6 vs 5). This discrepancy is intentionally preserved."
+}
