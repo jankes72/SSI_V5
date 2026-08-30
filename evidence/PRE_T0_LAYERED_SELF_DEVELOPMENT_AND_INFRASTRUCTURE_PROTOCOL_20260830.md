@@ -267,3 +267,71 @@ BASELINE
 ```
 
 The objective is not to produce a retrospective success story. The objective is to show, with evidence, whether added SSI mechanisms actually shorten, improve, stabilize or otherwise change the path from problem to verified outcome.
+
+## 13. Collective Competence Evolution — target system effect
+
+The long-term target is not only that ROBERT, Director and individual Agents learn separately. The intended SSI effect is that **independently acquired, portable and verified competence can improve the capability of the whole system**.
+
+All research bodies may share a common trained substrate and verified baseline champions, while preserving separate identity, private history and individual Experience trajectories.
+
+```text
+COMMON SSI BODY / CONTINUUM / VERIFIED BASE CHAMPIONS
+-> ROBERT
+-> DIRECTOR
+-> AGENT 1
+-> AGENT 2
+-> AGENT 3
+-> AGENT 4
+-> AGENT 5
+-> AGENT 6
+```
+
+Each unit can then acquire its own Experience, micronetworks, strategies and local champions.
+
+When an Agent develops a potentially useful practical skill, the intended flow is:
+
+```text
+AGENT EXPERIENCE
+-> LOCAL MICRONETWORK / SKILL
+-> CHALLENGER / CHAMPION
+-> DIRECTOR COMPARISON
+-> ROBERT / DIRECTOR CURRENT CHAMPION COMPARISON
+-> INDEPENDENT VALIDATION
+```
+
+Possible outcomes include:
+
+```text
+NEW SKILL IS BETTER
+-> PROMOTE / ADOPT
+-> SHARED VERIFIED COMPETENCE
+
+NEW SKILL IS EQUIVALENT BUT CONTAINS NOVEL VERIFIED CASES
+-> DEDUPLICATE
+-> ENRICH EXISTING CHAMPION
+-> REVALIDATE
+
+NEW SKILL IS LOCAL / WORSE / UNSTABLE
+-> KEEP LOCAL / REJECT / CONTINUE TESTING
+```
+
+Director may also form higher-order micronetworks that compare and integrate evidence from multiple independently developed competence paths.
+
+The intended collective effect is therefore:
+
+```text
+INDIVIDUAL LEARNING
+-> LOCAL COMPETENCE
+-> VALIDATION
+-> COLLECTIVE COMPARISON
+-> BEST VERIFIED KNOWLEDGE
+-> SHARED PRACTICAL CHAMPION
+-> STRONGER ROBERT + DIRECTOR
+-> STRONGER FUTURE SSI BASELINE
+```
+
+This is the target meaning of **Collective Competence Evolution**: one unit may discover something independently, but after validation the practical value of that discovery can become available to the wider SSI system without copying the unit's complete private history, moral trajectory or identity.
+
+For the six-agent longitudinal experiment, this separation is important. Agents may begin with a common trained body and common verified practical competence while later diverging through different worlds, retained data, relationships, decisions, Moral AI trajectories and private Experience. The research objective is then to observe both **individual divergence** and **collective competence gain**.
+
+This section describes the intended target effect. Each transfer, enrichment and higher-order integration still requires machine evidence before it can be treated as empirically demonstrated.
