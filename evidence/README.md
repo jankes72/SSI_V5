@@ -26,6 +26,23 @@ Zawiera:
 - rollback proof;
 - zasady reprodukcji/parity.
 
+### `PRE_T0_LAYERED_SELF_DEVELOPMENT_AND_INFRASTRUCTURE_PROTOCOL_20260830.md`
+Protokół porządkujący aktualny eksperyment warstwowy ROBERTA i kolejne porównania PRE-T0.
+
+Opisuje:
+- baseline uproszczonego ROBERTA;
+- pomiar czasu, błędów, retry, model switching, LEGO rebuilds i checkpoint returns;
+- śledzenie skilli, mikrosieci oraz `candidate -> challenger -> champion`;
+- porównania `baseline -> kolejna capability layer -> ponowny pomiar`;
+- Hello World i Tetris jako kontrolowane zadania wykonawcze;
+- Eyes/Hands jako osobny eksperyment wymagający własnego machine evidence;
+- Technology Memory / External Technology Knowledge Store;
+- uczenie wzorców samorozwoju przez LEGO i champion lifecycle;
+- rolę Tailscale jako warstwy przenośności między lokalnymi węzłami i przyszłymi serwerami;
+- drogę `single execution -> multi-worker -> multi-CONTINUUM -> distributed infrastructure`;
+- ekonomiczny wzrost realnych capability SSI poprzez compute, storage i infrastrukturę;
+- granicę między publicznym evidence a prywatną implementacją.
+
 ## Ograniczenia
 
 Publiczny evidence mirror nie zawiera sekretów, API keys, tokenów, prywatnych danych ani pełnego prywatnego runtime. Publikowane artefakty mają umożliwiać kontrolę twierdzeń bez ujawniania wrażliwych danych.
