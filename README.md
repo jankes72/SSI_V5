@@ -666,6 +666,58 @@ To jest projektowany mechanizm alokacji, nie gwarancja zysku.
 
 Nagroda ma więc mieć dwa poziomy: wewnętrzny sygnał uczenia oraz potencjalny realny wzrost zasobów systemu.
 
+## Docelowe zadanie ekonomiczne i badawcze
+
+Jednym z długoterminowych celów SSI jest sprawdzenie, czy Director potrafi odpowiadać nie tylko na pytanie **„jak wykonać zadanie?”**, lecz również na pytanie **„jak w sposób kontrolowany wytworzyć realną wartość ekonomiczną, jak mierzyć wynik i jak sensownie reinwestować część uzyskanych zasobów w dalszy rozwój własnego systemu?”**.
+
+Projektowana pętla wygląda następująco:
+
+```text
+IDENTIFY ECONOMIC OPPORTUNITY
+-> BUILD / SELECT STRATEGY
+-> EXECUTE THROUGH ROBERT / TOOLS
+-> OBSERVE REAL OUTCOME
+-> PROFIT / LOSS / FAILURE / UNEXPECTED RESULT
+-> EXPERIENCE
+-> MICRONETWORK UPDATE
+-> RISK / CAPITAL ALLOCATION
+-> CONTROLLED REINVESTMENT IN SSI
+-> NEW CAPABILITY / MORE RESOURCES
+-> NEXT DECISION CYCLE
+```
+
+Ten cel ekonomiczny **nie zastępuje głównego celu badawczego SSI**. Realne sukcesy, porażki i ograniczone zasoby mają być również źródłem eksperymentów nad zachowaniem Agentów i warstwy `Iskra / Moral AI`.
+
+Badane ma być nie tylko to, **czy Agent osiągnął wynik**, ale także **jak sukces albo porażka wpływa na jego kolejne decyzje, relacje i interpretację sytuacji**.
+
+Przykładowe obserwacje obejmują:
+
+- reakcję Agenta na własny sukces i własną porażkę;
+- reakcję na sukces lub przewagę innego Agenta;
+- zmianę poziomu ryzyka po stracie lub serii sukcesów;
+- pojawienie się współpracy, konkurencji, nieufności, pomocy, wymiany informacji lub odmowy współpracy;
+- trwałość i zmianę relacji społecznych między Agentami;
+- wpływ wcześniejszych relacji na późniejsze decyzje ekonomiczne i strategiczne;
+- konflikty między krótkoterminową korzyścią, długoterminowym interesem, relacją społeczną i aktualną interpretacją Iskry;
+- powstawanie nowych mikrosieci po zdarzeniach o wysokim znaczeniu emocjonalnym, społecznym lub ekonomicznym;
+- różnice między Agentami posiadającymi ten sam substrate technologiczny, ale inną historię Experience i inny initial value prior.
+
+```text
+SUCCESS / FAILURE / LOSS / GAIN
++ ISKRA
++ PERSONAL HISTORY
++ SOCIAL RELATIONSHIPS
++ MICRONETWORKS
+-> DECISION
+-> CONSEQUENCE
+-> NEW EXPERIENCE
+-> POSSIBLE VALUE / STRATEGY CHANGE
+```
+
+Dzięki temu przyszła warstwa ekonomiczna ma pełnić podwójną rolę: **praktycznego testu zdolności Directora do tworzenia i alokowania wartości** oraz **kontrolowanego środowiska do badań nad tym, jak doświadczenie, sukces, porażka i relacje społeczne wpływają na decyzje Agentów**.
+
+Jest to cel docelowy i hipoteza badawcza — nie deklaracja, że pełna autonomiczna pętla ekonomiczna została już osiągnięta.
+
 ---
 
 # 23. Inne piony Directora
@@ -692,10 +744,12 @@ Najważniejsze pytania badawcze:
 3. Czy Agent przeniesie wiedzę i relacje między światami?
 4. Czy ranking wpłynie na jego zachowanie, a jeśli tak — jak?
 5. Czy powstaną współpraca, nieufność, konflikty, koalicje lub inne nieprogramowane relacje?
-6. Czy Agent wykorzysta Teachera/generację w sposób nieprzewidziany przez autora?
-7. Czy populacja odkryje praktyczne skille lepsze od aktualnych championów Directora/ROBERTA?
-8. Czy Director potrafi rozpoznać, **jakie kompetencje spowodowały sukces**, zamiast tylko wskazać zwycięzcę?
-9. Czy pojawią się stabilne nieprzewidziane zachowania, które warto poddać osobnym testom dotyczącym agency, metapoznania lub generalizacji?
+6. Czy sukces, porażka, strata lub przewaga innego Agenta zmienią późniejsze decyzje, poziom ryzyka, relacje społeczne lub interpretację Iskry?
+7. Czy Agent wykorzysta Teachera/generację w sposób nieprzewidziany przez autora?
+8. Czy populacja odkryje praktyczne skille lepsze od aktualnych championów Directora/ROBERTA?
+9. Czy Director potrafi rozpoznać, **jakie kompetencje, doświadczenia i relacje spowodowały sukces albo porażkę**, zamiast tylko wskazać zwycięzcę?
+10. Czy pojawią się stabilne nieprzewidziane zachowania, które warto poddać osobnym testom dotyczącym agency, metapoznania lub generalizacji?
+11. Czy w przyszłości realny wynik ekonomiczny może służyć jednocześnie jako mierzalny outcome działania i jako źródło Experience dla dalszego kontrolowanego rozwoju SSI?
 
 ---
 
