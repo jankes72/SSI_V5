@@ -177,6 +177,77 @@ SHARED PERSONAL HISTORY
 
 Samorozwój i Eyes/Hands: [`evidence/DIRECTOR_AUTONOMOUS_EVOLUTION_AND_ROBERT_EYES_HANDS.md`](evidence/DIRECTOR_AUTONOMOUS_EVOLUTION_AND_ROBERT_EYES_HANDS.md)
 
+## ROBERT: BUILD → USE → DISCOVER LIMITATION → MODIFY → RETEST
+
+Jednym z kluczowych eksperymentów nie jest samo sprawdzenie, czy ROBERT potrafi stworzyć program albo zagrać w Tetrisa. Istotna jest pełna pętla, w której system **najpierw buduje środowisko, a później sam staje się jego użytkownikiem**.
+
+Planowany przebieg:
+
+```text
+ROBERT BUILDS TETRIS
+-> FREEZE / TEST / EVIDENCE
+-> EYES PERCEIVE THE CREATED GAME
+-> HANDS TRY TO CONTROL IT
+-> REAL INTERACTION PRODUCES FEEDBACK
+-> LIMITATION OR FAILURE MAY APPEAR
+-> ROBERT DIAGNOSES THE LIMITATION
+-> REUSE EXISTING SKILL OR CREATE A NEW ONE
+-> MODIFY GAME / TOOL / INTERFACE / OWN STRATEGY
+-> RETEST
+-> COMPARE OUTCOME
+-> NEW EXPERIENCE
+-> MICRONETWORK UPDATE
+-> CANDIDATE / CHALLENGER / CHAMPION WHEN JUSTIFIED
+```
+
+Przykładowo ROBERT może odkryć, że kod, który sam wcześniej uznał za poprawny, jest zbyt szybki, niewygodny do sterowania przez Hands, trudny do obserwowania przez Eyes albo nie daje wystarczającego feedbacku. Wtedy interesujące jest **co zrobi z tym faktem**.
+
+Możliwe ścieżki obejmują:
+
+- zmianę własnej strategii działania;
+- zmianę parametrów gry;
+- przebudowę interfejsu;
+- modyfikację własnego kodu;
+- stworzenie narzędzia pomocniczego;
+- reuse wcześniej zdobytego skilla;
+- odrzucenie nieskutecznej modyfikacji po regresji;
+- utrwalenie skuteczniejszego rozwiązania w mikrosieci.
+
+Kluczowe pytanie badawcze nie brzmi więc tylko:
+
+> Czy ROBERT potrafi zbudować Tetrisa i w niego grać?
+
+ale również:
+
+> Czy system potrafi użyć własnego dzieła, wykryć praktyczne ograniczenie niewidoczne podczas samego tworzenia, zmodyfikować własny kod lub sposób działania, ponownie przetestować wynik i zachować z tego **przenośną kompetencję**?
+
+Tetris jest kontrolowanym środowiskiem testowym. Wartością nie musi być „skill grania w Tetrisa”. Z jednej sesji mogą powstać bardziej ogólne kompetencje, np.:
+
+```text
+PERCEIVE INTERFACE
+CONTROL TOOL
+MEASURE FEEDBACK
+DETECT USABILITY LIMITATION
+DISTINGUISH STRATEGY FAILURE FROM TOOL FAILURE
+MODIFY OWN ARTIFACT
+RETEST AFTER CHANGE
+ROLL BACK REGRESSION
+REUSE VERIFIED SOLUTION
+ADAPT TOOL TO EXECUTOR CAPABILITY
+```
+
+Jeżeli takie kompetencje przejdą wymagany lifecycle i walidację, mogą wejść do wspólnej, zweryfikowanej bazy praktycznych kompetencji SSI. Dzięki temu późniejsze Agent Body nie muszą rozpoczynać od poziomu „organizmu, który nie umie chodzić”. Mogą dostać **ten sam zweryfikowany substrate podstawowych umiejętności**, a dopiero później różnicować się przez własne Experience, mikrosieci, światy, relacje i Iskrę.
+
+To tworzy ważne rozróżnienie eksperymentalne:
+
+```text
+SHARED VERIFIED BASE COMPETENCE
+!=
+INDIVIDUAL EXPERIENCE / IDENTITY / VALUE TRAJECTORY
+```
+
+Dzięki temu późniejsze różnice między Agentami mogą być badane na wspólnym wykształconym fundamencie, zamiast wynikać z przypadkowej różnicy w elementarnych umiejętnościach startowych.
+
 ---
 
 # 7. Agent Body — sześć technologicznie takich samych jednostek
