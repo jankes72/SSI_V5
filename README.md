@@ -17,6 +17,60 @@ Aktualny indeks prawdy: [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
 
 ---
 
+# 0. Linia rozwoju SSI V5 i początek obecnej migracji
+
+`SSI_V5_MASTER` oznacza początek obecnej linii systemu SSI V5. Nie jest jednak początkiem obecnej migracji Organism Core.
+
+Najpierw rozwijany był właściwy system SSI V5, następnie powstał ROBERT jako wykonawcze ciało systemu, a dopiero po jego rozwoju, stabilizacji i hardeningu rozpoczęto kontrolowane wydzielanie jego sprawdzonych mechanizmów do neutralnego `SSI Organism Core`.
+
+```text
+SSI_V5_MASTER
+-> ROZWÓJ SSI V5
+-> ROBERT
+-> STABILIZACJA / HARDENING ROBERTA
+-> START MIGRACJI
+-> DEKOMPOZYCJA SPRAWDZONYCH MECHANIZMÓW
+-> PARITY / REGRESSION / REPLAY / PERSISTENCE TESTS
+-> SSI ORGANISM CORE
+-> ROBERT BODY / DIRECTOR BODY / AGENT BODY
+```
+
+Obecny etap nie powinien więc być interpretowany jako budowanie całego SSI od zera ani jako zwykłe przepisywanie starego projektu. Jest to **kontrolowana rekonstrukcja i migracja istniejącej linii systemu**, w której mechanizmy ROBERTA są rozbierane na mniejsze komponenty, niezależnie testowane, dokumentowane i ponownie integrowane z zachowaniem evidence, wcześniejszych FAIL, późniejszych PASS, przyczyn awarii i decyzji architektonicznych.
+
+Publiczna historia Git ma dzięki temu dwa cele.
+
+**1. Reprodukowalność badawcza.**  
+Ma być możliwe odtworzenie, co istniało na danym etapie, co działało, co zawiodło, gdzie wykryto problem, jaka zmiana została wykonana i czy późniejszy test rzeczywiście poprawił wynik.
+
+**2. Developmental lineage systemu.**  
+Historia powstawania SSI ma docelowo stać się dostępna dla ROBERTA i Directora jako część ich pamięci rozwojowej. System ma znać nie tylko swój aktualny stan, ale również drogę, która do niego doprowadziła:
+
+```text
+EARLIER STATE
+-> FAILURE / LIMITATION
+-> DIAGNOSIS
+-> MODIFICATION
+-> TEST
+-> EVIDENCE
+-> CURRENT CAPABILITY
+```
+
+Pozwala to później badać, czy dostęp do własnej historii rozwoju pomaga systemowi rozpoznawać wcześniejsze błędy, rozumieć pochodzenie swoich kompetencji, unikać regresji, rekonstruować przyczyny decyzji architektonicznych i podejmować lepsze decyzje podczas dalszego self-development.
+
+W tym sensie historia Git jest jednocześnie **dokumentacją eksperymentu** i potencjalnym źródłem przyszłej **pamięci genealogicznej / rozwojowej systemu**.
+
+Ważne jest również tempo tej linii rozwojowej. Publiczne repo dokumentuje szybki rozwój obecnej architektury, ale nie należy mylić dwóch różnych etapów:
+
+```text
+SSI_V5_MASTER = początek obecnej linii SSI V5
+ROBERT STABILIZATION = punkt poprzedzający obecną migrację
+ORGANISM CORE MIGRATION = późniejszy etap wydzielania i walidacji mechanizmów ROBERTA
+```
+
+Dlatego chronologia repo pokazuje jednocześnie **tempo powstawania obecnego systemu** oraz późniejsze tempo jego formalizacji, hardeningu i migracji — nie tylko porządkowanie wcześniej gotowego projektu.
+
+---
+
 # 1. Najkrótsza prawdziwa historia SSI
 
 SSI nie zaczęło się od Directora, ROBERTA ani od hasła „AGI”. Zaczęło się od wieloletnich eksperymentów autora z danymi piłkarskimi, predykcjami, własnymi sieciami neuronowymi, obserwacją ich błędów i próbą zrozumienia **dlaczego model działa albo nie działa**.
@@ -699,13 +753,15 @@ Niezależny engineering SSI nie oznacza przypisywania sobie cudzych idei źród�
 2026-07-28  SSI Core / Data World / Model Laboratory
 2026-08-01  pierwsze jawne SSI V5
 2026-08-14  CONTINUUM repo
-2026-08-16  SSI_V5_MASTER
+2026-08-16  SSI_V5_MASTER — początek obecnej linii SSI V5
 2026-08-25  SSI_V5 public research mirror
-2026-08-29  ROBERT hardening + Organism Core migration + public truth/evidence consolidation
+2026-08-29  ROBERT stabilization/hardening -> start Organism Core migration + public truth/evidence consolidation
 2026-08-31  ROBERT idempotency/replay/persistence hardening — final stress 600/600 PASS
 ```
 
-Ta oś czasu potwierdza formalizację repo, **nie początek wcześniejszych eksperymentów autora z danymi i predykcją**.
+Ta oś czasu rozdziela dwie rzeczy: **powstawanie obecnej linii SSI V5** oraz późniejszą **migrację mechanizmów ROBERTA do Organism Core**. `SSI_V5_MASTER` dokumentuje początek obecnej linii systemu, natomiast obecna migracja rozpoczęła się później — po powstaniu i stabilizacji ROBERTA.
+
+Chronologia potwierdza formalizację i rozwój repo, **nie początek wcześniejszych eksperymentów autora z danymi i predykcją**.
 
 Pełna oś czasu: [`evidence/DEVELOPMENT_TIMELINE.md`](evidence/DEVELOPMENT_TIMELINE.md)
 
