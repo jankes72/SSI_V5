@@ -3,7 +3,7 @@
 ## Persistent adaptive intelligence, micronetwork learning, dynamic worlds and longitudinal agent research
 
 **Status:** `PRE-T0 / ORGANISM-CORE-MIGRATION`  
-**Data aktualizacji:** `2026-08-29`  
+**Data aktualizacji:** `2026-08-31`  
 **Autor architektury SSI:** **Paweł Jankiewicz** (`PROGRAMMER_ROOT`)  
 **Najwyższa authority:** **Paweł Jankiewicz / PROGRAMMER_ROOT**  
 **Stan hipotezy AGI / świadomości:** `NIEUDOWODNIONA — BADANA EKSPERYMENTALNIE`  
@@ -527,7 +527,72 @@ FAIL NEVER HAPPENED
 
 ---
 
-# 21. Pętla ekonomiczna SSI
+# 21. Milestone — idempotency, replay i persistence stress 600×
+
+**Status:** `DEVELOPMENT_VALIDATED — scoped idempotency/replay/persistence hardening`  
+**Data:** `2026-08-31`
+
+Kolejny etap hardeningu ROBERTA sprawdził, czy lifecycle mikrosieci zachowuje jeden logiczny stan przy wielokrotnych replayach, retry, restartach, duplikatach evidence, wartościach null i równoległych próbach tej samej operacji.
+
+Wcześniejsze testy ujawniły realne problemy: `H03_REPLAY_100X` oraz `H05_RESTART_STORM_20X` zakończyły się `FAIL`. Te wyniki pozostają częścią historii projektu. Po dalszym hardeningu wykonano szerszy przebieg końcowy:
+
+```text
+HARDCORE STRESS
+600 cases / 40 rounds / 15 cases per round
+
+start candidates:       125
+end candidates:         125
+start challengers:       31
+end challengers:         31
+start experiences:     5195
+end experiences:       5195
+
+new candidates:           0
+new challengers:          0
+duplication_failures:     0
+none_get_errors:          0
+half_promoted_objects:    0
+
+RESULT: 600 / 600 PASS
+```
+
+Dodatkowo persistence replay zakończył się `50/50 PASS`, a kontrola spójności wykazała `file_challengers_match_memory = true` oraz `0` zduplikowanych Experience pomiędzy kandydatami.
+
+## Obserwacje po dołączeniu pozostałych mikrosieci
+
+Po rozszerzeniu badanego stanu o pozostałe mikrosieci / Experience liczba Experience przed finalnym stress-runem wynosiła `5195`. Najważniejsze było nie samo zwiększenie wolumenu, ale sprawdzenie, czy większy stan nie złamie lifecycle.
+
+Zaobserwowano:
+
+- większy stan nie spowodował lawinowego tworzenia nowych kandydatów ani challengerów;
+- 600 kolejnych przypadków nie zwiększyło liczby Experience przez replay lub duplicate processing;
+- powtarzana promocja zachowała idempotencję — istniejący challenger nie był tworzony ponownie;
+- `half_promoted_objects = 0`, więc w badanym zakresie nie pozostały częściowo wypromowane obiekty;
+- persistence replay zachował spójność badanego stanu;
+- null i stale IDs kończyły się kontrolowanymi statusami (`NOT_ELIGIBLE` / `NOT_FOUND`) zamiast awarii;
+- concurrency torture nie przełamało promotion guard;
+- wcześniejsze FAIL nie zostały ukryte — stanowią evidence drogi `FAIL -> repair -> later PASS`.
+
+Znaczenie tego etapu jest architektoniczne: wraz ze wzrostem liczby mikrosieci i ścieżek wykonawczych rośnie ryzyko sztucznego rozmnażania Experience, podwójnych promocji i rozjazdu persistence ↔ memory. Ten stress-run daje machine evidence, że **badany lifecycle** utrzymał spójny stan w opisanym zakresie.
+
+```text
+EXPERIENCE
+-> DEDUPLICATION
+-> CANDIDATE
+-> PROMOTION GUARD
+-> CHALLENGER
+-> PERSISTENCE
+-> REPLAY / RETRY / RESTART / CONCURRENCY
+-> SAME LOGICAL STATE
+```
+
+Nie jest to twierdzenie, że cały SSI jest production-proof albo odporny na każdą klasę awarii. Wynik dotyczy wyłącznie przedstawionego zakresu testów.
+
+Pełne evidence: [`evidence/ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md`](evidence/ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md)
+
+---
+
+# 22. Pętla ekonomiczna SSI
 
 Docelowo Director ma podejmować decyzje ekonomiczne na podstawie najlepszych dostępnych strategii i evidence. ROBERT wykonuje zatwierdzone działania, a Agenci mogą dostarczać nowe strategie lub skille do późniejszej walidacji.
 
@@ -549,7 +614,7 @@ Nagroda ma więc mieć dwa poziomy: wewnętrzny sygnał uczenia oraz potencjalny
 
 ---
 
-# 22. Inne piony Directora
+# 23. Inne piony Directora
 
 Eksperyment Agentów jest tylko jednym z obszarów SSI. Docelowo Director/ROBERT mają również obsługiwać m.in.:
 
@@ -564,7 +629,7 @@ Eksperyment Agentów jest tylko jednym z obszarów SSI. Docelowo Director/ROBERT
 
 ---
 
-# 23. Co jest szczególnie badane
+# 24. Co jest szczególnie badane
 
 Najważniejsze pytania badawcze:
 
@@ -580,7 +645,7 @@ Najważniejsze pytania badawcze:
 
 ---
 
-# 24. Granice twierdzeń
+# 25. Granice twierdzeń
 
 SSI V5 **nie deklaruje**, że:
 
@@ -607,7 +672,7 @@ UNKNOWN
 
 ---
 
-# 25. Uczciwa atrybucja
+# 26. Uczciwa atrybucja
 
 Paweł Jankiewicz jest autorem nadrzędnej architektury SSI V5 i najwyższą authority projektu.
 
@@ -626,7 +691,7 @@ Niezależny engineering SSI nie oznacza przypisywania sobie cudzych idei źród�
 
 ---
 
-# 26. Publiczna chronologia
+# 27. Publiczna chronologia
 
 ```text
 2026-07-19  root Git commit: MSDI AI v0.01
@@ -637,6 +702,7 @@ Niezależny engineering SSI nie oznacza przypisywania sobie cudzych idei źród�
 2026-08-16  SSI_V5_MASTER
 2026-08-25  SSI_V5 public research mirror
 2026-08-29  ROBERT hardening + Organism Core migration + public truth/evidence consolidation
+2026-08-31  ROBERT idempotency/replay/persistence hardening — final stress 600/600 PASS
 ```
 
 Ta oś czasu potwierdza formalizację repo, **nie początek wcześniejszych eksperymentów autora z danymi i predykcją**.
@@ -645,7 +711,7 @@ Pełna oś czasu: [`evidence/DEVELOPMENT_TIMELINE.md`](evidence/DEVELOPMENT_TIME
 
 ---
 
-# 27. Główne dokumenty evidence
+# 28. Główne dokumenty evidence
 
 - [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
 - [`evidence/PROJECT_GENESIS_AND_EVOLUTION.md`](evidence/PROJECT_GENESIS_AND_EVOLUTION.md)
@@ -654,10 +720,11 @@ Pełna oś czasu: [`evidence/DEVELOPMENT_TIMELINE.md`](evidence/DEVELOPMENT_TIME
 - [`evidence/DIRECTOR_AUTONOMOUS_EVOLUTION_AND_ROBERT_EYES_HANDS.md`](evidence/DIRECTOR_AUTONOMOUS_EVOLUTION_AND_ROBERT_EYES_HANDS.md)
 - [`evidence/ISKRA_AGENT_MICRONETWORK_SOCIAL_DYNAMICS.md`](evidence/ISKRA_AGENT_MICRONETWORK_SOCIAL_DYNAMICS.md)
 - [`evidence/ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md`](evidence/ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md)
+- [`evidence/ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md`](evidence/ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md)
 
 ---
 
-# 28. Najkrótsza definicja projektu
+# 29. Najkrótsza definicja projektu
 
 **SSI V5 bada, czy trwałe jednostki posiadające własną pamięć, Experience, mikrosieci, value layer, narzędzia i dostęp do zmieniających się światów mogą samodzielnie rozwijać strategie i kompetencje, których autor nie zaprogramował wprost — oraz czy Director potrafi obserwować genezę tych zmian, wyłapywać przenośne skille i wykorzystać je do kontrolowanego wzrostu całego systemu.**
 
