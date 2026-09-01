@@ -1,3 +1,37 @@
+# SSI V5 — Research Front Door
+
+**Experimental persistent competence architecture for adaptive AI systems.**  
+SSI V5 investigates whether a long-running system can build, validate, preserve, reuse and revise competence across tasks using **Experience, micronetworks, Candidate -> Challenger -> Champion lifecycle, V10 stateful routing, LEGO composition and CONTINUUM persistence**.
+
+## Start here
+
+- **Technical reviewers / grant evaluators:** [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)
+- **Current project truth:** [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
+- **Grant / methodology FAQ:** [GRANT_REVIEWER_FAQ.md](GRANT_REVIEWER_FAQ.md)
+- **V10 architecture:** [V10_PREDICTIVE_ROUTING.md](V10_PREDICTIVE_ROUTING.md)
+- **Public machine evidence:** [evidence/README.md](evidence/README.md)
+- **Independent reproduction / critique:** [CONTRIBUTING.md](CONTRIBUTING.md)
+
+## Research focus
+
+```text
+EXPERIENCE
+-> MICRONETWORK
+-> CANDIDATE / CHALLENGER / CHAMPION
+-> V10 STATEFUL ROUTING
+-> LEGO COMPOSITION
+-> CONTINUUM
+-> OUTCOME
+-> FAILURE / SUCCESS HISTORY
+-> NEXT DECISION
+```
+
+The project is intentionally evidence-driven. Public claims are separated from hypotheses, failed tests remain part of the record, and current claim boundaries are documented explicitly.
+
+> **Important:** SSI V5 does not claim proven AGI or consciousness. Current results are scoped development evidence for specific mechanisms and test conditions.
+
+---
+
 # SSI V5 — Żywy Protokół Badawczy
 
 ## Persistent adaptive intelligence, micronetwork learning, stateful predictive competence routing, dynamic worlds and longitudinal agent research
