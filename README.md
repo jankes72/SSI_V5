@@ -1,6 +1,6 @@
 # SSI V5 — Żywy Protokół Badawczy
 
-## Persistent adaptive intelligence, micronetwork learning, dynamic worlds and longitudinal agent research
+## Persistent adaptive intelligence, micronetwork learning, stateful predictive competence routing, dynamic worlds and longitudinal agent research
 
 **Status:** `PRE-T0 / ORGANISM-CORE-MIGRATION`  
 **Data aktualizacji:** `2026-09-01`  
@@ -15,12 +15,68 @@
 
 ---
 
+# Najważniejsza rzecz do zrozumienia o V10
+
+**V10 nie jest przede wszystkim szybszym routerem.**
+
+Kanoniczna rola V10 w SSI to:
+
+> **Stateful Predictive Competence & Recovery Router** — warstwa, która wykorzystuje bieżący stan zadania, istniejące zwalidowane kompetencje, historię prób, wcześniejsze outcomes, failure signatures i confidence do wyboru następnej ścieżki działania.
+
+```text
+CURRENT TASK / WORLD STATE
++ VERIFIED MICRONETWORK COMPETENCE
++ ATTEMPT HISTORY
++ PRIOR OUTCOMES
++ FAILURE SIGNATURES
++ CONFIDENCE
+        |
+        v
+V10 STATEFUL PREDICTIVE ROUTING
+        |
+        +-> REUSE_TOP1
+        +-> VERIFY_TOPK
+        +-> ALTERNATIVE COMPETENCE / LEGO COMPOSITION
+        +-> BLOCK BLIND RETRY
+        +-> FULL_FLOW
+```
+
+Podstawowa zasada anti-loop:
+
+```text
+SAME / EQUIVALENT STATE
++ SAME FAILURE SIGNATURE
++ SAME STRATEGY / ROUTE
++ NO NEW EVIDENCE
+
+=> DO NOT BLINDLY REPEAT
+```
+
+Jeżeli system już zna negatywny outcome danej ścieżki w porównywalnym stanie, V10 ma nie tylko „znaleźć coś podobnego”, ale również wykorzystać historię wykonania, aby zdecydować czy:
+
+- ponownie użyć sprawdzonej części rozwiązania;
+- zmienić parametry;
+- zmienić kompozycję klocków LEGO;
+- wybrać innego Championa / kompetencję;
+- przejść przez `VERIFY_TOPK`;
+- eskalować do canonical `FULL_FLOW`.
+
+**Przyspieszenie jest ważnym skutkiem poprawnego reuse, ale nie pełnym znaczeniem V10.**
+
+Pełny opis:
+
+- [V10_PREDICTIVE_ROUTING.md](V10_PREDICTIVE_ROUTING.md)
+- [V10_PREDICTIVE_ROUTING_FAQ.md](V10_PREDICTIVE_ROUTING_FAQ.md)
+
+---
+
 # Dla grantodawców, sponsorów i recenzentów technicznych
 
 Jeżeli oceniasz SSI V5 po raz pierwszy, zacznij tutaj:
 
 - **[START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)** — krótka ścieżka wejścia dla recenzenta;
 - **[GRANT_REVIEWER_FAQ.md](GRANT_REVIEWER_FAQ.md)** — odpowiedzi na najtrudniejsze pytania techniczne i metodologiczne;
+- **[V10_PREDICTIVE_ROUTING.md](V10_PREDICTIVE_ROUTING.md)** — kanoniczna definicja V10 jako stateful predictive competence & recovery router;
 - **[CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)** — aktualny indeks stanu projektu;
 - **[evidence/README.md](evidence/README.md)** — indeks publicznego machine evidence;
 - **[Test 2 — full-flow 600×](evidence/ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md)**;
@@ -65,9 +121,9 @@ fallback_count:        0
 known correctness: 100/100
 ```
 
-Interpretacja jest celowo wąska: wynik wspiera hipotezę, że **po zbudowaniu i zwalidowaniu kompetencji system może w kontrolowanym zakresie ominąć niepotrzebny pełny flow i użyć krótszej ścieżki bez zaobserwowanego spadku poprawności na badanym podzbiorze known cases**.
+Interpretacja wydajnościowa jest celowo wąska: wynik wspiera hipotezę, że **po zbudowaniu i zwalidowaniu kompetencji system może w kontrolowanym zakresie ominąć niepotrzebny pełny flow i użyć krótszej ścieżki bez zaobserwowanego spadku poprawności na badanym podzbiorze known cases**.
 
-Nie jest to twierdzenie, że V10 zawsze będzie szybszy, że każdy workload zachowa ten sam współczynnik przyspieszenia albo że SSI jest production-ready.
+Nie jest to jednak pełna hipoteza V10. Pełna rola V10 obejmuje także **state/history awareness, failure-aware routing, anti-loop i recovery**. Dedykowany benchmark tych funkcji pozostaje do wykonania.
 
 ---
 
@@ -96,7 +152,7 @@ Architektura łączy m.in.:
 - mikrosieci kompetencji;
 - lifecycle `Candidate -> Challenger -> Champion`;
 - zbiorową inteligencję;
-- V10 adaptive routing;
+- V10 stateful predictive competence & recovery routing;
 - CONTINUUM;
 - LEGO development methodology;
 - checkpoint/recovery;
@@ -163,6 +219,16 @@ FOOTBALL WORLD / REAL OUTCOMES
 ```
 
 Kluczowa obserwacja była prosta: błąd modelu może być informacją, jeśli powtarza się w sposób systematyczny.
+
+Ta zasada wraca w V10 w bardziej ogólnej postaci:
+
+```text
+FAILURE
+!= ONLY ERROR TO RETRY
+
+FAILURE
+= INFORMATION FOR THE NEXT ROUTING DECISION
+```
 
 Szczegóły genezy:
 
@@ -251,25 +317,59 @@ Nowa mikrosieć nie powinna powstawać automatycznie po jednym sukcesie. Warunki
 
 ---
 
-# 4. V10 — inteligentny dostęp do istniejącej kompetencji
+# 4. V10 — stateful predictive competence & recovery routing
 
-V10 nie zastępuje mikrosieci. Jest warstwą dostępu do istniejącej, zwalidowanej struktury kompetencji.
+V10 nie zastępuje mikrosieci. Mikrosieć przechowuje rozwijaną kompetencję; V10 decyduje **czy, kiedy i jak jej użyć w aktualnym stanie działania**.
 
 ```text
-INPUT
+MICRONETWORK
+= PERSISTENT VALIDATED COMPETENCE
+
+V10
+= STATEFUL PREDICTIVE ACCESS
++ CONFIDENCE GATE
++ HISTORY / OUTCOME AWARENESS
++ FAILURE-AWARE ROUTING
++ ANTI-LOOP
++ RECOVERY DECISION
+```
+
+Podstawowy confidence flow:
+
+```text
+INPUT / STATE
 -> V10
 -> HIGH CONFIDENCE      -> REUSE_TOP1
 -> MEDIUM CONFIDENCE    -> VERIFY_TOPK
 -> LOW / UNKNOWN        -> FULL_FLOW
 ```
 
-Architektura V10 obejmuje mechanizmy szybkiego lookup, similarity, confidence gate, feedback i route compilation.
+Ale V10 ma również szerszą funkcję:
 
-Najważniejsze pytanie nie brzmi tylko "czy reuse jest szybkie?", ale również:
+```text
+STATE
++ ROUTE X
+-> FAILURE F
+-> RECORD OUTCOME
+-> EQUIVALENT STATE
+-> V10 SEES X + F
+-> DO NOT BLINDLY REPEAT X WITHOUT NEW EVIDENCE
+-> CHANGE / VERIFY / ALTERNATIVE / FULL_FLOW
+```
 
-> Czy router potrafi rozpoznać sytuację, w której wcześniejszej kompetencji **nie wolno** bezpiecznie użyć?
+Architektura V10 obejmuje więc nie tylko szybki lookup, similarity, confidence gate, feedback i route compilation, ale również **history-aware recovery**.
 
-To jest jeden z głównych tematów dalszej walidacji.
+Najważniejsze pytania badawcze nie brzmią tylko:
+
+> Czy reuse jest szybkie?
+
+ale również:
+
+> Czy router potrafi rozpoznać sytuację, w której wcześniejszej kompetencji nie wolno bezpiecznie użyć?
+
+oraz:
+
+> Czy po znanym niepowodzeniu potrafi nie wrócić bezmyślnie do tej samej strategii, lecz wybrać sensowną alternatywę?
 
 ---
 
@@ -277,14 +377,18 @@ To jest jeden z głównych tematów dalszej walidacji.
 
 V10 może używać mechanizmów przypominających cache lub routing. Nie jest to ukrywane ani przedstawiane jako samodzielna innowacja.
 
-Różnica dotyczy obiektu, do którego router prowadzi.
+Różnica dotyczy zarówno obiektu, do którego router prowadzi, jak i informacji wykorzystywanej do decyzji.
 
 ```text
 CACHE
 = zachowaj wcześniejszy wynik
 
-SSI
+SIMPLE ROUTER
+= wybierz trasę na podstawie wejścia
+
+SSI / V10
 = zbieraj Experience
++ utrzymuj historię prób i outcomes
 + porównuj rozwiązania
 + gromadź evidence
 + waliduj
@@ -292,9 +396,11 @@ SSI
 + umożliwiaj challengerom konkurencję
 + rewaliduj / rollback
 + routuj do zweryfikowanej kompetencji
++ nie powtarzaj ślepo znanej nieskutecznej ścieżki
++ wybierz recovery / alternatywę / full flow
 ```
 
-Najważniejszym obiektem nie jest więc zapamiętana odpowiedź, lecz **ewoluujący Champion wraz z historią evidence i konkurującymi rozwiązaniami**.
+Najważniejszym obiektem nie jest więc zapamiętana odpowiedź, lecz **ewoluujący Champion wraz z historią evidence, konkurującymi rozwiązaniami i historią ich użycia**.
 
 ---
 
@@ -345,11 +451,12 @@ MISSION
 CONTINUUM i mikrosieci rozwiązują różne problemy:
 
 - CONTINUUM przechowuje ciągłość pracy;
-- mikrosieci przechowują i rozwijają kompetencję.
+- mikrosieci przechowują i rozwijają kompetencję;
+- V10 wykorzystuje bieżący stan i historię outcomes do wyboru następnej ścieżki.
 
 ---
 
-# 8. LEGO development methodology
+# 8. LEGO development methodology i V10
 
 LEGO to metodologia rozbijania dużych zmian na małe kontraktowe jednostki.
 
@@ -367,7 +474,20 @@ LARGE GOAL
 -> NEXT BLOCK
 ```
 
-Metoda powstała praktycznie podczas budowy SSI. Jednym z przyszłych pytań badawczych jest to, czy sama metodologia budowania może stać się zweryfikowaną kompetencją systemu.
+V10 nadaje temu dodatkowe znaczenie wykonawcze: historia tego, które klocki i kompozycje działały albo zawodziły, może wpływać na kolejną decyzję.
+
+```text
+GOAL
+-> LEGO BLOCK A + B + C
+-> TEST
+-> FAILURE F
+-> V10 CONSULTS HISTORY
+-> KEEP VERIFIED GOOD BLOCKS
+-> REPLACE / RECONFIGURE FAILED PATH
+-> RETEST
+```
+
+Celem nie jest wykonywanie całej budowy od początku ani powtarzanie dokładnie tej samej nieskutecznej konfiguracji.
 
 ---
 
@@ -389,15 +509,11 @@ ROBERT jest wykonawczym ciałem systemu posiadającym narzędzia, runtime, Eyes/
 
 Director i ROBERT mogą korzystać z tych samych przenośnych Championów, ale nie oznacza to automatycznie wspólnej prywatnej pamięci ani tożsamości.
 
-Szczegóły:
-
-- [evidence/DIRECTOR_AUTONOMOUS_EVOLUTION_AND_ROBERT_EYES_HANDS.md](evidence/DIRECTOR_AUTONOMOUS_EVOLUTION_AND_ROBERT_EYES_HANDS.md)
-
 ---
 
 # 10. ROBERT: BUILD -> USE -> DISCOVER LIMITATION -> MODIFY -> RETEST
 
-Jednym z ważnych przyszłych eksperymentów jest sytuacja, w której ROBERT nie tylko tworzy artefakt, ale później sam go używa.
+Jednym z ważnych eksperymentów jest sytuacja, w której ROBERT nie tylko tworzy artefakt, ale później sam go używa.
 
 ```text
 ROBERT BUILDS TOOL / GAME
@@ -407,12 +523,44 @@ ROBERT BUILDS TOOL / GAME
 -> REAL FEEDBACK
 -> LIMITATION DISCOVERED
 -> DIAGNOSIS
--> REUSE SKILL OR CREATE NEW PATH
+-> V10 CONSULTS STATE + HISTORY
+-> REUSE VALID SKILL OR SELECT NEW PATH
 -> MODIFY ARTIFACT OR STRATEGY
 -> RETEST
 -> NEW EXPERIENCE
 -> MICRONETWORK UPDATE
 ```
+
+## Dlaczego Tetris jest ważnym przykładem
+
+Tetris pozwala oddzielić dwie klasy problemów.
+
+### ROBERT buduje / naprawia grę
+
+```text
+BUILD
+-> TEST
+-> FAILURE
+-> FAILURE SIGNATURE
+-> V10
+-> DO NOT REPEAT BAD LEGO COMPOSITION BLINDLY
+-> CHANGE ROUTE / BLOCK / STRATEGY
+-> RETEST
+```
+
+### ROBERT później sam gra
+
+```text
+BOARD STATE
+-> PERCEPTION
+-> V10 / COMPETENCE SELECTION
+-> ACTION
+-> OUTCOME
+-> EXPERIENCE
+-> NEXT STATE
+```
+
+Jeżeli określona strategia w porównywalnym stanie wielokrotnie prowadzi do tego samego złego rezultatu, historia outcome ma wpływać na następną decyzję.
 
 Wartością nie jest konkretny skill grania w jedną grę. Wartością mogą być kompetencje bardziej ogólne:
 
@@ -421,6 +569,8 @@ PERCEIVE INTERFACE
 CONTROL TOOL
 MEASURE FEEDBACK
 DISTINGUISH TOOL FAILURE FROM STRATEGY FAILURE
+REMEMBER FAILED ROUTE
+SELECT RECOVERY
 MODIFY OWN ARTIFACT
 RETEST
 ROLL BACK REGRESSION
@@ -462,10 +612,6 @@ WORLD STATE
 
 `ISKRA != ŚWIADOMOŚĆ`.
 
-Atrybucja źródłowej idei Moral AI jest zachowana w:
-
-- [evidence/ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md](evidence/ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md)
-
 ---
 
 # 12. Dynamiczne światy i pamięć biograficzna
@@ -503,6 +649,7 @@ Director ma analizować nie tylko wynik końcowy, ale genezę kompetencji:
 - jakie mikrosieci powstały;
 - jakie relacje zmieniły decyzję;
 - kiedy pojawiła się nowa strategia;
+- jakie trasy/strategie zawiodły;
 - czy skill jest przenośny;
 - czy powinien zostać Challengerem/Championem.
 
@@ -561,9 +708,7 @@ EARLIER FAIL
 FAIL NEVER HAPPENED
 ```
 
-Przykładowo wcześniejsze testy replay/restart ujawniły realne FAIL-e. Zostały zachowane, a późniejszy hardening zakończył się finalnym stress-runem 600/600 PASS w badanym zakresie.
-
-To jest ważniejsze metodologicznie niż publikowanie samego końcowego wyniku.
+Wcześniejszy failure powinien być zachowany nie tylko jako historia dla człowieka. W architekturze V10 ma on również potencjalnie stać się **informacją wpływającą na przyszły routing i recovery**.
 
 ---
 
@@ -571,8 +716,6 @@ To jest ważniejsze metodologicznie niż publikowanie samego końcowego wyniku.
 
 **Status:** `DEVELOPMENT_VALIDATED — scoped idempotency/replay/persistence hardening`  
 **Data:** `2026-08-31`
-
-Finalny przebieg:
 
 ```text
 600 cases / 40 rounds / 15 cases per round
@@ -620,7 +763,7 @@ known correctness: 100/100
 
 W tym konkretnym eksperymencie Test 3 był około `2.20x` szybszy od Testu 2 i około `54.5%` krótszy czasowo.
 
-Wynik nie jest używany jako uniwersalne twierdzenie o wszystkich workloadach.
+**To nie jest najważniejsza definicja V10.** Test 3 pokazuje część mechanizmu — selektywny routing i reuse. Pełna hipoteza obejmuje również state/history awareness, false-reuse control, failure-aware routing, anti-loop i recovery.
 
 Pełne evidence:
 
@@ -630,7 +773,7 @@ Pełne evidence:
 
 ---
 
-# 18. Najważniejszy kolejny eksperyment: learning effect end-to-end
+# 18. Najważniejszy kolejny eksperyment: learning + anti-loop + recovery end-to-end
 
 Kolejny najmocniejszy test powinien udowodnić pełny proces:
 
@@ -648,12 +791,17 @@ Kolejny najmocniejszy test powinien udowodnić pełny proces:
 11. V10 ROUTE BINDING
 12. RELATED NEW TASK
 13. REUSE / VERIFY
-14. COMPARE TIME + CORRECTNESS
-15. RESTART
-16. VERIFY PERSISTENCE
+14. FORCE A CONTROLLED FAILURE
+15. RECORD FAILURE SIGNATURE + ROUTE
+16. REPEAT EQUIVALENT STATE
+17. PROVE: NO BLIND SAME-ROUTE RETRY WITHOUT NEW EVIDENCE
+18. SELECT ALTERNATIVE / MODIFY LEGO / FULL_FLOW
+19. COMPARE TIME + CORRECTNESS + RECOVERY
+20. RESTART
+21. VERIFY PERSISTENCE OF COMPETENCE AND FAILURE HISTORY
 ```
 
-To jest ważniejsze niż sam kolejny rekord prędkości, ponieważ sprawdza czy system faktycznie **tworzy, waliduje, utrwala i później wykorzystuje kompetencję**.
+To jest ważniejsze niż sam kolejny rekord prędkości, ponieważ sprawdza czy system faktycznie **tworzy, waliduje, utrwala i wykorzystuje kompetencję oraz czy potrafi zmienić strategię na podstawie wcześniejszego niepowodzenia**.
 
 ---
 
@@ -661,7 +809,7 @@ To jest ważniejsze niż sam kolejny rekord prędkości, ponieważ sprawdza czy 
 
 Planowany jest mały, reprodukowalny demonstrator, który nie wymaga dostępu do prywatnego runtime ani sekretów.
 
-Recenzent powinien móc wybrać prosty scenariusz programistyczny i obserwować:
+Przykład programistyczny może pokazać:
 
 ```text
 CLEAN EXAMPLE
@@ -671,23 +819,11 @@ CLEAN EXAMPLE
 -> LIFECYCLE
 -> MICRONETWORK
 -> V10 BINDING
+-> CONTROLLED FAILURE
+-> V10 RECOVERY / ROUTE CHANGE
 ```
 
-następnie:
-
-```text
-RELATED EXAMPLE
--> V10
--> REUSE / VERIFY
--> RESULT
--> TIME / CORRECTNESS COMPARISON
-```
-
-Każdy przykład powinien móc zostać zresetowany do czystego stanu, aby demonstrator nie opierał się na wcześniej przygotowanej pamięci.
-
-To ma umożliwić zasadę:
-
-> **Nie pytaj tylko jak to działa — uruchom kontrolowany eksperyment i zobacz evidence.**
+Tetris jest dobrym kandydatem, ponieważ może pokazać zarówno budowę/naprawę, jak i późniejsze autonomiczne używanie artefaktu przez ROBERTA.
 
 ---
 
@@ -698,6 +834,8 @@ Projekt traktuje falsyfikowalność jako ważną część metodologii.
 Hipotezę osłabiłoby m.in.:
 
 - V10 przyspiesza, ale powoduje niedopuszczalny false reuse;
+- V10 nadal powtarza tę samą znaną nieskuteczną strategię mimo zachowanego failure history;
+- recovery wybiera alternatywy losowo lub bez poprawy outcome;
 - kompetencja działa tylko na niemal identycznych przypadkach;
 - Champion accumulation prowadzi do degradacji;
 - dynamiczny wzrost mikrosieci generuje niekontrolowaną redundancję;
@@ -705,8 +843,6 @@ Hipotezę osłabiłoby m.in.:
 - persistent competence staje się nieaktualna i nie daje się poprawić;
 - przewaga benchmarkowa znika przy niezależnej reprodukcji;
 - shared competence powoduje konflikty, których system nie potrafi rozwiązać.
-
-Te przypadki są celami przyszłych testów, nie tematami do ukrycia.
 
 ---
 
@@ -719,6 +855,7 @@ SSI V5 **nie deklaruje**, że:
 - niespodziewane zachowanie dowodzi świadomości;
 - wynik 600× dowodzi general intelligence;
 - V10 zawsze będzie szybszy od innych architektur;
+- pełny anti-loop został już uniwersalnie udowodniony;
 - każdy Agent-discovered skill nadaje się do transferu;
 - każda mikrosieć reprezentuje prawdę;
 - cały system jest production-ready;
@@ -750,9 +887,12 @@ Obszary wymagające formalnego porównania obejmują m.in.:
 - hierarchical agent memory;
 - episodic / semantic / procedural memory;
 - RAG;
+- semantic cache;
+- semantic/model routing;
 - knowledge graphs;
 - long-term agent memory;
 - dynamic routing;
+- planning/recovery architectures;
 - self-improving agents;
 - agent foundations;
 - multi-agent competence aggregation.
@@ -763,8 +903,11 @@ Najsilniejsza obecnie hipoteza oryginalności dotyczy dokładnej kombinacji:
 MULTI-TASK / MULTI-SPACE MICRONETWORKS
 + CANDIDATE / CHALLENGER / CHAMPION LIFECYCLE
 + COLLECTIVE COMPETENCE EVOLUTION
-+ V10 FAST ROUTING
++ V10 STATEFUL PREDICTIVE COMPETENCE ROUTING
++ HISTORY / OUTCOME-AWARE ANTI-LOOP
++ RECOVERY / ALTERNATIVE ROUTE SELECTION
 + CANONICAL FULL-FLOW FALLBACK
++ DYNAMIC LEGO COMPOSITION
 + DYNAMIC NEW-COMPETENCE FORMATION
 + PERSISTENT DEVELOPMENTAL LINEAGE
 ```
@@ -788,8 +931,6 @@ SSI ADAPTATION OF MORAL AI / ISKRA
 = PAWEŁ JANKIEWICZ
 ```
 
-Niezależny engineering SSI nie oznacza przypisywania sobie cudzych idei źródłowych.
-
 ---
 
 # 24. Publiczna chronologia
@@ -805,14 +946,8 @@ Niezależny engineering SSI nie oznacza przypisywania sobie cudzych idei źród�
 2026-08-29  ROBERT stabilization/hardening -> start Organism Core migration
 2026-08-31  final scoped 600× idempotency/replay/persistence PASS
 2026-09-01  V10 Hybrid Router Test 3 — 600 cases / 57.61 s / PASS
-2026-09-01  reviewer FAQ + grant/technical review entry point
+2026-09-01  V10 stateful predictive competence & recovery definition formalized in public reviewer docs
 ```
-
-Chronologia dokumentuje publiczną formalizację i rozwój repo; nie jest twierdzeniem, że eksperymenty autora rozpoczęły się dopiero w 2026 roku.
-
-Pełna oś czasu:
-
-- [evidence/DEVELOPMENT_TIMELINE.md](evidence/DEVELOPMENT_TIMELINE.md)
 
 ---
 
@@ -820,14 +955,17 @@ Pełna oś czasu:
 
 1. Czy persistent competence może być skutecznie oddzielona od konkretnego LLM?
 2. Czy V10 potrafi bezpiecznie odróżnić reuse od sytuacji wymagającej pełnego flow?
-3. Czy system potrafi tworzyć nowe kompetencje bez ręcznie zdefiniowanej kompletnej listy skilli?
-4. Czy Champion może być wzbogacany przez wiele niezależnych źródeł evidence bez degradacji jakości?
-5. Czy przenośna kompetencja może być współdzielona między różnymi bodies bez kopiowania ich prywatnej tożsamości?
-6. Czy Agent Bodies z tym samym substrate, ale inną historią i value prior rozwiną różne trwałe strategie?
-7. Czy Director potrafi odtworzyć genezę sukcesu lub porażki zamiast tylko obserwować finalny outcome?
-8. Czy system potrafi uczyć się własnej metodologii budowania i naprawiania narzędzi?
-9. Czy kilka równoległych CONTINUUM zachowa spójność checkpointów, evidence i state?
-10. Czy niezależny recenzent odtworzy przewagę Testu 3 na publicznym demonstratorze?
+3. Czy V10 potrafi wykorzystać historię failure/outcome do uniknięcia ślepego powtarzania nieskutecznej strategii?
+4. Czy recovery wybiera lepszą alternatywę niż blind retry?
+5. Czy system potrafi dynamicznie przeorganizować kompozycję LEGO na podstawie outcome?
+6. Czy system potrafi tworzyć nowe kompetencje bez ręcznie zdefiniowanej kompletnej listy skilli?
+7. Czy Champion może być wzbogacany przez wiele niezależnych źródeł evidence bez degradacji jakości?
+8. Czy przenośna kompetencja może być współdzielona między różnymi bodies bez kopiowania ich prywatnej tożsamości?
+9. Czy Agent Bodies z tym samym substrate, ale inną historią i value prior rozwiną różne trwałe strategie?
+10. Czy Director potrafi odtworzyć genezę sukcesu lub porażki zamiast tylko obserwować finalny outcome?
+11. Czy system potrafi uczyć się własnej metodologii budowania i naprawiania narzędzi?
+12. Czy kilka równoległych CONTINUUM zachowa spójność checkpointów, evidence i state?
+13. Czy niezależny recenzent odtworzy przewagę i recovery V10 na publicznym demonstratorze?
 
 ---
 
@@ -842,7 +980,7 @@ OPPORTUNITY
 -> REAL OUTCOME
 -> PROFIT / LOSS / FAILURE
 -> EXPERIENCE
--> MICRONETWORK UPDATE
+-> V10 / MICRONETWORK UPDATE
 -> NEXT DECISION
 ```
 
@@ -856,6 +994,8 @@ To jest **planowany kierunek eksperymentalny**, nie gwarancja zysku ani aktualne
 
 - [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)
 - [GRANT_REVIEWER_FAQ.md](GRANT_REVIEWER_FAQ.md)
+- [V10_PREDICTIVE_ROUTING.md](V10_PREDICTIVE_ROUTING.md)
+- [V10_PREDICTIVE_ROUTING_FAQ.md](V10_PREDICTIVE_ROUTING_FAQ.md)
 - [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
 - [evidence/README.md](evidence/README.md)
 
@@ -879,7 +1019,7 @@ To jest **planowany kierunek eksperymentalny**, nie gwarancja zysku ani aktualne
 
 # 28. Najkrótsza definicja projektu
 
-**SSI V5 bada, czy trwały system może gromadzić Experience, rozwijać wielozadaniowe i wieloprzestrzeniowe mikrosieci kompetencji, walidować je poprzez lifecycle Candidate -> Challenger -> Champion, agregować kompetencję pochodzącą z wielu źródeł, a następnie używać V10 do szybkiego i bezpiecznego wyboru między reuse, weryfikacją i pełnym flow — zachowując przy tym historię rozwoju, evidence, rollback i możliwość dalszego tworzenia nowych kompetencji.**
+**SSI V5 bada, czy trwały system może gromadzić Experience, rozwijać wielozadaniowe i wieloprzestrzeniowe mikrosieci kompetencji, walidować je poprzez lifecycle Candidate -> Challenger -> Champion, agregować kompetencję pochodzącą z wielu źródeł, a następnie używać V10 do stanowego i predykcyjnego wyboru następnej strategii — uwzględniając confidence, historię prób, wcześniejsze outcomes i failure signatures — tak aby ponownie używać sprawdzonych kompetencji, weryfikować sytuacje niepewne, unikać ślepego powtarzania znanych nieskutecznych ścieżek oraz eskalować do pełnego flow, kiedy wcześniejsza wiedza jest niewystarczająca.**
 
 ```text
 NEW PROBLEM
@@ -889,8 +1029,10 @@ NEW PROBLEM
 -> CHAMPION
 -> MICRONETWORK
 -> V10
--> REUSE / VERIFY
--> NEW OUTCOME
+-> REUSE / VERIFY / ALTERNATIVE / FULL_FLOW
+-> OUTCOME
+-> FAILURE OR SUCCESS HISTORY
+-> NEXT ROUTING DECISION
 -> FURTHER EVOLUTION
 ```
 
@@ -907,6 +1049,8 @@ Najbardziej wartościowe są:
 - reprodukcje;
 - wykryte błędy metodologiczne;
 - przypadki false reuse;
+- przypadki blind retry / failure loop;
+- testy recovery i alternative-route selection;
 - adversarial / distribution-shift tests;
 - porównania z istniejącym state of the art;
 - wskazanie, gdzie hipoteza SSI jest za szeroka względem evidence.
