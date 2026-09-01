@@ -1,9 +1,38 @@
 # SSI V5 — CURRENT TRUTH INDEX
 
-**Status:** `PUBLIC RESEARCH INDEX / 2026-08-29`  
+**Status:** `PUBLIC RESEARCH INDEX / 2026-09-01`  
 **Cel:** jedno miejsce wskazujące aktualnie najuczciwszy opis genezy, rozwoju, atrybucji i obecnej architektury SSI V5.
 
-Ten indeks istnieje po to, aby publiczny opis SSI nie redukował projektu do najnowszej migracji `ROBERT -> ORGANISM CORE` i nie gubił mechanizmów, które istniały lub były projektowane wcześniej: Football World, T17, Director, self-development, CEPA, Eyes/Hands, research, Moral AI/Iskra i przyszłe społeczeństwo Agentów.
+## 0. Kanoniczne znaczenie V10
+
+V10 nie powinien być opisywany wyłącznie jako szybki router ani cache. Aktualna kanoniczna definicja to **stateful predictive competence & recovery router**.
+
+```text
+CURRENT STATE
++ VERIFIED COMPETENCE
++ ATTEMPT HISTORY
++ PRIOR OUTCOMES
++ FAILURE SIGNATURES
++ CONFIDENCE
+-> V10
+-> REUSE / VERIFY / ALTERNATIVE / FULL_FLOW
+```
+
+Podstawowa zasada anti-loop:
+
+```text
+SAME / EQUIVALENT STATE
++ SAME FAILURE SIGNATURE
++ SAME STRATEGY
++ NO NEW EVIDENCE
+=> DO NOT BLINDLY REPEAT
+```
+
+V10 ma więc nie tylko szybciej znaleźć zwalidowaną kompetencję, ale również wykorzystać historię wykonania do zmiany strategii po niepowodzeniu. Może ponownie użyć poprawnych klocków LEGO, zmienić ich kompozycję, wybrać alternatywnego Championa, przejść przez `VERIFY_TOPK` albo eskalować do canonical `FULL_FLOW`.
+
+Zmierzony wynik wydajności Testu 3 jest ważnym evidence dla selektywnego routingu, ale **nie jest pełnym znaczeniem V10**. Dedykowany benchmark anti-loop/recovery pozostaje do wykonania.
+
+Pełna definicja: [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md).
 
 ---
 
@@ -24,6 +53,7 @@ FOOTBALL WORLD / REALNE PREDYKCJE I OUTCOMES
 -> ROBERT jako kontrolowana migracja, poligon i ciało wykonawcze
 -> EYES / HANDS / BROWSER / TOOL ACCESS
 -> HARDENING Experience / micronetwork lifecycle / replay / restart / idempotency
+-> V10 STATEFUL PREDICTIVE COMPETENCE & RECOVERY ROUTING
 -> SSI ORGANISM CORE
 -> REBUILT DIRECTOR BODY
 -> AGENT BODY
@@ -92,25 +122,17 @@ Director może więc wykryć, że brakuje mu narzędzia, integracji, pamięci, c
 
 `Continuum Engineering Pattern Architect (CEPA)` jest projektowany jako pamięć sposobów budowania i naprawiania SSI.
 
-Uwzględnia m.in.:
-
-- wcześniejsze naprawy i integracje;
-- stare paczki rozwojowe;
-- udane i nieudane implementacje;
-- testy i regresje;
-- rollbacki;
-- sposoby dekompozycji dużych projektów;
-- powtarzające się klasy błędów.
+Uwzględnia m.in. wcześniejsze naprawy i integracje, stare paczki rozwojowe, udane i nieudane implementacje, testy i regresje, rollbacki, sposoby dekompozycji dużych projektów oraz powtarzające się klasy błędów.
 
 Cel:
 
 ```text
 NOWY PROBLEM
-+
-HISTORIA TEGO, CO WCZEŚNIEJ DZIAŁAŁO I ZAWODZIŁO
-=
-LEPSZA HIPOTEZA ENGINEERINGOWA
++ HISTORIA TEGO, CO WCZEŚNIEJ DZIAŁAŁO I ZAWODZIŁO
+= LEPSZA HIPOTEZA ENGINEERINGOWA
 ```
+
+V10 jest warstwą wykonawczą tej samej szerszej zasady na poziomie routingu: wynik wcześniejszej próby powinien wpływać na wybór następnej ścieżki.
 
 ---
 
@@ -118,26 +140,17 @@ LEPSZA HIPOTEZA ENGINEERINGOWA
 
 ROBERT powstał po Directorze jako kontrolowana migracja/poligon, ale jego rola jest szersza niż testowanie Organism Core.
 
-W docelowej architekturze jest również wykonawczym ciałem Directora:
-
 ```text
-DIRECTOR
-= obserwuje / ocenia / decyduje
-
-ROBERT
-= wykonuje / korzysta z narzędzi / utrzymuje runtime
-
-EYES / HANDS / BROWSER
-= interfejs do środowiska komputerowego i researchu
+DIRECTOR = obserwuje / ocenia / decyduje
+ROBERT   = wykonuje / korzysta z narzędzi / utrzymuje runtime
+EYES / HANDS / BROWSER = interfejs do środowiska komputerowego i researchu
 ```
 
-Historyczny `director-node` był opisany jako lekki węzeł `EYES/HANDS`, a projekt warstwy obejmował m.in. screenshot, screen state, browser, targeting okien/aplikacji, mouse, keyboard, dry-run, audit trail i permission gates.
+Docelowo ROBERT ma nie tylko budować artefakty, lecz także ich używać. Przykład Tetrisa jest celowo wieloetapowy: budowa i naprawa gry testuje LEGO/recovery, a późniejsze granie testuje perception -> competence selection -> action -> outcome -> next decision.
 
 ---
 
 ## 6. Research nowych technologii
-
-Docelowy przepływ discovery:
 
 ```text
 DIRECTOR WYKRYWA BRAK / OKAZJĘ
@@ -151,22 +164,11 @@ DIRECTOR WYKRYWA BRAK / OKAZJĘ
 -> ADOPT / REJECT / REVISE
 ```
 
-Zasada:
-
-```text
-FOUND ONLINE
-!= VERIFIED
-!= SAFE TO INTEGRATE
-!= APPROVED
-```
-
-Director może również proponować `novel synthesis`, czyli połączenie kilku technologii z własnym Experience w nowe rozwiązanie. Wartość takiej syntezy powstaje dopiero po teście i outcome.
+`FOUND ONLINE != VERIFIED != SAFE TO INTEGRATE != APPROVED`.
 
 ---
 
 ## 7. Kontrolowany self-development
-
-Zmiana canonical SSI ma przechodzić przez governance:
 
 ```text
 NEED
@@ -189,45 +191,22 @@ Samodzielne wykrycie problemu nie daje automatycznej authority do wdrożenia zmi
 Historyczny system T17 nie był tylko zbiorem modeli.
 
 ```text
-TEACHER
--> OBSERVATION
--> MEMORY
--> ANALYSIS
--> KNOWLEDGE
+TEACHER -> OBSERVATION -> MEMORY -> ANALYSIS -> KNOWLEDGE
 ```
 
 17 Teacherów w dwóch rodzinach `12 + 5` korzystało z rozdziału `60% training / 40% unseen observation`, pamięci obserwacji, laboratoriów wiedzy i konsolidacji wiedzy.
 
-Pełny opis:
-
-[`evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md`](evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md)
+Pełny opis: [`evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md`](evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md)
 
 ---
 
 ## 9. Moral AI / Iskra i uczciwa atrybucja
 
-Źródłowa idea Moralnej AI nie jest przypisywana wyłącznie SSI.
+Źródłowa idea Moralnej AI nie jest przypisywana wyłącznie SSI. Według bezpośredniej atrybucji Programmer Root pochodzi z wcześniejszego projektu jego brata, określanego jako `Amnezja / model Moralna AI`.
 
-Według bezpośredniej atrybucji Programmer Root pochodzi z wcześniejszego projektu jego brata, określanego jako `Amnezja / model Moralna AI`.
+SSI rozwija i adaptuje tę ideę do dynamicznego środowiska, Experience, beliefs/policies, mikrosieci, social memory, relacji między Agentami i Director meta-observation.
 
-SSI rozwija i adaptuje tę ideę do:
-
-- dynamicznego środowiska 10x10;
-- fizycznego operowania obiektami świata;
-- Experience;
-- beliefs / policies;
-- mikrosieci;
-- social memory;
-- relacji między Agentami;
-- Director meta-observation.
-
-Pełna atrybucja:
-
-[`evidence/ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md`](evidence/ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md)
-
-Dynamika Iskry, mikrosieci i społeczeństwa Agentów:
-
-[`evidence/ISKRA_AGENT_MICRONETWORK_SOCIAL_DYNAMICS.md`](evidence/ISKRA_AGENT_MICRONETWORK_SOCIAL_DYNAMICS.md)
+Pełna atrybucja: [`evidence/ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md`](evidence/ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md)
 
 ---
 
@@ -236,26 +215,10 @@ Dynamika Iskry, mikrosieci i społeczeństwa Agentów:
 Przyszłe Agenty mają korzystać ze wspólnego mechanicznego substrate, ale posiadać osobne historie:
 
 ```text
-SHARED ORGANISM CORE
-!= SHARED PERSONAL HISTORY
+SHARED ORGANISM CORE != SHARED PERSONAL HISTORY
 ```
 
-Każdy Agent ma rozwijać własne:
-
-- identity;
-- private memory;
-- Experience;
-- beliefs;
-- hypotheses;
-- models / strategies;
-- micronetwork trajectory;
-- social memory;
-- relationships;
-- success/failure history.
-
-Iskra / Moral AI ma współuczestniczyć w wartościowaniu Experience, a przez to potencjalnie wpływać na rozwój mikrosieci, zaufanie, konflikty, współpracę, koalicje i przyszłe polityki działania.
-
-Director ma obserwować genezę tych trajektorii, a nie tylko końcowy ranking.
+Każdy Agent ma rozwijać własne identity, private memory, Experience, beliefs, hypotheses, strategies, micronetwork trajectory, social memory, relationships oraz success/failure history.
 
 ---
 
@@ -263,24 +226,11 @@ Director ma obserwować genezę tych trajektorii, a nie tylko końcowy ranking.
 
 Publiczna historia zawiera wcześniejsze raporty FAIL/partial wiring oraz późniejsze raporty naprawcze i testy PASS.
 
-To nie jest sprzeczność do usunięcia, tylko chronologia:
-
 ```text
-FAIL
--> DIAGNOSIS
--> REPAIR
--> RETEST
--> LATER PASS
+FAIL -> DIAGNOSIS -> REPAIR -> RETEST -> LATER PASS
 ```
 
-Wcześniejsze niepowodzenie nie znika po późniejszej naprawie.
-
-Publiczna dokumentacja powinna zachować zasadę:
-
-```text
-GIT HISTORY = DEVELOPMENT BIOGRAPHY
-NOT RETROSPECTIVE SUCCESS STORY
-```
+Wcześniejsze niepowodzenie nie znika po późniejszej naprawie. Ta sama zasada jest podstawą anti-loop: failure ma być informacją dla następnej decyzji, a nie powodem do ślepego retry.
 
 ---
 
@@ -299,63 +249,26 @@ Zweryfikowana publiczna historia Git pokazuje:
 2026-08-16  SSI_V5_MASTER
 2026-08-25  SSI_V5 public research mirror
 2026-08-29  ROBERT hardening / ORGANISM CORE migration
+2026-09-01  V10 public evidence and reviewer documentation
 ```
-
-Nie oznacza to, że Football World, dane domenowe, wcześniejsze modele i doświadczenie zaczęły się 19 lipca 2026. Publiczna historia Git potwierdza tempo formalizacji i budowy architektury, nie wyznacza początku całej wcześniejszej pracy domenowej.
-
-Pełna oś czasu:
-
-[`evidence/DEVELOPMENT_TIMELINE.md`](evidence/DEVELOPMENT_TIMELINE.md)
-
-Geneza projektu:
-
-[`evidence/PROJECT_GENESIS_AND_EVOLUTION.md`](evidence/PROJECT_GENESIS_AND_EVOLUTION.md)
 
 ---
 
 ## 13. Director / ROBERT / Agent — granica odpowiedzialności
 
 ```text
-AGENTS
-explore / experiment / simulate / learn
-        ↓
-DIRECTOR
-observes / audits / compares / evaluates / decides
-        ↓
-ROBERT
-executes approved real-world actions
+AGENTS -> explore / experiment / simulate / learn
+DIRECTOR -> observes / audits / compares / evaluates / decides
+ROBERT -> executes approved real-world actions
 ```
 
-Dodatkowo:
-
-```text
-DIRECTOR
-can originate a development hypothesis
-        ↓
-ROBERT / EYES / HANDS
-can gather or execute approved technical capability
-        ↓
-CONTINUUM / ENGINEERING
-can build/test
-        ↓
-AUTHORITY + EVIDENCE
-controls activation
-```
+V10 nie zmienia authority. Jest mechanizmem routingu i recovery wewnątrz dozwolonego przepływu, a nie źródłem nadrzędnej władzy.
 
 ---
 
 ## 14. Granice twierdzeń
 
-Publiczna dokumentacja nie powinna twierdzić bez evidence, że:
-
-- SSI jest udowodnionym AGI;
-- Director/ROBERT/Agent posiada świadomość;
-- Director ma nieograniczony autonomiczny internet;
-- Eyes/Hands są aktywne w każdej konfiguracji;
-- każda znaleziona technologia może zostać automatycznie zainstalowana;
-- self-development może ominąć authority;
-- wszystkie mechanizmy są już w pełni spięte w obecnym canonical runtime;
-- każdy historyczny PASS dotyczy aktualnej wersji po wszystkich kolejnych migracjach.
+Publiczna dokumentacja nie powinna twierdzić bez evidence, że SSI jest udowodnionym AGI, posiada świadomość, ma nieograniczoną autonomię, wszystkie mechanizmy są w pełni spięte albo że V10 ma już uniwersalnie udowodniony anti-loop.
 
 Publiczny opis ma rozróżniać:
 
@@ -373,31 +286,26 @@ UNKNOWN
 
 ## 15. Dokumenty źródłowe tego indeksu
 
-- [`README.md`](README.md) — główny publiczny protokół badawczy.
-- [`evidence/PROJECT_GENESIS_AND_EVOLUTION.md`](evidence/PROJECT_GENESIS_AND_EVOLUTION.md) — rzeczywista geneza projektu.
-- [`evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md`](evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md) — historyczny T17.
-- [`evidence/DIRECTOR_AUTONOMOUS_EVOLUTION_AND_ROBERT_EYES_HANDS.md`](evidence/DIRECTOR_AUTONOMOUS_EVOLUTION_AND_ROBERT_EYES_HANDS.md) — self-development, CEPA, research, Eyes/Hands.
-- [`evidence/ISKRA_AGENT_MICRONETWORK_SOCIAL_DYNAMICS.md`](evidence/ISKRA_AGENT_MICRONETWORK_SOCIAL_DYNAMICS.md) — Iskra w mikrosieciach i relacjach Agentów.
-- [`evidence/ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md`](evidence/ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md) — pochodzenie Moralnej AI i atrybucja.
-- [`evidence/DEVELOPMENT_TIMELINE.md`](evidence/DEVELOPMENT_TIMELINE.md) — zweryfikowana historia rozwoju Git.
+- [`README.md`](README.md)
+- [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
+- [`V10_PREDICTIVE_ROUTING_FAQ.md`](V10_PREDICTIVE_ROUTING_FAQ.md)
+- [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
+- [`evidence/PROJECT_GENESIS_AND_EVOLUTION.md`](evidence/PROJECT_GENESIS_AND_EVOLUTION.md)
+- [`evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md`](evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md)
+- [`evidence/DIRECTOR_AUTONOMOUS_EVOLUTION_AND_ROBERT_EYES_HANDS.md`](evidence/DIRECTOR_AUTONOMOUS_EVOLUTION_AND_ROBERT_EYES_HANDS.md)
+- [`evidence/ISKRA_AGENT_MICRONETWORK_SOCIAL_DYNAMICS.md`](evidence/ISKRA_AGENT_MICRONETWORK_SOCIAL_DYNAMICS.md)
+- [`evidence/DEVELOPMENT_TIMELINE.md`](evidence/DEVELOPMENT_TIMELINE.md)
 
 ---
 
 ## 16. Zasada końcowa
 
-Najważniejszą rzeczą w publicznym repo nie jest stworzenie jednej efektownej narracji.
+Najważniejszą rzeczą w publicznym repo nie jest stworzenie jednej efektownej narracji. Ma pozostać możliwe odtworzenie, co istniało wcześniej, co nie działało, co zostało naprawione, co jest dziś sprawdzone i co nadal pozostaje hipotezą.
 
-Ma pozostać możliwe odtworzenie:
+Dla V10 oznacza to dodatkowo:
 
 ```text
-CO ISTNIAŁO WCZEŚNIEJ
--> CO NIE DZIAŁAŁO
--> CO ZOSTAŁO NAPRAWIONE
--> CO ZOSTAŁO PRZENIESIONE
--> CO JEST DZIŚ SPRAWDZONE
--> CO JEST TYLKO HIPOTEZĄ
--> CO POWSTAŁO Z INICJATYWY ROOT
--> CO W PRZYSZŁOŚCI POWSTANIE Z INICJATYWY DIRECTORA
+FAILURE IS NOT ONLY A LOG ENTRY
+-> IT MUST BECOME ROUTING INFORMATION
+-> NEXT DECISION SHOULD CHANGE WHEN EVIDENCE JUSTIFIES CHANGE
 ```
-
-To jest warunek, aby publiczna historia SSI była technicznie użyteczna i uczciwa.
