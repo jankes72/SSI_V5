@@ -4,6 +4,36 @@ Ten katalog zawiera publiczne artefakty evidence dla najważniejszych etapów pr
 
 Zasada: README opisuje hipotezy, architekturę i interpretację; pliki w `evidence/` mają pokazywać surowe lub możliwie bezpośrednie wyniki maszynowe, root cause, hashe, snapshoty oraz instrukcje reprodukcji.
 
+## Kanoniczna interpretacja V10 przed czytaniem wyników
+
+Test 3 nie powinien być interpretowany wyłącznie jako "router zrobił to około 2× szybciej".
+
+V10 jest projektowany jako **stateful predictive competence & recovery router**:
+
+```text
+CURRENT STATE
++ VERIFIED COMPETENCE
++ ATTEMPT HISTORY
++ PRIOR OUTCOMES
++ FAILURE SIGNATURES
++ CONFIDENCE
+-> ROUTE / STRATEGY DECISION
+```
+
+Jego pełna rola obejmuje więc nie tylko reuse/verify/full-flow, ale także wykorzystanie historii wykonania do unikania ślepego powtarzania znanej nieskutecznej ścieżki.
+
+```text
+SAME / EQUIVALENT STATE
++ SAME FAILURE
++ SAME STRATEGY
++ NO NEW EVIDENCE
+=> DO NOT BLINDLY REPEAT
+```
+
+Obecny Test 3 mierzy tylko część tej funkcji: exact/similarity routing, selektywne reuse/verify, route compilation, latency i correctness w kontrolowanym known subset. Dedykowany benchmark anti-loop/recovery pozostaje do wykonania.
+
+Pełna definicja: [`../V10_PREDICTIVE_ROUTING.md`](../V10_PREDICTIVE_ROUTING.md).
+
 ## Dostępne zestawy
 
 ### `robert_600x/`
@@ -15,6 +45,8 @@ Zawiera:
 - raw torture results dla promotion/replay/retry/restart/null/concurrency;
 - snapshoty stanu BEFORE/AFTER;
 - jawnie zachowaną rozbieżność `5 vs 6 challengers`.
+
+Te wcześniejsze replay/retry/restart testy są istotne również dla przyszłego anti-loop V10, ponieważ historia failure i outcome musi przetrwać na tyle długo, aby wpływać na kolejną decyzję zamiast znikać po restarcie.
 
 ### `ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md`
 Drugi etap 600X — pełniejszy przepływ rozszerzonej mikrosieci i lifecycle na większym stanie Experience.
@@ -63,6 +95,8 @@ TEST 3
 -> dowód, że po dodaniu V10 system może dla rozpoznanych przypadków korzystać z krótszych tras bez utraty zmierzonej poprawności
 ```
 
+**Ważne:** ostatni punkt nie jest pełną definicją V10. Stateful anti-loop/recovery wymaga osobnego testu z powtarzanymi failure signatures, alternatywnymi trasami, zmianą kompozycji LEGO oraz persistence historii błędu po restarcie.
+
 Raw evidence Testu 3 znajduje się w `evidence/router_v10_test3/`.
 
 ### `organism_core_m00_micronetworks/`
@@ -92,9 +126,32 @@ Opisuje:
 - ekonomiczny wzrost realnych capability SSI poprzez compute, storage i infrastrukturę;
 - granicę między publicznym evidence a prywatną implementacją.
 
+Tetris jest szczególnie użyteczny jako przyszły demonstrator V10, ponieważ pozwala osobno obserwować:
+
+```text
+BUILD / REPAIR
+-> LEGO COMPOSITION
+-> FAILURE
+-> RECOVERY ROUTING
+-> RETEST
+```
+
+oraz później:
+
+```text
+PLAY
+-> BOARD STATE
+-> COMPETENCE SELECTION
+-> ACTION
+-> OUTCOME
+-> NEXT DECISION
+```
+
 ## Ograniczenia
 
 Publiczny evidence mirror nie zawiera sekretów, API keys, tokenów, prywatnych danych ani pełnego prywatnego runtime. Publikowane artefakty mają umożliwiać kontrolę twierdzeń bez ujawniania wrażliwych danych.
+
+Publiczne evidence nie powinno być używane do twierdzenia, że pełny anti-loop V10 jest już uniwersalnie udowodniony. Jest to aktualnie kontrakt architektoniczny wspierany częściowym evidence, który wymaga dedykowanego benchmarku recovery.
 
 ## Reguła metodologiczna
 
