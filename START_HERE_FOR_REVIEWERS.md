@@ -21,15 +21,25 @@ FAQ odpowiada m.in. na pytania:
 - dlaczego Test 2 był potrzebny przed Testem 3;
 - jakie są ograniczenia obecnych wyników i co mogłoby sfalsyfikować hipotezę SSI.
 
-## 2. Evidence index
+## 2. V10 predictive routing
+
+[`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
+
+Ten dokument wyjaśnia, że V10 nie jest wyłącznie cache'em ani prostym routerem. Opisuje warstwę predykcyjnego dopasowania, confidence gating, wybór między `REUSE_TOP1`, `VERIFY_TOPK` i `FULL_FLOW`, feedback/route compilation oraz rolę V10 jako pierwszej warstwy ochrony przed `false reuse`.
+
+Dodatkowe pytania i odpowiedzi:
+
+[`V10_PREDICTIVE_ROUTING_FAQ.md`](V10_PREDICTIVE_ROUTING_FAQ.md)
+
+## 3. Evidence index
 
 [`evidence/README.md`](evidence/README.md)
 
-## 3. Pełny stress-test lifecycle / persistence
+## 4. Pełny stress-test lifecycle / persistence
 
 [`evidence/ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md`](evidence/ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md)
 
-## 4. V10 Hybrid Router — Test 3
+## 5. V10 Hybrid Router — Test 3
 
 [`evidence/ROBERT_V10_HYBRID_ROUTER_TEST3_20260901.md`](evidence/ROBERT_V10_HYBRID_ROUTER_TEST3_20260901.md)
 
@@ -37,7 +47,7 @@ Raw summary:
 
 [`evidence/router_v10_test3/H_TEST3_RESULTS.json`](evidence/router_v10_test3/H_TEST3_RESULTS.json)
 
-## 5. Jak interpretować sekwencję testów
+## 6. Jak interpretować sekwencję testów
 
 ```text
 TEST 1
@@ -54,7 +64,9 @@ Test 2 nie był próbą uzyskania najlepszego czasu. Jego rolą było dostarczen
 
 Test 3 badał, czy system może następnie używać zweryfikowanych krótszych ścieżek dla znanych przypadków bez mierzalnego spadku poprawności w kontrolowanym zakresie.
 
-## 6. Ważne ograniczenie interpretacyjne
+W interpretacji V10 należy dodatkowo uwzględnić warstwę predykcyjną: router estymuje dopasowanie istniejącej kompetencji i poziom confidence, a wynik tej oceny prowadzi do reuse, dodatkowej weryfikacji albo pełnego flow. Obecny Test 3 pokazuje działanie exact/similarity routing i selektywnej weryfikacji, ale dalsze testy powinny celowo obejmować unknown, conflicting i adversarial cases, aby mierzyć false-reuse rate i jakość calibration.
+
+## 7. Ważne ograniczenie interpretacyjne
 
 SSI V5 jest eksperymentalnym systemem badawczym. Aktualne wyniki nie stanowią dowodu AGI, świadomości, uniwersalnej poprawności ani produkcyjnej gotowości.
 
