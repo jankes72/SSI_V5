@@ -1,48 +1,118 @@
-# V10 Predictive Routing — Reviewer FAQ
+# V10 Stateful Predictive Competence & Recovery Router — Reviewer FAQ
 
 ## Czy V10 jest tylko routerem lub cache'em?
 
-Nie. V10 zawiera warstwę predykcyjnego dopasowania, która ocenia, czy bieżące wejście odpowiada wcześniej zwalidowanej kompetencji oraz z jakim poziomem confidence system powinien ją wykorzystać.
+Nie. V10 jest projektowany jako **stanowy, predykcyjny router kompetencji i recovery**. Oprócz similarity i confidence uwzględnia znaczenie historii prób, wcześniejszych outcomes oraz znanych failure signatures przy wyborze kolejnej ścieżki działania.
 
 ```text
-INPUT
--> PREDICTIVE MATCH / ROUTE ESTIMATION
--> CONFIDENCE
-   -> HIGH   -> REUSE_TOP1
-   -> MEDIUM -> VERIFY_TOPK
-   -> LOW / UNKNOWN / CONFLICT -> FULL_FLOW
+CURRENT STATE
++ AVAILABLE VERIFIED COMPETENCE
++ ATTEMPT HISTORY
++ PRIOR OUTCOMES / FAILURES
+-> V10
+-> REUSE / VERIFY / ALTERNATIVE / FULL_FLOW
 ```
 
-Exact-cache jest tylko jedną z możliwych ścieżek. W Test 3 zanotowano 100 exact hits, ale również 434 similarity hits oraz 133 route compilations.
+Exact-cache jest tylko jedną z możliwych ścieżek.
 
 ## Co dokładnie przewiduje V10?
 
-Na poziomie architektonicznym V10 przewiduje, czy istniejąca zwalidowana kompetencja jest odpowiednim kandydatem dla aktualnego problemu i jak bezpiecznie ją wykorzystać. Wynikiem nie musi być bezpośredni reuse — system może wybrać dodatkową weryfikację albo pełny flow.
+Na poziomie architektonicznym V10 estymuje nie tylko dopasowanie istniejącej kompetencji do aktualnego problemu, ale również to, **czy dana ścieżka nadal ma sens w kontekście historii wykonania**.
 
-## Dlaczego prediction jest ważne dla mikrosieci?
+Wynikiem decyzji może być:
 
-Mikrosieć odpowiada za persistent competence i jej lifecycle. V10 odpowiada za dostęp do tej kompetencji.
+- `REUSE_TOP1`;
+- `VERIFY_TOPK`;
+- wybór alternatywnej kompetencji lub kompozycji LEGO;
+- zablokowanie ślepego retry znanej nieskutecznej ścieżki;
+- `FULL_FLOW` dla unknown/conflict/low-confidence.
+
+## Dlaczego historia prób jest ważna?
+
+W zadaniach wieloetapowych samo podobieństwo wejścia jest niewystarczające. System powinien wiedzieć, że dana strategia była już użyta w porównywalnym stanie i jaki przyniosła rezultat.
 
 ```text
-MICRONETWORK
-= validated evolving competence
-
-V10
-= predictive competence access
-+ confidence gate
-+ route selection
-+ feedback / route update
+SAME / EQUIVALENT STATE
++ SAME FAILURE SIGNATURE
++ SAME STRATEGY
++ NO NEW EVIDENCE
+=> DO NOT BLINDLY REPEAT
 ```
 
-Bez warstwy predykcyjnej system musiałby albo wykonywać pełny flow dla każdego problemu, albo ryzykować ślepe ponowne użycie wcześniejszych rezultatów.
+To jest podstawowa idea anti-loop w V10.
 
-## Czy V10 chroni przed false reuse?
+## Co oznacza anti-loop?
 
-Takie jest jego założenie architektoniczne: confidence gate ma ograniczać użycie wcześniejszej kompetencji wtedy, gdy dopasowanie jest niewystarczające lub konfliktowe.
+Anti-loop oznacza, że system ma nie kręcić się w kółko przez wykonywanie tej samej nieskutecznej strategii bez nowej informacji.
 
-To jednak nie oznacza, że problem false reuse został już uniwersalnie rozwiązany. Obecny publiczny Test 3 pokazał poprawne zachowanie dla badanego zakresu, ale nie zawierał dostatecznie szerokiej populacji przypadków unknown/conflicting/adversarial wymuszających FULL_FLOW.
+Po wykryciu powtarzającego się negatywnego outcome V10 powinien rozważyć:
 
-## Jakie evidence jest już publiczne?
+```text
+BLOCK SAME ROUTE
+OR
+MODIFY PARAMETERS / LEGO COMPOSITION
+OR
+SELECT ALTERNATIVE CHAMPION
+OR
+VERIFY TOP-K
+OR
+ESCALATE TO FULL_FLOW
+```
+
+To odróżnia rolę V10 od prostego mechanizmu "znajdź podobne i użyj ponownie".
+
+## Jak V10 współpracuje z LEGO?
+
+LEGO rozkłada duży problem na małe klocki. V10 pomaga zdecydować, które sprawdzone klocki można ponownie użyć, które należy zmienić oraz kiedy dotychczasowa kompozycja prowadzi do powtarzającego się błędu.
+
+```text
+GOAL
+-> LEGO BLOCKS
+-> EXECUTION
+-> TEST
+-> FAILURE
+-> HISTORY / OUTCOME
+-> V10
+-> REUSE GOOD BLOCKS
+-> REPLACE / RECONFIGURE BAD PATH
+-> RETEST
+```
+
+## Dlaczego Tetris jest dobrym przykładem?
+
+Bo pozwala pokazać dwie różne warstwy działania.
+
+Najpierw ROBERT może budować i naprawiać Tetrisa:
+
+```text
+BUILD -> TEST -> FAILURE -> DIAGNOSIS -> ROUTE CHANGE -> RETEST
+```
+
+Później ROBERT może sam grać:
+
+```text
+BOARD STATE -> PERCEPTION -> COMPETENCE SELECTION -> ACTION -> OUTCOME -> NEXT STATE
+```
+
+Jeżeli określona strategia w porównywalnym stanie wielokrotnie daje zły rezultat, wcześniejszy outcome powinien wpływać na następną decyzję.
+
+## Czy główną zaletą V10 jest szybkość?
+
+Nie. Szybkość jest ważnym efektem ubocznym poprawnego reuse.
+
+Główne znaczenie V10 jest szersze:
+
+```text
+FAST ACCESS
++ SAFE REUSE
++ HISTORY-AWARE DECISION
++ FAILURE-AWARE RECOVERY
++ ANTI-LOOP
+```
+
+Test 3 pokazał `57.61 s` wobec `126.65 s` Testu 2 w danym zakresie, ale redukowanie V10 do tego wyniku byłoby niepełnym opisem architektury.
+
+## Jakie publiczne evidence jest już dostępne?
 
 Test 3 zarejestrował:
 
@@ -58,21 +128,42 @@ errors:                0
 known correctness: 100/100
 ```
 
-Interpretacja jest ograniczona do badanego przebiegu. Liczby pokazują, że V10 korzystał nie tylko z exact lookup, lecz także z similarity-based routing i selektywnej weryfikacji.
+Wcześniejsze stress-testy lifecycle obejmowały również replay, retry, restart, concurrency, persistence i idempotency.
 
-## Jaki test jest teraz najważniejszy?
+## Czy publiczne testy udowodniły już pełny anti-loop?
 
-Najważniejsza jest walidacja jakości predykcji, nie kolejny sam rekord czasu:
+Nie. To ważna granica twierdzeń.
 
-```text
-KNOWN -> REUSE_TOP1
-AMBIGUOUS -> VERIFY_TOPK
-UNKNOWN -> FULL_FLOW
-DECEPTIVELY SIMILAR / CONFLICTING -> NO FALSE REUSE -> FULL_FLOW
-```
+Obecne evidence wspiera routing, replay/persistence hardening i selektywne reuse/verify, ale dedykowany benchmark musi jeszcze celowo wywoływać:
 
-Należy mierzyć m.in. false-reuse rate, false-escalation rate, routing precision/recall i calibration confidence.
+- ten sam failure signature;
+- podobny state;
+- powtarzaną nieskuteczną strategię;
+- alternatywną ścieżkę recovery;
+- restart i ponowną próbę po restarcie.
 
-## Czy ta dokumentacja ujawnia kod V10?
+Dopiero wtedy można ilościowo raportować skuteczność anti-loop.
 
-Nie. Publiczna dokumentacja opisuje kontrakt, zachowanie, wyniki i granice twierdzeń. Wewnętrzna implementacja predyktora oraz prywatny silnik mikrosieci nie muszą być publikowane, aby recenzent mógł ocenić hipotezę badawczą i evidence.
+## Jakie metryki są właściwe dla V10?
+
+Nie tylko latency.
+
+Najważniejsze przyszłe metryki to:
+
+- false-reuse rate;
+- false-escalation rate;
+- routing precision/recall;
+- confidence calibration;
+- repeated-failure suppression rate;
+- blind-retry rate;
+- recovery success rate;
+- alternative-route selection rate;
+- persistence of failure history;
+- final task correctness;
+- time/cost saved versus canonical full flow.
+
+## Najkrótsza odpowiedź dla recenzenta
+
+**V10 nie jest tylko szybszym routerem. Jest warstwą decyzji nad trwałą kompetencją: wykorzystuje stan, confidence, historię prób i outcomes, aby zdecydować co ponownie użyć, co zweryfikować, czego nie powtarzać oraz kiedy zmienić strategię lub wrócić do pełnego flow.**
+
+Publiczna dokumentacja opisuje tę funkcję bez ujawniania prywatnego kodu V10 ani pełnego silnika mikrosieci.
