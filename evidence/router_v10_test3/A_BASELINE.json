@@ -1,0 +1,76 @@
+{
+  "step": "A_BASELINE",
+  "timestamp": 1788215564.8893125,
+  "timestamp_iso": "2026-09-01T00:32:44+0200",
+  "workspace": "/home/jankes72/Pulpit/ModeleAI_robert",
+  "live": "/home/jankes72/Pulpit/ROBERT",
+  "package": "/home/jankes72/Pobrane/SSI_MICRONETWORK_DYNAMIC_ROUTER_V10_BETA_LEGO_V1_20260901",
+  "preflight": "PASS",
+  "snapshot": "A_FILE_SNAPSHOT.sha256",
+  "canonical_system": {
+    "micronetworks": "robert/micronetworks.py",
+    "adapter": "ssi_organism_core/adapters/robert/micronetwork_adapter.py",
+    "engine": "ssi_organism_core/core/micronetworks/engine.py",
+    "store": "robert/store.py",
+    "runtime": "robert/runtime.py",
+    "single_source_of_truth": true,
+    "second_registry": false,
+    "second_lifecycle": false
+  },
+  "counts": {
+    "artifact_files": 0,
+    "valid_artifacts": 0,
+    "invalid_artifacts": 0,
+    "candidate_files": 125,
+    "valid_candidates": 125,
+    "invalid_candidates": 0,
+    "challengers": 31,
+    "champions": 0,
+    "experiences": 5195,
+    "complete_accounting": true,
+    "state_networks": 0
+  },
+  "sample_ids": {
+    "candidates": [
+      "cand_1787957893839_fff40de9",
+      "cand_1787957894319_364941cd",
+      "cand_1787957992972_a4e1ab00",
+      "cand_1787957992973_29c2317e",
+      "cand_1787958118284_8203ba92",
+      "cand_1787958118286_a08c1485",
+      "cand_1787958293180_574cf5a9",
+      "cand_1787958293293_313ec160",
+      "cand_1787958293538_f7a60d3e",
+      "cand_1787958293694_f7619193"
+    ],
+    "challengers": [
+      "cand_1787957893839_fff40de9",
+      "cand_1787957894319_364941cd",
+      "cand_1787958293293_313ec160",
+      "cand_1787958293538_f7a60d3e",
+      "cand_1787958294973_367c019b",
+      "cand_1787963408002_33eed7a1",
+      "cand_1787963470382_ffb2452d",
+      "cand_1787963470672_02fef267",
+      "cand_1787963470774_4d244e1c",
+      "cand_1787963470885_e7f8252c"
+    ],
+    "champions": []
+  },
+  "validation": {
+    "mutated_data": false,
+    "source_of_truth_unambiguous": true,
+    "backup_ready": true,
+    "state_snapshot_ready": true,
+    "baseline_146_pass": true,
+    "baseline_146_results_file": "/home/jankes72/Pulpit/ROBERT/evidence/micronetwork_full_stack_experiment/results_146_baseline_validation.json"
+  },
+  "pass": true,
+  "v10_integration": {
+    "file_added": "robert/v10_router.py",
+    "config_added": "config/robert.json -> v10_router.enabled=false",
+    "runtime_patched": true,
+    "feature_flag_off": true,
+    "runtime_loads": true
+  }
+}
