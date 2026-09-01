@@ -16,7 +16,8 @@ PERSISTENT STATE
 + MICRONETWORK COMPETENCE LIFECYCLE
 + CANDIDATE -> CHALLENGER -> CHAMPION
 + COLLECTIVE INTELLIGENCE
-+ V10 ADAPTIVE ROUTING
++ V10 STATEFUL PREDICTIVE COMPETENCE & RECOVERY ROUTING
++ ANTI-LOOP / FAILURE-AWARE ROUTING
 + CONTINUUM
 + LEGO DEVELOPMENT METHODOLOGY
 + EVIDENCE / REPLAY / REGRESSION / PERSISTENCE
@@ -24,15 +25,13 @@ PERSISTENT STATE
 
 The central research hypothesis is that capability should not live only inside one model or one prompt. It should be represented as persistent, testable, revisable system competence with provenance and lifecycle.
 
-A formal state-of-the-art comparison is still required before making any strong originality claim such as "nothing like this exists elsewhere." The safer claim is that SSI V5 is an independently developed architecture whose exact combination of persistent multi-domain micronetworks, competence lifecycle, collective intelligence, dynamic routing and developmental evidence is being experimentally evaluated.
+A formal state-of-the-art comparison is still required before making any strong originality claim such as "nothing like this exists elsewhere."
 
 ---
 
 ## 2. How are SSI micronetworks different from ordinary RAG, memory or cache?
 
 RAG primarily retrieves information. A cache primarily returns a previously computed result. SSI micronetworks are intended to represent **validated and evolving competence**, not merely stored text or a prior answer.
-
-The canonical lifecycle is:
 
 ```text
 EXPERIENCE
@@ -43,63 +42,141 @@ EXPERIENCE
 -> CHAMPION / REJECT / KEEP TESTING
 ```
 
-A Champion is not final or immutable. It may later be enriched with new verified cases, challenged by another candidate, revalidated, replaced or rolled back.
+A Champion may later be enriched, challenged, revalidated, replaced or rolled back.
 
 The important object is therefore not simply an answer. It is an evolving competence with evidence, provenance, validation status and competitive history.
 
 ---
 
-## 3. Isn't V10 just a clever cache or router?
+## 3. Is V10 just a clever cache or a faster semantic router?
 
-V10 itself deliberately contains mechanisms that resemble fast routing and caching. The architectural claim is not that cache-like behavior is novel. The distinction is what V10 is routing **into**.
+No. That would be an incomplete description.
 
-SSI does not treat a stored answer as the final knowledge object. The reusable target is a validated competence that belongs to a lifecycle and can evolve over time.
+The canonical role of V10 is:
 
-A simplified path is:
+> **Stateful Predictive Competence & Recovery Router**
 
-```text
-INPUT
--> V10 ROUTER
--> EXISTING VERIFIED COMPETENCE?
-   -> REUSE_TOP1
-   -> VERIFY_TOPK
-   -> or FULL_FLOW if uncertain
--> RESULT
--> FEEDBACK / EXPERIENCE
--> LIFECYCLE
--> CHAMPION UPDATE OR NEW COMPETENCE
-```
-
-The second major difference is **collective intelligence**. Multiple models, tools, executions and later observations can contribute evidence to the same capability. A Champion may therefore accumulate validated cases over time instead of acting as a fixed prompt-response cache.
-
-In that sense:
+It is designed to combine:
 
 ```text
-CACHE = remember a prior result
-
-SSI = accumulate, compare, validate, revise and route to a developing competence
+CURRENT TASK / WORLD STATE
++ VERIFIED COMPETENCE
++ ATTEMPT HISTORY
++ PRIOR OUTCOMES
++ FAILURE SIGNATURES
++ CONFIDENCE
+-> NEXT ROUTE / STRATEGY
 ```
 
-V10 is the access layer to that competence structure. The research question is whether this combination can reduce repeated reasoning cost while preserving correctness and still escalate safely when prior competence is insufficient.
+A fast lookup or similarity match is only one input into the decision.
+
+V10 may choose:
+
+```text
+REUSE_TOP1
+VERIFY_TOPK
+ALTERNATIVE COMPETENCE / LEGO COMPOSITION
+BLOCK BLIND RETRY
+FULL_FLOW
+```
+
+Therefore the research claim is broader than "routing is faster." The intended function is to help the persistent system select what to do next based not only on similarity, but also on what has already been tried and what happened.
 
 ---
 
-## 4. Are micronetworks tied to one agent or one task?
+## 4. What does anti-loop mean in SSI?
+
+Anti-loop means the system should not blindly repeat a known ineffective strategy in an equivalent state without new evidence.
+
+The architectural rule is:
+
+```text
+SAME / EQUIVALENT STATE
++ SAME FAILURE SIGNATURE
++ SAME STRATEGY / ROUTE
++ NO NEW EVIDENCE
+=> DO NOT BLINDLY REPEAT
+```
+
+Possible reactions include:
+
+```text
+BLOCK SAME ROUTE
+OR
+MODIFY PARAMETERS
+OR
+RECONFIGURE LEGO BLOCKS
+OR
+SELECT ALTERNATIVE CHAMPION
+OR
+VERIFY TOP-K
+OR
+ESCALATE TO FULL_FLOW
+```
+
+This is a core reason V10 is stateful and history-aware rather than only a semantic similarity layer.
+
+---
+
+## 5. Why is this important for LEGO development?
+
+LEGO breaks large tasks into smaller contract-driven blocks.
+
+A long engineering task can fail even if most blocks are correct. V10 is intended to use history and outcome information so the system can preserve useful blocks while changing the part or route that repeatedly fails.
+
+```text
+GOAL
+-> LEGO A + B + C
+-> TEST
+-> FAILURE F
+-> RECORD FAILURE / OUTCOME
+-> V10
+-> KEEP VERIFIED GOOD BLOCKS
+-> REPLACE / RECONFIGURE FAILED PATH
+-> RETEST
+```
+
+The objective is not to rebuild everything from zero or repeat the same composition indefinitely.
+
+---
+
+## 6. Why is Tetris a meaningful example?
+
+Tetris is useful because it can expose two different layers of the architecture.
+
+First, ROBERT can build and repair the game:
+
+```text
+BUILD
+-> TEST
+-> FAILURE
+-> DIAGNOSIS
+-> V10 CONSULTS HISTORY
+-> CHANGE ROUTE / LEGO COMPOSITION
+-> RETEST
+```
+
+Later, ROBERT can use Eyes/Hands and play it:
+
+```text
+BOARD STATE
+-> PERCEPTION
+-> COMPETENCE SELECTION
+-> ACTION
+-> OUTCOME
+-> EXPERIENCE
+-> NEXT STATE
+```
+
+If a strategy repeatedly produces the same bad outcome in a comparable state, that history should influence the next routing decision rather than causing another blind retry.
+
+---
+
+## 7. Are micronetworks tied to one agent or one task?
 
 No. The intended SSI architecture is **multi-task and multi-space**.
 
-A micronetwork is a competence structure, not a private skill hard-coded to one single task. Verified competence may be used across multiple tasks, domains, worlds or bodies if its contract and evidence support such reuse.
-
-Example spaces can include:
-
-- software engineering,
-- research,
-- external tool interaction,
-- data analysis,
-- world-specific tasks,
-- later ROBERT / Director / Agent Body contexts.
-
-The important distinction is:
+A micronetwork is a competence structure, not a private skill hard-coded to one task.
 
 ```text
 SHARED VERIFIED COMPETENCE
@@ -107,17 +184,13 @@ SHARED VERIFIED COMPETENCE
 SHARED PERSONAL HISTORY / IDENTITY
 ```
 
-Different agents or bodies may reuse validated competence while still maintaining separate histories, experiences and identities.
+Different bodies may reuse validated competence while maintaining separate histories and identities.
 
 ---
 
-## 5. Can new micronetworks appear dynamically?
+## 8. Can new micronetworks appear dynamically?
 
 That is an intended core property of SSI.
-
-The competence space is not supposed to be a permanently fixed list of manually programmed skills. If new Experience does not fit an existing validated capability, the system can escalate through the canonical full flow and, if sufficient evidence is later accumulated, create or extend a competence branch.
-
-Conceptually:
 
 ```text
 NEW EXPERIENCE
@@ -132,21 +205,15 @@ NEW EXPERIENCE
 -> V10 ROUTE BINDING
 ```
 
-This does **not** mean every new problem instantly creates a Champion. The normal lifecycle and validation requirements still apply.
-
-The research goal is a competence space that can grow, branch and consolidate dynamically rather than being completely predefined by the original developer.
+This does not mean every new problem instantly creates a Champion. The normal lifecycle and validation requirements still apply.
 
 ---
 
-## 6. What is collective intelligence in SSI?
+## 9. What is collective intelligence in SSI?
 
 Collective intelligence is not merely "ask several LLMs and vote."
 
-SSI is designed so that multiple reasoning sources, tools, model outputs, executions and real outcomes can contribute evidence to a competence over time. Candidate solutions can be compared, challenged, rejected or consolidated.
-
-A successful result can therefore become input to a longer-lived competence lifecycle rather than disappearing when the model context closes.
-
-The architecture includes multi-stage reasoning modes such as:
+Multiple reasoning sources, tools, executions and real outcomes can contribute evidence to a competence over time. Candidate solutions can be compared, challenged, rejected or consolidated.
 
 ```text
 BRAINSTORM
@@ -154,13 +221,11 @@ BRAINSTORM
 -> TYPHOON
 ```
 
-for increasingly difficult cases, while verified outcomes can later contribute to the micronetwork / Champion layer.
-
-The long-term hypothesis is that useful capability can become a property of the persistent system rather than remaining trapped inside whichever model produced the original answer.
+Verified outcomes can later contribute to the micronetwork / Champion layer.
 
 ---
 
-## 7. Are Test 1, Test 2 and Test 3 directly comparable?
+## 10. Are Test 1, Test 2 and Test 3 directly comparable?
 
 They share the same principal stress-test geometry:
 
@@ -170,91 +235,51 @@ They share the same principal stress-test geometry:
 15 cases per round
 ```
 
-But they served different experimental purposes.
-
-### Test 1 — earlier / lighter flow
-
-Measured duration:
-
-```text
-67.85 s
-```
-
-This was an earlier and less complete flow baseline.
-
-### Test 2 — fuller micronetwork flow
-
-Measured duration:
-
-```text
-126.65 s
-```
-
-Test 2 was intentionally important because it demonstrated the broader/full lifecycle and persistence path rather than optimizing for speed. The longer time is consistent with performing more work, but time alone is not proof of layer coverage; replay, restart, persistence, lifecycle and state evidence are part of the proof.
-
-### Test 3 — full architecture with V10 adaptive routing
-
-Measured duration:
-
-```text
-57.61 s
-```
-
-with the recorded routing distribution:
-
-```text
-REUSE_TOP1: 534
-VERIFY_TOPK: 66
-fallback: 0
-known-case correctness: 100/100
-```
-
-Therefore the experimental sequence is intentionally:
+but served different purposes.
 
 ```text
 TEST 1
 lighter baseline
+67.85 s
 
--> TEST 2
-prove the fuller flow exists and is stable
+TEST 2
+fuller micronetwork / lifecycle / persistence flow
+126.65 s
 
--> TEST 3
-show that validated routing can avoid unnecessary full-flow execution
+TEST 3
+full architecture with V10 selective routing
+57.61 s
 ```
 
-Public evidence:
+Test 2 matters because it demonstrates that the fuller path exists and remains stable. Test 3 then measures whether validated routing can avoid unnecessary full-flow execution.
 
-- `evidence/robert_600x/HARDCORE_600X_SUMMARY.json`
-- `evidence/ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md`
-- `evidence/ROBERT_V10_HYBRID_ROUTER_TEST3_20260901.md`
-- `evidence/router_v10_test3/H_TEST3_RESULTS.json`
+The speed comparison is valid only within this measured setup and is **not the full definition of V10**.
 
 ---
 
-## 8. Why does V10 make the system faster?
+## 11. What exactly did Test 3 show?
 
-The full path is intentionally expensive because it can involve broader reasoning, validation and lifecycle work.
-
-V10 attempts to determine whether that work is necessary.
+Recorded values include:
 
 ```text
-HIGH CONFIDENCE / KNOWN
--> REUSE_TOP1
-
-MEDIUM CONFIDENCE
--> VERIFY_TOPK
-
-LOW CONFIDENCE / UNKNOWN / CONFLICT
--> FULL_FLOW
+lookups:             600
+cache_exact_hits:    100
+similarity_hits:     434
+route_compilations:  133
+REUSE_TOP1:          534
+VERIFY_TOPK:          66
+fallback_count:        0
+errors:                0
+known correctness: 100/100
 ```
 
-The purpose is not to bypass reasoning blindly. It is to reuse already validated competence when evidence supports doing so and preserve the canonical full flow when it does not.
+This supports the claim that V10 used more than exact-key caching and performed selective routing in the measured scope.
 
-The 57.61 s result is evidence for this specific measured test scope, not a claim that V10 will always provide the same speedup for every workload.
+It does **not** yet prove universal anti-loop or recovery behavior.
 
 ---
 
-## 9. Does V10 reduce correctness?
+## 12. Does V10 reduce correctness?
 
 In the published Test 3, the controlled known-case subset recorded:
 
@@ -264,15 +289,56 @@ In the published Test 3, the controlled known-case subset recorded:
 
 No loss was measured on that subset.
 
-This does **not** justify a universal claim of 100% correctness. Future evaluation must include new, conflicting, adversarial and distribution-shift cases, especially cases where false reuse would be dangerous.
-
-A central safety question for V10 is therefore not only "how fast is reuse?" but also:
-
-> How reliably does the router recognize when previous competence should **not** be reused?
+This does not justify a universal claim of 100% correctness. Future evaluation must include new, conflicting, adversarial and distribution-shift cases.
 
 ---
 
-## 10. What happens when SSI sees a genuinely new task?
+## 13. Does V10 already prove safe anti-loop behavior?
+
+No. This is a deliberate claim boundary.
+
+Existing public evidence supports routing, replay/retry/restart/persistence hardening and selective reuse/verification. A dedicated anti-loop benchmark still needs to force repeated failure signatures and prove that the next route changes appropriately.
+
+A strong test should include:
+
+```text
+STATE A
+-> STRATEGY X
+-> FAILURE F
+-> RECORD X + F
+-> EQUIVALENT STATE A'
+-> V10
+-> NO BLIND X RETRY WITHOUT NEW EVIDENCE
+-> ALTERNATIVE / VERIFY / FULL_FLOW
+-> RETEST
+-> MEASURE RECOVERY
+-> RESTART
+-> VERIFY FAILURE HISTORY PERSISTS
+```
+
+---
+
+## 14. What metrics matter for V10 beyond latency?
+
+Future evaluation should report at least:
+
+- routing precision / recall;
+- false-reuse rate;
+- false-escalation rate;
+- confidence calibration;
+- repeated-failure suppression rate;
+- blind-retry rate;
+- recovery success rate;
+- alternative-route selection rate;
+- persistence of failure history after restart;
+- final task correctness;
+- time/cost saved versus canonical full flow.
+
+This is why reducing V10 to a speed benchmark would miss most of its intended research value.
+
+---
+
+## 15. What happens when SSI sees a genuinely new task?
 
 The intended behavior is not to force reuse.
 
@@ -285,85 +351,44 @@ UNKNOWN INPUT
 -> LIFECYCLE IF JUSTIFIED
 ```
 
-Only after the system has accumulated sufficient validated evidence should a new capability become reusable through a Champion / micronetwork route.
-
-The next important LIVE experiment is therefore:
-
-```text
-UNKNOWN FIRST RUN
--> FULL FLOW
--> VALIDATED COMPETENCE FORMATION
-
-SIMILAR SECOND RUN
--> REUSE / VERIFY
-```
-
-with complete machine evidence of the transition.
+Only after sufficient validated evidence should a new capability become reusable through a Champion / micronetwork route.
 
 ---
 
-## 11. How does Candidate -> Challenger -> Champion work?
-
-The purpose of the lifecycle is to avoid treating every successful output as permanent knowledge.
-
-A new Experience can produce a Candidate. The Candidate accumulates evidence and must pass the required validation path before becoming a Challenger or Champion.
-
-Conceptually:
-
-```text
-EXPERIENCE
--> CANDIDATE
--> EVIDENCE
--> CHALLENGER
--> REGRESSION / VALIDATION
--> CHAMPION
-```
-
-A failed candidate can be rejected or remain under observation. A Champion can later be challenged or enriched.
-
-This is intended to provide a persistent quality-control layer between "the model produced something" and "the system now treats this as reusable competence."
-
----
-
-## 12. What if a Champion is wrong?
+## 16. What if a Champion is wrong?
 
 A Champion is not intended to be permanently trusted.
 
-The architecture supports the idea of:
+The architecture supports:
 
-- competing Challengers,
-- revalidation,
-- regression tests,
-- deduplication,
-- rollback,
-- replacement by a better Champion,
-- fallback to the canonical full flow when confidence is insufficient.
+- competing Challengers;
+- revalidation;
+- regression tests;
+- deduplication;
+- rollback;
+- replacement by a better Champion;
+- fallback to canonical full flow;
+- route-history feedback when use of a competence produces a negative outcome.
 
-This is important because persistent memory without correction would amplify mistakes over time.
-
-The safety objective is therefore not perfect memory, but **correctable memory with evidence and rollback**.
+The safety objective is **correctable memory with evidence and rollback**, not perfect immutable memory.
 
 ---
 
-## 13. Does SSI learn across restarts?
+## 17. Does SSI learn across restarts?
 
 That is a core design requirement.
 
 SSI uses persistent state, evidence, checkpoints, stores, candidate data, micronetwork state and route information so competence can survive beyond one model context or one process lifetime.
 
-However, persistence must be demonstrated by replay/restart tests rather than assumed from file existence alone.
+Persistence must be demonstrated by replay/restart tests rather than assumed from file existence alone.
 
-Published evidence includes restart/replay/persistence tests, and the current LIVE validation work extends this requirement to the complete V10 -> micronetwork -> lifecycle -> route-binding path.
+For V10 anti-loop, the stronger future requirement is that relevant failure/outcome history also survives restart sufficiently to affect the next routing decision.
 
 ---
 
-## 14. What is CONTINUUM?
+## 18. What is CONTINUUM?
 
 CONTINUUM is the persistent mission-execution layer.
-
-Its purpose is to allow work to retain mission state, checkpoints, evidence and progress instead of requiring every activity to live inside one interactive model session.
-
-Conceptually:
 
 ```text
 MISSION
@@ -375,11 +400,11 @@ MISSION
 -> CONTINUE
 ```
 
-This is separate from micronetwork competence memory. CONTINUUM tracks persistent work; micronetworks track persistent competence.
+CONTINUUM tracks persistent work; micronetworks track persistent competence; V10 selects the next route using state, confidence and relevant execution history.
 
 ---
 
-## 15. What is the LEGO development methodology?
+## 19. What is the LEGO development methodology?
 
 LEGO is the engineering methodology used to break large system changes into small contract-driven blocks.
 
@@ -397,121 +422,13 @@ LARGE GOAL
 -> NEXT BLOCK
 ```
 
-This methodology was developed because large monolithic changes were difficult to validate and easy to break.
-
-An important research direction is whether this development procedure itself can become reusable system competence rather than remaining only a human-authored workflow.
+An important research direction is whether the system can learn not only individual skills, but also reusable patterns of **how to build, diagnose, recover and recompose work**.
 
 ---
 
-## 16. How do you know the public experiment corresponds to the real system rather than a benchmark written only to look good?
+## 20. What is the strongest next experiment?
 
-SSI V5 uses a migration and reconstruction methodology intended to preserve lineage from the larger working system into smaller, testable components.
-
-The development sequence is approximately:
-
-```text
-WORKING SYSTEM
--> DECOMPOSITION
--> CANONICAL MODULE
--> UNIT / CONTRACT TEST
--> EVIDENCE
--> INTEGRATION
--> REGRESSION
--> REPLAY / PERSISTENCE
--> NEXT MODULE
-```
-
-The goal of migration is not to rewrite everything from scratch. It is to extract mechanisms, preserve their contracts, test them independently and then reintegrate them.
-
-The public repository intentionally preserves failures as well as later passes:
-
-```text
-FAIL
--> ROOT CAUSE
--> FIX
--> RETEST
--> PASS
-```
-
-This creates an evidence chain rather than a single final benchmark result.
-
-The public demonstrator is intended to be a controlled slice of the same architecture, with the same lifecycle and routing contracts, without exposing private source code, secrets or the entire production workspace.
-
-The methodological claim is therefore:
-
-> SSI is not being justified by one benchmark. The evidence chain is built from module-level validation, migration, regression, replay, persistence and finally integrated public experiments.
-
----
-
-## 17. Why migrate and decompose the code at all?
-
-The original system grew quickly and contained many coupled mechanisms. For research and grant review, a large codebase alone is weak evidence because reviewers cannot easily determine which parts actually work together.
-
-Controlled migration serves several purposes:
-
-- identify the canonical implementation of each capability,
-- remove duplicate or simulated paths,
-- isolate contracts,
-- preserve previous failures,
-- test components independently,
-- prove restart/replay/persistence behavior,
-- reconstruct an auditable integrated system.
-
-The migration itself therefore becomes part of the experimental methodology.
-
----
-
-## 18. Can reviewers run something themselves?
-
-That is the intended next public-facing step.
-
-A reviewer demonstrator is planned to provide a small set of controlled software tasks. Each scenario should begin from a clean experimental state so the reviewer can observe:
-
-```text
-NEW TASK
--> CONTINUUM / LEGO
--> SOLUTION
--> EXPERIENCE
--> CANDIDATE / CHALLENGER / CHAMPION
--> MICRONETWORK
--> V10 BINDING
-```
-
-and then run a related task to observe:
-
-```text
-RELATED TASK
--> V10
--> REUSE / VERIFY
--> RESULT
-```
-
-The interface should expose the measurable difference in latency, route decision, lifecycle state and correctness while resetting the demonstration between scenarios.
-
-This allows a reviewer to evaluate the mechanism directly instead of relying only on README descriptions.
-
----
-
-## 19. What would falsify or weaken the SSI hypothesis?
-
-Examples include:
-
-- V10 provides speed but causes unacceptable false reuse;
-- learned competence does not generalize beyond near-duplicate tasks;
-- Champion accumulation produces degradation or catastrophic contamination;
-- dynamic micronetwork growth becomes unmanageable or highly redundant;
-- full-flow escalation is triggered so often that routing provides little value;
-- persistence creates stale competence that cannot be corrected reliably;
-- public benchmark gains disappear under fair external reproduction;
-- multi-agent/shared competence introduces conflicts that cannot be reconciled.
-
-These are not treated as inconvenient edge cases. They are central research questions for future experiments.
-
----
-
-## 20. What is the next strongest experiment?
-
-The strongest immediate experiment is a clean end-to-end learning-effect test:
+The strongest immediate experiment should combine learning effect and recovery:
 
 ```text
 1. CLEAN STATE
@@ -524,48 +441,126 @@ The strongest immediate experiment is a clean end-to-end learning-effect test:
 8. CHAMPION
 9. ACTIVE MICRONETWORK
 10. V10 ROUTE BINDING
-11. RELATED NEW TASK
+11. RELATED TASK
 12. REUSE / VERIFY
-13. COMPARE TIME + CORRECTNESS
-14. RESTART
-15. REPEAT AND VERIFY PERSISTENCE
+13. CONTROLLED FAILURE
+14. RECORD FAILURE SIGNATURE + ROUTE
+15. EQUIVALENT STATE
+16. PROVE NO BLIND SAME-ROUTE RETRY
+17. ALTERNATIVE / MODIFIED LEGO / FULL_FLOW
+18. RETEST
+19. COMPARE CORRECTNESS + RECOVERY + TIME
+20. RESTART
+21. VERIFY PERSISTENCE
 ```
 
-This experiment would directly test whether SSI does more than retrieve old results: whether it can form, validate, persist and reuse a competence through the complete architecture.
+This would test whether SSI does more than retrieve old results: whether it can form, validate, persist and reuse competence **and change strategy when prior execution evidence says the old route is ineffective**.
 
 ---
 
-## 21. What should reviewers *not* infer from the current results?
+## 21. What would falsify or weaken the SSI hypothesis?
+
+Examples include:
+
+- V10 provides speed but causes unacceptable false reuse;
+- V10 repeatedly selects a known failing route despite preserved history;
+- recovery does not outperform blind retry;
+- learned competence does not generalize beyond near-duplicate tasks;
+- Champion accumulation produces degradation or contamination;
+- dynamic micronetwork growth becomes unmanageable;
+- full-flow escalation is triggered so often that routing provides little value;
+- persistence creates stale competence that cannot be corrected reliably;
+- public benchmark gains disappear under fair external reproduction.
+
+These are central research questions, not edge cases to hide.
+
+---
+
+## 22. Can reviewers run something themselves?
+
+That is the intended next public-facing step.
+
+A reviewer demonstrator should expose:
+
+```text
+NEW TASK
+-> LEGO / CONTINUUM
+-> SOLUTION
+-> EXPERIENCE
+-> CANDIDATE / CHALLENGER / CHAMPION
+-> MICRONETWORK
+-> V10 BINDING
+```
+
+then:
+
+```text
+RELATED TASK
+-> REUSE / VERIFY
+```
+
+and finally:
+
+```text
+CONTROLLED FAILURE
+-> FAILURE HISTORY
+-> V10 RECOVERY / ROUTE CHANGE
+-> RETEST
+```
+
+Tetris is a useful candidate because it can demonstrate both building/repair and later stateful interaction by ROBERT.
+
+---
+
+## 23. Does the public repository expose the private V10 or micronetwork engine?
+
+No. The public repository is intentionally an evidence-indexed research mirror.
+
+It can expose:
+
+- architectural contracts;
+- measured behavior;
+- raw summaries;
+- failure histories;
+- test boundaries;
+- reviewer-facing demonstrators;
+
+without publishing the full private implementation of the predictive router or micronetwork engine.
+
+This allows technical review while preserving core IP.
+
+---
+
+## 24. What should reviewers not infer from current results?
 
 Current evidence should not be interpreted as proof that:
 
-- SSI is AGI,
-- SSI is conscious,
-- all micronetwork mechanisms are fully production-ready,
-- V10 will always outperform every other architecture,
-- the system is universally safe,
-- the published 600-case benchmark proves general intelligence,
-- every future task will be solved faster after learning.
+- SSI is AGI;
+- SSI is conscious;
+- all micronetwork mechanisms are production-ready;
+- V10 will always outperform every other architecture;
+- anti-loop is already universally validated;
+- the 100/100 known-case result means universal correctness;
+- every dynamic competence is safe to reuse;
+- all future economic outcomes are positive.
 
-The appropriate interpretation is narrower:
+The intended standard is:
 
-> SSI V5 is an experimental persistent-agent architecture with measured evidence that its current routing and competence mechanisms can produce substantial efficiency gains in a controlled test while preserving measured correctness on the evaluated subset. The broader claims remain open research questions.
-
----
-
-## Evidence pointers
-
-Start here:
-
-- [`README.md`](README.md)
-- [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
-- [`evidence/README.md`](evidence/README.md)
-- [`evidence/ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md`](evidence/ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md)
-- [`evidence/ROBERT_V10_HYBRID_ROUTER_TEST3_20260901.md`](evidence/ROBERT_V10_HYBRID_ROUTER_TEST3_20260901.md)
-- [`evidence/router_v10_test3/H_TEST3_RESULTS.json`](evidence/router_v10_test3/H_TEST3_RESULTS.json)
+```text
+CLAIM
+-> IMPLEMENTATION
+-> TEST
+-> MACHINE EVIDENCE
+-> FAILURE / ROOT CAUSE
+-> REPAIR
+-> RETEST
+-> CURRENT CLAIM BOUNDARY
+```
 
 ---
 
-## Reviewer note
+## 25. What is the shortest accurate description of V10 for a grant reviewer?
 
-Critical feedback is explicitly welcome. The project benefits more from reproducible criticism, failed replications and identified methodological weaknesses than from unearned endorsement.
+**V10 is a stateful predictive competence and recovery router. It does not merely select a faster path. It uses confidence, current state, persistent competence, prior attempts, outcomes and failure signatures to decide what to reuse, what to verify, what not to repeat, when to change LEGO composition or competence, and when to escalate to the canonical full flow.**
+
+The measured speedup in Test 3 is evidence for one benefit of selective routing; the broader research value is whether this mechanism can support persistent, non-circular, evidence-driven problem solving over long tasks and changing environments.
