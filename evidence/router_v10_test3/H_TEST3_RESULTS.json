@@ -1,0 +1,59 @@
+{
+  "cases_total": 600,
+  "rounds": 40,
+  "cases_per_round": 15,
+  "duration_seconds": 57.61,
+  "start_counters": {
+    "candidates_total": 137,
+    "challengers": 43,
+    "experiences": 8803
+  },
+  "end_counters": {
+    "candidates_total": 137,
+    "challengers": 43,
+    "experiences": 9403
+  },
+  "duplication_failures": 0,
+  "none_get_errors": 0,
+  "half_promoted_objects": 0,
+  "route_stats": {
+    "REUSE_TOP1": 534,
+    "VERIFY_TOPK": 66,
+    "ESCALATE_FULL_FLOW": 0,
+    "CREATE_SKILL_PATH": 0,
+    "FULL_FLOW": 0,
+    "NO_ROUTE": 0,
+    "V10_OFF": 0
+  },
+  "fallback_count": 0,
+  "correctness_matched": 100,
+  "correctness_total_known": 100,
+  "correctness_rate": 1.0,
+  "foreground_latency_p50_ms": 20.612239837646484,
+  "foreground_latency_p95_ms": 23.902416229248047,
+  "background_stats": {
+    "submitted": 600,
+    "completed": 599,
+    "failed": 0,
+    "deduped": 0
+  },
+  "v10_summary": {
+    "entries": 561,
+    "metrics": {
+      "lookups": 600,
+      "reuse": 534,
+      "verify": 66,
+      "escalate": 0,
+      "create_skill_path": 0,
+      "fallback_full_flow": 0,
+      "errors": 0,
+      "cache_exact_hits": 100,
+      "similarity_hits": 434,
+      "route_compilations": 133
+    },
+    "route_map_path": "/home/jankes72/Pulpit/ROBERT/data/v10_route_map.json",
+    "trace_path": "/home/jankes72/Pulpit/ROBERT/data/v10_router_trace.jsonl",
+    "feature_flag": true
+  },
+  "pass": true
+}
