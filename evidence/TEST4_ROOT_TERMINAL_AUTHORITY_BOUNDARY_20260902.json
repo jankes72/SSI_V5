@@ -1,0 +1,14 @@
+{
+  "test": "AUTHORITY_BOUNDARY_PROOF",
+  "date": "2026-09-02",
+  "backend": "CONTROLLED_E2E_BACKEND",
+  "checks": [
+    {"name": "valid_ROOT_ALLOW", "passed": true, "status": "OK"},
+    {"name": "bad_credential_DENY", "passed": true, "status": "DENIED"},
+    {"name": "spoofed_ROOT_DENY", "passed": true, "status": "DENIED"},
+    {"name": "missing_identity_DENY", "passed": true, "status": "DENIED"},
+    {"name": "denied_not_in_registry", "passed": true}
+  ],
+  "all_pass": true,
+  "security_claim": "Denied identities do not enter the command registry in the tested boundary."
+}
