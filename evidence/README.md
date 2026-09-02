@@ -4,6 +4,35 @@ Ten katalog zawiera publiczne artefakty evidence dla najważniejszych etapów pr
 
 Zasada: README opisuje hipotezy, architekturę i interpretację; pliki w `evidence/` mają pokazywać surowe lub możliwie bezpośrednie wyniki maszynowe, root cause, hashe, snapshoty oraz instrukcje reprodukcji.
 
+## Micronetwork migration / repair lineage — PRE-CLOSURE
+
+Nowy zapis badawczo-inżynieryjny:
+
+[`MICRONETWORK_MIGRATION_REPAIR_LINEAGE_PRE_CLOSURE_20260902.md`](MICRONETWORK_MIGRATION_REPAIR_LINEAGE_PRE_CLOSURE_20260902.md)
+
+Dokument opisuje pełny przebieg:
+
+```text
+BEFORE / HISTORICAL EVIDENCE
+-> słabszy kontrakt Test3 i wykryta niezgodność routingu
+-> DIAGNOSIS
+-> REPAIR
+-> V10 / runtime / M00-M09 / lifecycle / persistence / security fixes
+-> RETEST
+-> repeated Test3 / restart / regression / canonical-state checks
+-> FINAL TEST3 METRIC-CONTRACT AUDIT (PENDING)
+-> dopiero potem FINAL CLOSURE
+```
+
+Status jest celowo `PRE-CLOSURE`. Ostatni test doprecyzowujący znaczenie pola `failed` w powtarzanym Test3 nie został jeszcze wpisany jako zakończony. Po jego wykonaniu lineage zostanie uzupełniony o finalny machine-evidence verdict zamiast retrospektywnego wygładzania wcześniejszych wyników.
+
+Ten case jest jednocześnie:
+
+- materiałem dla grantodawcy / recenzenta pokazującym drogę `failure -> diagnosis -> repair -> retest`;
+- engineering memory dla przyszłego Directora / CEPA, aby system mógł rozumieć genezę swoich komponentów i tworzyć lepsze propozycje controlled self-development bez uzyskiwania automatycznej authority do samodzielnego wdrażania zmian.
+
+---
+
 ## Kanoniczna interpretacja V10 przed czytaniem wyników
 
 Test 3 nie powinien być interpretowany wyłącznie jako "router zrobił to około 2× szybciej".
