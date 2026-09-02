@@ -1,0 +1,15 @@
+{
+  "single_canonical_store": true,
+  "flow_uses_canonical_experience_store": true,
+  "flow_store_same_as_runtime_experience_store": true,
+  "flow_store_not_runtime_main_store": true,
+  "writes_visible_via_canonical": true,
+  "reads_via_canonical_after_flow_write": true,
+  "no_parallel_in_memory_state": true,
+  "single_micronetwork_engine": true,
+  "a20_single_router_per_process": true,
+  "a20_single_runtime_per_process": true,
+  "a20_single_micronetwork_engine_per_process": true,
+  "a20_no_parallel_v10_learning_state": true,
+  "all_pass": true
+}
