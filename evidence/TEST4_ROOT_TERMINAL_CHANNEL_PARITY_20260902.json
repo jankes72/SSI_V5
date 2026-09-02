@@ -1,0 +1,10 @@
+{
+  "test": "CHANNEL_PARITY_FULL",
+  "backend": "CONTROLLED_E2E_BACKEND",
+  "local": {"status": "IMPLEMENTED", "ok": true},
+  "ipc_api": {"status": "OK", "ok": true},
+  "offline": {"status": "REJECTED", "ok": true},
+  "realtime": {"status": "NOT_IMPLEMENTED", "ok": false},
+  "remote": {"status": "NOT_IMPLEMENTED", "ok": false},
+  "interpretation": "PASS applies to the tested implemented/rejected-by-contract channels; realtime and remote are explicitly NOT_IMPLEMENTED and out of scope."
+}
