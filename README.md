@@ -3,6 +3,20 @@
 **Experimental persistent competence architecture for adaptive AI systems.**  
 SSI V5 investigates whether a long-running system can build, validate, preserve, reuse and revise competence across tasks using **Experience, micronetworks, Candidate -> Challenger -> Champion lifecycle, V10 stateful routing, LEGO composition and CONTINUUM persistence**.
 
+## What this repository publishes — and what it does not
+
+This repository is a **public, evidence-indexed research mirror** of SSI V5. It publishes the architecture's research history, contracts, measured effects, machine-readable summaries, failures, repairs, test boundaries and reviewer-facing documentation. It is **not** the source-code distribution of the private SSI V5 runtime, V10 implementation or full micronetwork engine.
+
+SSI V5 is an independently developed system architecture authored by **Paweł Jankiewicz**. Language models and other third-party components used by the system remain replaceable capability providers and retain their respective authorship, licences and ownership; they are not presented as models created or owned by SSI. The private SSI implementation, its original integration logic and its non-public source code are reserved by the author. Publication of results or architectural descriptions in this repository does not by itself grant a licence to the unpublished implementation.
+
+```text
+PUBLIC HERE
+= research history + architecture + evidence + measured outcomes + claim boundaries
+
+NOT PUBLISHED HERE
+= private SSI runtime + proprietary V10 implementation + full micronetwork engine
+```
+
 ## Start here
 
 - **Technical reviewers / grant evaluators:** [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)
@@ -1019,6 +1033,18 @@ OPPORTUNITY
 ```
 
 To jest **planowany kierunek eksperymentalny**, nie gwarancja zysku ani aktualne twierdzenie o autonomicznej rentowności systemu.
+
+Docelowa polityka podziału dodatniego wyniku ekonomicznego ma rozdzielać dwa niezależne zasoby SSI:
+
+```text
+50% -> AUTHOR / OWNER
+40% -> SSI INVESTMENT CAPITAL
+10% -> SSI INFRASTRUCTURE DEVELOPMENT
+```
+
+Kapitał inwestycyjny ma umożliwiać Dyrektorowi prowadzenie kontrolowanych eksperymentów w światach ekonomicznych. Oddzielny budżet rozwojowy SSI ma finansować sprzęt, serwery, modele, API, narzędzia i inne uzasadnione rozszerzenia infrastruktury. Badaniu ma podlegać nie tylko końcowy wynik finansowy, lecz również provenance decyzji, ryzyko, wykorzystane kompetencje, rzeczywisty outcome oraz wpływ reinwestycji na późniejsze możliwości systemu.
+
+Grant lub inne finansowanie zewnętrzne może przyspieszyć skalowanie infrastruktury i eksperymenty wymagające większej mocy obliczeniowej, ale nie jest podstawowym celem ani warunkiem kontynuowania projektu. Bez finansowania zewnętrznego rozwój ma postępować etapami na dostępnej infrastrukturze i — jeżeli eksperymenty ekonomiczne zaczną przynosić dodatnie wyniki — również z wydzielonego budżetu rozwojowego SSI. Nie jest to deklaracja gwarantowanej rentowności.
 
 ---
 
