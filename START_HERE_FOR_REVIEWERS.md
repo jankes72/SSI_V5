@@ -2,6 +2,42 @@
 
 Jeżeli oceniasz SSI V5 jako grantodawca, sponsor, badacz lub niezależny recenzent techniczny, zacznij od poniższych materiałów zamiast próbować czytać całe repozytorium od początku.
 
+## Najnowszy zamknięty etap: Micronetwork Migration / V10 Repair
+
+**Status:** `DEVELOPMENT_VALIDATED / MICRONETWORK_MIGRATION_CLOSED`  
+**Data zamknięcia:** `2026-09-02`
+
+Najlepszy punkt wejścia do tego etapu:
+
+[`evidence/MICRONETWORK_MIGRATION_FINAL_LINEAGE_20260902.md`](evidence/MICRONETWORK_MIGRATION_FINAL_LINEAGE_20260902.md)
+
+Finalny closure report:
+
+[`evidence/MICRONETWORK_MIGRATION_CLOSURE_REPORT_20260902.md`](evidence/MICRONETWORK_MIGRATION_CLOSURE_REPORT_20260902.md)
+
+Publiczny agregat finalnego Test3 100×:
+
+[`evidence/TEST3_REPEAT_100X_V2_PUBLIC_SUMMARY_20260902.json`](evidence/TEST3_REPEAT_100X_V2_PUBLIC_SUMMARY_20260902.json)
+
+Najważniejszy wynik:
+
+```text
+100 runs × 600 cases = 60 000 cases
+accounted = 60 000
+failed = 0
+unresolved_failures = 0
+incorrect_routing = 0
+background_failures = 0
+exceptions = 0
+restart = 20/20 PASS
+A01-A20 = PASS
+open_blockers = []
+```
+
+Istotne metodologicznie: wcześniejszy test powtarzalności miał błąd w formule PASS, ponieważ `failed > 0` nie blokowało wyniku PASS. Projekt zachował ten błędny wynik jako historyczne evidence, poprawił kontrakt o `failed == 0` i wykonał pełne 100× ponownie od początku. Dopiero drugi przebieg stał się podstawą zamknięcia migracji.
+
+Prywatny kod ROBERTA/V10, backupy implementacji i service definitions nie są publikowane w publicznym research mirror.
+
 ## Najważniejsza rzecz do zrozumienia o V10
 
 V10 **nie jest przede wszystkim mechanizmem przyspieszającym**. Jest projektowany jako **stateful predictive competence & recovery router**.
@@ -30,7 +66,7 @@ SAME / EQUIVALENT STATE
 
 Możliwa reakcja to reuse poprawnych klocków, zmiana kompozycji LEGO, wybór alternatywnego Championa, dodatkowa weryfikacja albo canonical `FULL_FLOW`.
 
-Zmierzony speedup Testu 3 jest ważny, ale jest **efektem jednej części mechanizmu**, nie pełną definicją V10.
+Zmierzony speedup historycznego Testu 3 jest ważny, ale jest **efektem jednej części mechanizmu**, nie pełną definicją V10.
 
 ## 1. Najczęstsze pytania i odpowiedzi
 
@@ -67,8 +103,7 @@ Ten dokument definiuje V10 jako warstwę predykcyjnego i stanowego wyboru kompet
 - anti-loop;
 - recovery decision;
 - feedback / route compilation;
-- współpracę z dynamiczną kompozycją LEGO;
-- przykład `BUILD TETRIS -> TEST -> FAILURE -> CHANGE ROUTE -> RETEST` oraz późniejsze `ROBERT PLAYS -> ACTION -> OUTCOME -> NEXT DECISION`.
+- współpracę z dynamiczną kompozycją LEGO.
 
 Dodatkowe pytania i odpowiedzi:
 
@@ -82,13 +117,11 @@ Dodatkowe pytania i odpowiedzi:
 
 [`evidence/ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md`](evidence/ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md)
 
-## 5. V10 Hybrid Router — Test 3
+## 5. Historyczny V10 Hybrid Router — Test 3
 
 [`evidence/ROBERT_V10_HYBRID_ROUTER_TEST3_20260901.md`](evidence/ROBERT_V10_HYBRID_ROUTER_TEST3_20260901.md)
 
-Raw summary:
-
-[`evidence/router_v10_test3/H_TEST3_RESULTS.json`](evidence/router_v10_test3/H_TEST3_RESULTS.json)
+Ten wynik należy czytać jako historyczny etap przed późniejszym hardeningiem kontraktu Test3 i finalnym migration-closure z 2026-09-02.
 
 ## 6. Jak interpretować sekwencję testów
 
@@ -101,15 +134,21 @@ pełniejszy przepływ mikrosieci i lifecycle
 
 -> TEST 3
 pełna architektura eksperymentalna + V10 routing
+
+-> MIGRATION REPAIR / CONTRACT AUDIT
+wykrycie słabego PASS condition
+
+-> TEST3 100x v2
+poprawiony kontrakt + 60 000 przypadków
+
+-> RESTART / REGRESSION / CANONICAL STATE
+
+-> MIGRATION CLOSED
 ```
 
-Test 2 nie był próbą uzyskania najlepszego czasu. Jego rolą było dostarczenie evidence, że szerszy przepływ, lifecycle, persistence, replay/restart i related mechanisms faktycznie działają przed wprowadzeniem selektywnego routingu.
+Test 2 nie był próbą uzyskania najlepszego czasu. Jego rolą było dostarczenie evidence, że szerszy przepływ, lifecycle, persistence, replay/restart i related mechanisms działają przed wprowadzeniem selektywnego routingu.
 
-Test 3 badał, czy system może następnie używać zweryfikowanych krótszych ścieżek dla znanych przypadków bez mierzalnego spadku poprawności w kontrolowanym zakresie.
-
-Nie należy jednak redukować znaczenia V10 do tej optymalizacji. Docelowa funkcja routingu obejmuje również **stan zadania, historię wykonania, outcomes, failure signatures i recovery**, tak aby system mógł zmienić strategię zamiast mechanicznie wracać do znanej, ale nieskutecznej ścieżki.
-
-Obecny Test 3 pokazuje działanie exact/similarity routing i selektywnej weryfikacji, ale dedykowany test anti-loop powinien jeszcze celowo wymuszać repeated failures, alternative routes, restart i persistence historii błędu.
+Późniejszy migration-closure pokazał dodatkowo, że sam status PASS nie wystarcza: trzeba audytować również to, **co dokładnie warunek PASS mierzy**.
 
 ## 7. Ważne ograniczenie interpretacyjne
 
@@ -125,7 +164,8 @@ HYPOTHESIS
 -> FIX
 -> TEST
 -> EVIDENCE
--> NEXT HYPOTHESIS
+-> RETEST
+-> CURRENT CLAIM BOUNDARY
 ```
 
 Krytyka metodologiczna, nieudane replikacje i wskazanie słabych punktów są mile widziane.
