@@ -2,7 +2,45 @@
 
 Jeżeli oceniasz SSI V5 jako grantodawca, sponsor, badacz lub niezależny recenzent techniczny, zacznij od poniższych materiałów zamiast próbować czytać całe repozytorium od początku.
 
-## Najnowszy zamknięty etap: Micronetwork Migration / V10 Repair
+## Najnowszy zamknięty etap: TEST 4 — ROOT Terminal / Authority / Recovery
+
+**Status:** `DEVELOPMENT_VALIDATED / ROOT_TERMINAL_MIGRATION_CLOSED`  
+**Data zamknięcia:** `2026-09-02`
+
+Najlepszy punkt wejścia:
+
+[`evidence/TEST4_ROOT_TERMINAL_AUTHORITY_E2E_RECOVERY_20260902.md`](evidence/TEST4_ROOT_TERMINAL_AUTHORITY_E2E_RECOVERY_20260902.md)
+
+Finalny machine-readable closure:
+
+[`evidence/TEST4_ROOT_TERMINAL_FINAL_CLOSURE_20260902.json`](evidence/TEST4_ROOT_TERMINAL_FINAL_CLOSURE_20260902.json)
+
+Najważniejszy wynik:
+
+```text
+final regression = 461/461 PASS
+authority boundary = PASS
+full pipeline E2E = 1000/1000 PASS
+concurrency = 1000 commands / 20 workers PASS
+real process restart = 20/20 PASS
+physical receipts = 2000 for 1000 commands
+receipt duplicates = 0
+receipt orphans = 0
+receipt missing = 0
+open_blockers = []
+
+ROOT_TERMINAL_MIGRATION_CLOSED = TRUE
+ROOT_TERMINAL_CANONICAL = TRUE
+FINAL_PASS = TRUE
+```
+
+TEST 4 jest szczególnie istotny metodologicznie, ponieważ pierwszy closure-candidate nie został przyjęty wyłącznie na podstawie raportu PASS. Audyt evidence wykrył słabsze lub niejednoznaczne dowody dla authentication boundary, concurrency, process restart i receipt accounting. Kontrakt został zaostrzony, brakujące punkty poprawiono lub doprecyzowano, a następnie wykonano retesty aż do `FINAL_CLOSURE_V4`.
+
+Granice wyniku są jawne: stress-test 1000× używa `CONTROLLED_E2E_BACKEND` do deterministycznego testowania pipeline systemowego, natomiast restart 20× używa realnego procesu ROBERTA. Kanały realtime i remote pozostają `NOT_IMPLEMENTED / OUT OF SCOPE` i nie są przedstawiane jako działające.
+
+Prywatny kod Terminala ROOT, raw logs, lokalne ścieżki, backupy i service definitions nie są publikowane w publicznym research mirror.
+
+## Poprzedni zamknięty etap: Micronetwork Migration / V10 Repair
 
 **Status:** `DEVELOPMENT_VALIDATED / MICRONETWORK_MIGRATION_CLOSED`  
 **Data zamknięcia:** `2026-09-02`
@@ -141,14 +179,21 @@ wykrycie słabego PASS condition
 -> TEST3 100x v2
 poprawiony kontrakt + 60 000 przypadków
 
--> RESTART / REGRESSION / CANONICAL STATE
+-> MICRONETWORK MIGRATION CLOSED
 
--> MIGRATION CLOSED
+-> TEST 4 ROOT TERMINAL
+migration / authority / full E2E / concurrency / real process restart
+
+-> EVIDENCE AUDIT / HARDENING
+pierwszy closure-candidate odrzucony jako niewystarczająco udowodniony
+
+-> FINAL CLOSURE V4
+ROOT TERMINAL MIGRATION CLOSED
 ```
 
 Test 2 nie był próbą uzyskania najlepszego czasu. Jego rolą było dostarczenie evidence, że szerszy przepływ, lifecycle, persistence, replay/restart i related mechanisms działają przed wprowadzeniem selektywnego routingu.
 
-Późniejszy migration-closure pokazał dodatkowo, że sam status PASS nie wystarcza: trzeba audytować również to, **co dokładnie warunek PASS mierzy**.
+Późniejsze migration-closure oraz TEST 4 pokazują dodatkowo, że sam status PASS nie wystarcza: trzeba audytować również to, **co dokładnie warunek PASS mierzy i czy evidence rzeczywiście dowodzi deklarowanego zachowania**.
 
 ## 7. Ważne ograniczenie interpretacyjne
 
