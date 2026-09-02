@@ -1,0 +1,18 @@
+{
+  "test": "E2E_1000X_FULL_PIPELINE",
+  "backend": "CONTROLLED_E2E_BACKEND",
+  "received": 1000,
+  "authorized": 1000,
+  "registered": 1000,
+  "executed": 1000,
+  "results": 1000,
+  "receipts": 1000,
+  "audit_records": 1000,
+  "outcomes": 1000,
+  "failed": 0,
+  "lost": 0,
+  "duplicate_effects": 0,
+  "registry_records": 1000,
+  "unique_command_ids": 1000,
+  "all_pass": true
+}
