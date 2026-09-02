@@ -1,0 +1,45 @@
+{
+  "repair_id": "ROBERT_MICRONETWORK_INTEGRATION_REPAIR_V3",
+  "current_stage": "CLOSURE_V2",
+  "last_completed_stage": "P10",
+  "stages": {
+    "P0": "PASS", "P1": "PASS", "P2": "PASS", "P3": "PASS", "P4": "PASS",
+    "P5": "PASS", "P6": "PASS", "P7": "PASS", "P8": "PASS", "P9": "PASS", "P10": "PASS"
+  },
+  "acceptance": {
+    "A01": "PASS", "A02": "PASS", "A03": "PASS", "A04": "PASS", "A05": "PASS",
+    "A06": "PASS", "A07": "PASS", "A08": "PASS", "A09": "PASS", "A10": "PASS",
+    "A11": "PASS", "A12": "PASS", "A13": "PASS", "A14": "PASS", "A15": "PASS",
+    "A16": "PASS", "A17": "PASS", "A18": "PASS", "A19": "PASS", "A20": "PASS"
+  },
+  "verification": {
+    "test3_100x_v1": {
+      "passes_reported": 100,
+      "note": "Historical result retained: PASS formula was incomplete because failed>0 did not block PASS."
+    },
+    "test3_100x_v2": {"passes": 100, "failures": 0, "all_pass": true, "correctness_zero": true},
+    "restart_20x": {"passes": 20, "failures": 0, "all_pass": true},
+    "v10_canonical_state": {"all_pass": true},
+    "regression_a01_a20": {"final_pass": true}
+  },
+  "test3_v2_aggregates": {
+    "iterations": 100,
+    "passes": 100,
+    "failures": 0,
+    "total": 60000,
+    "accounted_total": 60000,
+    "reuse_valid_total": 23167,
+    "escalated_and_resolved_total": 25837,
+    "full_flow_resolved_total": 10996,
+    "failed_total": 0,
+    "incorrect_routing_total": 0,
+    "background_failures_total": 0,
+    "exceptions_total": 0,
+    "unresolved_failures_total": 0
+  },
+  "open_blockers": [],
+  "next_action": "MICRONETWORK_MIGRATION_CLOSED",
+  "micronetwork_migration_closed": true,
+  "micronetwork_canonical": true,
+  "final_pass": true
+}
