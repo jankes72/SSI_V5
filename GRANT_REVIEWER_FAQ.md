@@ -564,3 +564,33 @@ CLAIM
 **V10 is a stateful predictive competence and recovery router. It does not merely select a faster path. It uses confidence, current state, persistent competence, prior attempts, outcomes and failure signatures to decide what to reuse, what to verify, what not to repeat, when to change LEGO composition or competence, and when to escalate to the canonical full flow.**
 
 The measured speedup in Test 3 is evidence for one benefit of selective routing; the broader research value is whether this mechanism can support persistent, non-circular, evidence-driven problem solving over long tasks and changing environments.
+
+---
+
+## 26. What is the intended economic development and self-financing model of SSI?
+
+The long-term research direction is for ROBERT and the Director to perform measurable real-world work, initially in bounded areas such as e-commerce, SEO and software development. ROBERT is intended to execute projects and collect new technical solutions, while the Director compares strategies, evaluates outcomes, curates shared competence and allocates capital under an explicit policy.
+
+If a positive economic result is produced, the intended allocation is:
+
+```text
+50% -> AUTHOR / OWNER
+40% -> SSI INVESTMENT CAPITAL
+10% -> SSI INFRASTRUCTURE DEVELOPMENT
+```
+
+The `40%` pool is intended as capital for controlled economic experiments and investment worlds. The separate `10%` pool is intended for SSI infrastructure such as hardware, servers, models, APIs, tools and justified system modifications. These are two distinct feedback loops: accumulation of investment capital and accumulation of technical capability.
+
+GitHub is intended to become a living, public evidence record of this development: missions, project outputs, tests, failures, decisions, costs, outcomes, conclusions and competence changes produced by the Director, ROBERT and—where applicable—other SSI bodies. The private implementation and sensitive operational data do not need to be published for those effects to be documented.
+
+This is a planned experimental and governance model, not a promise of profit, autonomous legal ownership or guaranteed economic performance.
+
+---
+
+## 27. What role can grants or external funding play?
+
+A grant is an optional accelerator, not the purpose or a prerequisite of SSI V5. External funding could shorten the path to experiments requiring substantially more compute, including multiple persistent Agent Bodies with separate histories, Iskra/value layers, worlds and laboratories.
+
+Without a grant, development is intended to continue incrementally on available hardware and may take longer. If ROBERT and the Director later produce positive real-world outcomes, the dedicated `10%` SSI development pool is intended to help finance further infrastructure.
+
+The project therefore does not ask a reviewer to fund an idea with no prior work. The intended basis for evaluation is an implemented experimental ecosystem, existing scoped evidence, explicit current limitations, a reviewer-facing demonstrator and falsifiable next experiments. External funding would increase scale and speed; it would not replace the underlying development path.
