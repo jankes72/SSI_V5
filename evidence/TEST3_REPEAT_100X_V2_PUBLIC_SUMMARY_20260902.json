@@ -1,0 +1,32 @@
+{
+  "iterations": 100,
+  "passes": 100,
+  "failures": 0,
+  "all_pass": true,
+  "total": 60000,
+  "accounted_total": 60000,
+  "reuse_valid_total": 23167,
+  "escalated_and_resolved_total": 25837,
+  "full_flow_resolved_total": 10996,
+  "failed_total": 0,
+  "incorrect_routing_total": 0,
+  "background_failures_total": 0,
+  "exceptions_total": 0,
+  "unresolved_failures_total": 0,
+  "max_failed_per_iter": 0,
+  "max_incorrect_routing_per_iter": 0,
+  "max_background_failures_per_iter": 0,
+  "max_exceptions_per_iter": 0,
+  "contract": {
+    "total_per_run": 600,
+    "accounted_per_run": 600,
+    "requires_failed_zero": true,
+    "requires_incorrect_routing_zero": true,
+    "requires_background_failures_zero": true,
+    "requires_exceptions_zero": true,
+    "requires_reuse_without_capability_zero": true,
+    "requires_real_reuse_execution": true
+  },
+  "status": "PASS",
+  "note": "Public aggregate derived from local per-iteration evidence. Raw traces remain private/local to avoid publishing unnecessary implementation detail."
+}
