@@ -51,7 +51,7 @@ The project is intentionally evidence-driven. Public claims are separated from h
 ## Persistent adaptive intelligence, micronetwork learning, stateful predictive competence routing, dynamic worlds and longitudinal agent research
 
 **Status:** `PRE-T0 / ORGANISM-CORE-MIGRATION`  
-**Data aktualizacji:** `2026-09-01`  
+**Data aktualizacji:** `2026-09-02`  
 **Autor architektury SSI:** **Paweł Jankiewicz** (`PROGRAMMER_ROOT`)  
 **Najwyższa authority:** **Paweł Jankiewicz / PROGRAMMER_ROOT**  
 **Stan hipotezy AGI / świadomości:** `NIEUDOWODNIONA — BADANA EKSPERYMENTALNIE`  
@@ -897,7 +897,6 @@ Hipotezę osłabiłoby m.in.:
 # 21. Granice twierdzeń
 
 SSI V5 **nie deklaruje**, że:
-
 - jest udowodnionym AGI;
 - posiada świadomość;
 - niespodziewane zachowanie dowodzi świadomości;
