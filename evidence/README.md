@@ -4,6 +4,62 @@ Ten katalog zawiera publiczne artefakty evidence dla najważniejszych etapów pr
 
 Zasada: README opisuje hipotezy, architekturę i interpretację; pliki w `evidence/` pokazują możliwie bezpośrednie wyniki maszynowe, root cause, snapshoty, claim boundaries i lineage bez publikowania prywatnego kodu SSI.
 
+## TEST 4 — ROOT Terminal: Authority, E2E, Concurrency & Recovery — FINAL CLOSURE
+
+**Status:** `DEVELOPMENT_VALIDATED / ROOT_TERMINAL_MIGRATION_CLOSED`  
+**Data zamknięcia:** `2026-09-02`
+
+Główny dokument:
+
+- [`TEST4_ROOT_TERMINAL_AUTHORITY_E2E_RECOVERY_20260902.md`](TEST4_ROOT_TERMINAL_AUTHORITY_E2E_RECOVERY_20260902.md) — pełny lineage migracja → audyt → hardening → retest → closure.
+
+Publiczne machine evidence:
+
+- [`TEST4_ROOT_TERMINAL_FINAL_CLOSURE_20260902.json`](TEST4_ROOT_TERMINAL_FINAL_CLOSURE_20260902.json)
+- [`TEST4_ROOT_TERMINAL_AUTHORITY_BOUNDARY_20260902.json`](TEST4_ROOT_TERMINAL_AUTHORITY_BOUNDARY_20260902.json)
+- [`TEST4_ROOT_TERMINAL_E2E_1000X_20260902.json`](TEST4_ROOT_TERMINAL_E2E_1000X_20260902.json)
+- [`TEST4_ROOT_TERMINAL_CONCURRENCY_1000X_20260902.json`](TEST4_ROOT_TERMINAL_CONCURRENCY_1000X_20260902.json)
+- [`TEST4_ROOT_TERMINAL_RESTART_20X_20260902.json`](TEST4_ROOT_TERMINAL_RESTART_20X_20260902.json)
+- [`TEST4_ROOT_TERMINAL_RECEIPT_ACCOUNTING_1000X_20260902.json`](TEST4_ROOT_TERMINAL_RECEIPT_ACCOUNTING_1000X_20260902.json)
+- [`TEST4_ROOT_TERMINAL_CHANNEL_PARITY_20260902.json`](TEST4_ROOT_TERMINAL_CHANNEL_PARITY_20260902.json)
+- [`TEST4_ROOT_TERMINAL_REGRESSION_20260902.json`](TEST4_ROOT_TERMINAL_REGRESSION_20260902.json)
+- [`TEST4_ROOT_TERMINAL_EVIDENCE_MANIFEST_SHA256_20260902.txt`](TEST4_ROOT_TERMINAL_EVIDENCE_MANIFEST_SHA256_20260902.txt)
+
+Końcowy wynik:
+
+```text
+FINAL REGRESSION = 461/461 PASS
+AUTHORITY BOUNDARY = PASS
+FULL PIPELINE E2E = 1000/1000 PASS
+CONCURRENCY = 1000 commands / 20 workers PASS
+REAL PROCESS RESTART = 20/20 PASS
+INTERFACE_RECORDED = 1000
+DIRECTOR_ACCEPTED = 1000
+PHYSICAL_RECEIPTS = 2000
+DUPLICATE_RECEIPTS = 0
+ORPHAN_RECEIPTS = 0
+MISSING_RECEIPTS = 0
+OPEN_BLOCKERS = []
+
+ROOT_TERMINAL_MIGRATION_CLOSED = TRUE
+ROOT_TERMINAL_CANONICAL = TRUE
+FINAL_PASS = TRUE
+```
+
+Najważniejszy element metodologiczny: pierwszy closure-candidate nie został przyjęty wyłącznie na podstawie zielonego raportu. Audyt evidence wykrył niejednoznaczną granicę authentication, zbyt słaby początkowy test concurrency, restart bez dowodu zmiany procesu oraz niewyjaśnione `1000 -> 2000` receipt records. Kontrakt został zaostrzony, authority boundary utwardzone, a brakujące testy wykonane ponownie. Final closure pochodzi z V4 po tych korektach.
+
+Claim boundary:
+
+- stress-testy 1000× używają jawnie oznaczonego `CONTROLLED_E2E_BACKEND`; mierzą pipeline systemowy, nie jakość zewnętrznego model/provider API;
+- test restartu 20× używa realnego procesu ROBERTA i potwierdza zmianę PID w każdym restarcie;
+- `local` oraz `IPC/API` są w badanym zakresie zaimplementowane;
+- `offline` jest odrzucany zgodnie z kontraktem;
+- `realtime` i `remote` pozostają `NOT_IMPLEMENTED / OUT OF SCOPE` i nie są przedstawiane jako działające.
+
+Publiczny zestaw TEST 4 nie zawiera prywatnego kodu `root_control`, `root_runtime_bridge`, raw logs, backupów, lokalnych ścieżek, service definitions, sekretów ani tokenów.
+
+---
+
 ## Micronetwork migration / repair lineage — FINAL CLOSURE
 
 **Status:** `DEVELOPMENT_VALIDATED / MICRONETWORK_MIGRATION_CLOSED`
@@ -141,7 +197,7 @@ Protokół warstwowego rozwoju ROBERTA: baseline, capability layers, LEGO, check
 
 Publiczny evidence mirror nie zawiera sekretów, API keys, tokenów, prywatnych danych ani pełnego prywatnego runtime. Publikowane artefakty mają umożliwiać kontrolę twierdzeń bez ujawniania wrażliwych danych lub autorskiego kodu wykonawczego.
 
-Finalne zamknięcie migracji mikrosieci jest **development validation dla badanego zakresu**, nie twierdzeniem o production readiness, AGI, świadomości ani uniwersalnym dowodem wszystkich przyszłych funkcji V10.
+Finalne zamknięcie migracji mikrosieci i TEST 4 są **development validation dla badanego zakresu**, nie twierdzeniem o production readiness, AGI, świadomości ani uniwersalnym dowodem wszystkich przyszłych funkcji SSI.
 
 ## Reguła metodologiczna
 
