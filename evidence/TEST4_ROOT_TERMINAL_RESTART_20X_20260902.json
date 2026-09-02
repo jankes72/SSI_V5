@@ -1,0 +1,14 @@
+{
+  "test": "REAL_PROCESS_RESTART_20X",
+  "backend": "real ROBERT process",
+  "total_restarts": 20,
+  "failures": 0,
+  "duration_s": 58.27,
+  "all_pass": true,
+  "aggregate": {
+    "pid_changed_each_restart": true,
+    "root_control_active_each_restart": true,
+    "command_executed_each_restart": true,
+    "result_verified_each_restart": true
+  }
+}
