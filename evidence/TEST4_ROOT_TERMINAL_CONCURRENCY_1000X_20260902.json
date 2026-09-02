@@ -1,0 +1,13 @@
+{
+  "test": "CONCURRENCY_1000X",
+  "backend": "CONTROLLED_E2E_BACKEND",
+  "workers": 20,
+  "returned": 1000,
+  "all_ok": true,
+  "unique_ids": 1000,
+  "records": 1000,
+  "errors": 0,
+  "lost": 0,
+  "duplicate_effects": 0,
+  "all_pass": true
+}
