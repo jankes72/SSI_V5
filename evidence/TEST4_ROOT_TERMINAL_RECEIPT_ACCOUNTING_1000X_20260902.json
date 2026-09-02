@@ -1,0 +1,15 @@
+{
+  "test": "RECEIPT_ACCOUNTING_1000X_FINAL",
+  "backend": "CONTROLLED_E2E_BACKEND (not a real model/provider)",
+  "commands": 1000,
+  "expected_receipts_per_command": 2,
+  "expected_types": ["INTERFACE_RECORDED", "DIRECTOR_ACCEPTED"],
+  "INTERFACE_RECORDED": 1000,
+  "DIRECTOR_ACCEPTED": 1000,
+  "physical_receipts": 2000,
+  "expected_total": 2000,
+  "duplicate_receipts": 0,
+  "orphan_receipts": 0,
+  "missing_receipts": 0,
+  "all_pass": true
+}
