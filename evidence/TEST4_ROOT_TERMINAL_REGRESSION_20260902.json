@@ -1,0 +1,8 @@
+{
+  "test": "FINAL_REGRESSION",
+  "backend": "real (no mock)",
+  "total_tests": 461,
+  "passed": 461,
+  "failed": 0,
+  "all_pass": true
+}
