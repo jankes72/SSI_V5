@@ -4,8 +4,41 @@
 
 **Autor architektury:** Paweł Jankiewicz (`jankes72`, `PROGRAMMER_ROOT`)  
 **Status:** aktywny niezależny projekt badawczy  
+**Najnowszy zamknięty milestone:** `TEST 5 / SSI BODY FINAL CONVERGENCE / DEVELOPMENT_VALIDATED`  
+**Data aktualizacji:** `2026-09-03`  
 **Repozytorium:** publiczne lustro badawcze / evidence-indexed  
 **Stan AGI / świadomości:** **nieudowodniony — badany eksperymentalnie, bez deklarowania wyniku z góry**
+
+---
+
+## Aktualny zweryfikowany stan — TEST 5
+
+Najnowszym zamkniętym publicznym etapem jest TEST 5, który weryfikuje naprawiony lokalny `SSI BODY control/integration path` po niezależnym audycie.
+
+```text
+STAGE_12 = SUPERSEDED
+STAGE_13_AUDIT_RETEST = PASS
+TEST5_ACCEPTANCE = 29/29 PASS
+ROOT_CONTROL = 111/111 PASS
+ROOT_RUNTIME_BRIDGE = 338/338 PASS
+ROBERT_STABLE = 46/46 PASS
+TOTAL = 524/524 PASS
+OPEN_BLOCKERS = 0
+FINAL_CONVERGENCE_PASS = TRUE
+```
+
+Ważne metodologicznie: wcześniejszy Stage 12 miał `27/27 PASS`, ale audyt wykazał, że nie jest wystarczającą podstawą closure. Wykryto m.in. zbyt słabe real integration gates, słaby assertion restartu, niepełne authentication checks na IPC boundary i możliwość zaakceptowania spoofed ROOT identity. Wynik nie został usunięty — został zachowany jako `SUPERSEDED`, a dopiero naprawiony Stage 13 stał się podstawą aktualnego claimu.
+
+TEST 5 obejmuje `UNIT / CONTROLLED`, `REAL INTEGRATION`, `REAL PROCESS E2E` i `REGRESSION`, w tym realne testowane połączenia V10/micronetwork, lokalne CONTINUUM, provider registry/gateway, restart/recovery procesu, ROOT authentication boundary, receipt/audit E2E, CLI/IPC parity oraz HTTP -> IPC -> runtime.
+
+Publiczne evidence:
+
+- [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
+- [`evidence/TEST5_FINAL_RESULT_20260903.json`](evidence/TEST5_FINAL_RESULT_20260903.json)
+- [`evidence/TEST5_FINAL_MATRIX_20260903.json`](evidence/TEST5_FINAL_MATRIX_20260903.json)
+- [`evidence/TEST5_STAGE12_SUPERSEDED_20260903.json`](evidence/TEST5_STAGE12_SUPERSEDED_20260903.json)
+
+**Claim boundary:** ten wynik jest development validation badanego lokalnego SSI BODY control/integration path. Nie dowodzi production readiness całego SSI, uniwersalnej niezawodności, jakości zewnętrznych modeli/providerów, AGI ani świadomości.
 
 ---
 
@@ -37,19 +70,35 @@ Główna hipoteza badawcza brzmi:
 
 Projekt jest rozwijany poprzez serię **zamrażanych etapów eksperymentalnych**, a nie przez nadpisywanie jednego stanu i późniejsze opisywanie go z pamięci.
 
-Plan porównawczy:
+Obecna publiczna sekwencja wygląda skrótowo tak:
 
 ```text
-BODY SIMPLE
-→ testy
-→ evidence
-→ frozen snapshot
+MICRONETWORK MIGRATION / TEST3 100x v2
+→ 60 000/60 000 accounted
+→ 0 unresolved failures
+→ canonical/shared V10 state
 
-BODY HARD / FULL MICRONETWORK STRUCTURE
-→ te same lub porównywalne testy
-→ evidence
-→ frozen snapshot
+TEST 4 ROOT TERMINAL
+→ authority boundary
+→ full E2E
+→ concurrency
+→ real process restart
+→ receipt accounting
+→ final closure
 
+TEST 5 SSI BODY FINAL CONVERGENCE
+→ Stage 12 rejected as insufficient
+→ independent audit
+→ security/integration repair
+→ Stage 13 retest
+→ 29/29 acceptance
+→ 524/524 total regression
+→ 0 blockers
+```
+
+Dalszy plan porównawczy pozostaje warstwowy:
+
+```text
 FULL BODY + CONTINUUM
 → długie zadania wykonawcze
 → Tetris jako kontrolowany engineering task
@@ -225,6 +274,17 @@ PROBLEM
 
 Modele AI i narzędzia CLI są używane jako wykonawcy, audytorzy i źródła capability. Architektura, wymagania, kierunek eksperymentu, kryteria akceptacji oraz najwyższa authority pozostają po stronie autora.
 
+TEST 5 dodaje ważną zasadę metodologiczną:
+
+```text
+GREEN PASS != AUTOMATIC CLOSURE
+→ AUDIT WHAT THE TEST REALLY PROVES
+→ PRESERVE WEAK / SUPERSEDED RESULT
+→ REPAIR CONTRACT AND SYSTEM
+→ RETEST
+→ ONLY THEN CURRENT CLAIM
+```
+
 ---
 
 ## O autorze
@@ -258,6 +318,8 @@ PREDICTION
 → MICRONETWORKS
 → PERSISTENT BODY
 → CONTINUUM
+→ ROOT CONTROL / TERMINAL
+→ SSI BODY CONTROL / INTEGRATION
 → ROBERT
 → AGENTS
 ```
@@ -271,10 +333,12 @@ Pełna historia i techniczne szczegóły znajdują się w głównym [`README.md`
 Najlepsza kolejność:
 
 1. **Ten plik — `START_HERE.md`** — szybkie zrozumienie projektu.
-2. **`README.md`** — pełny żywy protokół badawczy.
+2. **`START_HERE_FOR_REVIEWERS.md`** — aktualny punkt wejścia dla grantodawcy i recenzenta.
 3. **`CURRENT_TRUTH_INDEX.md`** — aktualny indeks tego, co jest hipotezą, planem i zweryfikowanym stanem.
-4. **`AUTHOR_CONTEXT.md`** — kontekst autora.
-5. **`evidence/`** — wyniki, raporty, snapshoty, testy i historia eksperymentów.
+4. **`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`** — najnowszy zamknięty milestone.
+5. **`README.md`** — pełny żywy protokół badawczy.
+6. **`AUTHOR_CONTEXT.md`** — kontekst autora.
+7. **`evidence/`** — wyniki, raporty, snapshoty, testy i historia eksperymentów.
 
 ---
 
@@ -284,20 +348,21 @@ Najlepsza kolejność:
 NO EVIDENCE → UNKNOWN
 INSUFFICIENT EVIDENCE → ABSTAIN
 CONFLICTING EVIDENCE → PRESERVE CONFLICT
+WEAK PASS CONTRACT → SUPERSEDE, DO NOT ERASE
 NEW EVIDENCE → REVISION
 REPLAY → REBUILD
 ```
 
-Projekt ma dokumentować również niepowodzenia i wyniki negatywne. Brak oczekiwanego zachowania jest wynikiem eksperymentu, a nie powodem do ukrywania przebiegu.
+Projekt ma dokumentować również niepowodzenia i wyniki negatywne. Brak oczekiwanego zachowania albo wykrycie zbyt słabego testu jest wynikiem eksperymentu, a nie powodem do ukrywania przebiegu.
 
 ---
 
 ## Aktualny cel
 
-Najbliższym celem jest ukończenie i zamrożenie kolejnych porównywalnych wersji SSI Body, a następnie przejście przez CONTINUUM, Tetris, Eyes/Hands i Agent Body / Iskra przed próbą skalowania do wielu równoległych, długotrwałych Agentów.
+Po zamknięciu TEST 5 projekt ma jeden spójny publiczny baseline dla mikrosieci, ROOT terminal/control oraz lokalnego SSI BODY integration path. Następne etapy mają być nadal budowane i zamrażane w ten sam sposób: implementacja -> audyt -> test -> evidence -> claim boundary.
 
 Największym przyszłym ograniczeniem eksperymentu ma być nie brak koncepcji, lecz możliwość zapewnienia wielu izolowanym Agentom porównywalnego compute, storage, model access i czasu działania.
 
 ---
 
-**SSI V5 nie przedstawia nieudowodnionych właściwości jako faktów. Repozytorium ma pokazywać rozwój hipotez przez kolejne zamrożone stany, testy i evidence.**
+**SSI V5 nie przedstawia nieudowodnionych właściwości jako faktów. Repozytorium ma pokazywać rozwój hipotez przez kolejne zamrożone stany, audyty, testy i evidence.**
