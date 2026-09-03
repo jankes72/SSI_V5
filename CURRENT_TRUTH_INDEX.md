@@ -1,7 +1,39 @@
 # SSI V5 — CURRENT TRUTH INDEX
 
-**Status:** `PUBLIC RESEARCH INDEX / 2026-09-01`  
+**Status:** `PUBLIC RESEARCH INDEX / 2026-09-03`  
+**Najnowszy zamknięty milestone:** `TEST 5 / SSI BODY FINAL CONVERGENCE / DEVELOPMENT_VALIDATED`  
 **Cel:** jedno miejsce wskazujące aktualnie najuczciwszy opis genezy, rozwoju, atrybucji i obecnej architektury SSI V5.
+
+## CURRENT VALIDATED MILESTONE — TEST 5
+
+TEST 5 jest obecnie najnowszą publiczną podstawą dla claimu dotyczącego testowanego lokalnego `SSI BODY control/integration path`.
+
+```text
+STAGE_12 = SUPERSEDED
+STAGE_13_AUDIT_RETEST = PASS
+TEST5_ACCEPTANCE = 29/29 PASS
+ROOT_CONTROL = 111/111 PASS
+ROOT_RUNTIME_BRIDGE = 338/338 PASS
+ROBERT_STABLE = 46/46 PASS
+TOTAL = 524/524 PASS
+OPEN_BLOCKERS = 0
+FINAL_CONVERGENCE_PASS = TRUE
+```
+
+Stage 12 pozostaje częścią historii, ale nie jest aktualną podstawą closure. Wcześniejszy wynik `27/27 PASS` został zakwestionowany przez niezależny audyt z powodu zbyt słabych bramek integracyjnych, słabego assertion restartu, niepełnego authentication check na granicy IPC i możliwości zaakceptowania spoofed ROOT identity. Po naprawach wykonano Stage 13 independent audit retest.
+
+Finalny zakres TEST 5 obejmuje `UNIT / CONTROLLED`, `REAL INTEGRATION`, `REAL PROCESS E2E` oraz `REGRESSION`, w tym realne testowane połączenia V10/micronetwork, lokalne CONTINUUM, provider registry/gateway, restart/recovery procesu, ROOT authentication boundary, receipt/audit E2E, CLI/IPC parity i HTTP -> IPC -> runtime.
+
+**Claim boundary:** TEST 5 jest development validation badanego lokalnego control/integration path. Nie dowodzi production readiness całego SSI, uniwersalnej niezawodności, jakości zewnętrznych modeli/providerów, AGI ani świadomości.
+
+Publiczne evidence:
+
+- [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
+- [`evidence/TEST5_FINAL_RESULT_20260903.json`](evidence/TEST5_FINAL_RESULT_20260903.json)
+- [`evidence/TEST5_FINAL_MATRIX_20260903.json`](evidence/TEST5_FINAL_MATRIX_20260903.json)
+- [`evidence/TEST5_STAGE12_SUPERSEDED_20260903.json`](evidence/TEST5_STAGE12_SUPERSEDED_20260903.json)
+
+---
 
 ## 0. Kanoniczne znaczenie V10
 
@@ -30,7 +62,7 @@ SAME / EQUIVALENT STATE
 
 V10 ma więc nie tylko szybciej znaleźć zwalidowaną kompetencję, ale również wykorzystać historię wykonania do zmiany strategii po niepowodzeniu. Może ponownie użyć poprawnych klocków LEGO, zmienić ich kompozycję, wybrać alternatywnego Championa, przejść przez `VERIFY_TOPK` albo eskalować do canonical `FULL_FLOW`.
 
-Zmierzony wynik wydajności Testu 3 jest ważnym evidence dla selektywnego routingu, ale **nie jest pełnym znaczeniem V10**. Dedykowany benchmark anti-loop/recovery pozostaje do wykonania.
+Zmierzony wynik wydajności Testu 3 jest ważnym evidence dla selektywnego routingu, ale **nie jest pełnym znaczeniem V10**. TEST 5 wzmacnia dowody integracyjne dla lokalnego V10/micronetwork path, ale dedykowany benchmark anti-loop/recovery pozostaje osobnym pytaniem badawczym.
 
 Pełna definicja: [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md).
 
@@ -54,6 +86,8 @@ FOOTBALL WORLD / REALNE PREDYKCJE I OUTCOMES
 -> EYES / HANDS / BROWSER / TOOL ACCESS
 -> HARDENING Experience / micronetwork lifecycle / replay / restart / idempotency
 -> V10 STATEFUL PREDICTIVE COMPETENCE & RECOVERY ROUTING
+-> ROOT TERMINAL / AUTHORITY / RECOVERY HARDENING
+-> SSI BODY CONTROL / INTEGRATION CONVERGENCE
 -> SSI ORGANISM CORE
 -> REBUILT DIRECTOR BODY
 -> AGENT BODY
@@ -71,6 +105,8 @@ To jest historia rozwoju koncepcji. Nie należy jej mylić z obecną kolejności
 HARDEN ROBERT
 -> EXTRACT NEUTRAL MECHANISMS
 -> VERIFY SSI ORGANISM CORE
+-> CANONICAL ROOT CONTROL / TERMINAL
+-> SSI BODY CONTROL / INTEGRATION CONVERGENCE
 -> REBUILD ROBERT BODY ON CORE
 -> REBUILD DIRECTOR BODY ON CORE
 -> CONNECT SELF-DEVELOPMENT / RESEARCH / EYES-HANDS
@@ -133,6 +169,8 @@ NOWY PROBLEM
 ```
 
 V10 jest warstwą wykonawczą tej samej szerszej zasady na poziomie routingu: wynik wcześniejszej próby powinien wpływać na wybór następnej ścieżki.
+
+TEST 5 dodaje do tej historii kolejny ważny wzorzec: **zielony acceptance result może zostać wycofany jako podstawa closure, jeśli późniejszy audyt ujawni, że testował zbyt słaby kontrakt lub niewłaściwą granicę bezpieczeństwa**.
 
 ---
 
@@ -224,13 +262,36 @@ Każdy Agent ma rozwijać własne identity, private memory, Experience, beliefs,
 
 ## 11. Prawdziwa historia testów
 
-Publiczna historia zawiera wcześniejsze raporty FAIL/partial wiring oraz późniejsze raporty naprawcze i testy PASS.
+Publiczna historia zawiera wcześniejsze raporty FAIL/partial wiring, wyniki później oznaczone jako niewystarczające lub `SUPERSEDED`, a następnie raporty naprawcze i mocniejsze retesty.
 
 ```text
-FAIL -> DIAGNOSIS -> REPAIR -> RETEST -> LATER PASS
+PASS / FAIL / PARTIAL
+-> AUDIT WHAT WAS REALLY MEASURED
+-> CONTRADICTION OR WEAK CONTRACT IF FOUND
+-> DIAGNOSIS
+-> REPAIR
+-> RETEST
+-> CURRENT CLAIM BOUNDARY
 ```
 
-Wcześniejsze niepowodzenie nie znika po późniejszej naprawie. Ta sama zasada jest podstawą anti-loop: failure ma być informacją dla następnej decyzji, a nie powodem do ślepego retry.
+Wcześniejsze niepowodzenie ani niewystarczający PASS nie znikają po późniejszej naprawie. Ta sama zasada jest podstawą anti-loop: failure ma być informacją dla następnej decyzji, a nie powodem do ślepego retry.
+
+Aktualna sekwencja zamkniętych etapów obejmuje:
+
+```text
+MICRONETWORK MIGRATION / TEST3 100x v2
+-> 60 000/60 000 accounted, 0 unresolved failures
+
+TEST 4 ROOT TERMINAL
+-> authority / E2E / concurrency / restart / receipt accounting closure
+
+TEST 5 SSI BODY FINAL CONVERGENCE
+-> Stage 12 superseded
+-> Stage 13 independent audit retest
+-> 29/29 acceptance
+-> 524/524 total regression
+-> 0 open blockers
+```
 
 ---
 
@@ -250,6 +311,8 @@ Zweryfikowana publiczna historia Git pokazuje:
 2026-08-25  SSI_V5 public research mirror
 2026-08-29  ROBERT hardening / ORGANISM CORE migration
 2026-09-01  V10 public evidence and reviewer documentation
+2026-09-02  micronetwork migration closure + TEST 4 ROOT terminal closure
+2026-09-03  TEST 5 sanitized public evidence + Stage 13 independent audit retest closure
 ```
 
 ---
@@ -264,6 +327,8 @@ ROBERT -> executes approved real-world actions
 
 V10 nie zmienia authority. Jest mechanizmem routingu i recovery wewnątrz dozwolonego przepływu, a nie źródłem nadrzędnej władzy.
 
+TEST 5 wzmacnia publiczne evidence dla granicy ROOT control i odrzucania spoofed identity w badanym lokalnym przepływie.
+
 ---
 
 ## 14. Granice twierdzeń
@@ -274,6 +339,7 @@ Publiczny opis ma rozróżniać:
 
 ```text
 HISTORICAL_EVIDENCE
+SUPERSEDED
 ROOT_ATTESTED
 DEVELOPMENT_VALIDATED
 IMPLEMENTED_NOT_YET_REPLICATED
@@ -281,6 +347,8 @@ PLANNED
 HYPOTHESIS
 UNKNOWN
 ```
+
+`SUPERSEDED` oznacza, że historyczny wynik pozostaje w repo, ale późniejszy audyt wykazał, iż nie powinien już być używany jako aktualna podstawa danego claimu.
 
 ---
 
@@ -290,6 +358,10 @@ UNKNOWN
 - [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
 - [`V10_PREDICTIVE_ROUTING_FAQ.md`](V10_PREDICTIVE_ROUTING_FAQ.md)
 - [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
+- [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
+- [`evidence/TEST5_FINAL_RESULT_20260903.json`](evidence/TEST5_FINAL_RESULT_20260903.json)
+- [`evidence/TEST4_ROOT_TERMINAL_AUTHORITY_E2E_RECOVERY_20260902.md`](evidence/TEST4_ROOT_TERMINAL_AUTHORITY_E2E_RECOVERY_20260902.md)
+- [`evidence/MICRONETWORK_MIGRATION_FINAL_LINEAGE_20260902.md`](evidence/MICRONETWORK_MIGRATION_FINAL_LINEAGE_20260902.md)
 - [`evidence/PROJECT_GENESIS_AND_EVOLUTION.md`](evidence/PROJECT_GENESIS_AND_EVOLUTION.md)
 - [`evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md`](evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md)
 - [`evidence/DIRECTOR_AUTONOMOUS_EVOLUTION_AND_ROBERT_EYES_HANDS.md`](evidence/DIRECTOR_AUTONOMOUS_EVOLUTION_AND_ROBERT_EYES_HANDS.md)
@@ -300,7 +372,7 @@ UNKNOWN
 
 ## 16. Zasada końcowa
 
-Najważniejszą rzeczą w publicznym repo nie jest stworzenie jednej efektownej narracji. Ma pozostać możliwe odtworzenie, co istniało wcześniej, co nie działało, co zostało naprawione, co jest dziś sprawdzone i co nadal pozostaje hipotezą.
+Najważniejszą rzeczą w publicznym repo nie jest stworzenie jednej efektownej narracji. Ma pozostać możliwe odtworzenie, co istniało wcześniej, co nie działało, co przeszło zbyt słaby test, co zostało naprawione, co jest dziś sprawdzone i co nadal pozostaje hipotezą.
 
 Dla V10 oznacza to dodatkowo:
 
@@ -308,4 +380,16 @@ Dla V10 oznacza to dodatkowo:
 FAILURE IS NOT ONLY A LOG ENTRY
 -> IT MUST BECOME ROUTING INFORMATION
 -> NEXT DECISION SHOULD CHANGE WHEN EVIDENCE JUSTIFIES CHANGE
+```
+
+Dla metodologii TEST 5 oznacza to:
+
+```text
+GREEN RESULT != AUTOMATIC CLOSURE
+-> AUDIT TEST CONTRACT
+-> AUDIT REAL BOUNDARY
+-> PRESERVE SUPERSEDED RESULT
+-> REPAIR
+-> RETEST
+-> ONLY THEN CURRENT CLAIM
 ```
