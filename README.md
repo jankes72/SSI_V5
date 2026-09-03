@@ -20,6 +20,7 @@ NOT PUBLISHED HERE
 ## Start here
 
 - **Technical reviewers / grant evaluators:** [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)
+- **General project entry:** [START_HERE.md](START_HERE.md)
 - **Current project truth:** [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
 - **Grant / methodology FAQ:** [GRANT_REVIEWER_FAQ.md](GRANT_REVIEWER_FAQ.md)
 - **V10 architecture:** [V10_PREDICTIVE_ROUTING.md](V10_PREDICTIVE_ROUTING.md)
@@ -40,7 +41,7 @@ EXPERIENCE
 -> NEXT DECISION
 ```
 
-The project is intentionally evidence-driven. Public claims are separated from hypotheses, failed tests remain part of the record, and current claim boundaries are documented explicitly.
+The project is intentionally evidence-driven. Public claims are separated from hypotheses, failed or insufficient tests remain part of the record, and current claim boundaries are documented explicitly.
 
 > **Important:** SSI V5 does not claim proven AGI or consciousness. Current results are scoped development evidence for specific mechanisms and test conditions.
 
@@ -50,8 +51,9 @@ The project is intentionally evidence-driven. Public claims are separated from h
 
 ## Persistent adaptive intelligence, micronetwork learning, stateful predictive competence routing, dynamic worlds and longitudinal agent research
 
-**Status:** `PRE-T0 / ORGANISM-CORE-MIGRATION`  
-**Data aktualizacji:** `2026-09-02`  
+**Status:** `PRE-T0 / ORGANISM-CORE-MIGRATION / SSI BODY INTEGRATION HARDENING`  
+**Data aktualizacji:** `2026-09-03`  
+**Najnowszy zamknięty milestone:** `TEST 5 / SSI BODY FINAL CONVERGENCE / DEVELOPMENT_VALIDATED`  
 **Autor architektury SSI:** **Paweł Jankiewicz** (`PROGRAMMER_ROOT`)  
 **Najwyższa authority:** **Paweł Jankiewicz / PROGRAMMER_ROOT**  
 **Stan hipotezy AGI / świadomości:** `NIEUDOWODNIONA — BADANA EKSPERYMENTALNIE`  
@@ -59,7 +61,47 @@ The project is intentionally evidence-driven. Public claims are separated from h
 
 > SSI V5 nie jest jednym LLM-em. Modele są wymiennymi źródłami capability; trwała tożsamość, pamięć, Experience, mikrosieci, lifecycle, authority i historia należą do systemu.
 
-> Publiczny Git ma być biografią projektu: sukcesy, błędy, zmiany hipotez, naprawy i wyniki mają pozostać widoczne.
+> Publiczny Git ma być biografią projektu: sukcesy, błędy, zmiany hipotez, naprawy, superseded results i wyniki mają pozostać widoczne.
+
+---
+
+# Aktualny zweryfikowany milestone — TEST 5
+
+TEST 5 jest obecnie najnowszą publiczną podstawą claimu dotyczącego **testowanego lokalnego SSI BODY control/integration path**.
+
+```text
+STAGE_12 = SUPERSEDED
+STAGE_13_AUDIT_RETEST = PASS
+TEST5_ACCEPTANCE = 29/29 PASS
+ROOT_CONTROL = 111/111 PASS
+ROOT_RUNTIME_BRIDGE = 338/338 PASS
+ROBERT_STABLE = 46/46 PASS
+TOTAL = 524/524 PASS
+OPEN_BLOCKERS = 0
+FINAL_CONVERGENCE_PASS = TRUE
+```
+
+Najważniejsza rzecz metodologiczna: wcześniejszy Stage 12 miał `27/27 PASS`, ale niezależny audyt wykazał, że nie był wystarczającą podstawą closure. Wykryto m.in. zbyt słabe real integration gates, słaby restart assertion, niepełne authentication checks na granicy IPC oraz możliwość zaakceptowania spoofed ROOT identity. Wynik Stage 12 nie został usunięty — pozostaje jako `SUPERSEDED`. Dopiero po naprawach Stage 13 stał się aktualną podstawą TEST 5.
+
+Finalny TEST 5 rozdziela coverage na:
+
+```text
+UNIT / CONTROLLED
+REAL INTEGRATION
+REAL PROCESS E2E
+REGRESSION
+```
+
+W badanym lokalnym zakresie obejmuje m.in. realne V10/micronetwork integration, lokalne CONTINUUM, provider registry/gateway, restart/recovery procesu, ROOT authentication boundary, receipt/audit E2E, CLI/IPC parity oraz HTTP -> IPC -> runtime flow.
+
+Publiczne evidence:
+
+- [evidence/TEST5_FINAL_CONVERGENCE_20260903.md](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
+- [evidence/TEST5_FINAL_RESULT_20260903.json](evidence/TEST5_FINAL_RESULT_20260903.json)
+- [evidence/TEST5_FINAL_MATRIX_20260903.json](evidence/TEST5_FINAL_MATRIX_20260903.json)
+- [evidence/TEST5_STAGE12_SUPERSEDED_20260903.json](evidence/TEST5_STAGE12_SUPERSEDED_20260903.json)
+
+**Current claim boundary:** TEST 5 wspiera claim, że testowany lokalny SSI BODY control/integration path przeszedł zdefiniowane acceptance, security-boundary, restart/recovery, receipt/audit, interface i regression checks po cyklu independent audit -> repair -> retest. Nie jest to dowód production readiness całego SSI, uniwersalnej niezawodności, jakości zewnętrznych providerów/modeli, AGI ani świadomości.
 
 ---
 
@@ -111,6 +153,8 @@ Jeżeli system już zna negatywny outcome danej ścieżki w porównywalnym stani
 
 **Przyspieszenie jest ważnym skutkiem poprawnego reuse, ale nie pełnym znaczeniem V10.**
 
+TEST 5 wzmacnia evidence, że w badanym lokalnym SSI BODY path V10/micronetwork integration jest testowana przez real integration gate zamiast placeholder acceptance. Nie oznacza to jeszcze uniwersalnego dowodu anti-loop/recovery.
+
 Pełny opis:
 
 - [V10_PREDICTIVE_ROUTING.md](V10_PREDICTIVE_ROUTING.md)
@@ -122,14 +166,14 @@ Pełny opis:
 
 Jeżeli oceniasz SSI V5 po raz pierwszy, zacznij tutaj:
 
-- **[START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)** — krótka ścieżka wejścia dla recenzenta;
-- **[GRANT_REVIEWER_FAQ.md](GRANT_REVIEWER_FAQ.md)** — odpowiedzi na najtrudniejsze pytania techniczne i metodologiczne;
-- **[V10_PREDICTIVE_ROUTING.md](V10_PREDICTIVE_ROUTING.md)** — kanoniczna definicja V10 jako stateful predictive competence & recovery router;
+- **[START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)** — aktualna ścieżka wejścia dla recenzenta;
 - **[CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)** — aktualny indeks stanu projektu;
-- **[evidence/README.md](evidence/README.md)** — indeks publicznego machine evidence;
-- **[Test 2 — full-flow 600×](evidence/ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md)**;
-- **[Test 3 — V10 Hybrid Router 600×](evidence/ROBERT_V10_HYBRID_ROUTER_TEST3_20260901.md)**;
-- **[raw Test 3 result](evidence/router_v10_test3/H_TEST3_RESULTS.json)**.
+- **[TEST 5 — Final Convergence](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)** — najnowszy zamknięty milestone;
+- **[TEST 5 final result](evidence/TEST5_FINAL_RESULT_20260903.json)** — machine-readable verdict;
+- **[TEST 4 — ROOT Terminal](evidence/TEST4_ROOT_TERMINAL_AUTHORITY_E2E_RECOVERY_20260902.md)** — poprzedni zamknięty etap;
+- **[Micronetwork Migration Final Lineage](evidence/MICRONETWORK_MIGRATION_FINAL_LINEAGE_20260902.md)** — wcześniejszy zamknięty etap;
+- **[GRANT_REVIEWER_FAQ.md](GRANT_REVIEWER_FAQ.md)** — odpowiedzi na pytania techniczne i metodologiczne;
+- **[evidence/README.md](evidence/README.md)** — pełny indeks publicznego machine evidence.
 
 SSI V5 nie prosi recenzenta o przyjęcie głównych tez na wiarę. Projekt jest rozwijany jako łańcuch:
 
@@ -138,40 +182,48 @@ CLAIM
 -> IMPLEMENTATION
 -> TEST
 -> MACHINE EVIDENCE
--> FAILURE / ROOT CAUSE jeśli wystąpi
+-> AUDIT WHAT THE TEST REALLY PROVES
+-> FAILURE / ROOT CAUSE / WEAK CONTRACT IF FOUND
+-> PRESERVE HISTORY
 -> REPAIR
 -> RETEST
 -> CURRENT CLAIM BOUNDARY
 ```
 
-## Najkrótszy wynik obecnego eksperymentu
-
-Trzy testy 600× miały różne cele, ale zachowują tę samą główną geometrię:
+## Najkrótsza aktualna sekwencja evidence
 
 ```text
-600 cases
-40 rounds
-15 cases per round
+TEST 2 / fuller lifecycle + persistence
+-> 600/600 PASS
+-> 126.65 s
+
+TEST 3 / V10 selective routing
+-> 600/600 PASS in historical run
+-> 57.61 s
+-> 534 REUSE_TOP1 / 66 VERIFY_TOPK
+
+TEST3 100x v2 / migration closure hardening
+-> 60 000/60 000 accounted
+-> 0 unresolved failures
+-> 0 incorrect routing
+-> restart 20/20
+
+TEST 4 / ROOT Terminal
+-> final regression 461/461
+-> E2E 1000/1000
+-> concurrency 1000 commands / 20 workers
+-> restart 20/20
+-> receipt accounting clean
+
+TEST 5 / SSI BODY Final Convergence
+-> Stage 12 27/27 SUPERSEDED after audit
+-> Stage 13 audit retest PASS
+-> 29/29 acceptance
+-> 524/524 total regression
+-> 0 open blockers
 ```
 
-| Etap | Cel | Czas | Wynik |
-|---|---|---:|---|
-| Test 1 | wcześniejszy, lżejszy przepływ | 67.85 s | PASS |
-| Test 2 | udowodnienie pełniejszego lifecycle / persistence flow | 126.65 s | PASS |
-| Test 3 | pełny układ + V10 adaptive routing | 57.61 s | PASS |
-
-Test 3 zarejestrował:
-
-```text
-REUSE_TOP1:          534
-VERIFY_TOPK:          66
-fallback_count:        0
-known correctness: 100/100
-```
-
-Interpretacja wydajnościowa jest celowo wąska: wynik wspiera hipotezę, że **po zbudowaniu i zwalidowaniu kompetencji system może w kontrolowanym zakresie ominąć niepotrzebny pełny flow i użyć krótszej ścieżki bez zaobserwowanego spadku poprawności na badanym podzbiorze known cases**.
-
-Nie jest to jednak pełna hipoteza V10. Pełna rola V10 obejmuje także **state/history awareness, failure-aware routing, anti-loop i recovery**. Dedykowany benchmark tych funkcji pozostaje do wykonania.
+To pokazuje zmianę charakteru projektu: od testów mechanizmów mikrosieci i V10, przez kanoniczny ROOT control/terminal, do coraz szerszego lokalnego SSI BODY integration path.
 
 ---
 
@@ -205,6 +257,7 @@ Architektura łączy m.in.:
 - LEGO development methodology;
 - checkpoint/recovery;
 - replay/persistence/regression testing;
+- ROOT authority/control boundaries;
 - dynamiczne światy i przyszłe Agent Bodies.
 
 Nie twierdzimy, że każdy z tych mechanizmów jest nowy samodzielnie. Badana jest wartość **konkretnego połączenia tych mechanizmów w jeden persistent competence-development system**.
@@ -224,6 +277,9 @@ EARLIER DATA / PREDICTION EXPERIMENTS
 -> START MIGRACJI
 -> DEKOMPOZYCJA SPRAWDZONYCH MECHANIZMÓW
 -> PARITY / REGRESSION / REPLAY / PERSISTENCE
+-> MICRONETWORK MIGRATION CLOSURE
+-> ROOT TERMINAL / AUTHORITY CLOSURE
+-> SSI BODY CONTROL / INTEGRATION CONVERGENCE
 -> SSI ORGANISM CORE
 -> ROBERT BODY / DIRECTOR BODY / AGENT BODY
 ```
@@ -240,11 +296,12 @@ WORKING SYSTEM
 -> EVIDENCE
 -> INTEGRATION
 -> REGRESSION
+-> AUDIT
 -> REPLAY / PERSISTENCE
 -> NEXT MODULE
 ```
 
-Celem jest uzyskanie audytowalnego systemu, w którym można wskazać, co działało, co zawiodło, dlaczego dokonano zmiany i czy późniejszy test rzeczywiście naprawił problem.
+Celem jest uzyskanie audytowalnego systemu, w którym można wskazać, co działało, co zawiodło, który wcześniejszy PASS był za słaby, dlaczego dokonano zmiany i czy późniejszy test rzeczywiście naprawił problem.
 
 ---
 
@@ -502,6 +559,8 @@ CONTINUUM i mikrosieci rozwiązują różne problemy:
 - mikrosieci przechowują i rozwijają kompetencję;
 - V10 wykorzystuje bieżący stan i historię outcomes do wyboru następnej ścieżki.
 
+TEST 5 potwierdza lokalną integrację CONTINUUM w badanym SSI BODY path; niedostępna funkcjonalność remote pozostaje jawnie poza zakresem zamiast być symulowana jako dostępna.
+
 ---
 
 # 8. LEGO development methodology i V10
@@ -556,6 +615,8 @@ Director jest nadrzędnym obserwatorem, decydentem i meta-learnerem.
 ROBERT jest wykonawczym ciałem systemu posiadającym narzędzia, runtime, Eyes/Hands/Browser/Tools i mechanizmy persistent execution.
 
 Director i ROBERT mogą korzystać z tych samych przenośnych Championów, ale nie oznacza to automatycznie wspólnej prywatnej pamięci ani tożsamości.
+
+TEST 5 wzmacnia publiczne evidence dla ROOT/control boundaries w badanym przepływie: missing/invalid auth ma zostać odrzucone przed side effects, a spoofed ROOT identity nie może być zaakceptowane jako valid ROOT.
 
 ---
 
@@ -705,13 +766,15 @@ Publiczny Git ma być również potencjalnym źródłem przyszłej **pamięci ge
 
 ```text
 EARLIER STATE
--> FAILURE / LIMITATION
+-> FAILURE / LIMITATION / WEAK TEST CONTRACT
 -> DIAGNOSIS
 -> MODIFICATION
 -> TEST
 -> EVIDENCE
 -> CURRENT CAPABILITY
 ```
+
+TEST 5 jest dobrym przykładem takiego lineage: earlier PASS -> independent audit contradiction -> Stage 12 superseded -> repair -> Stage 13 retest -> current claim.
 
 ---
 
@@ -743,20 +806,23 @@ Core ma obejmować m.in.:
 
 ---
 
-# 15. Publiczne evidence i zasada zachowywania FAIL
+# 15. Publiczne evidence i zasada zachowywania FAIL / SUPERSEDED
 
 Repo nie ma prezentować wyłącznie sukcesów.
 
 ```text
-EARLIER FAIL
--> ROOT CAUSE
+EARLIER FAIL OR WEAK PASS
+-> ROOT CAUSE / AUDIT FINDING
+-> PRESERVE ORIGINAL RESULT
 -> REPAIR
--> LATER PASS
+-> LATER STRONGER RETEST
 !=
-FAIL NEVER HAPPENED
+EARLIER PROBLEM NEVER HAPPENED
 ```
 
-Wcześniejszy failure powinien być zachowany nie tylko jako historia dla człowieka. W architekturze V10 ma on również potencjalnie stać się **informacją wpływającą na przyszły routing i recovery**.
+Wcześniejszy failure albo niewystarczający PASS powinien być zachowany nie tylko jako historia dla człowieka. W architekturze V10 failure ma również potencjalnie stać się informacją wpływającą na przyszły routing i recovery.
+
+`SUPERSEDED` oznacza: wynik historyczny pozostaje w repo, ale nie jest już aktualną podstawą danego claimu.
 
 ---
 
@@ -809,7 +875,7 @@ fallback_count:        0
 known correctness: 100/100
 ```
 
-W tym konkretnym eksperymencie Test 3 był około `2.20x` szybszy od Testu 2 i około `54.5%` krótszy czasowo.
+W tym konkretnym historycznym eksperymencie Test 3 był około `2.20x` szybszy od Testu 2 i około `54.5%` krótszy czasowo.
 
 **To nie jest najważniejsza definicja V10.** Test 3 pokazuje część mechanizmu — selektywny routing i reuse. Pełna hipoteza obejmuje również state/history awareness, false-reuse control, failure-aware routing, anti-loop i recovery.
 
@@ -819,41 +885,63 @@ Pełne evidence:
 - [evidence/router_v10_test3/H_TEST3_RESULTS.json](evidence/router_v10_test3/H_TEST3_RESULTS.json)
 - [evidence/router_v10_test3/A_BASELINE.json](evidence/router_v10_test3/A_BASELINE.json)
 
+Późniejszy TEST3 100x v2 / migration closure jest mocniejszą podstawą dla aktualnych claimów o canonical micronetwork/V10 state niż ten historyczny single run.
+
 ---
 
-# 18. Najważniejszy kolejny eksperyment: learning + anti-loop + recovery end-to-end
+# 18. TEST 4 — ROOT Terminal / Authority / Recovery
 
-Kolejny najmocniejszy test powinien udowodnić pełny proces:
+**Status:** `DEVELOPMENT_VALIDATED / ROOT_TERMINAL_MIGRATION_CLOSED`  
+**Data:** `2026-09-02`
 
 ```text
-1. CLEAN STATE
-2. UNKNOWN TASK
-3. FULL FLOW
-4. RESULT
-5. EXPERIENCE
-6. CANDIDATE
-7. CHALLENGER
-8. VALIDATION
-9. CHAMPION
-10. ACTIVE MICRONETWORK
-11. V10 ROUTE BINDING
-12. RELATED NEW TASK
-13. REUSE / VERIFY
-14. FORCE A CONTROLLED FAILURE
-15. RECORD FAILURE SIGNATURE + ROUTE
-16. REPEAT EQUIVALENT STATE
-17. PROVE: NO BLIND SAME-ROUTE RETRY WITHOUT NEW EVIDENCE
-18. SELECT ALTERNATIVE / MODIFY LEGO / FULL_FLOW
-19. COMPARE TIME + CORRECTNESS + RECOVERY
-20. RESTART
-21. VERIFY PERSISTENCE OF COMPETENCE AND FAILURE HISTORY
+FINAL REGRESSION = 461/461 PASS
+AUTHORITY BOUNDARY = PASS
+FULL PIPELINE E2E = 1000/1000 PASS
+CONCURRENCY = 1000 commands / 20 workers PASS
+REAL PROCESS RESTART = 20/20 PASS
+PHYSICAL_RECEIPTS = 2000 for 1000 commands
+DUPLICATES = 0
+ORPHANS = 0
+MISSING = 0
+OPEN_BLOCKERS = []
 ```
 
-To jest ważniejsze niż sam kolejny rekord prędkości, ponieważ sprawdza czy system faktycznie **tworzy, waliduje, utrwala i wykorzystuje kompetencję oraz czy potrafi zmienić strategię na podstawie wcześniejszego niepowodzenia**.
+TEST 4 zamknął kanoniczną migrację ROOT terminal/control path po osobnym evidence audit i hardeningu pierwszego closure candidate.
+
+Pełne evidence:
+
+- [evidence/TEST4_ROOT_TERMINAL_AUTHORITY_E2E_RECOVERY_20260902.md](evidence/TEST4_ROOT_TERMINAL_AUTHORITY_E2E_RECOVERY_20260902.md)
+- [evidence/TEST4_ROOT_TERMINAL_FINAL_CLOSURE_20260902.json](evidence/TEST4_ROOT_TERMINAL_FINAL_CLOSURE_20260902.json)
 
 ---
 
-# 19. Publiczny demonstrator dla recenzentów
+# 19. TEST 5 — SSI BODY Final Convergence / Independent Audit Retest
+
+**Status:** `DEVELOPMENT_VALIDATED / PASS`  
+**Data:** `2026-09-03`
+
+```text
+STAGE_12 = SUPERSEDED
+STAGE_13_AUDIT_RETEST = PASS
+TEST5 = 29/29 PASS
+TOTAL_REGRESSION = 524/524 PASS
+OPEN_BLOCKERS = 0
+FINAL_CONVERGENCE_PASS = TRUE
+```
+
+TEST 5 nie zastępuje historii TEST 4 ani migration closure. Łączy i weryfikuje szerszy lokalny control/integration path SSI BODY po audycie, który odrzucił wcześniejszy Stage 12 jako niewystarczająco silny.
+
+Pełne publiczne evidence:
+
+- [evidence/TEST5_FINAL_CONVERGENCE_20260903.md](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
+- [evidence/TEST5_FINAL_RESULT_20260903.json](evidence/TEST5_FINAL_RESULT_20260903.json)
+- [evidence/TEST5_FINAL_MATRIX_20260903.json](evidence/TEST5_FINAL_MATRIX_20260903.json)
+- [evidence/TEST5_STAGE12_SUPERSEDED_20260903.json](evidence/TEST5_STAGE12_SUPERSEDED_20260903.json)
+
+---
+
+# 20. Publiczny demonstrator dla recenzentów
 
 Planowany jest mały, reprodukowalny demonstrator, który nie wymaga dostępu do prywatnego runtime ani sekretów.
 
@@ -875,7 +963,7 @@ Tetris jest dobrym kandydatem, ponieważ może pokazać zarówno budowę/napraw�
 
 ---
 
-# 20. Co może obalić lub osłabić hipotezę SSI
+# 21. Co może obalić lub osłabić hipotezę SSI
 
 Projekt traktuje falsyfikowalność jako ważną część metodologii.
 
@@ -890,17 +978,19 @@ Hipotezę osłabiłoby m.in.:
 - pełny flow jest uruchamiany tak często, że routing traci sens;
 - persistent competence staje się nieaktualna i nie daje się poprawić;
 - przewaga benchmarkowa znika przy niezależnej reprodukcji;
-- shared competence powoduje konflikty, których system nie potrafi rozwiązać.
+- shared competence powoduje konflikty, których system nie potrafi rozwiązać;
+- późniejsze audyty pokażą, że current acceptance gates nadal nie mierzą deklarowanej granicy.
 
 ---
 
-# 21. Granice twierdzeń
+# 22. Granice twierdzeń
 
 SSI V5 **nie deklaruje**, że:
+
 - jest udowodnionym AGI;
 - posiada świadomość;
 - niespodziewane zachowanie dowodzi świadomości;
-- wynik 600× dowodzi general intelligence;
+- wynik 600×, 60 000× lub 524/524 dowodzi general intelligence;
 - V10 zawsze będzie szybszy od innych architektur;
 - pełny anti-loop został już uniwersalnie udowodniony;
 - każdy Agent-discovered skill nadaje się do transferu;
@@ -914,6 +1004,7 @@ Używane statusy obejmują:
 VERIFIED_MACHINE_EVIDENCE
 ROOT_ATTESTED
 HISTORICAL_EVIDENCE
+SUPERSEDED
 DEVELOPMENT_VALIDATED
 IMPLEMENTED_NOT_YET_REPLICATED
 PLANNED
@@ -923,7 +1014,7 @@ UNKNOWN
 
 ---
 
-# 22. Oryginalność i state of the art
+# 23. Oryginalność i state of the art
 
 SSI jest autorską architekturą rozwijaną niezależnie przez Pawła Jankiewicza.
 
@@ -957,13 +1048,14 @@ MULTI-TASK / MULTI-SPACE MICRONETWORKS
 + DYNAMIC LEGO COMPOSITION
 + DYNAMIC NEW-COMPETENCE FORMATION
 + PERSISTENT DEVELOPMENTAL LINEAGE
++ ROOT AUTHORITY / AUDITABLE CONTROL BOUNDARIES
 ```
 
 Formalny state-of-the-art review pozostaje osobnym zadaniem badawczym.
 
 ---
 
-# 23. Uczciwa atrybucja
+# 24. Uczciwa atrybucja
 
 Paweł Jankiewicz jest autorem nadrzędnej architektury SSI V5 i najwyższą authority projektu.
 
@@ -980,7 +1072,7 @@ SSI ADAPTATION OF MORAL AI / ISKRA
 
 ---
 
-# 24. Publiczna chronologia
+# 25. Publiczna chronologia
 
 ```text
 2026-07-19  root Git commit: MSDI AI v0.01
@@ -994,11 +1086,15 @@ SSI ADAPTATION OF MORAL AI / ISKRA
 2026-08-31  final scoped 600× idempotency/replay/persistence PASS
 2026-09-01  V10 Hybrid Router Test 3 — 600 cases / 57.61 s / PASS
 2026-09-01  V10 stateful predictive competence & recovery definition formalized in public reviewer docs
+2026-09-02  micronetwork migration closure — TEST3 100× v2 / 60 000 accounted / 0 unresolved failures
+2026-09-02  TEST 4 ROOT Terminal final closure — authority / E2E / concurrency / restart / receipt accounting
+2026-09-03  TEST 5 Stage 12 27/27 marked SUPERSEDED after independent audit
+2026-09-03  TEST 5 Stage 13 audit retest — 29/29 acceptance / 524/524 total / 0 blockers
 ```
 
 ---
 
-# 25. Długoterminowe pytania badawcze
+# 26. Długoterminowe pytania badawcze
 
 1. Czy persistent competence może być skutecznie oddzielona od konkretnego LLM?
 2. Czy V10 potrafi bezpiecznie odróżnić reuse od sytuacji wymagającej pełnego flow?
@@ -1013,10 +1109,11 @@ SSI ADAPTATION OF MORAL AI / ISKRA
 11. Czy system potrafi uczyć się własnej metodologii budowania i naprawiania narzędzi?
 12. Czy kilka równoległych CONTINUUM zachowa spójność checkpointów, evidence i state?
 13. Czy niezależny recenzent odtworzy przewagę i recovery V10 na publicznym demonstratorze?
+14. Czy coraz szersze integracyjne testy SSI BODY zachowają te same authority, persistence i audit invariants po dołączeniu kolejnych warstw?
 
 ---
 
-# 26. Pętla ekonomiczna — cel długoterminowy
+# 27. Pętla ekonomiczna — cel długoterminowy
 
 SSI ma w przyszłości badać również realne decyzje ekonomiczne jako źródło mierzalnych outcomes.
 
@@ -1047,16 +1144,26 @@ Grant lub inne finansowanie zewnętrzne może przyspieszyć skalowanie infrastru
 
 ---
 
-# 27. Główne dokumenty publiczne
+# 28. Główne dokumenty publiczne
 
 ## Dla recenzenta / grantu
 
 - [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)
+- [START_HERE.md](START_HERE.md)
+- [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
 - [GRANT_REVIEWER_FAQ.md](GRANT_REVIEWER_FAQ.md)
 - [V10_PREDICTIVE_ROUTING.md](V10_PREDICTIVE_ROUTING.md)
 - [V10_PREDICTIVE_ROUTING_FAQ.md](V10_PREDICTIVE_ROUTING_FAQ.md)
-- [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
 - [evidence/README.md](evidence/README.md)
+
+## Latest validated evidence
+
+- [evidence/TEST5_FINAL_CONVERGENCE_20260903.md](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
+- [evidence/TEST5_FINAL_RESULT_20260903.json](evidence/TEST5_FINAL_RESULT_20260903.json)
+- [evidence/TEST5_FINAL_MATRIX_20260903.json](evidence/TEST5_FINAL_MATRIX_20260903.json)
+- [evidence/TEST5_STAGE12_SUPERSEDED_20260903.json](evidence/TEST5_STAGE12_SUPERSEDED_20260903.json)
+- [evidence/TEST4_ROOT_TERMINAL_AUTHORITY_E2E_RECOVERY_20260902.md](evidence/TEST4_ROOT_TERMINAL_AUTHORITY_E2E_RECOVERY_20260902.md)
+- [evidence/MICRONETWORK_MIGRATION_FINAL_LINEAGE_20260902.md](evidence/MICRONETWORK_MIGRATION_FINAL_LINEAGE_20260902.md)
 
 ## Geneza i architektura
 
@@ -1067,16 +1174,9 @@ Grant lub inne finansowanie zewnętrzne może przyspieszyć skalowanie infrastru
 - [evidence/ISKRA_AGENT_MICRONETWORK_SOCIAL_DYNAMICS.md](evidence/ISKRA_AGENT_MICRONETWORK_SOCIAL_DYNAMICS.md)
 - [evidence/ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md](evidence/ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md)
 
-## Machine evidence
-
-- [evidence/ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md](evidence/ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md)
-- [evidence/ROBERT_V10_HYBRID_ROUTER_TEST3_20260901.md](evidence/ROBERT_V10_HYBRID_ROUTER_TEST3_20260901.md)
-- [evidence/router_v10_test3/H_TEST3_RESULTS.json](evidence/router_v10_test3/H_TEST3_RESULTS.json)
-- [evidence/router_v10_test3/A_BASELINE.json](evidence/router_v10_test3/A_BASELINE.json)
-
 ---
 
-# 28. Najkrótsza definicja projektu
+# 29. Najkrótsza definicja projektu
 
 **SSI V5 bada, czy trwały system może gromadzić Experience, rozwijać wielozadaniowe i wieloprzestrzeniowe mikrosieci kompetencji, walidować je poprzez lifecycle Candidate -> Challenger -> Champion, agregować kompetencję pochodzącą z wielu źródeł, a następnie używać V10 do stanowego i predykcyjnego wyboru następnej strategii — uwzględniając confidence, historię prób, wcześniejsze outcomes i failure signatures — tak aby ponownie używać sprawdzonych kompetencji, weryfikować sytuacje niepewne, unikać ślepego powtarzania znanych nieskutecznych ścieżek oraz eskalować do pełnego flow, kiedy wcześniejsza wiedza jest niewystarczająca.**
 
@@ -1095,11 +1195,11 @@ NEW PROBLEM
 -> FURTHER EVOLUTION
 ```
 
-Historia Git ma pokazywać, czy ten mechanizm naprawdę działa — również wtedy, gdy odpowiedź brzmi: **nie**.
+Historia Git ma pokazywać, czy ten mechanizm naprawdę działa — również wtedy, gdy odpowiedź brzmi: **nie**, albo gdy wcześniejszy zielony test okazuje się zbyt słaby i musi zostać oznaczony `SUPERSEDED`.
 
 ---
 
-# 29. Reviewer invitation
+# 30. Reviewer invitation
 
 Niezależna krytyka jest mile widziana.
 
@@ -1111,7 +1211,9 @@ Najbardziej wartościowe są:
 - przypadki blind retry / failure loop;
 - testy recovery i alternative-route selection;
 - adversarial / distribution-shift tests;
+- próby obejścia authority/authentication boundaries;
+- wskazanie zbyt słabych acceptance gates;
 - porównania z istniejącym state of the art;
 - wskazanie, gdzie hipoteza SSI jest za szeroka względem evidence.
 
-Projekt nie potrzebuje niezasłużonego endorsementu. Potrzebuje **sprawdzalnych testów, krytyki i coraz mocniejszego evidence**.
+Projekt nie potrzebuje niezasłużonego endorsementu. Potrzebuje **sprawdzalnych testów, krytyki, audytów i coraz mocniejszego evidence**.
