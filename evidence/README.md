@@ -4,6 +4,68 @@ Ten katalog zawiera publiczne artefakty evidence dla najważniejszych etapów pr
 
 Zasada: README opisuje hipotezy, architekturę i interpretację; pliki w `evidence/` pokazują możliwie bezpośrednie wyniki maszynowe, root cause, snapshoty, claim boundaries i lineage bez publikowania prywatnego kodu SSI.
 
+## TEST 5 — SSI BODY Final Convergence / Independent Audit Retest — CURRENT
+
+**Status:** `DEVELOPMENT_VALIDATED / PASS`  
+**Data:** `2026-09-03`  
+**Aktualna podstawa closure:** `Stage 13 independent audit retest`  
+**Stage 12:** `SUPERSEDED`
+
+Główny dokument:
+
+- [`TEST5_FINAL_CONVERGENCE_20260903.md`](TEST5_FINAL_CONVERGENCE_20260903.md) — finalny lineage wcześniejszy acceptance -> independent audit -> repair -> retest -> current claim boundary.
+
+Publiczne machine evidence:
+
+- [`TEST5_FINAL_RESULT_20260903.json`](TEST5_FINAL_RESULT_20260903.json)
+- [`TEST5_FINAL_MATRIX_20260903.json`](TEST5_FINAL_MATRIX_20260903.json)
+- [`TEST5_STAGE12_SUPERSEDED_20260903.json`](TEST5_STAGE12_SUPERSEDED_20260903.json)
+
+Końcowy wynik:
+
+```text
+TEST5_ACCEPTANCE = 29/29 PASS
+ROOT_CONTROL = 111/111 PASS
+ROOT_RUNTIME_BRIDGE = 338/338 PASS
+ROBERT_STABLE = 46/46 PASS
+TOTAL = 524/524 PASS
+OPEN_BLOCKERS = 0
+
+STAGE_12 = SUPERSEDED
+STAGE_13_AUDIT_RETEST = PASS
+FINAL_CONVERGENCE_PASS = TRUE
+```
+
+TEST 5 obejmuje cztery jawnie rozdzielone poziomy coverage:
+
+- `UNIT / CONTROLLED` — 9 testów;
+- `REAL INTEGRATION` — 9 testów;
+- `REAL PROCESS E2E` — 8 testów;
+- `REGRESSION` — 3 większe integracyjne checks.
+
+Najważniejsze naprawione i ponownie zweryfikowane bramki obejmują:
+
+- realne V10/micronetwork integration zamiast placeholder acceptance;
+- lokalne CONTINUUM z jawnym oznaczeniem niedostępnej funkcjonalności jako out of scope;
+- real process restart/recovery z PID change i persistent-state recovery;
+- provider failure/fallback przez real registry/gateway boundary z kontrolowanymi deterministic backends;
+- odrzucenie missing/invalid ROOT authentication przed mission/provider side effects;
+- odrzucenie spoofed ROOT identity przy zachowaniu valid ROOT path;
+- receipt + audit E2E przez IPC oraz deduplikację duplicate request IDs;
+- CLI/IPC parity na canonical ROOT-message contract;
+- HTTP -> IPC -> runtime E2E, w tym reject missing-token i spoofed identity;
+- pełne regression closure 524/524.
+
+Najważniejszy element metodologiczny: historyczny Stage 12 miał `27/27 PASS`, lecz niezależny audyt wykazał, że ten kontrakt nie był wystarczająco silny do closure. Zamiast nadpisać historię, rezultat został zachowany jako `SUPERSEDED`; dopiero naprawiony Stage 13 jest aktualną podstawą claimu.
+
+Claim boundary:
+
+TEST 5 wspiera claim, że **testowany lokalny SSI BODY control/integration path** przeszedł zdefiniowane acceptance, security-boundary, restart/recovery, receipt/audit, interface i regression checks po cyklu independent audit -> repair -> retest. Nie stanowi dowodu production readiness całego SSI, uniwersalnej niezawodności, jakości zewnętrznych providerów/modeli, AGI ani świadomości.
+
+Publiczna paczka jest celowo sanitized. Nie publikuje prywatnego kodu SSI/ROBERT/V10, lokalnych ścieżek, service definitions, backupów, repair scripts, raw stores/databases, sekretów ani pełnych logów ujawniających szczegóły implementacji.
+
+---
+
 ## TEST 4 — ROOT Terminal: Authority, E2E, Concurrency & Recovery — FINAL CLOSURE
 
 **Status:** `DEVELOPMENT_VALIDATED / ROOT_TERMINAL_MIGRATION_CLOSED`  
@@ -146,11 +208,17 @@ SAME / EQUIVALENT STATE
 => DO NOT BLINDLY REPEAT
 ```
 
-Finalny migration-closure test wzmacnia kontrakt routingu i real execution, ale nie jest jeszcze uniwersalnym dowodem pełnego anti-loop/recovery we wszystkich klasach zadań. Dedykowany benchmark recovery nadal pozostaje osobnym pytaniem badawczym.
+Finalny migration-closure test wzmacnia kontrakt routingu i real execution, a TEST 5 wzmacnia lokalny V10/micronetwork integration path w szerszym SSI BODY control flow. Żaden z tych wyników nie jest jednak uniwersalnym dowodem pełnego anti-loop/recovery we wszystkich klasach zadań. Dedykowany benchmark recovery pozostaje osobnym pytaniem badawczym.
 
 Pełna definicja: [`../V10_PREDICTIVE_ROUTING.md`](../V10_PREDICTIVE_ROUTING.md).
 
 ## Dostępne zestawy
+
+### `TEST5_FINAL_CONVERGENCE_20260903.md`
+Najnowszy publiczny milestone: SSI BODY control/integration convergence po independent audit repair cycle.
+
+### `TEST4_ROOT_TERMINAL_AUTHORITY_E2E_RECOVERY_20260902.md`
+Kanoniczne closure ROOT terminal / authority / E2E / concurrency / recovery.
 
 ### `robert_600x/`
 Evidence dla naprawy i stress-testu idempotency/replay/restart ROBERTA przed migracją do neutralnego core.
@@ -197,7 +265,7 @@ Protokół warstwowego rozwoju ROBERTA: baseline, capability layers, LEGO, check
 
 Publiczny evidence mirror nie zawiera sekretów, API keys, tokenów, prywatnych danych ani pełnego prywatnego runtime. Publikowane artefakty mają umożliwiać kontrolę twierdzeń bez ujawniania wrażliwych danych lub autorskiego kodu wykonawczego.
 
-Finalne zamknięcie migracji mikrosieci i TEST 4 są **development validation dla badanego zakresu**, nie twierdzeniem o production readiness, AGI, świadomości ani uniwersalnym dowodem wszystkich przyszłych funkcji SSI.
+Finalne zamknięcie migracji mikrosieci, TEST 4 i TEST 5 są **development validation dla jawnie ograniczonych badanych zakresów**, nie twierdzeniem o production readiness, AGI, świadomości ani uniwersalnym dowodem wszystkich przyszłych funkcji SSI.
 
 ## Reguła metodologiczna
 
@@ -206,7 +274,8 @@ CLAIM
 -> PUBLIC EVIDENCE POINTER
 -> REPRODUCTION / CHECK
 -> RESULT
--> CONTRADICTION IF FOUND
+-> CONTRADICTION OR WEAK CONTRACT IF FOUND
+-> PRESERVE HISTORY / SUPERSEDE IF NECESSARY
 -> REPAIR
 -> RETEST
 -> CURRENT CLAIM BOUNDARY
