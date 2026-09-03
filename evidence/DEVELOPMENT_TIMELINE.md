@@ -143,11 +143,85 @@ Powstało publiczne repozytorium `jankes72/SSI_V5_MASTER`.
 
 Powstało obecne publiczne repozytorium badawcze `jankes72/SSI_V5`, używane jako README-first / evidence-indexed research mirror.
 
+### 2026-08-29 — ROBERT stabilization / Organism Core migration
+
+Publiczny research mirror dokumentuje hardening ROBERTA, replay/idempotency, migrację sprawdzonych mechanizmów do neutralnego Organism Core i zachowywanie lineage FAIL -> diagnosis -> repair -> retest.
+
+### 2026-08-31 — scoped 600× idempotency / replay / persistence closure
+
+Udokumentowano `600/600 PASS` dla pełniejszego flow oraz osobne persistence/replay evidence. Ten etap stał się poprzednikiem późniejszego hardeningu V10 i migracji mikrosieci.
+
+### 2026-09-01 — V10 Hybrid Router Test 3
+
+Historyczny Test 3 zarejestrował m.in. `600/600 PASS`, `534 × REUSE_TOP1`, `66 × VERIFY_TOPK` i `57.61 s` w badanym układzie. Późniejszy audyt kontraktu testowego i migration closure zostały zachowane jako mocniejsza podstawa aktualnych claimów.
+
+### 2026-09-02 — Micronetwork Migration / TEST3 100× v2 closure
+
+Po wykryciu słabości wcześniejszej formuły PASS kontrakt został poprawiony, a pełny Test3 100× wykonano ponownie.
+
+Finalny publiczny agregat:
+
+```text
+100 runs × 600 cases = 60 000
+accounted = 60 000
+failed = 0
+unresolved_failures = 0
+incorrect_routing = 0
+background_failures = 0
+exceptions = 0
+restart = 20/20 PASS
+A01-A20 = PASS
+open_blockers = []
+```
+
+### 2026-09-02 — TEST 4 ROOT Terminal final closure
+
+Zamknięto kanoniczny ROOT terminal/control path po evidence audit i hardeningu pierwszego closure candidate.
+
+Publiczny wynik obejmuje m.in.:
+
+```text
+final regression = 461/461 PASS
+full pipeline E2E = 1000/1000 PASS
+concurrency = 1000 commands / 20 workers PASS
+real process restart = 20/20 PASS
+receipt duplicates = 0
+receipt orphans = 0
+receipt missing = 0
+open_blockers = []
+```
+
+### 2026-09-03 — TEST 5 Stage 12 superseded
+
+Wcześniejszy TEST 5 Stage 12 miał `27/27 PASS`, ale niezależny audyt wykazał, że acceptance contract był zbyt słaby do formalnego closure. Problemy obejmowały m.in. niewystarczająco realne integration gates, słaby restart assertion, niepełne IPC authentication checks oraz możliwość zaakceptowania spoofed ROOT identity.
+
+Stage 12 został zachowany jako część historii, ale oznaczony `SUPERSEDED`.
+
+### 2026-09-03 — TEST 5 Stage 13 Independent Audit Retest / Final Convergence
+
+Po naprawie wykonano finalny audit retest dla lokalnego SSI BODY control/integration path.
+
+```text
+TEST5 acceptance = 29/29 PASS
+root_control = 111/111 PASS
+root_runtime_bridge = 338/338 PASS
+ROBERT stable = 46/46 PASS
+TOTAL = 524/524 PASS
+OPEN_BLOCKERS = 0
+FINAL_CONVERGENCE_PASS = TRUE
+```
+
+TEST 5 obejmuje `UNIT / CONTROLLED`, `REAL INTEGRATION`, `REAL PROCESS E2E` i `REGRESSION`, z jawnymi claim boundaries. Nie jest przedstawiany jako dowód production readiness całego SSI, AGI ani świadomości.
+
+Publiczny commit evidence:
+
+`168f6af91552c7b49dec310c0c9b34caa0e7d326` — `Add TEST 5 sanitized public evidence`.
+
 ## Tempo widoczne w historii
 
-Od root commita historii Git (`2026-07-19`) do obecnego etapu (`2026-08-29`) minęło około **41 dni**.
+Od root commita historii Git (`2026-07-19`) do TEST 5 (`2026-09-03`) minęło około **46 dni**.
 
-Od utworzenia publicznego repo `msdi-ai` (`2026-07-27`) do `2026-08-29` minęły około **33 dni**.
+Od utworzenia publicznego repo `msdi-ai` (`2026-07-27`) do TEST 5 (`2026-09-03`) minęło około **38 dni**.
 
 W tym okresie historia publiczna pokazuje przejście:
 
@@ -163,15 +237,17 @@ MSDI AI v0.01
 -> SSI_V5_MASTER
 -> ROBERT stabilization
 -> replay/idempotency 600X hardening
--> neutral SSI ORGANISM CORE migration
+-> micronetwork / V10 migration closure
+-> ROOT terminal / authority / recovery closure
+-> SSI BODY control/integration final convergence
 ```
 
-Ten zapis nie ma dowodzić, że cały obecny system powstał od zera w 33 lub 41 dni. Część wcześniejszych danych, skryptów i doświadczeń autora istniała wcześniej. Dowodzi natomiast, że **udokumentowana architektura SSI/MSDI i jej szybka ewolucja do obecnego etapu miała miejsce w bardzo krótkim, publicznie weryfikowalnym oknie czasu**.
+Ten zapis nie ma dowodzić, że cały obecny system powstał od zera w 38 lub 46 dni. Część wcześniejszych danych, skryptów i doświadczeń autora istniała wcześniej. Dowodzi natomiast, że **udokumentowana architektura SSI/MSDI i jej szybka ewolucja do obecnego etapu miała miejsce w bardzo krótkim, publicznie weryfikowalnym oknie czasu**.
 
 ## Zasada interpretacji
 
 Najmocniejsze publiczne twierdzenie brzmi:
 
-> Publiczny GitHub potwierdza, że repo `msdi-ai` istniało od 27 lipca 2026, a jego historia Git zawiera root commit z 19 lipca 2026. Do końca sierpnia 2026 projekt przeszedł od MSDI AI v0.01 / foundation do SSI V5, ROBERTA, stress-testów replay/idempotency i rozpoczęcia migracji neutralnego Organism Core.
+> Publiczny GitHub potwierdza, że repo `msdi-ai` istniało od 27 lipca 2026, a jego historia Git zawiera root commit z 19 lipca 2026. Do 3 września 2026 publiczna historia pokazuje przejście od MSDI AI v0.01 / foundation do SSI V5, ROBERTA, hardeningu mikrosieci i V10, kanonicznego ROOT terminal/control path oraz TEST 5 SSI BODY final convergence po independent audit repair cycle.
 
 Nie twierdzimy, że GitHub dowodzi braku jakiejkolwiek wcześniejszej pracy autora. Pokazuje on natomiast rzeczywiste tempo rozwoju architektury udokumentowanej w tej historii.
