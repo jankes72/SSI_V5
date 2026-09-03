@@ -2,7 +2,45 @@
 
 Jeżeli oceniasz SSI V5 jako grantodawca, sponsor, badacz lub niezależny recenzent techniczny, zacznij od poniższych materiałów zamiast próbować czytać całe repozytorium od początku.
 
-## Najnowszy zamknięty etap: TEST 4 — ROOT Terminal / Authority / Recovery
+## Najnowszy zamknięty etap: TEST 5 — SSI BODY Final Convergence / Independent Audit Retest
+
+**Status:** `DEVELOPMENT_VALIDATED / PASS`  
+**Data testu:** `2026-09-03`  
+**Podstawa closure:** `Stage 13 independent audit retest`  
+**Stage 12:** `SUPERSEDED`
+
+Najlepszy punkt wejścia:
+
+[`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
+
+Publiczne machine-readable evidence:
+
+- [`evidence/TEST5_FINAL_RESULT_20260903.json`](evidence/TEST5_FINAL_RESULT_20260903.json)
+- [`evidence/TEST5_FINAL_MATRIX_20260903.json`](evidence/TEST5_FINAL_MATRIX_20260903.json)
+- [`evidence/TEST5_STAGE12_SUPERSEDED_20260903.json`](evidence/TEST5_STAGE12_SUPERSEDED_20260903.json)
+
+Najważniejszy wynik:
+
+```text
+TEST 5 acceptance suite = 29/29 PASS
+root_control regression = 111/111 PASS
+root_runtime_bridge regression = 338/338 PASS
+ROBERT stable regression = 46/46 PASS
+TOTAL = 524/524 PASS
+OPEN_BLOCKERS = 0
+
+STAGE_12 = SUPERSEDED
+STAGE_13_AUDIT_RETEST = PASS
+FINAL_CONVERGENCE_PASS = TRUE
+```
+
+TEST 5 jest ważny nie dlatego, że dodaje kolejny zielony wynik, lecz dlatego, że **wcześniejszy Stage 12 27/27 został odrzucony jako niewystarczająca podstawa closure**. Niezależny audyt wykrył m.in. zbyt słabe bramki integracyjne, słaby warunek restartu, niepełne sprawdzenie authentication na granicy IPC oraz możliwość zaakceptowania spoofed ROOT identity w starym kontrakcie testowym. Stage 12 pozostaje w historii jako `SUPERSEDED`, a dopiero naprawiony Stage 13 stanowi aktualną podstawę claimu.
+
+Finalny TEST 5 obejmuje cztery poziomy: `UNIT / CONTROLLED`, `REAL INTEGRATION`, `REAL PROCESS E2E` i `REGRESSION`. W badanym lokalnym zakresie weryfikuje m.in. realne V10/micronetwork integration, lokalne CONTINUUM, provider registry/gateway, prawdziwy restart procesu z recovery stanu, reject niepoprawnej autoryzacji i spoofed ROOT, receipt/audit E2E, CLI/IPC parity oraz HTTP -> IPC -> runtime flow.
+
+Granica claimu pozostaje wąska: TEST 5 jest development validation dla **testowanego lokalnego SSI BODY control/integration path**. Nie jest dowodem production readiness całego SSI, uniwersalnej niezawodności, jakości zewnętrznych modeli/providerów, AGI ani świadomości.
+
+## Poprzedni zamknięty etap: TEST 4 — ROOT Terminal / Authority / Recovery
 
 **Status:** `DEVELOPMENT_VALIDATED / ROOT_TERMINAL_MIGRATION_CLOSED`  
 **Data zamknięcia:** `2026-09-02`
@@ -40,7 +78,7 @@ Granice wyniku są jawne: stress-test 1000× używa `CONTROLLED_E2E_BACKEND` do 
 
 Prywatny kod Terminala ROOT, raw logs, lokalne ścieżki, backupy i service definitions nie są publikowane w publicznym research mirror.
 
-## Poprzedni zamknięty etap: Micronetwork Migration / V10 Repair
+## Wcześniejszy zamknięty etap: Micronetwork Migration / V10 Repair
 
 **Status:** `DEVELOPMENT_VALIDATED / MICRONETWORK_MIGRATION_CLOSED`  
 **Data zamknięcia:** `2026-09-02`
@@ -124,7 +162,7 @@ FAQ odpowiada m.in. na pytania:
 - co dzieje się przy błędnym Championie / false reuse;
 - czym są CONTINUUM i LEGO;
 - jak działa metodologia dekompozycji, migracji, testów, regresji i rekonstrukcji publicznego eksperymentu;
-- dlaczego Test 2 był potrzebny przed Testem 3;
+- dlaczego wcześniejsze PASS-y mogą zostać oznaczone `SUPERSEDED`, jeśli późniejszy audyt ujawni zbyt słaby kontrakt;
 - jakie są ograniczenia obecnych wyników i co mogłoby sfalsyfikować hipotezę SSI.
 
 ## 2. V10 — stateful predictive competence & recovery routing
@@ -189,11 +227,22 @@ pierwszy closure-candidate odrzucony jako niewystarczająco udowodniony
 
 -> FINAL CLOSURE V4
 ROOT TERMINAL MIGRATION CLOSED
+
+-> TEST 5 SSI BODY CONTROL / INTEGRATION
+Stage 12: 27/27 PASS, następnie odrzucony przez audit jako niewystarczający
+
+-> STAGE 12 SUPERSEDED
+naprawa real integration gates / restart / IPC auth / ROOT spoof boundary
+
+-> STAGE 13 INDEPENDENT AUDIT RETEST
+29/29 acceptance + 524/524 total regression + 0 blockers
+
+-> TEST 5 FINAL CONVERGENCE PASS
 ```
 
 Test 2 nie był próbą uzyskania najlepszego czasu. Jego rolą było dostarczenie evidence, że szerszy przepływ, lifecycle, persistence, replay/restart i related mechanisms działają przed wprowadzeniem selektywnego routingu.
 
-Późniejsze migration-closure oraz TEST 4 pokazują dodatkowo, że sam status PASS nie wystarcza: trzeba audytować również to, **co dokładnie warunek PASS mierzy i czy evidence rzeczywiście dowodzi deklarowanego zachowania**.
+Późniejsze migration-closure, TEST 4 i TEST 5 pokazują dodatkowo, że sam status PASS nie wystarcza: trzeba audytować również to, **co dokładnie warunek PASS mierzy, czy test dotyka realnej granicy systemu i czy evidence rzeczywiście dowodzi deklarowanego zachowania**.
 
 ## 7. Ważne ograniczenie interpretacyjne
 
@@ -204,11 +253,12 @@ Celem repozytorium jest budowanie możliwie audytowalnego łańcucha:
 ```text
 HYPOTHESIS
 -> IMPLEMENTATION
--> FAILURE
+-> FAILURE / INSUFFICIENT TEST IF FOUND
 -> ROOT CAUSE
 -> FIX
 -> TEST
 -> EVIDENCE
+-> INDEPENDENT / ADVERSARIAL AUDIT WHEN AVAILABLE
 -> RETEST
 -> CURRENT CLAIM BOUNDARY
 ```
