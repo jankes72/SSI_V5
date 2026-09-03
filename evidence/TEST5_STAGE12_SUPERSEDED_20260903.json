@@ -1,0 +1,10 @@
+{
+  "stage": 12,
+  "status": "SUPERSEDED",
+  "superseded_at": "2026-09-03",
+  "reason": "Independent audit found insufficient acceptance gates and a ROOT spoof authentication weakness in the earlier TEST 5 acceptance contract.",
+  "superseded_by": "Stage 13 independent audit retest",
+  "original_result": {"total": 27, "passed": 27, "failed": 0},
+  "current_basis": "TEST5_FINAL_RESULT_20260903.json",
+  "note": "The earlier result remains part of research history but is not the current closure evidence."
+}
