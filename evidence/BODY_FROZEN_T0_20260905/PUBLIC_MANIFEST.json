@@ -1,0 +1,56 @@
+{
+  "package_name": "SSI_V5_BODY_FROZEN_T0_PUBLIC_SANITIZED_20260905",
+  "date": "2026-09-05",
+  "publication_boundary": {
+    "source_code_files": 0,
+    "private_paths": 0,
+    "secrets": 0,
+    "implementation_level_migration_map": 0
+  },
+  "files": {
+    "BODY_FROZEN_T0_PUBLIC_SUMMARY.json": {
+      "size": 851,
+      "sha256": "60e02828e6c33c963fbae0ef76c9f28d60eb6b624b7405469cc6cf516e74a771"
+    },
+    "CHAMPIONS_CHALLENGERS_PUBLIC_SUMMARY.json": {
+      "size": 344,
+      "sha256": "bd17d5a2882ae303c24af41141e54a526eef4c9c2e98c62a9cf13f5d3a972cc9"
+    },
+    "CLAIM_BOUNDARIES.md": {
+      "size": 1408,
+      "sha256": "01804d995de5e7cfc33d4acf26740b0003dfafccc3ecb90724749dd1e8c1167d"
+    },
+    "CONTINUUM_PUBLIC_FINAL_RESULT.json": {
+      "size": 442,
+      "sha256": "175d6800c48558114ea38f3075a870c547ede7b8d523f35d8e5a02fd2bdfe23b"
+    },
+    "MICRONETWORKS_PUBLIC_SUMMARY.json": {
+      "size": 261,
+      "sha256": "f297eaba0c552a5eb256541aa6e1538f1a193844b882da2c4b9b8fccb2d79fb2"
+    },
+    "README.md": {
+      "size": 2554,
+      "sha256": "991a419230ed29dda8e53fac73590ecf6801c04e91a87cae1108a2aca9c56aa5"
+    },
+    "RESEARCH_PHASES.md": {
+      "size": 1348,
+      "sha256": "57c40bc319e573210e18d37218f3fcb289bc4e55c69d2cd5786aa8c6a8b9bbfb"
+    },
+    "ROUTER_V10_PUBLIC_SUMMARY.json": {
+      "size": 348,
+      "sha256": "d6aef19cb63f4e429ff5892a03b91baef73b50a0a6f93218d038e03093fb9362"
+    },
+    "SKILLS_PUBLIC_BASELINE.json": {
+      "size": 461,
+      "sha256": "02511f65d845de7a092fdd3566458c7266115e504de2ed21bc43281e60a8a3cb"
+    },
+    "SKILL_LIFECYCLE_PUBLIC_SUMMARY.json": {
+      "size": 305,
+      "sha256": "38bdb5c4f3063cae1f69dfb9a3179a478872d0e360b2f6efc32b1cf3a8406fe7"
+    },
+    "TEST_SUMMARY.json": {
+      "size": 345,
+      "sha256": "6e0fa769915dd28b0574a45f336d27ef16ce9fcc27a0bfa1e7e3d27ea46f322b"
+    }
+  }
+}

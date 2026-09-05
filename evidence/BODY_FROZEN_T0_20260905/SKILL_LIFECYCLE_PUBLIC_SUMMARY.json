@@ -1,0 +1,10 @@
+{
+  "baseline_id": "SSI_V5_BODY_FROZEN_T0_20260905",
+  "promoted": 0,
+  "rejected": 0,
+  "verified": 0,
+  "candidate": 0,
+  "challenger": 0,
+  "champion": 0,
+  "note": "T0 establishes the counting baseline. Future T1/T2 results must use the same definition or explicitly version any counting change."
+}

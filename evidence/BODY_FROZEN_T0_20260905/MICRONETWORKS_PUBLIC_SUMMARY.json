@@ -1,0 +1,9 @@
+{
+  "baseline_id": "SSI_V5_BODY_FROZEN_T0_20260905",
+  "micronetworks_total": 8,
+  "modules_total": 8,
+  "layers_total": 3,
+  "v10_integration_status": "ACTIVE",
+  "implementation_public": false,
+  "claim_scope": "baseline counts and integration status only"
+}

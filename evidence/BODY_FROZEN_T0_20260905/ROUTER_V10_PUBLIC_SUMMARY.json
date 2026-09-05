@@ -1,0 +1,8 @@
+{
+  "baseline_id": "SSI_V5_BODY_FROZEN_T0_20260905",
+  "version": "V10",
+  "status": "ACTIVE",
+  "role_public_description": "stateful predictive competence and recovery routing",
+  "implementation_public": false,
+  "claim_boundary": "This snapshot records version/status and public architectural role; it does not publish private routing logic."
+}

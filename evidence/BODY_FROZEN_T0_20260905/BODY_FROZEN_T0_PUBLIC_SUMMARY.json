@@ -1,0 +1,36 @@
+{
+  "baseline_id": "SSI_V5_BODY_FROZEN_T0_20260905",
+  "date": "2026-09-05",
+  "status": "PRE_ISKRA_T0_RECORDED",
+  "body_snapshot": {
+    "total_files": 1781,
+    "python_files": 587,
+    "source_code_published": false
+  },
+  "continuum": {
+    "status": "CLOSED",
+    "tests": "23/23 PASS",
+    "main_scenarios": "22/22 PASS",
+    "e2e_closure": "19/19 PASS",
+    "final_guard": "26/26 PASS",
+    "active_failures": 0,
+    "invariant_violations": 0,
+    "open_blockers": 0
+  },
+  "micronetworks": {
+    "total": 8,
+    "modules": 8,
+    "layers": 3,
+    "v10_integration_status": "ACTIVE"
+  },
+  "router_v10": {
+    "version": "V10",
+    "status": "ACTIVE",
+    "implementation_public": false
+  },
+  "research_phase": {
+    "t0": "recorded baseline",
+    "t1": "future controlled comparison",
+    "t2": "future skill consolidation experiment"
+  }
+}
