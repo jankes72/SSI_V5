@@ -58,7 +58,7 @@ This repository is a **public, evidence-indexed research mirror** of SSI V5. It 
 
 It is **not** the source-code distribution of the private SSI runtime, V10 implementation or full micronetwork engine.
 
-SSI V5 is an independently developed system architecture authored by **Paweł Jankiewicz**. Third-party language models, frameworks and tools remain third-party components and are not presented as models created or owned by SSI.
+SSI V5 is an independently developed system architecture conceived, created and authored solely by **Paweł Jankiewicz**, who is its **sole creator and principal architect**. Earlier work on worlds and precursor experiments forms part of the development path that led to the present SSI V5 architecture; the public chronology below records precursor repository activity in July 2026 and the explicit SSI V5 line from 2026-08-01. Third-party language models, frameworks and tools remain third-party components and are not presented as models created or owned by SSI.
 
 ```text
 PUBLIC
