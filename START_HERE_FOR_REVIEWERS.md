@@ -1,128 +1,130 @@
 # SSI V5 — Start Here for Grant and Technical Reviewers
 
-Jeżeli oceniasz SSI V5 jako grantodawca, sponsor, badacz lub niezależny recenzent techniczny, zacznij od poniższych materiałów zamiast próbować czytać całe repozytorium od początku.
+**Updated:** 2026-09-05  
+**Current experimental baseline:** `T0 / BODY_FROZEN / PRE-ISKRA`  
+**Latest closed validation test:** `TEST 5 / DEVELOPMENT_VALIDATED`
 
-## Najnowszy zamknięty etap: TEST 5 — SSI BODY Final Convergence / Independent Audit Retest
+If you evaluate SSI V5 as a grant reviewer, sponsor, researcher or independent technical reviewer, the key distinction is now:
 
-**Status:** `DEVELOPMENT_VALIDATED / PASS`  
-**Data testu:** `2026-09-03`  
-**Podstawa closure:** `Stage 13 independent audit retest`  
-**Stage 12:** `SUPERSEDED`
+```text
+TEST 5
+= latest closed validation of a scoped local SSI BODY control/integration path
 
-Najlepszy punkt wejścia:
+T0
+= newest frozen experimental baseline from which the next comparative experiments start
+```
+
+## 1. Current experimental baseline — T0
+
+Primary entry:
+
+[`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
+
+Sanitized evidence:
+
+[`evidence/BODY_FROZEN_T0_20260905/`](evidence/BODY_FROZEN_T0_20260905/)
+
+Recorded public baseline:
+
+```text
+CONTINUUM_FINAL_STATUS = CLOSED
+CONTINUUM_TESTS = 23/23 PASS
+MAIN_SCENARIOS = 22/22 PASS
+E2E_CLOSURE = 19/19 PASS
+FINAL_GUARD = 26/26 PASS
+ACTIVE_FAILURES = 0
+INVARIANT_VIOLATIONS = 0
+OPEN_BLOCKERS = 0
+EXISTING_SUITE = 580 PASS + 12 SUPERSEDED = 592
+
+BODY_FROZEN = 1781 files / 587 Python files retained privately
+MICRONETWORKS = 8
+MODULES = 8
+LAYERS = 3
+V10 = ACTIVE
+```
+
+The code is not distributed by this evidence mirror. The public package contains sanitized counts, test results, lifecycle counters, claim boundaries and SHA256 evidence only.
+
+The formal skill lifecycle registry counters in the supplied T0 sanitized snapshot are `0`; the repository deliberately does not relabel micronetwork candidate records as formal skills.
+
+## 2. Why T0 matters scientifically
+
+T0 establishes one frozen pre-ISKRA origin for future comparison. It should remain immutable.
+
+Planned comparison:
+
+```text
+T0
+-> T1 NO-ISKRA
+-> T1 ISKRA variants starting from the same T0
+-> T2 separately tested competence consolidation / promotion
+```
+
+The immediate first T1 experiment is intentionally controlled. A clean Micronetworks + V10 LEGO package is to be transferred into a safe civilian drone simulation using a supplied recipe, prepared blocks/adapters and explicit PASS/FAIL gates. This tests whether the technology can be transferred under known instructions.
+
+The second transfer experiment reduces scaffolding and requires more autonomous mapping/engineering. A later open-ended experiment can test discovery of a new application domain without revealing the expected answer in advance.
+
+T2 is planned to test whether independently produced competences can be compared, deduplicated, ranked and promoted. Equivalent competence should increase evidence/data coverage rather than silently create duplicate skills. Ambiguous comparisons should request more cases instead of forcing a Champion.
+
+These are plans; no T1/T2 performance result is claimed in T0.
+
+## 3. Latest closed validation — TEST 5
+
+Primary evidence:
 
 [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
 
-Publiczne machine-readable evidence:
-
-- [`evidence/TEST5_FINAL_RESULT_20260903.json`](evidence/TEST5_FINAL_RESULT_20260903.json)
-- [`evidence/TEST5_FINAL_MATRIX_20260903.json`](evidence/TEST5_FINAL_MATRIX_20260903.json)
-- [`evidence/TEST5_STAGE12_SUPERSEDED_20260903.json`](evidence/TEST5_STAGE12_SUPERSEDED_20260903.json)
-
-Najważniejszy wynik:
-
 ```text
-TEST 5 acceptance suite = 29/29 PASS
-root_control regression = 111/111 PASS
-root_runtime_bridge regression = 338/338 PASS
-ROBERT stable regression = 46/46 PASS
-TOTAL = 524/524 PASS
-OPEN_BLOCKERS = 0
-
 STAGE_12 = SUPERSEDED
 STAGE_13_AUDIT_RETEST = PASS
-FINAL_CONVERGENCE_PASS = TRUE
+TEST5_ACCEPTANCE = 29/29 PASS
+ROOT_CONTROL = 111/111 PASS
+ROOT_RUNTIME_BRIDGE = 338/338 PASS
+ROBERT_STABLE = 46/46 PASS
+TOTAL = 524/524 PASS
+OPEN_BLOCKERS = 0
 ```
 
-TEST 5 jest ważny nie dlatego, że dodaje kolejny zielony wynik, lecz dlatego, że **wcześniejszy Stage 12 27/27 został odrzucony jako niewystarczająca podstawa closure**. Niezależny audyt wykrył m.in. zbyt słabe bramki integracyjne, słaby warunek restartu, niepełne sprawdzenie authentication na granicy IPC oraz możliwość zaakceptowania spoofed ROOT identity w starym kontrakcie testowym. Stage 12 pozostaje w historii jako `SUPERSEDED`, a dopiero naprawiony Stage 13 stanowi aktualną podstawę claimu.
+TEST 5 is methodologically important because the earlier Stage 12 `27/27 PASS` was rejected as insufficient after audit. It remained in history as `SUPERSEDED`; the test/system boundary was repaired and Stage 13 was rerun.
 
-Finalny TEST 5 obejmuje cztery poziomy: `UNIT / CONTROLLED`, `REAL INTEGRATION`, `REAL PROCESS E2E` i `REGRESSION`. W badanym lokalnym zakresie weryfikuje m.in. realne V10/micronetwork integration, lokalne CONTINUUM, provider registry/gateway, prawdziwy restart procesu z recovery stanu, reject niepoprawnej autoryzacji i spoofed ROOT, receipt/audit E2E, CLI/IPC parity oraz HTTP -> IPC -> runtime flow.
+**Claim boundary:** this is development validation of the tested local SSI BODY control/integration path. It is not evidence of universal system reliability, production readiness, AGI or consciousness.
 
-Granica claimu pozostaje wąska: TEST 5 jest development validation dla **testowanego lokalnego SSI BODY control/integration path**. Nie jest dowodem production readiness całego SSI, uniwersalnej niezawodności, jakości zewnętrznych modeli/providerów, AGI ani świadomości.
+## 4. Prior closed evidence
 
-## Poprzedni zamknięty etap: TEST 4 — ROOT Terminal / Authority / Recovery
+### TEST 4 — ROOT Terminal / Authority / Recovery
 
-**Status:** `DEVELOPMENT_VALIDATED / ROOT_TERMINAL_MIGRATION_CLOSED`  
-**Data zamknięcia:** `2026-09-02`
-
-Najlepszy punkt wejścia:
-
-[`evidence/TEST4_ROOT_TERMINAL_AUTHORITY_E2E_RECOVERY_20260902.md`](evidence/TEST4_ROOT_TERMINAL_AUTHORITY_E2E_RECOVERY_20260902.md)
-
-Finalny machine-readable closure:
-
-[`evidence/TEST4_ROOT_TERMINAL_FINAL_CLOSURE_20260902.json`](evidence/TEST4_ROOT_TERMINAL_FINAL_CLOSURE_20260902.json)
-
-Najważniejszy wynik:
+- [`evidence/TEST4_ROOT_TERMINAL_AUTHORITY_E2E_RECOVERY_20260902.md`](evidence/TEST4_ROOT_TERMINAL_AUTHORITY_E2E_RECOVERY_20260902.md)
 
 ```text
-final regression = 461/461 PASS
-authority boundary = PASS
-full pipeline E2E = 1000/1000 PASS
-concurrency = 1000 commands / 20 workers PASS
-real process restart = 20/20 PASS
-physical receipts = 2000 for 1000 commands
-receipt duplicates = 0
-receipt orphans = 0
-receipt missing = 0
-open_blockers = []
-
-ROOT_TERMINAL_MIGRATION_CLOSED = TRUE
-ROOT_TERMINAL_CANONICAL = TRUE
-FINAL_PASS = TRUE
+461/461 final regression PASS
+1000/1000 controlled E2E PASS
+1000 commands / 20 workers concurrency PASS
+20/20 real process restart PASS
+receipt accounting clean
 ```
 
-TEST 4 jest szczególnie istotny metodologicznie, ponieważ pierwszy closure-candidate nie został przyjęty wyłącznie na podstawie raportu PASS. Audyt evidence wykrył słabsze lub niejednoznaczne dowody dla authentication boundary, concurrency, process restart i receipt accounting. Kontrakt został zaostrzony, brakujące punkty poprawiono lub doprecyzowano, a następnie wykonano retesty aż do `FINAL_CLOSURE_V4`.
+### Micronetwork Migration / Test3 100x v2
 
-Granice wyniku są jawne: stress-test 1000× używa `CONTROLLED_E2E_BACKEND` do deterministycznego testowania pipeline systemowego, natomiast restart 20× używa realnego procesu ROBERTA. Kanały realtime i remote pozostają `NOT_IMPLEMENTED / OUT OF SCOPE` i nie są przedstawiane jako działające.
-
-Prywatny kod Terminala ROOT, raw logs, lokalne ścieżki, backupy i service definitions nie są publikowane w publicznym research mirror.
-
-## Wcześniejszy zamknięty etap: Micronetwork Migration / V10 Repair
-
-**Status:** `DEVELOPMENT_VALIDATED / MICRONETWORK_MIGRATION_CLOSED`  
-**Data zamknięcia:** `2026-09-02`
-
-Najlepszy punkt wejścia do tego etapu:
-
-[`evidence/MICRONETWORK_MIGRATION_FINAL_LINEAGE_20260902.md`](evidence/MICRONETWORK_MIGRATION_FINAL_LINEAGE_20260902.md)
-
-Finalny closure report:
-
-[`evidence/MICRONETWORK_MIGRATION_CLOSURE_REPORT_20260902.md`](evidence/MICRONETWORK_MIGRATION_CLOSURE_REPORT_20260902.md)
-
-Publiczny agregat finalnego Test3 100×:
-
-[`evidence/TEST3_REPEAT_100X_V2_PUBLIC_SUMMARY_20260902.json`](evidence/TEST3_REPEAT_100X_V2_PUBLIC_SUMMARY_20260902.json)
-
-Najważniejszy wynik:
+- [`evidence/MICRONETWORK_MIGRATION_FINAL_LINEAGE_20260902.md`](evidence/MICRONETWORK_MIGRATION_FINAL_LINEAGE_20260902.md)
 
 ```text
-100 runs × 600 cases = 60 000 cases
-accounted = 60 000
+60 000 / 60 000 accounted
 failed = 0
-unresolved_failures = 0
-incorrect_routing = 0
-background_failures = 0
-exceptions = 0
+unresolved failures = 0
+incorrect routing = 0
 restart = 20/20 PASS
-A01-A20 = PASS
-open_blockers = []
 ```
 
-Istotne metodologicznie: wcześniejszy test powtarzalności miał błąd w formule PASS, ponieważ `failed > 0` nie blokowało wyniku PASS. Projekt zachował ten błędny wynik jako historyczne evidence, poprawił kontrakt o `failed == 0` i wykonał pełne 100× ponownie od początku. Dopiero drugi przebieg stał się podstawą zamknięcia migracji.
+An earlier PASS formula was found too weak and was repaired before final closure.
 
-Prywatny kod ROBERTA/V10, backupy implementacji i service definitions nie są publikowane w publicznym research mirror.
+## 5. V10 — reviewer-safe definition
 
-## Najważniejsza rzecz do zrozumienia o V10
-
-V10 **nie jest przede wszystkim mechanizmem przyspieszającym**. Jest projektowany jako **stateful predictive competence & recovery router**.
-
-Jego zadaniem jest łączyć:
+V10 is designed as a **stateful predictive competence & recovery router**:
 
 ```text
-CURRENT TASK / WORLD STATE
-+ VERIFIED MICRONETWORK COMPETENCE
+CURRENT STATE
++ VERIFIED COMPETENCE
 + ATTEMPT HISTORY
 + PRIOR OUTCOMES
 + FAILURE SIGNATURES
@@ -130,7 +132,7 @@ CURRENT TASK / WORLD STATE
 -> NEXT ROUTE / STRATEGY
 ```
 
-Dlatego system ma nie tylko znajdować znaną kompetencję, ale również rozpoznawać, że dana ścieżka już zawiodła i nie powinna być ślepo powtarzana bez nowego evidence.
+Anti-loop principle:
 
 ```text
 SAME / EQUIVALENT STATE
@@ -140,127 +142,45 @@ SAME / EQUIVALENT STATE
 => DO NOT BLINDLY REPEAT
 ```
 
-Możliwa reakcja to reuse poprawnych klocków, zmiana kompozycji LEGO, wybór alternatywnego Championa, dodatkowa weryfikacja albo canonical `FULL_FLOW`.
+The historical Test 3 speed result is evidence for selective routing under one measured setup, not the full definition of V10 and not universal proof of anti-loop/recovery.
 
-Zmierzony speedup historycznego Testu 3 jest ważny, ale jest **efektem jednej części mechanizmu**, nie pełną definicją V10.
-
-## 1. Najczęstsze pytania i odpowiedzi
-
-[`GRANT_REVIEWER_FAQ.md`](GRANT_REVIEWER_FAQ.md)
-
-FAQ odpowiada m.in. na pytania:
-
-- co dokładnie jest badane w SSI V5;
-- czym mikrosieci różnią się od RAG, cache i zwykłej pamięci agenta;
-- dlaczego V10 nie powinien być interpretowany wyłącznie jako cache lub speed optimization;
-- jak V10 wykorzystuje state, attempt history, outcomes i failure signatures;
-- czym jest anti-loop / recovery i dlaczego system nie powinien powtarzać tej samej nieskutecznej strategii;
-- czym jest zbiorowa inteligencja i jak nowe evidence może wzbogacać Championów;
-- dlaczego mikrosieci są wielozadaniowe i wieloprzestrzeniowe;
-- jak mogą dynamicznie powstawać nowe gałęzie kompetencji;
-- jak działa `Experience -> Candidate -> Challenger -> Champion`;
-- co dzieje się przy błędnym Championie / false reuse;
-- czym są CONTINUUM i LEGO;
-- jak działa metodologia dekompozycji, migracji, testów, regresji i rekonstrukcji publicznego eksperymentu;
-- dlaczego wcześniejsze PASS-y mogą zostać oznaczone `SUPERSEDED`, jeśli późniejszy audyt ujawni zbyt słaby kontrakt;
-- jakie są ograniczenia obecnych wyników i co mogłoby sfalsyfikować hipotezę SSI.
-
-## 2. V10 — stateful predictive competence & recovery routing
-
-[`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
-
-Ten dokument definiuje V10 jako warstwę predykcyjnego i stanowego wyboru kompetencji oraz recovery. Obejmuje:
-
-- predictive matching;
-- confidence gating;
-- `REUSE_TOP1`, `VERIFY_TOPK`, alternatives i `FULL_FLOW`;
-- attempt/outcome history;
-- failure-aware routing;
-- anti-loop;
-- recovery decision;
-- feedback / route compilation;
-- współpracę z dynamiczną kompozycją LEGO.
-
-Dodatkowe pytania i odpowiedzi:
-
-[`V10_PREDICTIVE_ROUTING_FAQ.md`](V10_PREDICTIVE_ROUTING_FAQ.md)
-
-## 3. Evidence index
-
-[`evidence/README.md`](evidence/README.md)
-
-## 4. Pełny stress-test lifecycle / persistence
-
-[`evidence/ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md`](evidence/ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md)
-
-## 5. Historyczny V10 Hybrid Router — Test 3
-
-[`evidence/ROBERT_V10_HYBRID_ROUTER_TEST3_20260901.md`](evidence/ROBERT_V10_HYBRID_ROUTER_TEST3_20260901.md)
-
-Ten wynik należy czytać jako historyczny etap przed późniejszym hardeningiem kontraktu Test3 i finalnym migration-closure z 2026-09-02.
-
-## 6. Jak interpretować sekwencję testów
+## 6. Role boundaries
 
 ```text
-TEST 1
-wcześniejszy / lżejszy przepływ
+BODY_FROZEN T0
+= immutable experimental baseline
 
--> TEST 2
-pełniejszy przepływ mikrosieci i lifecycle
+AGENTS
+= operate inside worlds and their own laboratory/CONTINUUM trajectories
 
--> TEST 3
-pełna architektura eksperymentalna + V10 routing
+DIRECTOR
+= observes, audits, compares, ranks and evaluates results
 
--> MIGRATION REPAIR / CONTRACT AUDIT
-wykrycie słabego PASS condition
-
--> TEST3 100x v2
-poprawiony kontrakt + 60 000 przypadków
-
--> MICRONETWORK MIGRATION CLOSED
-
--> TEST 4 ROOT TERMINAL
-migration / authority / full E2E / concurrency / real process restart
-
--> EVIDENCE AUDIT / HARDENING
-pierwszy closure-candidate odrzucony jako niewystarczająco udowodniony
-
--> FINAL CLOSURE V4
-ROOT TERMINAL MIGRATION CLOSED
-
--> TEST 5 SSI BODY CONTROL / INTEGRATION
-Stage 12: 27/27 PASS, następnie odrzucony przez audit jako niewystarczający
-
--> STAGE 12 SUPERSEDED
-naprawa real integration gates / restart / IPC auth / ROOT spoof boundary
-
--> STAGE 13 INDEPENDENT AUDIT RETEST
-29/29 acceptance + 524/524 total regression + 0 blockers
-
--> TEST 5 FINAL CONVERGENCE PASS
+ROBERT
+= separate execution/runtime/tooling body
 ```
 
-Test 2 nie był próbą uzyskania najlepszego czasu. Jego rolą było dostarczenie evidence, że szerszy przepływ, lifecycle, persistence, replay/restart i related mechanisms działają przed wprowadzeniem selektywnego routingu.
+This distinction matters when interpreting future skill transfer and consolidation evidence.
 
-Późniejsze migration-closure, TEST 4 i TEST 5 pokazują dodatkowo, że sam status PASS nie wystarcza: trzeba audytować również to, **co dokładnie warunek PASS mierzy, czy test dotyka realnej granicy systemu i czy evidence rzeczywiście dowodzi deklarowanego zachowania**.
+## 7. What should not be inferred
 
-## 7. Ważne ograniczenie interpretacyjne
+Current public evidence does not prove:
 
-SSI V5 jest eksperymentalnym systemem badawczym. Aktualne wyniki nie stanowią dowodu AGI, świadomości, uniwersalnej poprawności ani produkcyjnej gotowości.
+- AGI or consciousness;
+- production readiness of the whole system;
+- universal correctness or universal V10 superiority;
+- successful T1/T2 results before those experiments are run;
+- that every candidate record is a formal skill;
+- that private source implementation is publicly reproducible.
 
-Celem repozytorium jest budowanie możliwie audytowalnego łańcucha:
+## 8. Recommended reading order
 
-```text
-HYPOTHESIS
--> IMPLEMENTATION
--> FAILURE / INSUFFICIENT TEST IF FOUND
--> ROOT CAUSE
--> FIX
--> TEST
--> EVIDENCE
--> INDEPENDENT / ADVERSARIAL AUDIT WHEN AVAILABLE
--> RETEST
--> CURRENT CLAIM BOUNDARY
-```
+1. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
+2. [`evidence/BODY_FROZEN_T0_20260905/README.md`](evidence/BODY_FROZEN_T0_20260905/README.md)
+3. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
+4. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
+5. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
+6. [`GRANT_REVIEWER_FAQ.md`](GRANT_REVIEWER_FAQ.md)
+7. [`evidence/README.md`](evidence/README.md)
 
-Krytyka metodologiczna, nieudane replikacje i wskazanie słabych punktów są mile widziane.
+SSI V5 is intended to be evaluated as an evidence chain, including failed/weak tests, repairs, superseded results and future falsifiable comparisons — not as a claim that every planned capability is already proven.
