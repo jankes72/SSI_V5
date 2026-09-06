@@ -9,6 +9,10 @@
 
 This document records the prospective experiment matrix before the full outcome set exists. Its purpose is to make the research sequence auditable in Git history and to separate a predeclared protocol from later result interpretation.
 
+**Canonical execution methodology:** [`EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md`](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
+
+The execution methodology explicitly defines the separation between the author, Kilo as procedural executor, and SSI BODY as the tested system. Kilo is intended to launch the identified SSI BODY artifact, execute the three-part sequence, preserve checkpoints/failures and produce the run evidence without continuous live author steering. Kilo is not presented as an independent external scientific auditor.
+
 ## 1. Seven independent experimental lines
 
 The program contains one frozen control-origin line and six BODY ISKRA descendant lines:
@@ -88,7 +92,34 @@ Protocol intention:
 
 `Designed / initiated` means the research program and first transfer line have entered execution preparation/work. It does **not** mean all 21 outcomes already exist or passed.
 
-## 4. Common measurement contract
+## 4. Execution fairness / operator boundary
+
+The public execution rule is:
+
+```text
+AUTHOR
+= prepares and freezes the experiment package before the run
+
+KILO
+= procedural executor of the declared run
++ verifies target artifact/start state
++ launches SSI BODY
++ executes A -> B -> C
++ records checkpoints/evidence
++ preserves failures/retries
++ produces the execution report
+
+SSI BODY / EXPERIMENTAL LINE
+= tested system whose routing/adaptation behavior is measured
+```
+
+Once execution begins, the author should not silently supply the solution, replace an SSI decision after observing failure, delete failed attempts, or change PASS/FAIL criteria post hoc.
+
+Any material intervention must be explicitly recorded as `MANUAL_INTERVENTION`. A run containing such intervention may remain useful engineering evidence, but must not be presented as uninterrupted autonomous execution.
+
+The complete rule set is defined in [`EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md`](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md).
+
+## 5. Common measurement contract
 
 The same high-level measurement categories should be retained across domains so that cross-domain comparisons remain meaningful.
 
@@ -126,7 +157,7 @@ LEARNING / COMPETENCE
 
 Exact low-level implementation remains private. Public results should expose only reviewer-safe measurement/evidence.
 
-## 5. Core comparison question
+## 6. Core comparison question
 
 The program is intended to test whether a common SSI mechanism can behave differently and efficiently across state novelty levels:
 
@@ -147,7 +178,7 @@ NOVEL STATE
 
 The expected ordering is a research hypothesis, not a claimed result. Real measurements may falsify it.
 
-## 6. Cross-line comparison
+## 7. Cross-line comparison
 
 After comparable evidence exists, the seven lines can be compared on:
 
@@ -163,38 +194,40 @@ After comparable evidence exists, the seven lines can be compared on:
 
 Equivalent competence discovered by different paths should not be treated as useless duplication. Provenance and additional evidence can later enrich a Challenger or Champion under the separate consolidation protocol.
 
-## 7. Scientific claim boundary
+## 8. Scientific claim boundary
 
-As of `2026-09-06`, this file establishes the **design and initiation state of the 21-experiment program**.
+As of `2026-09-06`, this file establishes the **design and initiation state of the 21-experiment program** and its intended Kilo-executed procedure.
 
 It does not claim:
 
 - that all 21 experiments are complete;
 - that all 21 pass;
+- that Kilo is an independent external auditor;
 - that drones or humanoids are already validated physical deployments;
 - that V10 is universally faster;
 - that known/similar/novel latency ordering has already been demonstrated in all domains;
 - that six Iskra descendants already show long-run divergence;
 - AGI or consciousness.
 
-Results must be appended through separate evidence artifacts after execution, including FAIL, ambiguous and SUPERSEDED outcomes where applicable.
+Results must be appended through separate evidence artifacts after execution, including FAIL, INCONCLUSIVE/ambiguous, `MANUAL_INTERVENTION` and SUPERSEDED outcomes where applicable.
 
-## 8. Why this is recorded before results
+## 9. Why this is recorded before results
 
 The intended evidence chain is:
 
 ```text
 PREDECLARED PROGRAM
+-> PREDECLARED EXECUTION METHODOLOGY
 -> FROZEN/IDENTIFIED STARTING ARTIFACT
--> EXECUTION
+-> KILO PROCEDURAL EXECUTION
 -> RAW/SANITIZED EVIDENCE
--> PASS / FAIL / AMBIGUOUS
+-> PASS / FAIL / INCONCLUSIVE
 -> AUDIT WHAT THE TEST ACTUALLY PROVES
 -> RETEST ONLY WITH VERSIONED LINEAGE
 ```
 
 This makes it possible for later reviewers to distinguish the experiment design that existed before outcomes from interpretations written after the outcomes were known.
 
-## 9. Later independent expert challenge
+## 10. Later independent expert challenge
 
 After the internal 21-experiment program has produced evidence, a separate external phase is intended in which domain experts can propose challenge cases not anticipated by the author. Those external challenges should remain distinguishable from the 21 predeclared internal experiments and should be run against identified/frozen system versions wherever practical.
