@@ -1,29 +1,88 @@
 # SSI V5 — Grant / Technical Reviewer FAQ
 
 **Purpose:** concise answers to likely technical questions from grant reviewers, research groups, sponsors and independent evaluators.  
-**Status:** `BODY_FROZEN T0 PRESERVED / 6X BODY ISKRA START_STATE_VALIDATED / EXPERIMENTAL RESEARCH SYSTEM`  
+**Status:** `BODY_FROZEN T0 PRESERVED / 6X BODY ISKRA START_STATE_VALIDATED / 21-EXPERIMENT PROGRAM DESIGNED`  
 **Updated:** `2026-09-06`
 
 SSI V5 is not presented as proven AGI, consciousness or a production-ready autonomous system.
 
 ## 0. What changed on 2026-09-06?
 
-SSI V5 now has six independent **BODY ISKRA** experimental descendants created from the same frozen BODY_FROZEN T0 recorded on 2026-09-05.
+SSI V5 now has six independent BODY ISKRA experimental descendants created from the same frozen BODY_FROZEN T0 recorded on 2026-09-05, and a prospectively recorded `7 x 3 = 21` cross-domain experiment program.
 
 ```text
 BODY_FROZEN T0 = immutable common origin
 BODY ISKRA 6X = already created / START_STATE_VALIDATED
+21-EXPERIMENT PROGRAM = DESIGNED / EXECUTION_INITIATED
 TEST 5 = latest closed validation test
-NEXT = longitudinal six-agent comparison
 ```
 
-Public evidence:
+Primary current documents:
 
+- [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
 - [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
 - [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
 - [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
 
-Current six-agent record:
+## 1. What is the 21-experiment program?
+
+Seven SSI lines are defined:
+
+```text
+BODY_FROZEN T0
+NICE
+GUARDIAN
+JUSTICE
+EXPLORER
+PRAGMATIST
+SKEPTIC
+```
+
+Each line receives three experiments:
+
+```text
+A = DRONES
+B = HUMANOID
+C = NEW DOMAIN SELECTED BY THAT SSI LINE
+```
+
+Therefore the program contains `7 x 3 = 21` predeclared experiments.
+
+The author specifies drones and humanoid as common comparison domains. The third domain is selected by the corresponding SSI line. BODY_FROZEN selects its own third domain; each BODY ISKRA descendant independently selects its own third domain.
+
+The common high-level measurement framework includes:
+
+```text
+KNOWN / SIMILAR / NOVEL
+V10 route selection
+reuse / verify-adapt / alternative-compose / deeper-full-flow
+latency / decision cost
+correctness / outcome
+false reuse
+recovery
+competence creation/update
+provenance retention
+```
+
+This records the experimental design before full results exist. It does not claim that 21 experiments have already completed or passed.
+
+## 2. Why record the program before outcomes?
+
+The intent is to make the Git history distinguish predeclared experimental design from later interpretation.
+
+```text
+PREDECLARED PROGRAM
+-> IDENTIFIED/FROZEN STARTING ARTIFACT
+-> EXECUTION
+-> EVIDENCE
+-> PASS / FAIL / AMBIGUOUS
+-> AUDIT
+-> VERSIONED RETEST IF NEEDED
+```
+
+This reduces the risk that later successful results appear to have been selected after the fact.
+
+## 3. What is already established for BODY ISKRA 6X?
 
 ```text
 AGENTS = 6
@@ -36,14 +95,26 @@ VERIFIED NEW EXPERIENCES AT T0 = 0 per agent
 PENDING NEW EXPERIENCES AT T0 = 0 per agent
 ```
 
-The six variants are NICE, GUARDIAN, JUSTICE, EXPLORER, PRAGMATIST and SKEPTIC. Each has a separate sanitized public T0 record containing initial belief values, initial emotion values, cognitive start state, inventory counts, QA and a private-artifact SHA256 reference.
+The six descendants share the same BODY_FROZEN origin but have separately documented initial belief/emotion states.
 
-## 1. What remains unchanged from 2026-09-05?
+## 4. What remains prospective?
 
-BODY_FROZEN remains the immutable common control baseline:
+Not yet claimed:
+
+- final outcomes of all 21 experiments;
+- universal V10 latency or correctness advantage;
+- physical humanoid or drone deployment validity;
+- long-run six-agent divergence;
+- superiority of one Iskra profile;
+- successful later skill consolidation;
+- AGI or consciousness.
+
+## 5. What is BODY_FROZEN T0?
+
+BODY_FROZEN is the immutable common origin recorded on 2026-09-05.
 
 ```text
-BODY_FROZEN = 1781 files / 587 Python files retained privately
+1781 files / 587 Python files retained privately
 CONTINUUM = CLOSED
 23/23 CONTINUUM tests PASS
 22/22 main scenarios PASS
@@ -51,103 +122,14 @@ CONTINUUM = CLOSED
 26/26 final guard PASS
 0 active failures
 0 invariant violations
-0 open blockers
+0 blockers
 ```
 
-The six agents are descendants of this T0; they do not overwrite it.
+It remains unchanged while descendant lines accumulate new experience.
 
-## 2. What exactly is new in SSI V5?
+## 6. What did TEST 5 prove?
 
-SSI V5 does not claim that every individual mechanism is novel in isolation. The research focus is the combined persistent competence-development architecture:
-
-```text
-PERSISTENT STATE
-+ EXPERIENCE
-+ MICRONETWORK COMPETENCE LIFECYCLE
-+ CANDIDATE -> CHALLENGER -> CHAMPION
-+ COLLECTIVE COMPETENCE COMPARISON
-+ V10 STATEFUL PREDICTIVE COMPETENCE & RECOVERY ROUTING
-+ CONTINUUM
-+ LEGO DEVELOPMENT METHODOLOGY
-+ EVIDENCE / REPLAY / REGRESSION / PERSISTENCE
-+ CONTROLLED MULTI-AGENT ISKRA START-STATE COMPARISON
-```
-
-A formal state-of-the-art comparison is still required before strong originality claims.
-
-## 3. Are the six agents only planned?
-
-No. The creation/start-state phase is now already completed and publicly documented as sanitized evidence.
-
-What is established:
-
-- six independent private BODY ISKRA artifacts exist;
-- each descends from the same BODY_FROZEN T0;
-- each has a separate initial belief/emotion state;
-- each has `1832 / 616` inventory counts;
-- each passed `8/8` start-state QA;
-- aggregate start-state QA is `48/48 PASS`.
-
-What is **not** yet established is their long-run behavioral divergence after many verified experiences.
-
-## 4. What are the six initial profiles?
-
-1. **NICE** — cooperation, help, compassion, honesty
-2. **GUARDIAN** — protection, caution, harm avoidance
-3. **JUSTICE** — fairness, honesty, consistent rules
-4. **EXPLORER** — curiosity, exploration, autonomy
-5. **PRAGMATIST** — effectiveness, measurable outcome, evidence
-6. **SKEPTIC** — verification, limited trust, independence
-
-These labels summarize explicit initial conditions. They are not claims that later behavior will remain fixed.
-
-## 5. Does the public repository expose the implementation?
-
-No.
-
-```text
-PUBLIC
-= sanitized evidence
-+ initial beliefs/emotions
-+ counts
-+ QA
-+ hashes
-+ lineage
-+ claim boundaries
-
-PRIVATE
-= source code
-+ private file tree
-+ implementation-level architecture
-+ runtime/configuration
-+ raw memory/user data
-+ proprietary integration/routing internals
-```
-
-The public repository remains evidence-only.
-
-## 6. What is the current experimental sequence?
-
-```text
-2026-09-05
-BODY_FROZEN T0 = frozen PRE-ISKRA common control
-
-2026-09-06
-6 BODY ISKRA descendants = CREATED + START_STATE_VALIDATED
-
-NEXT
-= controlled longitudinal six-agent comparison
-= compare verified success / failure / mixed outcomes
-= compare changes in beliefs/emotions
-= compare competence and micronetwork trajectories
-
-LATER
-= evidence-based competence comparison / consolidation / promotion
-```
-
-## 7. What did TEST 5 prove?
-
-TEST 5 remains the latest closed validation test:
+TEST 5 remains the latest closed validation milestone:
 
 ```text
 STAGE_12 = SUPERSEDED
@@ -157,50 +139,78 @@ STAGE_13_AUDIT_RETEST = PASS
 0 open blockers
 ```
 
-Claim boundary: development validation of the tested local SSI BODY control/integration path — not production readiness of the whole system or proof of AGI/consciousness.
+Claim boundary: development validation of the tested local SSI BODY control/integration path, not universal system reliability or production readiness.
 
-## 8. Why is BODY ISKRA 6X not called TEST 6?
+## 7. What is scientifically interesting about drones and humanoids here?
 
-Because it is currently a **recorded experimental start state**, not a completed longitudinal validation suite. The public status is `START_STATE_VALIDATED`.
+The program is not limited to whether a simulated drone or humanoid completes a task. It also tests whether prior validated competence changes the computational/routing cost of decision making across state novelty levels.
 
-The future longitudinal experiments may later receive separate test identifiers when their contracts, cases and acceptance criteria are defined and executed.
+Example hypothesis:
 
-## 9. What would count as a meaningful future result?
+```text
+KNOWN
+-> reuse when justified
 
-Examples include measured differences after controlled exposure to equivalent classes of experience:
+SIMILAR
+-> verify / adapt / compose
 
-- different belief trajectories;
-- different trust/risk policies;
-- different competence or micronetwork development;
-- different recovery strategies after failure;
-- different social/cooperation patterns;
-- convergence despite different initial Iskra states.
+NOVEL
+-> avoid blind reuse
+-> deeper/full flow
+```
 
-Either divergence or convergence can be informative. The repository should report whichever evidence occurs.
+Measured evidence should include latency, correctness, false reuse and recovery, rather than speed alone.
 
-## 10. What should reviewers not infer?
+## 8. What happens when multiple lines discover equivalent competence?
+
+Equivalent competence should not automatically create useless duplicate skills. Different solution paths and their evidence can enrich an existing Challenger or Champion while preserving provenance. Promotion requires later benchmark/retest evidence; more data alone does not automatically make a Challenger the Champion.
+
+## 9. What comes after the 21 internal experiments?
+
+A separate external challenge phase is intended. Domain experts should be able to propose cases the author did not anticipate, preferably against identified/frozen SSI versions. External challenges remain distinct from the predeclared 21 internal experiments.
+
+## 10. Does the public repo expose private implementation?
+
+No.
+
+```text
+PUBLIC
+= sanitized evidence
++ prospective protocols
++ measured results
++ initial beliefs/emotions
++ counts / QA / hashes
++ claim boundaries
+
+PRIVATE
+= SSI source code
++ private file tree
++ implementation-level architecture
++ runtime configuration
++ raw memory/user data
++ proprietary routing/integration internals
+```
+
+## 11. What should reviewers not infer?
 
 Do not infer that:
 
 - SSI is proven AGI or conscious;
-- the whole system is production-ready;
+- all 21 experiments already passed;
 - V10 is universally superior;
-- one Iskra profile is already superior;
-- the six agents have already demonstrated long-run divergence;
-- later competence consolidation has already succeeded;
+- humanoid/drone physical deployment is already validated;
+- every candidate is a formal skill;
+- later consolidation already succeeded;
 - future economic outcomes are guaranteed.
-
-## 11. What is the shortest current description for a grant reviewer?
-
-**SSI V5 now has a frozen common BODY_FROZEN T0 and six independent BODY ISKRA descendants with explicitly different initial value/emotion states. Their start states are sanitized and publicly documented at 8/8 QA each, 48/48 aggregate, while source implementation remains private. The next research step is a controlled longitudinal comparison of how verified success, failure and experience change their decision and competence trajectories.**
 
 ## 12. Where should a reviewer start?
 
-1. [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
-2. [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
-3. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
-4. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
-5. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
-6. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
-7. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
-8. [`evidence/README.md`](evidence/README.md)
+1. [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
+2. [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
+3. [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
+4. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
+5. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
+6. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
+7. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
+8. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
+9. [`evidence/README.md`](evidence/README.md)
