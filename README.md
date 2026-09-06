@@ -10,6 +10,7 @@ FROZEN COMMON BASELINE = T0 / BODY_FROZEN / PRE-ISKRA / 2026-09-05
 CURRENT EXPERIMENTAL STATE = 6X BODY ISKRA / START_STATE_VALIDATED / 2026-09-06
 PREDECLARED CROSS-DOMAIN PROGRAM = 7 lines x 3 domains = 21 experiments
 PROGRAM STATUS = DESIGNED / EXECUTION_INITIATED / OUTCOMES_NOT_YET_CLAIMED
+EXECUTION METHODOLOGY = PREDECLARED / KILO PROCEDURAL EXECUTOR
 CANONICAL ROBERT = CONTINUOUS ENGINEERING LINE / NOT RESET BY EXPERIMENT CLEANING
 CURRENT DEVELOPMENT TEAM = 1 person / independent project
 CURRENT COMPUTE = author-owned / personally acquired hardware
@@ -22,11 +23,14 @@ LATEST CLOSED VALIDATION TEST = TEST 5 / DEVELOPMENT_VALIDATED
 
 The six BODY ISKRA descendants already exist and have validated start states. The 21-experiment cross-domain program is designed and recorded before the full outcome set exists; this is not a claim that all 21 experiments have already passed.
 
+The execution methodology is also predeclared. The author prepares/freezes the protocol, **Kilo executes the declared procedure**, and SSI BODY is the tested system. Kilo is used to reduce live author steering and preserve checkpoints, failures and evidence; it is not presented as an independent external scientific auditor.
+
 SSI V5 is currently developed independently by Paweł Jankiewicz (`jankes72`) as a one-person project. The compute described in the public infrastructure record is the author's own equipment or equipment being personally acquired by the author; it is not presented as university, school, company or grant-funded infrastructure.
 
 Public entry points:
 
 - [EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
+- [EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
 - [ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
 - [EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md](EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md)
 - [BODY_ISKRA_6X_T0.md](BODY_ISKRA_6X_T0.md)
@@ -79,6 +83,29 @@ provenance retention
 ```
 
 This program is recorded before the complete results so later reviewers can distinguish predeclared design from post-hoc interpretation.
+
+### How the runs are executed
+
+The intended operator boundary is:
+
+```text
+AUTHOR
+= prepares/freezes the protocol before execution
+
+KILO
+= verifies the target/T0
++ launches the real SSI BODY execution path
++ executes A -> B -> C
++ records checkpoints/evidence
++ preserves failed attempts/retries
++ runs declared final checks
++ produces the execution report
+
+SSI BODY / EXPERIMENTAL LINE
+= tested system
+```
+
+Any material human correction during a run must be disclosed as `MANUAL_INTERVENTION`. The detailed rule set is in [EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md).
 
 ## BODY ISKRA 6X — current experimental start state
 
@@ -169,6 +196,7 @@ PUBLIC
 + sanitized machine evidence
 + measured outcomes
 + predeclared experiment protocols
++ predeclared execution methodology / operator boundary
 + infrastructure/ownership context
 + canonical-vs-experiment lineage distinction
 + start-state beliefs/emotions
@@ -236,6 +264,7 @@ BODY_FROZEN T0 / PRE-ISKRA / immutable control
 -> humanoid
 -> self-selected new domain per line
 -> shared known/similar/novel + V10 measurement framework
+-> Kilo-run execution methodology predeclared
 
 NEXT
 -> execute and record 21 experiment outcomes
@@ -321,6 +350,7 @@ ROBERT
 2026-09-05  BODY_FROZEN T0 / PRE-ISKRA baseline recorded
 2026-09-06  six independent BODY ISKRA T0 descendants recorded; 48/48 group start-state QA PASS
 2026-09-06  21-experiment cross-domain program predeclared: 7 lines x 3 domains
+2026-09-06  Kilo-run execution methodology predeclared
 2026-09-06  canonical ROBERT continuity vs experimental reset explicitly documented
 2026-09-06  independent/solo project and author-owned compute context recorded
 ```
@@ -338,6 +368,7 @@ SSI V5 does **not** currently claim that:
 - the six agents have already demonstrated long-term behavioral divergence;
 - one Iskra profile has already proven superior;
 - every private ROBERT memory or skill is publicly machine-verifiable from this evidence mirror;
+- Kilo execution constitutes independent external validation;
 - later competence consolidation has already succeeded;
 - future economic performance is guaranteed.
 
@@ -360,6 +391,7 @@ UNKNOWN
 ## Start here
 
 - **21-experiment protocol:** [EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
+- **Execution methodology / Kilo operator boundary:** [EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
 - **ROBERT continuity vs experiment reset:** [ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
 - **Infrastructure / ownership:** [EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md](EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md)
 - **Current 6-agent state:** [BODY_ISKRA_6X_T0.md](BODY_ISKRA_6X_T0.md)
