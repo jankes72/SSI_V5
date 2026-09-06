@@ -2,11 +2,53 @@
 
 **Updated:** 2026-09-06
 
-This directory is the public evidence layer for SSI V5. It publishes sanitized results, machine-readable summaries, lineage and claim boundaries without distributing the private SSI implementation.
+This directory is the public evidence layer for SSI V5. It publishes sanitized results, machine-readable summaries, lineage, prospective protocols and claim boundaries without distributing the private SSI implementation.
+
+## PREDECLARED CROSS-DOMAIN PROGRAM — 21 EXPERIMENTS
+
+The project now has a prospectively recorded `7 x 3 = 21` experiment matrix designed before the full outcome set exists.
+
+Canonical protocol:
+
+- [`../EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](../EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
+
+```text
+DATE = 2026-09-06
+LINES = 7
+EXPERIMENTS PER LINE = 3
+TOTAL = 21
+STATUS = DESIGNED / EXECUTION_INITIATED / OUTCOMES_NOT_YET_CLAIMED
+```
+
+Seven lines:
+
+```text
+BODY_FROZEN T0
+NICE
+GUARDIAN
+JUSTICE
+EXPLORER
+PRAGMATIST
+SKEPTIC
+```
+
+Three experiments per line:
+
+```text
+A = DRONES
+B = HUMANOID
+C = NEW DOMAIN SELECTED BY THAT SSI LINE
+```
+
+Common planned measurement categories include `KNOWN / SIMILAR / NOVEL`, Router V10 route choice, reuse/verify/adapt/full-flow behavior, latency, correctness, false reuse, recovery, competence creation/update and provenance retention.
+
+This section records the **protocol**, not 21 completed PASS results. Future outcome evidence should be added as separate versioned artifacts.
+
+---
 
 ## CURRENT EXPERIMENTAL STATE — 6X BODY ISKRA / START_STATE_VALIDATED
 
-The newest recorded experimental state is now the six-agent BODY ISKRA start set descended from the same frozen BODY_FROZEN T0.
+The newest recorded experimental start state is the six-agent BODY ISKRA set descended from the same frozen BODY_FROZEN T0.
 
 Entry point:
 
@@ -88,7 +130,7 @@ STAGE_12 = SUPERSEDED
 STAGE_13_AUDIT_RETEST = PASS
 ```
 
-TEST 5 remains the newest closed validation milestone. The 6X BODY ISKRA record is the newest experimental start state, not a relabeling of TEST 5.
+TEST 5 remains the newest closed validation milestone. The 6X BODY ISKRA record is the newest experimental start state; the 21-experiment program is the newest prospectively recorded execution protocol.
 
 ---
 
@@ -98,6 +140,7 @@ Public evidence may contain:
 
 ```text
 PASS / FAIL / SUPERSEDED
+prospective experiment protocols
 counts
 sanitized initial beliefs/emotions
 benchmark summaries
