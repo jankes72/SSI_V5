@@ -3,9 +3,10 @@
 **Status:** `PUBLIC RESEARCH INDEX / 2026-09-06`  
 **Frozen common baseline:** `T0 / BODY_FROZEN / PRE-ISKRA / RECORDED / 2026-09-05`  
 **Current experimental state:** `6X BODY ISKRA / START_STATE_VALIDATED / 2026-09-06`  
+**Predeclared research program:** `7 x 3 = 21 CROSS-DOMAIN EXPERIMENTS / DESIGNED / EXECUTION_INITIATED`  
 **Latest closed validation milestone:** `TEST 5 / SSI BODY FINAL CONVERGENCE / DEVELOPMENT_VALIDATED`
 
-This file separates the frozen common origin, the current six-agent experimental start state, prior validated milestones and still-prospective longitudinal outcomes.
+This file separates the frozen common origin, the current six-agent experimental start state, the predeclared 21-experiment program, prior validated milestones and still-prospective outcomes.
 
 ## 0. CURRENT EXPERIMENTAL TRUTH — BODY ISKRA 6X
 
@@ -25,7 +26,7 @@ VERIFIED_NEW_EXPERIENCES_AT_T0 = 0 per agent
 PENDING_NEW_EXPERIENCES_AT_T0 = 0 per agent
 ```
 
-The six variants are:
+Variants:
 
 ```text
 1 NICE
@@ -43,11 +44,58 @@ Public evidence:
 - [`evidence/BODY_ISKRA_6X_T0_20260906/GROUP_PUBLIC_SUMMARY.json`](evidence/BODY_ISKRA_6X_T0_20260906/GROUP_PUBLIC_SUMMARY.json)
 - six separate sanitized agent T0 JSON records
 - [`evidence/BODY_ISKRA_6X_T0_20260906/CLAIM_BOUNDARIES.md`](evidence/BODY_ISKRA_6X_T0_20260906/CLAIM_BOUNDARIES.md)
-- [`evidence/BODY_ISKRA_6X_T0_20260906/PRIVATE_ARTIFACT_SHA256SUMS.txt`](evidence/BODY_ISKRA_6X_T0_20260906/PRIVATE_ARTIFACT_SHA256SUMS.txt)
 
-Each public agent record includes its initial beliefs, emotions, cognitive state, private inventory counts, QA result and SHA256 reference. Private implementation remains unpublished.
+## 1. PREDECLARED 21-EXPERIMENT CROSS-DOMAIN PROGRAM
 
-## 1. FROZEN COMMON ORIGIN — BODY_FROZEN T0
+Canonical protocol:
+
+- [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
+
+```text
+DESIGNED = 2026-09-06
+PROGRAM_STATUS = DESIGNED / EXECUTION_INITIATED / OUTCOMES_NOT_YET_CLAIMED
+LINES = 7
+EXPERIMENTS_PER_LINE = 3
+TOTAL = 21
+```
+
+Seven lines:
+
+```text
+0 BODY_FROZEN T0
+1 ISKRA NICE
+2 ISKRA GUARDIAN
+3 ISKRA JUSTICE
+4 ISKRA EXPLORER
+5 ISKRA PRAGMATIST
+6 ISKRA SKEPTIC
+```
+
+Three experiments per line:
+
+```text
+A DRONES
+B HUMANOID
+C NEW DOMAIN SELECTED BY THAT SSI LINE
+```
+
+The common high-level measurement contract includes:
+
+```text
+KNOWN / SIMILAR / NOVEL
+V10 routing path
+reuse / verify-adapt / alternative-compose / deeper-full-flow
+latency / decision cost
+correctness / outcome
+false reuse
+recovery
+competence creation/update
+provenance retention
+```
+
+This establishes the program design before the complete outcome set. It does not state that all 21 experiments are complete or PASS.
+
+## 2. FROZEN COMMON ORIGIN — BODY_FROZEN T0
 
 BODY_FROZEN remains immutable and historically dated 2026-09-05.
 
@@ -77,9 +125,7 @@ Public evidence:
 - [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
 - [`evidence/BODY_FROZEN_T0_20260905/README.md`](evidence/BODY_FROZEN_T0_20260905/README.md)
 
-BODY_FROZEN is not rewritten by the six agents. It remains the control origin for future comparison.
-
-## 2. CURRENT VALIDATED MILESTONE — TEST 5
+## 3. CURRENT VALIDATED MILESTONE — TEST 5
 
 TEST 5 remains the newest closed public validation test.
 
@@ -96,20 +142,18 @@ OPEN_BLOCKERS = 0
 
 Claim boundary: development validation of the tested local SSI BODY control/integration path. It does not prove production readiness of the entire SSI system, universal reliability, AGI or consciousness.
 
-## 3. CURRENT RESEARCH SEQUENCE
+## 4. CURRENT RESEARCH SEQUENCE
 
 ```text
 BODY_FROZEN T0 / 2026-09-05
--> 6 BODY ISKRA start states / 2026-09-06 / ALREADY CREATED + START_STATE_VALIDATED
--> longitudinal comparative experiments / NOT YET CLAIMED
+-> 6 BODY ISKRA start states / 2026-09-06 / CREATED + START_STATE_VALIDATED
+-> 21-experiment cross-domain matrix / 2026-09-06 / DESIGNED + EXECUTION_INITIATED
+-> longitudinal comparison / outcomes pending
 -> later competence comparison / consolidation / promotion
+-> later independent expert challenges
 ```
 
-The six-agent creation phase is no longer merely planned. It is now recorded as completed at the start-state level.
-
-Still prospective are the long-run outcomes: behavioral divergence, relation dynamics, competence divergence, micronetwork trajectory differences and any later consolidation results.
-
-## 4. CANONICAL V10 MEANING
+## 5. CANONICAL V10 MEANING
 
 V10 is a **stateful predictive competence & recovery router**, not only a fast cache/router.
 
@@ -131,9 +175,7 @@ SAME / EQUIVALENT STATE
 => DO NOT BLINDLY REPEAT
 ```
 
-Dedicated universal anti-loop/recovery proof remains an open research question.
-
-## 5. ROLE BOUNDARIES
+## 6. ROLE BOUNDARIES
 
 ```text
 BODY_FROZEN T0
@@ -151,49 +193,28 @@ ROBERT
 = separate execution/runtime/tooling body
 ```
 
-## 6. VALIDATION / EVIDENCE HISTORY
+## 7. VALIDATION / EVIDENCE HISTORY
 
 ```text
-TEST 2
--> 600/600 lifecycle/persistence hardening PASS
-
-TEST 3 historical V10 run
--> 600/600 PASS
-
-TEST3 100x v2 migration closure
--> 60 000/60 000 accounted
--> 0 unresolved failures
-
-TEST 4 ROOT terminal
--> authority / E2E / concurrency / restart / receipt closure
-
-TEST 5
--> Stage 12 27/27 SUPERSEDED after audit
--> Stage 13 independent audit retest PASS
--> 29/29 acceptance
--> 524/524 total regression
--> 0 blockers
-
-2026-09-05
--> BODY_FROZEN PRE-ISKRA baseline recorded
-
-2026-09-06
--> 6 independent BODY ISKRA descendants recorded
--> 1832 files / 616 Python per agent
--> +51 / +29 vs BODY_FROZEN per agent
--> 8/8 start-state QA per agent
--> 48/48 group start-state QA
+TEST 2 -> 600/600 lifecycle/persistence hardening PASS
+TEST 3 historical V10 run -> 600/600 PASS
+TEST3 100x v2 -> 60 000/60 000 accounted / 0 unresolved failures
+TEST 4 ROOT terminal -> authority / E2E / concurrency / restart / receipt closure
+TEST 5 -> Stage 12 SUPERSEDED; Stage 13 PASS; 29/29 acceptance; 524/524 total; 0 blockers
+2026-09-05 -> BODY_FROZEN PRE-ISKRA baseline recorded
+2026-09-06 -> 6 BODY ISKRA descendants recorded; 48/48 start-state QA
+2026-09-06 -> 21-experiment cross-domain program predeclared
 ```
 
-## 7. PUBLICATION BOUNDARY
+## 8. PUBLICATION BOUNDARY
 
 ```text
-YES = sanitized results, counts, initial beliefs/emotions, QA, lineage, SHA256, claim boundaries
+YES = sanitized results, counts, initial beliefs/emotions, protocols, QA, lineage, SHA256, claim boundaries
 NO  = private SSI source code, private file tree, proprietary implementation internals,
       raw memory/user data, secrets, local paths, implementation-level architecture
 ```
 
-## 8. CLAIM BOUNDARIES
+## 9. CLAIM BOUNDARIES
 
 Public documentation must not state without evidence that SSI:
 
@@ -202,9 +223,10 @@ Public documentation must not state without evidence that SSI:
 - has unlimited autonomy;
 - is production-ready as a whole;
 - has universally validated V10 anti-loop/recovery;
+- has completed or passed all 21 experiments;
+- has validated physical drone or humanoid deployment;
 - has already demonstrated long-run six-agent behavioral divergence;
-- has already completed later competence consolidation;
-- has a non-zero formal BODY_FROZEN T0 skill count when the explicit registry snapshot reports zero.
+- has already completed later competence consolidation.
 
 Accepted truth labels include:
 
@@ -213,6 +235,8 @@ VERIFIED_MACHINE_EVIDENCE
 DEVELOPMENT_VALIDATED
 T0_BASELINE_RECORDED
 START_STATE_VALIDATED
+PROGRAM_DESIGNED
+EXECUTION_INITIATED
 SUPERSEDED
 HISTORICAL_EVIDENCE
 PLANNED
@@ -220,20 +244,18 @@ HYPOTHESIS
 UNKNOWN
 ```
 
-## 9. CURRENT DOCUMENTS
+## 10. CURRENT DOCUMENTS
 
 - [`README.md`](README.md)
+- [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
 - [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
 - [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
 - [`START_HERE.md`](START_HERE.md)
 - [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
 - [`GRANT_REVIEWER_FAQ.md`](GRANT_REVIEWER_FAQ.md)
 - [`evidence/README.md`](evidence/README.md)
-- [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
-- [`evidence/BODY_FROZEN_T0_20260905/README.md`](evidence/BODY_FROZEN_T0_20260905/README.md)
-- [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
 
-## 10. FINAL RULE
+## 11. FINAL RULE
 
 ```text
 NO EVIDENCE -> UNKNOWN
@@ -241,4 +263,5 @@ WEAK PASS -> PRESERVE + SUPERSEDE IF NEEDED
 NEW EVIDENCE -> REVISE
 BODY_FROZEN T0 -> NEVER SILENTLY REWRITE THE CONTROL BASELINE
 6X START_STATE_VALIDATED -> DO NOT MISLABEL AS LONGITUDINAL SUCCESS
+21 EXPERIMENTS -> PREDECLARED PROGRAM, NOT 21 COMPLETED RESULTS
 ```
