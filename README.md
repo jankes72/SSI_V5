@@ -10,6 +10,8 @@ FROZEN COMMON BASELINE = T0 / BODY_FROZEN / PRE-ISKRA / 2026-09-05
 CURRENT EXPERIMENTAL STATE = 6X BODY ISKRA / START_STATE_VALIDATED / 2026-09-06
 PREDECLARED CROSS-DOMAIN PROGRAM = 7 lines x 3 domains = 21 experiments
 PROGRAM STATUS = DESIGNED / EXECUTION_INITIATED / OUTCOMES_NOT_YET_CLAIMED
+CURRENT DEVELOPMENT TEAM = 1 person / independent project
+CURRENT COMPUTE = author-owned / personally acquired hardware
 AGENTS = 6
 START-STATE QA = 8/8 per agent / 48/48 group
 LATEST CLOSED VALIDATION TEST = TEST 5 / DEVELOPMENT_VALIDATED
@@ -17,9 +19,12 @@ LATEST CLOSED VALIDATION TEST = TEST 5 / DEVELOPMENT_VALIDATED
 
 **Important distinction:** BODY_FROZEN remains the immutable common comparison origin. The six BODY ISKRA descendants already exist and have validated start states. The 21-experiment cross-domain program is now designed and recorded before the full outcome set exists; this is not a claim that all 21 experiments have already passed.
 
+SSI V5 is currently developed independently by Paweł Jankiewicz (`jankes72`) as a one-person project. The compute described in the public infrastructure record is the author's own equipment or equipment being personally acquired by the author; it is not presented as university, school, company or grant-funded infrastructure.
+
 Public entry points:
 
 - [EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
+- [EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md](EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md)
 - [BODY_ISKRA_6X_T0.md](BODY_ISKRA_6X_T0.md)
 - [evidence/BODY_ISKRA_6X_T0_20260906/README.md](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
 - [BODY_FROZEN_T0_PRE_ISKRA.md](BODY_FROZEN_T0_PRE_ISKRA.md)
@@ -135,6 +140,7 @@ PUBLIC
 + sanitized machine evidence
 + measured outcomes
 + predeclared experiment protocols
++ infrastructure/ownership context
 + start-state beliefs/emotions
 + counts / hashes / QA
 + failures / superseded results
@@ -276,6 +282,7 @@ ROBERT
 2026-09-05  BODY_FROZEN T0 / PRE-ISKRA baseline recorded
 2026-09-06  six independent BODY ISKRA T0 descendants recorded; 48/48 group start-state QA PASS
 2026-09-06  21-experiment cross-domain program predeclared: 7 lines x 3 domains
+2026-09-06  independent/solo project and author-owned compute context recorded
 ```
 
 ## Claim boundaries
@@ -312,6 +319,7 @@ UNKNOWN
 ## Start here
 
 - **21-experiment protocol:** [EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
+- **Infrastructure / ownership:** [EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md](EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md)
 - **Current 6-agent state:** [BODY_ISKRA_6X_T0.md](BODY_ISKRA_6X_T0.md)
 - **6-agent sanitized evidence:** [evidence/BODY_ISKRA_6X_T0_20260906/README.md](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
 - **Frozen common origin:** [BODY_FROZEN_T0_PRE_ISKRA.md](BODY_FROZEN_T0_PRE_ISKRA.md)
