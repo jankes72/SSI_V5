@@ -49,7 +49,11 @@ Primary protocol:
 
 [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
 
-The program was recorded before the full outcome set exists.
+**Execution methodology:**
+
+[`EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md`](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
+
+The program was recorded before the full outcome set exists. The execution methodology was also recorded prospectively and defines a clear operator boundary: the author prepares/freezes the protocol, **Kilo executes the declared procedure**, and SSI BODY is the tested system. Kilo is used to reduce live author steering and preserve a reproducible evidence trail; it is **not** presented as an independent external scientific auditor.
 
 ```text
 7 LINES
@@ -76,7 +80,7 @@ Common reviewer-facing measurements include:
 ```text
 KNOWN / SIMILAR / NOVEL
 V10 route choice
-reuse / verify-adapt / compose / deeper-full-flow
+reuse / verify-adapt / compose / deeper/full-flow
 latency / decision cost
 correctness / outcome
 false reuse
@@ -86,6 +90,26 @@ provenance retention
 ```
 
 This is a predeclared program, not a claim that 21 experiments are already complete or PASS.
+
+### Execution fairness rule
+
+The intended run sequence is:
+
+```text
+AUTHOR PREPARES/FREEZES PROTOCOL
+-> KILO VERIFIES TARGET/T0
+-> KILO LAUNCHES REAL SSI BODY
+-> EXPERIMENT A
+-> CHECKPOINT/EVIDENCE
+-> EXPERIMENT B
+-> CHECKPOINT/EVIDENCE
+-> EXPERIMENT C
+-> CHECKPOINT/EVIDENCE
+-> FINAL TESTS
+-> REPORT
+```
+
+Failed attempts must be preserved. Any material human correction during a run must be disclosed as `MANUAL_INTERVENTION`. Such a run may still be useful engineering evidence, but should not be represented as uninterrupted autonomous execution.
 
 ## 2. Current public experimental state — BODY ISKRA 6X
 
@@ -101,7 +125,7 @@ Recorded current state:
 
 ```text
 AGENTS = 6
-PRIVATE ARTIFACT PER AGENT = 1832 files
+PRIVATE_ARTIFACT PER_AGENT = 1832 files
 PYTHON FILES PER AGENT = 616
 DELTA VS BODY_FROZEN PER AGENT = +51 total files / +29 Python files
 START-STATE QA PER AGENT = 8/8 PASS
@@ -158,6 +182,7 @@ Future experimentally validated skills may later be integrated into ROBERT under
 - each passed `8/8` start-state QA;
 - group start-state QA is `48/48 PASS`;
 - the 21-experiment cross-domain matrix was predeclared on 2026-09-06;
+- the Kilo-run execution methodology was prospectively recorded;
 - canonical ROBERT continuity is explicitly separated from experiment reset;
 - TEST 5 includes `ROBERT_STABLE = 46/46 PASS` within the final convergence evidence.
 
@@ -192,6 +217,7 @@ TEST 5 remains the latest closed validation milestone.
 PUBLIC
 = sanitized evidence
 + predeclared experiment protocols
++ execution methodology / operator boundary
 + ROBERT-vs-experiment lineage distinction
 + agent labels
 + initial beliefs/emotions
@@ -214,13 +240,14 @@ PRIVATE
 
 1. [`ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md`](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
 2. [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
-3. [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
-4. [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
-5. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
-6. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
-7. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
-8. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
-9. [`GRANT_REVIEWER_FAQ.md`](GRANT_REVIEWER_FAQ.md)
-10. [`evidence/README.md`](evidence/README.md)
+3. [`EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md`](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
+4. [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
+5. [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
+6. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
+7. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
+8. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
+9. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
+10. [`GRANT_REVIEWER_FAQ.md`](GRANT_REVIEWER_FAQ.md)
+11. [`evidence/README.md`](evidence/README.md)
 
 SSI V5 should be evaluated as two connected tracks: a continuous ROBERT engineering line and a controlled BODY_FROZEN / BODY ISKRA experimental program.
