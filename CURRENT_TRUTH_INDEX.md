@@ -1,19 +1,60 @@
 # SSI V5 — CURRENT TRUTH INDEX
 
-**Status:** `PUBLIC RESEARCH INDEX / 2026-09-05`  
-**Current experimental baseline:** `T0 / BODY_FROZEN / PRE-ISKRA / RECORDED`  
+**Status:** `PUBLIC RESEARCH INDEX / 2026-09-06`  
+**Frozen common baseline:** `T0 / BODY_FROZEN / PRE-ISKRA / RECORDED / 2026-09-05`  
+**Current experimental state:** `6X BODY ISKRA / START_STATE_VALIDATED / 2026-09-06`  
 **Latest closed validation milestone:** `TEST 5 / SSI BODY FINAL CONVERGENCE / DEVELOPMENT_VALIDATED`
 
-This file separates what is currently recorded, what was validated earlier and what is still planned.
+This file separates the frozen common origin, the current six-agent experimental start state, prior validated milestones and still-prospective longitudinal outcomes.
 
-## 0. CURRENT EXPERIMENTAL TRUTH — T0
+## 0. CURRENT EXPERIMENTAL TRUTH — BODY ISKRA 6X
 
-T0 is now the current frozen experimental starting point.
+Six independent BODY ISKRA descendants now exist from the same frozen BODY_FROZEN T0.
+
+```text
+COMMON_ORIGIN = SSI_V5_BODY_FROZEN_T0_20260905
+CURRENT_STATE_ID = BODY_ISKRA_6X_T0_20260906
+AGENTS = 6
+STATUS = START_STATE_VALIDATED
+PRIVATE_ARTIFACT_PER_AGENT = 1832 files
+PYTHON_FILES_PER_AGENT = 616
+DELTA_VS_BODY_FROZEN_PER_AGENT = +51 total files / +29 Python files
+START_STATE_QA_PER_AGENT = 8/8 PASS
+GROUP_START_STATE_QA = 48/48 PASS
+VERIFIED_NEW_EXPERIENCES_AT_T0 = 0 per agent
+PENDING_NEW_EXPERIENCES_AT_T0 = 0 per agent
+```
+
+The six variants are:
+
+```text
+1 NICE
+2 GUARDIAN
+3 JUSTICE
+4 EXPLORER
+5 PRAGMATIST
+6 SKEPTIC
+```
+
+Public evidence:
+
+- [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
+- [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
+- [`evidence/BODY_ISKRA_6X_T0_20260906/GROUP_PUBLIC_SUMMARY.json`](evidence/BODY_ISKRA_6X_T0_20260906/GROUP_PUBLIC_SUMMARY.json)
+- six separate sanitized agent T0 JSON records
+- [`evidence/BODY_ISKRA_6X_T0_20260906/CLAIM_BOUNDARIES.md`](evidence/BODY_ISKRA_6X_T0_20260906/CLAIM_BOUNDARIES.md)
+- [`evidence/BODY_ISKRA_6X_T0_20260906/PRIVATE_ARTIFACT_SHA256SUMS.txt`](evidence/BODY_ISKRA_6X_T0_20260906/PRIVATE_ARTIFACT_SHA256SUMS.txt)
+
+Each public agent record includes its initial beliefs, emotions, cognitive state, private inventory counts, QA result and SHA256 reference. Private implementation remains unpublished.
+
+## 1. FROZEN COMMON ORIGIN — BODY_FROZEN T0
+
+BODY_FROZEN remains immutable and historically dated 2026-09-05.
 
 ```text
 BASELINE_ID = SSI_V5_BODY_FROZEN_T0_20260905
 PHASE = PRE-ISKRA
-STATUS = RECORDED
+STATUS = RECORDED / IMMUTABLE CONTROL
 CONTINUUM = CLOSED
 CONTINUUM_TESTS = 23/23 PASS
 MAIN_SCENARIOS = 22/22 PASS
@@ -35,14 +76,10 @@ Public evidence:
 
 - [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
 - [`evidence/BODY_FROZEN_T0_20260905/README.md`](evidence/BODY_FROZEN_T0_20260905/README.md)
-- [`evidence/BODY_FROZEN_T0_20260905/BODY_FROZEN_T0_PUBLIC_SUMMARY.json`](evidence/BODY_FROZEN_T0_20260905/BODY_FROZEN_T0_PUBLIC_SUMMARY.json)
-- [`evidence/BODY_FROZEN_T0_20260905/CLAIM_BOUNDARIES.md`](evidence/BODY_FROZEN_T0_20260905/CLAIM_BOUNDARIES.md)
 
-**Critical distinction:** T0 is a baseline, not TEST 6 and not a claim that T1/T2 results already exist.
+BODY_FROZEN is not rewritten by the six agents. It remains the control origin for future comparison.
 
-The formal skill lifecycle counters in the supplied T0 sanitized snapshot are `0`. Micronetwork candidate/test records are not silently reclassified as formal skills.
-
-## 1. CURRENT VALIDATED MILESTONE — TEST 5
+## 2. CURRENT VALIDATED MILESTONE — TEST 5
 
 TEST 5 remains the newest closed public validation test.
 
@@ -59,40 +96,20 @@ OPEN_BLOCKERS = 0
 
 Claim boundary: development validation of the tested local SSI BODY control/integration path. It does not prove production readiness of the entire SSI system, universal reliability, AGI or consciousness.
 
-## 2. CURRENT RESEARCH SEQUENCE
+## 3. CURRENT RESEARCH SEQUENCE
 
 ```text
-T0 FROZEN PRE-ISKRA
--> T1 NO-ISKRA controlled cross-domain transfer
--> T1 ISKRA variants from identical T0
--> T2 competence comparison / consolidation / promotion
+BODY_FROZEN T0 / 2026-09-05
+-> 6 BODY ISKRA start states / 2026-09-06 / ALREADY CREATED + START_STATE_VALIDATED
+-> longitudinal comparative experiments / NOT YET CLAIMED
+-> later competence comparison / consolidation / promotion
 ```
 
-T0 must remain immutable. Any upgraded body created in T2 is a descendant, not a rewrite of T0.
+The six-agent creation phase is no longer merely planned. It is now recorded as completed at the start-state level.
 
-### Planned T1 controlled transfer
+Still prospective are the long-run outcomes: behavioral divergence, relation dynamics, competence divergence, micronetwork trajectory differences and any later consolidation results.
 
-Experiment 1 is designed as a high-scaffolding technology-transfer test: Micronetworks + V10 are supplied as a clean LEGO baseline with detailed instructions, prepared blocks/adapters and predetermined tests for a safe civilian drone simulation.
-
-Experiment 2 reduces scaffolding: similar transfer direction, but the system must create more of the mapping, implementation and verification itself.
-
-A later open-ended task can test novel-domain discovery without revealing the target answer.
-
-### Planned T2 consolidation
-
-```text
-INDEPENDENT VALIDATED COMPETENCE
--> COMPARE EVIDENCE / PROVENANCE / BENCHMARK
--> DEDUPLICATE EQUIVALENTS
--> INCREASE DATA/EVIDENCE COVERAGE
--> CANDIDATE / CHALLENGER / CHAMPION
--> MORE CASES IF AMBIGUOUS
--> PROMOTION ONLY AFTER EXPLICIT TEST
-```
-
-No T1/T2 outcome is currently claimed.
-
-## 3. CANONICAL V10 MEANING
+## 4. CANONICAL V10 MEANING
 
 V10 is a **stateful predictive competence & recovery router**, not only a fast cache/router.
 
@@ -116,18 +133,16 @@ SAME / EQUIVALENT STATE
 
 Dedicated universal anti-loop/recovery proof remains an open research question.
 
-## 4. ROLE BOUNDARIES
+## 5. ROLE BOUNDARIES
 
 ```text
 BODY_FROZEN T0
-= frozen experimental origin
+= frozen experimental origin / control
 
-AGENTS
-= walk through worlds
-+ own CONTINUUM/laboratory trajectories
-+ collect data and metadata
-+ develop/train/evaluate strategies
-+ generate competence/skills
+BODY ISKRA AGENTS 1-6
+= independent descendants with separate T0 value/emotion states
++ own future trajectories
++ current start state recorded
 
 DIRECTOR
 = observes, audits, compares, ranks and evaluates
@@ -136,9 +151,7 @@ ROBERT
 = separate execution/runtime/tooling body
 ```
 
-Weak strategies can be rejected while their history remains. Stronger strategies can mature through ranking and produce validated skills/competence. Later promotion into shared system capability must remain testable and reversible.
-
-## 5. VALIDATION HISTORY
+## 6. VALIDATION / EVIDENCE HISTORY
 
 ```text
 TEST 2
@@ -146,8 +159,6 @@ TEST 2
 
 TEST 3 historical V10 run
 -> 600/600 PASS
--> 57.61 s
--> 534 REUSE_TOP1 / 66 VERIFY_TOPK
 
 TEST3 100x v2 migration closure
 -> 60 000/60 000 accounted
@@ -163,27 +174,24 @@ TEST 5
 -> 524/524 total regression
 -> 0 blockers
 
-T0
--> BODY_FROZEN PRE-ISKRA baseline recorded 2026-09-05
--> CONTINUUM CLOSED
--> next phase = T1
+2026-09-05
+-> BODY_FROZEN PRE-ISKRA baseline recorded
+
+2026-09-06
+-> 6 independent BODY ISKRA descendants recorded
+-> 1832 files / 616 Python per agent
+-> +51 / +29 vs BODY_FROZEN per agent
+-> 8/8 start-state QA per agent
+-> 48/48 group start-state QA
 ```
 
-## 6. PUBLICATION BOUNDARY
-
-Public mirror:
+## 7. PUBLICATION BOUNDARY
 
 ```text
-YES = results, summaries, counts, test boundaries, lineage, claim boundaries
-NO  = private SSI source code, proprietary routing internals, raw memory/user data,
-      secrets, local paths, full implementation-level migration maps
+YES = sanitized results, counts, initial beliefs/emotions, QA, lineage, SHA256, claim boundaries
+NO  = private SSI source code, private file tree, proprietary implementation internals,
+      raw memory/user data, secrets, local paths, implementation-level architecture
 ```
-
-## 7. ATTRIBUTION
-
-SSI V5 is developed independently by Paweł Jankiewicz as author of the SSI architecture. Third-party models/tools remain third-party components.
-
-The source paradigm of Moral AI / Iskra is attributed in the repository to the earlier project of the author's brother; SSI's adaptation/integration is documented separately.
 
 ## 8. CLAIM BOUNDARIES
 
@@ -194,8 +202,9 @@ Public documentation must not state without evidence that SSI:
 - has unlimited autonomy;
 - is production-ready as a whole;
 - has universally validated V10 anti-loop/recovery;
-- has already completed T1 or T2;
-- has a non-zero formal T0 skill count when the explicit registry snapshot reports zero.
+- has already demonstrated long-run six-agent behavioral divergence;
+- has already completed later competence consolidation;
+- has a non-zero formal BODY_FROZEN T0 skill count when the explicit registry snapshot reports zero.
 
 Accepted truth labels include:
 
@@ -203,9 +212,9 @@ Accepted truth labels include:
 VERIFIED_MACHINE_EVIDENCE
 DEVELOPMENT_VALIDATED
 T0_BASELINE_RECORDED
+START_STATE_VALIDATED
 SUPERSEDED
 HISTORICAL_EVIDENCE
-IMPLEMENTED_NOT_YET_REPLICATED
 PLANNED
 HYPOTHESIS
 UNKNOWN
@@ -214,12 +223,13 @@ UNKNOWN
 ## 9. CURRENT DOCUMENTS
 
 - [`README.md`](README.md)
+- [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
 - [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
 - [`START_HERE.md`](START_HERE.md)
 - [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
 - [`GRANT_REVIEWER_FAQ.md`](GRANT_REVIEWER_FAQ.md)
-- [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
 - [`evidence/README.md`](evidence/README.md)
+- [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
 - [`evidence/BODY_FROZEN_T0_20260905/README.md`](evidence/BODY_FROZEN_T0_20260905/README.md)
 - [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
 
@@ -229,7 +239,6 @@ UNKNOWN
 NO EVIDENCE -> UNKNOWN
 WEAK PASS -> PRESERVE + SUPERSEDE IF NEEDED
 NEW EVIDENCE -> REVISE
-T0 -> NEVER SILENTLY REWRITE THE CONTROL BASELINE
+BODY_FROZEN T0 -> NEVER SILENTLY REWRITE THE CONTROL BASELINE
+6X START_STATE_VALIDATED -> DO NOT MISLABEL AS LONGITUDINAL SUCCESS
 ```
-
-The repository should make it possible to reconstruct what was known before T0, what exactly T0 contains, what changes during T1/T2 and whether later competence genuinely improves the descendants of the same frozen starting point.
