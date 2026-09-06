@@ -8,23 +8,78 @@ SSI V5 is not presented as proven AGI, consciousness or a production-ready auton
 
 ## 0. What changed on 2026-09-06?
 
-SSI V5 now has six independent BODY ISKRA experimental descendants created from the same frozen BODY_FROZEN T0 recorded on 2026-09-05, and a prospectively recorded `7 x 3 = 21` cross-domain experiment program.
+SSI V5 now has six independent **BODY ISKRA** experimental descendants created from the same frozen BODY_FROZEN T0 recorded on 2026-09-05, a prospectively recorded `7 x 3 = 21` cross-domain experiment program, and an explicit public record of its current independent/solo development context and author-owned compute.
 
 ```text
 BODY_FROZEN T0 = immutable common origin
 BODY ISKRA 6X = already created / START_STATE_VALIDATED
 21-EXPERIMENT PROGRAM = DESIGNED / EXECUTION_INITIATED
+PROJECT TEAM = currently 1 person
+CURRENT COMPUTE CONTEXT = author-owned / personally acquired equipment
 TEST 5 = latest closed validation test
 ```
 
 Primary current documents:
 
 - [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
+- [`EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md`](EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md)
 - [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
 - [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
 - [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
 
-## 1. What is the 21-experiment program?
+## 1. Is SSI V5 currently a university/company/grant-backed project?
+
+No such backing is currently claimed.
+
+As of this record, SSI V5 is developed independently by Paweł Jankiewicz (`jankes72`) as a one-person project. The listed compute resources are the author's own equipment or equipment currently being personally acquired by the author. They are not presented as school, university, company, laboratory or grant-funded infrastructure.
+
+This can change later if collaborators, sponsors or funded compute actually join the project; any such future change should be recorded separately rather than retroactively attributed to the current evidence.
+
+## 2. What is the current / near-term experimental hardware topology?
+
+Current preserved constrained node:
+
+```text
+LENOVO LAPTOP
+RAM = 8 GB
+VRAM = 4 GB
+ROLE = agent/world laboratory / controlled experiments
+OWNERSHIP = private / author-owned
+```
+
+Near-term private expansion:
+
+```text
+NODE B
+CPU CLASS = Intel i5
+RAM = 16 GB
+VRAM = 4 GB
+ROLE = ROBERT / Eyes / Hands / execution
+
+NODE C
+CPU CLASS = Intel i7
+RAM = 16 GB
+VRAM = 6 GB
+ROLE = DIRECTOR / coordination / memory / evidence / routing
+```
+
+These are separate machines. Their RAM/VRAM values must not be added together and described as one shared-memory GPU system.
+
+## 3. Why publish the hardware context?
+
+Because stronger hardware can change latency, throughput and usable model size. Future experiment evidence should distinguish architectural/learning improvements from improvements caused only by moving a run to a stronger machine.
+
+The preserved progression is:
+
+```text
+CONSTRAINED PERSONAL LAB
+-> ROLE-SEPARATED PERSONAL THREE-NODE LAB
+-> FUTURE FUNDED INFRASTRUCTURE, IF OBTAINED
+```
+
+The fact that earlier work ran on modest personal hardware is context, not scientific proof by itself.
+
+## 4. What is the 21-experiment program?
 
 Seven SSI lines are defined:
 
@@ -66,7 +121,7 @@ provenance retention
 
 This records the experimental design before full results exist. It does not claim that 21 experiments have already completed or passed.
 
-## 2. Why record the program before outcomes?
+## 5. Why record the program before outcomes?
 
 The intent is to make the Git history distinguish predeclared experimental design from later interpretation.
 
@@ -82,7 +137,7 @@ PREDECLARED PROGRAM
 
 This reduces the risk that later successful results appear to have been selected after the fact.
 
-## 3. What is already established for BODY ISKRA 6X?
+## 6. What is already established for BODY ISKRA 6X?
 
 ```text
 AGENTS = 6
@@ -97,7 +152,7 @@ PENDING NEW EXPERIENCES AT T0 = 0 per agent
 
 The six descendants share the same BODY_FROZEN origin but have separately documented initial belief/emotion states.
 
-## 4. What remains prospective?
+## 7. What remains prospective?
 
 Not yet claimed:
 
@@ -109,7 +164,7 @@ Not yet claimed:
 - successful later skill consolidation;
 - AGI or consciousness.
 
-## 5. What is BODY_FROZEN T0?
+## 8. What is BODY_FROZEN T0?
 
 BODY_FROZEN is the immutable common origin recorded on 2026-09-05.
 
@@ -127,7 +182,7 @@ CONTINUUM = CLOSED
 
 It remains unchanged while descendant lines accumulate new experience.
 
-## 6. What did TEST 5 prove?
+## 9. What did TEST 5 prove?
 
 TEST 5 remains the latest closed validation milestone:
 
@@ -141,7 +196,7 @@ STAGE_13_AUDIT_RETEST = PASS
 
 Claim boundary: development validation of the tested local SSI BODY control/integration path, not universal system reliability or production readiness.
 
-## 7. What is scientifically interesting about drones and humanoids here?
+## 10. What is scientifically interesting about drones and humanoids here?
 
 The program is not limited to whether a simulated drone or humanoid completes a task. It also tests whether prior validated competence changes the computational/routing cost of decision making across state novelty levels.
 
@@ -161,15 +216,15 @@ NOVEL
 
 Measured evidence should include latency, correctness, false reuse and recovery, rather than speed alone.
 
-## 8. What happens when multiple lines discover equivalent competence?
+## 11. What happens when multiple lines discover equivalent competence?
 
 Equivalent competence should not automatically create useless duplicate skills. Different solution paths and their evidence can enrich an existing Challenger or Champion while preserving provenance. Promotion requires later benchmark/retest evidence; more data alone does not automatically make a Challenger the Champion.
 
-## 9. What comes after the 21 internal experiments?
+## 12. What comes after the 21 internal experiments?
 
 A separate external challenge phase is intended. Domain experts should be able to propose cases the author did not anticipate, preferably against identified/frozen SSI versions. External challenges remain distinct from the predeclared 21 internal experiments.
 
-## 10. Does the public repo expose private implementation?
+## 13. Does the public repo expose private implementation?
 
 No.
 
@@ -177,6 +232,7 @@ No.
 PUBLIC
 = sanitized evidence
 + prospective protocols
++ infrastructure/ownership context
 + measured results
 + initial beliefs/emotions
 + counts / QA / hashes
@@ -191,7 +247,7 @@ PRIVATE
 + proprietary routing/integration internals
 ```
 
-## 11. What should reviewers not infer?
+## 14. What should reviewers not infer?
 
 Do not infer that:
 
@@ -199,18 +255,21 @@ Do not infer that:
 - all 21 experiments already passed;
 - V10 is universally superior;
 - humanoid/drone physical deployment is already validated;
+- modest personal hardware itself proves scientific validity;
+- current infrastructure is university/company/grant-funded;
 - every candidate is a formal skill;
 - later consolidation already succeeded;
 - future economic outcomes are guaranteed.
 
-## 12. Where should a reviewer start?
+## 15. Where should a reviewer start?
 
 1. [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
-2. [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
-3. [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
-4. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
-5. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
-6. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
-7. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
-8. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
-9. [`evidence/README.md`](evidence/README.md)
+2. [`EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md`](EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md)
+3. [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
+4. [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
+5. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
+6. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
+7. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
+8. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
+9. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
+10. [`evidence/README.md`](evidence/README.md)
