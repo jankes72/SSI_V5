@@ -3,10 +3,11 @@
 **Status:** `PUBLIC RESEARCH INDEX / 2026-09-06`  
 **Frozen common baseline:** `T0 / BODY_FROZEN / PRE-ISKRA / RECORDED / 2026-09-05`  
 **Current experimental state:** `6X BODY ISKRA / START_STATE_VALIDATED / 2026-09-06`  
+**Canonical ROBERT state:** `CONTINUOUS ENGINEERING LINE / NOT RESET BY EXPERIMENT CLEANING`  
 **Predeclared research program:** `7 x 3 = 21 CROSS-DOMAIN EXPERIMENTS / DESIGNED / EXECUTION_INITIATED`  
 **Latest closed validation milestone:** `TEST 5 / SSI BODY FINAL CONVERGENCE / DEVELOPMENT_VALIDATED`
 
-This file separates the frozen common origin, the current six-agent experimental start state, the predeclared 21-experiment program, prior validated milestones and still-prospective outcomes.
+This file separates the frozen common origin, the current six-agent experimental start state, canonical ROBERT continuity, the predeclared 21-experiment program, prior validated milestones and still-prospective outcomes.
 
 ## 0. CURRENT EXPERIMENTAL TRUTH — BODY ISKRA 6X
 
@@ -37,15 +38,36 @@ Variants:
 6 SKEPTIC
 ```
 
-Public evidence:
+## 1. CANONICAL ROBERT CONTINUITY
 
-- [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
-- [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
-- [`evidence/BODY_ISKRA_6X_T0_20260906/GROUP_PUBLIC_SUMMARY.json`](evidence/BODY_ISKRA_6X_T0_20260906/GROUP_PUBLIC_SUMMARY.json)
-- six separate sanitized agent T0 JSON records
-- [`evidence/BODY_ISKRA_6X_T0_20260906/CLAIM_BOUNDARIES.md`](evidence/BODY_ISKRA_6X_T0_20260906/CLAIM_BOUNDARIES.md)
+Canonical ROBERT is not the same artifact as the cleaned/frozen experiment branches.
 
-## 1. PREDECLARED 21-EXPERIMENT CROSS-DOMAIN PROGRAM
+```text
+CANONICAL ROBERT
+= continuous engineering / execution line
++ TEST 1 -> TEST 5 development lineage retained
++ prior memory / competence / tooling continuity retained in private runtime
++ future Eyes / Hands / execution evolution
+
+BODY_FROZEN / BODY ISKRA
+= controlled experiment branches
++ cleaned/frozen only where required by protocol
++ isolated new experience from known start states
+```
+
+Therefore:
+
+```text
+EXPERIMENT RESET != ROBERT RESET
+```
+
+Public evidence does not enumerate every private ROBERT memory or skill item. The public claim is the architectural/project-state distinction and the retained engineering lineage through TEST 5.
+
+Canonical reference:
+
+- [`ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md`](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
+
+## 2. PREDECLARED 21-EXPERIMENT CROSS-DOMAIN PROGRAM
 
 Canonical protocol:
 
@@ -95,7 +117,7 @@ provenance retention
 
 This establishes the program design before the complete outcome set. It does not state that all 21 experiments are complete or PASS.
 
-## 2. FROZEN COMMON ORIGIN — BODY_FROZEN T0
+## 3. FROZEN COMMON ORIGIN — BODY_FROZEN T0
 
 BODY_FROZEN remains immutable and historically dated 2026-09-05.
 
@@ -125,7 +147,7 @@ Public evidence:
 - [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
 - [`evidence/BODY_FROZEN_T0_20260905/README.md`](evidence/BODY_FROZEN_T0_20260905/README.md)
 
-## 3. CURRENT VALIDATED MILESTONE — TEST 5
+## 4. CURRENT VALIDATED MILESTONE — TEST 5
 
 TEST 5 remains the newest closed public validation test.
 
@@ -142,9 +164,15 @@ OPEN_BLOCKERS = 0
 
 Claim boundary: development validation of the tested local SSI BODY control/integration path. It does not prove production readiness of the entire SSI system, universal reliability, AGI or consciousness.
 
-## 4. CURRENT RESEARCH SEQUENCE
+## 5. CURRENT RESEARCH SEQUENCE
 
 ```text
+CANONICAL ROBERT
+-> continuous development from prior tests
+-> TEST 1 ... TEST 5 lineage retained
+-> future Eyes / Hands / skill integration
+
+PARALLEL EXPERIMENTAL TRACK
 BODY_FROZEN T0 / 2026-09-05
 -> 6 BODY ISKRA start states / 2026-09-06 / CREATED + START_STATE_VALIDATED
 -> 21-experiment cross-domain matrix / 2026-09-06 / DESIGNED + EXECUTION_INITIATED
@@ -153,7 +181,7 @@ BODY_FROZEN T0 / 2026-09-05
 -> later independent expert challenges
 ```
 
-## 5. CANONICAL V10 MEANING
+## 6. CANONICAL V10 MEANING
 
 V10 is a **stateful predictive competence & recovery router**, not only a fast cache/router.
 
@@ -167,33 +195,26 @@ CURRENT STATE
 -> REUSE / VERIFY / ALTERNATIVE / FULL_FLOW
 ```
 
-```text
-SAME / EQUIVALENT STATE
-+ SAME FAILURE SIGNATURE
-+ SAME STRATEGY
-+ NO NEW EVIDENCE
-=> DO NOT BLINDLY REPEAT
-```
-
-## 6. ROLE BOUNDARIES
+## 7. ROLE BOUNDARIES
 
 ```text
 BODY_FROZEN T0
 = frozen experimental origin / control
 
 BODY ISKRA AGENTS 1-6
-= independent descendants with separate T0 value/emotion states
-+ own future trajectories
-+ current start state recorded
+= independent experimental descendants with separate T0 value/emotion states
 
 DIRECTOR
 = observes, audits, compares, ranks and evaluates
++ continues separate engineering coordination with ROBERT
 
 ROBERT
-= separate execution/runtime/tooling body
+= canonical continuous execution/runtime/tooling body
++ prior development history retained
++ not reset by experiment cleaning
 ```
 
-## 7. VALIDATION / EVIDENCE HISTORY
+## 8. VALIDATION / EVIDENCE HISTORY
 
 ```text
 TEST 2 -> 600/600 lifecycle/persistence hardening PASS
@@ -204,17 +225,19 @@ TEST 5 -> Stage 12 SUPERSEDED; Stage 13 PASS; 29/29 acceptance; 524/524 total; 0
 2026-09-05 -> BODY_FROZEN PRE-ISKRA baseline recorded
 2026-09-06 -> 6 BODY ISKRA descendants recorded; 48/48 start-state QA
 2026-09-06 -> 21-experiment cross-domain program predeclared
+2026-09-06 -> ROBERT continuity vs experiment reset explicitly documented
 ```
 
-## 8. PUBLICATION BOUNDARY
+## 9. PUBLICATION BOUNDARY
 
 ```text
 YES = sanitized results, counts, initial beliefs/emotions, protocols, QA, lineage, SHA256, claim boundaries
 NO  = private SSI source code, private file tree, proprietary implementation internals,
-      raw memory/user data, secrets, local paths, implementation-level architecture
+      raw ROBERT memory/private skill inventory, raw user data, secrets, local paths,
+      implementation-level architecture
 ```
 
-## 9. CLAIM BOUNDARIES
+## 10. CLAIM BOUNDARIES
 
 Public documentation must not state without evidence that SSI:
 
@@ -226,27 +249,13 @@ Public documentation must not state without evidence that SSI:
 - has completed or passed all 21 experiments;
 - has validated physical drone or humanoid deployment;
 - has already demonstrated long-run six-agent behavioral divergence;
-- has already completed later competence consolidation.
+- has already completed later competence consolidation;
+- publicly exposes or independently proves every private ROBERT memory/skill item.
 
-Accepted truth labels include:
-
-```text
-VERIFIED_MACHINE_EVIDENCE
-DEVELOPMENT_VALIDATED
-T0_BASELINE_RECORDED
-START_STATE_VALIDATED
-PROGRAM_DESIGNED
-EXECUTION_INITIATED
-SUPERSEDED
-HISTORICAL_EVIDENCE
-PLANNED
-HYPOTHESIS
-UNKNOWN
-```
-
-## 10. CURRENT DOCUMENTS
+## 11. CURRENT DOCUMENTS
 
 - [`README.md`](README.md)
+- [`ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md`](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
 - [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
 - [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
 - [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
@@ -255,13 +264,14 @@ UNKNOWN
 - [`GRANT_REVIEWER_FAQ.md`](GRANT_REVIEWER_FAQ.md)
 - [`evidence/README.md`](evidence/README.md)
 
-## 11. FINAL RULE
+## 12. FINAL RULE
 
 ```text
 NO EVIDENCE -> UNKNOWN
 WEAK PASS -> PRESERVE + SUPERSEDE IF NEEDED
 NEW EVIDENCE -> REVISE
 BODY_FROZEN T0 -> NEVER SILENTLY REWRITE THE CONTROL BASELINE
+ROBERT CONTINUITY -> DO NOT CONFUSE WITH EXPERIMENT RESET
 6X START_STATE_VALIDATED -> DO NOT MISLABEL AS LONGITUDINAL SUCCESS
 21 EXPERIMENTS -> PREDECLARED PROGRAM, NOT 21 COMPLETED RESULTS
 ```
