@@ -1,50 +1,69 @@
 # SSI V5 — Public Evidence Index
 
-**Updated:** 2026-09-05
+**Updated:** 2026-09-06
 
 This directory is the public evidence layer for SSI V5. It publishes sanitized results, machine-readable summaries, lineage and claim boundaries without distributing the private SSI implementation.
 
-## CURRENT EXPERIMENTAL BASELINE — T0 / BODY_FROZEN / PRE-ISKRA
+## CURRENT EXPERIMENTAL STATE — 6X BODY ISKRA / START_STATE_VALIDATED
 
-T0 is now the newest experimental checkpoint in the repository.
+The newest recorded experimental state is now the six-agent BODY ISKRA start set descended from the same frozen BODY_FROZEN T0.
+
+Entry point:
+
+- [`BODY_ISKRA_6X_T0_20260906/README.md`](BODY_ISKRA_6X_T0_20260906/README.md)
+
+Key files:
+
+- [`BODY_ISKRA_6X_T0_20260906/GROUP_PUBLIC_SUMMARY.json`](BODY_ISKRA_6X_T0_20260906/GROUP_PUBLIC_SUMMARY.json)
+- [`BODY_ISKRA_6X_T0_20260906/AGENT_01_NICE_PUBLIC_T0.json`](BODY_ISKRA_6X_T0_20260906/AGENT_01_NICE_PUBLIC_T0.json)
+- [`BODY_ISKRA_6X_T0_20260906/AGENT_02_GUARDIAN_PUBLIC_T0.json`](BODY_ISKRA_6X_T0_20260906/AGENT_02_GUARDIAN_PUBLIC_T0.json)
+- [`BODY_ISKRA_6X_T0_20260906/AGENT_03_JUSTICE_PUBLIC_T0.json`](BODY_ISKRA_6X_T0_20260906/AGENT_03_JUSTICE_PUBLIC_T0.json)
+- [`BODY_ISKRA_6X_T0_20260906/AGENT_04_EXPLORER_PUBLIC_T0.json`](BODY_ISKRA_6X_T0_20260906/AGENT_04_EXPLORER_PUBLIC_T0.json)
+- [`BODY_ISKRA_6X_T0_20260906/AGENT_05_PRAGMATIST_PUBLIC_T0.json`](BODY_ISKRA_6X_T0_20260906/AGENT_05_PRAGMATIST_PUBLIC_T0.json)
+- [`BODY_ISKRA_6X_T0_20260906/AGENT_06_SKEPTIC_PUBLIC_T0.json`](BODY_ISKRA_6X_T0_20260906/AGENT_06_SKEPTIC_PUBLIC_T0.json)
+- [`BODY_ISKRA_6X_T0_20260906/CLAIM_BOUNDARIES.md`](BODY_ISKRA_6X_T0_20260906/CLAIM_BOUNDARIES.md)
+- [`BODY_ISKRA_6X_T0_20260906/PRIVATE_ARTIFACT_SHA256SUMS.txt`](BODY_ISKRA_6X_T0_20260906/PRIVATE_ARTIFACT_SHA256SUMS.txt)
+
+Public group summary:
+
+```text
+AGENTS = 6
+PRIVATE ARTIFACT PER AGENT = 1832 files
+PYTHON FILES PER AGENT = 616
+DELTA VS BODY_FROZEN PER AGENT = +51 files / +29 Python files
+START-STATE QA PER AGENT = 8/8 PASS
+GROUP START-STATE QA = 48/48 PASS
+VERIFIED NEW EXPERIENCES AT T0 = 0 per agent
+PENDING NEW EXPERIENCES AT T0 = 0 per agent
+```
+
+Each agent record includes sanitized initial beliefs, emotions, cognitive T0 state, inventory counts, QA status and a SHA256 reference to the corresponding private artifact.
+
+This is **start-state evidence**, not a claim of long-term behavioral divergence or superiority.
+
+---
+
+## FROZEN COMMON BASELINE — BODY_FROZEN / 2026-09-05
+
+BODY_FROZEN remains the immutable common origin for all six agents.
 
 Entry point:
 
 - [`BODY_FROZEN_T0_20260905/README.md`](BODY_FROZEN_T0_20260905/README.md)
 
-Key files:
-
-- [`BODY_FROZEN_T0_20260905/BODY_FROZEN_T0_PUBLIC_SUMMARY.json`](BODY_FROZEN_T0_20260905/BODY_FROZEN_T0_PUBLIC_SUMMARY.json)
-- [`BODY_FROZEN_T0_20260905/CONTINUUM_PUBLIC_FINAL_RESULT.json`](BODY_FROZEN_T0_20260905/CONTINUUM_PUBLIC_FINAL_RESULT.json)
-- [`BODY_FROZEN_T0_20260905/MICRONETWORKS_PUBLIC_SUMMARY.json`](BODY_FROZEN_T0_20260905/MICRONETWORKS_PUBLIC_SUMMARY.json)
-- [`BODY_FROZEN_T0_20260905/ROUTER_V10_PUBLIC_SUMMARY.json`](BODY_FROZEN_T0_20260905/ROUTER_V10_PUBLIC_SUMMARY.json)
-- [`BODY_FROZEN_T0_20260905/SKILLS_PUBLIC_BASELINE.json`](BODY_FROZEN_T0_20260905/SKILLS_PUBLIC_BASELINE.json)
-- [`BODY_FROZEN_T0_20260905/RESEARCH_PHASES.md`](BODY_FROZEN_T0_20260905/RESEARCH_PHASES.md)
-- [`BODY_FROZEN_T0_20260905/CLAIM_BOUNDARIES.md`](BODY_FROZEN_T0_20260905/CLAIM_BOUNDARIES.md)
-- [`BODY_FROZEN_T0_20260905/PUBLIC_MANIFEST.json`](BODY_FROZEN_T0_20260905/PUBLIC_MANIFEST.json)
-- [`BODY_FROZEN_T0_20260905/SHA256SUMS.txt`](BODY_FROZEN_T0_20260905/SHA256SUMS.txt)
-
-Public T0 summary:
-
 ```text
+BODY_FROZEN inventory = 1781 files / 587 Python files retained privately
 CONTINUUM = CLOSED
-23/23 CONTINUUM TESTS PASS
+23/23 CONTINUUM tests PASS
 22/22 MAIN SCENARIOS PASS
 19/19 E2E CLOSURE PASS
 26/26 FINAL GUARD PASS
 ACTIVE FAILURES = 0
 INVARIANT VIOLATIONS = 0
 OPEN BLOCKERS = 0
-580 PASS + 12 SUPERSEDED = 592 historical/current accounted suite entries
-
-BODY_FROZEN inventory = 1781 files / 587 Python files retained privately
-MICRONETWORKS = 8
-MODULES = 8
-LAYERS = 3
-V10 = ACTIVE
 ```
 
-T0 is a frozen baseline, **not TEST 6**. It does not claim T1/T2 results.
+BODY_FROZEN is preserved as historical control and is not rewritten by the six descendant agents.
 
 ---
 
@@ -53,12 +72,7 @@ T0 is a frozen baseline, **not TEST 6**. It does not claim T1/T2 results.
 **Status:** `DEVELOPMENT_VALIDATED / PASS`  
 **Date:** `2026-09-03`
 
-Primary document:
-
 - [`TEST5_FINAL_CONVERGENCE_20260903.md`](TEST5_FINAL_CONVERGENCE_20260903.md)
-
-Machine evidence:
-
 - [`TEST5_FINAL_RESULT_20260903.json`](TEST5_FINAL_RESULT_20260903.json)
 - [`TEST5_FINAL_MATRIX_20260903.json`](TEST5_FINAL_MATRIX_20260903.json)
 - [`TEST5_STAGE12_SUPERSEDED_20260903.json`](TEST5_STAGE12_SUPERSEDED_20260903.json)
@@ -74,97 +88,7 @@ STAGE_12 = SUPERSEDED
 STAGE_13_AUDIT_RETEST = PASS
 ```
 
-The earlier Stage 12 `27/27 PASS` remains preserved as `SUPERSEDED` because later audit found the contract insufficient for closure.
-
-Claim boundary: scoped local SSI BODY control/integration development validation, not universal system reliability or production readiness.
-
----
-
-## TEST 4 — ROOT Terminal / Authority / Recovery
-
-Primary document:
-
-- [`TEST4_ROOT_TERMINAL_AUTHORITY_E2E_RECOVERY_20260902.md`](TEST4_ROOT_TERMINAL_AUTHORITY_E2E_RECOVERY_20260902.md)
-
-Final closure:
-
-- [`TEST4_ROOT_TERMINAL_FINAL_CLOSURE_20260902.json`](TEST4_ROOT_TERMINAL_FINAL_CLOSURE_20260902.json)
-
-```text
-FINAL REGRESSION = 461/461 PASS
-FULL PIPELINE E2E = 1000/1000 PASS
-CONCURRENCY = 1000 commands / 20 workers PASS
-REAL PROCESS RESTART = 20/20 PASS
-RECEIPT ACCOUNTING = CLEAN
-OPEN BLOCKERS = 0
-```
-
----
-
-## MICRONETWORK MIGRATION / TEST3 100x V2 — FINAL CLOSURE
-
-- [`MICRONETWORK_MIGRATION_FINAL_LINEAGE_20260902.md`](MICRONETWORK_MIGRATION_FINAL_LINEAGE_20260902.md)
-- [`MICRONETWORK_MIGRATION_CLOSURE_REPORT_20260902.md`](MICRONETWORK_MIGRATION_CLOSURE_REPORT_20260902.md)
-- [`TEST3_REPEAT_100X_V2_PUBLIC_SUMMARY_20260902.json`](TEST3_REPEAT_100X_V2_PUBLIC_SUMMARY_20260902.json)
-- [`REGRESSION_A01_A20_20260902.json`](REGRESSION_A01_A20_20260902.json)
-- [`V10_CANONICAL_STATE_TEST_20260902.json`](V10_CANONICAL_STATE_TEST_20260902.json)
-
-```text
-100 runs x 600 cases = 60 000
-accounted = 60 000
-failed = 0
-unresolved failures = 0
-incorrect routing = 0
-restart = 20/20 PASS
-```
-
-An earlier repeatability PASS formula was found too weak, preserved in history, repaired and fully rerun.
-
----
-
-## HISTORICAL TEST 2 / TEST 3 EVIDENCE
-
-### Lifecycle / persistence hardening
-
-- [`ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md`](ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md)
-
-```text
-600/600 PASS
-126.65 s
-0 duplication failures
-0 half-promoted objects
-```
-
-### Historical V10 selective routing
-
-- [`ROBERT_V10_HYBRID_ROUTER_TEST3_20260901.md`](ROBERT_V10_HYBRID_ROUTER_TEST3_20260901.md)
-
-```text
-600/600 PASS
-57.61 s
-534 REUSE_TOP1
-66 VERIFY_TOPK
-100/100 known-case correctness
-```
-
-This historical run is not the newest closure evidence; later migration hardening is the stronger basis for current claims.
-
----
-
-## OTHER RESEARCH / LINEAGE DOCUMENTS
-
-Examples include:
-
-- [`DEVELOPMENT_TIMELINE.md`](DEVELOPMENT_TIMELINE.md)
-- [`EXPERIMENTAL_ORIGINS_AND_ENGINEERING_EVOLUTION.md`](EXPERIMENTAL_ORIGINS_AND_ENGINEERING_EVOLUTION.md)
-- [`FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md`](FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md)
-- [`ISKRA_AGENT_MICRONETWORK_SOCIAL_DYNAMICS.md`](ISKRA_AGENT_MICRONETWORK_SOCIAL_DYNAMICS.md)
-- [`ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md`](ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md)
-- [`DIRECTOR_AUTONOMOUS_EVOLUTION_AND_ROBERT_EYES_HANDS.md`](DIRECTOR_AUTONOMOUS_EVOLUTION_AND_ROBERT_EYES_HANDS.md)
-- [`ORGANISM_CORE_LINEAGE_AND_PRESERVATION.md`](ORGANISM_CORE_LINEAGE_AND_PRESERVATION.md)
-- [`PRE_T0_LAYERED_SELF_DEVELOPMENT_AND_INFRASTRUCTURE_PROTOCOL_20260830.md`](PRE_T0_LAYERED_SELF_DEVELOPMENT_AND_INFRASTRUCTURE_PROTOCOL_20260830.md)
-
-These documents may describe historical architecture/plans. Current experimental truth should be read through T0 + CURRENT_TRUTH_INDEX first.
+TEST 5 remains the newest closed validation milestone. The 6X BODY ISKRA record is the newest experimental start state, not a relabeling of TEST 5.
 
 ---
 
@@ -175,22 +99,24 @@ Public evidence may contain:
 ```text
 PASS / FAIL / SUPERSEDED
 counts
+sanitized initial beliefs/emotions
 benchmark summaries
 sanitized lifecycle state
 claim boundaries
 lineage
-SHA256 manifests
+SHA256 references
 ```
 
 It must not intentionally publish:
 
 ```text
 private SSI source code
+private internal file tree
+implementation-level architecture
 secrets / tokens
 private local paths
-a raw implementation-level source map
-private memory/user data
-full proprietary prompt-generation or routing implementation
+raw memory/user data
+full proprietary prompt/routing/integration internals
 ```
 
 The public repository is an evidence mirror, not a source distribution.
