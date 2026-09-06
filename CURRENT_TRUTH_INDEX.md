@@ -5,9 +5,10 @@
 **Current experimental state:** `6X BODY ISKRA / START_STATE_VALIDATED / 2026-09-06`  
 **Canonical ROBERT state:** `CONTINUOUS ENGINEERING LINE / NOT RESET BY EXPERIMENT CLEANING`  
 **Predeclared research program:** `7 x 3 = 21 CROSS-DOMAIN EXPERIMENTS / DESIGNED / EXECUTION_INITIATED`  
+**Execution methodology:** `KILO PROCEDURAL EXECUTOR / AUTHOR LIVE-STEERING RESTRICTED / OUTCOMES NOT YET CLAIMED`  
 **Latest closed validation milestone:** `TEST 5 / SSI BODY FINAL CONVERGENCE / DEVELOPMENT_VALIDATED`
 
-This file separates the frozen common origin, the current six-agent experimental start state, canonical ROBERT continuity, the predeclared 21-experiment program, prior validated milestones and still-prospective outcomes.
+This file separates the frozen common origin, the current six-agent experimental start state, canonical ROBERT continuity, the predeclared 21-experiment program, its execution methodology, prior validated milestones and still-prospective outcomes.
 
 ## 0. CURRENT EXPERIMENTAL TRUTH — BODY ISKRA 6X
 
@@ -72,6 +73,7 @@ Canonical reference:
 Canonical protocol:
 
 - [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
+- [`EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md`](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
 
 ```text
 DESIGNED = 2026-09-06
@@ -116,6 +118,29 @@ provenance retention
 ```
 
 This establishes the program design before the complete outcome set. It does not state that all 21 experiments are complete or PASS.
+
+### Execution/operator truth
+
+```text
+AUTHOR
+= predeclares and freezes the protocol
+
+KILO
+= procedural executor
++ verifies target/T0
++ launches the real SSI BODY artifact
++ executes A -> B -> C
++ records checkpoints/evidence
++ preserves failures/retries
++ produces the final run report
+
+SSI BODY / EXPERIMENTAL LINE
+= tested system
+```
+
+Kilo is not an external independent auditor. Its role is to reduce continuous live author steering and make the run sequence reproducible and auditable.
+
+Any material human correction during execution must be disclosed as `MANUAL_INTERVENTION`. Evidence should preserve failed attempts rather than silently replacing them with later successful ones.
 
 ## 3. FROZEN COMMON ORIGIN — BODY_FROZEN T0
 
@@ -176,6 +201,7 @@ PARALLEL EXPERIMENTAL TRACK
 BODY_FROZEN T0 / 2026-09-05
 -> 6 BODY ISKRA start states / 2026-09-06 / CREATED + START_STATE_VALIDATED
 -> 21-experiment cross-domain matrix / 2026-09-06 / DESIGNED + EXECUTION_INITIATED
+-> predeclared Kilo-run execution methodology / 2026-09-06
 -> longitudinal comparison / outcomes pending
 -> later competence comparison / consolidation / promotion
 -> later independent expert challenges
@@ -212,6 +238,10 @@ ROBERT
 = canonical continuous execution/runtime/tooling body
 + prior development history retained
 + not reset by experiment cleaning
+
+KILO
+= procedural executor for the predeclared experiment run
++ not an independent external auditor
 ```
 
 ## 8. VALIDATION / EVIDENCE HISTORY
@@ -225,13 +255,15 @@ TEST 5 -> Stage 12 SUPERSEDED; Stage 13 PASS; 29/29 acceptance; 524/524 total; 0
 2026-09-05 -> BODY_FROZEN PRE-ISKRA baseline recorded
 2026-09-06 -> 6 BODY ISKRA descendants recorded; 48/48 start-state QA
 2026-09-06 -> 21-experiment cross-domain program predeclared
+2026-09-06 -> Kilo-run execution methodology predeclared
 2026-09-06 -> ROBERT continuity vs experiment reset explicitly documented
 ```
 
 ## 9. PUBLICATION BOUNDARY
 
 ```text
-YES = sanitized results, counts, initial beliefs/emotions, protocols, QA, lineage, SHA256, claim boundaries
+YES = sanitized results, counts, initial beliefs/emotions, protocols, execution methodology,
+      QA, lineage, SHA256, claim boundaries
 NO  = private SSI source code, private file tree, proprietary implementation internals,
       raw ROBERT memory/private skill inventory, raw user data, secrets, local paths,
       implementation-level architecture
@@ -250,13 +282,15 @@ Public documentation must not state without evidence that SSI:
 - has validated physical drone or humanoid deployment;
 - has already demonstrated long-run six-agent behavioral divergence;
 - has already completed later competence consolidation;
-- publicly exposes or independently proves every private ROBERT memory/skill item.
+- publicly exposes or independently proves every private ROBERT memory/skill item;
+- has been independently externally audited merely because Kilo executed the protocol.
 
 ## 11. CURRENT DOCUMENTS
 
 - [`README.md`](README.md)
 - [`ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md`](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
 - [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
+- [`EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md`](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
 - [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
 - [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
 - [`START_HERE.md`](START_HERE.md)
@@ -274,4 +308,6 @@ BODY_FROZEN T0 -> NEVER SILENTLY REWRITE THE CONTROL BASELINE
 ROBERT CONTINUITY -> DO NOT CONFUSE WITH EXPERIMENT RESET
 6X START_STATE_VALIDATED -> DO NOT MISLABEL AS LONGITUDINAL SUCCESS
 21 EXPERIMENTS -> PREDECLARED PROGRAM, NOT 21 COMPLETED RESULTS
+KILO EXECUTION -> PROCEDURAL AUTOMATION, NOT EXTERNAL INDEPENDENT VALIDATION
+MANUAL_INTERVENTION -> DISCLOSE
 ```
