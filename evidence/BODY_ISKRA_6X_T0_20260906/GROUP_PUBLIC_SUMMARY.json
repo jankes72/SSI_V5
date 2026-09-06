@@ -1,0 +1,19 @@
+{
+  "schema": "ssi_v5_body_iskra_6x_public_group_v1",
+  "date": "2026-09-06",
+  "experiment_group_id": "BODY_ISKRA_6X_T0_20260906",
+  "status": "6X_START_STATE_VALIDATED",
+  "common_origin": "SSI_V5_BODY_FROZEN_T0_20260905",
+  "agents": [
+    {"number":1,"code":"NICE","title":"Życzliwy / współpracujący","status":"START_STATE_VALIDATED","total_files":1832,"python_files":616,"qa":"8/8 PASS"},
+    {"number":2,"code":"GUARDIAN","title":"Opiekun / bezpieczeństwo","status":"START_STATE_VALIDATED","total_files":1832,"python_files":616,"qa":"8/8 PASS"},
+    {"number":3,"code":"JUSTICE","title":"Sprawiedliwość / zasady","status":"START_STATE_VALIDATED","total_files":1832,"python_files":616,"qa":"8/8 PASS"},
+    {"number":4,"code":"EXPLORER","title":"Odkrywca / ciekawość","status":"START_STATE_VALIDATED","total_files":1832,"python_files":616,"qa":"8/8 PASS"},
+    {"number":5,"code":"PRAGMATIST","title":"Pragmatyk / rezultat","status":"START_STATE_VALIDATED","total_files":1832,"python_files":616,"qa":"8/8 PASS"},
+    {"number":6,"code":"SKEPTIC","title":"Sceptyk / weryfikacja","status":"START_STATE_VALIDATED","total_files":1832,"python_files":616,"qa":"8/8 PASS"}
+  ],
+  "group_qa":{"passed":48,"total":48,"status":"48/48 PASS"},
+  "common_counts":{"each_agent_total_files":1832,"each_agent_python_files":616,"delta_vs_body_frozen_total_files_each":51,"delta_vs_body_frozen_python_files_each":29},
+  "experimental_boundary":"All six are independent private artifacts derived from the same frozen BODY T0. The public record exposes only sanitized start-state evidence and does not expose source code or implementation-level architecture.",
+  "future_results":"NOT_YET_CLAIMED"
+}
