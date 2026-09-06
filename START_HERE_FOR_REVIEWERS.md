@@ -3,6 +3,8 @@
 **Updated:** 2026-09-06  
 **Frozen common baseline:** `T0 / BODY_FROZEN / PRE-ISKRA / 2026-09-05`  
 **Current experimental state:** `6 independent BODY ISKRA T0 variants / START_STATE_VALIDATED`  
+**Predeclared program:** `7 experimental lines x 3 domains = 21 experiments`  
+**Program status:** `DESIGNED / EXECUTION_INITIATED / OUTCOMES_NOT_YET_CLAIMED`  
 **Latest closed validation test:** `TEST 5 / DEVELOPMENT_VALIDATED`
 
 The key distinction is now:
@@ -19,9 +21,60 @@ BODY ISKRA 6X / 2026-09-06
 + explicit different initial value/emotion states
 + sanitized start-state evidence
 + 48/48 group start-state QA PASS
+
+21-EXPERIMENT PROGRAM / 2026-09-06
+= prospectively recorded cross-domain matrix
++ 7 lines
++ drones
++ humanoid
++ self-selected third domain per SSI line
 ```
 
-## 1. Current public experimental state — BODY ISKRA 6X
+## 1. Predeclared 21-experiment cross-domain program
+
+Primary protocol:
+
+[`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
+
+The program was recorded before the full outcome set exists.
+
+```text
+7 LINES
+= BODY_FROZEN T0
++ NICE
++ GUARDIAN
++ JUSTICE
++ EXPLORER
++ PRAGMATIST
++ SKEPTIC
+
+3 EXPERIMENTS PER LINE
+= DRONES
++ HUMANOID
++ NEW DOMAIN SELECTED BY THAT SSI LINE
+
+TOTAL = 21
+```
+
+The author specifies drones and humanoid as common comparison domains. The third domain is selected by the corresponding SSI line rather than supplied as the expected answer by the author.
+
+Common reviewer-facing measurements include:
+
+```text
+KNOWN / SIMILAR / NOVEL
+V10 route choice
+reuse / verify-adapt / compose / deeper-full-flow
+latency / decision cost
+correctness / outcome
+false reuse
+recovery
+competence creation/update
+provenance retention
+```
+
+This is a predeclared program, not a claim that 21 experiments are already complete or PASS.
+
+## 2. Current public experimental state — BODY ISKRA 6X
 
 Primary entry:
 
@@ -53,9 +106,9 @@ Six independent start variants now exist:
 5. PRAGMATIST
 6. SKEPTIC
 
-Each public record includes the complete sanitized initial beliefs, initial emotions, cognitive start state, inventory counts, QA status and private-artifact SHA256 reference.
+Each public record includes sanitized initial beliefs, emotions, cognitive start state, inventory counts, QA status and private-artifact SHA256 reference.
 
-## 2. Frozen origin — BODY_FROZEN T0
+## 3. Frozen origin — BODY_FROZEN T0
 
 The common origin remains unchanged:
 
@@ -76,29 +129,29 @@ OPEN_BLOCKERS = 0
 
 BODY_FROZEN is preserved as the immutable comparison control. The six BODY ISKRA artifacts are descendants, not rewrites of T0.
 
-## 3. What is already established vs still prospective
+## 4. What is established vs prospective
 
-**Established / sanitized evidence available:**
+**Established / publicly recorded:**
 
-- six independent private BODY ISKRA artifacts exist;
-- they share the same frozen BODY_FROZEN origin;
-- each has a separately recorded initial state;
-- each has `1832 / 616` inventory counts;
+- BODY_FROZEN T0 exists as immutable common origin;
+- six independent BODY ISKRA start artifacts exist;
+- all six have separately documented start states;
+- each has `1832 / 616` private inventory counts;
 - each passed `8/8` start-state QA;
 - group start-state QA is `48/48 PASS`;
-- each starts the new experiment with zero verified new longitudinal experiences.
+- the 21-experiment cross-domain matrix was predeclared on 2026-09-06.
 
-**Not yet claimed:**
+**Prospective / not yet claimed:**
 
-- long-run behavioral divergence;
-- superiority of one Iskra over another;
-- emergence of stable social coalitions or conflicts;
-- improved competence due specifically to Iskra;
-- AGI, consciousness or production readiness.
+- final results of all 21 experiments;
+- universal V10 speed or correctness advantage;
+- long-run six-agent divergence;
+- superiority of one Iskra profile;
+- physical-robot or physical-drone deployment validity;
+- later skill consolidation success;
+- AGI or consciousness.
 
-Those require prospective longitudinal evidence.
-
-## 4. Latest closed validation — TEST 5
+## 5. Latest closed validation — TEST 5
 
 ```text
 STAGE_12 = SUPERSEDED
@@ -111,13 +164,14 @@ TOTAL = 524/524 PASS
 OPEN_BLOCKERS = 0
 ```
 
-TEST 5 remains the latest closed validation milestone. BODY ISKRA 6X is a new recorded experimental start state, not a replacement label for TEST 5 and not automatically TEST 6.
+TEST 5 remains the latest closed validation milestone.
 
-## 5. Public/private boundary
+## 6. Public/private boundary
 
 ```text
 PUBLIC
 = sanitized evidence
++ predeclared experiment protocols
 + agent labels
 + initial beliefs/emotions
 + inventory counts
@@ -134,17 +188,16 @@ PRIVATE
 + proprietary integration internals
 ```
 
-The public mirror remains evidence-only.
+## 7. Recommended reading order
 
-## 6. Recommended reading order
+1. [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
+2. [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
+3. [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
+4. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
+5. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
+6. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
+7. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
+8. [`GRANT_REVIEWER_FAQ.md`](GRANT_REVIEWER_FAQ.md)
+9. [`evidence/README.md`](evidence/README.md)
 
-1. [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
-2. [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
-3. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
-4. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
-5. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
-6. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
-7. [`GRANT_REVIEWER_FAQ.md`](GRANT_REVIEWER_FAQ.md)
-8. [`evidence/README.md`](evidence/README.md)
-
-SSI V5 should be evaluated as an evidence chain: BODY_FROZEN T0 -> six recorded BODY ISKRA start states -> future controlled longitudinal comparisons.
+SSI V5 should be evaluated as an evidence chain: frozen common origin -> six recorded BODY ISKRA start states -> predeclared 21-experiment cross-domain program -> measured outcomes -> later external challenges.
