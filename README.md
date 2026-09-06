@@ -10,6 +10,7 @@ FROZEN COMMON BASELINE = T0 / BODY_FROZEN / PRE-ISKRA / 2026-09-05
 CURRENT EXPERIMENTAL STATE = 6X BODY ISKRA / START_STATE_VALIDATED / 2026-09-06
 PREDECLARED CROSS-DOMAIN PROGRAM = 7 lines x 3 domains = 21 experiments
 PROGRAM STATUS = DESIGNED / EXECUTION_INITIATED / OUTCOMES_NOT_YET_CLAIMED
+CANONICAL ROBERT = CONTINUOUS ENGINEERING LINE / NOT RESET BY EXPERIMENT CLEANING
 CURRENT DEVELOPMENT TEAM = 1 person / independent project
 CURRENT COMPUTE = author-owned / personally acquired hardware
 AGENTS = 6
@@ -17,13 +18,16 @@ START-STATE QA = 8/8 per agent / 48/48 group
 LATEST CLOSED VALIDATION TEST = TEST 5 / DEVELOPMENT_VALIDATED
 ```
 
-**Important distinction:** BODY_FROZEN remains the immutable common comparison origin. The six BODY ISKRA descendants already exist and have validated start states. The 21-experiment cross-domain program is now designed and recorded before the full outcome set exists; this is not a claim that all 21 experiments have already passed.
+**Critical distinction:** `BODY_FROZEN` and `BODY ISKRA` are controlled experimental branches. Cleaning/freeze operations apply to those experiment artifacts and do **not** mean that canonical ROBERT lost its earlier memories, validated engineering history or previously retained skills/competence. ROBERT remains a continuous engineering/execution line through the TEST 1 -> TEST 5 development history. Public evidence does not enumerate every private retained memory/skill item, but the project-state distinction is explicit.
+
+The six BODY ISKRA descendants already exist and have validated start states. The 21-experiment cross-domain program is designed and recorded before the full outcome set exists; this is not a claim that all 21 experiments have already passed.
 
 SSI V5 is currently developed independently by Paweł Jankiewicz (`jankes72`) as a one-person project. The compute described in the public infrastructure record is the author's own equipment or equipment being personally acquired by the author; it is not presented as university, school, company or grant-funded infrastructure.
 
 Public entry points:
 
 - [EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
+- [ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
 - [EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md](EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md)
 - [BODY_ISKRA_6X_T0.md](BODY_ISKRA_6X_T0.md)
 - [evidence/BODY_ISKRA_6X_T0_20260906/README.md](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
@@ -126,6 +130,31 @@ ROUTER_V10 = ACTIVE
 
 BODY_FROZEN is the control origin. BODY ISKRA 1-6 are descendant experimental lines.
 
+## Canonical ROBERT remains a separate continuous line
+
+```text
+CANONICAL ROBERT
+= prior validated development history retained
++ TEST 1 -> TEST 5 lineage retained
++ memory / skill / tooling continuity remains part of the private runtime line
++ future Eyes / Hands / execution development
++ future intake of newly validated skills
+
+EXPERIMENT BRANCHES
+= BODY_FROZEN + BODY ISKRA
++ cleaned/frozen only where required by protocol
++ isolated new experience
++ controlled comparison
+```
+
+Therefore:
+
+```text
+CLEAN EXPERIMENT BRANCH != ROBERT RESET
+```
+
+ROBERT can continue evolving with the Director in parallel while the experiment branches remain controlled. Future experimentally validated skills can later be integrated into ROBERT under explicit validation/regression gates.
+
 ---
 
 ## What this repository publishes — and what it does not
@@ -141,6 +170,7 @@ PUBLIC
 + measured outcomes
 + predeclared experiment protocols
 + infrastructure/ownership context
++ canonical-vs-experiment lineage distinction
 + start-state beliefs/emotions
 + counts / hashes / QA
 + failures / superseded results
@@ -151,7 +181,8 @@ PRIVATE
 + private source/file tree
 + implementation-level architecture
 + proprietary routing/integration internals
-+ raw memory / user data
++ raw ROBERT memory / private skill inventory
++ raw user data
 + runtime configuration
 + local paths / secrets
 ```
@@ -178,6 +209,12 @@ TEST 5 remains the latest closed public validation test. BODY ISKRA 6X is the ne
 ## Research sequence from the frozen origin
 
 ```text
+CANONICAL ROBERT
+-> continuous engineering/execution development
+-> TEST 1 ... TEST 5 history retained
+-> future Eyes / Hands / validated skill integration
+
+PARALLEL EXPERIMENTAL TRACK
 2026-09-05
 BODY_FROZEN T0 / PRE-ISKRA / immutable control
 
@@ -204,10 +241,9 @@ NEXT
 -> execute and record 21 experiment outcomes
 -> compare transfer, latency, false reuse, recovery and competence trajectories
 -> later evidence-based consolidation / promotion
+-> later validated-skill integration into upgraded descendants and/or ROBERT
 -> later independent expert challenges
 ```
-
-The six-agent creation phase is no longer merely planned. The 21-experiment matrix is now also predeclared. What remains prospective is the full set of measured outcomes and any later competence consolidation result.
 
 ## Core research model
 
@@ -250,7 +286,7 @@ BODY_FROZEN T0
 = immutable experimental control origin
 
 BODY ISKRA AGENTS 1-6
-= independent descendants
+= independent experimental descendants
 + separate start-state priors
 + separate future trajectories
 + current T0 state already recorded
@@ -259,10 +295,13 @@ DIRECTOR
 = observes results
 + audits / compares / ranks
 + evaluates maturation of strategies and competence
++ continues separate engineering coordination with ROBERT
 
 ROBERT
-= separate execution/runtime body
-+ tools / engineering / environment interaction
+= canonical continuous execution/runtime/tooling body
++ prior development history retained
++ not reset by experimental cleaning
++ future Eyes / Hands / engineering evolution
 ```
 
 ## Public chronology
@@ -282,6 +321,7 @@ ROBERT
 2026-09-05  BODY_FROZEN T0 / PRE-ISKRA baseline recorded
 2026-09-06  six independent BODY ISKRA T0 descendants recorded; 48/48 group start-state QA PASS
 2026-09-06  21-experiment cross-domain program predeclared: 7 lines x 3 domains
+2026-09-06  canonical ROBERT continuity vs experimental reset explicitly documented
 2026-09-06  independent/solo project and author-owned compute context recorded
 ```
 
@@ -297,6 +337,7 @@ SSI V5 does **not** currently claim that:
 - drones or humanoids are already validated physical deployments;
 - the six agents have already demonstrated long-term behavioral divergence;
 - one Iskra profile has already proven superior;
+- every private ROBERT memory or skill is publicly machine-verifiable from this evidence mirror;
 - later competence consolidation has already succeeded;
 - future economic performance is guaranteed.
 
@@ -319,6 +360,7 @@ UNKNOWN
 ## Start here
 
 - **21-experiment protocol:** [EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
+- **ROBERT continuity vs experiment reset:** [ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
 - **Infrastructure / ownership:** [EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md](EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md)
 - **Current 6-agent state:** [BODY_ISKRA_6X_T0.md](BODY_ISKRA_6X_T0.md)
 - **6-agent sanitized evidence:** [evidence/BODY_ISKRA_6X_T0_20260906/README.md](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
@@ -329,4 +371,4 @@ UNKNOWN
 - **Grant / methodology FAQ:** [GRANT_REVIEWER_FAQ.md](GRANT_REVIEWER_FAQ.md)
 - **Public machine evidence:** [evidence/README.md](evidence/README.md)
 
-The public repository is intended to show what is actually established, what has been predeclared before outcomes, what remains historical, and what still requires future evidence.
+The public repository is intended to show what is actually established, what has been predeclared before outcomes, what remains historical, what stays continuous outside the experiment branches, and what still requires future evidence.
