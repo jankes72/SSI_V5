@@ -1,33 +1,62 @@
 # SSI V5 — Grant / Technical Reviewer FAQ
 
 **Purpose:** concise answers to likely technical questions from grant reviewers, research groups, sponsors and independent evaluators.  
-**Status:** `T0 BASELINE RECORDED / PRE-ISKRA / EXPERIMENTAL RESEARCH SYSTEM`  
-**Updated:** `2026-09-05`
+**Status:** `BODY_FROZEN T0 PRESERVED / 6X BODY ISKRA START_STATE_VALIDATED / EXPERIMENTAL RESEARCH SYSTEM`  
+**Updated:** `2026-09-06`
 
 SSI V5 is not presented as proven AGI, consciousness or a production-ready autonomous system.
 
-## 0. What changed on 2026-09-05?
+## 0. What changed on 2026-09-06?
 
-SSI V5 now has a public sanitized **T0 / BODY_FROZEN / PRE-ISKRA baseline**.
-
-T0 is the frozen starting point for the next controlled comparative experiments. It is **not TEST 6** and does not replace TEST 5 as the latest closed validation test.
+SSI V5 now has six independent **BODY ISKRA** experimental descendants created from the same frozen BODY_FROZEN T0 recorded on 2026-09-05.
 
 ```text
-T0 = current experimental baseline
+BODY_FROZEN T0 = immutable common origin
+BODY ISKRA 6X = already created / START_STATE_VALIDATED
 TEST 5 = latest closed validation test
-NEXT = T1 controlled comparison
+NEXT = longitudinal six-agent comparison
 ```
 
-T0 evidence:
+Public evidence:
 
+- [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
+- [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
 - [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
-- [`evidence/BODY_FROZEN_T0_20260905/README.md`](evidence/BODY_FROZEN_T0_20260905/README.md)
 
-Recorded baseline includes CONTINUUM `CLOSED`, 23/23 CONTINUUM tests PASS, 22/22 main scenarios PASS, 19/19 E2E closure PASS, 26/26 final guard PASS, zero active failures/invariant violations/open blockers, a private BODY inventory count of 1781 files / 587 Python files, and a sanitized Micronetwork/V10 snapshot of 8 micronetworks, 8 modules, 3 layers and V10 ACTIVE.
+Current six-agent record:
 
-The formal skill registry counters in the supplied T0 snapshot are zero; the public record does not infer formal skill counts from micronetwork candidate records.
+```text
+AGENTS = 6
+PRIVATE ARTIFACT PER AGENT = 1832 files
+PYTHON FILES PER AGENT = 616
+DELTA VS BODY_FROZEN PER AGENT = +51 files / +29 Python files
+START-STATE QA PER AGENT = 8/8 PASS
+GROUP START-STATE QA = 48/48 PASS
+VERIFIED NEW EXPERIENCES AT T0 = 0 per agent
+PENDING NEW EXPERIENCES AT T0 = 0 per agent
+```
 
-## 1. What exactly is new in SSI V5?
+The six variants are NICE, GUARDIAN, JUSTICE, EXPLORER, PRAGMATIST and SKEPTIC. Each has a separate sanitized public T0 record containing initial belief values, initial emotion values, cognitive start state, inventory counts, QA and a private-artifact SHA256 reference.
+
+## 1. What remains unchanged from 2026-09-05?
+
+BODY_FROZEN remains the immutable common control baseline:
+
+```text
+BODY_FROZEN = 1781 files / 587 Python files retained privately
+CONTINUUM = CLOSED
+23/23 CONTINUUM tests PASS
+22/22 main scenarios PASS
+19/19 E2E closure PASS
+26/26 final guard PASS
+0 active failures
+0 invariant violations
+0 open blockers
+```
+
+The six agents are descendants of this T0; they do not overwrite it.
+
+## 2. What exactly is new in SSI V5?
 
 SSI V5 does not claim that every individual mechanism is novel in isolation. The research focus is the combined persistent competence-development architecture:
 
@@ -38,97 +67,87 @@ PERSISTENT STATE
 + CANDIDATE -> CHALLENGER -> CHAMPION
 + COLLECTIVE COMPETENCE COMPARISON
 + V10 STATEFUL PREDICTIVE COMPETENCE & RECOVERY ROUTING
-+ ANTI-LOOP / FAILURE-AWARE ROUTING
 + CONTINUUM
 + LEGO DEVELOPMENT METHODOLOGY
 + EVIDENCE / REPLAY / REGRESSION / PERSISTENCE
++ CONTROLLED MULTI-AGENT ISKRA START-STATE COMPARISON
 ```
 
-The central hypothesis is that capability should not live only inside one model or one prompt. It should be represented as persistent, testable, revisable system competence with provenance and lifecycle.
+A formal state-of-the-art comparison is still required before strong originality claims.
 
-A formal state-of-the-art comparison is still required before strong originality claims such as "nothing similar exists elsewhere."
+## 3. Are the six agents only planned?
 
-## 2. How are SSI micronetworks different from ordinary RAG, memory or cache?
+No. The creation/start-state phase is now already completed and publicly documented as sanitized evidence.
 
-RAG primarily retrieves information. A cache primarily returns a previously computed result. SSI micronetworks are intended to represent **validated and evolving competence**, not merely stored text or a previous answer.
+What is established:
+
+- six independent private BODY ISKRA artifacts exist;
+- each descends from the same BODY_FROZEN T0;
+- each has a separate initial belief/emotion state;
+- each has `1832 / 616` inventory counts;
+- each passed `8/8` start-state QA;
+- aggregate start-state QA is `48/48 PASS`.
+
+What is **not** yet established is their long-run behavioral divergence after many verified experiences.
+
+## 4. What are the six initial profiles?
+
+1. **NICE** — cooperation, help, compassion, honesty
+2. **GUARDIAN** — protection, caution, harm avoidance
+3. **JUSTICE** — fairness, honesty, consistent rules
+4. **EXPLORER** — curiosity, exploration, autonomy
+5. **PRAGMATIST** — effectiveness, measurable outcome, evidence
+6. **SKEPTIC** — verification, limited trust, independence
+
+These labels summarize explicit initial conditions. They are not claims that later behavior will remain fixed.
+
+## 5. Does the public repository expose the implementation?
+
+No.
 
 ```text
-EXPERIENCE
--> CANDIDATE
--> EVIDENCE
--> CHALLENGER
--> VALIDATION
--> CHAMPION / REJECT / KEEP TESTING
+PUBLIC
+= sanitized evidence
++ initial beliefs/emotions
++ counts
++ QA
++ hashes
++ lineage
++ claim boundaries
+
+PRIVATE
+= source code
++ private file tree
++ implementation-level architecture
++ runtime/configuration
++ raw memory/user data
++ proprietary integration/routing internals
 ```
 
-A Champion may later be enriched, challenged, revalidated, replaced or rolled back.
+The public repository remains evidence-only.
 
-## 3. Is V10 just a clever cache or faster semantic router?
-
-No. The reviewer-safe canonical description is:
-
-> **V10 is a Stateful Predictive Competence & Recovery Router.**
-
-It is designed to combine:
+## 6. What is the current experimental sequence?
 
 ```text
-CURRENT TASK / WORLD STATE
-+ VERIFIED COMPETENCE
-+ ATTEMPT HISTORY
-+ PRIOR OUTCOMES
-+ FAILURE SIGNATURES
-+ CONFIDENCE
--> NEXT ROUTE / STRATEGY
+2026-09-05
+BODY_FROZEN T0 = frozen PRE-ISKRA common control
+
+2026-09-06
+6 BODY ISKRA descendants = CREATED + START_STATE_VALIDATED
+
+NEXT
+= controlled longitudinal six-agent comparison
+= compare verified success / failure / mixed outcomes
+= compare changes in beliefs/emotions
+= compare competence and micronetwork trajectories
+
+LATER
+= evidence-based competence comparison / consolidation / promotion
 ```
-
-Possible decisions include `REUSE_TOP1`, `VERIFY_TOPK`, alternative competence/LEGO composition, blocking blind retry and `FULL_FLOW`.
-
-## 4. What does anti-loop mean?
-
-```text
-SAME / EQUIVALENT STATE
-+ SAME FAILURE SIGNATURE
-+ SAME STRATEGY / ROUTE
-+ NO NEW EVIDENCE
-=> DO NOT BLINDLY REPEAT
-```
-
-This is an intended architectural rule. Existing evidence supports scoped routing/integration/recovery mechanisms; universal anti-loop behavior still requires dedicated future benchmarking.
-
-## 5. What is the current experimental sequence?
-
-```text
-T0 = frozen PRE-ISKRA control baseline
-T1 = controlled no-ISKRA transfer experiments
-T1-ISKRA = variants starting from the same T0
-T2 = separate competence consolidation / promotion experiment
-```
-
-The first T1 transfer is intentionally highly scaffolded: a clean Micronetworks + V10 LEGO package, detailed recipe, prepared blocks/adapters and explicit tests are used for a safe civilian drone simulation. This primarily tests technology transfer under known instructions.
-
-The second transfer removes much of the ready-made implementation and requires more mapping/engineering by the system. A later open-ended task can test whether the system identifies a new application domain without being given the answer.
-
-## 6. What is planned for T2?
-
-T2 is intended to compare independently produced validated skills/competences.
-
-```text
-RESULTS / SKILLS
--> PROVENANCE + EVIDENCE + BENCHMARK
--> DEDUPLICATE EQUIVALENTS
--> ADD DATA / COVERAGE WHEN EQUIVALENT
--> CANDIDATE / CHALLENGER / CHAMPION
--> REQUEST MORE CASES IF AMBIGUOUS
--> PROMOTE ONLY UNDER EXPLICIT CONTRACT
-```
-
-An upgraded body should be a descendant of T0. The original T0 remains immutable for reproducibility.
-
-No T2 outcome is claimed yet.
 
 ## 7. What did TEST 5 prove?
 
-TEST 5 is the latest closed validation test:
+TEST 5 remains the latest closed validation test:
 
 ```text
 STAGE_12 = SUPERSEDED
@@ -138,137 +157,50 @@ STAGE_13_AUDIT_RETEST = PASS
 0 open blockers
 ```
 
-An earlier `27/27 PASS` Stage 12 was preserved but superseded after audit found the contract too weak. The system/test boundary was repaired and retested.
-
 Claim boundary: development validation of the tested local SSI BODY control/integration path — not production readiness of the whole system or proof of AGI/consciousness.
 
-## 8. Why preserve SUPERSEDED results?
+## 8. Why is BODY ISKRA 6X not called TEST 6?
 
-Because a green test may later turn out to measure too weak a contract. SSI's public methodology is:
+Because it is currently a **recorded experimental start state**, not a completed longitudinal validation suite. The public status is `START_STATE_VALIDATED`.
 
-```text
-PASS
--> AUDIT WHAT WAS ACTUALLY MEASURED
--> PRESERVE WEAK RESULT
--> REPAIR
--> RETEST
--> CURRENT CLAIM
-```
+The future longitudinal experiments may later receive separate test identifiers when their contracts, cases and acceptance criteria are defined and executed.
 
-This is also conceptually aligned with failure-aware routing: failures and weak outcomes should become future decision information, not disappear from history.
+## 9. What would count as a meaningful future result?
 
-## 9. Are micronetworks tied to one agent or task?
+Examples include measured differences after controlled exposure to equivalent classes of experience:
 
-No. The intended architecture is multi-task and multi-space. Shared verified competence is distinct from shared private identity/history.
+- different belief trajectories;
+- different trust/risk policies;
+- different competence or micronetwork development;
+- different recovery strategies after failure;
+- different social/cooperation patterns;
+- convergence despite different initial Iskra states.
 
-## 10. Can new micronetworks or competence appear dynamically?
+Either divergence or convergence can be informative. The repository should report whichever evidence occurs.
 
-That is an intended core property:
-
-```text
-NEW EXPERIENCE
--> NO SUITABLE VERIFIED COMPETENCE
--> FULL FLOW
--> CANDIDATE
--> EVIDENCE
--> CHALLENGER
--> VALIDATION
--> CHAMPION
--> NEW / EXTENDED MICRONETWORK
-```
-
-It does not mean one success automatically creates a Champion.
-
-## 11. What happens when multiple agents produce the same skill?
-
-The planned T2 behavior is not to multiply duplicate skill records blindly. Equivalent solutions should increase evidence, data coverage or confidence under a versioned counting rule. If benchmarks cannot distinguish candidates, the system should request additional cases rather than force promotion.
-
-## 12. What are the role boundaries?
-
-```text
-BODY_FROZEN T0 = frozen experimental origin
-AGENTS = operate in worlds and own laboratory/CONTINUUM trajectories
-DIRECTOR = observes, audits, compares, ranks and evaluates
-ROBERT = separate execution/runtime/tooling body
-```
-
-Agents can generate strategies and competence in worlds; Director evaluates outcomes; ROBERT remains the execution/runtime line. Later controlled skill promotion may strengthen shared system capability.
-
-## 13. Does SSI persist across restarts?
-
-Persistence is a core requirement and must be established through replay/restart evidence rather than inferred from files alone. Existing public test history includes replay/restart/persistence hardening and real process restart checks within scoped tests.
-
-## 14. What is CONTINUUM?
-
-CONTINUUM is the persistent mission-execution layer:
-
-```text
-MISSION
--> EXECUTION
--> CHECKPOINT
--> EVIDENCE
--> PAUSE / FAILURE / RESTART
--> RECONCILE
--> CONTINUE
-```
-
-T0 records CONTINUUM as `CLOSED` under the published T0 closure summary.
-
-## 15. What is LEGO methodology?
-
-LEGO decomposes large engineering tasks into small contract-driven blocks:
-
-```text
-LARGE GOAL
--> DECOMPOSE
--> SMALL BLOCK
--> INPUT / OUTPUT CONTRACT
--> EXECUTION
--> TEST
--> EVIDENCE
--> CHECKPOINT
--> INTEGRATION
--> REGRESSION
-```
-
-## 16. What would weaken the SSI hypothesis?
-
-Examples:
-
-- V10 provides speed but unacceptable false reuse;
-- failure history does not prevent blind retry;
-- recovery does not improve outcomes;
-- competence fails to transfer beyond near duplicates;
-- Champion accumulation causes degradation;
-- deduplication/consolidation loses important competence;
-- T1/T2 effects disappear under fair replication;
-- future audits reveal that current tests measure weaker boundaries than claimed.
-
-## 17. Does the public repo expose private implementation?
-
-No. It publishes reviewer-safe architecture, measured results, test boundaries, sanitized counts, lineage and claim boundaries. Private source implementation, secrets, raw memory/user data, local paths and implementation-level source maps remain excluded.
-
-## 18. What should reviewers not infer?
+## 10. What should reviewers not infer?
 
 Do not infer that:
 
 - SSI is proven AGI or conscious;
 - the whole system is production-ready;
 - V10 is universally superior;
-- every candidate is a formal skill;
-- T1/T2 already succeeded;
+- one Iskra profile is already superior;
+- the six agents have already demonstrated long-run divergence;
+- later competence consolidation has already succeeded;
 - future economic outcomes are guaranteed.
 
-## 19. What is the shortest current description for a grant reviewer?
+## 11. What is the shortest current description for a grant reviewer?
 
-**SSI V5 is a persistent competence-development research architecture. Its current public state includes a frozen PRE-ISKRA T0 baseline, prior scoped validation of persistence/routing/control integration, a stateful V10 competence/recovery routing layer, and a planned controlled experiment series testing cross-domain transfer, independent agent divergence and later evidence-based competence consolidation.**
+**SSI V5 now has a frozen common BODY_FROZEN T0 and six independent BODY ISKRA descendants with explicitly different initial value/emotion states. Their start states are sanitized and publicly documented at 8/8 QA each, 48/48 aggregate, while source implementation remains private. The next research step is a controlled longitudinal comparison of how verified success, failure and experience change their decision and competence trajectories.**
 
-## 20. Where should a reviewer start?
+## 12. Where should a reviewer start?
 
-1. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
-2. [`evidence/BODY_FROZEN_T0_20260905/README.md`](evidence/BODY_FROZEN_T0_20260905/README.md)
-3. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
-4. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
-5. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
-6. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
-7. [`evidence/README.md`](evidence/README.md)
+1. [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
+2. [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
+3. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
+4. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
+5. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
+6. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
+7. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
+8. [`evidence/README.md`](evidence/README.md)
