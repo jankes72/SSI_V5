@@ -8,19 +8,68 @@ SSI V5 investigates whether a long-running system can build, validate, preserve,
 ```text
 FROZEN COMMON BASELINE = T0 / BODY_FROZEN / PRE-ISKRA / 2026-09-05
 CURRENT EXPERIMENTAL STATE = 6X BODY ISKRA / START_STATE_VALIDATED / 2026-09-06
+PREDECLARED CROSS-DOMAIN PROGRAM = 7 lines x 3 domains = 21 experiments
+PROGRAM STATUS = DESIGNED / EXECUTION_INITIATED / OUTCOMES_NOT_YET_CLAIMED
 AGENTS = 6
 START-STATE QA = 8/8 per agent / 48/48 group
 LATEST CLOSED VALIDATION TEST = TEST 5 / DEVELOPMENT_VALIDATED
 ```
 
-**Important distinction:** BODY_FROZEN remains the immutable common comparison origin. The six BODY ISKRA descendants now already exist and have validated start states. Their long-term behavioral outcomes have not yet been claimed.
+**Important distinction:** BODY_FROZEN remains the immutable common comparison origin. The six BODY ISKRA descendants already exist and have validated start states. The 21-experiment cross-domain program is now designed and recorded before the full outcome set exists; this is not a claim that all 21 experiments have already passed.
 
 Public entry points:
 
+- [EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
 - [BODY_ISKRA_6X_T0.md](BODY_ISKRA_6X_T0.md)
 - [evidence/BODY_ISKRA_6X_T0_20260906/README.md](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
 - [BODY_FROZEN_T0_PRE_ISKRA.md](BODY_FROZEN_T0_PRE_ISKRA.md)
 - [evidence/BODY_FROZEN_T0_20260905/README.md](evidence/BODY_FROZEN_T0_20260905/README.md)
+
+## Predeclared 21-experiment program — 7 x 3
+
+Seven experimental lines are now defined:
+
+```text
+0 BODY_FROZEN T0
+1 BODY ISKRA NICE
+2 BODY ISKRA GUARDIAN
+3 BODY ISKRA JUSTICE
+4 BODY ISKRA EXPLORER
+5 BODY ISKRA PRAGMATIST
+6 BODY ISKRA SKEPTIC
+```
+
+Each line receives three cross-domain experiments:
+
+```text
+A = DRONES
+B = HUMANOID
+C = NEW DOMAIN SELECTED BY THAT SSI LINE
+```
+
+Therefore:
+
+```text
+7 experimental lines x 3 domains = 21 predeclared experiments
+```
+
+The author specifies drones and humanoid as common comparison domains. The third domain is selected independently by the corresponding SSI line. For BODY_FROZEN it is selected by BODY_FROZEN; for BODY ISKRA 1-6 it is selected independently by each descendant.
+
+The common high-level measurement contract includes:
+
+```text
+KNOWN / SIMILAR / NOVEL state classification
+V10 route selection
+reuse / verify-adapt / alternative-compose / deeper-full-flow
+latency / decision cost
+correctness / task outcome
+false reuse
+recovery
+competence creation/update
+provenance retention
+```
+
+This program is recorded before the complete results so later reviewers can distinguish predeclared design from post-hoc interpretation.
 
 ## BODY ISKRA 6X — current experimental start state
 
@@ -85,6 +134,7 @@ PUBLIC
 = research history
 + sanitized machine evidence
 + measured outcomes
++ predeclared experiment protocols
 + start-state beliefs/emotions
 + counts / hashes / QA
 + failures / superseded results
@@ -117,7 +167,7 @@ OPEN_BLOCKERS = 0
 FINAL_CONVERGENCE_PASS = TRUE
 ```
 
-TEST 5 remains the latest closed public validation test. BODY ISKRA 6X is the newest recorded experimental start state, not a replacement label for TEST 5 and not automatically TEST 6.
+TEST 5 remains the latest closed public validation test. BODY ISKRA 6X is the newest recorded experimental start state, and the 21-experiment program is a prospective execution program, not a replacement label for TEST 5.
 
 ## Research sequence from the frozen origin
 
@@ -136,15 +186,22 @@ BODY_FROZEN T0 / PRE-ISKRA / immutable control
 -> 8/8 start-state QA each
 -> 48/48 group start-state QA
 
+2026-09-06
+21-experiment cross-domain program predeclared
+-> 7 lines
+-> drones
+-> humanoid
+-> self-selected new domain per line
+-> shared known/similar/novel + V10 measurement framework
+
 NEXT
--> controlled longitudinal comparison
--> compare verified successes / failures / mixed outcomes
--> compare belief/emotion changes
--> compare competence/micronetwork trajectories
+-> execute and record 21 experiment outcomes
+-> compare transfer, latency, false reuse, recovery and competence trajectories
 -> later evidence-based consolidation / promotion
+-> later independent expert challenges
 ```
 
-The six-agent creation phase is no longer merely planned. What remains prospective is their long-run divergence and any later competence consolidation result.
+The six-agent creation phase is no longer merely planned. The 21-experiment matrix is now also predeclared. What remains prospective is the full set of measured outcomes and any later competence consolidation result.
 
 ## Core research model
 
@@ -218,6 +275,7 @@ ROBERT
 2026-09-03  TEST 5 Stage 13: 29/29 acceptance, 524/524 regression, 0 blockers
 2026-09-05  BODY_FROZEN T0 / PRE-ISKRA baseline recorded
 2026-09-06  six independent BODY ISKRA T0 descendants recorded; 48/48 group start-state QA PASS
+2026-09-06  21-experiment cross-domain program predeclared: 7 lines x 3 domains
 ```
 
 ## Claim boundaries
@@ -228,6 +286,8 @@ SSI V5 does **not** currently claim that:
 - it is conscious;
 - every SSI mechanism is production-ready;
 - V10 is universally superior;
+- all 21 predeclared experiments are already complete or PASS;
+- drones or humanoids are already validated physical deployments;
 - the six agents have already demonstrated long-term behavioral divergence;
 - one Iskra profile has already proven superior;
 - later competence consolidation has already succeeded;
@@ -239,6 +299,8 @@ Preferred public statuses include:
 VERIFIED_MACHINE_EVIDENCE
 DEVELOPMENT_VALIDATED
 START_STATE_VALIDATED
+PROGRAM_DESIGNED
+EXECUTION_INITIATED
 T0_BASELINE_RECORDED
 SUPERSEDED
 HISTORICAL_EVIDENCE
@@ -249,6 +311,7 @@ UNKNOWN
 
 ## Start here
 
+- **21-experiment protocol:** [EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
 - **Current 6-agent state:** [BODY_ISKRA_6X_T0.md](BODY_ISKRA_6X_T0.md)
 - **6-agent sanitized evidence:** [evidence/BODY_ISKRA_6X_T0_20260906/README.md](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
 - **Frozen common origin:** [BODY_FROZEN_T0_PRE_ISKRA.md](BODY_FROZEN_T0_PRE_ISKRA.md)
@@ -258,4 +321,4 @@ UNKNOWN
 - **Grant / methodology FAQ:** [GRANT_REVIEWER_FAQ.md](GRANT_REVIEWER_FAQ.md)
 - **Public machine evidence:** [evidence/README.md](evidence/README.md)
 
-The public repository is intended to show what is actually established, what remains historical, and what still requires future evidence.
+The public repository is intended to show what is actually established, what has been predeclared before outcomes, what remains historical, and what still requires future evidence.
