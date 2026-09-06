@@ -3,7 +3,7 @@
 **Experimental persistent competence architecture for adaptive AI systems.**  
 SSI V5 investigates whether a long-running system can build, validate, preserve, reuse, compare and revise competence across tasks using persistent state, Experience, micronetworks, Candidate -> Challenger -> Champion lifecycle, V10 stateful routing, LEGO composition and CONTINUUM persistence.
 
-## Current state — 2026-09-06
+## Current state — 2026-09-07
 
 ```text
 FROZEN COMMON BASELINE = T0 / BODY_FROZEN / PRE-ISKRA / 2026-09-05
@@ -11,6 +11,7 @@ CURRENT EXPERIMENTAL STATE = 6X BODY ISKRA / START_STATE_VALIDATED / 2026-09-06
 PREDECLARED CROSS-DOMAIN PROGRAM = 7 lines x 3 domains = 21 experiments
 PROGRAM STATUS = DESIGNED / EXECUTION_INITIATED / OUTCOMES_NOT_YET_CLAIMED
 EXECUTION METHODOLOGY = PREDECLARED / KILO PROCEDURAL EXECUTOR
+LIVE REVIEWER INTERFACE = AVAILABLE / READ-ONLY OBSERVABILITY
 CANONICAL ROBERT = CONTINUOUS ENGINEERING LINE / NOT RESET BY EXPERIMENT CLEANING
 CURRENT DEVELOPMENT TEAM = 1 person / independent project
 CURRENT COMPUTE = author-owned / personally acquired hardware
@@ -25,12 +26,15 @@ The six BODY ISKRA descendants already exist and have validated start states. Th
 
 The execution methodology is also predeclared. The author prepares/freezes the protocol, **Kilo executes the declared procedure**, and SSI BODY is the tested system. Kilo is used to reduce live author steering and preserve checkpoints, failures and evidence; it is not presented as an independent external scientific auditor.
 
+SSI V5 also includes a **live read-only reviewer interface** that can present the current sanitized state of BODY_FROZEN and the six BODY ISKRA lines in one shared view. Reviewers can observe runtime/mission/CONTINUUM/LAB/evidence state and ask informational questions about what a selected BODY is doing, while local ROOT execution remains separate and private. The live access address is not published in this repository at this stage.
+
 SSI V5 is currently developed independently by Paweł Jankiewicz (`jankes72`) as a one-person project. The compute described in the public infrastructure record is the author's own equipment or equipment being personally acquired by the author; it is not presented as university, school, company or grant-funded infrastructure.
 
 Public entry points:
 
 - [EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
 - [EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
+- [REVIEWER_LIVE_INTERFACE_20260907.md](REVIEWER_LIVE_INTERFACE_20260907.md)
 - [ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
 - [EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md](EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md)
 - [BODY_ISKRA_6X_T0.md](BODY_ISKRA_6X_T0.md)
@@ -106,6 +110,30 @@ SSI BODY / EXPERIMENTAL LINE
 ```
 
 Any material human correction during a run must be disclosed as `MANUAL_INTERVENTION`. The detailed rule set is in [EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md).
+
+## Live reviewer interface — read-only demonstration
+
+SSI V5 includes a shared live reviewer interface intended to show that the BODY lines exist as running systems rather than only as static documentation.
+
+The interface can present:
+
+```text
+BODY_FROZEN
+ISKRA 1 — NICE
+ISKRA 2 — GUARDIAN
+ISKRA 3 — JUSTICE
+ISKRA 4 — EXPLORER
+ISKRA 5 — PRAGMATIST
+ISKRA 6 — SKEPTIC
+```
+
+A reviewer can observe sanitized live information such as runtime status, current mission stage, progress/checkpoints, CONTINUUM state, LAB progress, aggregate micronetwork state, public events/evidence and selected ISKRA state. The interface also includes an informational `demo_query` channel for questions such as what the BODY is doing now, which mission is active or why a reviewer-visible route class was selected.
+
+The reviewer interface is **read-only**. It is not the local ROOT terminal and is not intended to create missions, execute code, launch Kilo, pause/resume runtimes, modify configuration or expose private source code, prompts, memory, secrets or filesystem contents.
+
+The operational access address is intentionally **not published** in the public repository. Access may be provided privately to an invited reviewer for a live demonstration.
+
+Full reviewer-safe description: [REVIEWER_LIVE_INTERFACE_20260907.md](REVIEWER_LIVE_INTERFACE_20260907.md).
 
 ## BODY ISKRA 6X — current experimental start state
 
@@ -197,6 +225,7 @@ PUBLIC
 + measured outcomes
 + predeclared experiment protocols
 + predeclared execution methodology / operator boundary
++ live reviewer-interface capability and safety boundary
 + infrastructure/ownership context
 + canonical-vs-experiment lineage distinction
 + start-state beliefs/emotions
@@ -213,6 +242,7 @@ PRIVATE
 + raw user data
 + runtime configuration
 + local paths / secrets
++ operational reviewer-access endpoint
 ```
 
 ## Latest closed validation milestone — TEST 5
@@ -265,6 +295,13 @@ BODY_FROZEN T0 / PRE-ISKRA / immutable control
 -> self-selected new domain per line
 -> shared known/similar/novel + V10 measurement framework
 -> Kilo-run execution methodology predeclared
+
+2026-09-07
+live reviewer interface documented
+-> shared multi-BODY observability
+-> informational demo_query
+-> local ROOT remains separate
+-> public endpoint intentionally withheld
 
 NEXT
 -> execute and record 21 experiment outcomes
@@ -353,6 +390,7 @@ ROBERT
 2026-09-06  Kilo-run execution methodology predeclared
 2026-09-06  canonical ROBERT continuity vs experimental reset explicitly documented
 2026-09-06  independent/solo project and author-owned compute context recorded
+2026-09-07  live read-only reviewer interface documented; operational access address withheld
 ```
 
 ## Claim boundaries
@@ -369,6 +407,7 @@ SSI V5 does **not** currently claim that:
 - one Iskra profile has already proven superior;
 - every private ROBERT memory or skill is publicly machine-verifiable from this evidence mirror;
 - Kilo execution constitutes independent external validation;
+- the reviewer interface proves correctness of every private component;
 - later competence consolidation has already succeeded;
 - future economic performance is guaranteed.
 
@@ -392,6 +431,7 @@ UNKNOWN
 
 - **21-experiment protocol:** [EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
 - **Execution methodology / Kilo operator boundary:** [EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
+- **Live reviewer interface:** [REVIEWER_LIVE_INTERFACE_20260907.md](REVIEWER_LIVE_INTERFACE_20260907.md)
 - **ROBERT continuity vs experiment reset:** [ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
 - **Infrastructure / ownership:** [EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md](EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md)
 - **Current 6-agent state:** [BODY_ISKRA_6X_T0.md](BODY_ISKRA_6X_T0.md)
