@@ -8,12 +8,13 @@ SSI V5 is not presented as proven AGI, consciousness or a production-ready auton
 
 ## 0. What changed on 2026-09-06?
 
-SSI V5 now has six independent **BODY ISKRA** experimental descendants created from the same frozen BODY_FROZEN T0 recorded on 2026-09-05, a prospectively recorded `7 x 3 = 21` cross-domain experiment program, an explicit infrastructure/ownership record, and an explicit distinction between canonical ROBERT continuity and cleaned experimental branches.
+SSI V5 now has six independent **BODY ISKRA** experimental descendants created from the same frozen BODY_FROZEN T0 recorded on 2026-09-05, a prospectively recorded `7 x 3 = 21` cross-domain experiment program, a predeclared Kilo-run execution methodology, an explicit infrastructure/ownership record, and an explicit distinction between canonical ROBERT continuity and cleaned experimental branches.
 
 ```text
 BODY_FROZEN T0 = immutable common experimental origin
 BODY ISKRA 6X = already created / START_STATE_VALIDATED
 21-EXPERIMENT PROGRAM = DESIGNED / EXECUTION_INITIATED
+EXECUTION METHODOLOGY = PREDECLARED / KILO PROCEDURAL EXECUTOR
 CANONICAL ROBERT = continuous engineering/execution line
 PROJECT TEAM = currently 1 person
 CURRENT COMPUTE CONTEXT = author-owned / personally acquired equipment
@@ -131,7 +132,7 @@ The common high-level measurement framework includes:
 ```text
 KNOWN / SIMILAR / NOVEL
 V10 route selection
-reuse / verify-adapt / alternative-compose / deeper-full-flow
+reuse / verify-adapt / alternative-compose / deeper/full-flow
 latency / decision cost
 correctness / outcome
 false reuse
@@ -148,15 +149,53 @@ The intent is to make the Git history distinguish predeclared experimental desig
 
 ```text
 PREDECLARED PROGRAM
+-> PREDECLARED EXECUTION METHODOLOGY
 -> IDENTIFIED/FROZEN STARTING ARTIFACT
 -> EXECUTION
 -> EVIDENCE
--> PASS / FAIL / AMBIGUOUS
+-> PASS / FAIL / INCONCLUSIVE
 -> AUDIT
 -> VERSIONED RETEST IF NEEDED
 ```
 
-## 8. What is already established for BODY ISKRA 6X?
+## 8. Who actually executes the experiments, and how is author influence limited?
+
+The intended operational executor is **Kilo**.
+
+The full public methodology is recorded in:
+
+[`EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md`](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
+
+The role separation is:
+
+```text
+AUTHOR
+= prepares and freezes the protocol before execution
+
+KILO
+= verifies the target artifact/T0
++ launches the real SSI BODY execution path
++ executes Experiment A -> B -> C
++ records checkpoints and evidence
++ preserves failures and retries
++ runs declared final checks
++ produces the execution report
+
+SSI BODY / EXPERIMENTAL LINE
+= tested system whose routing/adaptation behavior is measured
+```
+
+The author should not silently steer the solution after observing intermediate results, replace failed SSI decisions with preferred ones, delete failed attempts, or change PASS/FAIL criteria post hoc.
+
+If a material human correction is required, the run should explicitly record:
+
+```text
+MANUAL_INTERVENTION
+```
+
+Kilo is **not** described as an independent external scientific auditor. Its role is procedural: reduce live author steering, execute a predeclared sequence consistently, and preserve a clearer evidence trail for later review.
+
+## 9. What is already established for BODY ISKRA 6X?
 
 ```text
 AGENTS = 6
@@ -169,7 +208,7 @@ VERIFIED NEW EXPERIENCES AT T0 = 0 per agent
 PENDING NEW EXPERIENCES AT T0 = 0 per agent
 ```
 
-## 9. What remains prospective?
+## 10. What remains prospective?
 
 Not yet claimed:
 
@@ -181,7 +220,7 @@ Not yet claimed:
 - successful later skill consolidation;
 - AGI or consciousness.
 
-## 10. What is BODY_FROZEN T0?
+## 11. What is BODY_FROZEN T0?
 
 BODY_FROZEN is the immutable common experimental origin recorded on 2026-09-05.
 
@@ -199,7 +238,7 @@ CONTINUUM = CLOSED
 
 It remains unchanged while descendant lines accumulate new experience.
 
-## 11. What did TEST 5 prove?
+## 12. What did TEST 5 prove?
 
 TEST 5 remains the latest closed validation milestone:
 
@@ -214,19 +253,19 @@ ROBERT_STABLE = 46/46 PASS
 
 Claim boundary: development validation of the tested local SSI BODY control/integration path, not universal system reliability or production readiness.
 
-## 12. What is scientifically interesting about drones and humanoids here?
+## 13. What is scientifically interesting about drones and humanoids here?
 
 The program is not limited to whether a simulated drone or humanoid completes a task. It also tests whether prior validated competence changes the computational/routing cost of decision making across state novelty levels.
 
-## 13. What happens when multiple lines discover equivalent competence?
+## 14. What happens when multiple lines discover equivalent competence?
 
 Equivalent competence should not automatically create useless duplicate skills. Different solution paths and their evidence can enrich an existing Challenger or Champion while preserving provenance. Promotion requires later benchmark/retest evidence; more data alone does not automatically make a Challenger the Champion.
 
-## 14. What comes after the 21 internal experiments?
+## 15. What comes after the 21 internal experiments?
 
 A separate external challenge phase is intended. Domain experts should be able to propose cases the author did not anticipate, preferably against identified/frozen SSI versions. External challenges remain distinct from the predeclared 21 internal experiments.
 
-## 15. Does the public repo expose private implementation?
+## 16. Does the public repo expose private implementation?
 
 No.
 
@@ -234,6 +273,7 @@ No.
 PUBLIC
 = sanitized evidence
 + prospective protocols
++ execution methodology / operator boundary
 + canonical ROBERT vs experiment lineage distinction
 + infrastructure/ownership context
 + measured results
@@ -251,7 +291,7 @@ PRIVATE
 + proprietary routing/integration internals
 ```
 
-## 16. What should reviewers not infer?
+## 17. What should reviewers not infer?
 
 Do not infer that:
 
@@ -261,19 +301,21 @@ Do not infer that:
 - humanoid/drone physical deployment is already validated;
 - experimental reset erased ROBERT;
 - every private ROBERT skill/memory is publicly machine-verifiable;
+- Kilo execution equals independent external validation;
 - later consolidation already succeeded;
 - future economic outcomes are guaranteed.
 
-## 17. Where should a reviewer start?
+## 18. Where should a reviewer start?
 
 1. [`ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md`](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
 2. [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
-3. [`EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md`](EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md)
-4. [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
-5. [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
-6. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
-7. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
-8. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
-9. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
-10. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
-11. [`evidence/README.md`](evidence/README.md)
+3. [`EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md`](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
+4. [`EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md`](EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md)
+5. [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
+6. [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
+7. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
+8. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
+9. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
+10. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
+11. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
+12. [`evidence/README.md`](evidence/README.md)
