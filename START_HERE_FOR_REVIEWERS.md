@@ -3,6 +3,7 @@
 **Updated:** 2026-09-06  
 **Frozen common baseline:** `T0 / BODY_FROZEN / PRE-ISKRA / 2026-09-05`  
 **Current experimental state:** `6 independent BODY ISKRA T0 variants / START_STATE_VALIDATED`  
+**Canonical ROBERT:** `CONTINUOUS ENGINEERING LINE / NOT RESET BY EXPERIMENT CLEANING`  
 **Predeclared program:** `7 experimental lines x 3 domains = 21 experiments`  
 **Program status:** `DESIGNED / EXECUTION_INITIATED / OUTCOMES_NOT_YET_CLAIMED`  
 **Latest closed validation test:** `TEST 5 / DEVELOPMENT_VALIDATED`
@@ -13,11 +14,17 @@ The key distinction is now:
 TEST 5
 = latest closed validation of a scoped local SSI BODY control/integration path
 
+CANONICAL ROBERT
+= continuous engineering/execution line
++ prior TEST 1 -> TEST 5 development history retained
++ private memory / competence / tooling continuity retained
++ not reset by experiment branch cleaning
+
 BODY_FROZEN T0 / 2026-09-05
 = immutable common experimental origin
 
 BODY ISKRA 6X / 2026-09-06
-= six independent descendants from the same T0
+= six independent experimental descendants from the same T0
 + explicit different initial value/emotion states
 + sanitized start-state evidence
 + 48/48 group start-state QA PASS
@@ -29,6 +36,12 @@ BODY ISKRA 6X / 2026-09-06
 + humanoid
 + self-selected third domain per SSI line
 ```
+
+The experimental cleaning/reset is branch-local. It creates controlled baselines and does **not** erase canonical ROBERT's historical development line. Public evidence does not enumerate every private ROBERT memory or skill record.
+
+Primary continuity reference:
+
+[`ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md`](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
 
 ## 1. Predeclared 21-experiment cross-domain program
 
@@ -97,17 +110,6 @@ VERIFIED NEW EXPERIENCES AT T0 = 0 per agent
 PENDING NEW EXPERIENCES AT T0 = 0 per agent
 ```
 
-Six independent start variants now exist:
-
-1. NICE
-2. GUARDIAN
-3. JUSTICE
-4. EXPLORER
-5. PRAGMATIST
-6. SKEPTIC
-
-Each public record includes sanitized initial beliefs, emotions, cognitive start state, inventory counts, QA status and private-artifact SHA256 reference.
-
 ## 3. Frozen origin — BODY_FROZEN T0
 
 The common origin remains unchanged:
@@ -129,17 +131,35 @@ OPEN_BLOCKERS = 0
 
 BODY_FROZEN is preserved as the immutable comparison control. The six BODY ISKRA artifacts are descendants, not rewrites of T0.
 
-## 4. What is established vs prospective
+## 4. Canonical ROBERT vs experiment branches
+
+```text
+CANONICAL ROBERT
+= historical engineering continuity
++ prior validated skills / memories / tools retained privately
++ TEST 1 -> TEST 5 lineage retained
++ future Eyes / Hands / execution expansion
+
+EXPERIMENT BRANCHES
+= cleaned/frozen where required
++ isolated experience counters
++ controlled comparison
+```
+
+Future experimentally validated skills may later be integrated into ROBERT under explicit validation/regression gates. ROBERT does not begin empty while waiting for those future skills.
+
+## 5. What is established vs prospective
 
 **Established / publicly recorded:**
 
 - BODY_FROZEN T0 exists as immutable common origin;
 - six independent BODY ISKRA start artifacts exist;
 - all six have separately documented start states;
-- each has `1832 / 616` private inventory counts;
 - each passed `8/8` start-state QA;
 - group start-state QA is `48/48 PASS`;
-- the 21-experiment cross-domain matrix was predeclared on 2026-09-06.
+- the 21-experiment cross-domain matrix was predeclared on 2026-09-06;
+- canonical ROBERT continuity is explicitly separated from experiment reset;
+- TEST 5 includes `ROBERT_STABLE = 46/46 PASS` within the final convergence evidence.
 
 **Prospective / not yet claimed:**
 
@@ -151,7 +171,7 @@ BODY_FROZEN is preserved as the immutable comparison control. The six BODY ISKRA
 - later skill consolidation success;
 - AGI or consciousness.
 
-## 5. Latest closed validation — TEST 5
+## 6. Latest closed validation — TEST 5
 
 ```text
 STAGE_12 = SUPERSEDED
@@ -166,12 +186,13 @@ OPEN_BLOCKERS = 0
 
 TEST 5 remains the latest closed validation milestone.
 
-## 6. Public/private boundary
+## 7. Public/private boundary
 
 ```text
 PUBLIC
 = sanitized evidence
 + predeclared experiment protocols
++ ROBERT-vs-experiment lineage distinction
 + agent labels
 + initial beliefs/emotions
 + inventory counts
@@ -184,20 +205,22 @@ PRIVATE
 + private file tree
 + implementation-level architecture
 + runtime/configuration
-+ raw memory/user data
++ raw ROBERT memory / private skill inventory
++ raw user data
 + proprietary integration internals
 ```
 
-## 7. Recommended reading order
+## 8. Recommended reading order
 
-1. [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
-2. [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
-3. [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
-4. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
-5. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
-6. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
-7. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
-8. [`GRANT_REVIEWER_FAQ.md`](GRANT_REVIEWER_FAQ.md)
-9. [`evidence/README.md`](evidence/README.md)
+1. [`ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md`](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
+2. [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
+3. [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
+4. [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
+5. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
+6. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
+7. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
+8. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
+9. [`GRANT_REVIEWER_FAQ.md`](GRANT_REVIEWER_FAQ.md)
+10. [`evidence/README.md`](evidence/README.md)
 
-SSI V5 should be evaluated as an evidence chain: frozen common origin -> six recorded BODY ISKRA start states -> predeclared 21-experiment cross-domain program -> measured outcomes -> later external challenges.
+SSI V5 should be evaluated as two connected tracks: a continuous ROBERT engineering line and a controlled BODY_FROZEN / BODY ISKRA experimental program.
