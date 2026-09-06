@@ -1,11 +1,12 @@
 # SSI V5 — Start Here for Grant and Technical Reviewers
 
-**Updated:** 2026-09-06  
+**Updated:** 2026-09-07  
 **Frozen common baseline:** `T0 / BODY_FROZEN / PRE-ISKRA / 2026-09-05`  
 **Current experimental state:** `6 independent BODY ISKRA T0 variants / START_STATE_VALIDATED`  
 **Canonical ROBERT:** `CONTINUOUS ENGINEERING LINE / NOT RESET BY EXPERIMENT CLEANING`  
 **Predeclared program:** `7 experimental lines x 3 domains = 21 experiments`  
 **Program status:** `DESIGNED / EXECUTION_INITIATED / OUTCOMES_NOT_YET_CLAIMED`  
+**Live reviewer interface:** `AVAILABLE / READ-ONLY OBSERVABILITY`  
 **Latest closed validation test:** `TEST 5 / DEVELOPMENT_VALIDATED`
 
 The key distinction is now:
@@ -35,6 +36,12 @@ BODY ISKRA 6X / 2026-09-06
 + drones
 + humanoid
 + self-selected third domain per SSI line
+
+LIVE REVIEWER INTERFACE / 2026-09-07
+= shared multi-BODY live observability
++ informational demo_query
++ local ROOT remains separate
++ operational access address not published publicly
 ```
 
 The experimental cleaning/reset is branch-local. It creates controlled baselines and does **not** erase canonical ROBERT's historical development line. Public evidence does not enumerate every private ROBERT memory or skill record.
@@ -111,7 +118,47 @@ AUTHOR PREPARES/FREEZES PROTOCOL
 
 Failed attempts must be preserved. Any material human correction during a run must be disclosed as `MANUAL_INTERVENTION`. Such a run may still be useful engineering evidence, but should not be represented as uninterrupted autonomous execution.
 
-## 2. Current public experimental state — BODY ISKRA 6X
+## 2. Live read-only reviewer interface
+
+SSI V5 now includes a shared live interface for grant and technical review.
+
+Primary description:
+
+[`REVIEWER_LIVE_INTERFACE_20260907.md`](REVIEWER_LIVE_INTERFACE_20260907.md)
+
+The interface can show the current sanitized state of:
+
+```text
+BODY_FROZEN
+ISKRA 1 — NICE
+ISKRA 2 — GUARDIAN
+ISKRA 3 — JUSTICE
+ISKRA 4 — EXPLORER
+ISKRA 5 — PRAGMATIST
+ISKRA 6 — SKEPTIC
+```
+
+The BODY runtimes remain separate. The shared interface only aggregates reviewer-safe state.
+
+A reviewer may observe, where available:
+
+- whether a BODY is online;
+- current mission and stage;
+- progress/checkpoint state;
+- CONTINUUM state;
+- LAB progress;
+- aggregate micronetwork state;
+- sanitized public events/evidence;
+- selected ISKRA state;
+- basic resource utilization.
+
+The interface also includes an informational `demo_query` channel. A reviewer can ask what a BODY is doing, what mission is active, what the latest checkpoint was or why a reviewer-visible route class was selected.
+
+This channel is **read-only**. It is not the local ROOT terminal and is not intended to create missions, execute code, launch Kilo, modify runtime state or expose private source code, prompts, memory, secrets or filesystem contents.
+
+The operational access address is intentionally **not published in this public repository at this stage**. It may be provided privately to an invited reviewer when a live demonstration is arranged.
+
+## 3. Current public experimental state — BODY ISKRA 6X
 
 Primary entry:
 
@@ -131,10 +178,10 @@ DELTA VS BODY_FROZEN PER AGENT = +51 total files / +29 Python files
 START-STATE QA PER AGENT = 8/8 PASS
 GROUP START-STATE QA = 48/48 PASS
 VERIFIED NEW EXPERIENCES AT T0 = 0 per agent
-PENDING NEW EXPERIENCES AT T0 = 0 per agent
+PENDING_NEW_EXPERIENCES_AT_T0 = 0 per agent
 ```
 
-## 3. Frozen origin — BODY_FROZEN T0
+## 4. Frozen origin — BODY_FROZEN T0
 
 The common origin remains unchanged:
 
@@ -155,7 +202,7 @@ OPEN_BLOCKERS = 0
 
 BODY_FROZEN is preserved as the immutable comparison control. The six BODY ISKRA artifacts are descendants, not rewrites of T0.
 
-## 4. Canonical ROBERT vs experiment branches
+## 5. Canonical ROBERT vs experiment branches
 
 ```text
 CANONICAL ROBERT
@@ -172,7 +219,7 @@ EXPERIMENT BRANCHES
 
 Future experimentally validated skills may later be integrated into ROBERT under explicit validation/regression gates. ROBERT does not begin empty while waiting for those future skills.
 
-## 5. What is established vs prospective
+## 6. What is established vs prospective
 
 **Established / publicly recorded:**
 
@@ -183,6 +230,7 @@ Future experimentally validated skills may later be integrated into ROBERT under
 - group start-state QA is `48/48 PASS`;
 - the 21-experiment cross-domain matrix was predeclared on 2026-09-06;
 - the Kilo-run execution methodology was prospectively recorded;
+- a shared read-only reviewer observability interface is documented;
 - canonical ROBERT continuity is explicitly separated from experiment reset;
 - TEST 5 includes `ROBERT_STABLE = 46/46 PASS` within the final convergence evidence.
 
@@ -196,7 +244,7 @@ Future experimentally validated skills may later be integrated into ROBERT under
 - later skill consolidation success;
 - AGI or consciousness.
 
-## 6. Latest closed validation — TEST 5
+## 7. Latest closed validation — TEST 5
 
 ```text
 STAGE_12 = SUPERSEDED
@@ -211,13 +259,14 @@ OPEN_BLOCKERS = 0
 
 TEST 5 remains the latest closed validation milestone.
 
-## 7. Public/private boundary
+## 8. Public/private boundary
 
 ```text
 PUBLIC
 = sanitized evidence
 + predeclared experiment protocols
 + execution methodology / operator boundary
++ reviewer-interface capability and safety boundary
 + ROBERT-vs-experiment lineage distinction
 + agent labels
 + initial beliefs/emotions
@@ -234,20 +283,22 @@ PRIVATE
 + raw ROBERT memory / private skill inventory
 + raw user data
 + proprietary integration internals
++ operational reviewer-access address
 ```
 
-## 8. Recommended reading order
+## 9. Recommended reading order
 
 1. [`ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md`](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
 2. [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
 3. [`EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md`](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
-4. [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
-5. [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
-6. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
-7. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
-8. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
-9. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
-10. [`GRANT_REVIEWER_FAQ.md`](GRANT_REVIEWER_FAQ.md)
-11. [`evidence/README.md`](evidence/README.md)
+4. [`REVIEWER_LIVE_INTERFACE_20260907.md`](REVIEWER_LIVE_INTERFACE_20260907.md)
+5. [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
+6. [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
+7. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
+8. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
+9. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
+10. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
+11. [`GRANT_REVIEWER_FAQ.md`](GRANT_REVIEWER_FAQ.md)
+12. [`evidence/README.md`](evidence/README.md)
 
-SSI V5 should be evaluated as two connected tracks: a continuous ROBERT engineering line and a controlled BODY_FROZEN / BODY ISKRA experimental program.
+SSI V5 should be evaluated as two connected tracks: a continuous ROBERT engineering line and a controlled BODY_FROZEN / BODY ISKRA experimental program, with a separate read-only reviewer layer for live observation.
