@@ -3,74 +3,82 @@
 ## Experimental Persistent Adaptive Intelligence System
 
 **Autor architektury:** Paweł Jankiewicz (`jankes72`, `PROGRAMMER_ROOT`)  
-**Status:** `T0 BASELINE RECORDED / PRE-ISKRA / ACTIVE RESEARCH`  
-**Data aktualizacji:** `2026-09-05`  
-**Aktualny baseline eksperymentalny:** `T0 / BODY_FROZEN / PRE-ISKRA`  
+**Status:** `BODY_FROZEN T0 PRESERVED / 6X BODY ISKRA START_STATE_VALIDATED / ACTIVE RESEARCH`  
+**Data aktualizacji:** `2026-09-06`  
+**Wspólny punkt odniesienia:** `T0 / BODY_FROZEN / PRE-ISKRA / 2026-09-05`  
+**Aktualny stan eksperymentalny:** `6 niezależnych BODY ISKRA T0 / START_STATE_VALIDATED`  
 **Najnowszy zamknięty test walidacyjny:** `TEST 5 / SSI BODY FINAL CONVERGENCE / DEVELOPMENT_VALIDATED`  
 **Stan AGI / świadomości:** `NIEUDOWODNIONY — BADANY EKSPERYMENTALNIE`
 
-## Najważniejsza aktualizacja — T0
+## Najważniejsza aktualizacja — 2026-09-06
 
-Projekt ma już publicznie zapisany punkt startowy następnej serii eksperymentów:
+Zamrożony BODY_FROZEN z 2026-09-05 pozostaje niezmiennym wspólnym punktem odniesienia. Z tego samego T0 utworzono już sześć niezależnych wariantów BODY ISKRA i zapisano ich czyste stany startowe.
 
-[`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
+Publiczne wejścia:
 
-oraz oczyszczone machine evidence:
-
-[`evidence/BODY_FROZEN_T0_20260905/`](evidence/BODY_FROZEN_T0_20260905/)
+- [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md) — historyczny wspólny T0
+- [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md) — aktualny stan 6 agentów
+- [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md) — sanitized evidence
 
 ```text
-T0 = BODY_FROZEN / PRE-ISKRA
+COMMON ORIGIN = BODY_FROZEN T0 / 2026-09-05
+AGENTS = 6
+STATUS = START_STATE_VALIDATED
+PRIVATE ARTIFACT PER AGENT = 1832 files
+PYTHON FILES PER AGENT = 616
+DELTA VS BODY_FROZEN = +51 files / +29 Python files
+START-STATE QA PER AGENT = 8/8 PASS
+GROUP START-STATE QA = 48/48 PASS
+VERIFIED NEW EXPERIENCES AT T0 = 0 per agent
+PENDING NEW EXPERIENCES AT T0 = 0 per agent
+```
+
+## Sześć BODY ISKRA istnieje już jako niezależne linie
+
+1. **NICE** — współpraca, pomoc, współczucie, uczciwość
+2. **GUARDIAN** — ochrona, ostrożność, unikanie szkody
+3. **JUSTICE** — sprawiedliwość, uczciwość, spójne zasady
+4. **EXPLORER** — ciekawość, eksploracja, autonomia
+5. **PRAGMATIST** — skuteczność, mierzalny wynik, evidence
+6. **SKEPTIC** — weryfikacja, ograniczone zaufanie, niezależność
+
+Każdy ma osobny prywatny artefakt, własny stan T0 oraz publiczny sanitized rekord zawierający liczniki plików, początkowe przekonania, emocje, stan poznawczy i QA. Kod, prywatne drzewo plików i implementacyjna architektura nie są publikowane.
+
+## BODY_FROZEN pozostaje kontrolą
+
+```text
+BODY_FROZEN / 2026-09-05
+1781 files
+587 Python files
 CONTINUUM = CLOSED
-23/23 CONTINUUM TESTS PASS
-22/22 MAIN SCENARIOS PASS
-19/19 E2E CLOSURE PASS
-26/26 FINAL GUARD PASS
-ACTIVE FAILURES = 0
-INVARIANT VIOLATIONS = 0
-OPEN BLOCKERS = 0
-
-BODY SNAPSHOT = 1781 files / 587 Python files retained privately
-MICRONETWORKS = 8
-MODULES = 8
-LAYERS = 3
-V10 = ACTIVE
+23/23 CONTINUUM tests PASS
+22/22 main scenarios PASS
+19/19 E2E closure PASS
+26/26 final guard PASS
+0 active failures
+0 invariant violations
+0 open blockers
 ```
 
-**T0 nie jest TEST 6.** Jest zamrożonym punktem odniesienia. TEST 5 pozostaje ostatnim zamkniętym testem walidacyjnym.
+BODY_FROZEN nie został zastąpiony ani przepisany. Sześć BODY ISKRA to potomne linie eksperymentalne.
 
-## Co teraz będzie badane
+## Co jest już zrobione, a co dopiero będzie badane
+
+**Już istnieje i jest publicznie udokumentowane:**
 
 ```text
-T0
--> T1 NO-ISKRA controlled transfer
--> T1 ISKRA variants from the same T0
--> T2 competence consolidation / promotion experiment
+BODY_FROZEN T0
+-> 6 independent BODY ISKRA descendants
+-> isolated T0 states
+-> explicit initial beliefs/emotions
+-> private artifact hashes
+-> 8/8 start QA each
+-> 48/48 group start QA
 ```
 
-Pierwszy T1 ma być celowo bardzo kontrolowany: system dostaje przygotowany zestaw `Micronetworks + V10` jako klocki LEGO, gotową receptę, adaptery i kryteria PASS/FAIL i ma przenieść technologię do bezpiecznej cywilnej symulacji dronów. Tutaj badamy transfer według znanej recepty, nie kreatywność.
+**Dopiero do zbadania:** czy po wielu zweryfikowanych sukcesach, porażkach i mixed outcomes sześć różnych Iskier rozwinie mierzalnie różne trajektorie decyzji, relacji, kompetencji i mikrosieci.
 
-Drugi eksperyment ma zmniejszyć ilość scaffolding: podobna klasa transferu, ale bez pełnych gotowych kodów i z większą odpowiedzialnością systemu za mapowanie, implementację i testy.
-
-Późniejszy test open-ended ma sprawdzić, czy system potrafi znaleźć nowe zastosowanie bez podania mu odpowiedzi.
-
-## T2 — dlaczego jest ważny
-
-T2 ma osobno sprawdzić mechanizm porównywania i konsolidacji kompetencji powstałych w niezależnych liniach.
-
-```text
-NEW SKILLS / STRATEGIES
--> EVIDENCE + BENCHMARK COMPARISON
--> DEDUPLICATION
--> CANDIDATE / CHALLENGER / CHAMPION
--> MORE CASES IF AMBIGUOUS
--> CONTROLLED PROMOTION
--> UPGRADED DESCENDANT BODY
-```
-
-Jeżeli kilka linii stworzy kompetencję równoważną, system nie powinien bezmyślnie tworzyć duplikatów. Powinien zwiększyć evidence/data coverage i prosić o dodatkowe przypadki, jeśli wynik nie pozwala uczciwie wybrać Championa.
-
-T0 pozostaje niezmieniony jako kontrola.
+Nie deklarujemy jeszcze wyników długoterminowych, których eksperyment nie wykonał.
 
 ## Aktualny zamknięty test — TEST 5
 
@@ -82,84 +90,31 @@ TOTAL = 524/524 PASS
 OPEN_BLOCKERS = 0
 ```
 
-TEST 5 weryfikuje scoped local SSI BODY control/integration path. Nie dowodzi production readiness całego SSI, uniwersalnej niezawodności, AGI ani świadomości.
-
-Evidence:
-
-- [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
-- [`evidence/TEST5_FINAL_RESULT_20260903.json`](evidence/TEST5_FINAL_RESULT_20260903.json)
-
-## Czym jest SSI V5
-
-SSI V5 bada, czy kompetencja może być utrzymywana i rozwijana przez system ponad pojedynczym modelem/promptem.
-
-```text
-MODEL / TOOL
--> EXPERIENCE
--> MICRONETWORK
--> CANDIDATE
--> CHALLENGER
--> VALIDATION
--> CHAMPION
--> V10 ROUTING
--> OUTCOME
--> HISTORY
--> NEXT DECISION
-```
-
-Modele są wymiennymi źródłami capability. Trwały stan, evidence, lifecycle kompetencji, routing, CONTINUUM i historia należą do systemu SSI.
-
-## Role — nie mieszać
-
-```text
-BODY_FROZEN T0
-= zamrożony organizm eksperymentalny / punkt startowy
-
-AGENTS
-= chodzą po światach, mają własne CONTINUUM i laboratoria,
-  budują dane/metadane, strategie i kompetencje
-
-DIRECTOR
-= obserwuje, audytuje, porównuje, rankinguje i ocenia wyniki
-
-ROBERT
-= osobne ciało wykonawcze/runtime/narzędzia
-```
-
-Słabsze strategie mogą zostać odrzucone, ale ich historia pozostaje jako evidence. Najlepsze dojrzewają i mogą wytwarzać skille/kompetencje przeznaczone do późniejszej kontrolowanej promocji.
-
-## V10 w jednym zdaniu
-
-**V10 jest stateful predictive competence & recovery routerem**, który przy decyzji może uwzględniać bieżący stan, zweryfikowaną kompetencję, historię prób, outcome, failure signatures i confidence.
-
-```text
-SAME STATE
-+ SAME FAILURE
-+ SAME ROUTE
-+ NO NEW EVIDENCE
-=> DO NOT BLINDLY REPEAT
-```
-
-Pełny opis: [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
+TEST 5 pozostaje najnowszym zamkniętym testem walidacyjnym. BODY ISKRA 6X to aktualny stan startowy nowego eksperymentu, a nie „TEST 6”.
 
 ## Jak czytać repo
 
-1. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md) — aktualny T0.
-2. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md) — wejście dla grantu/review.
-3. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md) — aktualny truth index.
-4. [`evidence/BODY_FROZEN_T0_20260905/README.md`](evidence/BODY_FROZEN_T0_20260905/README.md) — sanitized T0 evidence.
-5. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md) — ostatni zamknięty validation test.
-6. [`README.md`](README.md) — pełny research front door.
+1. [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md) — aktualny stan 6 agentów.
+2. [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md) — pełne sanitized T0 agentów.
+3. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md) — wspólny zamrożony punkt odniesienia.
+4. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md) — aktualny truth index.
+5. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md) — wejście dla grantów/reviewerów.
+6. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md) — ostatni zamknięty validation test.
 7. [`evidence/README.md`](evidence/README.md) — indeks evidence.
+
+## Zasada publikacji
+
+```text
+PUBLIC = evidence, wyniki, liczniki, T0 beliefs/emotions, QA, SHA256, claim boundaries
+PRIVATE = kod źródłowy, prywatne drzewo plików, runtime/config, raw memory, implementacyjna architektura
+```
 
 ## Zasada epistemiczna
 
 ```text
 NO EVIDENCE -> UNKNOWN
-INSUFFICIENT EVIDENCE -> ABSTAIN
-CONFLICTING EVIDENCE -> PRESERVE CONFLICT
-WEAK PASS CONTRACT -> SUPERSEDE, DO NOT ERASE
-NEW EVIDENCE -> REVISION
+WEAK PASS -> PRESERVE / SUPERSEDE
+NEW VERIFIED EVIDENCE -> REVISE
+BODY_FROZEN T0 -> NEVER SILENTLY REWRITE
+6X START STATE -> VERIFIED AS START STATE, NOT AS LONGITUDINAL OUTCOME
 ```
-
-**Aktualna prawda:** integracyjne closure doprowadziło projekt do zamrożonego T0. Teraz zaczyna się seria eksperymentów transferu, porównania i późniejszej konsolidacji kompetencji.
