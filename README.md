@@ -21,6 +21,8 @@ PROGRAM STATUS = DESIGNED / EXECUTION INITIATED / PAUSED FOR REVIEWER-OBSERVABIL
 EXECUTION METHODOLOGY = PREDECLARED / KILO PROCEDURAL EXECUTOR / HASH-SEALED PACKAGES
 FINAL-RUN RESUME REQUIREMENT = 7/7 BODY + REVIEWER INTERFACE TECHNICAL READINESS VALIDATION
 POST-21 RESEARCH PHASE = PREDECLARED / COMPETENCE CONSOLIDATION -> 3 NEW DOMAINS / RESULTS UNKNOWN
+POST-21 TRANSFER-MECHANISM EVOLUTION = PREDECLARED / DRONE A->B->C + HUMANOID EXTENSION / RESULTS UNKNOWN
+EXTERNAL FALSIFICATION CHALLENGE = PLANNED AFTER INTERNAL TEST FRONTIER / NOT YET EXECUTED
 LIVE REVIEWER INTERFACE = READ-ONLY OBSERVABILITY / FINAL INTEGRATION VALIDATION PENDING
 CANONICAL ROBERT = CONTINUOUS ENGINEERING LINE / NOT RESET BY EXPERIMENT CLEANING
 CURRENT DEVELOPMENT TEAM = 1 person / independent project
@@ -146,7 +148,9 @@ Public entry points:
 - [EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
 - [POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md](POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md)
 - [POST21_RESEARCH_PHASE_INDEX_20260907.md](POST21_RESEARCH_PHASE_INDEX_20260907.md)
+- [POST21_TRANSFER_MECHANISM_EVOLUTION_DRONES_HUMANOID_PROTOCOL_20260907.md](POST21_TRANSFER_MECHANISM_EVOLUTION_DRONES_HUMANOID_PROTOCOL_20260907.md)
 - [REVIEWER_LIVE_INTERFACE_20260907.md](REVIEWER_LIVE_INTERFACE_20260907.md)
+- [LIVE_EXTERNAL_REVIEW_SESSION_PROTOCOL_20260907.md](LIVE_EXTERNAL_REVIEW_SESSION_PROTOCOL_20260907.md)
 - [ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
 - [EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md](EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md)
 - [BODY_ISKRA_6X_T0.md](BODY_ISKRA_6X_T0.md)
@@ -289,6 +293,68 @@ Primary comparison metrics include task outcome, time-to-solution, full-flow rat
 
 Canonical protocol: [POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md](POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md).
 
+## Założenia i plany — najpierw wewnętrzna falsyfikacja, później zewnętrzny challenge
+
+The intended research strategy is **internal falsification first**. External experts are not intended to be used as an early substitute for test design or as a way to help SSI reach a favorable result.
+
+The planned order is:
+
+```text
+21 CONTROLLED EXPERIMENTS
+-> preserve every PASS / FAIL / INCONCLUSIVE result
+-> generate and execute meaningful internal boundary / adversarial / recovery tests
+-> use BODY-generated tests where declared
+-> consolidate verified competence
+-> enrich Champions and Challengers with provenance
+-> promote Challenger -> Champion only when the declared evidence loop supports it
+-> create new micronetworks only for genuinely new functional competence
+-> freeze a versioned BODY_FROZEN upgrade descendant
+-> test 3 entirely new self-selected domains
+-> execute drone configuration-transfer evolution A -> B -> C
+-> test whether transfer experience improves the transfer mechanism itself
+-> challenge higher-level transfer in the humanoid domain
+-> run regression / false-reuse / failure / recovery / held-out tests
+-> continue until the author and SSI no longer identify a meaningful new internal falsification class
+```
+
+Only after this internal test frontier is reached is the mature version intended to enter an **external falsification challenge**.
+
+The planned external request is deliberately adversarial in the scientific sense:
+
+> Do not merely confirm the existing tests. Identify missing test classes, propose cases that should break the mechanism, expose false reuse, force unnecessary full-flow, defeat a Champion, reveal transfer failure or otherwise falsify the current hypothesis if a weakness exists.
+
+The intended external stage is:
+
+```text
+MATURE VERSIONED BODY
+-> internal test frontier documented
+-> system/version frozen
+-> invited domain experts receive the tested claim boundary and evidence summary
+-> experts propose previously unseen challenge cases or missing falsification classes
+-> challenge inputs + acceptance criteria frozen
+-> package version / hash recorded
+-> scheduled first controlled run
+-> invited reviewer observes through read-only live interface where technically applicable
+-> reviewer may ask informational questions but cannot steer execution
+-> PASS / FAIL / INCONCLUSIVE + retries + recovery + interventions preserved
+-> any repair creates a new versioned retest rather than erasing the original failure
+```
+
+This stage is intended to answer a stronger question than "can SSI pass tests designed by its author?":
+
+> After SSI has already been internally stressed across its declared test space, can external specialists still identify previously unseen conditions that invalidate, weaken or materially limit the Micronetworks + V10 competence/transfer mechanism?
+
+A successful external challenge is **not assumed**. An externally discovered failure is considered useful research evidence because it identifies a boundary that the internal program failed to expose. Conversely, surviving multiple strong external challenges would strengthen the evidence only within the actually tested scope.
+
+The external specialists are therefore intended primarily as **falsification / red-team challenge providers and witnesses**, not as hidden co-designers of the internal experimental success path.
+
+Related predeclared plans:
+
+- [POST21_TRANSFER_MECHANISM_EVOLUTION_DRONES_HUMANOID_PROTOCOL_20260907.md](POST21_TRANSFER_MECHANISM_EVOLUTION_DRONES_HUMANOID_PROTOCOL_20260907.md)
+- [LIVE_EXTERNAL_REVIEW_SESSION_PROTOCOL_20260907.md](LIVE_EXTERNAL_REVIEW_SESSION_PROTOCOL_20260907.md)
+
+**Status on 2026-09-07:** `PLANNED / PREDECLARED DIRECTION / NOT YET EXECUTED`. No external falsification success, external replication or independent validation is claimed by this section.
+
 ## Live reviewer interface — read-only demonstration
 
 SSI V5 includes a shared reviewer interface intended to show that the BODY lines exist as running systems rather than only as static documentation.
@@ -406,6 +472,9 @@ PUBLIC
 + experiment pause/resume and reviewer-observability rationale
 + hash/integrity methodology for frozen experiment packages
 + predeclared post-21 consolidation / novel-transfer protocol
++ predeclared transfer-mechanism evolution plan
++ internal-first falsification / external-challenge roadmap
++ external live-review session protocol
 + reviewer-interface capability and safety boundary
 + infrastructure/ownership context
 + canonical-vs-experiment lineage distinction
@@ -509,6 +578,25 @@ post-21 research phase predeclared before Phase-1 outcomes
 -> 3 new self-selected domains not used in Phase 1
 -> control vs consolidated comparison
 
+2026-09-07
+post-21 transfer-mechanism evolution predeclared
+-> drone configuration transfer A -> B -> C
+-> preserve what transferred / adapted / failed
+-> let transfer evidence enrich relevant competence/micronetwork lifecycle
+-> test whether later transfer becomes more efficient or reliable
+-> later challenge higher-level transfer behavior in humanoid domain
+
+2026-09-07
+external review / falsification direction predeclared as a later stage
+-> internal falsification first
+-> do not use external experts as a substitute for early internal test design
+-> reach and document the internal test frontier
+-> freeze mature version
+-> external specialists propose missing or adversarial challenge classes
+-> execute frozen challenge under the declared evidence rules
+-> use read-only live observation where technically applicable
+-> preserve external FAIL / PASS / INCONCLUSIVE without selective deletion
+
 NEXT
 -> complete reviewer-interface and 7-BODY technical integration validation
 -> open final evidence gate only after declared readiness acceptance
@@ -518,8 +606,12 @@ NEXT
 -> count actual competence/micronetwork changes
 -> execute predeclared post-21 consolidation protocol
 -> freeze and run the 3 new-domain transfer tests
--> report before/after effect
--> later independent expert challenges
+-> execute transfer-mechanism evolution / regression / adversarial / held-out stages
+-> continue internal falsification until no meaningful new internal test class is identified
+-> freeze the mature tested version
+-> only then invite external specialists to try to find missing tests or falsify the current thesis
+-> run externally proposed challenges under frozen/hash-identified evidence rules
+-> report the result that actually occurs
 ```
 
 ## Core research model
@@ -604,6 +696,8 @@ ROBERT
 2026-09-06  independent/solo project and author-owned compute context recorded
 2026-09-07  preliminary execution paused to integrate reviewer-safe live observability before final 21-run evidence phase
 2026-09-07  post-21 competence consolidation + three-new-domain transfer phase predeclared before Phase-1 outcomes
+2026-09-07  post-21 transfer-mechanism evolution for drone A->B->C and later humanoid extension predeclared
+2026-09-07  live external-review session protocol and later external falsification-challenge direction predeclared
 2026-09-07  reviewer interface documented as read-only; final integration/readiness validation remains pending
 2026-09-07  experiment execution methodology hardened with resume gate + hash-sealed package chain before final research evidence execution
 ```
@@ -626,9 +720,14 @@ SSI V5 does **not** currently claim that:
 - the reviewer interface gives a reviewer execution authority or proves correctness of every private component;
 - a cryptographic package hash proves scientific correctness rather than artifact identity;
 - later competence consolidation has already succeeded;
+- the transfer-mechanism evolution experiment has already succeeded;
 - a specific number of post-21 skills/micronetworks is already known;
 - the three future novel domains are already known;
 - the consolidated BODY has already outperformed the control;
+- the internal falsification frontier has already been reached;
+- external experts have already supplied challenge cases;
+- an externally proposed challenge has already been passed;
+- an external live review constitutes independent replication unless separately demonstrated;
 - future economic performance is guaranteed.
 
 Preferred public statuses include:
@@ -658,7 +757,9 @@ UNKNOWN
 - **Execution methodology / readiness gate / hash-sealed packages / Kilo operator boundary:** [EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
 - **Post-21 consolidation + 3-new-domain protocol:** [POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md](POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md)
 - **Post-21 reviewer index:** [POST21_RESEARCH_PHASE_INDEX_20260907.md](POST21_RESEARCH_PHASE_INDEX_20260907.md)
+- **Post-21 transfer-mechanism evolution — drones A->B->C + humanoid extension:** [POST21_TRANSFER_MECHANISM_EVOLUTION_DRONES_HUMANOID_PROTOCOL_20260907.md](POST21_TRANSFER_MECHANISM_EVOLUTION_DRONES_HUMANOID_PROTOCOL_20260907.md)
 - **Live reviewer interface:** [REVIEWER_LIVE_INTERFACE_20260907.md](REVIEWER_LIVE_INTERFACE_20260907.md)
+- **External live-review / witnessed challenge protocol:** [LIVE_EXTERNAL_REVIEW_SESSION_PROTOCOL_20260907.md](LIVE_EXTERNAL_REVIEW_SESSION_PROTOCOL_20260907.md)
 - **ROBERT continuity vs experiment reset:** [ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
 - **Infrastructure / ownership:** [EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md](EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md)
 - **Current 6-agent state:** [BODY_ISKRA_6X_T0.md](BODY_ISKRA_6X_T0.md)
