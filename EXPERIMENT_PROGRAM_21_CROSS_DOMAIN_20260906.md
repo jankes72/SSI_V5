@@ -11,7 +11,11 @@ This document records the prospective experiment matrix before the full outcome 
 
 **Canonical execution methodology:** [`EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md`](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
 
+**Predeclared next phase after the 21 runs:** [`POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md`](POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md)
+
 The execution methodology explicitly defines the separation between the author, Kilo as procedural executor, and SSI BODY as the tested system. Kilo is intended to launch the identified SSI BODY artifact, execute the three-part sequence, preserve checkpoints/failures and produce the run evidence without continuous live author steering. Kilo is not presented as an independent external scientific auditor.
+
+The 21-run program is **Phase 1**, not the endpoint of the research sequence. Before the Phase-1 outcome set is known, SSI V5 also records a later Phase 2/3 plan: inventory and consolidate the verified competence produced by all seven lines, resolve functional duplicates independent of dynamically generated micronetwork names, enrich existing Champions/Challengers or create genuinely new micronetworks, preserve provenance, and then test a versioned consolidated BODY on three new self-selected domains that were not used anywhere in the first 21 experiments.
 
 ## 1. Seven independent experimental lines
 
@@ -194,9 +198,36 @@ After comparable evidence exists, the seven lines can be compared on:
 
 Equivalent competence discovered by different paths should not be treated as useless duplication. Provenance and additional evidence can later enrich a Challenger or Champion under the separate consolidation protocol.
 
-## 8. Scientific claim boundary
+## 8. Predeclared continuation after the 21 experiments
 
-As of `2026-09-06`, this file establishes the **design and initiation state of the 21-experiment program** and its intended Kilo-executed procedure.
+The 21 experiments are explicitly intended to generate separate evidence-backed competence histories that can later be compared and consolidated.
+
+The already-recorded post-21 phase is:
+
+```text
+21 EXPERIMENTS
+-> INVENTORY ACTUAL SKILLS / MICRONETWORK CHANGES
+-> FUNCTIONAL IDENTITY CHECK
+-> SAME CHAMPION? ENRICH WITH NON-DUPLICATE EVIDENCE
+-> SAME CHALLENGER? ENRICH + RETEST PROMOTION
+-> DIFFERENT NAME BUT SAME FUNCTION? DEDUPLICATE / ALIAS + PRESERVE BOTH PROVENANCES
+-> GENUINELY NEW FUNCTION? CREATE NEW MICRONETWORK LIFECYCLE
+-> VERSIONED CONSOLIDATED BODY
+-> THREE NEW SELF-SELECTED DOMAINS
+-> NONE MAY REPEAT DRONES / HUMANOID / ANY PHASE-1 C DOMAIN
+-> CONTROL VS CONSOLIDATED COMPARISON
+```
+
+No counts or success results are claimed in advance. The number of unique skills, duplicate/equivalent skills, enriched Champions, enriched Challengers, promotions and new micronetworks remains `UNKNOWN` until measured.
+
+Canonical protocol:
+
+- [`POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md`](POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md)
+- [`POST21_RESEARCH_PHASE_INDEX_20260907.md`](POST21_RESEARCH_PHASE_INDEX_20260907.md)
+
+## 9. Scientific claim boundary
+
+As of `2026-09-07`, this file establishes the **design and initiation state of the 21-experiment program** and links it to the separately predeclared post-21 consolidation/novel-transfer phase.
 
 It does not claim:
 
@@ -207,11 +238,15 @@ It does not claim:
 - that V10 is universally faster;
 - that known/similar/novel latency ordering has already been demonstrated in all domains;
 - that six Iskra descendants already show long-run divergence;
+- that post-21 consolidation has already succeeded;
+- that a specific number of new skills or micronetworks will exist;
+- that the three later novel domains are already known;
+- that the consolidated BODY will outperform the control;
 - AGI or consciousness.
 
 Results must be appended through separate evidence artifacts after execution, including FAIL, INCONCLUSIVE/ambiguous, `MANUAL_INTERVENTION` and SUPERSEDED outcomes where applicable.
 
-## 9. Why this is recorded before results
+## 10. Why this is recorded before results
 
 The intended evidence chain is:
 
@@ -223,11 +258,16 @@ PREDECLARED PROGRAM
 -> RAW/SANITIZED EVIDENCE
 -> PASS / FAIL / INCONCLUSIVE
 -> AUDIT WHAT THE TEST ACTUALLY PROVES
+-> POST-21 COMPETENCE INVENTORY
+-> EVIDENCE-PRESERVING CONSOLIDATION
+-> VERSIONED CONSOLIDATED BODY
+-> 3 NEW SELF-SELECTED DOMAINS
+-> BEFORE/AFTER TRANSFER COMPARISON
 -> RETEST ONLY WITH VERSIONED LINEAGE
 ```
 
 This makes it possible for later reviewers to distinguish the experiment design that existed before outcomes from interpretations written after the outcomes were known.
 
-## 10. Later independent expert challenge
+## 11. Later independent expert challenge
 
-After the internal 21-experiment program has produced evidence, a separate external phase is intended in which domain experts can propose challenge cases not anticipated by the author. Those external challenges should remain distinguishable from the 21 predeclared internal experiments and should be run against identified/frozen system versions wherever practical.
+After the internal 21-experiment program and the separately predeclared consolidation/novel-transfer phase have produced evidence, a separate external phase is intended in which domain experts can propose challenge cases not anticipated by the author. Those external challenges should remain distinguishable from the internally predeclared experiments and should be run against identified/frozen system versions wherever practical.
