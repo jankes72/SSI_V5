@@ -115,6 +115,72 @@ SSI BODY
 
 The goal is to add real-time observability without adding another actor who can steer the result.
 
+### Persistent 7-BODY slots and distributed live execution
+
+The shared interface is **entity-centric rather than computer-centric**. Each of the seven experimental entities has a permanent place in the interface whether its runtime is currently active or not:
+
+```text
+BODY_FROZEN
+ISKRA 1 — NICE
+ISKRA 2 — GUARDIAN
+ISKRA 3 — JUSTICE
+ISKRA 4 — EXPLORER
+ISKRA 5 — PRAGMATIST
+ISKRA 6 — SKEPTIC
+```
+
+A BODY does not disappear from the reviewer view when it is stopped. Its slot remains visible and its state changes according to the actual runtime condition, for example:
+
+```text
+OFFLINE
+-> runtime unavailable / not started
+
+ONLINE / RUNNING
+-> live runtime probe succeeds
+```
+
+The intended rule is that `ONLINE` must reflect a real reachable runtime/health state rather than merely a configured name, static file or expected process.
+
+The current author-controlled infrastructure uses **three computers connected through Tailscale**. These machines are execution nodes, not three fixed logical roles. A BODY may be started on an appropriate configured node while the reviewer continues to observe the same persistent BODY identity from the shared interface.
+
+Conceptually:
+
+```text
+NODE A ----\
+NODE B -----+---- PRIVATE TAILSCALE FABRIC ----> SHARED REVIEW INTERFACE
+NODE C ----/                                      |
+                                                  +-> BODY_FROZEN slot
+                                                  +-> ISKRA 1 slot
+                                                  +-> ISKRA 2 slot
+                                                  +-> ISKRA 3 slot
+                                                  +-> ISKRA 4 slot
+                                                  +-> ISKRA 5 slot
+                                                  +-> ISKRA 6 slot
+```
+
+Where reviewer-safe and technically available, an active BODY view may expose live operational telemetry such as:
+
+```text
+BODY / INSTANCE ID
+ONLINE / OFFLINE / RUNNING state
+runtime PID / uptime
+mission / experiment ID
+current stage / checkpoint
+LAB / CONTINUUM state
+Micronetwork / lifecycle summary
+reviewer-visible V10 state
+package / checkpoint hash references
+execution node identity or class
+CPU utilization
+RAM utilization
+GPU / VRAM utilization where available
+IPC / interface health
+```
+
+This makes the interface useful for experiment interpretation as well as presentation: a reviewer can see **which entity is actually alive, what it is doing, and what compute resources are being consumed while it runs**, without needing to know which physical computer was used to start it.
+
+The distributed node layer does not change the experimental identity of a BODY. If hardware differences may affect a measured result, the execution node and relevant resource snapshot should be retained in the experiment evidence so that performance comparisons are not confused with hardware changes.
+
 ### Frozen and hash-sealed experiment packages
 
 Each actual final experiment run is intended to begin from a frozen package containing or referencing the declared protocol, prompts/instructions, acceptance criteria, target BODY identity, run order, intervention rules and evidence schema.
@@ -699,6 +765,7 @@ ROBERT
 2026-09-07  post-21 transfer-mechanism evolution for drone A->B->C and later humanoid extension predeclared
 2026-09-07  live external-review session protocol and later external falsification-challenge direction predeclared
 2026-09-07  reviewer interface documented as read-only; final integration/readiness validation remains pending
+2026-09-07  shared reviewer interface clarified as persistent 7-BODY entity view over three Tailscale-connected author nodes
 2026-09-07  experiment execution methodology hardened with resume gate + hash-sealed package chain before final research evidence execution
 ```
 
