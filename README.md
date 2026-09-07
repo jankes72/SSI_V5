@@ -3,6 +3,14 @@
 **Experimental persistent competence architecture for adaptive AI systems.**  
 SSI V5 investigates whether a long-running system can build, validate, preserve, reuse, compare and revise competence across tasks using persistent state, Experience, micronetworks, Candidate -> Challenger -> Champion lifecycle, V10 stateful routing, LEGO composition and CONTINUUM persistence.
 
+## Independent author / project context
+
+SSI V5 is designed and developed independently by **Paweł Jankiewicz (`jankes72`)**, a self-taught developer working outside a formal computer-science/AI academic or laboratory career path. The author does not have formal degree-level training in programming, computer science or artificial intelligence; the project has been developed through independent study, practical experimentation, iterative engineering and failure-driven refinement alongside regular professional work.
+
+Development is carried out largely with **free tiers/models and open-source or locally run tooling**, including tools such as **Kilo, OpenCode, Pi and other available coding/research assistants depending on the stage of work**. These systems are used as implementation, analysis, audit and testing capabilities; they are not presented as the authors of SSI V5. The project architecture, research direction, requirements, acceptance criteria, experiment design, integration decisions and public claim boundaries remain under the author's responsibility.
+
+This background is **context, not evidence of technical merit**. SSI V5 should be evaluated on its protocols, recorded history, sanitized/reproducible evidence, failures, retests and measured outcomes. Fuller author-declared context and its verification boundary are recorded in [`AUTHOR_CONTEXT.md`](AUTHOR_CONTEXT.md).
+
 ## Current state — 2026-09-07
 
 ```text
@@ -35,6 +43,7 @@ SSI V5 is currently developed independently by Paweł Jankiewicz (`jankes72`) as
 
 Public entry points:
 
+- [AUTHOR_CONTEXT.md](AUTHOR_CONTEXT.md)
 - [EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
 - [EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
 - [POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md](POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md)
@@ -518,6 +527,7 @@ UNKNOWN
 
 ## Start here
 
+- **Author / independent-project context:** [AUTHOR_CONTEXT.md](AUTHOR_CONTEXT.md)
 - **21-experiment protocol:** [EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
 - **Execution methodology / Kilo operator boundary:** [EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
 - **Post-21 consolidation + 3-new-domain protocol:** [POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md](POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md)
