@@ -6,6 +6,7 @@
 **Canonical ROBERT:** `CONTINUOUS ENGINEERING LINE / NOT RESET BY EXPERIMENT CLEANING`  
 **Predeclared program:** `7 experimental lines x 3 domains = 21 experiments`  
 **Program status:** `DESIGNED / EXECUTION_INITIATED / OUTCOMES_NOT_YET_CLAIMED`  
+**Predeclared post-21 phase:** `COMPETENCE CONSOLIDATION -> 3 NEW DOMAINS / RESULTS UNKNOWN`  
 **Live reviewer interface:** `AVAILABLE / READ-ONLY OBSERVABILITY`  
 **Latest closed validation test:** `TEST 5 / DEVELOPMENT_VALIDATED`
 
@@ -36,6 +37,17 @@ BODY ISKRA 6X / 2026-09-06
 + drones
 + humanoid
 + self-selected third domain per SSI line
+
+POST-21 PHASE / 2026-09-07
+= prospectively recorded before the 21-result set exists
++ inventory actual skills/micronetwork changes
++ function-based deduplication independent of dynamic names
++ Champion enrichment / Challenger enrichment and promotion gates
++ new micronetwork only for genuinely new functional competence
++ provenance-preserving consolidation
++ versioned consolidated BODY descendant
++ 3 new self-selected domains not used anywhere in the first 21
++ before/after control comparison
 
 LIVE REVIEWER INTERFACE / 2026-09-07
 = shared multi-BODY live observability
@@ -118,7 +130,63 @@ AUTHOR PREPARES/FREEZES PROTOCOL
 
 Failed attempts must be preserved. Any material human correction during a run must be disclosed as `MANUAL_INTERVENTION`. Such a run may still be useful engineering evidence, but should not be represented as uninterrupted autonomous execution.
 
-## 2. Live read-only reviewer interface
+## 2. Predeclared post-21 competence consolidation and novel transfer
+
+Primary protocol:
+
+[`POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md`](POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md)
+
+Reviewer index:
+
+[`POST21_RESEARCH_PHASE_INDEX_20260907.md`](POST21_RESEARCH_PHASE_INDEX_20260907.md)
+
+This phase is explicitly recorded **before the full 21-experiment result set exists**.
+
+Its purpose is to test whether competence created independently by BODY_FROZEN and the six BODY ISKRA descendants can be integrated without losing functional identity or provenance.
+
+The planned consolidation rules are:
+
+```text
+INCOMING VERIFIED COMPETENCE
+-> identify functional domain / skill identity
+
+IF SAME AS EXISTING CHAMPION
+-> enrich Champion with compatible non-duplicate evidence/skills
+-> validate/regress
+
+IF SAME AS EXISTING CHALLENGER
+-> enrich Challenger
+-> compare again against current Champion
+-> promote only if evidence supports promotion
+
+IF DIFFERENT DYNAMIC NAME BUT SAME FUNCTION
+-> do not count as a new domain only because the name differs
+-> merge/alias where appropriate
+-> preserve both discovery provenances
+
+IF GENUINELY NEW FUNCTIONAL COMPETENCE
+-> create new micronetwork lifecycle
+-> Candidate / Challenger / Champion gates still apply
+```
+
+The final consolidation report is expected to count the actual measured results, including total competence items, unique functional skills, equivalent duplicates, enriched Champions, enriched Challengers, Challenger-to-Champion promotions, new micronetworks and items rejected or not promoted. All of those values are currently `UNKNOWN`.
+
+The original `BODY_FROZEN T0` remains the historical control. Consolidated competence is integrated into a **versioned descendant / consolidation target**, not silently rewritten into the published T0 baseline.
+
+After consolidation and regression validation, the consolidated BODY must select **three new functionally distinct domains**. None may repeat:
+
+- DRONES;
+- HUMANOID;
+- any of the seven Phase-1 Experiment-C domains;
+- a cosmetic renaming of any previously tested domain.
+
+The three domain selections are to be frozen before their execution outcomes are known. Where practical, the same three tasks are compared against the pre-consolidation/control state so the project can measure whether consolidation changed transfer behavior rather than merely demonstrate that the later system can solve something.
+
+Primary metrics include final outcome, time-to-solution, full-flow rate, reuse, verify-adapt, false reuse, attempts, repeated-failure suppression, recovery success, competence creation and compute/model cost where available.
+
+A positive result is **not preclaimed**. Consolidation may improve, fail to improve or degrade performance; all outcomes remain valid evidence.
+
+## 3. Live read-only reviewer interface
 
 SSI V5 now includes a shared live interface for grant and technical review.
 
@@ -158,7 +226,7 @@ This channel is **read-only**. It is not the local ROOT terminal and is not inte
 
 The operational access address is intentionally **not published in this public repository at this stage**. It may be provided privately to an invited reviewer when a live demonstration is arranged.
 
-## 3. Current public experimental state — BODY ISKRA 6X
+## 4. Current public experimental state — BODY ISKRA 6X
 
 Primary entry:
 
@@ -178,10 +246,10 @@ DELTA VS BODY_FROZEN PER AGENT = +51 total files / +29 Python files
 START-STATE QA PER AGENT = 8/8 PASS
 GROUP START-STATE QA = 48/48 PASS
 VERIFIED NEW EXPERIENCES AT T0 = 0 per agent
-PENDING_NEW_EXPERIENCES_AT_T0 = 0 per agent
+PENDING_NEW_EXPERIENCES AT T0 = 0 per agent
 ```
 
-## 4. Frozen origin — BODY_FROZEN T0
+## 5. Frozen origin — BODY_FROZEN T0
 
 The common origin remains unchanged:
 
@@ -202,7 +270,7 @@ OPEN_BLOCKERS = 0
 
 BODY_FROZEN is preserved as the immutable comparison control. The six BODY ISKRA artifacts are descendants, not rewrites of T0.
 
-## 5. Canonical ROBERT vs experiment branches
+## 6. Canonical ROBERT vs experiment branches
 
 ```text
 CANONICAL ROBERT
@@ -219,7 +287,7 @@ EXPERIMENT BRANCHES
 
 Future experimentally validated skills may later be integrated into ROBERT under explicit validation/regression gates. ROBERT does not begin empty while waiting for those future skills.
 
-## 6. What is established vs prospective
+## 7. What is established vs prospective
 
 **Established / publicly recorded:**
 
@@ -230,6 +298,7 @@ Future experimentally validated skills may later be integrated into ROBERT under
 - group start-state QA is `48/48 PASS`;
 - the 21-experiment cross-domain matrix was predeclared on 2026-09-06;
 - the Kilo-run execution methodology was prospectively recorded;
+- the post-21 competence-consolidation and three-new-domain phase was predeclared on 2026-09-07 before the Phase-1 result set was known;
 - a shared read-only reviewer observability interface is documented;
 - canonical ROBERT continuity is explicitly separated from experiment reset;
 - TEST 5 includes `ROBERT_STABLE = 46/46 PASS` within the final convergence evidence.
@@ -237,14 +306,18 @@ Future experimentally validated skills may later be integrated into ROBERT under
 **Prospective / not yet claimed:**
 
 - final results of all 21 experiments;
+- exact post-21 skill/micronetwork counts;
+- success of functional deduplication or consolidation;
+- any Challenger-to-Champion promotion outcome;
+- superiority of the consolidated BODY over the control;
+- identities of the three future new domains;
 - universal V10 speed or correctness advantage;
 - long-run six-agent divergence;
 - superiority of one Iskra profile;
 - physical-robot or physical-drone deployment validity;
-- later skill consolidation success;
 - AGI or consciousness.
 
-## 7. Latest closed validation — TEST 5
+## 8. Latest closed validation — TEST 5
 
 ```text
 STAGE_12 = SUPERSEDED
@@ -259,12 +332,13 @@ OPEN_BLOCKERS = 0
 
 TEST 5 remains the latest closed validation milestone.
 
-## 8. Public/private boundary
+## 9. Public/private boundary
 
 ```text
 PUBLIC
 = sanitized evidence
 + predeclared experiment protocols
++ post-21 consolidation / novel-transfer protocol
 + execution methodology / operator boundary
 + reviewer-interface capability and safety boundary
 + ROBERT-vs-experiment lineage distinction
@@ -286,19 +360,21 @@ PRIVATE
 + operational reviewer-access address
 ```
 
-## 9. Recommended reading order
+## 10. Recommended reading order
 
 1. [`ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md`](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
 2. [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
 3. [`EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md`](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
-4. [`REVIEWER_LIVE_INTERFACE_20260907.md`](REVIEWER_LIVE_INTERFACE_20260907.md)
-5. [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
-6. [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
-7. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
-8. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
-9. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
-10. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
-11. [`GRANT_REVIEWER_FAQ.md`](GRANT_REVIEWER_FAQ.md)
-12. [`evidence/README.md`](evidence/README.md)
+4. [`POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md`](POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md)
+5. [`POST21_RESEARCH_PHASE_INDEX_20260907.md`](POST21_RESEARCH_PHASE_INDEX_20260907.md)
+6. [`REVIEWER_LIVE_INTERFACE_20260907.md`](REVIEWER_LIVE_INTERFACE_20260907.md)
+7. [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
+8. [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
+9. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
+10. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
+11. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
+12. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
+13. [`GRANT_REVIEWER_FAQ.md`](GRANT_REVIEWER_FAQ.md)
+14. [`evidence/README.md`](evidence/README.md)
 
-SSI V5 should be evaluated as two connected tracks: a continuous ROBERT engineering line and a controlled BODY_FROZEN / BODY ISKRA experimental program, with a separate read-only reviewer layer for live observation.
+SSI V5 should be evaluated as two connected tracks: a continuous ROBERT engineering line and a controlled BODY_FROZEN / BODY ISKRA experimental program, with a separate read-only reviewer layer for live observation. The controlled experimental track now includes both the predeclared 21-run Phase 1 and the separately predeclared post-21 consolidation/novel-transfer continuation.
