@@ -14,7 +14,7 @@ Pierwsze poważniejsze eksperymenty z programowaniem rozpoczął około pięciu 
 
 SSI V5 jest rozwijany niezależnie przez jedną osobę jako projekt pasjonacki realizowany po godzinach, równolegle z normalną pracą zawodową. Nie jest produktem pełnoetatowego zespołu badawczego, startupu z wieloosobowym działem R&D ani finansowanego laboratorium akademickiego.
 
-Współczesne modele AI i narzędzia programistyczne są wykorzystywane jako capability wspierające projektowanie, implementację, analizę, audyt i testowanie. Nadrzędna koncepcja, architektura, wymagania, kierunek rozwoju, kryteria akceptacji, decyzje projektowe oraz końcowa integracja pozostają odpowiedzialnością autora projektu.
+Współczesne modele AI i narzędzia programistyczne są wykorzystywane jako capability wspierające projektowanie, implementację, analizę, audyt i testowanie. Rozwój odbywa się w dużej mierze z wykorzystaniem darmowych tierów/modeli oraz open-source lub lokalnie uruchamianych narzędzi, w tym m.in. Kilo, OpenCode, Pi i innych dostępnych asystentów/narzędzi zależnie od etapu pracy. Nazwy te odnoszą się do narzędzi lub środowisk wspierających pracę, a nie do autorstwa projektu. Nadrzędna koncepcja, architektura, wymagania, kierunek rozwoju, kryteria akceptacji, decyzje projektowe oraz końcowa integracja pozostają odpowiedzialnością autora projektu.
 
 ## Kontekst tempa rozwoju
 
