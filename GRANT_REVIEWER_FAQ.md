@@ -242,6 +242,7 @@ Not yet claimed:
 - long-run six-agent divergence;
 - superiority of one Iskra profile;
 - successful later skill consolidation;
+- BODY_FROZEN 1.0 cross-environment competence transfer;
 - AGI or consciousness.
 
 ## 11. What is BODY_FROZEN T0?
@@ -289,6 +290,36 @@ Equivalent competence should not automatically create useless duplicate skills. 
 
 A separate external challenge phase is intended. Domain experts should be able to propose cases the author did not anticipate, preferably against identified/frozen SSI versions. External challenges remain distinct from the predeclared 21 internal experiments.
 
+### 15A. What is the future BODY_FROZEN 1.0 direction?
+
+BODY_FROZEN 1.0 is a **future architectural direction**, not a current claim. Its intended role is to integrate and transfer validated competence **between different micronetwork grids and environments** rather than treating every environment as a completely isolated learning problem.
+
+For example, in a future drone setting:
+
+```text
+DRONE GRID A
+-> validated competence / Champion / evidence
+
+BODY_FROZEN 1.0
+-> identify transferable functional content
+-> preserve provenance and failure limits
+
+DRONE GRID B
+-> changed environment / constraints
+-> REUSE / ADAPT / REJECT / FULL-FLOW
+-> target validation
+
+GRID B RESULT
+-> becomes new transfer evidence
+-> may improve later transfer to GRID C
+```
+
+The key assumption is that the system should not blindly copy a skill. It should determine what remains functionally valid in the target environment, adapt only where evidence supports adaptation, and reject misleading reuse when context has changed too much.
+
+The future research question is therefore whether **transfer experience itself can become reusable competence**, improving later transfer while reducing false reuse and unnecessary reconstruction.
+
+Full future assumption: [`BODY_FROZEN_1_0_CROSS_ENVIRONMENT_COMPETENCE_TRANSFER_ASSUMPTION_20260907.md`](BODY_FROZEN_1_0_CROSS_ENVIRONMENT_COMPETENCE_TRANSFER_ASSUMPTION_20260907.md).
+
 ## 16. Does the public repo expose private implementation?
 
 No.
@@ -327,6 +358,7 @@ Do not infer that:
 - every private ROBERT skill/memory is publicly machine-verifiable;
 - Kilo execution equals independent external validation;
 - later consolidation already succeeded;
+- BODY_FROZEN 1.0 already exists or has validated cross-environment transfer;
 - future economic outcomes are guaranteed.
 
 ## 18. Where should a reviewer start?
@@ -343,3 +375,4 @@ Do not infer that:
 10. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
 11. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
 12. [`evidence/README.md`](evidence/README.md)
+13. [`BODY_FROZEN_1_0_CROSS_ENVIRONMENT_COMPETENCE_TRANSFER_ASSUMPTION_20260907.md`](BODY_FROZEN_1_0_CROSS_ENVIRONMENT_COMPETENCE_TRANSFER_ASSUMPTION_20260907.md)
