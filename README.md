@@ -17,10 +17,11 @@ This background is **context, not evidence of technical merit**. SSI V5 should b
 FROZEN COMMON BASELINE = T0 / BODY_FROZEN / PRE-ISKRA / 2026-09-05
 CURRENT EXPERIMENTAL STATE = 6X BODY ISKRA / START_STATE_VALIDATED / 2026-09-06
 PREDECLARED CROSS-DOMAIN PROGRAM = 7 lines x 3 domains = 21 experiments
-PROGRAM STATUS = DESIGNED / EXECUTION_INITIATED / OUTCOMES_NOT_YET_CLAIMED
-EXECUTION METHODOLOGY = PREDECLARED / KILO PROCEDURAL EXECUTOR
+PROGRAM STATUS = DESIGNED / EXPERIMENT EXECUTION GATE CLOSED / OUTCOMES NOT YET CLAIMED
+EXECUTION METHODOLOGY = PREDECLARED / KILO PROCEDURAL EXECUTOR / HASH-SEALED PACKAGES
+PRE-RUN REQUIREMENT = 7/7 BODY + REVIEWER INTERFACE TECHNICAL READINESS VALIDATION
 POST-21 RESEARCH PHASE = PREDECLARED / COMPETENCE CONSOLIDATION -> 3 NEW DOMAINS / RESULTS UNKNOWN
-LIVE REVIEWER INTERFACE = AVAILABLE / READ-ONLY OBSERVABILITY
+LIVE REVIEWER INTERFACE = READ-ONLY OBSERVABILITY / FINAL INTEGRATION VALIDATION PENDING
 CANONICAL ROBERT = CONTINUOUS ENGINEERING LINE / NOT RESET BY EXPERIMENT CLEANING
 CURRENT DEVELOPMENT TEAM = 1 person / independent project
 CURRENT COMPUTE = author-owned / personally acquired hardware
@@ -31,13 +32,60 @@ LATEST CLOSED VALIDATION TEST = TEST 5 / DEVELOPMENT_VALIDATED
 
 **Critical distinction:** `BODY_FROZEN` and `BODY ISKRA` are controlled experimental branches. Cleaning/freeze operations apply to those experiment artifacts and do **not** mean that canonical ROBERT lost its earlier memories, validated engineering history or previously retained skills/competence. ROBERT remains a continuous engineering/execution line through the TEST 1 -> TEST 5 development history. Public evidence does not enumerate every private retained memory/skill item, but the project-state distinction is explicit.
 
-The six BODY ISKRA descendants already exist and have validated start states. The 21-experiment cross-domain program is designed and recorded before the full outcome set exists; this is not a claim that all 21 experiments have already passed.
+The six BODY ISKRA descendants already exist and have validated start states. The 21-experiment cross-domain program is designed and recorded before the full outcome set exists; this is not a claim that all 21 experiments have already passed or even begun as research runs.
 
-The execution methodology is also predeclared. The author prepares/freezes the protocol, **Kilo executes the declared procedure**, and SSI BODY is the tested system. Kilo is used to reduce live author steering and preserve checkpoints, failures and evidence; it is not presented as an independent external scientific auditor.
+The execution methodology is predeclared. The author prepares/freezes the protocol and package, **Kilo executes the declared procedure**, and SSI BODY is the tested system. Kilo is used to reduce live author steering and preserve checkpoints, failures and evidence; it is not presented as an independent external scientific auditor.
+
+### Execution gate before the 21 research runs
+
+The 21-experiment program does **not** start merely because the packages and protocol exist.
+
+Before the first proper research run, the platform must pass a separate technical-readiness gate covering:
+
+- all seven experimental BODY lines;
+- canonical startup and BODY identity;
+- runtime responsiveness;
+- CONTINUUM / Micronetwork / V10 availability where required;
+- persistence/checkpoint behavior;
+- BODY-to-BODY isolation;
+- local ROOT authority boundary;
+- reviewer-safe read-only observability;
+- declared acceptance/regression checks;
+- no unresolved blocker known to invalidate experiment interpretation.
+
+The professional public claim required to open the gate is not "100% correctness". It is narrower: the seven BODY lines and reviewer interface have passed the predeclared technical acceptance gates required for the experiment platform, with no unresolved blocker known to compromise the planned runs.
+
+Until then:
+
+```text
+EXPERIMENT_EXECUTION_GATE = CLOSED
+EXPERIMENT_PACKAGES = PREPARED / NOT YET EXECUTED AS RESEARCH RUNS
+RESEARCH_OUTCOMES = UNKNOWN
+```
+
+### Frozen and hash-sealed experiment packages
+
+Each actual experiment run is intended to begin from a frozen package containing or referencing the declared protocol, prompts/instructions, acceptance criteria, target BODY identity, run order, intervention rules and evidence schema.
+
+The integrity chain is intended to be:
+
+```text
+FROZEN PACKAGE
+-> MANIFEST
+-> SHA256 / CRYPTOGRAPHIC DIGEST
+-> GIT COMMIT / TIMESTAMPED REFERENCE WHERE SAFE
+-> KILO PRE-RUN HASH VERIFICATION
+-> EXECUTION
+-> CHECKPOINTS + FAILURES + RETRIES
+-> EVIDENCE DIRECTORY
+-> FINAL PASS / FAIL / INCONCLUSIVE REPORT
+```
+
+Changing a frozen package input after hashing requires a new package version and new digest. A later success must not erase an earlier failed attempt. The package plus its execution record, evidence and final report is intended to become one versioned experiment artifact.
 
 The **post-21 consolidation and novel-transfer phase is now also predeclared before the 21-result set exists**. After Phase 1, SSI is intended to inventory the competence produced by all seven lines, identify functional equivalence even when dynamically generated micronetwork names differ, enrich existing Champions/Challengers where appropriate, create genuinely new micronetworks only when functionally novel, preserve provenance, build a versioned consolidated BODY descendant and then test that descendant on three new self-selected domains that were not used anywhere in the original 21 experiments. No success or skill-count result is claimed in advance.
 
-SSI V5 also includes a **live read-only reviewer interface** that can present the current sanitized state of BODY_FROZEN and the six BODY ISKRA lines in one shared view. Reviewers can observe runtime/mission/CONTINUUM/LAB/evidence state and ask informational questions about what a selected BODY is doing, while local ROOT execution remains separate and private. The live access address is not published in this repository at this stage.
+SSI V5 includes a **read-only reviewer interface** intended to present the current sanitized state of BODY_FROZEN and the six BODY ISKRA lines in one shared view. Reviewers can observe runtime/mission/CONTINUUM/LAB/evidence state and ask informational questions about what a selected BODY is doing, while local ROOT execution remains separate and private. The live access address is not published in this repository at this stage. Final 7-BODY live integration validation remains part of the pre-experiment readiness gate.
 
 SSI V5 is currently developed independently by Paweł Jankiewicz (`jankes72`) as a one-person project. The compute described in the public infrastructure record is the author's own equipment or equipment being personally acquired by the author; it is not presented as university, school, company or grant-funded infrastructure.
 
@@ -108,10 +156,11 @@ The intended operator boundary is:
 
 ```text
 AUTHOR
-= prepares/freezes the protocol before execution
+= prepares/freezes the protocol + package before execution
 
 KILO
-= verifies the target/T0
+= verifies readiness gate + package hash
++ verifies the target/T0
 + launches the real SSI BODY execution path
 + executes A -> B -> C
 + records checkpoints/evidence
@@ -123,7 +172,7 @@ SSI BODY / EXPERIMENTAL LINE
 = tested system
 ```
 
-Any material human correction during a run must be disclosed as `MANUAL_INTERVENTION`. The detailed rule set is in [EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md).
+Any material human correction during a run must be disclosed as `MANUAL_INTERVENTION`. If the frozen experimental input must change, the old package/run identity is closed and a newly versioned + newly hashed package is required for a retest. The detailed rule set is in [EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md).
 
 ## Predeclared post-21 phase — competence consolidation + three new domains
 
@@ -192,7 +241,7 @@ Canonical protocol: [POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL
 
 ## Live reviewer interface — read-only demonstration
 
-SSI V5 includes a shared live reviewer interface intended to show that the BODY lines exist as running systems rather than only as static documentation.
+SSI V5 includes a shared reviewer interface intended to show that the BODY lines exist as running systems rather than only as static documentation.
 
 The interface can present:
 
@@ -210,7 +259,7 @@ A reviewer can observe sanitized live information such as runtime status, curren
 
 The reviewer interface is **read-only**. It is not the local ROOT terminal and is not intended to create missions, execute code, launch Kilo, pause/resume runtimes, modify configuration or expose private source code, prompts, memory, secrets or filesystem contents.
 
-The operational access address is intentionally **not published** in the public repository. Access may be provided privately to an invited reviewer for a live demonstration.
+The operational access address is intentionally **not published** in the public repository. Access may be provided privately to an invited reviewer for a live demonstration after the required integration/readiness checks are satisfied.
 
 Full reviewer-safe description: [REVIEWER_LIVE_INTERFACE_20260907.md](REVIEWER_LIVE_INTERFACE_20260907.md).
 
@@ -304,8 +353,10 @@ PUBLIC
 + measured outcomes
 + predeclared experiment protocols
 + predeclared execution methodology / operator boundary
++ pre-run readiness gate
++ hash/integrity methodology for frozen experiment packages
 + predeclared post-21 consolidation / novel-transfer protocol
-+ live reviewer-interface capability and safety boundary
++ reviewer-interface capability and safety boundary
 + infrastructure/ownership context
 + canonical-vs-experiment lineage distinction
 + start-state beliefs/emotions
@@ -342,7 +393,7 @@ OPEN_BLOCKERS = 0
 FINAL_CONVERGENCE_PASS = TRUE
 ```
 
-TEST 5 remains the latest closed public validation test. BODY ISKRA 6X is the newest recorded experimental start state, the 21-experiment program is prospective, and the post-21 consolidation/three-new-domain phase is separately predeclared rather than claimed as completed.
+TEST 5 remains the latest closed public validation test. BODY ISKRA 6X is the newest recorded experimental start state, the 21-experiment research execution is still gated by final platform validation, and the post-21 consolidation/three-new-domain phase is separately predeclared rather than claimed as completed.
 
 ## Research sequence from the frozen origin
 
@@ -377,6 +428,17 @@ BODY_FROZEN T0 / PRE-ISKRA / immutable control
 -> Kilo-run execution methodology predeclared
 
 2026-09-07
+execution methodology hardened before research runs
+-> 7/7 BODY + reviewer-interface readiness gate
+-> frozen experiment package
+-> manifest + SHA256/integrity digest
+-> Git/timestamp reference where safe
+-> Kilo pre-run verification
+-> append-oriented evidence
+-> input change requires new version + new hash
+-> research execution remains gated until readiness acceptance
+
+2026-09-07
 post-21 research phase predeclared before Phase-1 outcomes
 -> competence inventory
 -> function-based equivalence / duplicate analysis
@@ -388,14 +450,10 @@ post-21 research phase predeclared before Phase-1 outcomes
 -> 3 new self-selected domains not used in Phase 1
 -> control vs consolidated comparison
 
-2026-09-07
-live reviewer interface documented
--> shared multi-BODY observability
--> informational demo_query
--> local ROOT remains separate
--> public endpoint intentionally withheld
-
 NEXT
+-> complete reviewer-interface and 7-BODY technical integration validation
+-> open execution gate only after declared readiness acceptance
+-> freeze/hash final experiment packages
 -> execute and record 21 experiment outcomes
 -> count actual competence/micronetwork changes
 -> execute predeclared post-21 consolidation protocol
@@ -484,7 +542,8 @@ ROBERT
 2026-09-06  canonical ROBERT continuity vs experimental reset explicitly documented
 2026-09-06  independent/solo project and author-owned compute context recorded
 2026-09-07  post-21 competence consolidation + three-new-domain transfer phase predeclared before Phase-1 outcomes
-2026-09-07  live read-only reviewer interface documented; operational access address withheld
+2026-09-07  reviewer interface documented as read-only; final integration/readiness validation remains pending
+2026-09-07  experiment execution methodology hardened with readiness gate + hash-sealed package chain before research execution
 ```
 
 ## Claim boundaries
@@ -495,13 +554,15 @@ SSI V5 does **not** currently claim that:
 - it is conscious;
 - every SSI mechanism is production-ready;
 - V10 is universally superior;
-- all 21 predeclared experiments are already complete or PASS;
+- the proper 21 research runs have already started or passed;
+- the pre-run 7/7 BODY + reviewer-interface readiness gate has already passed unless separately evidenced;
 - drones or humanoids are already validated physical deployments;
 - the six agents have already demonstrated long-term behavioral divergence;
 - one Iskra profile has already proven superior;
 - every private ROBERT memory or skill is publicly machine-verifiable from this evidence mirror;
 - Kilo execution constitutes independent external validation;
 - the reviewer interface proves correctness of every private component;
+- a cryptographic package hash proves scientific correctness rather than artifact identity;
 - later competence consolidation has already succeeded;
 - a specific number of post-21 skills/micronetworks is already known;
 - the three future novel domains are already known;
@@ -515,7 +576,8 @@ VERIFIED_MACHINE_EVIDENCE
 DEVELOPMENT_VALIDATED
 START_STATE_VALIDATED
 PROGRAM_DESIGNED
-EXECUTION_INITIATED
+EXECUTION_GATE_CLOSED
+READINESS_PENDING
 PREDECLARED
 T0_BASELINE_RECORDED
 SUPERSEDED
@@ -529,7 +591,7 @@ UNKNOWN
 
 - **Author / independent-project context:** [AUTHOR_CONTEXT.md](AUTHOR_CONTEXT.md)
 - **21-experiment protocol:** [EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
-- **Execution methodology / Kilo operator boundary:** [EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
+- **Execution methodology / readiness gate / hash-sealed packages / Kilo operator boundary:** [EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
 - **Post-21 consolidation + 3-new-domain protocol:** [POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md](POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md)
 - **Post-21 reviewer index:** [POST21_RESEARCH_PHASE_INDEX_20260907.md](POST21_RESEARCH_PHASE_INDEX_20260907.md)
 - **Live reviewer interface:** [REVIEWER_LIVE_INTERFACE_20260907.md](REVIEWER_LIVE_INTERFACE_20260907.md)
