@@ -1,14 +1,15 @@
 # SSI V5 — CURRENT TRUTH INDEX
 
-**Status:** `PUBLIC RESEARCH INDEX / 2026-09-06`  
+**Status:** `PUBLIC RESEARCH INDEX / 2026-09-07`  
 **Frozen common baseline:** `T0 / BODY_FROZEN / PRE-ISKRA / RECORDED / 2026-09-05`  
 **Current experimental state:** `6X BODY ISKRA / START_STATE_VALIDATED / 2026-09-06`  
 **Canonical ROBERT state:** `CONTINUOUS ENGINEERING LINE / NOT RESET BY EXPERIMENT CLEANING`  
 **Predeclared research program:** `7 x 3 = 21 CROSS-DOMAIN EXPERIMENTS / DESIGNED / EXECUTION_INITIATED`  
+**Predeclared next phase:** `POST-21 COMPETENCE CONSOLIDATION -> 3 NEW DOMAINS / RESULTS UNKNOWN`  
 **Execution methodology:** `KILO PROCEDURAL EXECUTOR / AUTHOR LIVE-STEERING RESTRICTED / OUTCOMES NOT YET CLAIMED`  
 **Latest closed validation milestone:** `TEST 5 / SSI BODY FINAL CONVERGENCE / DEVELOPMENT_VALIDATED`
 
-This file separates the frozen common origin, the current six-agent experimental start state, canonical ROBERT continuity, the predeclared 21-experiment program, its execution methodology, prior validated milestones and still-prospective outcomes.
+This file separates the frozen common origin, the current six-agent experimental start state, canonical ROBERT continuity, the predeclared 21-experiment program, the separately predeclared post-21 consolidation/novel-transfer continuation, prior validated milestones and still-prospective outcomes.
 
 ## 0. CURRENT EXPERIMENTAL TRUTH — BODY ISKRA 6X
 
@@ -142,7 +143,59 @@ Kilo is not an external independent auditor. Its role is to reduce continuous li
 
 Any material human correction during execution must be disclosed as `MANUAL_INTERVENTION`. Evidence should preserve failed attempts rather than silently replacing them with later successful ones.
 
-## 3. FROZEN COMMON ORIGIN — BODY_FROZEN T0
+## 3. PREDECLARED POST-21 CONSOLIDATION / NOVEL-TRANSFER PHASE
+
+Canonical protocol:
+
+- [`POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md`](POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md)
+- [`POST21_RESEARCH_PHASE_INDEX_20260907.md`](POST21_RESEARCH_PHASE_INDEX_20260907.md)
+
+```text
+RECORDED = 2026-09-07
+STATUS = PREDECLARED / RESULTS UNKNOWN
+TRIGGER = AFTER PHASE-1 21-EXPERIMENT EVIDENCE IS CLOSED
+```
+
+The planned continuation is:
+
+```text
+21 EXPERIMENT RESULT CHAINS
+-> inventory actual skills / micronetwork changes
+-> identify functional equivalence independently of dynamic micronetwork names
+-> if existing Champion: enrich with compatible non-duplicate evidence/skills
+-> if existing Challenger: enrich + retest against current Champion
+-> promote Challenger only if evidence supports promotion
+-> if different name but same function: merge/alias without inflating new-domain count
+-> if genuinely new function: create a new micronetwork lifecycle
+-> preserve provenance from every contributing line/experiment
+-> regression / validation
+-> versioned consolidated BODY descendant
+-> select 3 entirely new functionally distinct domains
+-> none may repeat DRONES, HUMANOID or any Phase-1 Experiment-C domain
+-> freeze selections before outcomes are known
+-> compare pre-consolidation/control vs consolidated behavior
+```
+
+The original `BODY_FROZEN T0` remains the historical control and must not be silently overwritten by the consolidation result.
+
+The following are intentionally unknown today:
+
+```text
+TOTAL_COMPETENCE_ITEMS = UNKNOWN
+UNIQUE_FUNCTIONAL_SKILLS = UNKNOWN
+FUNCTIONALLY_EQUIVALENT_DUPLICATES = UNKNOWN
+CHAMPIONS_ENRICHED = UNKNOWN
+CHALLENGERS_ENRICHED = UNKNOWN
+CHALLENGER_TO_CHAMPION_PROMOTIONS = UNKNOWN
+NEW_MICRONETWORKS = UNKNOWN
+POST_CONSOLIDATION_MICRONETWORK_TOTAL = UNKNOWN
+THREE_FUTURE_NOVEL_DOMAINS = UNKNOWN
+POST_CONSOLIDATION_PERFORMANCE_EFFECT = UNKNOWN
+```
+
+This phase exists to test consolidation and transfer, not to assume success before measurement.
+
+## 4. FROZEN COMMON ORIGIN — BODY_FROZEN T0
 
 BODY_FROZEN remains immutable and historically dated 2026-09-05.
 
@@ -172,7 +225,7 @@ Public evidence:
 - [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
 - [`evidence/BODY_FROZEN_T0_20260905/README.md`](evidence/BODY_FROZEN_T0_20260905/README.md)
 
-## 4. CURRENT VALIDATED MILESTONE — TEST 5
+## 5. CURRENT VALIDATED MILESTONE — TEST 5
 
 TEST 5 remains the newest closed public validation test.
 
@@ -189,7 +242,7 @@ OPEN_BLOCKERS = 0
 
 Claim boundary: development validation of the tested local SSI BODY control/integration path. It does not prove production readiness of the entire SSI system, universal reliability, AGI or consciousness.
 
-## 5. CURRENT RESEARCH SEQUENCE
+## 6. CURRENT RESEARCH SEQUENCE
 
 ```text
 CANONICAL ROBERT
@@ -202,12 +255,17 @@ BODY_FROZEN T0 / 2026-09-05
 -> 6 BODY ISKRA start states / 2026-09-06 / CREATED + START_STATE_VALIDATED
 -> 21-experiment cross-domain matrix / 2026-09-06 / DESIGNED + EXECUTION_INITIATED
 -> predeclared Kilo-run execution methodology / 2026-09-06
--> longitudinal comparison / outcomes pending
--> later competence comparison / consolidation / promotion
+-> 21 result/evidence chains / outcomes pending
+-> post-21 competence inventory / 2026-09-07 / PREDECLARED
+-> function-based deduplication + Champion/Challenger/new-micronetwork classification
+-> evidence-preserving consolidation / results pending
+-> versioned consolidated BODY descendant
+-> 3 new self-selected domains not used in the first 21
+-> before/after transfer comparison
 -> later independent expert challenges
 ```
 
-## 6. CANONICAL V10 MEANING
+## 7. CANONICAL V10 MEANING
 
 V10 is a **stateful predictive competence & recovery router**, not only a fast cache/router.
 
@@ -221,7 +279,7 @@ CURRENT STATE
 -> REUSE / VERIFY / ALTERNATIVE / FULL_FLOW
 ```
 
-## 7. ROLE BOUNDARIES
+## 8. ROLE BOUNDARIES
 
 ```text
 BODY_FROZEN T0
@@ -244,7 +302,7 @@ KILO
 + not an independent external auditor
 ```
 
-## 8. VALIDATION / EVIDENCE HISTORY
+## 9. VALIDATION / EVIDENCE HISTORY
 
 ```text
 TEST 2 -> 600/600 lifecycle/persistence hardening PASS
@@ -257,19 +315,20 @@ TEST 5 -> Stage 12 SUPERSEDED; Stage 13 PASS; 29/29 acceptance; 524/524 total; 0
 2026-09-06 -> 21-experiment cross-domain program predeclared
 2026-09-06 -> Kilo-run execution methodology predeclared
 2026-09-06 -> ROBERT continuity vs experiment reset explicitly documented
+2026-09-07 -> post-21 competence consolidation + three-new-domain transfer phase predeclared before Phase-1 outcomes
 ```
 
-## 9. PUBLICATION BOUNDARY
+## 10. PUBLICATION BOUNDARY
 
 ```text
 YES = sanitized results, counts, initial beliefs/emotions, protocols, execution methodology,
-      QA, lineage, SHA256, claim boundaries
+      post-21 consolidation/novel-transfer protocol, QA, lineage, SHA256, claim boundaries
 NO  = private SSI source code, private file tree, proprietary implementation internals,
       raw ROBERT memory/private skill inventory, raw user data, secrets, local paths,
       implementation-level architecture
 ```
 
-## 10. CLAIM BOUNDARIES
+## 11. CLAIM BOUNDARIES
 
 Public documentation must not state without evidence that SSI:
 
@@ -281,16 +340,21 @@ Public documentation must not state without evidence that SSI:
 - has completed or passed all 21 experiments;
 - has validated physical drone or humanoid deployment;
 - has already demonstrated long-run six-agent behavioral divergence;
-- has already completed later competence consolidation;
+- has already completed or succeeded at later competence consolidation;
+- has already produced a specific number of new skills or micronetworks;
+- has already selected the three post-consolidation novel domains;
+- has already shown that the consolidated BODY outperforms the control;
 - publicly exposes or independently proves every private ROBERT memory/skill item;
 - has been independently externally audited merely because Kilo executed the protocol.
 
-## 11. CURRENT DOCUMENTS
+## 12. CURRENT DOCUMENTS
 
 - [`README.md`](README.md)
 - [`ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md`](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
 - [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
 - [`EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md`](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
+- [`POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md`](POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md)
+- [`POST21_RESEARCH_PHASE_INDEX_20260907.md`](POST21_RESEARCH_PHASE_INDEX_20260907.md)
 - [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
 - [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
 - [`START_HERE.md`](START_HERE.md)
@@ -298,7 +362,7 @@ Public documentation must not state without evidence that SSI:
 - [`GRANT_REVIEWER_FAQ.md`](GRANT_REVIEWER_FAQ.md)
 - [`evidence/README.md`](evidence/README.md)
 
-## 12. FINAL RULE
+## 13. FINAL RULE
 
 ```text
 NO EVIDENCE -> UNKNOWN
@@ -308,6 +372,8 @@ BODY_FROZEN T0 -> NEVER SILENTLY REWRITE THE CONTROL BASELINE
 ROBERT CONTINUITY -> DO NOT CONFUSE WITH EXPERIMENT RESET
 6X START_STATE_VALIDATED -> DO NOT MISLABEL AS LONGITUDINAL SUCCESS
 21 EXPERIMENTS -> PREDECLARED PROGRAM, NOT 21 COMPLETED RESULTS
+POST21 CONSOLIDATION -> PREDECLARED PHASE, NOT A SUCCESS CLAIM
+3 FUTURE DOMAINS -> MUST BE NOVEL RELATIVE TO THE FIRST 21 AND FROZEN BEFORE OUTCOMES
 KILO EXECUTION -> PROCEDURAL AUTOMATION, NOT EXTERNAL INDEPENDENT VALIDATION
 MANUAL_INTERVENTION -> DISCLOSE
 ```
