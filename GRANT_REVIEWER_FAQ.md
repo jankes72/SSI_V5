@@ -2,7 +2,7 @@
 
 **Purpose:** concise answers to likely technical questions from grant reviewers, research groups, sponsors and independent evaluators.  
 **Status:** `BODY_FROZEN T0 PRESERVED / 6X BODY ISKRA START_STATE_VALIDATED / 21-EXPERIMENT PROGRAM DESIGNED / ROBERT CONTINUOUS`  
-**Updated:** `2026-09-06`
+**Updated:** `2026-09-07`
 
 SSI V5 is not presented as proven AGI, consciousness or a production-ready autonomous system.
 
@@ -194,6 +194,30 @@ MANUAL_INTERVENTION
 ```
 
 Kilo is **not** described as an independent external scientific auditor. Its role is procedural: reduce live author steering, execute a predeclared sequence consistently, and preserve a clearer evidence trail for later review.
+
+### 8A. Do all 21 experiments need to PASS for the program to be useful?
+
+No. The program is **outcome-driven**, not designed around obtaining 21 positive results.
+
+Each declared run should be executed and preserved as the result that actually occurs:
+
+```text
+PASS
+FAIL
+INCONCLUSIVE
+```
+
+A failed or inconclusive run can be scientifically useful if it exposes a transfer boundary, false reuse, unnecessary full-flow, an invalid Champion, a recovery weakness, a resource limitation or another failure class that was not visible before.
+
+The important rule is:
+
+```text
+DO NOT RERUN UNTIL PASS
+DO NOT DELETE THE FAILURE
+DO NOT CHANGE THE CRITERIA AFTER SEEING THE RESULT
+```
+
+The result of the completed experimental phase becomes input to the next research stage. One planned larger stage after the 21-run evidence set is **competence consolidation / scaling**: compare what the seven lines actually learned, identify functional duplicates, enrich Champions/Challengers where justified, preserve provenance, and test whether a consolidated descendant scales and transfers better. The procedural implementation and execution of that stage may again be delegated to Kilo under predeclared rules; the scientific question, architecture, acceptance criteria and claim boundary remain author-controlled.
 
 ## 9. What is already established for BODY ISKRA 6X?
 
