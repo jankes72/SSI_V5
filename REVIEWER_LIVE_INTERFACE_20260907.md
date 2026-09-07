@@ -1,13 +1,15 @@
 # SSI V5 — Live Reviewer Interface
 
 **Recorded:** `2026-09-07`  
-**Status:** `LIVE / READ-ONLY REVIEWER OBSERVABILITY`  
+**Status:** `LIVE IMPLEMENTATION / READ-ONLY MODEL DEFINED / EXTERNAL SESSION VALIDATION PENDING`  
 **Scope:** multi-BODY observation and informational questioning  
 **Execution authority:** local ROOT only
 
 SSI V5 includes a shared live reviewer interface intended to demonstrate that the experimental BODY lines exist as running systems and expose observable state during operation.
 
 The interface is a **demonstration and observability layer**, not a remote administration console.
+
+The implementation may be live during development, but the project does not yet claim that the final seven-BODY acceptance gate or a formally witnessed external review session has been completed. The external-session procedure is predeclared separately in [`LIVE_EXTERNAL_REVIEW_SESSION_PROTOCOL_20260907.md`](LIVE_EXTERNAL_REVIEW_SESSION_PROTOCOL_20260907.md).
 
 ## 1. Shared view, separate BODY runtimes
 
@@ -158,7 +160,9 @@ The primary purpose of this interface is evidentiary and demonstrational.
 
 It gives a reviewer the ability to observe multiple SSI BODY lines live, compare their current states and ask the running system about its observable activity without requiring access to private code or the local execution console.
 
-In practical terms, the reviewer can verify that the BODY lines are not merely static descriptions in a repository: they can be observed as separate running systems with changing state, missions, checkpoints and evidence.
+In practical terms, once the final acceptance gate is passed, a reviewer should be able to verify that the BODY lines are not merely static descriptions in a repository: they can be observed as separate running systems with changing state, missions, checkpoints and evidence.
+
+A formally witnessed external session must follow the predeclared session protocol and produce its own evidence. The existence of this interface alone is not equivalent to independent validation.
 
 ## 8. Access publication policy
 
@@ -181,3 +185,5 @@ STATIC DOCUMENTATION
 + REVIEWER QUESTIONS
 -> stronger auditability of the running research system
 ```
+
+The stronger claim of a technically validated, externally witnessed live execution is reserved until the final interface acceptance gate and an actual external session are completed and evidenced.
