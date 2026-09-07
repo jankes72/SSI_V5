@@ -1,11 +1,24 @@
 # SSI V5 — Experiment Execution Methodology
 
 **Recorded:** `2026-09-06`  
-**Status:** `PREDECLARED EXECUTION METHODOLOGY / OUTCOMES NOT YET CLAIMED`  
+**Methodology hardening:** `2026-09-07`  
+**Status:** `PREDECLARED EXECUTION METHODOLOGY / EXPERIMENT EXECUTION GATE NOT YET OPEN / OUTCOMES NOT YET CLAIMED`  
 **Applies to:** `EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`  
 **Public boundary:** methodology and reviewer-safe evidence only; private SSI source code and implementation internals remain unpublished.
 
-This document defines how the three-experiment sequence is intended to be executed for each experimental SSI line. Its purpose is to separate experiment design from experiment execution, reduce live author influence during a run, preserve failures as evidence, and make later result interpretation auditable.
+This document defines how the three-experiment sequence is intended to be executed for each experimental SSI line. Its purpose is to separate infrastructure validation, experiment design and experiment execution; reduce live author influence during a run; preserve failures as evidence; and make later result interpretation auditable.
+
+A critical methodological rule is now explicit:
+
+```text
+NO 21-EXPERIMENT RUN STARTS
+UNTIL
+7/7 SSI BODY LINES PASS THE DECLARED TECHNICAL READINESS GATE
+AND
+THE REVIEWER INTERFACE PASSES ITS DECLARED READ-ONLY / ISOLATION / OBSERVABILITY GATE.
+```
+
+The experiment packages may be prepared before that point, but preparation is not execution and does not create experimental outcomes.
 
 ## 1. Research objective
 
@@ -52,7 +65,8 @@ Before execution, the author prepares the experimental package, including:
 - PASS / FAIL / INCONCLUSIVE rules;
 - evidence requirements;
 - intervention rules;
-- public/private publication boundary.
+- public/private publication boundary;
+- package manifest and integrity references.
 
 Once the run starts, the author is not intended to manually steer SSI toward a preferred answer, choose a solution after seeing an intermediate result, silently repair a failed attempt, or change acceptance criteria because of the observed outcome.
 
@@ -60,17 +74,151 @@ Once the run starts, the author is not intended to manually steer SSI toward a p
 
 **Kilo is the operational executor of the predeclared procedure.**
 
-Kilo is intended to perform the complete run sequence: identify and verify the target SSI BODY artifact, launch SSI BODY through its canonical execution path, run the three experiments, create checkpoints, collect evidence, execute the declared tests, and produce the final execution report.
+Kilo is intended to perform the complete run sequence: verify the frozen experiment package and its integrity reference, identify and verify the target SSI BODY artifact, launch SSI BODY through its canonical execution path, run the three experiments, create checkpoints, collect evidence, execute the declared tests, and produce the final execution report.
 
 Kilo is not presented as an independent external scientific auditor. It is an automation/coding agent used to reduce interactive author steering and to execute the same declared procedure in a repeatable way.
+
+During an actual frozen experimental run, Kilo must not silently rewrite SSI source code, acceptance criteria, experiment prompts or tests in order to obtain a PASS. If a repair is required, the current run is closed with the appropriate outcome, the failure remains preserved, and any repaired execution is a separately versioned retest.
 
 ### SSI BODY / experimental line
 
 SSI BODY, BODY_FROZEN or the corresponding BODY ISKRA descendant is the tested system. The decisions, routing behavior, competence reuse/adaptation, failures and recovery behavior attributed to SSI must come from the executed system state, not from an answer manually supplied by the author during the run.
 
-## 3. Pre-run integrity and T0 capture
+## 3. Pre-experiment technical readiness gate
 
-Before Experiment A begins, Kilo must verify that the intended SSI BODY artifact and experimental line are the ones being executed.
+The 21-experiment research program is not allowed to begin merely because the protocols and packages exist.
+
+Before the first research package is executed, the experimental platform must pass a separate technical readiness phase.
+
+Required readiness scope includes the seven experimental lines:
+
+```text
+0 BODY_FROZEN
+1 ISKRA NICE
+2 ISKRA GUARDIAN
+3 ISKRA JUSTICE
+4 ISKRA EXPLORER
+5 ISKRA PRAGMATIST
+6 ISKRA SKEPTIC
+```
+
+Each line must pass the declared relevant acceptance/integration/runtime checks for the research platform. Where applicable this includes:
+
+- canonical startup path;
+- correct BODY identity;
+- runtime responsiveness;
+- CONTINUUM availability;
+- Micronetwork availability;
+- Router V10 availability;
+- required bridges/IPC path;
+- persistence/checkpoint behavior;
+- isolation from the other BODY lines;
+- local ROOT authority boundary;
+- reviewer-safe observability path;
+- existing declared regression/acceptance tests;
+- no unresolved blocker that would materially compromise experiment interpretation.
+
+The reviewer interface must separately pass its declared safety and integration checks, including read-only behavior and cross-BODY isolation.
+
+The professional claim is not that the seven BODY lines are universally or mathematically "100% correct". The claim required to open the execution gate is narrower:
+
+> All seven experimental BODY lines and the reviewer interface passed the predeclared technical acceptance gates required for the experiment platform, with no unresolved blocker known to invalidate the planned runs.
+
+Until that evidence exists:
+
+```text
+EXPERIMENT_EXECUTION_GATE = CLOSED
+EXPERIMENT_PACKAGE_STATE = PREPARED / NOT YET EXECUTED
+RESEARCH_OUTCOMES = UNKNOWN
+```
+
+A technical readiness failure is an infrastructure result, not automatically a failure of the later cross-domain research hypothesis.
+
+## 4. Frozen and hash-sealed experiment package
+
+Each actual experiment run must begin from a frozen input package.
+
+The package is intended to contain or reference, as appropriate:
+
+- experiment specification;
+- prompts/instructions provided to Kilo;
+- success/failure/inconclusive criteria;
+- permitted tools and boundaries;
+- target BODY identity;
+- required T0 references;
+- run order;
+- evidence schema;
+- intervention rules;
+- final verification procedure;
+- package manifest.
+
+Before execution, the package must receive an integrity digest, preferably `SHA256` or an equivalent cryptographic digest.
+
+The intended provenance chain is:
+
+```text
+FROZEN PACKAGE CONTENT
+-> PACKAGE MANIFEST
+-> SHA256 / INTEGRITY DIGEST
+-> GIT COMMIT / TIMESTAMPED PUBLIC REFERENCE WHERE SAFE
+-> KILO PRE-RUN DIGEST VERIFICATION
+-> EXECUTION
+-> EVIDENCE DIRECTORY
+-> FINAL REPORT
+```
+
+Where public disclosure of the complete private package is inappropriate, the repository may publish the digest, package identifier, sanitized manifest and Git reference while keeping proprietary contents private.
+
+If any input file, prompt, criterion or other frozen package component changes after hashing, the previous package identity is no longer valid for that modified content. A new version must be created and frozen with a new digest before it can be executed.
+
+Therefore:
+
+```text
+CHANGE INPUT
+=> NEW PACKAGE VERSION
+=> NEW HASH
+=> NEW PRE-RUN RECORD
+```
+
+The integrity digest is intended to make post-hoc silent replacement detectable. It does not by itself prove scientific correctness; it proves identity of the frozen artifact against which the later evidence is associated.
+
+## 5. Experiment directory as evidence artifact
+
+The experiment directory is not merely a temporary workspace. It is intended to become the primary evidence artifact for that run.
+
+Where technically available and reviewer-safe, it should preserve:
+
+- package ID and integrity digest;
+- associated Git commit/reference;
+- run ID;
+- execution timestamps;
+- BODY/line identity;
+- relevant tool/model/runtime version references;
+- T0/start-state reference;
+- prompts/instructions actually executed;
+- Kilo procedural log;
+- SSI inputs/outputs at the allowed evidence boundary;
+- checkpoints;
+- route/state summaries;
+- failures and failure signatures;
+- retries and recovery attempts;
+- manual interventions, if any;
+- acceptance-test outputs;
+- final PASS / FAIL / INCONCLUSIVE classification;
+- post-run state/provenance summary.
+
+The design principle is:
+
+```text
+THE RUN PACKAGE + EXECUTION RECORD + EVIDENCE + FINAL REPORT
+= ONE VERSIONED EXPERIMENT ARTIFACT
+```
+
+Evidence should be append-oriented where practical. A later success must not erase an earlier failed attempt.
+
+## 6. Pre-run integrity and T0 capture
+
+Before Experiment A begins, Kilo must verify that the intended SSI BODY artifact and experimental line are the ones being executed and that the experiment package matches the frozen integrity reference.
 
 The run begins from an identified T0 state. Reviewer-safe evidence should record enough information to establish the experimental identity and starting condition without publishing proprietary source code.
 
@@ -90,7 +238,7 @@ The purpose is to make it possible to answer later:
 
 > What was already present before the experiment, and what changed only after execution?
 
-## 4. Frozen origin and experimental descendant
+## 7. Frozen origin and experimental descendant
 
 The common BODY_FROZEN origin remains a preserved comparison point.
 
@@ -108,12 +256,13 @@ EXPERIMENTAL DESCENDANT
 
 At the end of the run, the frozen/original reference should be rechecked where practical so later reviewers can distinguish baseline state from experiment-generated changes.
 
-## 5. Kilo execution sequence
+## 8. Kilo execution sequence
 
 The intended execution sequence is:
 
 ```text
-1. VERIFY EXPERIMENT PACKAGE
+0. VERIFY THAT TECHNICAL READINESS GATE IS OPEN
+1. VERIFY FROZEN EXPERIMENT PACKAGE + MANIFEST + HASH
 2. IDENTIFY CANONICAL SSI BODY START PATH
 3. VERIFY T0 / TARGET LINE
 4. LAUNCH REAL SSI BODY
@@ -126,12 +275,15 @@ The intended execution sequence is:
 11. RECORD EVIDENCE + CHECKPOINT
 12. RUN DECLARED FINAL TESTS
 13. VERIFY BASELINE/LINEAGE INTEGRITY
-14. PRODUCE FINAL REPORT
+14. VERIFY EVIDENCE ARTIFACT COMPLETENESS
+15. PRODUCE FINAL REPORT
 ```
+
+If the pre-run package hash does not match, the research execution must not silently continue as if the package were unchanged.
 
 The exact private commands, source paths and implementation internals are intentionally not part of this public document.
 
-## 6. Experiment A — controlled cross-domain transfer
+## 9. Experiment A — controlled cross-domain transfer
 
 Experiment A uses the drones domain as a controlled research environment.
 
@@ -152,7 +304,7 @@ The research question is:
 
 Experiment A is intentionally the most constrained of the three. A positive outcome is evidence of controlled transfer under the declared conditions, not evidence of unrestricted autonomous discovery.
 
-## 7. Experiment B — guided transfer with reduced scaffolding
+## 10. Experiment B — guided transfer with reduced scaffolding
 
 Experiment B uses the humanoid/robotics domain in a safe simulation or equivalent controlled environment.
 
@@ -173,7 +325,7 @@ The research question is:
 
 > Can the same SSI mechanism be transferred to a substantially different problem class without receiving a complete solution mapping from the author?
 
-## 8. Experiment C — self-selected new domain
+## 11. Experiment C — self-selected new domain
 
 Experiment C is the most open part of the sequence.
 
@@ -202,7 +354,7 @@ The research question is:
 
 > Can the system identify another functionally distinct problem class in which its existing mechanisms may be useful and create a testable transfer attempt without being supplied the expected domain by the author?
 
-## 9. No live answer steering
+## 12. No live answer steering
 
 Once a run begins, the author should not provide mid-run instructions that effectively supply the answer to the tested system.
 
@@ -212,11 +364,12 @@ Examples of prohibited silent steering include:
 - manually replacing the system's chosen strategy with a preferred one;
 - changing thresholds after seeing the result;
 - deleting a failed attempt and retaining only a later successful attempt;
-- manually repairing experiment-specific logic and presenting the same run as uninterrupted autonomy.
+- manually repairing experiment-specific logic and presenting the same run as uninterrupted autonomy;
+- changing a frozen package input without creating a new package version and hash.
 
 If an intervention is necessary, it must be explicitly recorded.
 
-## 10. Manual intervention rule
+## 13. Manual intervention rule
 
 Any intervention that materially changes the natural experiment path should be recorded as:
 
@@ -228,7 +381,9 @@ The evidence should state what changed, why it changed and at what point in the 
 
 A run containing manual intervention may still provide useful engineering evidence, but it must not be represented as a fully autonomous uninterrupted experiment.
 
-## 11. Evidence must preserve failures
+If intervention requires changing the frozen experiment input, the current package/run identity is closed and a separately versioned retest must use a newly frozen package.
+
+## 14. Evidence must preserve failures
 
 Evidence should be produced during execution rather than reconstructed only after a successful final result exists.
 
@@ -251,7 +406,7 @@ The evidence history is intended to be append-oriented.
 
 If attempt 1 fails and attempt 2 succeeds, both attempts remain part of the research record. The successful result must not silently erase the failed path.
 
-## 12. Common measurement contract
+## 15. Common measurement contract
 
 The execution methodology preserves the measurement categories already defined by the 21-experiment program:
 
@@ -279,7 +434,7 @@ COMPETENCE
 
 Not every domain must expose every metric identically, but deviations should be recorded rather than hidden.
 
-## 13. Final outcome classification
+## 16. Final outcome classification
 
 Each experiment should end in one of three primary states:
 
@@ -297,7 +452,9 @@ The evidence is insufficient, ambiguous or compromised enough that PASS or FAIL 
 
 A missing or incomplete evidence chain is not automatically a PASS.
 
-## 14. Why Kilo executes the complete procedure
+An infrastructure malfunction that prevents a fair test may produce `INCONCLUSIVE` rather than being silently interpreted as a research PASS or hidden from the record.
+
+## 17. Why Kilo executes the complete procedure
 
 Using Kilo as the procedural executor is intended to reduce one important source of bias: continuous interactive author steering during the experiment.
 
@@ -305,21 +462,58 @@ The intended division is:
 
 ```text
 AUTHOR
-= designs and freezes the protocol before execution
+= designs and freezes the protocol/package before execution
 
 KILO
-= executes the declared procedure and records the run
+= verifies frozen package integrity
++ executes the declared procedure
++ records the run
 
 SSI BODY
 = produces the tested routing / adaptation behavior
 
 REVIEWER
-= later evaluates what the evidence actually supports
+= observes through a read-only boundary where invited
++ later evaluates what the evidence actually supports
 ```
 
 This arrangement does not make the experiment externally independent. It does make the author/executor boundary explicit and creates a cleaner basis for later independent review.
 
-## 15. Full 21-experiment application
+## 18. External challenge mode
+
+The same methodology can be used for a problem proposed by an external reviewer, company or researcher.
+
+In that mode:
+
+```text
+EXTERNAL PARTY
+= defines or proposes the challenge/problem
+
+AUTHOR + EXTERNAL PARTY WHERE PRACTICAL
+= establish success/failure criteria before execution
+
+AUTHOR
+= packages and freezes the agreed test without changing it to favor SSI
+
+PACKAGE
+= versioned + hash-sealed before execution
+
+KILO
+= verifies and executes the frozen procedure
+
+SSI
+= tested system
+
+REVIEWER
+= may observe reviewer-safe live state through the read-only interface
+
+RESULT
+= PASS / FAIL / INCONCLUSIVE with failures retained
+```
+
+A challenge designed outside the SSI project is especially valuable because it reduces the risk that the problem was selected only around known system strengths.
+
+## 19. Full 21-experiment application
 
 The same three-experiment execution methodology is intended to be applied consistently across all seven experimental lines:
 
@@ -339,9 +533,29 @@ Therefore the methodology covers:
 7 experimental lines x 3 experiments = 21 predeclared runs
 ```
 
-Each line should retain its own start-state identity, evidence chain and outcome classification.
+Each line should retain its own start-state identity, package hash/reference, evidence chain and outcome classification.
 
-## 16. Scientific claim boundary
+## 20. Current execution-state boundary
+
+As of this methodology hardening entry, the experiment design and package methodology are prepared, but the proper 21-run research execution is not to be represented as started until the technical readiness gate is satisfied.
+
+The current intended sequence is:
+
+```text
+FINISH BODY / ISKRA / REVIEWER-INTERFACE INTEGRATION
+-> RUN DECLARED 7/7 TECHNICAL READINESS VALIDATION
+-> RESOLVE BLOCKERS IF ANY
+-> RE-RUN READINESS VALIDATION
+-> OPEN EXPERIMENT EXECUTION GATE ONLY AFTER ACCEPTANCE
+-> FREEZE FINAL EXPERIMENT PACKAGE VERSION
+-> RECORD MANIFEST + HASH + GIT REFERENCE
+-> KILO VERIFIES PACKAGE
+-> BEGIN 21 RESEARCH EXPERIMENTS
+```
+
+This distinction is deliberate. It prevents unfinished platform integration from being confused with the scientific outcome of the later experiment program.
+
+## 21. Scientific claim boundary
 
 This document defines the intended methodology. It does not claim that all experiments are already complete or successful.
 
@@ -359,9 +573,12 @@ A successful run may support claims such as controlled cross-domain transfer und
 The intended rule remains:
 
 ```text
+READINESS GATE NOT PASSED -> DO NOT START RESEARCH RUN
+PACKAGE HASH MISMATCH -> DO NOT SILENTLY CONTINUE
 NO EVIDENCE -> UNKNOWN
 FAILURE -> PRESERVE
 MANUAL INTERVENTION -> DISCLOSE
+INPUT CHANGE -> NEW PACKAGE VERSION + NEW HASH
 AMBIGUOUS EVIDENCE -> INCONCLUSIVE
 VERIFIED RESULT -> CLAIM ONLY WHAT THE RESULT SUPPORTS
 ```
