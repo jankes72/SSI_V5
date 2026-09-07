@@ -11,6 +11,7 @@ CURRENT EXPERIMENTAL STATE = 6X BODY ISKRA / START_STATE_VALIDATED / 2026-09-06
 PREDECLARED CROSS-DOMAIN PROGRAM = 7 lines x 3 domains = 21 experiments
 PROGRAM STATUS = DESIGNED / EXECUTION_INITIATED / OUTCOMES_NOT_YET_CLAIMED
 EXECUTION METHODOLOGY = PREDECLARED / KILO PROCEDURAL EXECUTOR
+POST-21 RESEARCH PHASE = PREDECLARED / COMPETENCE CONSOLIDATION -> 3 NEW DOMAINS / RESULTS UNKNOWN
 LIVE REVIEWER INTERFACE = AVAILABLE / READ-ONLY OBSERVABILITY
 CANONICAL ROBERT = CONTINUOUS ENGINEERING LINE / NOT RESET BY EXPERIMENT CLEANING
 CURRENT DEVELOPMENT TEAM = 1 person / independent project
@@ -26,6 +27,8 @@ The six BODY ISKRA descendants already exist and have validated start states. Th
 
 The execution methodology is also predeclared. The author prepares/freezes the protocol, **Kilo executes the declared procedure**, and SSI BODY is the tested system. Kilo is used to reduce live author steering and preserve checkpoints, failures and evidence; it is not presented as an independent external scientific auditor.
 
+The **post-21 consolidation and novel-transfer phase is now also predeclared before the 21-result set exists**. After Phase 1, SSI is intended to inventory the competence produced by all seven lines, identify functional equivalence even when dynamically generated micronetwork names differ, enrich existing Champions/Challengers where appropriate, create genuinely new micronetworks only when functionally novel, preserve provenance, build a versioned consolidated BODY descendant and then test that descendant on three new self-selected domains that were not used anywhere in the original 21 experiments. No success or skill-count result is claimed in advance.
+
 SSI V5 also includes a **live read-only reviewer interface** that can present the current sanitized state of BODY_FROZEN and the six BODY ISKRA lines in one shared view. Reviewers can observe runtime/mission/CONTINUUM/LAB/evidence state and ask informational questions about what a selected BODY is doing, while local ROOT execution remains separate and private. The live access address is not published in this repository at this stage.
 
 SSI V5 is currently developed independently by Paweł Jankiewicz (`jankes72`) as a one-person project. The compute described in the public infrastructure record is the author's own equipment or equipment being personally acquired by the author; it is not presented as university, school, company or grant-funded infrastructure.
@@ -34,6 +37,8 @@ Public entry points:
 
 - [EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
 - [EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
+- [POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md](POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md)
+- [POST21_RESEARCH_PHASE_INDEX_20260907.md](POST21_RESEARCH_PHASE_INDEX_20260907.md)
 - [REVIEWER_LIVE_INTERFACE_20260907.md](REVIEWER_LIVE_INTERFACE_20260907.md)
 - [ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
 - [EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md](EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md)
@@ -110,6 +115,71 @@ SSI BODY / EXPERIMENTAL LINE
 ```
 
 Any material human correction during a run must be disclosed as `MANUAL_INTERVENTION`. The detailed rule set is in [EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md).
+
+## Predeclared post-21 phase — competence consolidation + three new domains
+
+The 21 experiments are **Phase 1**, not the endpoint.
+
+The already-recorded continuation is:
+
+```text
+21 EXPERIMENTS
+-> 21 evidence/competence histories
+-> inventory actual skills and micronetwork changes
+-> identify functional competence independent of dynamic names
+
+IF SAME AS EXISTING CHAMPION
+-> enrich Champion with compatible non-duplicate evidence/skills
+-> validate/regress
+
+IF SAME AS EXISTING CHALLENGER
+-> enrich Challenger
+-> compare again against Champion
+-> promote only if evidence supports promotion
+
+IF DIFFERENT NAME BUT SAME FUNCTION
+-> do not count it as a fake new domain
+-> merge/alias where appropriate
+-> preserve both discovery provenances
+
+IF GENUINELY NEW FUNCTION
+-> create new micronetwork lifecycle
+-> Candidate / Challenger / Champion gates still apply
+
+THEN
+-> preserve BODY_FROZEN T0 as historical control
+-> build a versioned consolidated BODY descendant
+-> regression / validation
+-> consolidated BODY selects 3 new domains
+-> none may repeat DRONES, HUMANOID or any Phase-1 Experiment-C domain
+-> freeze those 3 selections before execution outcomes are known
+-> compare control/pre-consolidation vs consolidated transfer
+```
+
+The post-21 report is expected to publish actual measured aggregate counts such as:
+
+```text
+TOTAL_COMPETENCE_ITEMS = X
+UNIQUE_FUNCTIONAL_SKILLS = Y
+FUNCTIONALLY_EQUIVALENT_DUPLICATES = Z
+EXISTING_CHAMPIONS_ENRICHED = A
+EXISTING_CHALLENGERS_ENRICHED = B
+CHALLENGER_TO_CHAMPION_PROMOTIONS = C
+NEW_MICRONETWORKS_CREATED = D
+ITEMS_REJECTED_OR_NOT_PROMOTED = E
+TOTAL_MICRONETWORKS_BEFORE = F
+TOTAL_MICRONETWORKS_AFTER = G
+```
+
+All of these values are `UNKNOWN` today by design.
+
+The research question for the later three-domain test is stronger than the original transfer question:
+
+> Does a body equipped with consolidated, provenance-preserving competence from multiple independent experimental histories transfer more effectively to genuinely new domains than the original pre-consolidation state?
+
+Primary comparison metrics include task outcome, time-to-solution, full-flow rate, reuse, verify-adapt, false reuse, attempt count, repeated-failure suppression, recovery, competence creation and compute/model cost where available.
+
+Canonical protocol: [POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md](POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md).
 
 ## Live reviewer interface — read-only demonstration
 
@@ -225,6 +295,7 @@ PUBLIC
 + measured outcomes
 + predeclared experiment protocols
 + predeclared execution methodology / operator boundary
++ predeclared post-21 consolidation / novel-transfer protocol
 + live reviewer-interface capability and safety boundary
 + infrastructure/ownership context
 + canonical-vs-experiment lineage distinction
@@ -262,7 +333,7 @@ OPEN_BLOCKERS = 0
 FINAL_CONVERGENCE_PASS = TRUE
 ```
 
-TEST 5 remains the latest closed public validation test. BODY ISKRA 6X is the newest recorded experimental start state, and the 21-experiment program is a prospective execution program, not a replacement label for TEST 5.
+TEST 5 remains the latest closed public validation test. BODY ISKRA 6X is the newest recorded experimental start state, the 21-experiment program is prospective, and the post-21 consolidation/three-new-domain phase is separately predeclared rather than claimed as completed.
 
 ## Research sequence from the frozen origin
 
@@ -297,6 +368,18 @@ BODY_FROZEN T0 / PRE-ISKRA / immutable control
 -> Kilo-run execution methodology predeclared
 
 2026-09-07
+post-21 research phase predeclared before Phase-1 outcomes
+-> competence inventory
+-> function-based equivalence / duplicate analysis
+-> Champion enrichment
+-> Challenger enrichment + evidence-gated promotion
+-> genuinely new micronetwork creation
+-> provenance-preserving consolidation
+-> versioned consolidated BODY descendant
+-> 3 new self-selected domains not used in Phase 1
+-> control vs consolidated comparison
+
+2026-09-07
 live reviewer interface documented
 -> shared multi-BODY observability
 -> informational demo_query
@@ -305,9 +388,10 @@ live reviewer interface documented
 
 NEXT
 -> execute and record 21 experiment outcomes
--> compare transfer, latency, false reuse, recovery and competence trajectories
--> later evidence-based consolidation / promotion
--> later validated-skill integration into upgraded descendants and/or ROBERT
+-> count actual competence/micronetwork changes
+-> execute predeclared post-21 consolidation protocol
+-> freeze and run the 3 new-domain transfer tests
+-> report before/after effect
 -> later independent expert challenges
 ```
 
@@ -390,6 +474,7 @@ ROBERT
 2026-09-06  Kilo-run execution methodology predeclared
 2026-09-06  canonical ROBERT continuity vs experimental reset explicitly documented
 2026-09-06  independent/solo project and author-owned compute context recorded
+2026-09-07  post-21 competence consolidation + three-new-domain transfer phase predeclared before Phase-1 outcomes
 2026-09-07  live read-only reviewer interface documented; operational access address withheld
 ```
 
@@ -409,6 +494,9 @@ SSI V5 does **not** currently claim that:
 - Kilo execution constitutes independent external validation;
 - the reviewer interface proves correctness of every private component;
 - later competence consolidation has already succeeded;
+- a specific number of post-21 skills/micronetworks is already known;
+- the three future novel domains are already known;
+- the consolidated BODY has already outperformed the control;
 - future economic performance is guaranteed.
 
 Preferred public statuses include:
@@ -419,6 +507,7 @@ DEVELOPMENT_VALIDATED
 START_STATE_VALIDATED
 PROGRAM_DESIGNED
 EXECUTION_INITIATED
+PREDECLARED
 T0_BASELINE_RECORDED
 SUPERSEDED
 HISTORICAL_EVIDENCE
@@ -431,6 +520,8 @@ UNKNOWN
 
 - **21-experiment protocol:** [EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
 - **Execution methodology / Kilo operator boundary:** [EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
+- **Post-21 consolidation + 3-new-domain protocol:** [POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md](POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md)
+- **Post-21 reviewer index:** [POST21_RESEARCH_PHASE_INDEX_20260907.md](POST21_RESEARCH_PHASE_INDEX_20260907.md)
 - **Live reviewer interface:** [REVIEWER_LIVE_INTERFACE_20260907.md](REVIEWER_LIVE_INTERFACE_20260907.md)
 - **ROBERT continuity vs experiment reset:** [ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
 - **Infrastructure / ownership:** [EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md](EXPERIMENTAL_INFRASTRUCTURE_AND_PROJECT_OWNERSHIP_20260906.md)
