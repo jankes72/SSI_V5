@@ -1,33 +1,31 @@
-# SSI V5 — canonical history corrections — 2026-08-29
+# SSI V5 — Canonical History Corrections — 2026-08-29
 
 **Status:** `DOCUMENTATION CORRECTION / ROOT_ATTESTED + SOURCE-BACKED`
 
-Ten dokument zapisuje korekty interpretacyjne wymagane po porównaniu obecnego publicznego README z wcześniejszą dokumentacją SSI.
+This document records interpretation corrections required after comparing the current public README with earlier SSI documentation.
 
-## 1. `SELF-DEVELOPMENT = LATER` nie oznacza, że idea powstanie dopiero później
+## 1. `SELF-DEVELOPMENT = LATER` does not mean the idea will be invented later
 
-W obecnym README roadmapa zawiera pozycję w rodzaju:
+The current roadmap may contain entries such as:
 
 ```text
 RESEARCH RADAR / CODE FUSION / SELF-DEVELOPMENT = LATER
 ```
 
-Bez dodatkowego kontekstu może to zostać odczytane błędnie.
+Without context this can be misread. Earlier SSI documentation already described:
 
-Wcześniejsza dokumentacja SSI już opisuje:
-
-- kontrolowany self-development;
+- controlled self-development;
 - `Autonomous Evolution Fabric`;
 - `CEPA — Continuum Engineering Pattern Architect`;
 - Director-originated hypotheses;
-- obserwację zewnętrznego świata technologii;
+- observation of the external technology landscape;
 - research / brainstorm / capability fabric;
-- engineering przez Hermes/CONTINUUM;
+- engineering through Hermes/CONTINUUM;
 - test/evidence/outcome;
 - `ADOPT / REJECT / REVISE`;
-- możliwość powstawania nowych capability i inicjatyw self-development.
+- creation of new capabilities and self-development initiatives.
 
-Dlatego prawidłowa interpretacja roadmapy jest:
+Correct interpretation:
 
 ```text
 LATER
@@ -40,33 +38,31 @@ LATER
 FIRST INVENTION OF SELF-DEVELOPMENT
 ```
 
-## 2. Director poprzedza ROBERTA
+## 2. Director predates ROBERT
 
-Director istniał przed ROBERTEM. ROBERT został później utworzony jako kontrolowana migracja/poligon i wykonawcze ciało do testowania oraz rozdzielania mechanizmów.
+Director existed before ROBERT. ROBERT was created later as a controlled migration/testbed and execution body used to separate and harden mechanisms.
 
-Obecna kolejność:
+The current sequence:
 
 ```text
 ROBERT -> ORGANISM CORE -> REBUILT DIRECTOR BODY
 ```
 
-jest kolejnością migracji technicznej, a nie historycznego powstania projektu.
+is a technical migration sequence, not the historical creation order.
 
-## 3. ROBERT nie jest wyłącznie poligonem
+## 3. ROBERT is not only a testbed
 
-ROBERT pełni również rolę wykonawczą i jest związany z warstwą:
+ROBERT also has an execution role linked to:
 
 ```text
 EYES / HANDS / BROWSER / DESKTOP / TOOLS
 ```
 
-Dzięki temu może stanowić kontrolowany interfejs wykonawczy dla researchu, testowania narzędzi i pracy z zewnętrznym środowiskiem komputerowym.
+It can therefore act as a controlled execution interface for research, tool testing and interaction with the external computer environment.
 
-## 4. Organism Core zachowuje wcześniejsze mechanizmy SSI
+## 4. Organism Core preserves earlier SSI mechanisms
 
-Organism Core nie jest próbą zastąpienia starszego SSI nowym projektem.
-
-Jest próbą wyciągnięcia neutralnych, wielokrotnego użycia mechanizmów z wcześniejszego SSI/Directora/ROBERTA, tak aby można było zbudować na nich:
+Organism Core is not an attempt to replace older SSI with a new project. It extracts reusable neutral mechanisms from earlier SSI/Director/ROBERT so they can support:
 
 ```text
 ROBERT BODY
@@ -74,25 +70,25 @@ DIRECTOR BODY
 AGENT BODY
 ```
 
-bez kopiowania prywatnych historii między jednostkami.
+without copying private histories between entities.
 
-## 5. Publiczna historia developmentu
+## 5. Public development history
 
-Publiczny Git dokumentuje formalizację architektury MSDI/SSI od root commit z 2026-07-19 i publicznego repo od 2026-07-27.
+Public Git history documents formalization of MSDI/SSI architecture from the root commit of 2026-07-19 and the public repository from 2026-07-27.
 
-Nie należy z tego wnioskować, że wszystkie wcześniejsze dane, Football World, modele lub doświadczenie domenowe rozpoczęły się wtedy.
+This must not be interpreted as proof that all earlier data, Football World work, models or domain experience began at that time.
 
-Jednocześnie od okresu formalizacji SSI publiczna historia pokazuje szybkie kolejne warstwy projektu: SSI Core, Data World, V2, SSI V5, CONTINUUM, SSI_V5_MASTER, Directora, naprawy E2E, ROBERTA, hardening i obecny Organism Core.
+From the formalization period onward, public history shows rapid successive layers: SSI Core, Data World, V2, SSI V5, CONTINUUM, SSI_V5_MASTER, Director, E2E repairs, ROBERT, hardening and the current Organism Core work.
 
-## 6. Nie wszystkie źródłowe idee są autorstwa jednej osoby
+## 6. Not every source idea belongs to one person
 
-Paweł Jankiewicz jest autorem nadrzędnej architektury SSI i `PROGRAMMER_ROOT`, ale dokumentacja musi zachować zewnętrzne/rodzinne lineage tam, gdzie występuje.
+Paweł Jankiewicz is the author of the overarching SSI architecture and `PROGRAMMER_ROOT`, but documentation must preserve external/family lineage where relevant.
 
-W szczególności źródłowa koncepcja Moralnej AI / późniejszej Iskry została przypisana wcześniejszemu projektowi jego brata. Adaptacja do SSI — dynamiczny świat 10x10, Agent Body, Experience, mikrosieci, relacje społeczne i Director meta-observation — jest oddzielnym etapem lineage.
+In particular, the source Moral AI idea that later informed Iskra is attributed to an earlier project by the author's brother. The SSI adaptation — including a dynamic 10x10 world, Agent Body, Experience, micronetworks, social relationships and Director meta-observation — is a separate lineage stage.
 
-## 7. Zasada obowiązująca dalsze README
+## 7. Rule for future documentation
 
-Każdy przyszły opis powinien rozdzielać:
+Future descriptions should distinguish:
 
 ```text
 HISTORICAL ORIGIN
@@ -102,9 +98,9 @@ FUTURE RE-INTEGRATION
 FUTURE HYPOTHESIS
 ```
 
-Nie wolno używać kolejności aktualnego refactoringu jako zastępstwa dla rzeczywistej historii powstawania SSI.
+The current refactoring order must not be used as a substitute for the real historical development order.
 
-Powiązane dokumenty:
+Related documents:
 
 - `evidence/PROJECT_GENESIS_AND_EVOLUTION.md`
 - `evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md`
