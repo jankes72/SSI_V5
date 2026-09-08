@@ -1,16 +1,16 @@
-# SSI V5 — Iskra, mikrosieci Agentów i dynamika społeczna
+# SSI V5 — Iskra, Agent Micronetworks and Social Dynamics
 
 **Status:** `ARCHITECTURE / RESEARCH HYPOTHESIS / ROOT_ATTESTED`  
-**Data zapisu:** `2026-08-29`  
-**Autor architektury:** Paweł Jankiewicz (`PROGRAMMER_ROOT`)
+**Recorded:** `2026-08-29`  
+**Architecture author:** Paweł Jankiewicz (`PROGRAMMER_ROOT`)
 
-> Iskra nie jest zewnętrznym komentarzem filozoficznym dodawanym po decyzji. W Agent Body ma stanowić trwałą warstwę wartościowania, która współuczestniczy w ocenie Experience, budowie przekonań, rozwoju mikrosieci oraz długoterminowej dynamice społecznej Agenta.
+> Iskra is not an external philosophical comment added after a decision. In Agent Body it is intended to be a persistent value-evaluation layer that participates in Experience evaluation, belief formation, micronetwork development and long-term Agent social dynamics.
 
 ---
 
-## 1. Agent nie jest tylko Organism Core + pamięć
+## 1. An Agent is more than Organism Core + memory
 
-Docelowy Agent należy rozumieć jako:
+The intended Agent model is:
 
 ```text
 SSI ORGANISM CORE
@@ -30,15 +30,15 @@ ISKRA / MORAL AI VALUE LAYER
 INDIVIDUAL AGENT
 ```
 
-Iskra nie zastępuje modelu ani mikrosieci. Jest dodatkową warstwą oceny, która może wpływać na to, jakie Experience Agent uznaje za ważne, jak interpretuje konsekwencje oraz jakie wzorce utrwala lub odrzuca.
+Iskra does not replace the model or micronetworks. It is an additional evaluation layer that may influence which Experiences the Agent treats as important, how it interprets consequences, and which patterns it reinforces or rejects.
 
 ---
 
-## 2. Iskra jest powiązana z mikrosieciami
+## 2. Iskra is linked to micronetwork development
 
-Mikrosieci Agenta nie powinny rozwijać się wyłącznie z technicznej skuteczności działania.
+An Agent's micronetworks should not evolve solely from technical task effectiveness.
 
-Docelowy przepływ może wyglądać tak:
+An intended flow is:
 
 ```text
 EVENT / SOCIAL EVENT / WORLD EVENT
@@ -68,7 +68,7 @@ MICRONETWORK UPDATE / CANDIDATE / PATTERN
 FUTURE BEHAVIOR
 ```
 
-Oznacza to, że dwa Agenty posiadające ten sam bazowy mechanizm uczenia mogą po czasie zbudować inne lokalne kompetencje i inne wzorce zachowania, ponieważ ich Experience zostały ocenione w innym kontekście wartości.
+Two Agents with the same base learning mechanism may therefore develop different local competence and behavior patterns over time because their Experience is evaluated in different value contexts.
 
 ```text
 SAME EVENT
@@ -80,13 +80,13 @@ POTENTIALLY DIFFERENT EXPERIENCE MEANING
 DIFFERENT MICRONETWORK TRAJECTORY
 ```
 
-To jest jedna z kluczowych hipotez przyszłego eksperymentu, a nie udowodniony obecnie rezultat.
+This is a research hypothesis, not a currently demonstrated result.
 
 ---
 
-## 3. Warstwa Moralnej AI
+## 3. Moral AI layer
 
-Iskra ma tworzyć dodatkową warstwę pomiędzy czysto instrumentalnym wyborem a ostateczną decyzją Agenta.
+Iskra is intended to add a layer between purely instrumental choice and the Agent's final decision.
 
 ```text
 POSSIBLE ACTIONS
@@ -100,42 +100,42 @@ POSSIBLE ACTIONS
 -> DECISION
 ```
 
-Nie oznacza to, że Iskra ma zawsze „wygrać” nad wszystkimi pozostałymi kryteriami. Jej rola, waga i interakcje muszą być jawne, wersjonowane i obserwowalne w evidence.
+This does not mean Iskra should always override all other criteria. Its role, weight and interactions must be explicit, versioned and observable in evidence.
 
 ---
 
-## 4. Społeczeństwo sześciu Agentów
+## 4. Society of six Agents
 
-Eksperyment nie dotyczy sześciu izolowanych modeli wykonujących ten sam benchmark.
+The research question is not simply six isolated models running the same benchmark.
 
-Agenci mają tworzyć populację, w której pojawiają się kolejne realne dla świata eksperymentalnego interakcje:
+The Agents are intended to form a population in which the experimental world may produce interactions such as:
 
-- współpraca;
-- pomoc;
-- wymiana wiedzy;
-- krytyka;
-- konkurencja;
-- odmowa współpracy;
-- wzrost lub spadek zaufania;
-- preferowanie określonych partnerów;
-- dystansowanie się od innych Agentów;
-- tworzenie koalicji;
-- konflikty interesów;
-- wspólne strategie przeciwko konkurencyjnej strategii lub grupie;
-- próby przekonywania innych;
-- częściowe przejmowanie cudzych pomysłów;
-- obrona własnej metodologii;
-- zmiana relacji po sukcesach, porażkach lub zdradzie oczekiwań.
+- cooperation;
+- help;
+- knowledge exchange;
+- criticism;
+- competition;
+- refusal to cooperate;
+- increases or decreases in trust;
+- preference for specific partners;
+- distancing from other Agents;
+- coalition formation;
+- conflicts of interest;
+- shared strategies against a competing strategy or group;
+- attempts to persuade others;
+- partial adoption of another Agent's ideas;
+- defense of one's own methodology;
+- relationship changes after success, failure or violated expectations.
 
-Nie zakładamy z góry, że wszystkie te zjawiska muszą wystąpić. Są to klasy zachowań, których pojawienie się lub brak ma być obserwowany zamiast ręcznie wymuszany.
+The design does not assume that all these phenomena must appear. They are behavior classes to observe rather than manually script.
 
 ---
 
-## 5. Relacje mają mieć własne Experience
+## 5. Relationships should have their own Experience
 
-Relacja `Agent A <-> Agent B` nie powinna być pojedynczą etykietą typu FRIEND/ENEMY.
+A relationship `Agent A <-> Agent B` should not be reduced to a single FRIEND/ENEMY label.
 
-Powinna mieć własną historię evidence:
+It should have evidence history:
 
 ```text
 INTERACTION
@@ -148,29 +148,29 @@ INTERACTION
 -> FUTURE RELATIONSHIP POLICY
 ```
 
-Przykładowo Agent może z czasem nauczyć się, że:
+An Agent might, for example, learn over time that:
 
 ```text
-Agent B jest dobrym partnerem badawczym w domenie X
-ale nie jest wiarygodny w domenie Y
+Agent B is a good research partner in domain X
+but is unreliable in domain Y
 
-Agent C często wykorzystuje cudze odkrycia
-ale daje wartościowy cross-critique
+Agent C often uses discoveries made by others
+but provides valuable cross-critique
 
-Agent D ma sprzeczne priorytety
-więc współpraca z nim zwiększa koszt lub ryzyko
+Agent D has conflicting priorities
+so cooperation increases cost or risk
 ```
 
-Takie przekonania powinny wynikać z wersjonowanego Experience i evidence, a nie z ręcznie wpisanej „osobowości”.
+Such beliefs should arise from versioned Experience and evidence, not from a manually authored "personality" label.
 
 ---
 
-## 6. Iskra może zmieniać interpretację tej samej relacji
+## 6. Iskra may change interpretation of the same relationship
 
-To samo zachowanie innego Agenta może zostać ocenione inaczej przez różne Iskry.
+The same behavior by another Agent may be evaluated differently by different Iskra configurations.
 
 ```text
-TEN SAM SOCIAL EVENT
+SAME SOCIAL EVENT
         |
         +-------------------------+
         |                         |
@@ -178,41 +178,42 @@ TEN SAM SOCIAL EVENT
 AGENT A / ISKRA A           AGENT B / ISKRA B
         |                         |
         v                         v
-inna ocena konsekwencji      inna ocena konsekwencji
+different consequence       different consequence
+interpretation               interpretation
         |                         |
         v                         v
-inne Experience             inne Experience
+different Experience        different Experience
         |                         |
         v                         v
-inne mikrosieci             inne mikrosieci
+different micronetworks     different micronetworks
         |                         |
         v                         v
-inna przyszła relacja       inna przyszła relacja
+different future relation   different future relation
 ```
 
-To daje możliwość badania, czy początkowe różnice value priors prowadzą po długim czasie do stabilnie różnych struktur społecznych.
+This allows future experiments to ask whether different initial value priors lead to stable differences in social structure over long time horizons.
 
 ---
 
-## 7. Director obserwuje nie tylko wynik, ale genezę zachowania
+## 7. Director observes not only the result but the origin of behavior
 
-Director jest meta-obserwatorem całej populacji.
+Director is intended to act as a meta-observer of the population.
 
-W eksperymencie powinien móc analizować m.in.:
+The experiment may analyze:
 
-- prywatne plany Agentów;
-- hipotezy;
-- decyzje;
+- private Agent plans;
+- hypotheses;
+- decisions;
 - Experience;
 - Iskra-conditioned evaluation signals;
-- rozwój mikrosieci;
-- historię zaufania i konfliktów;
-- przepływ wiedzy pomiędzy Agentami;
-- powstawanie koalicji lub trwałych podziałów;
-- wpływ sukcesów i porażek na relacje;
-- niezależne odkrycia vs przejęcie pomysłu od innego Agenta;
-- zmianę metodologii po krytyce społecznej;
-- zależność między value prior, historią i późniejszą polityką działania.
+- micronetwork development;
+- trust/conflict history;
+- knowledge flow between Agents;
+- coalition formation or durable division;
+- effect of success and failure on relationships;
+- independent discovery versus adoption from another Agent;
+- methodology changes after social criticism;
+- relationships between value prior, history and later policy.
 
 ```text
 ISKRA
@@ -232,21 +233,21 @@ AGENT DECISION TRAJECTORY
 DIRECTOR META-OBSERVATION
 ```
 
-Stan prywatny jest prywatny względem peer Agentów zgodnie z polityką świata, ale pozostaje audytowalny przez Directora w ramach system authority i eksperymentu.
+Private state may be private from peer Agents under world policy while remaining auditable by Director under the experiment's authority model.
 
 ---
 
-## 8. Director nie powinien ręcznie pisać społeczeństwa
+## 8. Director should not manually script society
 
-Celem nie jest stworzenie scenariusza, w którym Programmer Root albo Director z góry wpisuje:
+The goal is not to have Programmer Root or Director predefine relationships such as:
 
 ```text
-Agent 1 lubi Agent 2
-Agent 3 nienawidzi Agent 4
-Agent 5 tworzy koalicję z Agent 6
+Agent 1 likes Agent 2
+Agent 3 hates Agent 4
+Agent 5 forms a coalition with Agent 6
 ```
 
-Interesujące jest dopiero to, co **wyłoni się z Experience**.
+The interesting question is what **emerges from Experience**.
 
 ```text
 INITIAL CONDITIONS
@@ -258,15 +259,15 @@ INITIAL CONDITIONS
 -> EMERGENT RELATIONSHIP PATTERNS
 ```
 
-Director obserwuje, porównuje i audytuje. Nie powinien fałszować emergence przez ręczne nadawanie relacji, jeśli konkretny eksperyment nie wymaga kontrolowanego warunku początkowego.
+Director observes, compares and audits. It should not manufacture emergence by assigning relationships unless a specific experiment explicitly requires controlled initial conditions.
 
 ---
 
-## 9. Współpraca i działanie przeciwko innym
+## 9. Cooperation and strategies against others
 
-W granicach świata eksperymentalnego Agent może podejmować strategie społeczne, jeżeli są dopuszczone przez rules i Constitution świata.
+Within the boundaries of the experimental world, an Agent may use social strategies allowed by the world's rules and Constitution.
 
-Może to obejmować np.:
+Examples may include:
 
 ```text
 COOPERATE
@@ -282,7 +283,7 @@ COUNTER ANOTHER STRATEGY
 PROTECT OWN RESOURCES
 ```
 
-Kluczowe jest rozdzielenie:
+The key separation is:
 
 ```text
 SOCIAL STRATEGY INSIDE EXPERIMENTAL WORLD
@@ -290,27 +291,27 @@ SOCIAL STRATEGY INSIDE EXPERIMENTAL WORLD
 UNCONTROLLED REAL-WORLD AUTHORITY
 ```
 
-Agenci badają, symulują i uczą się. Real-world execution pozostaje poza ich automatyczną authority.
+Agents research, simulate and learn. Real-world execution remains outside their automatic authority.
 
 ---
 
-## 10. Połączenie z Football World
+## 10. Connection to Football World
 
-Football World daje naturalne środowisko do badania pierwszych relacji społecznych bez konieczności nadawania Agentom realnej władzy.
+Football World provides a natural environment for studying early social relationships without giving Agents real-world authority.
 
-Agenci mogą:
+Agents may:
 
-- niezależnie budować modele;
-- porównywać metodologie;
-- publikować lub ukrywać część wiedzy zgodnie z polityką eksperymentu;
-- krytykować predykcje innych;
-- łączyć się w zespoły badawcze;
-- konkurować o ranking;
-- tworzyć wspólne symulowane strategie;
-- odrzucać współpracę;
-- zmieniać relacje po zweryfikowanych outcomes.
+- independently build models;
+- compare methodologies;
+- publish or withhold parts of knowledge according to experiment policy;
+- criticize other Agents' predictions;
+- form research teams;
+- compete for ranking;
+- create shared simulated strategies;
+- refuse cooperation;
+- change relationships after verified outcomes.
 
-Director może następnie sprawdzać nie tylko accuracy, lecz również:
+Director can then examine not only accuracy but questions such as:
 
 ```text
 WHO DISCOVERED WHAT?
@@ -323,26 +324,26 @@ WHICH VALUE PRIORS LED TO ROBUST OR FRAGILE STRATEGIES?
 
 ---
 
-## 11. Najważniejsza hipoteza społeczna
+## 11. Central social hypothesis
 
-Jedno z centralnych pytań przyszłego eksperymentu brzmi:
+One core future research question is:
 
-> Czy sześć Agentów posiadających ten sam mechaniczny substrate, lecz różne jawne Iskry oraz niezależne prywatne i społeczne Experience, rozwinie w długim czasie mierzalnie różne mikrosieci, metodologie, polityki współpracy, struktury zaufania i strategie społeczne?
+> Will six Agents sharing the same mechanical substrate but having different explicit Iskra value priors and independent private/social Experience develop measurably different micronetworks, methodologies, cooperation policies, trust structures and social strategies over time?
 
-Drugie pytanie jest jeszcze ważniejsze:
+A second question is:
 
-> Czy z tych różnic powstaną użyteczne strategie i rozwiązania, których Programmer Root nie zaprojektował bezpośrednio i których nie dałoby się wyjaśnić jedynie losową wariancją pojedynczego modelu?
+> Will those differences produce useful strategies or solutions that Programmer Root did not directly design and that cannot be explained only by random variation from a single model?
 
-To pozostaje hipotezą do prospective testowania, nie deklarowanym obecnie wynikiem.
+These remain prospective hypotheses, not claimed current outcomes.
 
 ---
 
-## 12. Fundamentalne granice
+## 12. Fundamental boundaries
 
 ```text
-ISKRA != ŚWIADOMOŚĆ
-ISKRA != SZTYWNA OSOBOWOŚĆ
-ISKRA != GOTOWA RELACJA SPOŁECZNA
+ISKRA != CONSCIOUSNESS
+ISKRA != FIXED PERSONALITY
+ISKRA != PREBUILT SOCIAL RELATIONSHIP
 
 ISKRA + EXPERIENCE
 MAY CONDITION
@@ -361,4 +362,4 @@ SOCIAL SIMULATION
 REAL-WORLD EXECUTION
 ```
 
-Eksperyment ma obserwować rozwój tych różnic, a nie zakładać z góry, że muszą się pojawić.
+The experiment is intended to observe whether differences develop, not to assume that they must.
