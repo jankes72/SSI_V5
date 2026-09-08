@@ -1,82 +1,159 @@
 # SSI V5 — Start Here for Grant and Technical Reviewers
 
-**Updated:** 2026-09-07  
-**Frozen common baseline:** `T0 / BODY_FROZEN / PRE-ISKRA / 2026-09-05`  
-**Current experimental state:** `6 independent BODY ISKRA T0 variants / START_STATE_VALIDATED`  
-**Canonical ROBERT:** `CONTINUOUS ENGINEERING LINE / NOT RESET BY EXPERIMENT CLEANING`  
-**Predeclared program:** `7 experimental lines x 3 domains = 21 experiments`  
-**Program status:** `DESIGNED / EXECUTION_INITIATED / OUTCOMES_NOT_YET_CLAIMED`  
-**Predeclared post-21 phase:** `COMPETENCE CONSOLIDATION -> 3 NEW DOMAINS / RESULTS UNKNOWN`  
-**Live reviewer interface:** `AVAILABLE / READ-ONLY OBSERVABILITY`  
-**Latest closed validation test:** `TEST 5 / DEVELOPMENT_VALIDATED`
+**Updated:** 2026-09-08  
+**Frozen baseline:** `BODY_FROZEN T0 / PRE-ISKRA / 2026-09-05`  
+**Current ISKRA start state:** `6 independent T0 variants / START_STATE_VALIDATED`  
+**Technical readiness:** `FINAL 7/7 BODY + REVIEWER INTERFACE VALIDATION REQUIRED`  
+**Pre-experiment training:** `14 HASH-SEALED PACKAGES / PREDECLARED / NOT YET EXECUTED`  
+**Mechanism tests:** `7 INDEPENDENT MICRONETWORK + V10 PACKAGES / PREDECLARED`  
+**Cross-domain program:** `7 x 3 = 21 EXPERIMENTS / PREDECLARED / OUTCOMES UNKNOWN`  
+**Latest closed validation:** `TEST 5 / DEVELOPMENT_VALIDATED`
 
-The key distinction is now:
+## What to understand first
+
+SSI V5 now has a deliberately staged research sequence:
 
 ```text
-TEST 5
-= latest closed validation of a scoped local SSI BODY control/integration path
-
-CANONICAL ROBERT
-= continuous engineering/execution line
-+ prior TEST 1 -> TEST 5 development history retained
-+ private memory / competence / tooling continuity retained
-+ not reset by experiment branch cleaning
-
-BODY_FROZEN T0 / 2026-09-05
-= immutable common experimental origin
-
-BODY ISKRA 6X / 2026-09-06
-= six independent experimental descendants from the same T0
-+ explicit different initial value/emotion states
-+ sanitized start-state evidence
-+ 48/48 group start-state QA PASS
-
-21-EXPERIMENT PROGRAM / 2026-09-06
-= prospectively recorded cross-domain matrix
-+ 7 lines
-+ drones
-+ humanoid
-+ self-selected third domain per SSI line
-
-POST-21 PHASE / 2026-09-07
-= prospectively recorded before the 21-result set exists
-+ inventory actual skills/micronetwork changes
-+ function-based deduplication independent of dynamic names
-+ Champion enrichment / Challenger enrichment and promotion gates
-+ new micronetwork only for genuinely new functional competence
-+ provenance-preserving consolidation
-+ versioned consolidated BODY descendant
-+ 3 new self-selected domains not used anywhere in the first 21
-+ before/after control comparison
-
-LIVE REVIEWER INTERFACE / 2026-09-07
-= shared multi-BODY live observability
-+ informational demo_query
-+ local ROOT remains separate
-+ operational access address not published publicly
+IMMUTABLE T0 CONTROLS
+-> FINAL TECHNICAL READINESS
+-> TRAIN-A FOUNDATION (7 independent BODY runs)
+-> FOUNDATION_S1
+-> TRAIN-B LEGO + MICRONETWORK + V10 PRACTICUM (7 independent BODY runs)
+-> TRAINED_START_S2
+-> S2 HASH / STATE RECORD
+-> 7 MICRONETWORK + V10 MECHANISM TESTS
+-> 21 CROSS-DOMAIN EXPERIMENTS
+-> POST-21 COMPETENCE CONSOLIDATION
+-> 3 NEW DOMAINS
+-> LATER EXTERNAL FALSIFICATION CHALLENGES
 ```
 
-The experimental cleaning/reset is branch-local. It creates controlled baselines and does **not** erase canonical ROBERT's historical development line. Public evidence does not enumerate every private ROBERT memory or skill record.
+Training does not rewrite historical T0. It creates versioned descendants.
 
-Primary continuity reference:
+## Pre-experiment training
 
-[`ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md`](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
+Primary methodology:
 
-## 1. Predeclared 21-experiment cross-domain program
+- [`PREEXPERIMENT_TRAINING_PROGRAM_20260908.md`](PREEXPERIMENT_TRAINING_PROGRAM_20260908.md)
+- [`PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md`](PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md)
+- [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
 
-Primary protocol:
+There are 14 packages:
 
-[`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
+```text
+7 BODY LINES x 2 TRAINING PHASES
+```
 
-**Execution methodology:**
+Phase A — Foundation:
 
-[`EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md`](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
+```text
+programming
++ debugging
++ task decomposition
++ task/project management
++ testing
++ checkpoints
++ provenance
++ failure preservation
++ resource-aware execution
+```
 
-The program was recorded before the full outcome set exists. The execution methodology was also recorded prospectively and defines a clear operator boundary: the author prepares/freezes the protocol, **Kilo executes the declared procedure**, and SSI BODY is the tested system. Kilo is used to reduce live author steering and preserve a reproducible evidence trail; it is **not** presented as an independent external scientific auditor.
+Phase B — Practicum:
+
+```text
+LEGO composition
++ Micronetwork lifecycle use
++ V10 route choice
++ reuse / verify / full-flow
++ false-reuse traps
++ controlled failure
++ anti-loop
++ recovery
++ persistence/restart
++ route-cost measurement
+```
+
+All seven Foundation packages share one identical curriculum hash. All seven Practicum packages share a second identical curriculum hash. BODY-specific state/evidence remains isolated.
+
+```text
+FOUNDATION_CURRICULUM_SHA256
+= 61a3069ce68d19c64d4ae7c5ebc730d04283d81b2e534f487c3fd5063d9b75b8
+
+PRACTICUM_CURRICULUM_SHA256
+= abc3eccc4e19849f2d3b3be5b1a4d2752377b6024225f0da8d7d54f4ebafc7ce
+```
+
+No training result is preclaimed.
+
+## Why the training design matters
+
+Training is separated from held-out experiment cases. The exact reserved mechanism-test vector families are excluded from the curriculum.
+
+```text
+TRAIN THE GENERAL MECHANISM
+!=
+TRAIN THE HELD-OUT ANSWER
+```
+
+Instruction, guided practice and blind validation are also separated. A worked example does not count as independently validated competence.
+
+## Performance and routing evidence
+
+Training records real route-cost evidence where technically available:
+
+```text
+FULL_FLOW
+VERIFY_TOPK / VERIFY-ADAPT
+REUSE_TOP1
+LEGO / ALTERNATIVE COMPOSITION
+RECOVERY AFTER FAILURE
+```
+
+with context such as:
+
+```text
+elapsed time
+actual route class
+correctness / outcome
+model / provider
+model/tool call count
+execution node
+CPU / RAM / GPU / VRAM
+```
+
+Timing never determines the route label. The route comes from the SSI runtime/evidence contract; timing measures its cost.
+
+Historical Test 3 remains a scoped reference point:
+
+```text
+57.61 s vs 126.65 s Test 2
+REUSE_TOP1 = 534
+VERIFY_TOPK = 66
+fallback = 0
+known-case correctness = 100/100
+```
+
+This is not a universal superiority claim.
+
+## Relationship to the seven predeclared mechanism-test packages
+
+The seven mechanism-test packages were already hash-sealed before the training phase was added. Their original hashes remain unchanged.
+
+Before any post-training run:
+
+```text
+TRAINED_START_S2
+-> RECORD EXACT S2 STATE / HASH
+-> CHECK COMPATIBILITY WITH EXISTING FROZEN PACKAGE
+```
+
+If S2 is compatible with the frozen package contract, the execution record binds that exact S2. If S2 materially changes a frozen input, a new package version/hash is required. The original precommitment remains preserved.
+
+## 21-experiment program
 
 ```text
 7 LINES
-= BODY_FROZEN T0
+= BODY_FROZEN
 + NICE
 + GUARDIAN
 + JUSTICE
@@ -92,289 +169,75 @@ The program was recorded before the full outcome set exists. The execution metho
 TOTAL = 21
 ```
 
-The author specifies drones and humanoid as common comparison domains. The third domain is selected by the corresponding SSI line rather than supplied as the expected answer by the author.
+Primary references:
 
-Common reviewer-facing measurements include:
+- [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
+- [`EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md`](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
+- [`CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md`](CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md)
 
-```text
-KNOWN / SIMILAR / NOVEL
-V10 route choice
-reuse / verify-adapt / compose / deeper/full-flow
-latency / decision cost
-correctness / outcome
-false reuse
-recovery
-competence creation/update
-provenance retention
-```
+## Live reviewer boundary
 
-This is a predeclared program, not a claim that 21 experiments are already complete or PASS.
+The reviewer interface is read-only.
 
-### Execution fairness rule
+A reviewer may observe sanitized BODY identity, stage, checkpoints, CONTINUUM/LAB, reviewer-safe Micronetwork/V10 state, evidence references and hardware utilization.
 
-The intended run sequence is:
+A reviewer cannot:
 
 ```text
-AUTHOR PREPARES/FREEZES PROTOCOL
--> KILO VERIFIES TARGET/T0
--> KILO LAUNCHES REAL SSI BODY
--> EXPERIMENT A
--> CHECKPOINT/EVIDENCE
--> EXPERIMENT B
--> CHECKPOINT/EVIDENCE
--> EXPERIMENT C
--> CHECKPOINT/EVIDENCE
--> FINAL TESTS
--> REPORT
+issue ROOT commands
+create/alter missions
+start/stop Kilo
+change prompts or acceptance criteria
+edit configuration/source
+inject expected answers
+access private source, memory, prompts, secrets or filesystem contents
 ```
 
-Failed attempts must be preserved. Any material human correction during a run must be disclosed as `MANUAL_INTERVENTION`. Such a run may still be useful engineering evidence, but should not be represented as uninterrupted autonomous execution.
+Reference: [`REVIEWER_LIVE_INTERFACE_20260907.md`](REVIEWER_LIVE_INTERFACE_20260907.md).
 
-## 2. Predeclared post-21 competence consolidation and novel transfer
-
-Primary protocol:
-
-[`POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md`](POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md)
-
-Reviewer index:
-
-[`POST21_RESEARCH_PHASE_INDEX_20260907.md`](POST21_RESEARCH_PHASE_INDEX_20260907.md)
-
-This phase is explicitly recorded **before the full 21-experiment result set exists**.
-
-Its purpose is to test whether competence created independently by BODY_FROZEN and the six BODY ISKRA descendants can be integrated without losing functional identity or provenance.
-
-The planned consolidation rules are:
+## Current established evidence
 
 ```text
-INCOMING VERIFIED COMPETENCE
--> identify functional domain / skill identity
-
-IF SAME AS EXISTING CHAMPION
--> enrich Champion with compatible non-duplicate evidence/skills
--> validate/regress
-
-IF SAME AS EXISTING CHALLENGER
--> enrich Challenger
--> compare again against current Champion
--> promote only if evidence supports promotion
-
-IF DIFFERENT DYNAMIC NAME BUT SAME FUNCTION
--> do not count as a new domain only because the name differs
--> merge/alias where appropriate
--> preserve both discovery provenances
-
-IF GENUINELY NEW FUNCTIONAL COMPETENCE
--> create new micronetwork lifecycle
--> Candidate / Challenger / Champion gates still apply
+BODY_FROZEN T0 = preserved immutable origin
+6 ISKRA T0 variants = recorded
+START_STATE_QA = 8/8 per agent
+GROUP_QA = 48/48 PASS
+TEST 5 = 29/29 acceptance
+TOTAL TEST 5 REGRESSION = 524/524 PASS
+OPEN_BLOCKERS IN TEST 5 SCOPE = 0
 ```
 
-The final consolidation report is expected to count the actual measured results, including total competence items, unique functional skills, equivalent duplicates, enriched Champions, enriched Challengers, Challenger-to-Champion promotions, new micronetworks and items rejected or not promoted. All of those values are currently `UNKNOWN`.
+## Current unknowns
 
-The original `BODY_FROZEN T0` remains the historical control. Consolidated competence is integrated into a **versioned descendant / consolidation target**, not silently rewritten into the published T0 baseline.
-
-After consolidation and regression validation, the consolidated BODY must select **three new functionally distinct domains**. None may repeat:
-
-- DRONES;
-- HUMANOID;
-- any of the seven Phase-1 Experiment-C domains;
-- a cosmetic renaming of any previously tested domain.
-
-The three domain selections are to be frozen before their execution outcomes are known. Where practical, the same three tasks are compared against the pre-consolidation/control state so the project can measure whether consolidation changed transfer behavior rather than merely demonstrate that the later system can solve something.
-
-Primary metrics include final outcome, time-to-solution, full-flow rate, reuse, verify-adapt, false reuse, attempts, repeated-failure suppression, recovery success, competence creation and compute/model cost where available.
-
-A positive result is **not preclaimed**. Consolidation may improve, fail to improve or degrade performance; all outcomes remain valid evidence.
-
-## 3. Live read-only reviewer interface
-
-SSI V5 now includes a shared live interface for grant and technical review.
-
-Primary description:
-
-[`REVIEWER_LIVE_INTERFACE_20260907.md`](REVIEWER_LIVE_INTERFACE_20260907.md)
-
-The interface can show the current sanitized state of:
+Not yet claimed:
 
 ```text
-BODY_FROZEN
-ISKRA 1 — NICE
-ISKRA 2 — GUARDIAN
-ISKRA 3 — JUSTICE
-ISKRA 4 — EXPLORER
-ISKRA 5 — PRAGMATIST
-ISKRA 6 — SKEPTIC
+TRAIN-A outcomes
+TRAIN-B outcomes
+FOUNDATION_S1 contents
+TRAINED_START_S2 contents
+7 mechanism-test outcomes
+21 cross-domain outcomes
+post-21 consolidation outcome
+three-new-domain result
+long-run ISKRA divergence
+universal V10 advantage
+physical drone/humanoid validation
+external replication
+AGI / consciousness / production readiness
 ```
 
-The BODY runtimes remain separate. The shared interface only aggregates reviewer-safe state.
+## Recommended reading order
 
-A reviewer may observe, where available:
+1. [`README.md`](README.md)
+2. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
+3. [`PREEXPERIMENT_TRAINING_PROGRAM_20260908.md`](PREEXPERIMENT_TRAINING_PROGRAM_20260908.md)
+4. [`PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md`](PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md)
+5. [`CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md`](CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md)
+6. [`PREDECLARED_7BODY_MICRONETWORK_V10_PACKAGES_20260908.md`](PREDECLARED_7BODY_MICRONETWORK_V10_PACKAGES_20260908.md)
+7. [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
+8. [`REVIEWER_LIVE_INTERFACE_20260907.md`](REVIEWER_LIVE_INTERFACE_20260907.md)
+9. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
+10. [`evidence/README.md`](evidence/README.md)
 
-- whether a BODY is online;
-- current mission and stage;
-- progress/checkpoint state;
-- CONTINUUM state;
-- LAB progress;
-- aggregate micronetwork state;
-- sanitized public events/evidence;
-- selected ISKRA state;
-- basic resource utilization.
-
-The interface also includes an informational `demo_query` channel. A reviewer can ask what a BODY is doing, what mission is active, what the latest checkpoint was or why a reviewer-visible route class was selected.
-
-This channel is **read-only**. It is not the local ROOT terminal and is not intended to create missions, execute code, launch Kilo, modify runtime state or expose private source code, prompts, memory, secrets or filesystem contents.
-
-The operational access address is intentionally **not published in this public repository at this stage**. It may be provided privately to an invited reviewer when a live demonstration is arranged.
-
-## 4. Current public experimental state — BODY ISKRA 6X
-
-Primary entry:
-
-[`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
-
-Sanitized evidence:
-
-[`evidence/BODY_ISKRA_6X_T0_20260906/`](evidence/BODY_ISKRA_6X_T0_20260906/)
-
-Recorded current state:
-
-```text
-AGENTS = 6
-PRIVATE_ARTIFACT PER_AGENT = 1832 files
-PYTHON FILES PER AGENT = 616
-DELTA VS BODY_FROZEN PER AGENT = +51 total files / +29 Python files
-START-STATE QA PER AGENT = 8/8 PASS
-GROUP START-STATE QA = 48/48 PASS
-VERIFIED NEW EXPERIENCES AT T0 = 0 per agent
-PENDING_NEW_EXPERIENCES AT T0 = 0 per agent
-```
-
-## 5. Frozen origin — BODY_FROZEN T0
-
-The common origin remains unchanged:
-
-[`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
-
-```text
-DATE = 2026-09-05
-BODY_FROZEN = 1781 files / 587 Python files retained privately
-CONTINUUM = CLOSED
-23/23 CONTINUUM tests PASS
-22/22 main scenarios PASS
-19/19 E2E closure PASS
-26/26 final guard PASS
-ACTIVE_FAILURES = 0
-INVARIANT_VIOLATIONS = 0
-OPEN_BLOCKERS = 0
-```
-
-BODY_FROZEN is preserved as the immutable comparison control. The six BODY ISKRA artifacts are descendants, not rewrites of T0.
-
-## 6. Canonical ROBERT vs experiment branches
-
-```text
-CANONICAL ROBERT
-= historical engineering continuity
-+ prior validated skills / memories / tools retained privately
-+ TEST 1 -> TEST 5 lineage retained
-+ future Eyes / Hands / execution expansion
-
-EXPERIMENT BRANCHES
-= cleaned/frozen where required
-+ isolated experience counters
-+ controlled comparison
-```
-
-Future experimentally validated skills may later be integrated into ROBERT under explicit validation/regression gates. ROBERT does not begin empty while waiting for those future skills.
-
-## 7. What is established vs prospective
-
-**Established / publicly recorded:**
-
-- BODY_FROZEN T0 exists as immutable common origin;
-- six independent BODY ISKRA start artifacts exist;
-- all six have separately documented start states;
-- each passed `8/8` start-state QA;
-- group start-state QA is `48/48 PASS`;
-- the 21-experiment cross-domain matrix was predeclared on 2026-09-06;
-- the Kilo-run execution methodology was prospectively recorded;
-- the post-21 competence-consolidation and three-new-domain phase was predeclared on 2026-09-07 before the Phase-1 result set was known;
-- a shared read-only reviewer observability interface is documented;
-- canonical ROBERT continuity is explicitly separated from experiment reset;
-- TEST 5 includes `ROBERT_STABLE = 46/46 PASS` within the final convergence evidence.
-
-**Prospective / not yet claimed:**
-
-- final results of all 21 experiments;
-- exact post-21 skill/micronetwork counts;
-- success of functional deduplication or consolidation;
-- any Challenger-to-Champion promotion outcome;
-- superiority of the consolidated BODY over the control;
-- identities of the three future new domains;
-- universal V10 speed or correctness advantage;
-- long-run six-agent divergence;
-- superiority of one Iskra profile;
-- physical-robot or physical-drone deployment validity;
-- AGI or consciousness.
-
-## 8. Latest closed validation — TEST 5
-
-```text
-STAGE_12 = SUPERSEDED
-STAGE_13_AUDIT_RETEST = PASS
-TEST5_ACCEPTANCE = 29/29 PASS
-ROOT_CONTROL = 111/111 PASS
-ROOT_RUNTIME_BRIDGE = 338/338 PASS
-ROBERT_STABLE = 46/46 PASS
-TOTAL = 524/524 PASS
-OPEN_BLOCKERS = 0
-```
-
-TEST 5 remains the latest closed validation milestone.
-
-## 9. Public/private boundary
-
-```text
-PUBLIC
-= sanitized evidence
-+ predeclared experiment protocols
-+ post-21 consolidation / novel-transfer protocol
-+ execution methodology / operator boundary
-+ reviewer-interface capability and safety boundary
-+ ROBERT-vs-experiment lineage distinction
-+ agent labels
-+ initial beliefs/emotions
-+ inventory counts
-+ QA results
-+ SHA256 references
-+ claim boundaries
-
-PRIVATE
-= SSI source code
-+ private file tree
-+ implementation-level architecture
-+ runtime/configuration
-+ raw ROBERT memory / private skill inventory
-+ raw user data
-+ proprietary integration internals
-+ operational reviewer-access address
-```
-
-## 10. Recommended reading order
-
-1. [`ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md`](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
-2. [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
-3. [`EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md`](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
-4. [`POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md`](POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md)
-5. [`POST21_RESEARCH_PHASE_INDEX_20260907.md`](POST21_RESEARCH_PHASE_INDEX_20260907.md)
-6. [`REVIEWER_LIVE_INTERFACE_20260907.md`](REVIEWER_LIVE_INTERFACE_20260907.md)
-7. [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md)
-8. [`evidence/BODY_ISKRA_6X_T0_20260906/README.md`](evidence/BODY_ISKRA_6X_T0_20260906/README.md)
-9. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md)
-10. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
-11. [`evidence/TEST5_FINAL_CONVERGENCE_20260903.md`](evidence/TEST5_FINAL_CONVERGENCE_20260903.md)
-12. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
-13. [`GRANT_REVIEWER_FAQ.md`](GRANT_REVIEWER_FAQ.md)
-14. [`evidence/README.md`](evidence/README.md)
-
-SSI V5 should be evaluated as two connected tracks: a continuous ROBERT engineering line and a controlled BODY_FROZEN / BODY ISKRA experimental program, with a separate read-only reviewer layer for live observation. The controlled experimental track now includes both the predeclared 21-run Phase 1 and the separately predeclared post-21 consolidation/novel-transfer continuation.
+The repository should be read as an evidence mirror with explicit separation between historical controls, prepared training, held-out experiments, observed outcomes and still-prospective claims.
