@@ -1,17 +1,17 @@
-# SSI V5 — zweryfikowana chronologia rozwoju
+# SSI V5 — Verified Development Timeline
 
-Ten dokument rozdziela dwie różne rzeczy:
+This document separates two different kinds of evidence:
 
-1. **timestamp historii Git** — data zapisana w commicie;
-2. **publiczny timestamp GitHub** — moment, od którego repozytorium istniało publicznie na GitHubie.
+1. **Git history timestamp** — the date stored in a commit;
+2. **public GitHub timestamp** — the point from which a repository publicly existed on GitHub.
 
-Nie należy traktować ich jako tego samego dowodu. Commit może zostać utworzony lokalnie wcześniej i dopiero później wypchnięty do publicznego repo.
+They must not be treated as the same proof. A commit may have been created locally earlier and only pushed to a public repository later.
 
-## Najwcześniejsze potwierdzone ślady
+## Earliest confirmed traces
 
-### 2026-07-19 19:58:18 CEST — pierwszy root commit historii
+### 2026-07-19 19:58:18 CEST — first root commit in the history
 
-Repozytorium: `jankes72/msdi-ai`
+Repository: `jankes72/msdi-ai`
 
 Commit:
 
@@ -21,11 +21,11 @@ Message:
 
 `MSDI AI v0.01 - start projektu`
 
-Commit nie posiada parenta, więc jest root commitem tej historii Git. Zawierał pierwszy zestaw kodu/danych projektu i 4031 additions.
+The commit has no parent, so it is the root commit of that Git history. It contained the first recorded project code/data set and 4031 additions.
 
-**Znaczenie dowodowe:** potwierdza, że historia Git projektu ma zapisany początek 19 lipca 2026. Nie jest to jednak sam w sobie dowód, że commit był już tego dnia publicznie widoczny na GitHubie.
+**Evidence meaning:** confirms that the project Git history records a starting point on 2026-07-19. It does not by itself prove that the commit was already publicly visible on GitHub that day.
 
-### 2026-07-19 20:06:54 CEST — dokumentacja foundation
+### 2026-07-19 20:06:54 CEST — documentation foundation
 
 Commit:
 
@@ -35,7 +35,7 @@ Message:
 
 `MSDI AI v0.01 - documentation foundation`
 
-Dodano README PL/EN opisujące projekt jako samouczący ekosystem i `Sprint 001 - Fundament architektury`.
+README PL/EN was added describing the project as a self-learning ecosystem and `Sprint 001 - Fundament architektury`.
 
 ### 2026-07-19 20:32:30 CEST — architecture foundation
 
@@ -47,25 +47,25 @@ Message:
 
 `MSDI AI v0.01 - system architecture foundation`
 
-Dodano formalny dokument architektury obejmujący m.in. closed learning loop, pamięć długoterminową, autonomous decision agents i warstwę learning/evolution.
+A formal architecture document was added covering, among other things, a closed learning loop, long-term memory, autonomous decision agents and a learning/evolution layer.
 
-## Pierwszy publiczny timestamp GitHub
+## First public GitHub timestamp
 
-### 2026-07-27 16:55:08 CEST — utworzenie publicznego repo `msdi-ai`
+### 2026-07-27 16:55:08 CEST — public `msdi-ai` repository created
 
-GitHub API raportuje:
+GitHub API reports:
 
 `created_at = 2026-07-27T14:55:08Z`
 
-czyli:
+which is:
 
 `2026-07-27 16:55:08 CEST`
 
-Od tego momentu istnieje niezależny publiczny timestamp GitHuba dla repozytorium `jankes72/msdi-ai`.
+From that point onward, there is an independent public GitHub timestamp for `jankes72/msdi-ai`.
 
-Dwa minuty później w historii widoczny jest commit `first commit`, a następnie kolejne duże zmiany.
+Two minutes later the history shows a `first commit`, followed by additional major changes.
 
-## 2026-07-28 — przejście od fundamentu do SSI Core / V2
+## 2026-07-28 — transition from foundation to SSI Core / V2
 
 ### 07:46:57 CEST — SSI Core
 
@@ -77,7 +77,7 @@ Message:
 
 `SSI Core - Implementacja podstawowej struktury systemu`
 
-Dodano m.in. `SSISystem`, `SSIModule`, `SSIComponent`, interfejsy oraz bazowe klasy World/Agent/Strategy.
+This added `SSISystem`, `SSIModule`, `SSIComponent`, interfaces and baseline World/Agent/Strategy classes.
 
 ### 07:56:20 CEST — Data World Foundation
 
@@ -89,7 +89,7 @@ Message:
 
 `Implementacja Data World Foundation - Etap 2 SSI`
 
-W tym commicie utworzono również `PROJECT_JOURNAL.md`. Dziennik projektu zapisuje `Data Rozpoczęcia = 2026-07-27` i opisuje wcześniejszy etap SSI Core oraz Data World Foundation.
+This commit also created `PROJECT_JOURNAL.md`. The journal records `Data Rozpoczęcia = 2026-07-27` and describes the preceding SSI Core and Data World Foundation stages.
 
 ### 09:21:10 CEST — V2 Model Laboratory
 
@@ -101,9 +101,9 @@ Message:
 
 `Implementacja V2 Model Laboratory - Data World Foundation`
 
-Commit dodaje m.in. V2 integration i most `V2ToV3Bridge`.
+This added V2 integration and the `V2ToV3Bridge`, among other elements.
 
-### 09:25:53 CEST — formalizacja zasad SSI
+### 09:25:53 CEST — SSI rules formalization
 
 Commit:
 
@@ -113,9 +113,9 @@ Message:
 
 `DOCS: Utworzenie PROJECT_RULES.md - Główny artefakt zasad`
 
-Dokument definiuje projekt jako `MSDI AI / SSI (Self Learning Intelligence Ecosystem)` oraz formalizuje warstwy V2/V3/V4/CORE.
+The document defines the project as `MSDI AI / SSI (Self Learning Intelligence Ecosystem)` and formalizes V2/V3/V4/CORE layers.
 
-## 2026-08-01 — pierwszy jawny etap SSI V5
+## 2026-08-01 — first explicit SSI V5 stage
 
 ### 20:08:56 CEST
 
@@ -127,43 +127,43 @@ Message:
 
 `SSI V5 FAZA 1: Complete LLM Queue Manager, Model Memory Ecosystem, Teacher Engine Core integration`
 
-Commit obejmuje już bezpośrednio katalogi `SSI/v5/...` i integrację LLM Queue Manager, Model Memory Ecosystem oraz Teacher Engine z runtime controllerem.
+The commit directly includes `SSI/v5/...` directories and integration of LLM Queue Manager, Model Memory Ecosystem and Teacher Engine with the runtime controller.
 
-## Kolejne publiczne kamienie milowe
+## Later public milestones
 
 ### 2026-08-14 09:59:22 CEST — `CONTINUUM`
 
-Powstało publiczne repozytorium `jankes72/CONTINUUM`.
+Public repository `jankes72/CONTINUUM` was created.
 
 ### 2026-08-16 15:27:12 CEST — `SSI_V5_MASTER`
 
-Powstało publiczne repozytorium `jankes72/SSI_V5_MASTER`.
+Public repository `jankes72/SSI_V5_MASTER` was created.
 
 ### 2026-08-25 19:27:07 CEST — `SSI_V5`
 
-Powstało obecne publiczne repozytorium badawcze `jankes72/SSI_V5`, używane jako README-first / evidence-indexed research mirror.
+The current public research repository `jankes72/SSI_V5` was created as a README-first / evidence-indexed research mirror.
 
 ### 2026-08-29 — ROBERT stabilization / Organism Core migration
 
-Publiczny research mirror dokumentuje hardening ROBERTA, replay/idempotency, migrację sprawdzonych mechanizmów do neutralnego Organism Core i zachowywanie lineage FAIL -> diagnosis -> repair -> retest.
+The public research mirror documents ROBERT hardening, replay/idempotency work, migration of validated mechanisms into a neutral Organism Core and preservation of FAIL -> diagnosis -> repair -> retest lineage.
 
-### 2026-08-31 — scoped 600× idempotency / replay / persistence closure
+### 2026-08-31 — scoped 600x idempotency / replay / persistence closure
 
-Udokumentowano `600/600 PASS` dla pełniejszego flow oraz osobne persistence/replay evidence. Ten etap stał się poprzednikiem późniejszego hardeningu V10 i migracji mikrosieci.
+A `600/600 PASS` full-flow stress result and separate persistence/replay evidence were documented. This became a predecessor to later V10 and micronetwork migration hardening.
 
 ### 2026-09-01 — V10 Hybrid Router Test 3
 
-Historyczny Test 3 zarejestrował m.in. `600/600 PASS`, `534 × REUSE_TOP1`, `66 × VERIFY_TOPK` i `57.61 s` w badanym układzie. Późniejszy audyt kontraktu testowego i migration closure zostały zachowane jako mocniejsza podstawa aktualnych claimów.
+Historical Test 3 recorded, among other things, `600/600 PASS`, `534 x REUSE_TOP1`, `66 x VERIFY_TOPK` and `57.61 s` in the tested configuration. A later contract audit and migration closure provide the stronger basis for current claims.
 
-### 2026-09-02 — Micronetwork Migration / TEST3 100× v2 closure
+### 2026-09-02 — Micronetwork Migration / TEST3 100x v2 closure
 
-Po wykryciu słabości wcześniejszej formuły PASS kontrakt został poprawiony, a pełny Test3 100× wykonano ponownie.
+After a weakness in the earlier PASS formula was found, the contract was repaired and the full Test3 100x was rerun.
 
-Finalny publiczny agregat:
+Final public aggregate:
 
 ```text
-100 runs × 600 cases = 60 000
-accounted = 60 000
+100 runs x 600 cases = 60,000
+accounted = 60,000
 failed = 0
 unresolved_failures = 0
 incorrect_routing = 0
@@ -176,9 +176,9 @@ open_blockers = []
 
 ### 2026-09-02 — TEST 4 ROOT Terminal final closure
 
-Zamknięto kanoniczny ROOT terminal/control path po evidence audit i hardeningu pierwszego closure candidate.
+The canonical ROOT terminal/control path was closed after an evidence audit and hardening of the first closure candidate.
 
-Publiczny wynik obejmuje m.in.:
+Public result includes:
 
 ```text
 final regression = 461/461 PASS
@@ -193,13 +193,13 @@ open_blockers = []
 
 ### 2026-09-03 — TEST 5 Stage 12 superseded
 
-Wcześniejszy TEST 5 Stage 12 miał `27/27 PASS`, ale niezależny audyt wykazał, że acceptance contract był zbyt słaby do formalnego closure. Problemy obejmowały m.in. niewystarczająco realne integration gates, słaby restart assertion, niepełne IPC authentication checks oraz możliwość zaakceptowania spoofed ROOT identity.
+The earlier TEST 5 Stage 12 had `27/27 PASS`, but an independent audit found that the acceptance contract was too weak for formal closure. Problems included insufficiently real integration gates, weak restart assertion, incomplete IPC authentication checks and acceptance of a spoofed ROOT identity under the earlier contract.
 
-Stage 12 został zachowany jako część historii, ale oznaczony `SUPERSEDED`.
+Stage 12 remains preserved in history but is marked `SUPERSEDED`.
 
-### 2026-09-03 — TEST 5 Stage 13 Independent Audit Retest / Final Convergence
+### 2026-09-03 — TEST 5 Stage 13 independent audit retest / final convergence
 
-Po naprawie wykonano finalny audit retest dla lokalnego SSI BODY control/integration path.
+After repair, a final audit retest was executed for the local SSI BODY control/integration path.
 
 ```text
 TEST5 acceptance = 29/29 PASS
@@ -211,23 +211,23 @@ OPEN_BLOCKERS = 0
 FINAL_CONVERGENCE_PASS = TRUE
 ```
 
-TEST 5 obejmuje `UNIT / CONTROLLED`, `REAL INTEGRATION`, `REAL PROCESS E2E` i `REGRESSION`, z jawnymi claim boundaries. Nie jest przedstawiany jako dowód production readiness całego SSI, AGI ani świadomości.
+TEST 5 includes `UNIT / CONTROLLED`, `REAL INTEGRATION`, `REAL PROCESS E2E` and `REGRESSION`, with explicit claim boundaries. It is not presented as proof of whole-system production readiness, AGI or consciousness.
 
-Publiczny commit evidence:
+Public evidence commit:
 
 `168f6af91552c7b49dec310c0c9b34caa0e7d326` — `Add TEST 5 sanitized public evidence`.
 
-## Tempo widoczne w historii
+## Pace visible in history
 
-Od root commita historii Git (`2026-07-19`) do TEST 5 (`2026-09-03`) minęło około **46 dni**.
+From the root Git commit (`2026-07-19`) to TEST 5 (`2026-09-03`) there were approximately **46 days**.
 
-Od utworzenia publicznego repo `msdi-ai` (`2026-07-27`) do TEST 5 (`2026-09-03`) minęło około **38 dni**.
+From creation of the public `msdi-ai` repository (`2026-07-27`) to TEST 5 (`2026-09-03`) there were approximately **38 days**.
 
-W tym okresie historia publiczna pokazuje przejście:
+The public history during that period shows the transition:
 
 ```text
 MSDI AI v0.01
--> formalna architektura
+-> formal architecture
 -> SSI Core
 -> Data World Foundation
 -> V2 Model Laboratory
@@ -236,18 +236,18 @@ MSDI AI v0.01
 -> CONTINUUM
 -> SSI_V5_MASTER
 -> ROBERT stabilization
--> replay/idempotency 600X hardening
+-> replay/idempotency 600x hardening
 -> micronetwork / V10 migration closure
 -> ROOT terminal / authority / recovery closure
 -> SSI BODY control/integration final convergence
 ```
 
-Ten zapis nie ma dowodzić, że cały obecny system powstał od zera w 38 lub 46 dni. Część wcześniejszych danych, skryptów i doświadczeń autora istniała wcześniej. Dowodzi natomiast, że **udokumentowana architektura SSI/MSDI i jej szybka ewolucja do obecnego etapu miała miejsce w bardzo krótkim, publicznie weryfikowalnym oknie czasu**.
+This does not prove that the entire current system was created from zero in 38 or 46 days. Some earlier data, scripts and domain experience predated that period. It does show that the documented MSDI/SSI architecture and its rapid evolution to the current stage occurred within a short, publicly verifiable time window.
 
-## Zasada interpretacji
+## Interpretation rule
 
-Najmocniejsze publiczne twierdzenie brzmi:
+The strongest public statement is:
 
-> Publiczny GitHub potwierdza, że repo `msdi-ai` istniało od 27 lipca 2026, a jego historia Git zawiera root commit z 19 lipca 2026. Do 3 września 2026 publiczna historia pokazuje przejście od MSDI AI v0.01 / foundation do SSI V5, ROBERTA, hardeningu mikrosieci i V10, kanonicznego ROOT terminal/control path oraz TEST 5 SSI BODY final convergence po independent audit repair cycle.
+> Public GitHub confirms that the `msdi-ai` repository existed from 2026-07-27 and that its Git history contains a root commit dated 2026-07-19. By 2026-09-03, the public history shows the transition from MSDI AI v0.01/foundation through SSI V5, ROBERT, micronetwork and V10 hardening, canonical ROOT terminal/control closure, and TEST 5 SSI BODY final convergence after an independent audit repair cycle.
 
-Nie twierdzimy, że GitHub dowodzi braku jakiejkolwiek wcześniejszej pracy autora. Pokazuje on natomiast rzeczywiste tempo rozwoju architektury udokumentowanej w tej historii.
+This does not claim that GitHub proves the absence of any earlier private work by the author. It documents the real development pace visible in the preserved public history.
