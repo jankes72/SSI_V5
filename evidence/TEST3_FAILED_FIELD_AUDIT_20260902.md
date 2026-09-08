@@ -1,32 +1,32 @@
 # TEST3 FAILED FIELD AUDIT
 
-Data: 2026-09-02
+Date: 2026-09-02
 
-## Cel
+## Purpose
 
-Ustalić semantykę pola `failed` w `TEST3_SUMMARY.json` na podstawie kodu i realnego przebiegu.
+Determine the semantics of the `failed` field in `TEST3_SUMMARY.json` from the code and the real execution path.
 
-## Odkrycie
+## Finding
 
-Pole `failed` było inkrementowane dla rzeczywistych unresolved failures, m.in. exception, REUSE bez target capability, REUSE bez real execution, routing mismatch i UNKNOWN_DECISION.
+The `failed` field was incremented for real unresolved failures, including exceptions, REUSE without a target capability, REUSE without real execution, routing mismatch and UNKNOWN_DECISION.
 
-Stara formuła PASS sprawdzała m.in. `incorrect_routing`, `background_failures`, `exceptions`, `reuse_without_capability` i real execution, ale **nie sprawdzała `failed == 0`**.
+The old PASS formula checked `incorrect_routing`, `background_failures`, `exceptions`, `reuse_without_capability` and real execution, but **did not check `failed == 0`**.
 
-W pierwszym 100× iteracje 38, 42 i 50 miały odpowiednio `failed=1/1/2`, a mimo to `pass=True`.
+In the first 100x run, iterations 38, 42 and 50 had `failed=1/1/2` respectively while still reporting `pass=True`.
 
-## Wniosek
+## Conclusion
 
-To nie była poprawna semantyka "stanu pośredniego". `failed` oznaczał rzeczywisty unresolved failure, więc wcześniejsze 100/100 nie mogło być podstawą finalnego closure.
+This was not a valid "intermediate state" interpretation. `failed` represented a real unresolved failure, so the earlier 100/100 result could not support final closure.
 
-## Naprawa kontraktu
+## Contract repair
 
-Do warunku PASS dodano:
+The PASS condition was strengthened with:
 
 ```text
 failed == 0
 ```
 
-Finalny kontrakt wymaga:
+The final contract requires:
 
 ```text
 total == 600
@@ -39,6 +39,6 @@ failed == 0
 reuse_real_execution >= 1
 ```
 
-Po naprawie wykonano nowe 100× od początku. Finalny przebieg zakończył się 100/100 PASS, 60 000/60 000 accounted oraz `failed_total=0`.
+After the repair, a new 100x run was executed from the beginning. The final run completed with 100/100 PASS, 60,000/60,000 accounted and `failed_total=0`.
 
-Historyczny błędny PASS pozostaje częścią lineage zamiast zostać usunięty.
+The historical incorrect PASS remains part of the lineage rather than being deleted.
