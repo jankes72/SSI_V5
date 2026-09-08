@@ -11,7 +11,7 @@ Development is carried out largely with **free tiers/models and open-source or l
 
 This background is **context, not evidence of technical merit**. SSI V5 should be evaluated on its protocols, recorded history, sanitized/reproducible evidence, failures, retests and measured outcomes. Fuller author-declared context and its verification boundary are recorded in [`AUTHOR_CONTEXT.md`](AUTHOR_CONTEXT.md).
 
-## Current state — 2026-09-07
+## Current state — 2026-09-08
 
 ```text
 FROZEN COMMON BASELINE = T0 / BODY_FROZEN / PRE-ISKRA / 2026-09-05
@@ -19,6 +19,7 @@ CURRENT EXPERIMENTAL STATE = 6X BODY ISKRA / START_STATE_VALIDATED / 2026-09-06
 PREDECLARED CROSS-DOMAIN PROGRAM = 7 lines x 3 domains = 21 experiments
 PROGRAM STATUS = DESIGNED / EXECUTION INITIATED / PAUSED FOR REVIEWER-OBSERVABILITY HARDENING / FINAL OUTCOMES NOT YET CLAIMED
 EXECUTION METHODOLOGY = PREDECLARED / KILO PROCEDURAL EXECUTOR / HASH-SEALED PACKAGES
+CANONICAL EXPERIMENT PACKAGE STANDARD = REQUIRED / ONE BODY PER PACKAGE / CRASH-SAFE RESUME / PUBLICATION FIREWALL
 FINAL-RUN RESUME REQUIREMENT = 7/7 BODY + REVIEWER INTERFACE TECHNICAL READINESS VALIDATION
 POST-21 RESEARCH PHASE = PREDECLARED / COMPETENCE CONSOLIDATION -> 3 NEW DOMAINS / RESULTS UNKNOWN
 POST-21 TRANSFER-MECHANISM EVOLUTION = PREDECLARED / DRONE A->B->C + HUMANOID EXTENSION / RESULTS UNKNOWN
@@ -37,6 +38,39 @@ LATEST CLOSED VALIDATION TEST = TEST 5 / DEVELOPMENT_VALIDATED
 The six BODY ISKRA descendants already exist and have validated start states. The 21-experiment cross-domain program was designed and recorded before the full outcome set existed, and preliminary execution was initiated. The program was then deliberately **paused before treating the full 21-run set as final research evidence** so that a reviewer-safe live observability layer could be integrated and validated first. This pause is an experiment-control decision, not a claim that the preliminary execution already established the final outcomes.
 
 The execution methodology is predeclared. The author prepares/freezes the protocol and package, **Kilo executes the declared procedure**, and SSI BODY is the tested system. Kilo is used to reduce live author steering and preserve checkpoints, failures and evidence; it is not presented as an independent external scientific auditor.
+
+### Canonical Experiment Package Standard — required for official SSI experiments
+
+From `2026-09-08`, official SSI experiments use a common execution/evidence format documented in [`CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md`](CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md).
+
+The standard applies to internal experiments, BODY_FROZEN, BODY ISKRA 1-6, later ROBERT/DIRECTOR experiments and externally proposed reviewer challenges.
+
+Core requirements:
+
+```text
+ONE BODY = ONE INDEPENDENT EXPERIMENT PACKAGE
+-> frozen contract + acceptance criteria
+-> manifest + SHA256/integrity reference
+-> small auditable execution steps
+-> receipt + checkpoint after each completed step
+-> append-oriented failure/recovery history
+-> crash-safe resume from first incomplete step
+-> explicit distinction: infrastructure restart vs MANUAL_INTERVENTION
+-> Kilo as procedural executor
+-> author does not supply the tested answer during the run
+-> private SSI implementation remains private
+-> sanitized public export only
+-> allowlist-based PUBLICATION FIREWALL before public Git push
+-> final PASS / FAIL / INCONCLUSIVE retained as actually observed
+```
+
+The format is deliberately designed for constrained author-owned hardware. If Kilo, Ollama, the reviewer interface, a local model or the operating system fails, the interruption is recorded. The author may restore the infrastructure and instruct Kilo to resume the already frozen procedure, but may not silently change the task, acceptance criteria, tested SSI logic, route or answer. A pure infrastructure recovery is recorded separately from a material `MANUAL_INTERVENTION`.
+
+The public SSI repository remains an evidence mirror. Kilo is not permitted to publish private SSI source code, V10/Micronetwork/Iskra implementation source, raw private memory, private prompts/configuration, secrets, private filesystem structure or raw logs that disclose those materials. Public artifacts must first pass through a sanitized publication-staging area and a positive allowlist/pre-push publication gate. Broad staging commands such as `git add .` or `git add -A` are not part of the canonical public evidence flow.
+
+An external reviewer or challenge provider may propose a stronger test, adversarial case, failure condition or acceptance criterion. Disagreement with SSI is explicitly welcome. However, once the challenge is agreed and frozen, an experiment represented as an **official SSI controlled external challenge** must preserve the same evidence, resume, no-steering and private-source-protection standard. A collaboration that requires abandoning those core controls will not be represented as an official SSI experiment under this methodology.
+
+This requirement protects both sides: the reviewer can challenge the mechanism aggressively, while the author preserves a consistent evidence chain and does not have to disclose proprietary source code in order to make the execution auditable.
 
 ### Execution pause and resume gate for the final 21-run evidence phase
 
@@ -210,6 +244,7 @@ SSI V5 is currently developed independently by Paweł Jankiewicz (`jankes72`) as
 Public entry points:
 
 - [AUTHOR_CONTEXT.md](AUTHOR_CONTEXT.md)
+- [CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md](CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md)
 - [EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
 - [EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
 - [POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md](POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md)
@@ -502,7 +537,7 @@ CANONICAL ROBERT
 = prior validated development history retained
 + TEST 1 -> TEST 5 lineage retained
 + memory / skill / tooling continuity remains part of the private runtime line
-+ future Eyes / Hands / execution development
++ future Eyes / Hands / engineering evolution
 + future intake of newly validated skills
 
 EXPERIMENT BRANCHES
@@ -537,6 +572,7 @@ PUBLIC
 + predeclared execution methodology / operator boundary
 + experiment pause/resume and reviewer-observability rationale
 + hash/integrity methodology for frozen experiment packages
++ canonical experiment-package / crash-resume / publication-firewall standard
 + predeclared post-21 consolidation / novel-transfer protocol
 + predeclared transfer-mechanism evolution plan
 + internal-first falsification / external-challenge roadmap
@@ -632,6 +668,16 @@ execution methodology hardened before final research evidence runs resume
 -> input change requires new version + new hash
 -> final evidence execution remains gated until readiness acceptance
 
+2026-09-08
+canonical experiment-package standard recorded
+-> one BODY per independent package/evidence chain
+-> atomic microsteps + receipts + persistent checkpoints
+-> crash-safe resume from first incomplete step
+-> infrastructure restart separated from MANUAL_INTERVENTION
+-> private source PUBLICATION_PERMISSION = NEVER
+-> sanitized allowlist-based pre-push publication firewall
+-> same execution/evidence standard required for official external challenges
+
 2026-09-07
 post-21 research phase predeclared before Phase-1 outcomes
 -> competence inventory
@@ -666,6 +712,7 @@ external review / falsification direction predeclared as a later stage
 NEXT
 -> complete reviewer-interface and 7-BODY technical integration validation
 -> open final evidence gate only after declared readiness acceptance
+-> create separate canonical experiment package for each BODY
 -> freeze/hash final experiment packages
 -> resume and record the controlled 21 experiment runs
 -> preserve preliminary and failed attempts separately rather than overwrite history
@@ -676,7 +723,7 @@ NEXT
 -> continue internal falsification until no meaningful new internal test class is identified
 -> freeze the mature tested version
 -> only then invite external specialists to try to find missing tests or falsify the current thesis
--> run externally proposed challenges under frozen/hash-identified evidence rules
+-> run externally proposed challenges under the same canonical package/evidence/publication rules
 -> report the result that actually occurs
 ```
 
@@ -767,6 +814,7 @@ ROBERT
 2026-09-07  reviewer interface documented as read-only; final integration/readiness validation remains pending
 2026-09-07  shared reviewer interface clarified as persistent 7-BODY entity view over three Tailscale-connected author nodes
 2026-09-07  experiment execution methodology hardened with resume gate + hash-sealed package chain before final research evidence execution
+2026-09-08  canonical experiment package standard added: one BODY per package, microstep receipts, crash-safe resume and private-source publication firewall
 ```
 
 ## Claim boundaries
@@ -820,6 +868,7 @@ UNKNOWN
 ## Start here
 
 - **Author / independent-project context:** [AUTHOR_CONTEXT.md](AUTHOR_CONTEXT.md)
+- **Canonical experiment package standard / crash-safe resume / publication firewall:** [CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md](CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md)
 - **21-experiment protocol:** [EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
 - **Execution methodology / readiness gate / hash-sealed packages / Kilo operator boundary:** [EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
 - **Post-21 consolidation + 3-new-domain protocol:** [POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md](POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md)
