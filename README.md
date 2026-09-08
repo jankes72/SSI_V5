@@ -2,23 +2,23 @@
 
 **Experimental persistent-competence architecture for adaptive AI systems.**
 
-SSI V5 investigates whether a long-running system can build, validate, preserve, reuse, compare and revise competence across tasks using persistent state, Experience, Micronetworks, Candidate -> Challenger -> Champion lifecycle, V10 stateful routing, LEGO composition and CONTINUUM persistence.
+SSI V5 investigates whether a long-running system can build, validate, preserve, reuse, compare and revise competence across tasks using persistent state, Experience, Micronetworks, Candidate -> Challenger -> Champion lifecycle, Router V10, LEGO composition and CONTINUUM persistence.
 
-The public repository is an **evidence-indexed research mirror**, not a source-code distribution. Private SSI, Micronetwork, Router V10, ISKRA and ROBERT implementation source remains private by design.
+The public repository is an **evidence-indexed research mirror**, not a source-code distribution. Private SSI, Micronetwork, Router V10, ISKRA, DIRECTOR and ROBERT implementation source remains private by design.
 
 ## Independent project context
 
-SSI V5 is independently designed and developed by **Paweł Jankiewicz (`jankes72`)**, a self-taught developer working outside a formal academic or AI-lab path. Coding/research assistants such as Kilo, OpenCode, Pi and local/open models are used as implementation, analysis and testing tools; they are not presented as the authors of the architecture or research claims.
+SSI V5 is independently designed and developed by **Paweł Jankiewicz (`jankes72`)**. Coding/research assistants such as Kilo, OpenCode, Pi and local/open models are used as implementation, analysis and testing tools; they are not represented as the authors of the architecture or as independent scientific validators.
 
-The project should be evaluated from its **predeclared protocols, measured outcomes, failures, repairs, retests, hashes, claim boundaries and reviewer-visible evidence**, not from the author's background alone.
+The project should be evaluated from its **predeclared protocols, measured outcomes, failures, repairs, retests, hashes, claim boundaries and reviewer-visible evidence**.
 
 See [`AUTHOR_CONTEXT.md`](AUTHOR_CONTEXT.md).
 
-## Current research state — 2026-09-08
+## Current state — 2026-09-08
 
 ```text
 FROZEN COMMON BASELINE
-= BODY_FROZEN T0 / PRE-ISKRA / 2026-09-05
+= BODY_FROZEN T0 / PRE-ISKRA / RECORDED / 2026-09-05
 
 CURRENT ISKRA START STATE
 = 6 independent BODY ISKRA descendants / START_STATE_VALIDATED / 2026-09-06
@@ -27,137 +27,156 @@ LATEST CLOSED DEVELOPMENT VALIDATION
 = TEST 5 / DEVELOPMENT_VALIDATED
 = 29/29 acceptance
 = 524/524 total regression
-= 0 open blockers in tested scope
+= 0 open blockers in the TEST 5 tested scope
 
-TECHNICAL READINESS
-= 7 BODY lines + reviewer interface
-= final validation in progress / required before training or final experiment execution
+7-BODY TECHNICAL READINESS
+= pre-repair sequential audit completed 43/43 on 2026-09-08
+= audit mode READ_ONLY / TEST_ONLY
+= readiness NOT YET CLOSED 7/7
+= repair + common retest required before training execution
 
 PRE-EXPERIMENT TRAINING
 = 14 HASH-SEALED packages
 = 7 BODY lines x 2 phases
 = PREDECLARED / NOT YET EXECUTED
 
-MECHANISM TEST PACKAGES
-= 7 independent Micronetwork + V10 packages
+MICRONETWORK + V10 MECHANISM TESTS
+= 7 independent packages
 = PREDECLARED / HASH-SEALED / NOT YET EXECUTED
 
 CROSS-DOMAIN PROGRAM
 = 7 lines x 3 domains = 21 experiments
-= PREDECLARED / final controlled outcomes not yet claimed
+= PREDECLARED / FINAL CONTROLLED OUTCOMES UNKNOWN
 
-LIVE REVIEWER INTERFACE
-= READ-ONLY OBSERVABILITY
-= local ROOT execution remains separate
+DIRECTOR MAINLINE
+= canonical engineering / operational line opened 2026-09-08
+= BODY foundation + existing working Director functions
+= implementation in progress
+= final Director validation NOT YET CLOSED
 
 CANONICAL ROBERT
-= continuous engineering line
+= continuous engineering / execution line
 = not reset by experiment-branch cleaning
 ```
 
-## Research sequence
+## Two deliberately separated tracks
 
-The current controlled sequence is:
+SSI V5 now has a controlled research track and a parallel canonical engineering track.
+
+### A. Controlled BODY research track
 
 ```text
-1. TECHNICAL READINESS
-   7/7 BODY lines
-   + reviewer interface
-   + runtime / CONTINUUM / Micronetwork / V10 / persistence / isolation / read-only gates
-
-2. PRE-EXPERIMENT TRAINING
-   TRAIN-A FOUNDATION
-   -> FOUNDATION_S1
-   TRAIN-B LEGO + MICRONETWORK + V10 PRACTICUM
-   -> TRAINED_START_S2
-   -> record S2 identity/hash
-
-3. MICRONETWORK + V10 MECHANISM TESTS
-   BODY_FROZEN first
-   -> then NICE
-   -> GUARDIAN
-   -> JUSTICE
-   -> EXPLORER
-   -> PRAGMATIST
-   -> SKEPTIC
-
-4. CROSS-DOMAIN PROGRAM
-   DRONES
-   -> HUMANOID
-   -> third domain independently selected by each SSI line
-
-5. POST-21 CONSOLIDATION
-   compare actual competence
-   -> functional deduplication
-   -> Champion/Challenger enrichment
-   -> versioned consolidated BODY descendant
-   -> 3 new domains
-
-6. LATER EXTERNAL FALSIFICATION
-   external specialists propose unseen / adversarial challenge classes
-   -> frozen challenge package
-   -> first controlled run
-   -> read-only live observation
-   -> preserve PASS / FAIL / INCONCLUSIVE
+BODY_FROZEN / ISKRA T0
+-> 7-BODY TECHNICAL READINESS
+-> PRE-REPAIR FINDINGS PRESERVED
+-> TARGETED REPAIR
+-> COMMON 7/7 RETEST
+-> TRAIN-A FOUNDATION
+-> FOUNDATION_S1
+-> TRAIN-B LEGO + MICRONETWORK + V10 PRACTICUM
+-> TRAINED_START_S2 + HASH
+-> 7 MICRONETWORK + V10 MECHANISM TESTS
+-> 21 CROSS-DOMAIN EXPERIMENTS
+-> POST-21 COMPETENCE CONSOLIDATION
+-> 3 NEW DOMAINS
+-> LATER EXTERNAL FALSIFICATION CHALLENGES
 ```
 
 No later-stage success is claimed in advance.
 
-## Pre-experiment training — 14 independent packages
-
-Training is now an explicit methodological stage rather than an undocumented preparation step.
-
-Each BODY receives the same two curriculum families:
-
-### A — Foundation
-
-General reusable competence:
-
-- task interpretation and decomposition;
-- programming fundamentals;
-- debugging and root-cause analysis;
-- test-before-closure discipline;
-- task/project management;
-- evidence and provenance;
-- checkpoint/resume;
-- resource-aware execution.
-
-The lesson structure is:
+### B. Canonical engineering / operational mainline
 
 ```text
-INSTRUCTION
--> GUIDED PRACTICE
--> BLIND VALIDATION
+VALIDATED BODY FOUNDATION
++ EXISTING WORKING DIRECTOR FUNCTIONS
+-> NEW CANONICAL DIRECTOR
+-> LOCAL DIRECTOR CONTROL PANEL
+-> DIRECTOR IN SHARED READ-ONLY OBSERVABILITY
+-> DIRECTOR INTEGRATION / RESTART / PERSISTENCE VALIDATION
+-> LATER DIRECTOR -> ROBERT INTEGRATION
+-> LATER WORLD INFRASTRUCTURE
+-> LATER AGENT/WORLD INTEGRATION
 ```
 
-Only verified blind-validation outcomes may support canonical Experience/lifecycle progression.
+The Director mainline is **not counted as a completed BODY experiment**. It is a separate engineering descendant/integration line. `BODY_FROZEN T0` remains unchanged as a historical experimental control.
 
-### B — LEGO + Micronetwork + V10 Practicum
+Primary Director record:
 
-Practical competence use:
+- [`DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md`](DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md)
 
-- LEGO decomposition/composition;
-- known-skill reuse;
-- similar/ambiguous verification;
-- multi-skill composition;
-- deceptive-similarity / false-reuse protection;
-- controlled failure;
-- repeated-failure anti-loop;
-- recovery with new evidence;
-- persistence across restart;
-- route-cost and hardware measurement;
-- backend-to-live-interface correlation.
+## 7-BODY readiness — chronology preserved before repair
 
-Training uses **different task vectors from the held-out mechanism experiments**. The exact later experiment answers are not taught during training.
+A sequential readiness audit completed all `43/43` declared audit stages on 2026-09-08 in `READ_ONLY / TEST_ONLY` mode. No BODY repair was performed during that audit.
 
-Canonical training methodology:
+The audit preserved open findings, including the JUSTICE launcher deviation, repeated ISKRA Stage 09 test-fixture failures, a CONTINUUM full-flow orchestrator syntax issue and unequal full-acceptance coverage across lines.
 
-- [`PREEXPERIMENT_TRAINING_PROGRAM_20260908.md`](PREEXPERIMENT_TRAINING_PROGRAM_20260908.md)
+Therefore:
 
-Training package registry and hashes:
+```text
+AUDIT PROCEDURE COMPLETED = YES
+BODY MODIFICATIONS DURING AUDIT = 0
+AUTOMATIC REPAIRS DURING AUDIT = 0
+7-BODY READINESS CLOSED = NO
+REPAIR REQUIRED = YES
+COMMON RETEST REQUIRED = YES
+```
 
-- [`PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md`](PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md)
-- [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
+The repository intentionally records the state **before repair** so a later successful retest cannot erase the original findings.
+
+References:
+
+- [`7BODY_TECHNICAL_READINESS_START_HERE.md`](7BODY_TECHNICAL_READINESS_START_HERE.md)
+- [`evidence/7BODY_TECHNICAL_READINESS_PRE_REPAIR_AUDIT_20260908.md`](evidence/7BODY_TECHNICAL_READINESS_PRE_REPAIR_AUDIT_20260908.md)
+
+## Director Control Panel vs reviewer interface
+
+The new Director line includes a dedicated **local Director Control Panel** for the owner/operator. It is intended to consolidate routine runtime, service, orchestrator, ROOT/command, checkpoint, V10/Micronetwork, model/provider, diagnostic and hardware-status operations that would otherwise require multiple terminal windows.
+
+This must not be confused with the shared reviewer/developer interface.
+
+```text
+DIRECTOR CONTROL PANEL
+= LOCAL OWNER / OPERATOR
+= EXECUTION + ADMINISTRATION
+
+SHARED REVIEWER INTERFACE
+= READ-ONLY
+= SANITIZED OBSERVABILITY
+= NO ROOT
+= NO REMOTE EXECUTION
+```
+
+The Director is intended to appear as an additional independently identified entity in the shared observability interface. Final Director control-panel and shared-interface integration PASS is **not yet claimed**.
+
+## Pre-experiment training — 14 independent packages
+
+Training is an explicit methodological stage and has **not yet been executed**.
+
+Each BODY receives two curriculum families:
+
+```text
+A = FOUNDATION
+    task interpretation
+    programming/debugging
+    decomposition
+    task/project management
+    testing/evidence
+    checkpoint/resume
+    resource-aware execution
+
+B = LEGO + MICRONETWORK + V10 PRACTICUM
+    reuse
+    verify/adapt
+    multi-skill composition
+    false-reuse protection
+    controlled failure
+    repeated-failure anti-loop
+    recovery
+    restart persistence
+    route-cost measurement
+```
+
+Training uses task vectors separated from held-out mechanism-test vectors.
 
 Shared curriculum integrity references:
 
@@ -169,190 +188,68 @@ PRACTICUM_CURRICULUM_SHA256
 = abc3eccc4e19849f2d3b3be5b1a4d2752377b6024225f0da8d7d54f4ebafc7ce
 ```
 
-All fourteen training outcomes are currently `UNKNOWN`.
+References:
+
+- [`PREEXPERIMENT_TRAINING_PROGRAM_20260908.md`](PREEXPERIMENT_TRAINING_PROGRAM_20260908.md)
+- [`PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md`](PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md)
+- [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
 
 ## T0 remains immutable
-
-Training does not rewrite historical baselines.
 
 ```text
 BODY T0
 = preserved historical control
 
 FOUNDATION_S1
-= versioned training descendant
+= later versioned training descendant
 
 TRAINED_START_S2
-= versioned post-practicum descendant
+= later versioned post-practicum descendant
 ```
 
-Before a later research run, the exact S2 identity/hash must be recorded. The seven previously predeclared EXP-01 ... EXP-07 package hashes remain unchanged historical precommitments. If binding S2 materially changes a frozen experiment input, a **new experiment package version and new hash** are required rather than silently editing the old package.
+No S1/S2 result is currently claimed. If binding a future S2 state materially changes an already frozen mechanism-test input, a new package version/hash is required rather than rewriting the historical precommitment.
 
-## Route speed and compute measurement
+## Route-speed and compute evidence
 
-SSI V5 measures not only whether a route is correct, but what the route actually costs on real tasks.
-
-Where the runtime exposes the relevant evidence, training and later experiments record:
-
-```text
-ACTUAL V10 ROUTE CLASS
-+ elapsed time
-+ routing/retrieval/verification/adaptation timing
-+ model/provider class
-+ model-call count
-+ tool-call count
-+ execution-node identity/class
-+ CPU / RAM
-+ GPU / VRAM
-+ correctness / outcome
-```
-
-Route families include:
+SSI records the route actually reported by the runtime and measures its cost. Relevant route families include:
 
 ```text
 FULL_FLOW
-VERIFY_TOPK / intermediate verify-adapt
-REUSE_TOP1 / fastest validated reuse
-LEGO / alternative composition
+VERIFY_TOPK / VERIFY-ADAPT
+REUSE_TOP1
+LEGO / ALTERNATIVE COMPOSITION
 RECOVERY AFTER FAILURE
 ```
 
-For at least five comparable observations in one route/hardware/model stratum, summaries may include `count`, `min`, `mean`, `p50`, `p95`, `max` and total elapsed time.
+Where available, evidence includes elapsed time, route class, model/provider, model/tool call counts, execution node, CPU/RAM/GPU/VRAM and correctness/outcome.
 
-The strongest current comparison is **within SSI under controlled conditions**, for example full flow versus verification versus validated reuse. SSI V5 does not claim that V10 is faster than unrelated external systems without a separately controlled benchmark using matched tasks, models/providers and hardware.
+Historical scoped Test 3 evidence remains:
 
-Historical scoped Test 3 evidence recorded `57.61 s` versus `126.65 s` for Test 2, with `534 REUSE_TOP1`, `66 VERIFY_TOPK`, `0 fallback`, and `100/100` measured correctness on the known-case subset. That result is preserved as scoped development evidence, not universal performance proof.
+```text
+57.61 s vs 126.65 s Test 2
+REUSE_TOP1 = 534
+VERIFY_TOPK = 66
+fallback = 0
+known-case correctness = 100/100
+```
+
+This is scoped internal evidence, not a universal superiority claim.
 
 See [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md).
 
-## Live reviewer observability
-
-The shared reviewer interface presents reviewer-safe live state for:
-
-```text
-BODY_FROZEN
-ISKRA 1 — NICE
-ISKRA 2 — GUARDIAN
-ISKRA 3 — JUSTICE
-ISKRA 4 — EXPLORER
-ISKRA 5 — PRAGMATIST
-ISKRA 6 — SKEPTIC
-```
-
-Where available, a reviewer may observe:
-
-- real online/offline/runtime state;
-- mission or training/experiment stage;
-- checkpoint/progress;
-- CONTINUUM state;
-- Micronetwork/lifecycle summary;
-- reviewer-safe V10 route class;
-- execution-node identity/class;
-- CPU/RAM/GPU/VRAM;
-- sanitized events/evidence references.
-
-The interface is **read-only**. It cannot issue ROOT commands, create or alter missions, start/stop Kilo, change prompts or acceptance criteria, edit configuration/source, access private memory or provide a hidden execution route.
-
-See [`REVIEWER_LIVE_INTERFACE_20260907.md`](REVIEWER_LIVE_INTERFACE_20260907.md).
-
-## Canonical experiment-package standard
-
-Official SSI experiments use the common format defined in:
-
-- [`CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md`](CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md)
-
-Core flow:
-
-```text
-DECLARED SCOPE
--> FROZEN CONTRACT
--> ACCEPTANCE CRITERIA
--> MICROSTEP PLAN
--> MANIFEST
--> SHA256
--> KILO PRE-RUN VERIFY
--> REAL BODY EXECUTION
--> STEP RECEIPT
--> CHECKPOINT
--> FAILURE / INTERRUPTION / RECOVERY PRESERVED
--> PASS / FAIL / INCONCLUSIVE
--> SANITIZED PUBLIC EXPORT
--> PUBLICATION FIREWALL
-```
-
-One BODY receives one independent package/evidence chain. A later cross-BODY analysis may compare closed results but must not rewrite them.
-
-## Failure and repair policy
-
-A failure is not removed because a later retest passes.
-
-```text
-FAIL
--> preserve evidence
--> identify root cause
--> repair
--> new version/retest where required
--> preserve both outcomes
-```
-
-Infrastructure failures are classified separately where evidence permits, for example:
-
-```text
-SOFTWARE_FAILURE
-INFRASTRUCTURE_FAILURE_CONFIRMED
-INFRASTRUCTURE_FAILURE_SUSPECTED
-NETWORK_FAILURE
-UNKNOWN_CAUSE
-```
-
-Kilo, Ollama, interface or host restarts may resume a frozen procedure from the last valid checkpoint when no frozen input, acceptance rule, tested logic or supplied answer changes.
-
-## Public/private publication boundary
-
-```text
-PUBLIC
-= protocols
-+ package IDs
-+ SHA-256 references
-+ sanitized manifests/evidence
-+ PASS / FAIL / INCONCLUSIVE
-+ timing and hardware summaries
-+ route classes
-+ failure/recovery lineage
-+ claim boundaries
-
-PRIVATE
-= SSI source
-+ Micronetwork source
-+ Router V10 implementation
-+ ISKRA implementation
-+ ROBERT private source
-+ private file tree
-+ raw private prompts/memory/config
-+ local private paths
-+ credentials/secrets
-+ operational reviewer endpoint
-```
-
-The public evidence flow uses a positive allowlist and pre-push publication firewall. Broad staging such as `git add .` / `git add -A` is not part of the canonical evidence-publication path.
-
-## Current validated / recorded milestones
+## Current closed milestones
 
 ### BODY_FROZEN T0 — 2026-09-05
 
 ```text
 BODY_FROZEN_TOTAL_FILES = 1781
 BODY_FROZEN_PYTHON_FILES = 587
-CONTINUUM = CLOSED
 CONTINUUM_TESTS = 23/23 PASS
 MAIN_SCENARIOS = 22/22 PASS
 E2E_CLOSURE = 19/19 PASS
 FINAL_GUARD = 26/26 PASS
 ACTIVE_FAILURES = 0
 OPEN_BLOCKERS = 0
-MICRONETWORKS = 8
-MODULES = 8
-LAYERS = 3
 ROUTER_V10 = ACTIVE
 ```
 
@@ -381,63 +278,36 @@ OPEN_BLOCKERS = 0
 
 These are scoped development-validation results, not claims of production readiness, AGI or consciousness.
 
-## Predeclared research programs
-
-Mechanism-test package front door:
-
-- [`EXPERIMENT_PACKAGES_START_HERE.md`](EXPERIMENT_PACKAGES_START_HERE.md)
-- [`PREDECLARED_7BODY_MICRONETWORK_V10_PACKAGES_20260908.md`](PREDECLARED_7BODY_MICRONETWORK_V10_PACKAGES_20260908.md)
-
-21-experiment cross-domain program:
-
-- [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
-- [`EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md`](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
-
-Post-21 continuation:
-
-- [`POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md`](POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md)
-- [`POST21_RESEARCH_PHASE_INDEX_20260907.md`](POST21_RESEARCH_PHASE_INDEX_20260907.md)
-- [`POST21_TRANSFER_MECHANISM_EVOLUTION_DRONES_HUMANOID_PROTOCOL_20260907.md`](POST21_TRANSFER_MECHANISM_EVOLUTION_DRONES_HUMANOID_PROTOCOL_20260907.md)
-
-External reviewer/falsification protocol:
-
-- [`LIVE_EXTERNAL_REVIEW_SESSION_PROTOCOL_20260907.md`](LIVE_EXTERNAL_REVIEW_SESSION_PROTOCOL_20260907.md)
-
-## Canonical ROBERT continuity
-
-Canonical ROBERT is a continuous engineering/execution line. Cleaning/freeze operations for BODY_FROZEN or BODY ISKRA experiment branches do not erase ROBERT's previous engineering history, TEST 1 -> TEST 5 lineage or private retained competence/tooling history.
-
-See [`ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md`](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md).
-
-## Claim boundaries
+## Current claim boundary
 
 SSI V5 does **not** currently claim that:
 
-- it is proven AGI or conscious;
-- every mechanism is production-ready;
-- V10 is universally faster or more accurate than other systems;
-- the 14 training packages have already passed;
-- `TRAINED_START_S2` already exists for all seven lines;
-- the seven mechanism tests have already passed;
-- the complete final 21-run program has passed;
-- the consolidated post-21 BODY already exists or is superior;
-- ISKRA long-term divergence is already demonstrated;
-- drones or humanoids are already validated physical deployments;
+- 7-BODY technical readiness has already closed 7/7;
+- the readiness repair/retest has already passed;
+- the 14 training packages have passed;
+- `FOUNDATION_S1` or `TRAINED_START_S2` already exists for all seven lines;
+- the seven mechanism tests have passed;
+- the complete 21-run program has passed;
+- Director full integration/control-panel validation has passed;
+- Director currently controls the experimental ISKRA lines;
+- ROBERT integration with the new Director is already complete;
+- drones or humanoids are validated physical deployments;
+- V10 is universally faster or more accurate than unrelated systems;
 - Kilo is an independent scientific auditor;
 - a cryptographic hash proves scientific correctness;
-- a live reviewer session is equivalent to independent replication.
+- AGI, consciousness, universal transfer or production readiness has been established.
 
 ## Start here
 
-1. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md) — grant/technical reviewer entry.
-2. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md) — current public truth and boundaries.
-3. [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md) — pre-experiment training.
-4. [`EXPERIMENT_PACKAGES_START_HERE.md`](EXPERIMENT_PACKAGES_START_HERE.md) — mechanism-test precommitments.
-5. [`CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md`](CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md) — execution/evidence standard.
-6. [`REVIEWER_LIVE_INTERFACE_20260907.md`](REVIEWER_LIVE_INTERFACE_20260907.md) — live read-only observability.
-7. [`BODY_FROZEN_T0_PRE_ISKRA.md`](BODY_FROZEN_T0_PRE_ISKRA.md) — frozen baseline.
-8. [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md) — six independent start-state descendants.
-9. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md) — stateful predictive competence/recovery routing.
-10. [`evidence/README.md`](evidence/README.md) — public evidence index.
+1. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
+2. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
+3. [`7BODY_TECHNICAL_READINESS_START_HERE.md`](7BODY_TECHNICAL_READINESS_START_HERE.md)
+4. [`DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md`](DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md)
+5. [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
+6. [`EXPERIMENT_PACKAGES_START_HERE.md`](EXPERIMENT_PACKAGES_START_HERE.md)
+7. [`CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md`](CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md)
+8. [`REVIEWER_LIVE_INTERFACE_20260907.md`](REVIEWER_LIVE_INTERFACE_20260907.md)
+9. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
+10. [`evidence/README.md`](evidence/README.md)
 
-The intended standard is simple: **predeclare what will be tested, preserve what actually happened, never hide a failure, never publish private implementation by accident, and make stronger claims only when stronger evidence exists.**
+The standard is: **predeclare what will be tested, preserve what actually happened, keep engineering and experiment claims separate, never hide a failure, and make stronger claims only when stronger evidence exists.**
