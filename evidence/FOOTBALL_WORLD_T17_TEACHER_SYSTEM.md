@@ -1,54 +1,54 @@
-# Football World — historyczny system T17 Teacher Knowledge
+# Football World — Historical T17 Teacher Knowledge System
 
-**Status evidence:** `HISTORICAL_EVIDENCE / ROOT_ATTESTED`  
-**Zakres:** starsza architektura SSI / Football World  
-**Znaczenie:** mechanizm historyczny do zachowania podczas migracji do obecnej architektury SSI V5  
-**Autor architektury:** Paweł Jankiewicz (`PROGRAMMER_ROOT`)
+**Evidence status:** `HISTORICAL_EVIDENCE / ROOT_ATTESTED`  
+**Scope:** earlier SSI architecture / Football World  
+**Meaning:** historical mechanism to preserve during migration to the current SSI V5 architecture  
+**Architecture author:** Paweł Jankiewicz (`PROGRAMMER_ROOT`)
 
-> Ten dokument utrwala starszy mechanizm Football World, który poprzedza obecną formalizację `SSI ORGANISM CORE`. Nie oznacza on, że cały T17 jest obecnie aktywny w canonical runtime. Opisuje zachowaną strukturę, artefakty i kontrakt uczenia, które nie powinny zostać zgubione podczas migracji.
-
----
-
-## 1. T17 — 17 wyspecjalizowanych Teacherów
-
-T17 składał się z **17 Teacherów należących do dwóch rodzin modeli: 12 + 5**.
-
-### Rodzina A — `dataBase_futbol_trend` (12)
-
-1. `dataBase_futbol_trend` — Teacher zbiorczy / pełny obraz trendu;
-2. `siec_01_zmiana_kursow` — zmiana kursów;
-3. `siec_02_amplituda` — amplituda ruchu;
-4. `siec_03_tempo` — tempo zmian;
-5. `siec_04_max_wahanie` — maksymalne wychylenia;
-6. `siec_05_start_raw` — surowe wartości początkowe;
-7. `siec_06_koniec_raw` — surowe wartości końcowe;
-8. `siec_07_log_start` — logarytmiczne reprezentacje wartości startowych;
-9. `siec_08_log_koniec` — logarytmiczne reprezentacje wartości końcowych;
-10. `siec_09_ratio_start` — relacje / ilorazy na początku;
-11. `siec_10_ratio_koniec` — relacje / ilorazy na końcu;
-12. `siec_11_statystyka` — cechy statystyczne i zagregowane.
-
-### Rodzina B — `kursy_przygotowane` (5)
-
-13. `kursy_przygotowane` — Teacher zbiorczy oparty na przygotowanych kursach;
-14. `siec_01_start_kursow` — kursy startowe;
-15. `siec_02_koniec_kursow` — kursy końcowe;
-16. `siec_03_zmiana_kursow` — różnica start → koniec;
-17. `siec_04_procent_kursow` — względne / procentowe zmiany kursów.
-
-Kluczowa własność T17 polegała na tym, że jeden problem nie był obserwowany przez pojedynczy model. Każdy Teacher reprezentował inny punkt widzenia na ten sam mecz i ten sam proces rynkowo-sportowy.
+> This document preserves an earlier Football World mechanism that predates the current formalization of `SSI ORGANISM CORE`. It does not claim that the entire T17 system is currently active in canonical runtime. It records preserved structure, artifacts and a learning contract that should not be lost during migration.
 
 ---
 
-## 2. Kontrakt 60% / 40%
+## 1. T17 — 17 specialized Teachers
 
-Historyczny przepływ rozdzielał trening od późniejszej obserwacji:
+T17 consisted of **17 Teachers in two model families: 12 + 5**.
+
+### Family A — `dataBase_futbol_trend` (12)
+
+1. `dataBase_futbol_trend` — aggregate Teacher / full trend view;
+2. `siec_01_zmiana_kursow` — odds change;
+3. `siec_02_amplituda` — movement amplitude;
+4. `siec_03_tempo` — rate of change;
+5. `siec_04_max_wahanie` — maximum deviations;
+6. `siec_05_start_raw` — raw starting values;
+7. `siec_06_koniec_raw` — raw ending values;
+8. `siec_07_log_start` — logarithmic start-value representation;
+9. `siec_08_log_koniec` — logarithmic end-value representation;
+10. `siec_09_ratio_start` — starting ratios;
+11. `siec_10_ratio_koniec` — ending ratios;
+12. `siec_11_statystyka` — statistical and aggregate features.
+
+### Family B — `kursy_przygotowane` (5)
+
+13. `kursy_przygotowane` — aggregate Teacher based on prepared odds;
+14. `siec_01_start_kursow` — starting odds;
+15. `siec_02_koniec_kursow` — ending odds;
+16. `siec_03_zmiana_kursow` — start-to-end difference;
+17. `siec_04_procent_kursow` — relative / percentage odds change.
+
+A key property of T17 was that one problem was not observed through a single model. Each Teacher represented a different view of the same match and the same market/sport process.
+
+---
+
+## 2. 60% / 40% contract
+
+The historical flow separated training from later observation:
 
 ```text
-DANE ŹRÓDŁOWE
+SOURCE DATA
       |
       v
-BUDOWA / TRENING
+BUILD / TRAIN
       |
       +-------------------------+
       |                         |
@@ -56,25 +56,25 @@ BUDOWA / TRENING
 60% TRAINING              40% OBSERVATION
       |                         |
       v                         v
-MODEL TEACHER           DANE NIEWIDZIANE
+MODEL TEACHER             UNSEEN DATA
                                 |
                                 v
-                           PREDYKCJA
+                           PREDICTION
                                 |
                                 v
-                         REALNY OUTCOME
+                         REAL OUTCOME
                                 |
                                 v
-                      PAMIĘĆ OBSERWACJI
+                      OBSERVATION MEMORY
 ```
 
-40% obserwacyjne nie było traktowane jako zwykłe przedłużenie treningu. Służyło do obserwowania zachowania już zbudowanego Teachera na niewidzianych przypadkach.
+The 40% observation portion was not treated as a simple extension of training. It was used to observe the behavior of an already-built Teacher on unseen cases.
 
 ---
 
-## 3. Fizyczne artefakty Teachera
+## 3. Teacher artifacts
 
-Typowy Teacher posiadał strukturę zbliżoną do:
+A typical Teacher had a structure similar to:
 
 ```text
 siec_03_tempo/
@@ -95,30 +95,30 @@ siec_03_tempo/
     `-- pamiec_obserwacji.json
 ```
 
-Znaczenie artefaktów:
+Artifact meaning:
 
-- `model.h5` — model predykcyjny Teachera;
-- `metadata.json` — konfiguracja i opis wejść/modelu;
-- `klasy.json` — mapowanie klas wyjściowych;
-- `historia.json` — historia treningu;
-- `walidacja_40_procent.csv` — wydzielone dane obserwacyjne;
-- `predykcja_z_wynikiem.csv` — historyczne połączenie predykcji z outcome;
-- `pamiec_obserwacji.json` — pamięć zachowania Teachera w kolejnych obserwacjach.
+- `model.h5` — Teacher predictive model;
+- `metadata.json` — configuration and model/input description;
+- `klasy.json` — output-class mapping;
+- `historia.json` — training history;
+- `walidacja_40_procent.csv` — separated observation data;
+- `predykcja_z_wynikiem.csv` — historical linkage between prediction and outcome;
+- `pamiec_obserwacji.json` — memory of Teacher behavior over subsequent observations.
 
 ---
 
-## 4. Pamięć zachowania Teachera
+## 4. Teacher behavior memory
 
-`pamiec_obserwacji.json` nie była tylko raportem accuracy. Zachowywała obserwacje pozwalające badać m.in.:
+`pamiec_obserwacji.json` was not only an accuracy report. It retained observations for studying:
 
-- czy Teacher zmienił predykcję;
-- czy zmienił poziom pewności;
-- czy wzrost pewności był uzasadniony;
-- czy wysoka pewność korelowała z trafnością;
-- na jakich typach przypadków Teacher regularnie się mylił;
-- jak zmieniało się jego zachowanie w kolejnych obserwacjach.
+- whether the Teacher changed its prediction;
+- whether confidence changed;
+- whether confidence increases were justified;
+- whether high confidence correlated with correctness;
+- which classes of cases produced recurring errors;
+- how behavior changed across observations.
 
-Fundamentalne rozróżnienie:
+Fundamental distinction:
 
 ```text
 PREDICTION SCORE
@@ -128,9 +128,9 @@ KNOWLEDGE ABOUT MODEL BEHAVIOR
 
 ---
 
-## 5. Laboratorium Wiedzy
+## 5. Knowledge Laboratory
 
-Każdy Teacher posiadał osobny obszar analiz, np.:
+Each Teacher had a separate analysis area, for example:
 
 ```text
 laboratorium/
@@ -145,48 +145,48 @@ laboratorium/
         `-- kolektor_wiedzy.json
 ```
 
-Warstwy odpowiadały na różne pytania:
+These layers answered different questions:
 
-- `analiza_klas.json` — dla których klas Teacher jest silny lub słaby;
-- `analiza_pewnosci.json` — relacja confidence ↔ rzeczywista trafność;
-- `analiza_pewnosci_klasy.json` — kalibracja confidence osobno dla klas;
-- `analiza_odchylen.json` — rodzaj i wielkość błędu;
-- `analiza_pamieci.json` — zachowanie modelu w kolejnych obserwacjach;
-- `analiza_przyszlych_predykcji.csv` — materiał do dalszej kontroli;
-- `kolektor_wiedzy.json` — skonsolidowana wiedza o zachowaniu konkretnego Teachera.
+- `analiza_klas.json` — where the Teacher is strong or weak by class;
+- `analiza_pewnosci.json` — confidence versus actual correctness;
+- `analiza_pewnosci_klasy.json` — confidence calibration per class;
+- `analiza_odchylen.json` — error type and magnitude;
+- `analiza_pamieci.json` — model behavior across observations;
+- `analiza_przyszlych_predykcji.csv` — material for continued monitoring;
+- `kolektor_wiedzy.json` — consolidated knowledge about one Teacher's behavior.
 
 ---
 
-## 6. Dwie postacie Teachera
+## 6. Two forms of a Teacher
 
-T17 rozdzielał dwie rzeczy:
+T17 separated:
 
 ```text
 MODEL TEACHER
 = model.h5
-= zdolność do predykcji
+= predictive capability
 
-WIEDZA TEACHERA
+TEACHER KNOWLEDGE
 = kolektor_wiedzy.json
-= wiedza zdobyta przez obserwację zachowania modelu
+= knowledge learned by observing model behavior
 ```
 
-Dalszy system nie musiał więc kopiować wag Teachera ani traktować każdej jego predykcji jako jednakowo wartościowej. Mógł korzystać z informacji typu:
+The later system therefore did not need to copy Teacher weights or treat every Teacher prediction as equally valuable. It could use information such as:
 
 ```text
-Teacher jest mocny w sytuacji A
-Teacher jest słaby w sytuacji B
-wysoki confidence w klasie C jest wiarygodny
-w przypadku D Teacher systematycznie przeszacowuje
+Teacher is strong in situation A
+Teacher is weak in situation B
+high confidence in class C is reliable
+in case D the Teacher systematically overestimates
 ```
 
-To jest mechanizm:
+This is the mechanism:
 
 ```text
 TEACHER -> OBSERVATION -> MEMORY -> ANALYSIS -> KNOWLEDGE
 ```
 
-a nie tylko:
+not merely:
 
 ```text
 TEACHER -> LABEL / ACCURACY
@@ -194,74 +194,74 @@ TEACHER -> LABEL / ACCURACY
 
 ---
 
-## 7. Konsolidacja wiedzy T17
+## 7. T17 knowledge consolidation
 
-W warstwie zbiorczej występowały m.in.:
+The aggregate layer included artifacts such as:
 
 ```text
 PAMIEC_MODEL_POZNAWCZY.json
 WIEDZA_DLA_MODELU_DOCELOWEGO.json
 ```
 
-`WIEDZA_DLA_MODELU_DOCELOWEGO.json` mogła zawierać m.in.:
+`WIEDZA_DLA_MODELU_DOCELOWEGO.json` could contain:
 
-- rekomendację Teachera;
+- Teacher recommendation;
 - confidence;
-- wagi dla klas `gospodarze / remis / goście`;
-- poziom i liczbę przykładów wykorzystanych ze świata;
-- reguły `warunek -> konsekwencja -> pewność`.
+- weights for `home / draw / away` classes;
+- level and number of examples taken from the world;
+- `condition -> consequence -> confidence` rules.
 
-Przykładowy rodzaj reguły:
+Example rule type:
 
 ```text
-JEŻELI określony feature znajduje się w danym zakresie
-TO określony kierunek outcome występuje częściej
-PEWNOŚĆ = wartość wynikająca z evidence
+IF a feature is within a given range
+THEN a particular outcome direction occurs more often
+CONFIDENCE = value derived from evidence
 ```
 
-T17 miał więc prowadzić od wielu wyspecjalizowanych perspektyw do jawnej, analizowalnej wiedzy, a nie wyłącznie do jednego zbiorczego wyniku modelu.
+T17 was therefore intended to move from many specialized perspectives to explicit, analyzable knowledge rather than only one aggregate model score.
 
 ---
 
-## 8. Pełny historyczny przepływ
+## 8. Full historical flow
 
 ```text
-17 TEACHERÓW
+17 TEACHERS
       |
       +-- 12 x dataBase_futbol_trend
       |
       `-- 5 x kursy_przygotowane
               |
               v
-       MODELE + METADATA
+       MODELS + METADATA
               |
               v
        40% UNSEEN OBSERVATION
               |
               v
-          PREDYKCJE
+          PREDICTIONS
               |
               v
-        REALNY OUTCOME
+        REAL OUTCOME
               |
               v
-      PAMIĘĆ OBSERWACJI
+      OBSERVATION MEMORY
               |
               v
-      LABORATORIUM WIEDZY
+      KNOWLEDGE LABORATORY
               |
-              +-- klasy
-              +-- odchylenia
-              +-- pamięć
+              +-- classes
+              +-- deviations
+              +-- memory
               +-- confidence
-              +-- confidence / klasa
-              `-- przyszłe predykcje
+              +-- confidence / class
+              `-- future predictions
               |
               v
-      KOLEKTOR WIEDZY TEACHERA
+      TEACHER KNOWLEDGE COLLECTOR
               |
               v
-       KONSOLIDACJA T17
+       T17 CONSOLIDATION
               |
               v
      PAMIEC_MODEL_POZNAWCZY
@@ -272,11 +272,11 @@ T17 miał więc prowadzić od wielu wyspecjalizowanych perspektyw do jawnej, ana
 
 ---
 
-## 9. Związek z przyszłymi Agentami
+## 9. Relationship to future Agents
 
-W obecnej architekturze SSI ten historyczny mechanizm może zostać wykorzystany jako źródło wiedzy i materiał eksperymentalny dla przyszłych Agentów.
+In current SSI architecture this historical mechanism may serve as a source of knowledge and experimental material for future Agents.
 
-Agent nie musi bezmyślnie kopiować Teachera. Docelowo może:
+An Agent does not need to copy a Teacher blindly. The intended pattern is:
 
 ```text
 WORLD / TEACHER KNOWLEDGE
@@ -308,15 +308,15 @@ INDEPENDENT REAL OUTCOME
 OWN EXPERIENCE
 ```
 
-Sześciu trwałych Agentów może dzięki temu rozwijać różne metodologie badawcze mimo wejścia do tego samego świata.
+Six persistent Agents could therefore develop different research methodologies while entering the same world.
 
-Director ma obserwować nie tylko ranking końcowy, ale również pełne lineage eksperymentów, rozwój strategii, mikrosieci, prywatne historie Agentów oraz wpływ wcześniejszych Experience i systemów wartości na decyzje.
+Director is intended to observe not only final ranking but the full experiment lineage, strategy development, micronetworks, private Agent histories, and the effect of prior Experience and value systems on decisions.
 
 ---
 
-## 10. Authority i real-world execution
+## 10. Authority and real-world execution
 
-Eksperyment Agentów pozostaje oddzielony od realnego wykonania:
+Agent experiments remain separate from real execution:
 
 ```text
 AGENTS
@@ -331,9 +331,9 @@ ROBERT
 executes approved real-world actions
 ```
 
-Agent może tworzyć predykcje, symulowane strategie i eksperymentalne kombinacje decyzji. Sam ranking lub wysoka skuteczność nie nadają mu automatycznie real-world authority.
+An Agent may create predictions, simulated strategies and experimental decision combinations. Ranking or high accuracy alone does not grant real-world authority.
 
-To samo rozróżnienie dotyczy Moralnej SI / Iskry: Agent może podejmować decyzje w środowisku eksperymentalnym i uczyć się z konsekwencji, ale capability nie jest równoznaczne z authority.
+The same distinction applies to Moral AI / Iskra: an Agent may make decisions inside an experimental environment and learn from consequences, but capability is not authority.
 
 ```text
 CAPABILITY != AUTHORITY
@@ -342,11 +342,11 @@ SIMULATION != REAL EXECUTION
 
 ---
 
-## 11. Znaczenie dla migracji SSI V5
+## 11. Significance for SSI V5 migration
 
-Podczas przebudowy obecnego MASTER-a nie należy zachować wyłącznie zasady `60% training / 40% observation`.
+The current MASTER rebuild should preserve more than the `60% training / 40% observation` rule.
 
-Do zachowania jest pełniejszy mechanizm:
+The broader mechanism is:
 
 ```text
 OBSERVATION
@@ -356,18 +356,18 @@ OBSERVATION
 -> CONSOLIDATED KNOWLEDGE
 ```
 
-To jest historyczny mechanizm domenowy Football World, który może zostać później odwzorowany na neutralnych interfejsach `SSI ORGANISM CORE`, bez kopiowania prywatnej historii jednego Agenta do innych Agentów.
+This is a historical Football World domain mechanism that may later be mapped onto neutral `SSI ORGANISM CORE` interfaces without copying one Agent's private history into other Agents.
 
 ---
 
-## 12. Granice twierdzeń
+## 12. Claim boundaries
 
-Ten dokument nie twierdzi, że:
+This document does not claim that:
 
-- T17 jest obecnie w pełni podłączony do canonical runtime SSI V5;
-- 17 Teacherów jest obecnie aktywnych produkcyjnie;
-- historyczne predykcje gwarantują przyszłą skuteczność;
-- mechanizm dowodzi AGI lub świadomości;
-- Agent uzyskuje authority do realnych działań finansowych.
+- T17 is currently fully connected to the canonical SSI V5 runtime;
+- all 17 Teachers are currently active in production;
+- historical predictions guarantee future performance;
+- the mechanism proves AGI or consciousness;
+- an Agent receives authority for real financial actions.
 
-Dokument utrwala **historyczny projekt, zachowane artefakty i mechanizm badawczy**, który ma znaczenie dla dalszej integracji Football World.
+The document preserves a **historical design, retained artifacts and research mechanism** relevant to later Football World integration.
