@@ -1,44 +1,44 @@
-# SSI V5 — EXPERIMENTAL ORIGINS AND ENGINEERING EVOLUTION
+# SSI V5 — Experimental Origins and Engineering Evolution
 
 **Status:** `HISTORICAL_EVIDENCE / ROOT_ATTESTED / EVIDENCE_TO_EXPAND`  
-**Data:** `2026-08-29`  
-**Autor SSI:** Paweł Jankiewicz / `PROGRAMMER_ROOT`
+**Date:** `2026-08-29`  
+**SSI author:** Paweł Jankiewicz / `PROGRAMMER_ROOT`
 
-## 1. Dlaczego ten dokument istnieje
+## 1. Why this document exists
 
-Publiczna historia SSI nie powinna sprawiać wrażenia, że obecna architektura została wymyślona od zera w kilka tygodni albo że powstała wyłącznie przez użycie współczesnych LLM-ów. Obecne szybkie tempo formalizacji SSI wyrasta z wcześniejszych, wieloletnich eksperymentów autora z danymi piłkarskimi, predykcją, obserwacją zachowania modeli, własnymi metodami przeliczania oraz praktycznym testowaniem strategii.
+The public SSI history should not imply that the current architecture was invented from zero in a few weeks or created solely through modern LLM tools. The rapid formalization of SSI builds on earlier years of the author's experiments with football data, prediction, observation of model behavior, custom calculation methods and practical strategy testing.
 
-GitHub potwierdza formalizację architektury MSDI/SSI od lipca 2026. Wcześniejsza historia eksperymentów domenowych jest obecnie `ROOT_ATTESTED` i będzie wzmacniana machine evidence po dołączeniu zachowanych kodów, danych i wyników z MSI.
+GitHub confirms formalization of the MSDI/SSI architecture from July 2026. Earlier domain-experiment history is currently `ROOT_ATTESTED` and can be strengthened with machine evidence when preserved code, data and results are reattached and inspected.
 
-## 2. Punkt wyjścia: nie „zbudować AI”, tylko zrozumieć zachowanie predykcji
+## 2. Starting point: not "build AI", but understand prediction behavior
 
-Pierwotne pytanie było praktyczne:
+The original question was practical:
 
 ```text
-DANE
+DATA
 -> MODEL
--> PREDYKCJA
--> REALNY OUTCOME
--> CO MODEL FAKTYCZNIE ROBI?
+-> PREDICTION
+-> REAL OUTCOME
+-> WHAT IS THE MODEL ACTUALLY DOING?
 ```
 
-Sama skuteczność końcowa nie była wystarczająca. Autor obserwował, że model może być użyteczny również wtedy, gdy jego błąd jest systematyczny — np. określona predykcja dokładnego wyniku może historycznie wskazywać powtarzalny kierunek odwrotny.
+Final accuracy alone was not enough. The author observed that a model may still carry useful information when its error is systematic — for example, a certain exact-score prediction may historically correlate with a repeatable opposite direction.
 
-To prowadziło do analizy nie tylko `trafione / nietrafione`, lecz także:
+This led to analysis not only of `correct / incorrect`, but also:
 
-- grup podobnych predykcji;
+- groups of similar predictions;
 - exact-score hit rate;
 - directional hit rate;
-- systematycznych odchyleń;
-- zmian pomiędzy kolejnymi generacjami;
-- stabilności tej samej predykcji po retrainingu;
-- przypadków, w których nowa generacja zmieniała wcześniejszą odpowiedź;
-- historii tego samego meczu/przypadku w kolejnych obserwacjach;
-- warunków, w których pozornie błędny model niósł użyteczny sygnał.
+- systematic deviations;
+- changes between generations;
+- stability of the same prediction after retraining;
+- cases where a new generation changes an earlier answer;
+- history of the same match/case across observations;
+- conditions where an apparently wrong model still carries useful signal.
 
 ## 3. 60% training / 40% unseen observation
 
-Jednym z historycznych mechanizmów było rozdzielenie danych na część używaną do treningu i część pozostawioną do późniejszej obserwacji. Celem nie było jedynie zmierzenie accuracy, lecz obserwowanie zachowania wyszkolonej sieci na danych, których nie używała do treningu.
+One historical mechanism separated training data from later observation data. The purpose was not only to measure accuracy, but to observe the behavior of a trained network on data it did not use during training.
 
 ```text
 60% TRAINING
@@ -51,11 +51,11 @@ Jednym z historycznych mechanizmów było rozdzielenie danych na część używa
 -> KNOWLEDGE
 ```
 
-W obserwacji zapisywana była historia predykcji i jej zmian między generacjami. Jeżeli ten sam przypadek pojawiał się ponownie w warstwie obserwacyjnej, system mógł porównać wcześniejszą i aktualną predykcję oraz zachować informację o zmianie.
+The observation layer preserved prediction history and changes between generations. If the same case reappeared later, the system could compare prior and current predictions and retain the change.
 
-## 4. Generacja jako historyczny stan kompetencji
+## 4. Generation as a historical competence state
 
-Generacja Teachera nie jest traktowana wyłącznie jako numer treningu. Jest historycznym snapshotem zachowania modelu, który może mieć inną wartość niż późniejsza generacja.
+A Teacher generation is not treated only as a training counter. It is a historical snapshot of model behavior that may differ in value from a later generation.
 
 ```text
 TEACHER G_n
@@ -67,50 +67,50 @@ TEACHER G_n
 -> REAL OUTCOMES
 ```
 
-Późniejsze `G_n+1` może zachowywać się inaczej. Dlatego stara generacja może pozostać cenna jako osobny artefakt badawczy i jako wejście do późniejszej strategii Agenta.
+A later `G_n+1` may behave differently. An older generation may therefore remain useful as a separate research artifact and as input to a later Agent strategy.
 
 ## 5. Knowledge Collector
 
-Teacher nie powinien być redukowany do pojedynczej odpowiedzi. Jego wiedza obejmuje obserwacje o tym, jak zachowuje się określona klasa predykcji, jaki jest rozkład outcome, jaki wynik lub kierunek był najczęstszy, jakie odchylenia pojawiały się między generacjami oraz jak stabilna była dana charakterystyka.
+A Teacher should not be reduced to a single output. Its knowledge includes observations about how a prediction class behaves, outcome distribution, dominant result/direction, deviations between generations and the stability of a characteristic.
 
-Historycznie z tego podejścia powstały artefakty obserwacji, Knowledge Laboratories i knowledge collectors opisane szerzej w `FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md`.
+Historically this approach produced observation artifacts, Knowledge Laboratories and knowledge collectors described more fully in `FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md`.
 
-## 6. Wirtualne rozliczanie strategii
+## 6. Virtual strategy accounting
 
-Autor prowadził także wcześniejsze eksperymenty, w których różne modele/strategie otrzymywały własne nazwy i wykonywały wirtualne predykcje exact-score. Wyniki były rozliczane względem kursu i kosztu/stawki, aby obserwować nie tylko accuracy, lecz również długoterminową wartość ekonomiczną strategii.
+The author also ran earlier experiments where different models/strategies had their own names and produced virtual exact-score predictions. Results were settled against odds and cost/stake so the system could observe not only accuracy but also long-term economic value of a strategy.
 
-To prowadziło do ważnego rozróżnienia:
+This led to an important distinction:
 
 ```text
 HIGH ACCURACY != POSITIVE ECONOMIC VALUE
 LOW EXACT-SCORE HIT RATE != AUTOMATICALLY USELESS SIGNAL
 ```
 
-Nie jest to deklaracja gwarantowanej przewagi finansowej. Jest to historia metodologii, z której później wyrosło podejście SSI do real outcome, Experience i długoterminowej oceny strategii.
+This is not a claim of guaranteed financial advantage. It is part of the methodology history from which SSI later developed its emphasis on real outcome, Experience and long-term strategy evaluation.
 
-## 7. Ewolucja sposobu programowania autora
+## 7. Evolution of the author's programming method
 
-Autor nie zaczynał od rozbudowanych systemów wielomodułowych. Wcześniejsze narzędzia były często pojedynczymi skryptami Python wykonywanymi liniowo; duży program był dzielony na logiczne części (`część 1`, `część 2`, `część 3`, `część 4`) i oznaczany tak, aby można było z niego wydobywać kolejne dane i etapy przeliczania.
+The author did not begin with large multi-module systems. Earlier tools were often single Python scripts executed linearly; larger programs were split into logical parts (`part 1`, `part 2`, `part 3`, `part 4`) so successive data and calculation stages could be extracted and checked.
 
-Ta praktyka dekompozycji poprzedza obecne LEGO packages. Dzisiejszy wzorzec:
+That decomposition practice predates current LEGO packages. The present pattern:
 
 ```text
-DUŻY PROBLEM
--> MAŁE CZĘŚCI
--> JAWNE WEJŚCIA/WYJŚCIA
--> WYKONANIE
+LARGE PROBLEM
+-> SMALL PARTS
+-> EXPLICIT INPUTS / OUTPUTS
+-> EXECUTION
 -> TEST
 -> CHECKPOINT
--> INTEGRACJA
+-> INTEGRATION
 ```
 
-jest rozwinięciem praktycznego sposobu pracy, a nie wyłącznie techniką promptowania LLM.
+is an evolution of a practical work method, not merely an LLM prompting technique.
 
-## 8. Własny kod przeliczania i cechy sieci
+## 8. Custom calculation code and network features
 
-Autor posiada wcześniejszy kod przeliczania sieci i dane dotyczące skuteczności własnych feature engineering / weighting / transformation mechanisms. Szczegółowa architektura tych obliczeń nie jest tutaj rekonstruowana z pamięci, ponieważ kod źródłowy pozostaje obecnie na MSI i nie został w tej aktualizacji ponownie zweryfikowany.
+The author has earlier network-calculation code and data concerning the effectiveness of custom feature-engineering / weighting / transformation mechanisms. The detailed architecture is not reconstructed from memory here because the source remains on the author's MSI machine and was not re-verified during this public update.
 
-Status tej części:
+Current status:
 
 ```text
 EXISTS ACCORDING TO AUTHOR = ROOT_ATTESTED
@@ -118,11 +118,11 @@ DETAILED IMPLEMENTATION = NOT YET RE-VERIFIED IN THIS PUBLIC UPDATE
 NEXT STEP = INSPECT SOURCE CODE + ADD MACHINE-CHECKABLE EVIDENCE
 ```
 
-README nie powinien na tej podstawie udawać dokładnej wiedzy o liczbie warstw, transformacjach lub formułach, których nie potwierdzono ponownie z kodu.
+Public documentation should not pretend to know exact layer counts, transformations or formulas that have not been re-confirmed from source.
 
-## 9. Związek z mikrosieciami SSI
+## 9. Relationship to SSI micronetworks
 
-Mikrosieci nie powstały w próżni. Ich logika — obserwować zachowanie, zachowywać historię, wykrywać stabilne wzorce, porównywać generacje, gromadzić evidence i dopiero potem wzmacniać kompetencję — wyrasta z wcześniejszej praktyki obserwowania modeli domenowych.
+Micronetworks did not appear in isolation. Their logic — observe behavior, preserve history, detect stable patterns, compare generations, collect evidence and only then strengthen competence — has methodological continuity with earlier model-observation practice.
 
 ```text
 PREDICTION HISTORY
@@ -130,7 +130,7 @@ PREDICTION HISTORY
 -> PATTERN
 -> KNOWLEDGE
 
-później:
+later:
 
 EXPERIENCE
 -> MICRONETWORK BRANCH
@@ -139,17 +139,17 @@ EXPERIENCE
 -> CHAMPION
 ```
 
-Nie są to mechanizmy identyczne, ale istnieje wyraźna ciągłość metodologiczna.
+These are not identical mechanisms, but there is a clear methodological lineage.
 
-## 10. Dlaczego tempo 2026 nie oznacza „miesiąca doświadczenia”
+## 10. Why the rapid 2026 timeline does not mean "one month of experience"
 
-Publiczny Git dokumentuje bardzo szybki rozwój formalnej architektury MSDI/SSI w 2026. Nie dokumentuje jednak początku zainteresowania autora analizą danych, predykcją ani wcześniejszych eksperymentów domenowych.
+Public Git records very fast formal development of MSDI/SSI architecture in 2026. It does not record the beginning of the author's interest in data analysis, prediction or earlier domain experiments.
 
-Uczciwe publiczne stwierdzenie brzmi:
+The honest public statement is:
 
-> Obecna architektura SSI została formalnie rozwinięta bardzo szybko, lecz bazuje na wcześniejszych eksperymentach autora z danymi, predykcją, obserwacją modeli i własnymi programami. Publiczne dowody tych wcześniejszych etapów są niepełne i będą uzupełniane artefaktami źródłowymi zamiast retrospektywnego dopowiadania szczegółów.
+> The current SSI architecture was formalized very quickly, but it builds on earlier experiments with data, prediction, model observation and custom programs. Public evidence of those earlier stages is incomplete and should be strengthened with source artifacts rather than reconstructed retrospectively from memory.
 
-## 11. Zasada evidence
+## 11. Evidence rule
 
 ```text
 AUTHOR MEMORY / ROOT ATTESTATION
@@ -163,4 +163,4 @@ OLD SOURCE CODE
 -> STRONGER HISTORICAL EVIDENCE
 ```
 
-Ten dokument zachowuje genezę metodologii bez zamiany osobistej historii autora w niezweryfikowany marketing.
+This document preserves the methodology's origin without turning personal history into unverified marketing.
