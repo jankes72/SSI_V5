@@ -4,7 +4,7 @@
 
 SSI V5 investigates whether a long-running system can build, validate, preserve, reuse, compare and revise competence across tasks using persistent state, Experience, Micronetworks, Candidate -> Challenger -> Champion lifecycle, Router V10, LEGO composition and CONTINUUM persistence.
 
-The public repository is an **evidence-indexed research mirror**, not a source-code distribution. Private SSI, Micronetwork, Router V10, ISKRA, DIRECTOR and ROBERT implementation source remains private by design.
+The public repository is an **evidence-indexed research mirror, not a source-code distribution**. Private SSI, Micronetwork, Router V10, ISKRA, DIRECTOR and ROBERT implementation source remains private by design. Public materials describe architecture, test protocols, sanitized states, measured outcomes, failures, repairs, retests and claim boundaries without publishing the proprietary implementation.
 
 ## Independent project context
 
@@ -14,7 +14,7 @@ The project should be evaluated from its **predeclared protocols, measured outco
 
 See [`AUTHOR_CONTEXT.md`](AUTHOR_CONTEXT.md).
 
-## Current state — 2026-09-08
+## Current state — 2026-09-09
 
 ```text
 FROZEN COMMON BASELINE
@@ -49,10 +49,14 @@ CROSS-DOMAIN PROGRAM
 = PREDECLARED / FINAL CONTROLLED OUTCOMES UNKNOWN
 
 DIRECTOR MAINLINE
-= canonical engineering / operational line opened 2026-09-08
-= BODY foundation + existing working Director functions
-= implementation in progress
-= final Director validation NOT YET CLOSED
+= canonical engineering / operational line
+= DIRECTOR_FROZEN_C0 baseline created and integrity-verified
+= local Director runtime validated RUNNING
+= local owner control panel validated
+= shared WWW observability validated OBSERVER_ONLY
+= restart / persistence / checkpoint / IPC validation PASS
+= Router V10, Micronetwork, LAB, memory and model-status integration validated in the C0 scope
+= central Director node intentionally OFFLINE in LOCAL-ONLY mode
 
 CANONICAL ROBERT
 = continuous engineering / execution line
@@ -61,7 +65,7 @@ CANONICAL ROBERT
 
 ## Two deliberately separated tracks
 
-SSI V5 now has a controlled research track and a parallel canonical engineering track.
+SSI V5 has a controlled research track and a parallel canonical engineering track.
 
 ### A. Controlled BODY research track
 
@@ -91,8 +95,9 @@ VALIDATED BODY FOUNDATION
 + EXISTING WORKING DIRECTOR FUNCTIONS
 -> NEW CANONICAL DIRECTOR
 -> LOCAL DIRECTOR CONTROL PANEL
--> DIRECTOR IN SHARED READ-ONLY OBSERVABILITY
--> DIRECTOR INTEGRATION / RESTART / PERSISTENCE VALIDATION
+-> SHARED READ-ONLY OBSERVABILITY
+-> RESTART / PERSISTENCE / CHECKPOINT / IPC VALIDATION
+-> DIRECTOR_FROZEN_C0
 -> LATER DIRECTOR -> ROBERT INTEGRATION
 -> LATER WORLD INFRASTRUCTURE
 -> LATER AGENT/WORLD INTEGRATION
@@ -103,6 +108,62 @@ The Director mainline is **not counted as a completed BODY experiment**. It is a
 Primary Director record:
 
 - [`DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md`](DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md)
+
+## DIRECTOR_FROZEN_C0 — closed engineering baseline
+
+On 2026-09-08 the canonical Director line reached a frozen engineering baseline named **`DIRECTOR_FROZEN_C0`**.
+
+This is a **private implementation baseline with a public sanitized status description**. The source code, internal execution logic, secrets, private runtime configuration and proprietary implementation details are not published in this repository.
+
+The C0 baseline records the following validated state within its tested scope:
+
+```text
+LOCAL DIRECTOR RUNTIME = RUNNING / validated
+SINGLE RUNTIME PROTECTION = PASS
+IPC = ACTIVE / validated
+CHECKPOINT + RESTART/PERSISTENCE = PASS
+CONTINUUM local integration = ACTIVE / validated
+LAB integration = ACTIVE / validated
+MICRONETWORK integration = validated
+ROUTER V10 integration = validated
+COLLECTIVE INTELLIGENCE status = validated
+PERSISTENT CONVERSATION MEMORY = validated across restart
+LOCAL DIRECTOR CONTROL PANEL = PASS
+SHARED WWW INTERFACE = PASS / OBSERVER_ONLY
+ROOT commands in shared WWW = NOT EXPOSED
+HARDWARE STATUS incl. NVIDIA GPU/VRAM = validated
+MODEL/BACKEND STATUS = validated in C0 scope
+CENTRAL DIRECTOR NODE = intentionally OFFLINE / LOCAL-ONLY mode
+```
+
+The final C0 verification also recorded:
+
+```text
+FINAL PANEL / SYSTEM CHECKS = 27/27 PASS
+SELECTED PYTEST VALIDATION = 19/19 PASS
+INDEPENDENCE VALIDATION = PASS
+FREEZE MANIFEST = CREATED
+FREEZE INTEGRITY = VERIFIED
+```
+
+These are **scoped internal engineering-validation results**, not an external certification and not a claim of production readiness, AGI or consciousness.
+
+The architectural boundary preserved by C0 is deliberate:
+
+```text
+LOCAL OWNER CONTROL PANEL
+= execution and administration through existing authorized control paths
+
+SHARED REVIEWER / OBSERVER INTERFACE
+= read-only
+= sanitized observability
+= no ROOT commands
+= no remote execution
+
+DIRECTOR_FROZEN_C0
+= immutable reference baseline
+= later development continues above C0 rather than rewriting C0
+```
 
 ## 7-BODY readiness — chronology preserved before repair
 
@@ -130,23 +191,27 @@ References:
 
 ## Director Control Panel vs reviewer interface
 
-The new Director line includes a dedicated **local Director Control Panel** for the owner/operator. It is intended to consolidate routine runtime, service, orchestrator, ROOT/command, checkpoint, V10/Micronetwork, model/provider, diagnostic and hardware-status operations that would otherwise require multiple terminal windows.
+The Director line includes a dedicated **local Director Control Panel** for the owner/operator. Its C0 integration is now validated in the tested scope.
+
+The panel consolidates routine system state and authorized owner operations such as runtime lifecycle status, ROOT-terminal access, checkpoint/persistence visibility, V10/Micronetwork status, model/provider availability, diagnostics, Pocket status and hardware status. It does not create a second runtime, second CONTINUUM or independent execution authority.
 
 This must not be confused with the shared reviewer/developer interface.
 
 ```text
 DIRECTOR CONTROL PANEL
 = LOCAL OWNER / OPERATOR
-= EXECUTION + ADMINISTRATION
+= AUTHORIZED EXECUTION + ADMINISTRATION
+= uses existing control paths
 
 SHARED REVIEWER INTERFACE
+= OBSERVER_ONLY
 = READ-ONLY
 = SANITIZED OBSERVABILITY
 = NO ROOT
 = NO REMOTE EXECUTION
 ```
 
-The Director is intended to appear as an additional independently identified entity in the shared observability interface. Final Director control-panel and shared-interface integration PASS is **not yet claimed**.
+The shared interface and the local control panel deliberately remain separate security surfaces.
 
 ## Pre-experiment training — 14 independent packages
 
@@ -276,7 +341,21 @@ TOTAL = 524/524 PASS
 OPEN_BLOCKERS = 0
 ```
 
-These are scoped development-validation results, not claims of production readiness, AGI or consciousness.
+### DIRECTOR_FROZEN_C0 — latest closed Director engineering baseline
+
+```text
+LOCAL RUNTIME = VALIDATED
+CONTROL PANEL = PASS
+OBSERVER_ONLY WWW = PASS
+SINGLE RUNTIME PROTECTION = PASS
+RESTART / PERSISTENCE / CHECKPOINT = PASS
+FINAL PANEL / SYSTEM CHECKS = 27/27 PASS
+SELECTED PYTEST VALIDATION = 19/19 PASS
+FREEZE INTEGRITY = VERIFIED
+CENTRAL DIRECTOR NODE = INTENTIONALLY OFFLINE / LOCAL-ONLY
+```
+
+These are scoped development/engineering-validation results, not claims of production readiness, AGI or consciousness.
 
 ## Current claim boundary
 
@@ -288,7 +367,8 @@ SSI V5 does **not** currently claim that:
 - `FOUNDATION_S1` or `TRAINED_START_S2` already exists for all seven lines;
 - the seven mechanism tests have passed;
 - the complete 21-run program has passed;
-- Director full integration/control-panel validation has passed;
+- `DIRECTOR_FROZEN_C0` is an external certification or production-readiness proof;
+- the central Director node is currently connected — C0 intentionally operates in LOCAL-ONLY mode;
 - Director currently controls the experimental ISKRA lines;
 - ROBERT integration with the new Director is already complete;
 - drones or humanoids are validated physical deployments;
@@ -296,6 +376,22 @@ SSI V5 does **not** currently claim that:
 - Kilo is an independent scientific auditor;
 - a cryptographic hash proves scientific correctness;
 - AGI, consciousness, universal transfer or production readiness has been established.
+
+## Source-code and disclosure boundary
+
+The public repository intentionally does **not** publish the proprietary implementation source of SSI V5, DIRECTOR, ROBERT, Router V10, Micronetworks or ISKRA.
+
+Public evidence may include:
+
+- sanitized architecture descriptions;
+- declared test protocols;
+- scoped measurements and results;
+- hashes and manifests where disclosure is safe;
+- failure/repair/retest history;
+- reviewer-oriented status summaries;
+- claim boundaries.
+
+Private materials remain private, including implementation code, internal execution logic, credentials/secrets and operational details that would disclose or materially reconstruct the proprietary system.
 
 ## Start here
 
@@ -310,4 +406,4 @@ SSI V5 does **not** currently claim that:
 9. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
 10. [`evidence/README.md`](evidence/README.md)
 
-The standard is: **predeclare what will be tested, preserve what actually happened, keep engineering and experiment claims separate, never hide a failure, and make stronger claims only when stronger evidence exists.**
+The standard is: **predeclare what will be tested, preserve what actually happened, keep engineering and experiment claims separate, never hide a failure, keep proprietary implementation private, and make stronger claims only when stronger evidence exists.**
