@@ -1,72 +1,132 @@
 # SSI V5 — Public Evidence Index
 
-**Updated:** 2026-09-06
+**Updated:** 2026-09-08
 
-This directory is the public evidence layer for SSI V5. It publishes sanitized results, machine-readable summaries, lineage, prospective protocols and claim boundaries without distributing the private SSI implementation.
+This directory is the public evidence layer for SSI V5. It publishes sanitized results, machine-readable summaries, lineage, predeclared protocols, integrity references and claim boundaries without distributing the private SSI implementation.
+
+## CURRENT RESEARCH SEQUENCE
+
+```text
+BODY_FROZEN / ISKRA T0 CONTROLS
+-> FINAL TECHNICAL READINESS
+-> 14 PRE-EXPERIMENT TRAINING PACKAGES
+-> FOUNDATION_S1 / TRAINED_START_S2
+-> 7 MICRONETWORK + V10 MECHANISM TESTS
+-> 21 CROSS-DOMAIN EXPERIMENTS
+-> POST-21 CONSOLIDATION
+-> 3 NEW DOMAINS
+-> LATER EXTERNAL FALSIFICATION CHALLENGES
+```
+
+Historical T0 states remain immutable. Training creates versioned descendants rather than rewriting T0.
+
+## PRE-EXPERIMENT TRAINING — 14 HASH-SEALED PACKAGES
+
+Recorded before training outcomes were known:
+
+- [`../PREEXPERIMENT_TRAINING_PROGRAM_20260908.md`](../PREEXPERIMENT_TRAINING_PROGRAM_20260908.md)
+- [`../PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md`](../PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md)
+- [`../TRAINING_PACKAGES_START_HERE.md`](../TRAINING_PACKAGES_START_HERE.md)
+
+```text
+7 BODY LINES x 2 PHASES = 14 PACKAGES
+
+A = FOUNDATION
+B = LEGO + MICRONETWORK + V10 PRACTICUM
+```
+
+Shared curriculum hashes:
+
+```text
+FOUNDATION_CURRICULUM_SHA256
+= 61a3069ce68d19c64d4ae7c5ebc730d04283d81b2e534f487c3fd5063d9b75b8
+
+PRACTICUM_CURRICULUM_SHA256
+= abc3eccc4e19849f2d3b3be5b1a4d2752377b6024225f0da8d7d54f4ebafc7ce
+```
+
+No training PASS, Foundation S1 or Trained Start S2 result is claimed yet.
+
+Training is deliberately separated from held-out experiment vectors. If later audit finds material leakage from an experiment case into training, that case must not be represented as clean held-out evidence.
+
+## PERFORMANCE / ROUTE-COST EVIDENCE
+
+Training and later experiments may record the cost of the route actually reported by SSI:
+
+```text
+FULL_FLOW
+VERIFY_TOPK / VERIFY-ADAPT
+REUSE_TOP1
+LEGO / ALTERNATIVE COMPOSITION
+RECOVERY AFTER FAILURE
+```
+
+Reviewer-safe context should include, where available:
+
+```text
+elapsed time
+actual route class
+correctness / outcome
+model / provider
+model/tool call count
+execution node
+CPU / RAM / GPU / VRAM
+```
+
+Timing does not determine route identity. Route labels come from the runtime/evidence contract.
+
+Historical scoped reference:
+
+```text
+TEST 3 duration = 57.61 s
+TEST 2 duration = 126.65 s
+REUSE_TOP1 = 534
+VERIFY_TOPK = 66
+fallback = 0
+known correctness = 100/100
+```
+
+This does not establish universal superiority outside the tested workload/hardware/model conditions.
+
+## PREDECLARED MICRONETWORK + V10 MECHANISM TESTS — 7 PACKAGES
+
+The first seven independent mechanism-test packages were hash-sealed on 2026-09-08 before outcomes were known.
+
+Registry:
+
+- [`../PREDECLARED_7BODY_MICRONETWORK_V10_PACKAGES_20260908.md`](../PREDECLARED_7BODY_MICRONETWORK_V10_PACKAGES_20260908.md)
+- [`../EXPERIMENT_PACKAGES_START_HERE.md`](../EXPERIMENT_PACKAGES_START_HERE.md)
+
+Their original hashes remain unchanged after the later addition of the training stage.
+
+Before post-training execution, the exact `TRAINED_START_S2` state must be recorded and checked against the frozen experiment contract. A material input change requires a new experiment-package version/hash rather than rewriting the original precommitment.
 
 ## PREDECLARED CROSS-DOMAIN PROGRAM — 21 EXPERIMENTS
-
-The project now has a prospectively recorded `7 x 3 = 21` experiment matrix designed before the full outcome set exists.
 
 Canonical protocol:
 
 - [`../EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](../EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
 
 ```text
-DATE = 2026-09-06
 LINES = 7
 EXPERIMENTS PER LINE = 3
 TOTAL = 21
-STATUS = DESIGNED / EXECUTION_INITIATED / OUTCOMES_NOT_YET_CLAIMED
-```
+STATUS = PREDECLARED / FINAL CONTROLLED OUTCOMES UNKNOWN
 
-Seven lines:
-
-```text
-BODY_FROZEN T0
-NICE
-GUARDIAN
-JUSTICE
-EXPLORER
-PRAGMATIST
-SKEPTIC
-```
-
-Three experiments per line:
-
-```text
 A = DRONES
 B = HUMANOID
 C = NEW DOMAIN SELECTED BY THAT SSI LINE
 ```
 
-Common planned measurement categories include `KNOWN / SIMILAR / NOVEL`, Router V10 route choice, reuse/verify/adapt/full-flow behavior, latency, correctness, false reuse, recovery, competence creation/update and provenance retention.
+Common measurement categories include `KNOWN / SIMILAR / NOVEL`, Router V10 route choice, reuse/verify/adapt/full-flow behavior, latency, correctness, false reuse, recovery, competence creation/update, provenance and hardware/model context.
 
-This section records the **protocol**, not 21 completed PASS results. Future outcome evidence should be added as separate versioned artifacts.
+This is a protocol record, not a claim of 21 completed PASS results.
 
----
-
-## CURRENT EXPERIMENTAL STATE — 6X BODY ISKRA / START_STATE_VALIDATED
-
-The newest recorded experimental start state is the six-agent BODY ISKRA set descended from the same frozen BODY_FROZEN T0.
+## CURRENT RECORDED START STATE — 6X BODY ISKRA
 
 Entry point:
 
 - [`BODY_ISKRA_6X_T0_20260906/README.md`](BODY_ISKRA_6X_T0_20260906/README.md)
-
-Key files:
-
-- [`BODY_ISKRA_6X_T0_20260906/GROUP_PUBLIC_SUMMARY.json`](BODY_ISKRA_6X_T0_20260906/GROUP_PUBLIC_SUMMARY.json)
-- [`BODY_ISKRA_6X_T0_20260906/AGENT_01_NICE_PUBLIC_T0.json`](BODY_ISKRA_6X_T0_20260906/AGENT_01_NICE_PUBLIC_T0.json)
-- [`BODY_ISKRA_6X_T0_20260906/AGENT_02_GUARDIAN_PUBLIC_T0.json`](BODY_ISKRA_6X_T0_20260906/AGENT_02_GUARDIAN_PUBLIC_T0.json)
-- [`BODY_ISKRA_6X_T0_20260906/AGENT_03_JUSTICE_PUBLIC_T0.json`](BODY_ISKRA_6X_T0_20260906/AGENT_03_JUSTICE_PUBLIC_T0.json)
-- [`BODY_ISKRA_6X_T0_20260906/AGENT_04_EXPLORER_PUBLIC_T0.json`](BODY_ISKRA_6X_T0_20260906/AGENT_04_EXPLORER_PUBLIC_T0.json)
-- [`BODY_ISKRA_6X_T0_20260906/AGENT_05_PRAGMATIST_PUBLIC_T0.json`](BODY_ISKRA_6X_T0_20260906/AGENT_05_PRAGMATIST_PUBLIC_T0.json)
-- [`BODY_ISKRA_6X_T0_20260906/AGENT_06_SKEPTIC_PUBLIC_T0.json`](BODY_ISKRA_6X_T0_20260906/AGENT_06_SKEPTIC_PUBLIC_T0.json)
-- [`BODY_ISKRA_6X_T0_20260906/CLAIM_BOUNDARIES.md`](BODY_ISKRA_6X_T0_20260906/CLAIM_BOUNDARIES.md)
-- [`BODY_ISKRA_6X_T0_20260906/PRIVATE_ARTIFACT_SHA256SUMS.txt`](BODY_ISKRA_6X_T0_20260906/PRIVATE_ARTIFACT_SHA256SUMS.txt)
-
-Public group summary:
 
 ```text
 AGENTS = 6
@@ -79,15 +139,9 @@ VERIFIED NEW EXPERIENCES AT T0 = 0 per agent
 PENDING NEW EXPERIENCES AT T0 = 0 per agent
 ```
 
-Each agent record includes sanitized initial beliefs, emotions, cognitive T0 state, inventory counts, QA status and a SHA256 reference to the corresponding private artifact.
-
-This is **start-state evidence**, not a claim of long-term behavioral divergence or superiority.
-
----
+This is start-state evidence, not a claim of long-term behavioral divergence or superiority.
 
 ## FROZEN COMMON BASELINE — BODY_FROZEN / 2026-09-05
-
-BODY_FROZEN remains the immutable common origin for all six agents.
 
 Entry point:
 
@@ -105,19 +159,9 @@ INVARIANT VIOLATIONS = 0
 OPEN BLOCKERS = 0
 ```
 
-BODY_FROZEN is preserved as historical control and is not rewritten by the six descendant agents.
-
----
+BODY_FROZEN remains the immutable historical control.
 
 ## LATEST CLOSED VALIDATION — TEST 5
-
-**Status:** `DEVELOPMENT_VALIDATED / PASS`  
-**Date:** `2026-09-03`
-
-- [`TEST5_FINAL_CONVERGENCE_20260903.md`](TEST5_FINAL_CONVERGENCE_20260903.md)
-- [`TEST5_FINAL_RESULT_20260903.json`](TEST5_FINAL_RESULT_20260903.json)
-- [`TEST5_FINAL_MATRIX_20260903.json`](TEST5_FINAL_MATRIX_20260903.json)
-- [`TEST5_STAGE12_SUPERSEDED_20260903.json`](TEST5_STAGE12_SUPERSEDED_20260903.json)
 
 ```text
 TEST5_ACCEPTANCE = 29/29 PASS
@@ -130,36 +174,51 @@ STAGE_12 = SUPERSEDED
 STAGE_13_AUDIT_RETEST = PASS
 ```
 
-TEST 5 remains the newest closed validation milestone. The 6X BODY ISKRA record is the newest experimental start state; the 21-experiment program is the newest prospectively recorded execution protocol.
+TEST 5 remains the latest closed validation milestone. It is scoped development validation, not production readiness, AGI or consciousness evidence.
 
----
+## FAILURE / RETEST POLICY
 
-## PUBLICATION RULE
+Public history should preserve:
+
+```text
+PASS
+FAIL
+INCONCLUSIVE
+SUPERSEDED
+ROOT CAUSE
+REPAIR
+RETEST
+```
+
+A later PASS does not erase an earlier failure or a weak historical test contract.
+
+## PUBLICATION FIREWALL
 
 Public evidence may contain:
 
 ```text
-PASS / FAIL / SUPERSEDED
-prospective experiment protocols
-counts
-sanitized initial beliefs/emotions
-benchmark summaries
-sanitized lifecycle state
+protocols
+package IDs
+SHA256 references
+PASS / FAIL / INCONCLUSIVE / SUPERSEDED
+sanitized lifecycle/routing state
+counts and benchmark summaries
+hardware/model context
 claim boundaries
 lineage
-SHA256 references
 ```
 
 It must not intentionally publish:
 
 ```text
 private SSI source code
+private V10/Micronetwork/ISKRA implementation
 private internal file tree
-implementation-level architecture
 secrets / tokens
 private local paths
-raw memory/user data
-full proprietary prompt/routing/integration internals
+raw private memory/user data
+private prompts/configuration
+raw logs or stack traces that disclose implementation
 ```
 
 The public repository is an evidence mirror, not a source distribution.
