@@ -1,98 +1,96 @@
 # SSI V5 — Director Autonomous Evolution + ROBERT Eyes/Hands
 
 **Status:** `ARCHITECTURE / HISTORICAL_EVIDENCE / ROOT_ATTESTED`  
-**Data:** `2026-08-29`  
-**Zakres:** samorozwój Directora, research/capability discovery, ROBERT jako wykonawcze oczy i ręce, lineage od wcześniejszego SSI do obecnej migracji Organism Core
+**Date:** `2026-08-29`  
+**Scope:** Director self-development, research/capability discovery, ROBERT as execution Eyes/Hands, and lineage from earlier SSI to the current Organism Core migration.
 
 ---
 
-## 1. Dlaczego ten dokument istnieje
+## 1. Why this document exists
 
-Publiczny opis SSI nie może redukować ROBERTA do testowego runtime ani Directora do warstwy podejmującej decyzje.
+The public SSI description should not reduce ROBERT to a test runtime or Director to a decision-only layer.
 
-W późniejszej architekturze SSI istnieje dodatkowy ważny mechanizm:
+A further mechanism in the later SSI architecture is:
 
 ```text
 DIRECTOR
--> obserwuje własny stan i ograniczenia
--> może wykryć brak capability lub nową możliwość
--> uruchamia research / engineering
--> korzysta z wykonawczych oczu i rąk
--> testuje propozycję
--> zapisuje outcome i Experience
--> przyjmuje / odrzuca / poprawia zmianę
+-> observes its own state and limitations
+-> may detect a missing capability or new opportunity
+-> initiates research / engineering
+-> uses execution Eyes / Hands
+-> tests a proposal
+-> records outcome and Experience
+-> adopts / rejects / revises the change
 ```
 
-Jest to osobna oś rozwoju systemu i powinna pozostać widoczna po migracji do neutralnego `SSI ORGANISM CORE`.
+This is a separate axis of system development and should remain visible after migration to a neutral `SSI ORGANISM CORE`.
 
 ---
 
 ## 2. Autonomous Evolution Fabric
 
-W starszej dokumentacji SSI opisano `Autonomous Evolution Fabric` jako odpowiedź na pytanie:
+Earlier SSI documentation described `Autonomous Evolution Fabric` as an answer to the question:
 
 ```text
-Skąd ma się wziąć nowy kierunek rozwoju,
-jeśli Programmer Root nie poda Directorowi następnego rozwiązania?
+Where should a new development direction come from
+if Programmer Root does not give Director the next solution?
 ```
 
-Założenie jest następujące:
+The intended design is that Director is not only a receiver of implementation instructions. It may use:
 
-Director nie ma być wyłącznie odbiorcą instrukcji implementacyjnych. Ma korzystać z:
-
-- własnego Self-Modelu;
-- aktualnego Experience;
-- historii systemu;
+- its own Self-Model;
+- current Experience;
+- system history;
 - engineering lineage;
-- obserwacji zewnętrznego świata technologii;
-- researchu i wielomodelowej analizy;
-- dostępnych narzędzi i backendów;
+- observation of the external technology landscape;
+- research and multi-model analysis;
+- available tools and backends;
 
-aby samodzielnie wykrywać:
+to identify:
 
-- braki capability;
-- ograniczenia obecnego designu;
-- nowe technologie;
-- nowe integracje;
-- możliwe usprawnienia;
-- okazje do syntezy kilku istniejących rozwiązań.
+- capability gaps;
+- limitations of the current design;
+- new technologies;
+- new integrations;
+- possible improvements;
+- opportunities to synthesize multiple existing solutions.
 
-Nie oznacza to prawa do niekontrolowanego przepisywania canonical runtime.
+This does not grant permission for uncontrolled rewriting of the canonical runtime.
 
 ---
 
-## 3. CEPA — pamięć sposobów budowania
+## 3. CEPA — memory of how to build
 
-`Continuum Engineering Pattern Architect (CEPA)` ma wykorzystywać historię engineeringową SSI jako pamięć wcześniejszych sposobów rozwiązywania problemów.
+`Continuum Engineering Pattern Architect (CEPA)` is intended to use SSI engineering history as memory of prior problem-solving patterns.
 
-Przykładowe źródła:
+Example sources include:
 
-- wcześniejsze naprawy;
-- integracje;
-- stare paczki rozwojowe;
-- udane i nieudane implementacje;
-- regresje;
-- rollbacki;
-- sposoby dekompozycji dużych projektów;
-- powtarzające się klasy błędów.
+- earlier repairs;
+- integrations;
+- old development packages;
+- successful and failed implementations;
+- regressions;
+- rollbacks;
+- ways of decomposing large projects;
+- recurring classes of errors.
 
-CEPA nie zastępuje Directora jako decydenta. Ma dostarczać pamięć typu:
+CEPA does not replace Director as a decision-maker. It provides memory of the form:
 
 ```text
-PODOBNY PROBLEM JUŻ WYSTĄPIŁ
--> wtedy zadziałało X
--> wtedy zawiodło Y
--> regresję powodowało Z
--> taki podział misji był stabilny
+A SIMILAR PROBLEM OCCURRED BEFORE
+-> X worked then
+-> Y failed then
+-> Z caused regression
+-> this mission decomposition was stable
 ```
 
-Dzięki temu self-development nie zaczyna każdego problemu od zera.
+This reduces the need for self-development to restart every engineering problem from zero.
 
 ---
 
-## 4. Kanoniczny rytm samorozwoju
+## 4. Canonical self-development rhythm
 
-Historycznie projekt opisywał następujący przepływ:
+Historically the project described the following flow:
 
 ```text
 OBSERVATION OF SSI / WORLD
@@ -110,7 +108,7 @@ OBSERVATION OF SSI / WORLD
 -> PUBLIC HISTORY UPDATE
 ```
 
-Bezpieczna aktywacja pozostaje osobnym kontraktem:
+Safe activation remains a separate contract:
 
 ```text
 NEED
@@ -124,19 +122,19 @@ NEED
 -> CONTROLLED ACTIVATION
 ```
 
-`DIRECTOR_ORIGINATED` oznacza pochodzenie inicjatywy, nie nieograniczoną authority.
+`DIRECTOR_ORIGINATED` refers to where the initiative came from, not to unlimited authority.
 
 ---
 
-## 5. ROBERT jako Eyes / Hands / Browser / wykonawczy interfejs do świata
+## 5. ROBERT as Eyes / Hands / Browser / execution interface to the world
 
-ROBERT nie jest wyłącznie donorem mechanizmów dla Organism Core.
+ROBERT is not only a donor of mechanisms for Organism Core.
 
-W architekturze SSI pełni również rolę wykonawczego ciała, przez które Director może — zgodnie z authority i permission gates — uzyskać dostęp do narzędzi i środowiska komputerowego.
+Within SSI architecture it also acts as an execution body through which Director may — subject to authority and permission gates — access tools and the computer environment.
 
-Historyczne artefakty obejmują lekki węzeł `director-node` opisany jako `EYES/HANDS`, z zależnościami m.in. Playwright i DBus.
+Historical artifacts include a lightweight `director-node` described as `EYES/HANDS`, with dependencies such as Playwright and DBus.
 
-Warstwa Eyes/Hands została projektowana wokół capability takich jak:
+The Eyes/Hands layer was designed around capabilities such as:
 
 - screenshot;
 - screen state;
@@ -148,7 +146,7 @@ Warstwa Eyes/Hands została projektowana wokół capability takich jak:
 - audit trail;
 - permission gates.
 
-W docelowym układzie daje to przepływ:
+The intended flow is:
 
 ```text
 DIRECTOR DETECTS NEED
@@ -170,15 +168,15 @@ SANDBOX / TEST / EVIDENCE
 ADOPT / REJECT / REVISE
 ```
 
-Sam fakt znalezienia technologii nie czyni jej częścią canonical SSI.
+Merely finding a technology does not make it part of canonical SSI.
 
 ---
 
-## 6. Research nie jest tym samym co automatyczna instalacja
+## 6. Research is not automatic installation
 
-Director może korzystać z internetu, dokumentacji, repozytoriów i innych publicznych źródeł jako wejścia badawczego.
+Director may use the internet, documentation, repositories and other public sources as research input.
 
-Zasada pozostaje:
+The rule remains:
 
 ```text
 FOUND ONLINE
@@ -190,33 +188,33 @@ SAFE TO INTEGRATE
 APPROVED
 ```
 
-Nowa technologia powinna przejść przez:
+A new technology should pass through:
 
 - provenance;
-- ocenę zgodności z istniejącą architekturą;
+- compatibility assessment with the existing architecture;
 - reuse-first check;
 - sandbox;
-- test kontraktowy;
-- test integracyjny;
-- regresję;
+- contract test;
+- integration test;
+- regression;
 - rollback plan;
 - evidence;
 - authority gate.
 
 ---
 
-## 7. Novel synthesis — Director może łączyć kilka technologii
+## 7. Novel synthesis — Director may combine technologies
 
-Jedną z ważniejszych hipotez nie jest samo znajdowanie gotowych bibliotek, ale łączenie kilku źródeł w rozwiązanie własnego problemu.
+One important hypothesis is not merely finding ready-made libraries, but combining multiple sources into a solution for a project-specific problem.
 
 ```text
-TECHNOLOGY A rozwiązuje fragment problemu
+TECHNOLOGY A solves part of the problem
 +
-TECHNOLOGY B daje inne potrzebne capability
+TECHNOLOGY B provides another needed capability
 +
-SSI EXPERIENCE pokazuje bottleneck C
+SSI EXPERIENCE shows bottleneck C
         ↓
-DIRECTOR PROPONUJE A + B jako rozwiązanie C
+DIRECTOR PROPOSES A + B AS A SOLUTION TO C
         ↓
 PRECOMMIT
         ↓
@@ -225,18 +223,18 @@ SANDBOX / EXPERIMENT
 REAL OUTCOME
 ```
 
-Dopiero wynik testu może zamienić syntezę z hipotezy w użyteczną capability.
+Only the test result can move such a synthesis from hypothesis to useful capability.
 
 ---
 
-## 8. Związek z obecną migracją Organism Core
+## 8. Relationship to the current Organism Core migration
 
-Obecna migracja ROBERTA do neutralnego core nie oznacza, że system dopiero teraz otrzymuje self-development, research albo Eyes/Hands.
+The migration of ROBERT into a neutral core does not mean SSI is only now receiving self-development, research or Eyes/Hands.
 
-Celem migracji jest wydzielenie mechanizmów wspólnych z działających i wcześniej projektowanych struktur, aby następnie użyć ich w czystszej architekturze:
+The goal is to separate common mechanisms from previously working or designed structures and reuse them in a cleaner architecture:
 
 ```text
-STARSZY SSI / DIRECTOR
+OLDER SSI / DIRECTOR
 -> ROBERT / HARDENING / CONTROLLED TESTING
 -> SSI ORGANISM CORE
 -> ROBERT BODY
@@ -244,17 +242,17 @@ STARSZY SSI / DIRECTOR
 -> AGENT BODY
 ```
 
-Po przebudowie Director powinien odzyskać swoją wcześniejszą funkcję strategicznego obserwatora i inicjatora self-development, lecz na neutralnym, testowalnym substrate.
+After rebuilding, Director should recover its earlier role as strategic observer and self-development initiator, but on a neutral, testable substrate.
 
 ---
 
-## 9. Historia testów musi pozostać chronologiczna
+## 9. Test history must remain chronological
 
-W publicznych materiałach istnieją zarówno wcześniejsze raporty pokazujące niepełne wiring i FAIL na części E2E, jak i późniejsze raporty naprawcze deklarujące przejście kolejnych etapów i pełnych regresji.
+Public materials contain both earlier reports showing incomplete wiring and FAIL conditions in parts of E2E, and later repair reports declaring passed stages and full regressions.
 
-Nie należy usuwać wcześniejszych porażek.
+Earlier failures should not be deleted.
 
-Prawidłowa interpretacja:
+Correct interpretation:
 
 ```text
 EARLIER FAILURE
@@ -262,27 +260,27 @@ EARLIER FAILURE
 -> LATER VALIDATION
 ```
 
-nie:
+not:
 
 ```text
 EARLIER FAILURE NEVER EXISTED
 ```
 
-To jest zgodne z zasadą SSI, że Git ma być biografią rozwoju, a nie retrospektywnie wygładzonym opisem sukcesów.
+This follows the SSI principle that Git should be a development biography, not a retrospectively polished success narrative.
 
 ---
 
-## 10. Samodzielny rozwój projektu i uczciwa atrybucja
+## 10. Independent project development and honest attribution
 
-SSI V5 jest rozwijane niezależnie przez Pawła Jankiewicza jako autora nadrzędnej architektury i `PROGRAMMER_ROOT`.
+SSI V5 is developed independently by Paweł Jankiewicz as the author of the overarching architecture and `PROGRAMMER_ROOT`.
 
-Publiczna historia Git pokazuje formalizację architektury od root commit `MSDI AI v0.01 - start projektu` z 2026-07-19 oraz kolejne publiczne etapy: SSI Core, Data World, V2, SSI V5, CONTINUUM, SSI_V5_MASTER i publiczny research mirror.
+Public Git history shows architecture formalization from the root commit `MSDI AI v0.01 - start projektu` dated 2026-07-19 and subsequent public stages: SSI Core, Data World, V2, SSI V5, CONTINUUM, SSI_V5_MASTER and the public research mirror.
 
-Nie oznacza to, że wszystkie dane domenowe, Football World, wcześniejsze modele lub doświadczenie powstały w tym krótkim okresie. Te elementy mają wcześniejszą historię.
+This does not mean all domain data, Football World work, earlier models or experience originated during that short period. Those elements have an earlier history.
 
-Jednocześnie niezależny rozwój SSI nie oznacza przypisywania sobie cudzych koncepcji. Źródłowa idea Moralnej AI / Iskry została osobno przypisana wcześniejszemu projektowi brata autora, a adaptacja tej idei do SSI ma własne lineage.
+Likewise, independent SSI development does not imply claiming ownership of every source idea. The source Moral AI / Iskra concept is separately attributed to an earlier project by the author's brother, while the SSI adaptation has its own lineage.
 
-Zasada:
+Rule:
 
 ```text
 INDEPENDENT SSI ENGINEERING
@@ -292,18 +290,18 @@ CLAIM OF INVENTING EVERY SOURCE IDEA
 
 ---
 
-## 11. Granice twierdzeń
+## 11. Claim boundaries
 
-Ten dokument nie twierdzi, że:
+This document does not claim that:
 
-- Director ma dziś nieograniczony autonomiczny dostęp do internetu;
-- każdy element Eyes/Hands jest aktywny w każdej konfiguracji runtime;
-- każda znaleziona technologia jest automatycznie instalowana;
-- self-development może ominąć authority;
-- wcześniejsze raporty FAIL są unieważnione przez późniejsze PASS;
-- samo istnienie pętli self-development dowodzi AGI;
-- każda przyszła capability będzie Director-originated.
+- Director currently has unlimited autonomous internet access;
+- every Eyes/Hands component is active in every runtime configuration;
+- every technology found online is automatically installed;
+- self-development may bypass authority;
+- earlier FAIL reports are invalidated by later PASS results;
+- the existence of a self-development loop proves AGI;
+- every future capability will be Director-originated.
 
-Twierdzenie jest węższe:
+The narrower claim is:
 
-**SSI posiada zaprojektowaną i częściowo zaimplementowaną architekturę, w której Director może wykrywać własne braki, inicjować kontrolowany research i engineering, a ROBERT/Eyes/Hands stanowią wykonawczy interfejs do narzędzi oraz świata technologii. Obecna migracja ma zachować te mechanizmy i przenieść je na czystszy, neutralny substrate.**
+**SSI has a designed and partially implemented architecture in which Director may identify its own capability gaps, initiate controlled research and engineering, while ROBERT/Eyes/Hands provides an execution interface to tools and the technology environment. The current migration is intended to preserve these mechanisms and move them onto a cleaner neutral substrate.**
