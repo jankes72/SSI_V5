@@ -3,17 +3,17 @@
 **Status:** `PUBLIC RESEARCH INDEX / 2026-09-08`  
 **Frozen common baseline:** `T0 / BODY_FROZEN / PRE-ISKRA / RECORDED / 2026-09-05`  
 **Current ISKRA start state:** `6X BODY ISKRA / START_STATE_VALIDATED / 2026-09-06`  
-**Canonical ROBERT:** `CONTINUOUS ENGINEERING LINE / NOT RESET BY EXPERIMENT CLEANING`  
-**Technical readiness:** `7/7 BODY + REVIEWER INTERFACE FINAL VALIDATION REQUIRED`  
+**Latest closed validation:** `TEST 5 / DEVELOPMENT_VALIDATED`  
+**7-BODY technical readiness:** `PRE-REPAIR AUDIT COMPLETE 43/43 / FINAL 7/7 NOT YET CLOSED`  
 **Pre-experiment training:** `14 HASH-SEALED PACKAGES / PREDECLARED / NOT YET EXECUTED`  
 **Mechanism-test packages:** `7 INDEPENDENT MICRONETWORK + V10 PACKAGES / HASH-SEALED / NOT YET EXECUTED`  
 **Cross-domain program:** `7 x 3 = 21 EXPERIMENTS / PREDECLARED / FINAL OUTCOMES UNKNOWN`  
-**Post-21 phase:** `COMPETENCE CONSOLIDATION -> 3 NEW DOMAINS / RESULTS UNKNOWN`  
-**Latest closed validation:** `TEST 5 / DEVELOPMENT_VALIDATED`
+**Director mainline:** `CANONICAL ENGINEERING LINE / IMPLEMENTATION IN PROGRESS / FINAL VALIDATION PENDING`  
+**Canonical ROBERT:** `CONTINUOUS ENGINEERING LINE / NOT RESET BY EXPERIMENT CLEANING`
 
-This index separates historical controls, current start states, training descendants, mechanism-test precommitments, the later 21-run program and still-prospective outcomes.
+This index separates historical controls, current start states, pre-repair readiness evidence, future training descendants, frozen experiment precommitments, the later 21-run program and the parallel Director engineering mainline.
 
-## 0. CURRENT ESTABLISHED START STATE
+## 0. Historical and current start state
 
 ```text
 COMMON_ORIGIN = SSI_V5_BODY_FROZEN_T0_20260905
@@ -38,33 +38,28 @@ Variants:
 
 Historical T0 states remain immutable controls.
 
-## 1. CANONICAL ROBERT CONTINUITY
+## 1. Latest closed development validation
+
+TEST 5 remains the latest closed development-validation milestone.
 
 ```text
-CANONICAL ROBERT
-= continuous engineering / execution line
-+ TEST 1 -> TEST 5 lineage retained
-+ private memory / competence / tooling continuity retained
-
-BODY_FROZEN / BODY ISKRA
-= controlled experiment branches
-+ separately versioned training/experiment descendants
+STAGE_12 = SUPERSEDED
+STAGE_13_AUDIT_RETEST = PASS
+TEST5_ACCEPTANCE = 29/29 PASS
+ROOT_CONTROL = 111/111 PASS
+ROOT_RUNTIME_BRIDGE = 338/338 PASS
+ROBERT_STABLE = 46/46 PASS
+TOTAL = 524/524 PASS
+OPEN_BLOCKERS = 0
 ```
 
-Therefore:
+This result is scoped development validation. It is not production-readiness, AGI or consciousness evidence.
 
-```text
-EXPERIMENT RESET != ROBERT RESET
-TRAINING DESCENDANT != T0 REWRITE
-```
+## 2. 7-BODY technical-readiness gate
 
-Reference: [`ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md`](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md).
+The readiness gate must close before pre-experiment training is executed.
 
-## 2. TECHNICAL READINESS GATE
-
-Training and final controlled experiment execution remain gated by platform readiness.
-
-Required scope:
+Required scope includes:
 
 ```text
 7/7 BODY LINES
@@ -80,19 +75,37 @@ Required scope:
 + NO UNRESOLVED BLOCKER KNOWN TO INVALIDATE INTERPRETATION
 ```
 
-Current truth:
+The sequential pre-repair audit completed `43/43` declared audit stages on 2026-09-08 in `READ_ONLY / TEST_ONLY` mode with zero BODY modifications and zero automatic repairs.
+
+However, the same audit preserved open findings, including:
 
 ```text
-READINESS_VALIDATION = FINAL CONFIRMATION PENDING
-TRAINING_EXECUTION_GATE = CLOSED UNTIL READINESS PASSES
-FINAL_RESEARCH_EXECUTION_GATE = CLOSED
+JUSTICE standard-launcher deviation
+repeated ISKRA Stage 09 test-fixture failures
+CONTINUUM full-flow orchestrator syntax issue
+unequal full-acceptance coverage across ISKRA lines
 ```
 
-A readiness failure is infrastructure/platform evidence, not a research outcome.
+Therefore the strict current truth is:
 
-## 3. PRE-EXPERIMENT TRAINING — 14 PACKAGES
+```text
+AUDIT_PROCEDURE_COMPLETE = YES
+7_BODY_TECHNICAL_READINESS = NOT YET CLOSED
+REPAIR_REQUIRED = YES
+COMMON_RETEST_REQUIRED = YES
+TRAINING_EXECUTION_GATE = CLOSED UNTIL READINESS PASSES
+```
 
-Recorded on `2026-09-08` before outcomes were known.
+References:
+
+- [`7BODY_TECHNICAL_READINESS_START_HERE.md`](7BODY_TECHNICAL_READINESS_START_HERE.md)
+- [`evidence/7BODY_TECHNICAL_READINESS_PRE_REPAIR_AUDIT_20260908.md`](evidence/7BODY_TECHNICAL_READINESS_PRE_REPAIR_AUDIT_20260908.md)
+
+A readiness failure is infrastructure/platform evidence, not automatically a V10 research-hypothesis result.
+
+## 3. Pre-experiment training — 14 packages
+
+Recorded on 2026-09-08 before outcomes were known.
 
 ```text
 7 BODY LINES x 2 TRAINING PHASES = 14 PACKAGES
@@ -138,7 +151,7 @@ PRACTICUM_CURRICULUM_SHA256
 = abc3eccc4e19849f2d3b3be5b1a4d2752377b6024225f0da8d7d54f4ebafc7ce
 ```
 
-Training creates versioned descendants:
+Training descendants are future versioned states:
 
 ```text
 T0
@@ -154,11 +167,18 @@ References:
 - [`PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md`](PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md)
 - [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
 
-## 4. MECHANISM-TEST PACKAGES — 7 INDEPENDENT LINES
+## 4. Mechanism-test packages — 7 independent lines
 
-The seven Micronetwork + Router V10 mechanism-test packages were predeclared and hash-sealed before the training stage was added.
+The seven Micronetwork + Router V10 mechanism-test packages were predeclared and hash-sealed before outcomes were known.
 
-Their historical package hashes remain unchanged.
+Current status:
+
+```text
+PREDECLARED = YES
+HASH-SEALED = YES
+EXECUTED = NO
+FINAL OUTCOMES = UNKNOWN
+```
 
 Post-training execution rule:
 
@@ -168,7 +188,7 @@ TRAINED_START_S2
 -> CHECK COMPATIBILITY WITH EXISTING FROZEN EXPERIMENT CONTRACT
 
 IF COMPATIBLE
--> execution record binds the exact S2 state
+-> execution record binds exact S2 state
 
 IF MATERIAL INPUT CHANGES
 -> NEW EXPERIMENT PACKAGE VERSION
@@ -178,7 +198,7 @@ IF MATERIAL INPUT CHANGES
 
 Reference: [`PREDECLARED_7BODY_MICRONETWORK_V10_PACKAGES_20260908.md`](PREDECLARED_7BODY_MICRONETWORK_V10_PACKAGES_20260908.md).
 
-## 5. 21-EXPERIMENT CROSS-DOMAIN PROGRAM
+## 5. 21-experiment cross-domain program
 
 ```text
 LINES = 7
@@ -190,33 +210,78 @@ B = HUMANOID
 C = NEW DOMAIN SELECTED BY THAT SSI LINE
 ```
 
-Common measurements include:
-
-```text
-KNOWN / SIMILAR / NOVEL
-V10 route
-reuse / verify-adapt / compose / full-flow
-latency / decision cost
-correctness / outcome
-false reuse
-recovery
-competence creation/update
-provenance retention
-hardware/model context
-```
-
-This program remains predeclared; final controlled 21-run outcomes are unknown.
+This program remains predeclared. Final controlled 21-run outcomes are unknown.
 
 References:
 
 - [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
 - [`EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md`](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
 
-## 6. PERFORMANCE / ROUTE-COST TRUTH
+## 6. Director canonical mainline
+
+On 2026-09-08 SSI V5 opened a separate canonical Director engineering/operational line.
+
+The declared engineering direction is:
+
+```text
+VALIDATED BODY FOUNDATION
++ EXISTING WORKING DIRECTOR FUNCTIONS
+-> NEW CANONICAL DIRECTOR
+-> LOCAL DIRECTOR CONTROL PANEL
+-> SHARED READ-ONLY REVIEWER OBSERVABILITY
+-> INTEGRATION / RESTART / PERSISTENCE VALIDATION
+-> LATER DIRECTOR -> ROBERT INTEGRATION
+```
+
+Important boundary:
+
+```text
+BODY_FROZEN T0
+= immutable experimental baseline
+
+DIRECTOR
+= separate engineering descendant/integration line
+```
+
+The Director line does not retroactively change BODY_FROZEN or ISKRA experiment evidence.
+
+Current Director truth:
+
+```text
+DIRECTOR MAINLINE DECLARED = YES
+IMPLEMENTATION = IN PROGRESS
+FINAL DIRECTOR PASS = NOT CLAIMED
+CONTROL PANEL FINAL VALIDATION = NOT CLOSED
+SHARED-INTERFACE FINAL VALIDATION = NOT CLOSED
+DIRECTOR CONTROL OF EXPERIMENTAL ISKRA = NOT ACTIVE / NOT CLAIMED
+```
+
+Reference: [`DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md`](DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md).
+
+## 7. Director Control Panel vs reviewer interface
+
+The Director Control Panel is a local owner/operator execution and administration surface intended to reduce the need for manually opening multiple terminal windows.
+
+The reviewer interface remains separate and read-only.
+
+```text
+DIRECTOR CONTROL PANEL
+= LOCAL
+= OWNER / OPERATOR
+= EXECUTION + ADMINISTRATION
+
+REVIEWER INTERFACE
+= READ-ONLY
+= SANITIZED OBSERVABILITY
+= NO ROOT
+= NO REMOTE EXECUTION
+```
+
+## 8. Performance / route-cost truth
 
 The project records the route actually reported by SSI and measures its cost rather than inferring route identity from timing.
 
-Comparable evidence may include:
+Comparable route families include:
 
 ```text
 FULL_FLOW
@@ -224,17 +289,6 @@ VERIFY_TOPK / VERIFY-ADAPT
 REUSE_TOP1
 LEGO / ALTERNATIVE COMPOSITION
 RECOVERY AFTER FAILURE
-```
-
-with:
-
-```text
-elapsed time
-model/provider
-model/tool call counts
-execution node
-CPU / RAM / GPU / VRAM
-correctness / outcome
 ```
 
 Historical Test 3 recorded:
@@ -249,7 +303,7 @@ known-case correctness = 100/100
 
 This is scoped internal evidence, not a universal superiority claim.
 
-## 7. EXECUTION / EVIDENCE STANDARD
+## 9. Execution / evidence standard
 
 Official controlled runs use:
 
@@ -274,50 +328,34 @@ Kilo is a procedural executor, not an independent external auditor.
 
 Reference: [`CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md`](CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md).
 
-## 8. LIVE REVIEWER BOUNDARY
-
-Reviewer access is read-only.
-
-A reviewer may observe sanitized runtime/training/experiment state and ask informational questions. The reviewer cannot issue ROOT commands, alter missions, start/stop Kilo, change prompts/criteria, edit source/configuration or access private memory/source.
-
-Reference: [`REVIEWER_LIVE_INTERFACE_20260907.md`](REVIEWER_LIVE_INTERFACE_20260907.md).
-
-## 9. LATEST CLOSED VALIDATION — TEST 5
-
-```text
-STAGE_12 = SUPERSEDED
-STAGE_13_AUDIT_RETEST = PASS
-TEST5_ACCEPTANCE = 29/29 PASS
-ROOT_CONTROL = 111/111 PASS
-ROOT_RUNTIME_BRIDGE = 338/338 PASS
-ROBERT_STABLE = 46/46 PASS
-TOTAL = 524/524 PASS
-OPEN_BLOCKERS = 0
-```
-
-This is scoped development validation, not production readiness, AGI or consciousness evidence.
-
-## 10. CURRENT CLAIM BOUNDARY
+## 10. Current claim boundary
 
 SSI V5 does not currently claim that:
 
+- 7-BODY technical readiness is already closed 7/7;
+- the readiness repair/retest has passed;
 - the 14 training packages have passed;
 - all seven `TRAINED_START_S2` states exist;
-- the mechanism-test packages have passed;
+- the seven mechanism-test packages have passed;
 - the final controlled 21-run program has passed;
+- Director full integration has passed;
+- the Director local control panel has passed final validation;
+- the Director currently controls the experimental ISKRA lines;
+- the new Director -> ROBERT integration is complete;
 - V10 is universally faster or more accurate than external systems;
 - ISKRA long-term divergence has been demonstrated;
-- post-21 consolidation has succeeded;
 - drones/humanoids are validated physical deployments;
 - Kilo execution is independent scientific validation;
 - a package hash proves scientific correctness;
 - the live reviewer layer equals independent replication;
 - AGI, consciousness, universal transfer or production readiness has been established.
 
-## 11. CURRENT CORRECT SEQUENCE
+## 11. Current correct sequence
+
+Controlled research track:
 
 ```text
-FINISH 7/7 BODY + REVIEWER-INTERFACE READINESS
+REPAIR + CLOSE 7/7 BODY READINESS
 -> EXECUTE TRAIN-A FOUNDATION PER BODY
 -> RECORD FOUNDATION_S1
 -> EXECUTE TRAIN-B PRACTICUM PER BODY
@@ -329,3 +367,15 @@ FINISH 7/7 BODY + REVIEWER-INTERFACE READINESS
 -> POST-21 CONSOLIDATION + 3 NEW DOMAINS
 -> LATER EXTERNAL FALSIFICATION CHALLENGES
 ```
+
+Parallel engineering track:
+
+```text
+BODY FOUNDATION + HISTORICAL DIRECTOR FUNCTIONS
+-> BUILD / VALIDATE CANONICAL DIRECTOR
+-> LATER DIRECTOR -> ROBERT INTEGRATION
+-> LATER WORLD INFRASTRUCTURE
+-> LATER AGENT/WORLD INTEGRATION
+```
+
+These tracks are related but must not be conflated for evidence or chronology.
