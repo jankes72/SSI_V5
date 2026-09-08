@@ -1,85 +1,85 @@
-# SSI V5 MASTER / Director — od pomysłu do obecnego etapu
+# SSI V5 MASTER / Director — From Concept to Current Stage
 
-**Stan dokumentu:** `PROVENANCE / DEVELOPMENT HISTORY`  
-**Data aktualizacji:** `2026-09-04`  
-**Zakres:** geneza obecnej linii `SSI_V5_MASTER / Director / SSI BODY` oraz jawne rozdzielenie tego, co było pomysłem, co rozpoczętą implementacją, co publicznym śladem GitHub i co jest obecnie zweryfikowane.
+**Document status:** `PROVENANCE / DEVELOPMENT HISTORY`  
+**Updated:** `2026-09-04`  
+**Scope:** genesis of the current `SSI_V5_MASTER / Director / SSI BODY` line and explicit separation of concept, active implementation, public GitHub trace and currently validated state.
 
-Ten dokument nie publikuje prywatnego kodu SSI. Jego celem jest udokumentowanie **czasu, kolejności i aktualnego stanu rozwoju** bez sugerowania, że wszystko było gotowe od początku albo że obecny system jest już zakończony.
-
----
-
-## 1. Jak czytać te daty
-
-W historii projektu istnieją trzy różne typy dat i nie należy ich mieszać:
-
-1. **zachowany zapis koncepcji / rozmowy projektowej** — pokazuje, kiedy dana idea była już jawnie formułowana;
-2. **realny start pracy / implementacji** — pokazuje moment przejścia od koncepcji do budowy;
-3. **publiczny timestamp GitHub** — niezależny publiczny ślad utworzenia repozytorium lub commita.
-
-Publiczny GitHub nie może sam udowodnić daty wcześniejszej prywatnej koncepcji. Z kolei prywatny zapis koncepcji nie zastępuje publicznego timestampu GitHub. Dlatego poniżej oba źródła są jawnie rozdzielone.
+This document does not publish private SSI source code. Its purpose is to document **time, sequence and current development state** without implying that everything was complete from the beginning or that the present system is finished.
 
 ---
 
-## 2. Tło przed SSI_V5_MASTER
+## 1. How to read these dates
 
-Obecna linia `SSI_V5_MASTER / Director` nie była początkiem wszystkich wcześniejszych eksperymentów autora.
+Project history contains three different date types that should not be mixed:
 
-Publiczna historia Git projektu ma wcześniejszy root commit:
+1. **preserved concept / project-conversation record** — shows when an idea was already explicitly formulated;
+2. **real start of work / implementation** — marks transition from concept to active build;
+3. **public GitHub timestamp** — an independent public trace of repository or commit creation.
+
+Public GitHub cannot by itself prove the date of an earlier private concept. A private concept record does not replace an independent public timestamp. The two evidence classes are therefore separated below.
+
+---
+
+## 2. Context before SSI_V5_MASTER
+
+The current `SSI_V5_MASTER / Director` line was not the beginning of all earlier author experiments.
+
+Public Git history contains an earlier root commit:
 
 - `2026-07-19` — `MSDI AI v0.01 - start projektu`;
-- `2026-07-27` — powstanie publicznego repo `jankes72/msdi-ai`;
+- `2026-07-27` — public repository `jankes72/msdi-ai` created;
 - `2026-07-28` — SSI Core / Data World Foundation / V2 Model Laboratory;
-- `2026-08-01` — pierwszy jawny publiczny etap `SSI V5` w historii Git.
+- `2026-08-01` — first explicit public `SSI V5` stage in Git history.
 
-Szczegóły tej wcześniejszej osi są zachowane w [`DEVELOPMENT_TIMELINE.md`](DEVELOPMENT_TIMELINE.md).
+See [`DEVELOPMENT_TIMELINE.md`](DEVELOPMENT_TIMELINE.md).
 
-To rozróżnienie jest ważne: **SSI_V5_MASTER oznacza początek obecnej linii MASTER/Director, ale nie początek wszystkich wcześniejszych eksperymentów, danych i doświadczeń autora.**
-
----
-
-## 3. Narodziny idei MASTER / Director
-
-### 2026-08-05 01:19 CEST — najwcześniejszy zachowany zapis koncepcji MASTER/Director
-
-W zachowanym współczesnym zapisanym kontekście projektowym pojawia się jawna wizja `SSI V5 MASTER` jako centralnego zarządcy / mózgu obecnej linii SSI V5 oraz `Directora` jako nadrzędnego modułu odpowiedzialnego za koordynację systemu.
-
-**Znaczenie dowodowe:** jest to najwcześniejszy obecnie zachowany zapis, który można wskazać jako moment jawnego sformułowania idei obecnej linii `MASTER / Director`.
-
-**Granica dowodu:** ten timestamp pochodzi z zachowanego prywatnego zapisu kontekstu projektowego, a nie z publicznego GitHub API. Nie jest przedstawiany jako niezależny publiczny timestamp GitHub.
+This distinction matters: **SSI_V5_MASTER marks the beginning of the current MASTER/Director line, not the beginning of all earlier experiments, data and author experience.**
 
 ---
 
-## 4. Przejście od pomysłu do realnej budowy
+## 3. Birth of the MASTER / Director idea
 
-### 2026-08-06 18:42 CEST — jawny start realnej budowy SSI_V5_MASTER
+### 2026-08-05 01:19 CEST — earliest preserved MASTER/Director concept record
 
-W zachowanym współczesnym zapisie projektowym pada bezpośrednia decyzja rozpoczęcia **realnej budowy `SSI_V5_MASTER`**.
+A preserved contemporary project record explicitly describes `SSI V5 MASTER` as the central manager/brain of the current SSI V5 line and `Director` as the higher-level coordination module.
 
-Od tego punktu linia MASTER/Director nie jest już wyłącznie koncepcją architektoniczną, lecz przechodzi w aktywny proces implementacyjny.
+**Evidence meaning:** this is the earliest currently preserved record that can be pointed to as an explicit formulation of the current `MASTER / Director` idea.
 
-**Znaczenie dowodowe:** ten punkt jest używany jako praktyczna granica `IDEA -> ACTIVE BUILD` dla obecnej linii MASTER/Director.
-
-**Granica dowodu:** podobnie jak wyżej, jest to zachowany prywatny zapis projektowy, nie publiczny timestamp GitHub.
+**Evidence boundary:** the timestamp comes from a preserved private project record, not GitHub API. It is not presented as an independent public GitHub timestamp.
 
 ---
 
-## 5. Pierwszy publiczny timestamp SSI_V5_MASTER
+## 4. Transition from idea to active build
 
-### 2026-08-16 15:27:12 CEST — publiczne repo `jankes72/SSI_V5_MASTER`
+### 2026-08-06 18:42 CEST — explicit start of real SSI_V5_MASTER construction
 
-GitHub API raportuje:
+A preserved contemporary project record contains a direct decision to begin the **real build of `SSI_V5_MASTER`**.
+
+From this point, the MASTER/Director line moves from architectural concept into active implementation work.
+
+**Evidence meaning:** this point is used as the practical `IDEA -> ACTIVE BUILD` boundary for the current MASTER/Director line.
+
+**Evidence boundary:** like the preceding record, it is a preserved private project timestamp, not an independent GitHub timestamp.
+
+---
+
+## 5. First public SSI_V5_MASTER timestamp
+
+### 2026-08-16 15:27:12 CEST — public repository `jankes72/SSI_V5_MASTER`
+
+GitHub API reports:
 
 ```text
 created_at = 2026-08-16T13:27:12Z
 ```
 
-czyli:
+which is:
 
 ```text
 2026-08-16 15:27:12 CEST
 ```
 
-Pierwszy/root commit repo:
+First/root commit:
 
 ```text
 SHA: 8dc75c20f123b841176d991afcec5b977c6875fc
@@ -88,15 +88,7 @@ author timestamp: 2026-08-16 15:25:53 CEST
 committer timestamp: 2026-08-16 15:27:01 CEST
 ```
 
-Publiczne repo:
-
-[`jankes72/SSI_V5_MASTER`](https://github.com/jankes72/SSI_V5_MASTER)
-
-Root commit:
-
-[`8dc75c20f123b841176d991afcec5b977c6875fc`](https://github.com/jankes72/SSI_V5_MASTER/commit/8dc75c20f123b841176d991afcec5b977c6875fc)
-
-Publiczny README tej wersji opisuje m.in.:
+The public repository README described, among other things:
 
 - Director/runtime orchestration and lifecycle contracts;
 - governance, authority and proposal boundaries;
@@ -104,15 +96,15 @@ Publiczny README tej wersji opisuje m.in.:
 - Controlled Continuum engineering contracts;
 - Programmer Root control services.
 
-**Znaczenie dowodowe:** od 16 sierpnia istnieje niezależny publiczny timestamp GitHub dla repo `SSI_V5_MASTER`. Nie jest to jednak data narodzin pomysłu — publiczne repo powstało później niż zachowany zapis koncepcji i start realnej budowy.
+**Evidence meaning:** from 2026-08-16 there is an independent public GitHub timestamp for `SSI_V5_MASTER`. It is not the date the idea was born; the public repository came later than the preserved concept and active-build records.
 
 ---
 
-## 6. Od MASTER/Director do obecnego SSI BODY
+## 6. From MASTER/Director to current SSI BODY
 
-Po rozpoczęciu linii MASTER/Director rozwój nie przebiegał jako pojedynczy monolityczny commit. System był rozwijany, stabilizowany, rozkładany na mechanizmy, migrowany i ponownie testowany.
+Development after MASTER/Director did not occur as one monolithic commit. The system was developed, stabilized, decomposed into mechanisms, migrated and retested.
 
-Najkrótsza aktualna oś:
+Current concise sequence:
 
 ```text
 2026-08-05
@@ -149,15 +141,13 @@ CURRENT PRE-T0 STATE
 
 ---
 
-## 7. Co jest faktycznie zamknięte publicznym evidence do 2026-09-04
-
-Najmocniejsze publiczne closure / validation obejmują obecnie:
+## 7. What was publicly closed by 2026-09-04
 
 ### Micronetwork / V10 migration closure
 
 ```text
-100 runs x 600 cases = 60 000
-accounted = 60 000
+100 runs x 600 cases = 60,000
+accounted = 60,000
 failed = 0
 incorrect_routing = 0
 exceptions = 0
@@ -188,15 +178,15 @@ TOTAL = 524/524 PASS
 OPEN_BLOCKERS = 0
 ```
 
-Te wyniki są development validation dla jawnie określonych zakresów. Nie są przedstawiane jako dowód production readiness całego SSI, AGI ani świadomości.
+These results are development validation for explicitly scoped areas. They are not presented as proof of whole-system production readiness, AGI or consciousness.
 
 ---
 
-## 8. Obecny stan — 2026-09-04
+## 8. State as of 2026-09-04
 
-Na dzień `2026-09-04` projekt znajduje się **przed formalnym T0 / Frozen Baseline**.
+At `2026-09-04` the project was still **before formal T0 / Frozen Baseline**.
 
-Aktualny obraz jest następujący:
+The state at that historical point was:
 
 ```text
 MICRONETWORK / V10 CLOSURE
@@ -224,81 +214,79 @@ ISKRA AGENT SERIES
 = FUTURE RESEARCH AFTER T0
 ```
 
-To jest celowo jawne. Repo nie przedstawia przyszłych elementów jako już ukończonych.
+This historical state is intentionally preserved even though later public evidence records subsequent progress.
 
 ---
 
-## 9. Co jeszcze musi zostać zrobione przed T0
+## 9. Known steps that were still required before T0 at that time
 
-Nie podajemy arbitralnego procentu ukończenia całego SSI, ponieważ zakres architektury nadal ewoluuje i taki procent byłby pozornie precyzyjny.
+Rather than publish an arbitrary percentage completion estimate, the document records concrete known steps:
 
-Znane, konkretne kroki przed `SSI BODY T0 FROZEN` obejmują obecnie:
-
-1. profesjonalne closure / hardening CONTINUUM core;
-2. potwierdzenie jednego canonical CONTINUUM state i recovery path;
-3. pełną widoczność `Interface <-> ROBERT <-> CONTINUUM` na tym samym canonical state;
+1. professional closure / hardening of CONTINUUM core;
+2. confirmation of one canonical CONTINUUM state and recovery path;
+3. full visibility of `Interface <-> ROBERT <-> CONTINUUM` on the same canonical state;
 4. traceable `Root Control -> V10 -> micronetwork / skill selection -> execution -> evidence -> interface`;
-5. zamrożony baseline skilli przed testem;
+5. frozen skill baseline before testing;
 6. canonical skill registry / competence-gap detection / skill selection;
-7. TEST 6 jako przekrojowy `SSI BODY T0 FROZEN INTEGRATION`;
-8. dopiero po jego closure — eksperymentalną serię Agent + Iskra na wspólnym frozen body.
+7. TEST 6 as cross-cutting `SSI BODY T0 FROZEN INTEGRATION`;
+8. only after closure — Agent + Iskra experiments from a common frozen body.
 
 ---
 
-## 10. Czas od idei MASTER/Director do obecnego etapu
+## 10. Time from MASTER/Director concept to that stage
 
-Na dzień `2026-09-04`:
+As of `2026-09-04`:
 
 ```text
-od najwcześniejszego zachowanego zapisu MASTER/Director (2026-08-05)
--> około 30 dni
+from earliest preserved MASTER/Director record (2026-08-05)
+-> about 30 days
 
-od jawnego startu realnej budowy SSI_V5_MASTER (2026-08-06)
--> około 29 dni kalendarzowych
+from explicit real-build start (2026-08-06)
+-> about 29 calendar days
 
-od publicznego utworzenia SSI_V5_MASTER (2026-08-16)
--> 19 dni
+from public SSI_V5_MASTER creation (2026-08-16)
+-> 19 days
 ```
 
-To jest czas do **obecnego etapu PRE-T0**, nie do finalnego zakończenia całego projektu.
+This is time to the historical PRE-T0 stage, not completion of the whole project.
 
-Szybkie tempo rozwoju samo w sobie nie jest dowodem jakości. Dlatego publiczny research mirror łączy chronologię z osobnym evidence dla testów, regresji, błędnych wcześniejszych PASS-ów, napraw i retestów.
+Fast development pace by itself is not evidence of quality. The public research mirror therefore pairs chronology with separate evidence for tests, regressions, incorrect earlier PASS states, repairs and retests.
 
 ---
 
-## 11. Od pomysłu do wdrożenia — najuczciwsze podsumowanie
+## 11. From concept to implementation — concise interpretation
 
 ```text
-POMYSŁ MASTER / DIRECTOR
--> REALNY START BUDOWY
--> PUBLICZNY SSI_V5_MASTER
+MASTER / DIRECTOR CONCEPT
+-> REAL BUILD START
+-> PUBLIC SSI_V5_MASTER
 -> ROBERT / CONTINUUM / V10 / MICRONETWORK DEVELOPMENT
 -> MIGRATION + HARDENING
 -> ROOT CONTROL / TERMINAL
 -> SSI BODY LOCAL INTEGRATION
--> CURRENT PRE-T0
--> NEXT: CONTINUUM CLOSURE + TEST 6 / T0
+-> HISTORICAL PRE-T0
+-> LATER: CONTINUUM CLOSURE + T0
 ```
 
-Najmocniejszy claim dotyczący tempa nie brzmi:
+The strongest pace claim is not:
 
-> "całe SSI zostało ukończone w miesiąc".
+> "the whole SSI system was completed in one month".
 
-Prawidłowy claim brzmi:
+The defensible claim is:
 
-> **Zachowane provenance wskazuje, że obecna linia SSI_V5_MASTER / Director została jawnie sformułowana na początku sierpnia 2026, przeszła do aktywnej budowy 6 sierpnia, otrzymała publiczny timestamp GitHub 16 sierpnia, a do 3–4 września osiągnęła serię publicznie udokumentowanych development-validation i migration-closure milestones prowadzących do obecnego PRE-T0 SSI BODY.**
+> **Preserved provenance indicates that the current SSI_V5_MASTER / Director line was explicitly formulated in early August 2026, entered active construction on 2026-08-06, received a public GitHub timestamp on 2026-08-16, and by 2026-09-03/04 had reached a sequence of publicly documented development-validation and migration-closure milestones leading toward the then-current PRE-T0 SSI BODY.**
 
 ---
 
 ## 12. Claim boundary
 
-Ten dokument dokumentuje **historię rozwoju i provenance**, nie samodzielny dowód technicznej poprawności wszystkich komponentów.
+This document records **development history and provenance**, not independent proof of technical correctness for every component.
 
-Dla technicznych wyników należy czytać równolegle:
+Technical results should be read together with:
 
 - [`DEVELOPMENT_TIMELINE.md`](DEVELOPMENT_TIMELINE.md)
 - [`MICRONETWORK_MIGRATION_FINAL_LINEAGE_20260902.md`](MICRONETWORK_MIGRATION_FINAL_LINEAGE_20260902.md)
 - [`TEST4_ROOT_TERMINAL_AUTHORITY_E2E_RECOVERY_20260902.md`](TEST4_ROOT_TERMINAL_AUTHORITY_E2E_RECOVERY_20260902.md)
 - [`TEST5_FINAL_CONVERGENCE_20260903.md`](TEST5_FINAL_CONVERGENCE_20260903.md)
 
-Publiczne repo pozostaje evidence mirror, a nie dystrybucją prywatnego kodu SSI.
+The public repository remains an evidence mirror, not a distribution of private SSI source code.
