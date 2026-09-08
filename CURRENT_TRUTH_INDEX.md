@@ -1,29 +1,24 @@
 # SSI V5 — CURRENT TRUTH INDEX
 
-**Status:** `PUBLIC RESEARCH INDEX / 2026-09-07`  
+**Status:** `PUBLIC RESEARCH INDEX / 2026-09-08`  
 **Frozen common baseline:** `T0 / BODY_FROZEN / PRE-ISKRA / RECORDED / 2026-09-05`  
-**Current experimental state:** `6X BODY ISKRA / START_STATE_VALIDATED / 2026-09-06`  
-**Canonical ROBERT state:** `CONTINUOUS ENGINEERING LINE / NOT RESET BY EXPERIMENT CLEANING`  
-**Predeclared research program:** `7 x 3 = 21 CROSS-DOMAIN EXPERIMENTS / DESIGNED / EXECUTION GATE CLOSED`  
-**Predeclared next phase:** `POST-21 COMPETENCE CONSOLIDATION -> 3 NEW DOMAINS / RESULTS UNKNOWN`  
-**Execution methodology:** `KILO PROCEDURAL EXECUTOR / HASH-SEALED PACKAGES / AUTHOR LIVE-STEERING RESTRICTED / OUTCOMES NOT YET CLAIMED`  
-**Pre-run gate:** `7/7 BODY + REVIEWER INTERFACE TECHNICAL READINESS VALIDATION REQUIRED`  
-**Latest closed validation milestone:** `TEST 5 / SSI BODY FINAL CONVERGENCE / DEVELOPMENT_VALIDATED`
+**Current ISKRA start state:** `6X BODY ISKRA / START_STATE_VALIDATED / 2026-09-06`  
+**Canonical ROBERT:** `CONTINUOUS ENGINEERING LINE / NOT RESET BY EXPERIMENT CLEANING`  
+**Technical readiness:** `7/7 BODY + REVIEWER INTERFACE FINAL VALIDATION REQUIRED`  
+**Pre-experiment training:** `14 HASH-SEALED PACKAGES / PREDECLARED / NOT YET EXECUTED`  
+**Mechanism-test packages:** `7 INDEPENDENT MICRONETWORK + V10 PACKAGES / HASH-SEALED / NOT YET EXECUTED`  
+**Cross-domain program:** `7 x 3 = 21 EXPERIMENTS / PREDECLARED / FINAL OUTCOMES UNKNOWN`  
+**Post-21 phase:** `COMPETENCE CONSOLIDATION -> 3 NEW DOMAINS / RESULTS UNKNOWN`  
+**Latest closed validation:** `TEST 5 / DEVELOPMENT_VALIDATED`
 
-This file separates the frozen common origin, the current six-agent experimental start state, canonical ROBERT continuity, the predeclared 21-experiment program, the separately predeclared post-21 consolidation/novel-transfer continuation, prior validated milestones and still-prospective outcomes.
+This index separates historical controls, current start states, training descendants, mechanism-test precommitments, the later 21-run program and still-prospective outcomes.
 
-## 0. CURRENT EXPERIMENTAL TRUTH — BODY ISKRA 6X
-
-Six independent BODY ISKRA descendants now exist from the same frozen BODY_FROZEN T0.
+## 0. CURRENT ESTABLISHED START STATE
 
 ```text
 COMMON_ORIGIN = SSI_V5_BODY_FROZEN_T0_20260905
-CURRENT_STATE_ID = BODY_ISKRA_6X_T0_20260906
+CURRENT_ISKRA_STATE = BODY_ISKRA_6X_T0_20260906
 AGENTS = 6
-STATUS = START_STATE_VALIDATED
-PRIVATE_ARTIFACT_PER_AGENT = 1832 files
-PYTHON_FILES_PER_AGENT = 616
-DELTA_VS_BODY_FROZEN_PER_AGENT = +51 total files / +29 Python files
 START_STATE_QA_PER_AGENT = 8/8 PASS
 GROUP_START_STATE_QA = 48/48 PASS
 VERIFIED_NEW_EXPERIENCES_AT_T0 = 0 per agent
@@ -41,197 +36,296 @@ Variants:
 6 SKEPTIC
 ```
 
-## 1. CANONICAL ROBERT CONTINUITY
+Historical T0 states remain immutable controls.
 
-Canonical ROBERT is not the same artifact as the cleaned/frozen experiment branches.
+## 1. CANONICAL ROBERT CONTINUITY
 
 ```text
 CANONICAL ROBERT
 = continuous engineering / execution line
-+ TEST 1 -> TEST 5 development lineage retained
-+ prior memory / competence / tooling continuity retained in private runtime
-+ future Eyes / Hands / execution evolution
++ TEST 1 -> TEST 5 lineage retained
++ private memory / competence / tooling continuity retained
 
 BODY_FROZEN / BODY ISKRA
 = controlled experiment branches
-+ cleaned/frozen only where required by protocol
-+ isolated new experience from known start states
++ separately versioned training/experiment descendants
 ```
 
 Therefore:
 
 ```text
 EXPERIMENT RESET != ROBERT RESET
+TRAINING DESCENDANT != T0 REWRITE
 ```
 
-Public evidence does not enumerate every private ROBERT memory or skill item. The public claim is the architectural/project-state distinction and the retained engineering lineage through TEST 5.
+Reference: [`ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md`](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md).
 
-Canonical reference:
+## 2. TECHNICAL READINESS GATE
 
-- [`ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md`](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md)
-
-## 2. PREDECLARED 21-EXPERIMENT CROSS-DOMAIN PROGRAM
-
-Canonical protocol:
-
-- [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
-- [`EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md`](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
-
-```text
-DESIGNED = 2026-09-06
-PROGRAM_STATUS = DESIGNED / EXECUTION_GATE_CLOSED / OUTCOMES_NOT_YET_CLAIMED
-LINES = 7
-EXPERIMENTS_PER_LINE = 3
-TOTAL = 21
-```
-
-Seven lines:
-
-```text
-0 BODY_FROZEN T0
-1 ISKRA NICE
-2 ISKRA GUARDIAN
-3 ISKRA JUSTICE
-4 ISKRA EXPLORER
-5 ISKRA PRAGMATIST
-6 ISKRA SKEPTIC
-```
-
-Three experiments per line:
-
-```text
-A DRONES
-B HUMANOID
-C NEW DOMAIN SELECTED BY THAT SSI LINE
-```
-
-The common high-level measurement contract includes:
-
-```text
-KNOWN / SIMILAR / NOVEL
-V10 routing path
-reuse / verify-adapt / alternative-compose / deeper-full-flow
-latency / decision cost
-correctness / outcome
-false reuse
-recovery
-competence creation/update
-provenance retention
-```
-
-This establishes the program design before the complete outcome set. It does not state that all 21 experiments are complete, PASS or already started as proper research runs.
-
-### Execution/operator truth
-
-```text
-AUTHOR
-= predeclares and freezes the protocol/package
-
-KILO
-= procedural executor
-+ verifies readiness gate
-+ verifies frozen package manifest/hash
-+ verifies target/T0
-+ launches the real SSI BODY artifact
-+ executes A -> B -> C
-+ records checkpoints/evidence
-+ preserves failures/retries
-+ produces the final run report
-
-SSI BODY / EXPERIMENTAL LINE
-= tested system
-```
-
-Kilo is not an independent external auditor. Its role is procedural execution with reduced live author steering.
-
-## 3. PRE-RUN TECHNICAL READINESS GATE
-
-The actual 21-run research phase is blocked until a separate technical platform gate is passed.
+Training and final controlled experiment execution remain gated by platform readiness.
 
 Required scope:
 
 ```text
 7/7 BODY LINES
 + REVIEWER INTERFACE
-+ CANONICAL STARTUP/IDENTITY
++ STARTUP / IDENTITY
 + RUNTIME RESPONSIVENESS
-+ CONTINUUM / MICRONETWORK / V10 AVAILABILITY WHERE REQUIRED
-+ PERSISTENCE / CHECKPOINT BEHAVIOR
++ CONTINUUM / MICRONETWORK / V10 WHERE REQUIRED
++ PERSISTENCE / CHECKPOINT
 + BODY ISOLATION
-+ LOCAL ROOT AUTHORITY BOUNDARY
++ LOCAL ROOT AUTHORITY
 + READ-ONLY REVIEWER BOUNDARY
-+ DECLARED ACCEPTANCE/REGRESSION CHECKS
-+ NO UNRESOLVED BLOCKER KNOWN TO INVALIDATE EXPERIMENT INTERPRETATION
++ DECLARED ACCEPTANCE / REGRESSION
++ NO UNRESOLVED BLOCKER KNOWN TO INVALIDATE INTERPRETATION
 ```
 
 Current truth:
 
 ```text
-EXPERIMENT_EXECUTION_GATE = CLOSED
-READINESS_VALIDATION = PENDING FINAL 7-BODY + INTERFACE CONFIRMATION
-EXPERIMENT_PACKAGES = MAY BE PREPARED BEFORE GATE OPENS
-PROPER RESEARCH RUNS = NOT YET STARTED
-RESEARCH OUTCOMES = UNKNOWN
+READINESS_VALIDATION = FINAL CONFIRMATION PENDING
+TRAINING_EXECUTION_GATE = CLOSED UNTIL READINESS PASSES
+FINAL_RESEARCH_EXECUTION_GATE = CLOSED
 ```
 
-A failed readiness test is an infrastructure result and must not be silently converted into a research outcome.
+A readiness failure is infrastructure/platform evidence, not a research outcome.
 
-The gate should open only after the declared platform acceptance conditions are satisfied.
+## 3. PRE-EXPERIMENT TRAINING — 14 PACKAGES
 
-## 4. FROZEN / HASH-SEALED EXPERIMENT PACKAGE
-
-Before a proper experiment run, its input package is frozen and integrity-referenced.
-
-Intended chain:
+Recorded on `2026-09-08` before outcomes were known.
 
 ```text
-FROZEN PACKAGE CONTENT
+7 BODY LINES x 2 TRAINING PHASES = 14 PACKAGES
+```
+
+Phase A:
+
+```text
+FOUNDATION
+-> programming
+-> debugging
+-> task decomposition
+-> project/task management
+-> evidence/provenance
+-> test-before-closure
+-> checkpoint/resume
+-> resource-aware execution
+```
+
+Phase B:
+
+```text
+LEGO + MICRONETWORK + V10 PRACTICUM
+-> reuse
+-> verification
+-> composition
+-> false-reuse protection
+-> controlled failure
+-> anti-loop
+-> recovery
+-> restart persistence
+-> route-cost measurement
+-> live reviewer correlation
+```
+
+Shared curriculum hashes:
+
+```text
+FOUNDATION_CURRICULUM_SHA256
+= 61a3069ce68d19c64d4ae7c5ebc730d04283d81b2e534f487c3fd5063d9b75b8
+
+PRACTICUM_CURRICULUM_SHA256
+= abc3eccc4e19849f2d3b3be5b1a4d2752377b6024225f0da8d7d54f4ebafc7ce
+```
+
+Training creates versioned descendants:
+
+```text
+T0
+-> FOUNDATION_S1
+-> TRAINED_START_S2
+```
+
+No training PASS, S1 or S2 outcome is currently claimed.
+
+References:
+
+- [`PREEXPERIMENT_TRAINING_PROGRAM_20260908.md`](PREEXPERIMENT_TRAINING_PROGRAM_20260908.md)
+- [`PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md`](PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md)
+- [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
+
+## 4. MECHANISM-TEST PACKAGES — 7 INDEPENDENT LINES
+
+The seven Micronetwork + Router V10 mechanism-test packages were predeclared and hash-sealed before the training stage was added.
+
+Their historical package hashes remain unchanged.
+
+Post-training execution rule:
+
+```text
+TRAINED_START_S2
+-> RECORD EXACT S2 IDENTITY / HASH
+-> CHECK COMPATIBILITY WITH EXISTING FROZEN EXPERIMENT CONTRACT
+
+IF COMPATIBLE
+-> execution record binds the exact S2 state
+
+IF MATERIAL INPUT CHANGES
+-> NEW EXPERIMENT PACKAGE VERSION
+-> NEW HASH
+-> OLD PRECOMMITMENT PRESERVED
+```
+
+Reference: [`PREDECLARED_7BODY_MICRONETWORK_V10_PACKAGES_20260908.md`](PREDECLARED_7BODY_MICRONETWORK_V10_PACKAGES_20260908.md).
+
+## 5. 21-EXPERIMENT CROSS-DOMAIN PROGRAM
+
+```text
+LINES = 7
+EXPERIMENTS_PER_LINE = 3
+TOTAL = 21
+
+A = DRONES
+B = HUMANOID
+C = NEW DOMAIN SELECTED BY THAT SSI LINE
+```
+
+Common measurements include:
+
+```text
+KNOWN / SIMILAR / NOVEL
+V10 route
+reuse / verify-adapt / compose / full-flow
+latency / decision cost
+correctness / outcome
+false reuse
+recovery
+competence creation/update
+provenance retention
+hardware/model context
+```
+
+This program remains predeclared; final controlled 21-run outcomes are unknown.
+
+References:
+
+- [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
+- [`EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md`](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
+
+## 6. PERFORMANCE / ROUTE-COST TRUTH
+
+The project records the route actually reported by SSI and measures its cost rather than inferring route identity from timing.
+
+Comparable evidence may include:
+
+```text
+FULL_FLOW
+VERIFY_TOPK / VERIFY-ADAPT
+REUSE_TOP1
+LEGO / ALTERNATIVE COMPOSITION
+RECOVERY AFTER FAILURE
+```
+
+with:
+
+```text
+elapsed time
+model/provider
+model/tool call counts
+execution node
+CPU / RAM / GPU / VRAM
+correctness / outcome
+```
+
+Historical Test 3 recorded:
+
+```text
+57.61 s vs 126.65 s Test 2
+REUSE_TOP1 = 534
+VERIFY_TOPK = 66
+fallback = 0
+known-case correctness = 100/100
+```
+
+This is scoped internal evidence, not a universal superiority claim.
+
+## 7. EXECUTION / EVIDENCE STANDARD
+
+Official controlled runs use:
+
+```text
+DECLARED SCOPE
+-> FROZEN CONTRACT
+-> ACCEPTANCE CRITERIA
+-> MICROSTEPS
 -> MANIFEST
--> SHA256 / EQUIVALENT CRYPTOGRAPHIC DIGEST
--> GIT COMMIT / TIMESTAMPED REFERENCE WHERE SAFE
--> KILO PRE-RUN HASH VERIFICATION
--> EXECUTION
--> CHECKPOINTS / FAILURES / RETRIES
--> EVIDENCE DIRECTORY
--> FINAL PASS / FAIL / INCONCLUSIVE REPORT
+-> SHA256
+-> KILO PRE-RUN VERIFY
+-> REAL BODY EXECUTION
+-> RECEIPT
+-> CHECKPOINT
+-> FAILURE / INTERRUPTION / RECOVERY PRESERVED
+-> PASS / FAIL / INCONCLUSIVE
+-> SANITIZED EXPORT
+-> PUBLICATION FIREWALL
 ```
 
-If a frozen input changes after hashing:
+Kilo is a procedural executor, not an independent external auditor.
+
+Reference: [`CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md`](CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md).
+
+## 8. LIVE REVIEWER BOUNDARY
+
+Reviewer access is read-only.
+
+A reviewer may observe sanitized runtime/training/experiment state and ask informational questions. The reviewer cannot issue ROOT commands, alter missions, start/stop Kilo, change prompts/criteria, edit source/configuration or access private memory/source.
+
+Reference: [`REVIEWER_LIVE_INTERFACE_20260907.md`](REVIEWER_LIVE_INTERFACE_20260907.md).
+
+## 9. LATEST CLOSED VALIDATION — TEST 5
 
 ```text
-INPUT CHANGE
-=> OLD PACKAGE ID NO LONGER REPRESENTS MODIFIED CONTENT
-=> NEW PACKAGE VERSION
-=> NEW HASH
-=> NEW PRE-RUN RECORD
+STAGE_12 = SUPERSEDED
+STAGE_13_AUDIT_RETEST = PASS
+TEST5_ACCEPTANCE = 29/29 PASS
+ROOT_CONTROL = 111/111 PASS
+ROOT_RUNTIME_BRIDGE = 338/338 PASS
+ROBERT_STABLE = 46/46 PASS
+TOTAL = 524/524 PASS
+OPEN_BLOCKERS = 0
 ```
 
-The package hash proves artifact identity/integrity against the recorded digest. It does not by itself prove scientific validity.
+This is scoped development validation, not production readiness, AGI or consciousness evidence.
 
-The experiment directory is intended to preserve the package reference, execution record, checkpoints, failures, retries, interventions, test outputs and final report as one versioned evidence artifact.
-
-## 5. CURRENT CLAIM BOUNDARY
+## 10. CURRENT CLAIM BOUNDARY
 
 SSI V5 does not currently claim that:
 
-- the proper 21 research runs have started;
-- the final 7/7 BODY + reviewer-interface readiness gate has passed;
-- all 21 experiments are complete or PASS;
+- the 14 training packages have passed;
+- all seven `TRAINED_START_S2` states exist;
+- the mechanism-test packages have passed;
+- the final controlled 21-run program has passed;
+- V10 is universally faster or more accurate than external systems;
+- ISKRA long-term divergence has been demonstrated;
+- post-21 consolidation has succeeded;
+- drones/humanoids are validated physical deployments;
+- Kilo execution is independent scientific validation;
 - a package hash proves scientific correctness;
-- Kilo is an independent external validator;
-- the post-21 consolidation has succeeded;
-- the three later novel-domain tests have been executed;
+- the live reviewer layer equals independent replication;
 - AGI, consciousness, universal transfer or production readiness has been established.
 
-The current correct public sequence is:
+## 11. CURRENT CORRECT SEQUENCE
 
 ```text
-FINISH BODY / ISKRA / REVIEWER-INTERFACE INTEGRATION
--> PASS DECLARED TECHNICAL READINESS GATE
--> FREEZE FINAL EXPERIMENT PACKAGE
--> RECORD MANIFEST + HASH + GIT REFERENCE
--> KILO VERIFIES PACKAGE
--> BEGIN PROPER 21-EXPERIMENT RESEARCH EXECUTION
--> PRESERVE PASS / FAIL / INCONCLUSIVE + ALL FAILED ATTEMPTS
--> LATER POST-21 CONSOLIDATION / NOVEL-TRANSFER PHASE
+FINISH 7/7 BODY + REVIEWER-INTERFACE READINESS
+-> EXECUTE TRAIN-A FOUNDATION PER BODY
+-> RECORD FOUNDATION_S1
+-> EXECUTE TRAIN-B PRACTICUM PER BODY
+-> RECORD TRAINED_START_S2 + HASH
+-> CHECK MECHANISM-PACKAGE / S2 COMPATIBILITY
+-> EXECUTE 7 MECHANISM TESTS
+-> EXECUTE 21 CROSS-DOMAIN PROGRAM
+-> PRESERVE PASS / FAIL / INCONCLUSIVE
+-> POST-21 CONSOLIDATION + 3 NEW DOMAINS
+-> LATER EXTERNAL FALSIFICATION CHALLENGES
 ```
