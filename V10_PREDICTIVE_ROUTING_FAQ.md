@@ -1,8 +1,8 @@
 # V10 Stateful Predictive Competence & Recovery Router — Reviewer FAQ
 
-## Czy V10 jest tylko routerem lub cache'em?
+## Is V10 only a router or cache?
 
-Nie. V10 jest projektowany jako **stanowy, predykcyjny router kompetencji i recovery**. Oprócz similarity i confidence uwzględnia znaczenie historii prób, wcześniejszych outcomes oraz znanych failure signatures przy wyborze kolejnej ścieżki działania.
+No. V10 is designed as a **stateful predictive competence and recovery router**. In addition to similarity and confidence, it considers attempt history, prior outcomes and known failure signatures when selecting the next execution path.
 
 ```text
 CURRENT STATE
@@ -13,23 +13,23 @@ CURRENT STATE
 -> REUSE / VERIFY / ALTERNATIVE / FULL_FLOW
 ```
 
-Exact-cache jest tylko jedną z możliwych ścieżek.
+Exact-cache behavior is only one possible path.
 
-## Co dokładnie przewiduje V10?
+## What does V10 predict?
 
-Na poziomie architektonicznym V10 estymuje nie tylko dopasowanie istniejącej kompetencji do aktualnego problemu, ale również to, **czy dana ścieżka nadal ma sens w kontekście historii wykonania**.
+At the architectural level, V10 estimates not only whether existing competence matches the current problem, but also **whether a given path still makes sense in light of execution history**.
 
-Wynikiem decyzji może być:
+A decision may result in:
 
 - `REUSE_TOP1`;
 - `VERIFY_TOPK`;
-- wybór alternatywnej kompetencji lub kompozycji LEGO;
-- zablokowanie ślepego retry znanej nieskutecznej ścieżki;
-- `FULL_FLOW` dla unknown/conflict/low-confidence.
+- an alternative competence or LEGO composition;
+- blocking blind retry of a known ineffective route;
+- `FULL_FLOW` for unknown/conflict/low-confidence cases.
 
-## Dlaczego historia prób jest ważna?
+## Why is attempt history important?
 
-W zadaniach wieloetapowych samo podobieństwo wejścia jest niewystarczające. System powinien wiedzieć, że dana strategia była już użyta w porównywalnym stanie i jaki przyniosła rezultat.
+In multi-step tasks, input similarity alone is insufficient. The system should know whether a strategy was already used in a comparable state and what outcome it produced.
 
 ```text
 SAME / EQUIVALENT STATE
@@ -39,13 +39,13 @@ SAME / EQUIVALENT STATE
 => DO NOT BLINDLY REPEAT
 ```
 
-To jest podstawowa idea anti-loop w V10.
+This is the core anti-loop idea in V10.
 
-## Co oznacza anti-loop?
+## What does anti-loop mean?
 
-Anti-loop oznacza, że system ma nie kręcić się w kółko przez wykonywanie tej samej nieskutecznej strategii bez nowej informacji.
+Anti-loop means that the system should not keep cycling through the same ineffective strategy without new information.
 
-Po wykryciu powtarzającego się negatywnego outcome V10 powinien rozważyć:
+After detecting a repeated negative outcome, V10 should consider:
 
 ```text
 BLOCK SAME ROUTE
@@ -59,11 +59,11 @@ OR
 ESCALATE TO FULL_FLOW
 ```
 
-To odróżnia rolę V10 od prostego mechanizmu "znajdź podobne i użyj ponownie".
+This distinguishes V10 from a simple "find something similar and reuse it" mechanism.
 
-## Jak V10 współpracuje z LEGO?
+## How does V10 work with LEGO?
 
-LEGO rozkłada duży problem na małe klocki. V10 pomaga zdecydować, które sprawdzone klocki można ponownie użyć, które należy zmienić oraz kiedy dotychczasowa kompozycja prowadzi do powtarzającego się błędu.
+LEGO decomposes a large problem into smaller blocks. V10 helps decide which verified blocks can be reused, which should be changed, and when the current composition is leading to repeated failure.
 
 ```text
 GOAL
@@ -78,29 +78,27 @@ GOAL
 -> RETEST
 ```
 
-## Dlaczego Tetris jest dobrym przykładem?
+## Why is Tetris a useful example?
 
-Bo pozwala pokazać dwie różne warstwy działania.
+Because it separates two different operating layers.
 
-Najpierw ROBERT może budować i naprawiać Tetrisa:
+First, ROBERT may build and repair Tetris:
 
 ```text
 BUILD -> TEST -> FAILURE -> DIAGNOSIS -> ROUTE CHANGE -> RETEST
 ```
 
-Później ROBERT może sam grać:
+Later, ROBERT may play:
 
 ```text
 BOARD STATE -> PERCEPTION -> COMPETENCE SELECTION -> ACTION -> OUTCOME -> NEXT STATE
 ```
 
-Jeżeli określona strategia w porównywalnym stanie wielokrotnie daje zły rezultat, wcześniejszy outcome powinien wpływać na następną decyzję.
+If a strategy repeatedly fails in comparable states, prior outcomes should influence the next decision.
 
-## Czy główną zaletą V10 jest szybkość?
+## Is speed the main advantage of V10?
 
-Nie. Szybkość jest ważnym efektem ubocznym poprawnego reuse.
-
-Główne znaczenie V10 jest szersze:
+No. Speed is an important possible consequence of correct reuse, but the broader role is:
 
 ```text
 FAST ACCESS
@@ -110,11 +108,11 @@ FAST ACCESS
 + ANTI-LOOP
 ```
 
-Test 3 pokazał `57.61 s` wobec `126.65 s` Testu 2 w danym zakresie, ale redukowanie V10 do tego wyniku byłoby niepełnym opisem architektury.
+Test 3 recorded `57.61 s` versus `126.65 s` for Test 2 within that benchmark, but reducing V10 to this speed result would be an incomplete description of the architecture.
 
-## Jakie publiczne evidence jest już dostępne?
+## What public evidence is already available?
 
-Test 3 zarejestrował:
+Test 3 recorded:
 
 ```text
 lookups:             600
@@ -128,27 +126,25 @@ errors:                0
 known correctness: 100/100
 ```
 
-Wcześniejsze stress-testy lifecycle obejmowały również replay, retry, restart, concurrency, persistence i idempotency.
+Earlier lifecycle stress tests also covered replay, retry, restart, concurrency, persistence and idempotency.
 
-## Czy publiczne testy udowodniły już pełny anti-loop?
+## Have public tests already proven full anti-loop behavior?
 
-Nie. To ważna granica twierdzeń.
+No. This is an important claim boundary.
 
-Obecne evidence wspiera routing, replay/persistence hardening i selektywne reuse/verify, ale dedykowany benchmark musi jeszcze celowo wywoływać:
+Current evidence supports routing, replay/persistence hardening and selective reuse/verify, but a dedicated benchmark still needs to deliberately trigger:
 
-- ten sam failure signature;
-- podobny state;
-- powtarzaną nieskuteczną strategię;
-- alternatywną ścieżkę recovery;
-- restart i ponowną próbę po restarcie.
+- the same failure signature;
+- a comparable state;
+- repeated ineffective strategy;
+- an alternative recovery path;
+- restart and post-restart retry behavior.
 
-Dopiero wtedy można ilościowo raportować skuteczność anti-loop.
+Only then can anti-loop performance be reported quantitatively.
 
-## Jakie metryki są właściwe dla V10?
+## What metrics are appropriate for V10?
 
-Nie tylko latency.
-
-Najważniejsze przyszłe metryki to:
+Not latency alone. Important metrics include:
 
 - false-reuse rate;
 - false-escalation rate;
@@ -162,8 +158,8 @@ Najważniejsze przyszłe metryki to:
 - final task correctness;
 - time/cost saved versus canonical full flow.
 
-## Najkrótsza odpowiedź dla recenzenta
+## Shortest reviewer answer
 
-**V10 nie jest tylko szybszym routerem. Jest warstwą decyzji nad trwałą kompetencją: wykorzystuje stan, confidence, historię prób i outcomes, aby zdecydować co ponownie użyć, co zweryfikować, czego nie powtarzać oraz kiedy zmienić strategię lub wrócić do pełnego flow.**
+**V10 is not merely a faster router. It is a decision layer over persistent competence: it uses state, confidence, attempt history and outcomes to decide what to reuse, what to verify, what not to repeat, and when to change strategy or return to full flow.**
 
-Publiczna dokumentacja opisuje tę funkcję bez ujawniania prywatnego kodu V10 ani pełnego silnika mikrosieci.
+Public documentation describes this function without publishing private V10 source code or the full Micronetwork engine.
