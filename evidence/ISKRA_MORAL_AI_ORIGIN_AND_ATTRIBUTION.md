@@ -1,132 +1,132 @@
-# SSI V5 — pochodzenie i atrybucja Moralnej AI / Iskry
+# SSI V5 — Moral AI / Iskra Origin and Attribution
 
 **Status:** `HISTORICAL ATTRIBUTION / ROOT_ATTESTED`  
-**Data zapisu:** `2026-08-29`  
+**Recorded:** `2026-08-29`
 
-> Ten dokument istnieje po to, aby jawnie rozdzielić autorstwo źródłowej idei Moralnej AI od późniejszej adaptacji tej idei do architektury SSI V5. Celem jest zachowanie uczciwego lineage projektu i uniknięcie przypisania jednej osobie pracy lub koncepcji, która powstała wcześniej w projekcie rodzinnym.
-
----
-
-## 1. Źródłowa idea nie jest wyłącznie autorstwa SSI V5
-
-Według bezpośredniej atrybucji `PROGRAMMER_ROOT`, źródłowa koncepcja **Moralnej AI**, z której później wyprowadzono warstwę nazywaną w SSI `Iskra`, pochodzi z wcześniejszego projektu jego brata.
-
-W materiałach użytkownika projekt ten jest określany jako **„Amnezja / model Moralna AI”**.
-
-Na moment tworzenia tego dokumentu publiczny indeks GitHub dostępny z repo `SSI_V5` nie pozwolił jednoznacznie odnaleźć i zweryfikować konkretnego publicznego URL repozytorium źródłowego po samej nazwie. Dlatego ten zapis ma status `ROOT_ATTESTED`, a nie `VERIFIED_REPOSITORY_EVIDENCE`.
-
-Gdy canonical URL lub dokładna nazwa repo źródłowego zostanie wskazana, ten dokument powinien zostać uzupełniony o bezpośredni link, autora i commit/history evidence.
+> This document explicitly separates authorship of the source Moral AI idea from its later adaptation into SSI V5. The goal is to preserve honest project lineage and avoid attributing to one person work or concepts that originated earlier in a family project.
 
 ---
 
-## 2. Co pochodzi ze źródłowej idei brata
+## 1. The source idea is not solely authored by SSI V5
 
-Źródłową inspiracją była idea systemu, w którym decyzja nie jest oceniana wyłącznie instrumentalnie lub liczbowo, lecz posiada dodatkową warstwę wartościującą / moralną.
+According to the direct attribution of `PROGRAMMER_ROOT`, the source **Moral AI** concept from which the SSI layer later called `Iskra` was derived comes from an earlier project by his brother.
 
-Ta idea stała się brakującym elementem dla późniejszego eksperymentu SSI z niezależnymi Agentami.
+In user materials this project is referred to as **`Amnezja / Moral AI model`**.
 
-Atrybucja powinna więc brzmieć wprost:
+At the time this document was created, the public GitHub index available from the `SSI_V5` repository did not allow the source repository URL to be uniquely located and verified from the name alone. Therefore this record is `ROOT_ATTESTED`, not `VERIFIED_REPOSITORY_EVIDENCE`.
+
+When a canonical URL or exact source-repository name is available, this document should be extended with a direct link, author and commit/history evidence.
+
+---
+
+## 2. What comes from the brother's source idea
+
+The source inspiration was a system in which a decision is not evaluated only instrumentally or numerically, but has an additional value/moral evaluation layer.
+
+That idea became a missing component for the later SSI experiment with independent Agents.
+
+Attribution should therefore be explicit:
 
 ```text
 SOURCE MORAL-AI IDEA
-= wcześniejszy projekt brata autora SSI
+= earlier project by the SSI author's brother
 
 SSI ISKRA / MORAL-AI ADAPTATION
-= rozwinięcie i integracja tej idei z architekturą SSI
+= later development and integration of that idea into SSI architecture
 ```
 
-Nie należy zapisywać:
+Documentation should not state:
 
 ```text
 PROGRAMMER_ROOT INVENTED MORAL AI FROM SCRATCH
 ```
 
-jeżeli evidence i atrybucja autora mówią inaczej.
+when author attribution and evidence indicate otherwise.
 
 ---
 
-## 3. Co zostało przebudowane w SSI
+## 3. What SSI changed and extended
 
-SSI nie kopiuje źródłowej idei 1:1.
+SSI does not copy the source idea 1:1.
 
-Paweł Jankiewicz zaadaptował ją do własnego systemu eksperymentalnego, łącząc ją z:
+Paweł Jankiewicz adapted it into his own experimental architecture and connected it with:
 
 - `SSI ORGANISM CORE`;
-- indywidualną identity Agenta;
-- private memory i Experience;
-- mikrosieciami;
+- individual Agent identity;
+- private memory and Experience;
+- micronetworks;
 - beliefs / policies;
-- relacjami społecznymi;
+- social relationships;
 - World rules;
-- niezależnym outcome;
+- independent outcome;
 - Director meta-observation;
-- sześcioma niezależnymi Agentami.
+- six independent Agents.
 
-Jednym z kluczowych rozwinięć jest również przejście od abstrakcyjnego wyboru do **dynamicznego środowiska 10×10**, w którym Agent może operować na obiektach świata.
+A key extension is the move from abstract decision scoring into a **dynamic 10x10 environment** where an Agent may operate on objects in the world.
 
-Przykład:
+Example:
 
 ```text
-NIE TYLKO:
-"Agent wylicza, że klucz otwiera drzwi"
+NOT ONLY:
+"Agent computes that the key opens the door"
 
-ALE:
-Agent widzi obiekt KLUCZ
--> podejmuje decyzję
--> fizycznie pobiera obiekt w modelu świata
--> przemieszcza go / używa
--> obserwuje konsekwencję
--> zapisuje Experience
--> aktualizuje swoje mikrosieci / beliefs / policy
+BUT:
+Agent observes the KEY object
+-> makes a decision
+-> picks up the object in the world model
+-> moves / uses it
+-> observes the consequence
+-> records Experience
+-> updates micronetworks / beliefs / policy
 ```
 
-W ten sposób idea Moralnej AI zostaje połączona z uczeniem przez działanie i konsekwencje.
+This connects the Moral AI idea with learning through action and consequence.
 
 ---
 
-## 4. Dynamiczna plansza 10×10
+## 4. Dynamic 10x10 board
 
-Plansza 10×10 w adaptacji SSI nie ma być statycznym testem wielokrotnego wyboru.
+The SSI 10x10 board is not intended to be a static multiple-choice test.
 
-Ma reprezentować dynamiczne środowisko eksperymentalne:
+It is intended as a dynamic experimental environment:
 
 ```text
 WORLD STATE
--> OBIEKTY
--> POZYCJE
--> MOŻLIWE DZIAŁANIA
--> WYBÓR AGENTA
--> FIZYCZNA ZMIANA STANU ŚWIATA
--> KONSEKWENCJA
+-> OBJECTS
+-> POSITIONS
+-> POSSIBLE ACTIONS
+-> AGENT CHOICE
+-> PHYSICAL CHANGE IN WORLD STATE
+-> CONSEQUENCE
 -> EXPERIENCE
 -> MORAL AI / ISKRA INTERPRETATION
 -> MICRONETWORK DEVELOPMENT
 ```
 
-Agent może dzięki temu samodzielnie wykonywać eksperymenty zamiast jedynie odpowiadać na pytania.
+The Agent can therefore conduct actions and experiments rather than only answer questions.
 
 ---
 
-## 5. Dlaczego to jest ważne dla społeczeństwa Agentów
+## 5. Why this matters for an Agent society
 
-Połączenie Moralnej AI z osobnym Experience i mikrosieciami oznacza, że różne Agenty mogą inaczej interpretować te same zdarzenia społeczne.
+Combining Moral AI with separate Experience and micronetworks means different Agents may interpret the same social event differently.
 
-Z czasem może to wpływać na:
+Over time this may affect:
 
-- zaufanie i nieufność;
-- współpracę;
-- odmowę współpracy;
-- wymianę wiedzy;
-- ochronę własnej wiedzy;
-- preferowanie określonych partnerów;
-- dystansowanie się od innych;
-- koalicje;
-- rozpad koalicji;
-- konflikty interesów;
-- reakcje na wykorzystanie lub niespełnione oczekiwania;
-- strategie grupowe i kontrstrategie.
+- trust and distrust;
+- cooperation;
+- refusal to cooperate;
+- knowledge exchange;
+- protection of private knowledge;
+- preference for specific partners;
+- distancing from others;
+- coalitions;
+- coalition breakdown;
+- conflicts of interest;
+- reactions to exploitation or unmet expectations;
+- group strategies and counter-strategies.
 
-Te relacje nie mają być ręcznie wpisane jako osobowość.
+These relationships are not intended to be manually written as personality traits.
 
 ```text
 INTERACTION
@@ -137,15 +137,15 @@ INTERACTION
 -> FUTURE RELATIONSHIP POLICY
 ```
 
-Director ma obserwować całą genezę tych zmian.
+Director is intended to observe the lineage of these changes.
 
 ---
 
-## 6. Director jako obserwator eksperymentu
+## 6. Director as experiment observer
 
-Director nie powinien widzieć wyłącznie końcowego wyniku Agenta.
+Director should not see only the Agent's final score.
 
-Powinien móc audytować m.in.:
+It should be able to audit, where permitted:
 
 ```text
 INITIAL ISKRA / VALUE PRIOR
@@ -163,32 +163,32 @@ DECISION TRACE
 OUTCOME
 ```
 
-Dzięki temu można badać nie tylko **co Agent zrobił**, ale również **jak doszedł do danego sposobu działania**.
+This supports research not only into **what the Agent did**, but also **how it arrived at that behavior**.
 
 ---
 
-## 7. Uczciwa atrybucja
+## 7. Honest attribution
 
-Docelowa dokumentacja SSI powinna konsekwentnie zachowywać następujące rozróżnienie:
+SSI documentation should consistently preserve this distinction:
 
 ```text
-ŹRÓDŁOWA IDEA MORALNEJ AI
--> projekt brata Pawła Jankiewicza
+SOURCE MORAL-AI IDEA
+-> project by Paweł Jankiewicz's brother
 
-ADAPTACJA DO SSI / ISKRA
+SSI / ISKRA ADAPTATION
 -> Paweł Jankiewicz
--> integracja z Agent Body, Experience, mikrosieciami,
-   dynamicznym światem 10×10, relacjami społecznymi
-   i Director meta-observation
+-> integration with Agent Body, Experience, micronetworks,
+   dynamic 10x10 world, social relationships
+   and Director meta-observation
 ```
 
-To samo rozróżnienie powinno obowiązywać w README, evidence, publikacjach i późniejszych opisach badawczych.
+The same distinction should apply in README files, evidence, publications and later research descriptions.
 
 ---
 
-## 8. Zasada lineage
+## 8. Lineage rule
 
-SSI przyjmuje tutaj tę samą zasadę, którą stosuje wobec własnych Agentów:
+SSI applies here the same principle it uses for its own Agents:
 
 ```text
 SOURCE IDEA
@@ -198,6 +198,6 @@ LATER ADAPTATION
 LATER DISCOVERY
 ```
 
-Rozwinięcie pomysłu nie usuwa jego pochodzenia.
+Developing an idea does not erase its origin.
 
-Późniejsze eksperymenty Agentów mogą prowadzić do nowych struktur lub strategii, ale należy zachować historyczne źródło pierwotnej Moralnej AI oraz osobno przypisywać elementy dodane przez SSI.
+Later Agent experiments may produce new structures or strategies, but the historical source of the original Moral AI concept should remain preserved while SSI-specific additions are attributed separately.
