@@ -1,19 +1,19 @@
 # RUNTIME RESTART 20x
 
-Wynik: **20/20 PASS**
+Result: **20/20 PASS**
 
-## Metoda
+## Method
 
-Dla każdego z 20 restartów sprawdzono:
+For each of the 20 restart cycles the test verified:
 
-- start runtime bez wyjątków;
-- obecność V10 flow;
-- stabilność candidates/artifacts;
-- brak wyjątku w ścieżce micro advice;
-- SQLite `integrity_check = ok` dla głównych baz;
-- widoczność V10 flow state przez kanoniczny ExperienceStore.
+- runtime start without exceptions;
+- presence of the V10 flow;
+- stability of candidates/artifacts;
+- no exception in the micro-advice path;
+- SQLite `integrity_check = ok` for the primary databases;
+- visibility of V10 flow state through the canonical ExperienceStore.
 
-## Wynik
+## Result
 
 - passes: 20/20
 - failures: 0
@@ -21,6 +21,6 @@ Dla każdego z 20 restartów sprawdzono:
 - SQLite integrity all OK: True
 - V10 state shared via canonical store: True
 
-## Wniosek
+## Conclusion
 
-W badanym zakresie runtime restartuje się deterministycznie, stan pozostaje spójny, a V10 flow nie tworzy równoległego stanu uczenia.
+Within the tested scope, the runtime restarted deterministically, state remained consistent, and the V10 flow did not create a parallel learning state.
