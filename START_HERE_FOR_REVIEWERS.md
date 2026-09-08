@@ -1,6 +1,6 @@
 # SSI V5 — Start Here for Grant and Technical Reviewers
 
-**Updated:** 2026-09-08  
+**Updated:** 2026-09-09  
 **Frozen baseline:** `BODY_FROZEN T0 / PRE-ISKRA / 2026-09-05`  
 **Current ISKRA start state:** `6 independent T0 variants / START_STATE_VALIDATED / 2026-09-06`  
 **Latest closed validation:** `TEST 5 / DEVELOPMENT_VALIDATED`  
@@ -8,11 +8,13 @@
 **Training:** `14 HASH-SEALED PACKAGES / PREDECLARED / NOT YET EXECUTED`  
 **Mechanism tests:** `7 INDEPENDENT MICRONETWORK + V10 PACKAGES / PREDECLARED / NOT YET EXECUTED`  
 **Cross-domain program:** `7 x 3 = 21 EXPERIMENTS / PREDECLARED / OUTCOMES UNKNOWN`  
-**Director mainline:** `IMPLEMENTATION IN PROGRESS / FINAL VALIDATION PENDING`
+**Director mainline:** `DIRECTOR_FROZEN_C0 / ENGINEERING BASELINE CLOSED / INTEGRITY VERIFIED`
+
+> **Disclosure boundary:** this repository is a public evidence/review mirror, not a source-code distribution. Proprietary SSI, DIRECTOR, ROBERT, Router V10, Micronetwork and ISKRA implementation code remains private. Public materials describe validated behavior, architecture at a safe level, test status, sanitized evidence and claim boundaries.
 
 ## What to understand first
 
-SSI V5 now has two explicitly separated tracks.
+SSI V5 has two explicitly separated tracks.
 
 ### Controlled research track
 
@@ -41,7 +43,8 @@ VALIDATED BODY FOUNDATION
 -> NEW CANONICAL DIRECTOR
 -> LOCAL DIRECTOR CONTROL PANEL
 -> SHARED READ-ONLY REVIEWER OBSERVABILITY
--> DIRECTOR INTEGRATION / RESTART / PERSISTENCE VALIDATION
+-> RESTART / PERSISTENCE / CHECKPOINT / IPC VALIDATION
+-> DIRECTOR_FROZEN_C0
 -> LATER DIRECTOR -> ROBERT INTEGRATION
 -> LATER WORLD / AGENT INTEGRATION
 ```
@@ -78,26 +81,49 @@ Read first:
 - [`7BODY_TECHNICAL_READINESS_START_HERE.md`](7BODY_TECHNICAL_READINESS_START_HERE.md)
 - [`evidence/7BODY_TECHNICAL_READINESS_PRE_REPAIR_AUDIT_20260908.md`](evidence/7BODY_TECHNICAL_READINESS_PRE_REPAIR_AUDIT_20260908.md)
 
-## Director mainline
+## Director mainline — validated C0 baseline
 
-On 2026-09-08 the project opened the canonical Director engineering line.
-
-The new Director is being built from two controlled migration sources:
-
-1. the validated BODY architecture;
-2. the already working historical Director-specific implementation.
-
-The intention is one coherent new canonical Director line rather than repairing multiple old paths in place.
-
-The Director is intended to receive BODY-level runtime mechanisms such as Router V10, Micronetworks, CONTINUUM, persistence/recovery and lifecycle integration together with Director-specific planning, authority, memory and operational functions.
-
-Current status:
+On 2026-09-08 the canonical Director engineering line reached a frozen engineering baseline:
 
 ```text
-DIRECTOR MAINLINE DECLARED = YES
-IMPLEMENTATION = IN PROGRESS
-FINAL DIRECTOR PASS = NOT CLAIMED
+DIRECTOR_FROZEN_C0
 ```
+
+The implementation remains private. What is publicly stated is the sanitized, tested state.
+
+Validated in the C0 scope:
+
+```text
+LOCAL DIRECTOR RUNTIME = RUNNING / validated
+SINGLE RUNTIME PROTECTION = PASS
+IPC = ACTIVE / validated
+START / STOP / RESTART / STATUS = PASS
+CHECKPOINT + RESTART/PERSISTENCE = PASS
+CONTINUUM local integration = ACTIVE / validated
+LAB integration = ACTIVE / validated
+MICRONETWORK integration = validated
+ROUTER V10 integration = validated
+COLLECTIVE INTELLIGENCE status = validated
+PERSISTENT CONVERSATION MEMORY = validated across restart
+LOCAL DIRECTOR CONTROL PANEL = PASS
+SHARED WWW INTERFACE = PASS / OBSERVER_ONLY
+ROOT commands in shared WWW = NOT EXPOSED
+HARDWARE STATUS incl. NVIDIA GPU/VRAM = validated
+MODEL/BACKEND STATUS = validated in C0 scope
+CENTRAL DIRECTOR NODE = intentionally OFFLINE / LOCAL-ONLY mode
+```
+
+Final C0 verification recorded:
+
+```text
+FINAL PANEL / SYSTEM CHECKS = 27/27 PASS
+SELECTED PYTEST VALIDATION = 19/19 PASS
+INDEPENDENCE VALIDATION = PASS
+FREEZE MANIFEST = CREATED
+FREEZE INTEGRITY = VERIFIED
+```
+
+This is a scoped internal engineering-validation baseline, not an external certification or production-readiness claim.
 
 Reference:
 
@@ -105,9 +131,11 @@ Reference:
 
 ## Local Director Control Panel
 
-The Director mainline includes a dedicated **local Director Control Panel** for the project owner/operator.
+The Director mainline includes a validated **local Director Control Panel** for the project owner/operator.
 
-Its purpose is to consolidate routine operational functions that would otherwise require multiple terminal windows, for example runtime/service/orchestrator state, local ROOT/command functions, checkpoint/diagnostic state, model/provider state, V10/Micronetwork state and hardware/resource monitoring.
+Its purpose is to consolidate routine operational functions that would otherwise require multiple terminal windows, including runtime state, authorized ROOT access, checkpoint/persistence visibility, model/provider status, V10/Micronetwork status, Pocket status, diagnostics and hardware/resource monitoring.
+
+It does **not** create a second runtime, second CONTINUUM or alternative execution authority.
 
 It must not be confused with the shared reviewer interface.
 
@@ -115,16 +143,18 @@ It must not be confused with the shared reviewer interface.
 DIRECTOR CONTROL PANEL
 = LOCAL
 = OWNER / OPERATOR
-= EXECUTION + ADMINISTRATION
+= AUTHORIZED EXECUTION + ADMINISTRATION
+= EXISTING CONTROL PATHS ONLY
 
 SHARED REVIEWER INTERFACE
+= OBSERVER_ONLY
 = READ-ONLY
 = SANITIZED OBSERVABILITY
 = NO ROOT
 = NO REMOTE EXECUTION
 ```
 
-The Director is intended to appear as an additional independently identified entity in the shared reviewer/developer interface. Final control-panel and shared-interface integration PASS is not yet claimed.
+The separation between owner control and reviewer observability is a deliberate security boundary and is validated in the C0 scope.
 
 ## Pre-experiment training
 
@@ -235,6 +265,9 @@ TEST 5 TOTAL REGRESSION = 524/524 PASS
 OPEN BLOCKERS IN TEST 5 SCOPE = 0
 7-BODY PRE-REPAIR AUDIT = 43/43 PROCEDURE COMPLETE
 7-BODY FINAL READINESS = NOT YET CLOSED
+DIRECTOR_FROZEN_C0 = CLOSED ENGINEERING BASELINE / INTEGRITY VERIFIED
+DIRECTOR FINAL PANEL/SYSTEM CHECKS = 27/27 PASS
+DIRECTOR SELECTED PYTEST = 19/19 PASS
 ```
 
 ## Current unknowns / not yet claimed
@@ -247,9 +280,8 @@ FOUNDATION_S1 contents
 TRAINED_START_S2 contents
 7 mechanism-test outcomes
 21 cross-domain outcomes
-Director full integration PASS
-Director control-panel final validation
 Director -> ROBERT integration
+Director control of experimental ISKRA lines
 post-21 consolidation outcome
 three-new-domain result
 long-run ISKRA divergence
@@ -257,6 +289,12 @@ physical drone/humanoid validation
 external replication
 AGI / consciousness / production readiness
 ```
+
+## Public/private boundary
+
+Public review materials may expose sanitized architecture descriptions, declared protocols, scoped results, hashes/manifests where safe, failures/repairs/retests and reviewer-facing status summaries.
+
+They do **not** expose proprietary source code, private execution logic, credentials, API keys, tokens, private configuration, internal prompts or data that would materially reconstruct the private implementation.
 
 ## Recommended reading order
 
@@ -271,4 +309,4 @@ AGI / consciousness / production readiness
 9. [`REVIEWER_LIVE_INTERFACE_20260907.md`](REVIEWER_LIVE_INTERFACE_20260907.md)
 10. [`evidence/README.md`](evidence/README.md)
 
-The repository should be read with a strict separation between **historical evidence, current implementation work, predeclared future work and executed outcomes**.
+The repository should be read with a strict separation between **historical evidence, closed engineering baselines, current implementation work, predeclared future work and executed outcomes**.
