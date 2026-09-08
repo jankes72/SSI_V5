@@ -1,17 +1,17 @@
 # ROBERT V10 Hybrid Router — Test 3 / Adaptive Routing Validation
 
-**Data walidacji:** 2026-09-01  
-**Zakres:** ROBERT / micronetwork full stack / V10 adaptive routing  
+**Validation date:** 2026-09-01  
+**Scope:** ROBERT / Micronetwork full stack / V10 adaptive routing  
 **Status:** `DEVELOPMENT_VALIDATED — scoped adaptive routing test`  
-**Tryb porównania:** 600 przypadków / 40 rund / 15 przypadków na rundę
+**Comparison geometry:** 600 cases / 40 rounds / 15 cases per round
 
-## Dlaczego istnieją trzy testy
+## Why there are three tests
 
-Te trzy przebiegi nie są trzema próbami wykonania tego samego celu wydajnościowego. Każdy etap miał inny cel eksperymentalny i dopiero razem tworzą ciąg dowodowy.
+These three runs are not repeated attempts at the same performance target. Each stage had a different experimental purpose, and together they form the evidence sequence.
 
-### Test 1 — uboższy / wcześniejszy przepływ
+### Test 1 — earlier / lighter flow
 
-Publiczny baseline 600X:
+Public 600X baseline:
 
 ```text
 cases_total:       600
@@ -21,11 +21,11 @@ duration_seconds: 67.85
 PASS:             true
 ```
 
-Ten etap pokazywał stabilność wcześniejszego, lżejszego przebiegu lifecycle.
+This stage demonstrated stability of the earlier, lighter lifecycle path.
 
-### Test 2 — pełny przepływ rozszerzonej mikrosieci
+### Test 2 — full expanded Micronetwork flow
 
-Test 2 celowo uruchamiał szerszy przepływ: większy stan Experience oraz pełniejszy lifecycle candidate -> challenger -> persistence -> replay/retry/restart/concurrency.
+Test 2 deliberately executed a broader path: a larger Experience state and a fuller Candidate -> Challenger -> persistence -> replay/retry/restart/concurrency lifecycle.
 
 ```text
 cases_total:       600
@@ -37,13 +37,13 @@ end experiences:   5195
 PASS:             true
 ```
 
-W tej sekwencji badawczej Test 2 należy interpretować jako **dowód istnienia i spójności pełnego przepływu**, a nie jako docelowy benchmark szybkości. Dłuższy czas względem wcześniejszej, uboższej wersji jest zgodny z wykonaniem szerszego zakresu pracy. Sam czas nie jest jedynym dowodem użycia warstw — właściwym evidence są również zachowane state counters, replay, restart, persistence, concurrency i lifecycle checks.
+Within this research sequence, Test 2 should be interpreted as **evidence that the full path exists and remains consistent**, not as a target speed benchmark. Its longer duration compared with the earlier lighter path is consistent with doing more work. Timing alone is not the evidence for layer use; state counters, replay, restart, persistence, concurrency and lifecycle checks are also part of the evidence.
 
-Test 2 był potrzebny przed routingiem: najpierw należało wykazać, że pełna ścieżka naprawdę działa, zanim system zacznie ją inteligentnie omijać dla przypadków, które nie wymagają całego flow.
+Test 2 was necessary before routing: the full path first had to be shown to work before the system could be evaluated for selectively avoiding it when unnecessary.
 
-### Test 3 — kompletny układ mikrosieci z V10 Hybrid Router
+### Test 3 — full Micronetwork system with V10 Hybrid Router
 
-Test 3 zachowuje tę samą główną geometrię stress-testu:
+Test 3 preserves the same main stress-test geometry:
 
 ```text
 cases_total:       600
@@ -63,7 +63,7 @@ CREATE_SKILL_PATH:     0
 fallback_count:        0
 ```
 
-Kontrola znanych przypadków:
+Known-case correctness check:
 
 ```text
 correctness_matched:     100
@@ -71,14 +71,14 @@ correctness_total_known: 100
 correctness_rate:        1.0
 ```
 
-Latency foreground:
+Foreground latency:
 
 ```text
 p50: 20.612 ms
 p95: 23.902 ms
 ```
 
-V10:
+V10 counters:
 
 ```text
 lookups:             600
@@ -88,36 +88,36 @@ route_compilations:  133
 errors:                0
 ```
 
-## Porównanie czasu
+## Timing comparison
 
-| Etap | 600 przypadków | Czas | Interpretacja |
+| Stage | 600 cases | Time | Interpretation |
 |---|---:|---:|---|
-| Test 1 | PASS | 67.85 s | wcześniejszy, lżejszy przepływ |
-| Test 2 | PASS | 126.65 s | pełny przepływ rozszerzonej mikrosieci |
-| Test 3 | PASS | 57.61 s | pełny układ z V10 i selektywnym routingiem |
+| Test 1 | PASS | 67.85 s | earlier, lighter flow |
+| Test 2 | PASS | 126.65 s | full expanded Micronetwork flow |
+| Test 3 | PASS | 57.61 s | full system with V10 selective routing |
 
-Test 3 był:
+Test 3 was:
 
-- około **2.20x szybszy od Testu 2**;
-- około **54.5% krótszy czasowo od Testu 2**;
-- około **15.1% szybszy od Testu 1**, mimo że powstał po rozszerzeniu systemu o routing i pełniejszą strukturę.
+- approximately **2.20x faster than Test 2**;
+- approximately **54.5% shorter in duration than Test 2**;
+- approximately **15.1% faster than Test 1**, despite being recorded after the system had been expanded with routing and a fuller structure.
 
-## Co ten wynik pokazuje
+## What the result supports
 
-W badanym zakresie wynik wspiera następujący model:
+Within the tested scope, the result supports the following model:
 
 ```text
 INPUT
 -> V10 ROUTER
 -> EXACT CACHE / SIMILARITY ROUTE
--> REUSE_TOP1 albo VERIFY_TOPK
+-> REUSE_TOP1 or VERIFY_TOPK
 -> CANONICAL MICRONETWORK RESULT
 -> FEEDBACK / ROUTE COMPILATION
 ```
 
-Pełna ścieżka nadal istnieje jako część architektury, lecz dla przypadków rozpoznanych przez router nie musi być uruchamiana bez potrzeby.
+The full path remains part of the architecture, but recognized cases need not execute the entire path unnecessarily.
 
-Najważniejszym wynikiem nie jest sam rekord czasu, lecz jednoczesne wystąpienie:
+The important result is not timing alone, but the combined observation:
 
 ```text
 SAME TEST GEOMETRY
@@ -128,46 +128,46 @@ SAME TEST GEOMETRY
 + LOWER TOTAL DURATION
 ```
 
-## Dlaczego Test 2 był konieczny
+## Why Test 2 was necessary
 
-Bez Testu 2 szybszy Test 3 byłby trudny do interpretacji. Nie byłoby wiadomo, czy system rzeczywiście posiada pełny rozszerzony przepływ, czy po prostu nigdy go nie wykonuje.
+Without Test 2, the faster Test 3 would be difficult to interpret. It would not be clear whether the system actually possessed the full expanded path or simply never executed it.
 
-Sekwencja eksperymentalna jest więc celowa:
+The sequence is therefore intentional:
 
 ```text
 TEST 1
-wcześniejszy / lżejszy przebieg
+older / lighter flow
 
 -> TEST 2
-pełny przepływ rozszerzonej mikrosieci
+full expanded Micronetwork flow
 
 -> TEST 3
-pełny układ + dynamiczny routing
+full system + dynamic routing
 ```
 
-Test 2 pokazuje, że pełna ścieżka istnieje i zachowuje spójność. Test 3 pokazuje, że po dodaniu routera system może korzystać z krótszej ścieżki dla rozpoznanych przypadków bez utraty poprawności w badanym zakresie.
+Test 2 shows that the full path exists and remains consistent. Test 3 shows that after adding V10, the system can use shorter paths for recognized cases while preserving measured correctness in the tested scope.
 
-## Ważne ograniczenia
+## Important limitations
 
-Ten wynik nie dowodzi, że V10 będzie szybszy dla każdego możliwego workloadu ani że cały SSI jest production-ready.
+This result does not prove that V10 will be faster for every workload or that SSI is production-ready.
 
-W szczególności:
+In particular:
 
-- pomiar dotyczy konkretnego zestawu 600 przypadków i aktualnego stanu danych;
-- `100/100 correctness` dotyczy kontrolowanej części znanych przypadków w tym teście;
-- brak `FULL_FLOW` w tym przebiegu nie dowodzi, że pełna eskalacja nigdy nie będzie potrzebna;
-- `background_stats.completed = 599` przy `submitted = 600` oznacza, że snapshot końcowy został zapisany przy jednym zadaniu tła nieoznaczonym jeszcze jako completed; nie jest to ukrywane;
-- przyszłe testy powinny celowo zawierać nowe, konfliktowe i adversarial cases wymagające eskalacji.
+- the measurement concerns this specific 600-case set and current data state;
+- `100/100 correctness` applies to the controlled known-case subset measured in this test;
+- the absence of `FULL_FLOW` in this run does not prove that escalation is never required;
+- `background_stats.completed = 599` with `submitted = 600` means the final snapshot was written while one background task had not yet been marked complete; this is not hidden;
+- future tests should deliberately include novel, conflicting and adversarial cases requiring escalation.
 
-Status powinien być interpretowany jako:
+The appropriate interpretation is:
 
 **`DEVELOPMENT_VALIDATED — adaptive routing produced a faster scoped 600-case run while preserving measured known-case correctness.`**
 
-## Publiczne evidence
+## Public evidence references
 
-- wcześniejszy 600X: `evidence/robert_600x/HARDCORE_600X_SUMMARY.json`
-- pełny Test 2: `evidence/ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md`
+- earlier 600X: `evidence/robert_600x/HARDCORE_600X_SUMMARY.json`
+- full Test 2: `evidence/ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_2026-08-31.md`
 - Test 3 raw summary: `evidence/router_v10_test3/H_TEST3_RESULTS.json`
 - Test 3 baseline snapshot: `evidence/router_v10_test3/A_BASELINE.json`
 
-Stary beta-run V10, który wykazał błędy routingu, pozostaje częścią lokalnej historii rozwojowej, ale nie jest przedstawiany jako finalny wynik Testu 3. Jego istnienie jest istotne metodologicznie: obecny PASS nastąpił po wykryciu i naprawie realnej regresji routera, a nie jako wynik pierwszej próby.
+An older V10 beta run that exposed routing errors remains part of the local engineering history. It is not presented as the final Test 3 result. Its existence is methodologically important: the current PASS followed detection and repair of a real routing regression rather than being the result of the first attempt.
