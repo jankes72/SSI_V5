@@ -1,6 +1,6 @@
 # SSI V5 — CURRENT TRUTH INDEX
 
-**Status:** `PUBLIC RESEARCH INDEX / 2026-09-08`  
+**Status:** `PUBLIC RESEARCH INDEX / 2026-09-09`  
 **Frozen common baseline:** `T0 / BODY_FROZEN / PRE-ISKRA / RECORDED / 2026-09-05`  
 **Current ISKRA start state:** `6X BODY ISKRA / START_STATE_VALIDATED / 2026-09-06`  
 **Latest closed validation:** `TEST 5 / DEVELOPMENT_VALIDATED`  
@@ -8,10 +8,12 @@
 **Pre-experiment training:** `14 HASH-SEALED PACKAGES / PREDECLARED / NOT YET EXECUTED`  
 **Mechanism-test packages:** `7 INDEPENDENT MICRONETWORK + V10 PACKAGES / HASH-SEALED / NOT YET EXECUTED`  
 **Cross-domain program:** `7 x 3 = 21 EXPERIMENTS / PREDECLARED / FINAL OUTCOMES UNKNOWN`  
-**Director mainline:** `CANONICAL ENGINEERING LINE / IMPLEMENTATION IN PROGRESS / FINAL VALIDATION PENDING`  
+**Director mainline:** `DIRECTOR_FROZEN_C0 / ENGINEERING BASELINE CLOSED / INTEGRITY VERIFIED`  
 **Canonical ROBERT:** `CONTINUOUS ENGINEERING LINE / NOT RESET BY EXPERIMENT CLEANING`
 
 This index separates historical controls, current start states, pre-repair readiness evidence, future training descendants, frozen experiment precommitments, the later 21-run program and the parallel Director engineering mainline.
+
+> Public documentation is evidence-oriented. Proprietary implementation source, private execution logic, secrets and internal operational details remain private.
 
 ## 0. Historical and current start state
 
@@ -217,20 +219,12 @@ References:
 - [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
 - [`EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md`](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
 
-## 6. Director canonical mainline
+## 6. Director canonical mainline — DIRECTOR_FROZEN_C0
 
-On 2026-09-08 SSI V5 opened a separate canonical Director engineering/operational line.
-
-The declared engineering direction is:
+The separate canonical Director engineering/operational line has now reached a closed baseline:
 
 ```text
-VALIDATED BODY FOUNDATION
-+ EXISTING WORKING DIRECTOR FUNCTIONS
--> NEW CANONICAL DIRECTOR
--> LOCAL DIRECTOR CONTROL PANEL
--> SHARED READ-ONLY REVIEWER OBSERVABILITY
--> INTEGRATION / RESTART / PERSISTENCE VALIDATION
--> LATER DIRECTOR -> ROBERT INTEGRATION
+DIRECTOR_FROZEN_C0
 ```
 
 Important boundary:
@@ -239,28 +233,55 @@ Important boundary:
 BODY_FROZEN T0
 = immutable experimental baseline
 
-DIRECTOR
-= separate engineering descendant/integration line
+DIRECTOR_FROZEN_C0
+= separate engineering descendant/integration baseline
 ```
 
 The Director line does not retroactively change BODY_FROZEN or ISKRA experiment evidence.
 
-Current Director truth:
+Current Director truth in the C0 tested scope:
 
 ```text
 DIRECTOR MAINLINE DECLARED = YES
-IMPLEMENTATION = IN PROGRESS
-FINAL DIRECTOR PASS = NOT CLAIMED
-CONTROL PANEL FINAL VALIDATION = NOT CLOSED
-SHARED-INTERFACE FINAL VALIDATION = NOT CLOSED
+LOCAL DIRECTOR RUNTIME = VALIDATED / RUNNING
+SINGLE RUNTIME PROTECTION = PASS
+IPC = ACTIVE / VALIDATED
+START / STOP / RESTART / STATUS = PASS
+CHECKPOINT / RESTART / PERSISTENCE = PASS
+CONTINUUM LOCAL INTEGRATION = ACTIVE / VALIDATED
+LAB INTEGRATION = ACTIVE / VALIDATED
+MICRONETWORK INTEGRATION = VALIDATED
+ROUTER V10 INTEGRATION = VALIDATED
+COLLECTIVE INTELLIGENCE STATUS = VALIDATED
+PERSISTENT CONVERSATION MEMORY = VALIDATED ACROSS RESTART
+CONTROL PANEL FINAL VALIDATION = PASS
+SHARED-INTERFACE FINAL VALIDATION = PASS / OBSERVER_ONLY
+ROOT COMMANDS IN SHARED WWW = NOT EXPOSED
+HARDWARE STATUS INCLUDING NVIDIA GPU/VRAM = VALIDATED
+MODEL/BACKEND STATUS = VALIDATED IN C0 SCOPE
+CENTRAL DIRECTOR NODE = INTENTIONALLY OFFLINE / LOCAL-ONLY MODE
 DIRECTOR CONTROL OF EXPERIMENTAL ISKRA = NOT ACTIVE / NOT CLAIMED
 ```
+
+Final C0 verification:
+
+```text
+FINAL PANEL / SYSTEM CHECKS = 27/27 PASS
+SELECTED PYTEST VALIDATION = 19/19 PASS
+INDEPENDENCE VALIDATION = PASS
+FREEZE MANIFEST = CREATED
+FREEZE INTEGRITY = VERIFIED
+```
+
+This is scoped internal engineering validation, not an external certification or production-readiness claim.
 
 Reference: [`DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md`](DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md).
 
 ## 7. Director Control Panel vs reviewer interface
 
-The Director Control Panel is a local owner/operator execution and administration surface intended to reduce the need for manually opening multiple terminal windows.
+The Director Control Panel is a validated local owner/operator execution and administration surface.
+
+It consolidates approved control and status paths without creating a second runtime or alternate authority.
 
 The reviewer interface remains separate and read-only.
 
@@ -268,14 +289,18 @@ The reviewer interface remains separate and read-only.
 DIRECTOR CONTROL PANEL
 = LOCAL
 = OWNER / OPERATOR
-= EXECUTION + ADMINISTRATION
+= AUTHORIZED EXECUTION + ADMINISTRATION
+= EXISTING CONTROL PATHS ONLY
 
 REVIEWER INTERFACE
+= OBSERVER_ONLY
 = READ-ONLY
 = SANITIZED OBSERVABILITY
 = NO ROOT
 = NO REMOTE EXECUTION
 ```
+
+The separation is a deliberate security boundary preserved by the C0 baseline.
 
 ## 8. Performance / route-cost truth
 
@@ -338,8 +363,8 @@ SSI V5 does not currently claim that:
 - all seven `TRAINED_START_S2` states exist;
 - the seven mechanism-test packages have passed;
 - the final controlled 21-run program has passed;
-- Director full integration has passed;
-- the Director local control panel has passed final validation;
+- `DIRECTOR_FROZEN_C0` is an external certification or proof of production readiness;
+- the central Director node is currently connected — C0 intentionally operates LOCAL-ONLY;
 - the Director currently controls the experimental ISKRA lines;
 - the new Director -> ROBERT integration is complete;
 - V10 is universally faster or more accurate than external systems;
@@ -350,7 +375,23 @@ SSI V5 does not currently claim that:
 - the live reviewer layer equals independent replication;
 - AGI, consciousness, universal transfer or production readiness has been established.
 
-## 11. Current correct sequence
+## 11. Public/private disclosure boundary
+
+Public materials may include:
+
+```text
+SANITIZED ARCHITECTURE DESCRIPTIONS
+DECLARED TEST PROTOCOLS
+SCOPED MEASUREMENTS / RESULTS
+HASHES / MANIFESTS WHERE SAFE
+FAILURE / REPAIR / RETEST HISTORY
+REVIEWER-FACING STATUS SUMMARIES
+CLAIM BOUNDARIES
+```
+
+Public materials do not publish proprietary implementation source, internal execution logic, credentials, API keys, tokens, private runtime configuration, internal prompts or data that would materially reconstruct the private system.
+
+## 12. Current correct sequence
 
 Controlled research track:
 
@@ -372,7 +413,8 @@ Parallel engineering track:
 
 ```text
 BODY FOUNDATION + HISTORICAL DIRECTOR FUNCTIONS
--> BUILD / VALIDATE CANONICAL DIRECTOR
+-> CANONICAL DIRECTOR
+-> DIRECTOR_FROZEN_C0
 -> LATER DIRECTOR -> ROBERT INTEGRATION
 -> LATER WORLD INFRASTRUCTURE
 -> LATER AGENT/WORLD INTEGRATION
