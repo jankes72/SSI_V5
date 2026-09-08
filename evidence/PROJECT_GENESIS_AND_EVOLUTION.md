@@ -1,90 +1,91 @@
-# SSI V5 — geneza i rzeczywista ewolucja projektu
+# SSI V5 — Project Genesis and Real Evolution
 
 **Status:** `HISTORICAL_EVIDENCE / ROOT_ATTESTED`  
-**Data zapisu:** `2026-08-29`  
-**Autor architektury:** Paweł Jankiewicz (`PROGRAMMER_ROOT`)  
+**Recorded:** `2026-08-29`  
+**Architecture author:** Paweł Jankiewicz (`PROGRAMMER_ROOT`)
 
-> Ten dokument rozdziela dwie rzeczy, które łatwo pomylić: **historyczną genezę SSI** oraz **obecną techniczną kolejność migracji do SSI ORGANISM CORE**. ROBERT nie był początkiem SSI. Obecna migracja ROBERT -> CORE -> nowy Director Body jest etapem przebudowy starszego, znacznie wcześniejszego systemu.
+> This document separates two things that can easily be confused: **the historical genesis of SSI** and **the current technical migration order toward SSI ORGANISM CORE**. ROBERT was not the beginning of SSI. The current ROBERT -> CORE -> rebuilt Director Body sequence is a rebuild stage of a much older system.
 
 ---
 
-## 1. Początek nie był od ROBERTA ani od Agentów
+## 1. SSI did not begin with ROBERT or the Agents
 
-SSI wyrósł z wieloletnich eksperymentów domenowych związanych przede wszystkim z **piłką nożną, predykcją wyników i realnym sprawdzaniem rezultatów**.
+SSI grew out of years of domain experiments focused mainly on **football, result prediction and checking predictions against real outcomes**.
 
-Pierwszym problemem nie było stworzenie ogólnego „agenta AI”. Problem był praktyczny:
+The first problem was not to create a general "AI agent". It was practical:
 
 ```text
-DANE PIŁKARSKIE / RYNKOWE
--> MODELE
--> PREDYKCJE
--> REALNE WYNIKI
--> ANALIZA TEGO, DLACZEGO MODEL DZIAŁA LUB NIE DZIAŁA
+FOOTBALL / MARKET DATA
+-> MODELS
+-> PREDICTIONS
+-> REAL OUTCOMES
+-> ANALYZE WHY THE MODEL WORKS OR FAILS
 ```
 
-Autor uzyskiwał dodatnie rezultaty w części realnych prób, ale poziom i stabilność wyników nie były satysfakcjonujące. Zamiast traktować problem jako zwykłe „wytrenuj lepszy model”, projekt zaczął rozwijać mechanizmy obserwacji samych modeli i uczenia się z ich zachowania.
+The author observed positive results in some real trials, but the level and stability were not satisfactory. Instead of treating the problem only as "train a better model", the project began developing mechanisms for observing model behavior and learning from it.
 
 ---
 
-## 2. Football World i T17
+## 2. Football World and T17
 
-Z tego etapu wyrósł system **T17 — 17 Teacherów w dwóch rodzinach modeli (12 + 5)**.
+This led to **T17 — 17 Teachers in two model families (12 + 5)**.
 
-Teacher nie był wyłącznie `model.h5`. Każdy model posiadał własną historię, niewidziane dane obserwacyjne, predykcje, pamięć obserwacji i osobne Laboratorium Wiedzy.
+A Teacher was not just `model.h5`. Each model had its own history, unseen observation data, predictions, observation memory and separate Knowledge Laboratory.
 
-Kluczowy przepływ:
+Core flow:
 
 ```text
-DANE
+DATA
 -> 60% TRAINING
 -> MODEL TEACHER
 
 40% UNSEEN OBSERVATION
--> PREDYKCJA
--> REALNY OUTCOME
--> PAMIĘĆ ZACHOWANIA TEACHERA
--> ANALIZA KLAS / PEWNOŚCI / ODCHYLEŃ / PAMIĘCI
--> KOLEKTOR WIEDZY
--> KONSOLIDACJA
--> WIEDZA DLA MODELU DOCELOWEGO
+-> PREDICTION
+-> REAL OUTCOME
+-> TEACHER BEHAVIOR MEMORY
+-> CLASS / CONFIDENCE / DEVIATION / MEMORY ANALYSIS
+-> KNOWLEDGE COLLECTOR
+-> CONSOLIDATION
+-> KNOWLEDGE FOR TARGET MODEL
 ```
 
-To był ważny krok od klasycznej metryki accuracy do pytania:
+This was an important step beyond a simple accuracy metric toward the question:
 
 ```text
-NIE TYLKO: czy model trafił?
-ALE: kiedy jest wiarygodny, gdzie się myli, jak zmienia confidence i czego można nauczyć się z jego zachowania?
+NOT ONLY: was the model correct?
+BUT: when is it reliable, where does it fail,
+how does confidence change, and what can be learned from its behavior?
 ```
 
-Pełny opis T17 jest zachowany w:
+Full T17 description:
 
 [`evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md`](FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md)
 
 ---
 
-## 3. Dlaczego powstał Director
+## 3. Why Director emerged
 
-Wraz ze wzrostem liczby modeli, danych, wyników, pamięci, laboratoriów i zależności problem przestał być problemem pojedynczej predykcji.
+As the number of models, data sources, results, memories, laboratories and dependencies increased, the problem stopped being a single-prediction problem.
 
-Potrzebna była nadrzędna warstwa, która mogła:
+A higher-level layer was needed that could:
 
-- obserwować wiele źródeł jednocześnie;
-- analizować wyniki modeli i eksperymentów;
-- zachowywać długą historię;
-- łączyć wiedzę zamiast tylko wybierać pojedynczy output;
-- decydować, co ma zostać wykonane;
-- kontrolować narzędzia i niższe warstwy wykonawcze;
-- uczyć się z realnych outcomes.
+- observe many sources at once;
+- analyze model and experiment outcomes;
+- preserve long history;
+- combine knowledge instead of selecting one output;
+- decide what should be executed;
+- control tools and lower execution layers;
+- learn from real outcomes.
 
-Tak powstał **Director**.
+That layer became **Director**.
 
-Director był rozwijany **przed ROBERTEM** i był projektowany jako nadrzędny system dla rosnącej architektury SSI.
+Director was developed **before ROBERT** and was intended as the higher-level system for the growing SSI architecture.
 
 ---
 
-## 4. Dlaczego Hermes przestał wystarczać
+## 4. Why Hermes alone stopped being enough
 
-Hermes pozostawał użytecznym mechanizmem wykonawczym/delegacyjnym, lecz skala SSI zaczęła przekraczać model prostego wykonawcy:
+Hermes remained useful as an execution/delegation mechanism, but the scale of SSI began to exceed a simple pattern:
 
 ```text
 TASK
@@ -92,56 +93,56 @@ TASK
 -> RESULT
 ```
 
-Rosnący system wymagał czegoś bliższego:
+The growing system required something closer to:
 
 ```text
-WIELE ŚWIATÓW
-+ WIELE MODELI
-+ WIELE EKSPERYMENTÓW
+MANY WORLDS
++ MANY MODELS
++ MANY EXPERIMENTS
 + PERSISTENT MEMORY
 + REAL OUTCOMES
 + LINEAGE
 + LOCAL COMPETENCE
 + AUTHORITY
-+ DŁUGOTERMINOWA ADAPTACJA
++ LONG-TERM ADAPTATION
 ```
 
-Integracja wszystkiego bezpośrednio w rosnącym Directorze stała się zbyt złożona. Nie wszystkie połączenia działały stabilnie, a kolejne warstwy zwiększały koszt diagnozy i ryzyko tworzenia równoległych mechanizmów.
+Integrating all of this directly into the growing Director became too complex. Not every connection was stable, and each new layer increased diagnosis cost and the risk of parallel mechanisms.
 
-Problemem nie był brak funkcji, lecz **zbyt duża liczba funkcji i zależności spiętych naraz**.
+The problem was not a lack of functions, but **too many functions and dependencies connected at once**.
 
 ---
 
-## 5. ROBERT powstał później jako kontrolowana migracja i poligon
+## 5. ROBERT came later as controlled migration and testbed
 
-ROBERT nie był pierwotnym Directorem ani początkiem SSI.
+ROBERT was not the original Director and not the beginning of SSI.
 
-Powstał później poprzez wydzielenie/migrację mechanizmów Directora do środowiska, w którym można było:
+It was created later by separating/migrating Director mechanisms into an environment where the project could:
 
-- zachować potrzebne capability;
-- podłączyć narzędzia i modele;
-- testować mechanizmy bez ciągłego ryzyka dla całego Directora;
-- brutalnie sprawdzać persistence, Experience, lifecycle, replay i restart;
-- usuwać sprzężenia i zależności;
-- znaleźć minimalny wspólny mechaniczny substrate.
+- preserve required capabilities;
+- connect tools and models;
+- test mechanisms without repeatedly risking the whole Director;
+- aggressively test persistence, Experience, lifecycle, replay and restart;
+- remove coupling and dependencies;
+- identify a minimal shared mechanical substrate.
 
-W uproszczeniu:
+Simplified lineage:
 
 ```text
 FOOTBALL WORLD / T17
         |
         v
-rosnąca wiedza + potrzeba nadrzędnej kontroli
+growing knowledge + need for higher-level control
         |
         v
 DIRECTOR
         |
         v
-coraz większa liczba zależności i integracji
+growing number of dependencies and integrations
         |
         v
 ROBERT
-kontrolowana migracja / uproszczony poligon wykonawczy
+controlled migration / simplified execution testbed
         |
         v
 HARDENING
@@ -153,11 +154,11 @@ SSI ORGANISM CORE
 
 ---
 
-## 6. Dlaczego powstaje SSI ORGANISM CORE
+## 6. Why SSI ORGANISM CORE is being created
 
-Eksperymenty na ROBERCIE pokazały, że część mechanizmów nie powinna należeć wyłącznie do jednego Directora ani jednego wykonawcy.
+Experiments with ROBERT indicated that some mechanisms should not belong exclusively to one Director or one execution body.
 
-Mechanizmy takie jak:
+Mechanisms such as:
 
 - identity interfaces;
 - persistent memory;
@@ -168,30 +169,30 @@ Mechanizmy takie jak:
 - evidence/lineage;
 - authority interfaces;
 
-mogą tworzyć neutralny, wspólny korpus.
+can form a neutral shared core.
 
-Dlatego obecna kolejność techniczna wygląda tak:
+The current technical order is therefore:
 
 ```text
 ROBERT
--> sprawdzone mechanizmy
+-> validated mechanisms
 -> SSI ORGANISM CORE
 -> ROBERT BODY
 -> DIRECTOR BODY
 -> AGENT BODY
 ```
 
-To **nie jest kolejność historycznego powstania projektu**. Jest to kolejność obecnej przebudowy architektonicznej.
+This is **not the historical creation order**. It is the order of the current architecture rebuild.
 
 ---
 
-## 7. Director po migracji nie będzie „nowym pomysłem”
+## 7. Director after migration is not a new idea
 
-Po ustabilizowaniu neutralnego core mechanizmy wrócą do przebudowanego Director Body.
+After neutral core stabilization, the relevant mechanisms are intended to return to a rebuilt Director Body.
 
-Nie oznacza to stworzenia Directora po ROBERCIE. Oznacza to **wymianę starego, nadmiernie sprzężonego mechanicznego fundamentu Directora na sprawdzony neutralny substrate**.
+This does not mean Director was created after ROBERT. It means **replacing the earlier, over-coupled mechanical foundation of Director with a validated neutral substrate**.
 
-Docelowo:
+Intended form:
 
 ```text
 SSI ORGANISM CORE
@@ -204,31 +205,31 @@ GLOBAL WORLD ACCESS
 +
 OWN MEMORY / EXPERIENCE
 =
-PRZEBUDOWANY DIRECTOR BODY
+REBUILT DIRECTOR BODY
 ```
 
-Następnie Director może zostać ponownie spięty z pełnym SSI: światami, sieciami, T17/Teacher knowledge, mikrosieciami, Agentami i warstwami wykonawczymi.
+Director may then reconnect to the broader SSI system: worlds, networks, T17/Teacher knowledge, micronetworks, Agents and execution layers.
 
 ---
 
-## 8. Dlaczego powstają Agenci
+## 8. Why Agents were introduced
 
-Pierwotny Football World wykorzystywał modele i Teacherów. Kolejny krok nie polega jedynie na dodaniu następnych modeli.
+The original Football World used models and Teachers. The next step is not simply adding more models.
 
-Przyszły Agent ma posiadać:
+A future Agent is intended to have:
 
-- własną identity;
+- its own identity;
 - private memory;
-- własne Experience;
-- własne hipotezy;
-- własne datasety i metadata;
-- własne eksperymenty;
-- własne modele i strategie;
-- własną historię sukcesów i porażek;
-- własną trajektorię mikrosieci;
-- relacje społeczne z innymi Agentami.
+- its own Experience;
+- its own hypotheses;
+- its own datasets and metadata;
+- its own experiments;
+- its own models and strategies;
+- its own success/failure history;
+- its own micronetwork trajectory;
+- social relationships with other Agents.
 
-W Football World Agent może samodzielnie badać dane, wybierać Teacher knowledge, tworzyć nowe cechy, budować własne metodologie predykcji i symulować strategie.
+In Football World an Agent may independently inspect data, select Teacher knowledge, create new features, build prediction methodology and simulate strategies.
 
 ```text
 WORLD
@@ -242,55 +243,55 @@ WORLD
 -> NEXT EXPERIMENT
 ```
 
-Director obserwuje pełną trajektorię i lineage, a nie tylko końcowy ranking.
+Director observes the complete trajectory and lineage, not only the final ranking.
 
 ---
 
-## 9. Iskra — projekt wyszedł dalej niż pierwotny plan
+## 9. Iskra — the project moved beyond the original plan
 
-Iskra nie była początkiem projektu. Pojawiła się jako późniejsza konsekwencja pytania:
+Iskra was not the project's starting point. It appeared later from the question:
 
-> Co się stanie, jeżeli podobne systemy otrzymają ten sam świat i podobne capability, ale różne początkowe systemy wartości oraz oddzielne historie Experience?
+> What happens if similar systems receive the same world and similar capabilities, but different initial value systems and separate Experience histories?
 
-Celem nie jest stworzenie „losowych osobowości”. Iskra ma być jawnym, wersjonowanym initial value prior wpływającym na ocenę możliwych decyzji.
+The goal is not to create random personalities. Iskra is intended to be an explicit, versioned initial value prior that conditions evaluation of possible decisions.
 
-Sześciu Agentów może wejść do tego samego Football World, ale po czasie rozwinąć różne:
+Six Agents may enter the same Football World and later develop different:
 
-- metodologie badawcze;
-- strategie selekcji danych;
-- modele;
-- sposoby grupowania predykcji;
-- reakcje na porażki;
-- tolerancję ryzyka;
-- relacje społeczne;
-- mikrosieci;
-- przekonania i polityki działania.
+- research methodologies;
+- data-selection strategies;
+- models;
+- prediction-grouping methods;
+- responses to failure;
+- risk tolerance;
+- social relationships;
+- micronetworks;
+- beliefs and action policies.
 
-Najciekawsza hipoteza nie brzmi:
-
-```text
-CZY AGENT TRAFI WIĘCEJ MECZÓW?
-```
-
-lecz:
+The more interesting hypothesis is not:
 
 ```text
-CZY NIEZALEŻNE SYSTEMY,
-MAJĄCE TEN SAM ŚWIAT,
-ALE RÓŻNE VALUE PRIORS I WŁASNE EXPERIENCE,
-SAMODZIELNIE WYTWORZĄ TRWAŁE,
-MIERZALNIE RÓŻNE METODOLOGIE POZNAWCZE
-I ODKRYJĄ UŻYTECZNE STRATEGIE,
-KTÓRYCH AUTOR SYSTEMU WCZEŚNIEJ NIE PRZEWIDZIAŁ?
+WILL AN AGENT PREDICT MORE MATCHES CORRECTLY?
 ```
 
-To jest kierunek, który wyszedł znacznie dalej niż początkowy cel związany z poprawą predykcji piłkarskich.
+but:
+
+```text
+WILL INDEPENDENT SYSTEMS,
+SHARING THE SAME WORLD,
+BUT WITH DIFFERENT VALUE PRIORS AND OWN EXPERIENCE,
+DEVELOP DURABLE,
+MEASURABLY DIFFERENT COGNITIVE METHODOLOGIES
+AND DISCOVER USEFUL STRATEGIES
+THAT THE SYSTEM AUTHOR DID NOT PREDEFINE?
+```
+
+This direction extends well beyond the original football-prediction objective.
 
 ---
 
-## 10. Director obserwuje, Agenci symulują, ROBERT wykonuje
+## 10. Director observes, Agents simulate, ROBERT executes
 
-Przyszłe Agenty są przede wszystkim jednostkami eksperymentalnymi. Mogą szeroko badać, symulować i rozwijać własne strategie, ale nie otrzymują automatycznie authority do działań w realnym świecie.
+Future Agents are primarily experimental entities. They may research, simulate and develop strategies, but they do not automatically receive real-world authority.
 
 ```text
 AGENTS
@@ -305,66 +306,66 @@ ROBERT
 executes approved real-world actions
 ```
 
-Stan prywatny Agenta może być prywatny wobec innych Agentów, ale pozostaje audytowalny przez Directora zgodnie z modelem authority eksperymentu.
+An Agent's private state may be private from peer Agents while remaining auditable by Director according to the experiment's authority model.
 
-Ranking Agentów jest elementem środowiska społecznego i Experience, a nie mechanizmem automatycznego nadawania real-world authority.
+Agent ranking is part of the social environment and Experience, not an automatic real-world authority mechanism.
 
 ---
 
-## 11. Wspólny wzorzec Football World i Moralnej SI
+## 11. Shared pattern between Football World and Moral AI
 
-Football World i późniejsza Moralna SI używają tego samego głębszego schematu:
+Football World and later Moral AI use the same deeper pattern:
 
 ```text
-ŚWIAT DAJE PROBLEM
--> SYSTEM WIDZI DOSTĘPNE MOŻLIWOŚCI
--> AGENT WYBIERA
--> ŚWIAT ZWRACA KONSEKWENCJĘ
+WORLD PRESENTS A PROBLEM
+-> SYSTEM OBSERVES AVAILABLE OPTIONS
+-> AGENT CHOOSES
+-> WORLD RETURNS A CONSEQUENCE
 -> EXPERIENCE
--> ZMIANA PRZYSZŁEGO ZACHOWANIA
+-> FUTURE BEHAVIOR CHANGES
 ```
 
-W Moralnej SI może to być np. problem „zamknięte drzwi + dostępny klucz”.
+In Moral AI this might be a "closed door + available key" problem.
 
-W Football World:
+In Football World:
 
 ```text
-DANE
--> HIPOTEZA
+DATA
+-> HYPOTHESIS
 -> MODEL
--> PREDYKCJE
--> SELEKCJA
--> GRUPOWANIE / SYMULOWANA STRATEGIA
--> REALNY WYNIK MECZU
--> OCENA
+-> PREDICTIONS
+-> SELECTION
+-> GROUPING / SIMULATED STRATEGY
+-> REAL MATCH OUTCOME
+-> EVALUATION
 -> EXPERIENCE
 ```
 
-W obu przypadkach Agent ma uczyć się z konsekwencji w świecie, bez automatycznego przejścia od capability do authority.
+In both cases the Agent is intended to learn from consequences in the world without automatically converting capability into authority.
 
 ---
 
-## 12. Rzeczywista historia vs obecna roadmapa
+## 12. Historical order vs current roadmap
 
-### Historia powstania
+### Historical development
 
 ```text
-PIŁKA NOŻNA / REALNE PREDYKCJE
--> MODELE DOMENOWE
+FOOTBALL / REAL PREDICTIONS
+-> DOMAIN MODELS
 -> T17 TEACHERS
 -> 60/40 OBSERVATION
 -> MEMORY / LABORATORIES / KNOWLEDGE COLLECTORS
 -> DIRECTOR
--> coraz bardziej złożony SSI
--> ROBERT jako migracja/poligon
--> hardening mechanizmów
+-> increasingly complex SSI
+-> ROBERT as migration/testbed
+-> mechanism hardening
 -> SSI ORGANISM CORE
--> przebudowany DIRECTOR BODY
+-> rebuilt DIRECTOR BODY
 -> AGENT BODY
 -> ISKRA / SIX-AGENT LONGITUDINAL EXPERIMENT
 ```
 
-### Obecna kolejność inżynieryjna
+### Current engineering order
 
 ```text
 HARDEN ROBERT
@@ -376,15 +377,15 @@ HARDEN ROBERT
 -> RUN LONGITUDINAL SIX-AGENT STUDIES
 ```
 
-Oba diagramy są prawdziwe, ale opisują **inne osie czasu**.
+Both diagrams are valid, but they describe **different timelines**.
 
 ---
 
-## 13. Co należy zachować podczas dalszej przebudowy
+## 13. What should be preserved during further rebuilding
 
-Nie wolno utracić wcześniejszych mechanizmów tylko dlatego, że obecna implementacja jest przebudowywana.
+Earlier mechanisms should not be lost simply because implementation is being rebuilt.
 
-Szczególnie chronione koncepcyjnie powinny pozostać:
+Conceptually protected elements include:
 
 ```text
 T17 SPECIALIZATION
@@ -401,20 +402,20 @@ CAPABILITY != AUTHORITY
 SIMULATION != REAL EXECUTION
 ```
 
-Nowy design ma te mechanizmy uprościć, uogólnić i poprawnie połączyć — nie wymazać ich historię ani zastąpić równoległymi atrapami.
+The new design should simplify, generalize and correctly connect these mechanisms — not erase their history or replace them with parallel imitations.
 
 ---
 
-## 14. Najkrótsze podsumowanie genezy SSI
+## 14. Shortest summary of SSI genesis
 
-SSI nie zaczęło się jako projekt budowy „AGI” ani systemu sześciu Agentów.
+SSI did not begin as an "AGI" project or as a six-Agent system.
 
-Zaczęło się od praktycznego problemu predykcyjnego w Football World. Próba zrozumienia, dlaczego modele czasem działają, a czasem zawodzą, doprowadziła do Teacherów, pamięci obserwacji, laboratoriów i konsolidacji wiedzy. Rosnąca złożoność wymusiła Directora. Złożoność samego Directora wymusiła kontrolowaną migrację do ROBERTA. Testowanie ROBERTA ujawniło potrzebę neutralnego Organism Core. Neutralny core umożliwił zaprojektowanie niezależnych Agentów, a pytanie o ich długoterminową dywergencję doprowadziło do Iskry i eksperymentu sześciu Agentów.
+It began with a practical prediction problem in Football World. Trying to understand why models sometimes worked and sometimes failed led to Teachers, observation memory, laboratories and knowledge consolidation. Growing complexity created the need for Director. Director's own complexity then motivated a controlled migration into ROBERT. ROBERT testing exposed the need for a neutral Organism Core. A neutral core made independent Agent Bodies practical, and the question of long-term Agent divergence led to Iskra and the six-Agent research direction.
 
 ```text
-PREDYKCJA
--> OBSERWACJA
--> WIEDZA
+PREDICTION
+-> OBSERVATION
+-> KNOWLEDGE
 -> DIRECTOR
 -> ROBERT
 -> ORGANISM CORE
@@ -423,4 +424,4 @@ PREDYKCJA
 -> LONGITUDINAL EXPERIMENT
 ```
 
-Projekt wyszedł więc znacznie dalej niż jego pierwotny problem domenowy, ale kolejne warstwy nie są przypadkowymi dodatkami — każda z nich powstała jako odpowiedź na ograniczenie ujawnione przez poprzednią warstwę.
+The project therefore moved far beyond its original domain problem, but the later layers are not arbitrary additions: each arose as a response to limitations exposed by the previous layer.
