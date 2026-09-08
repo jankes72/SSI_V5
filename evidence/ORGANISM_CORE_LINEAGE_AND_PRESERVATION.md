@@ -1,43 +1,43 @@
-# SSI V5 — lineage SSI ORGANISM CORE i zakres zachowania wcześniejszego systemu
+# SSI V5 — SSI ORGANISM CORE Lineage and Preservation Scope
 
 **Status:** `ARCHITECTURE / MIGRATION CONTRACT / ROOT_ATTESTED`  
-**Data:** `2026-08-29`
+**Date:** `2026-08-29`
 
 ---
 
-## 1. Organism Core nie jest nowym projektem od zera
+## 1. Organism Core is not a new project built from zero
 
-Obecny `SSI ORGANISM CORE` jest wynikiem ekstrakcji, neutralizacji i porządkowania mechanizmów wypracowanych wcześniej w SSI.
+The current `SSI ORGANISM CORE` is the result of extracting, neutralizing and organizing mechanisms developed earlier in SSI.
 
-Nie należy opisywać historii jako:
+The history should not be described as:
 
 ```text
-ROBERT -> wymyślenie Core -> później Director
+ROBERT -> invent Core -> later Director
 ```
 
-Prawidłowy historyczny lineage jest szerszy:
+The broader historical lineage is:
 
 ```text
-FOOTBALL WORLD / MODELE / T17
+FOOTBALL WORLD / MODELS / T17
 -> OBSERVATION MEMORY / KNOWLEDGE
 -> DIRECTOR
 -> HERMES / CONTINUUM / RESEARCH / SELF-MODEL / WORLDS
--> rosnąca złożoność integracji
--> ROBERT jako kontrolowana migracja i poligon
--> hardening mechanizmów
--> SSI ORGANISM CORE jako neutralny substrate
+-> growing integration complexity
+-> ROBERT as controlled migration and testbed
+-> mechanism hardening
+-> SSI ORGANISM CORE as neutral substrate
 -> ROBERT BODY / REBUILT DIRECTOR BODY / AGENT BODY
 ```
 
-Core ma być mechanicznym wspólnym fundamentem, a nie wymazaniem wcześniejszej architektury i historii.
+Core is intended to be a shared mechanical foundation, not an erasure of earlier architecture or history.
 
 ---
 
-## 2. Co jest pobierane z wcześniejszego SSI
+## 2. What is extracted from earlier SSI
 
-Zakres migracji i zachowania obejmuje nie tylko micronetwork runtime.
+The migration/preservation scope includes more than the micronetwork runtime.
 
-Do wspólnego substrate należą lub mają być mapowane m.in.:
+The shared substrate includes or is intended to map mechanisms such as:
 
 - identity interfaces;
 - persistent memory;
@@ -56,13 +56,13 @@ Do wspólnego substrate należą lub mają być mapowane m.in.:
 - research/reasoning hooks;
 - tools/Eyes/Hands hooks.
 
-Istotne funkcje wcześniejszego Directora nie mogą zniknąć tylko dlatego, że mechaniczny fundament jest przebudowywany.
+Important functions of the earlier Director should not disappear simply because the mechanical foundation is being rebuilt.
 
 ---
 
-## 3. Co musi wrócić do przebudowanego Directora
+## 3. What must return to the rebuilt Director
 
-Po ustabilizowaniu neutralnego core `DIRECTOR BODY` powinien ponownie otrzymać swoje role strategiczne i historyczne:
+After the neutral core is stabilized, `DIRECTOR BODY` should receive its strategic and historical roles again:
 
 ```text
 SSI ORGANISM CORE
@@ -90,28 +90,28 @@ ROBERT EYES/HANDS ACCESS VIA AUTHORITY
 REBUILT DIRECTOR BODY
 ```
 
-Director po migracji nie jest nową rolą stworzoną po ROBERCIE. Jest przebudową wcześniejszego Directora na czystszym substrate.
+Director after migration is not a new role created after ROBERT. It is a rebuild of the earlier Director on a cleaner substrate.
 
 ---
 
-## 4. ROBERT — więcej niż donor testów
+## 4. ROBERT — more than a test donor
 
-ROBERT pełni kilka funkcji jednocześnie:
+ROBERT has several roles at once:
 
-1. kontrolowana migracja części mechanizmów wcześniejszego Directora;
-2. poligon do hardeningu Experience, persistence, lifecycle, replay i restart;
-3. stale działające ciało wykonawcze;
-4. interfejs do narzędzi;
-5. baza dla Eyes/Hands/Browser/Desktop/Screencast;
-6. wykonawczy dostęp do researchu i świata technologii zgodnie z authority Directora.
+1. controlled migration of selected mechanisms from the earlier Director;
+2. testbed for hardening Experience, persistence, lifecycle, replay and restart;
+3. continuously operating execution body;
+4. tool interface;
+5. base for Eyes/Hands/Browser/Desktop/Screencast;
+6. execution access to research and the technology environment under Director authority.
 
-Dlatego redukowanie ROBERTA wyłącznie do „testowego runtime” jest niepełne.
+Reducing ROBERT only to a "test runtime" is therefore incomplete.
 
 ---
 
-## 5. Eyes/Hands i research są częścią lineage
+## 5. Eyes/Hands and research are part of the lineage
 
-Wcześniejsze SSI zawierało lub projektowało warstwy:
+Earlier SSI contained or planned layers such as:
 
 ```text
 SCREENSHOT
@@ -125,30 +125,30 @@ AUDIT TRAIL
 PERMISSION GATES
 ```
 
-oraz research/global-search/capability discovery.
+as well as research/global-search/capability discovery.
 
-Docelowa relacja:
+The intended relationship is:
 
 ```text
 DIRECTOR
--> wykrywa potrzebę / brak / okazję
--> inicjuje research
--> ROBERT / EYES / HANDS wykonuje dozwolone działania badawcze
--> źródła zewnętrzne dostarczają kandydatów
--> Director + CEPA + reasoning oceniają
--> engineering buduje/testuje
--> outcome wraca do Experience
+-> detects need / gap / opportunity
+-> initiates research
+-> ROBERT / EYES / HANDS performs permitted research actions
+-> external sources provide candidates
+-> Director + CEPA + reasoning evaluate
+-> engineering builds/tests
+-> outcome returns to Experience
 ```
 
-Te capability powinny być zachowane jako interfejsy/adapters wokół neutralnego core, a nie zaszywane w jeden monolit.
+These capabilities should be preserved as interfaces/adapters around the neutral core rather than embedded into one monolith.
 
 ---
 
-## 6. Autonomous Evolution Fabric musi zostać zachowany
+## 6. Autonomous Evolution Fabric must be preserved
 
-Starszy projekt SSI zawierał koncepcję i opis kontrolowanego samorozwoju Directora.
+The earlier SSI design contained the concept and description of controlled Director self-development.
 
-Jego podstawowy rytm:
+Its basic rhythm:
 
 ```text
 OBSERVATION OF SSI / WORLD
@@ -164,25 +164,25 @@ OBSERVATION OF SSI / WORLD
 -> ADOPT / REJECT / REVISE
 ```
 
-Mechanizm ten nie może zostać błędnie przedstawiony jako odległa nowa idea powstała dopiero po Organism Core.
+This mechanism should not be misrepresented as a distant new idea invented only after Organism Core.
 
-Prawidłowo:
+Correct interpretation:
 
-- jego koncepcja i elementy istniały wcześniej w SSI;
-- obecna migracja ma przygotować czystszy fundament do jego ponownego podłączenia;
-- stopień faktycznej aktywacji każdej części musi być raportowany osobno na podstawie evidence.
+- its concept and components existed earlier in SSI;
+- the current migration is intended to provide a cleaner foundation for re-integration;
+- the actual activation level of each part must be reported separately from evidence.
 
 ---
 
-## 7. Testy wcześniejszego SSI są częścią historii
+## 7. Earlier SSI tests remain part of history
 
-Publiczna i prywatna historia zawiera różne etapy walidacji.
+Public and private history contains different validation stages.
 
-Wcześniejsze raporty pokazywały niepełne wiring i realne blokery, np. brak pełnego Root->Director->Hermes E2E, problemy z return path, restart persistence albo physical Node-01.
+Earlier reports showed incomplete wiring and real blockers, such as missing full Root->Director->Hermes E2E, return-path issues, restart persistence problems or physical Node-01 gaps.
 
-Późniejsze paczki naprawcze raportowały kolejne PASS-y, pełne regresje i E2E.
+Later repair packages reported additional PASS results, full regressions and E2E closures.
 
-Oba rodzaje evidence muszą pozostać:
+Both evidence types should remain:
 
 ```text
 FAIL / PARTIAL
@@ -190,56 +190,56 @@ FAIL / PARTIAL
 -> LATER PASS
 ```
 
-Nie wolno używać późniejszego sukcesu do przepisywania historii tak, jakby wcześniejszego błędu nigdy nie było.
+A later success must not be used to rewrite history as though the earlier failure never existed.
 
 ---
 
-## 8. Samodzielny rozwój SSI i publiczna chronologia
+## 8. Independent SSI development and public chronology
 
-SSI V5 jest rozwijane niezależnie przez Pawła Jankiewicza jako autora nadrzędnej architektury i `PROGRAMMER_ROOT`.
+SSI V5 is independently developed by Paweł Jankiewicz as author of the overarching architecture and `PROGRAMMER_ROOT`.
 
-Publiczna historia Git dokumentuje intensywną formalizację architektury w 2026 roku, w tym:
+Public Git history documents intensive architecture formalization in 2026, including:
 
 ```text
 2026-07-19  root commit MSDI AI v0.01
-2026-07-27  publiczne repo msdi-ai
+2026-07-27  public msdi-ai repository
 2026-07-28  SSI Core / Data World / V2
-2026-08-01  jawne SSI V5
+2026-08-01  explicit SSI V5
 2026-08-14  CONTINUUM
 2026-08-16  SSI_V5_MASTER
-2026-08-25  publiczny research mirror SSI_V5
-2026-08-29  hardening ROBERTA + migracja Organism Core
+2026-08-25  public SSI_V5 research mirror
+2026-08-29  ROBERT hardening + Organism Core migration
 ```
 
-Ta oś czasu dokumentuje rozwój kodu i architektury dostępny w historii Git. Nie dowodzi, że wcześniejsze dane, Football World, modele, T17 ani doświadczenie domenowe rozpoczęły się dopiero wtedy.
+This timeline documents code/architecture development visible in Git history. It does not prove that earlier data, Football World work, models, T17 or domain experience began only at those dates.
 
 ---
 
-## 9. Atrybucja zewnętrznych idei pozostaje jawna
+## 9. External idea attribution remains explicit
 
-Fakt, że SSI jest rozwijane niezależnie, nie oznacza przypisywania Programmer Rootowi wszystkich źródłowych idei.
+Independent SSI development does not mean attributing every source idea to Programmer Root.
 
-Przykładem jest Moralna AI / Iskra:
+Moral AI / Iskra is one example:
 
 ```text
 SOURCE MORAL-AI IDEA
--> wcześniejszy projekt brata autora SSI
+-> earlier project by the SSI author's brother
 
 SSI ADAPTATION
--> integracja z Agent Body
--> dynamiczne środowisko 10x10
--> fizyczne operowanie obiektami świata
+-> Agent Body integration
+-> dynamic 10x10 environment
+-> physical world-object operations
 -> Experience
--> mikrosieci
+-> micronetworks
 -> social memory / relationships
 -> Director meta-observation
 ```
 
-Lineage musi rozróżniać źródło idei od późniejszej adaptacji.
+Lineage must distinguish the source idea from later adaptation.
 
 ---
 
-## 10. Fundamentalna zasada obecnej migracji
+## 10. Fundamental migration rule
 
 ```text
 EXTRACT MECHANISM
@@ -263,4 +263,4 @@ NEW CORE
 LOSS OF EYES/HANDS / RESEARCH / SELF-DEVELOPMENT
 ```
 
-Celem jest stworzenie czytelniejszej, bardziej testowalnej i wielorazowej architektury przy zachowaniu prawdziwego pochodzenia mechanizmów, ich evidence oraz indywidualnych historii jednostek SSI.
+The goal is a clearer, more testable and reusable architecture that preserves the real origin of mechanisms, their evidence and the individual histories of SSI entities.
