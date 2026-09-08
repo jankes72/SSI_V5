@@ -4,11 +4,11 @@
 
 `DEVELOPMENT_VALIDATED — scoped adaptive-routing / replay / persistence evidence; dedicated anti-loop and adversarial validation still required`
 
-## Najważniejsza definicja
+## Core definition
 
-V10 nie jest projektowany jako zwykły cache, prosty semantic router ani tylko optymalizacja czasu. Jego podstawową rolą jest **stanowy wybór dalszej strategii działania** na podstawie bieżącego problemu, istniejących kompetencji, historii prób, wcześniejszych outcomes, failure signatures i poziomu confidence.
+V10 is not designed as a simple cache, a basic semantic router, or merely a latency optimization. Its primary role is **stateful selection of the next action strategy** based on the current problem, available competence, attempt history, prior outcomes, failure signatures and confidence.
 
-Najkrócej:
+In compact form:
 
 ```text
 V10
@@ -20,23 +20,23 @@ V10
 + FEEDBACK-DRIVEN ROUTE UPDATE
 ```
 
-Przyspieszenie może być skutkiem poprawnego reuse zwalidowanej kompetencji, ale **nie jest nadrzędnym znaczeniem V10**.
+Lower latency may result from correct reuse of validated competence, but **speed is not the primary definition of V10**.
 
-## Dlaczego V10 powstał
+## Why V10 exists
 
-W długim zadaniu wykonawczym — np. podczas budowy programu z klocków LEGO, naprawy artefaktu albo późniejszej pracy ROBERTA w środowisku takim jak Tetris — samo znalezienie "podobnej odpowiedzi" nie wystarcza.
+In a long execution task — for example building a program from LEGO-style blocks, repairing an artifact, or later operating ROBERT in an environment such as Tetris — finding a merely "similar answer" is not enough.
 
-System musi rozróżnić m.in.:
+The system must distinguish, among other things:
 
-- co już zostało wykonane;
-- jaka strategia została użyta;
-- który klocek / Champion / route był już próbowany;
-- jaki był outcome;
-- czy wystąpił ten sam failure signature;
-- czy ponowienie tej samej ścieżki ma sens;
-- czy trzeba wybrać inną kompetencję, inny układ LEGO, dodatkową weryfikację albo pełny flow.
+- what has already been completed;
+- which strategy was used;
+- which block / Champion / route was already attempted;
+- what the outcome was;
+- whether the same failure signature already occurred;
+- whether repeating the same route is still justified;
+- whether a different competence, LEGO composition, verification step, or full flow is required.
 
-Dlatego routing jest rozumiany szerzej:
+Routing is therefore defined more broadly:
 
 ```text
 ROUTING
@@ -52,9 +52,9 @@ ROUTING
 + RECOVERY OPTIONS
 ```
 
-## Rdzeń decyzji
+## Decision core
 
-Uproszczony kontrakt V10:
+A simplified V10 contract is:
 
 ```text
 CURRENT INPUT / STATE
@@ -79,13 +79,13 @@ V10 STATEFUL PREDICTIVE ROUTING
                -> CANONICAL FULL_FLOW
 ```
 
-Exact lookup i similarity są tylko częścią tego procesu.
+Exact lookup and similarity are only parts of this process.
 
-## Anti-loop: nie powtarzać tego samego błędu i oczekiwać innego rezultatu
+## Anti-loop: do not repeat the same failed strategy without new evidence
 
-Jednym z podstawowych wymagań V10 jest ograniczanie bezsensownego zapętlenia wykonania.
+A core V10 requirement is to reduce pointless execution loops.
 
-Kontrakt architektoniczny można zapisać jako:
+The architectural contract can be written as:
 
 ```text
 SAME / EQUIVALENT STATE
@@ -96,7 +96,7 @@ SAME / EQUIVALENT STATE
 => DO NOT BLINDLY REPEAT
 ```
 
-Zamiast tego system powinien przejść do co najmniej jednej z kontrolowanych reakcji:
+Instead, the system should move to at least one controlled response:
 
 ```text
 BLOCK SAME ROUTE
@@ -110,11 +110,11 @@ OR
 ESCALATE TO FULL_FLOW
 ```
 
-To jest ważniejsze niż samo skrócenie czasu odpowiedzi. Router ma pomagać systemowi **zmieniać sposób działania po niepowodzeniu**, a nie tylko szybciej wykonywać tę samą ścieżkę.
+This is more important than latency reduction alone. The router should help the system **change how it acts after failure**, rather than only execute the same ineffective path faster.
 
 ## V10 + LEGO
 
-LEGO rozbija duże zadania na małe kontraktowe klocki. V10 ma wspierać wybór i ponowne składanie tych klocków w zależności od stanu pracy.
+LEGO decomposes a large task into small contract-driven blocks. V10 is intended to help select and recombine those blocks according to execution state.
 
 ```text
 GOAL
@@ -133,13 +133,13 @@ GOAL
 -> EXPERIENCE
 ```
 
-W tym znaczeniu V10 nie jest routerem "do jednej rzeczy". Ma działać jako warstwa wyboru kompetencji i recovery w wieloetapowym procesie budowy, naprawy oraz późniejszego używania artefaktów.
+In this sense, V10 is not a router for one narrow task. It is intended as a competence-selection and recovery layer within multi-step build, repair and execution processes.
 
-## Przykład: budowa i późniejsze granie w Tetrisa
+## Example: building and later playing Tetris
 
-Tetris jest dobrym demonstratorem dlatego, że pozwala oddzielić dwa poziomy pracy.
+Tetris is a useful example because it separates two operating levels.
 
-### 1. ROBERT buduje / naprawia Tetrisa
+### 1. ROBERT builds / repairs Tetris
 
 ```text
 BUILD
@@ -155,7 +155,7 @@ BUILD
 -> EXPERIENCE
 ```
 
-### 2. ROBERT później sam gra
+### 2. ROBERT later plays
 
 ```text
 BOARD STATE
@@ -167,9 +167,9 @@ BOARD STATE
 -> NEXT STATE
 ```
 
-Jeżeli określona strategia w porównywalnym stanie systematycznie prowadzi do tej samej porażki, historia outcome powinna wpływać na kolejną decyzję. Celem nie jest wykonanie identycznej akcji jeszcze raz tylko dlatego, że semantycznie "pasuje".
+If a strategy repeatedly produces the same failure in a comparable state, prior outcome history should affect the next decision. The goal is not to repeat the same action merely because it appears semantically similar.
 
-## Mikrosieci i V10 pełnią różne role
+## Micronetworks and V10 have different roles
 
 ```text
 MICRONETWORK
@@ -185,7 +185,7 @@ V10
 + anti-loop / recovery decision
 ```
 
-Wspólnie tworzą pętlę:
+Together they form the loop:
 
 ```text
 EXPERIENCE
@@ -200,9 +200,9 @@ EXPERIENCE
 -> ROUTE / COMPETENCE EVOLUTION
 ```
 
-## Ochrona przed false reuse
+## False-reuse protection
 
-Drugim głównym zagrożeniem jest `false reuse`: użycie wcześniejszej kompetencji w sytuacji, w której wygląda ona podobnie, ale nie jest właściwa.
+A second major risk is `false reuse`: using prior competence in a situation that looks similar but is not actually compatible.
 
 ```text
 HIGH CONFIDENCE + VALID CONTEXT
@@ -219,14 +219,14 @@ KNOWN NEGATIVE ROUTE IN COMPARABLE STATE
 -> RECOVERY / ALTERNATIVE / ESCALATION
 ```
 
-Dlatego bezpieczeństwo V10 obejmuje dwa różne problemy:
+V10 safety therefore concerns two distinct problems:
 
-1. **false reuse** — użycie niewłaściwej kompetencji;
-2. **failure loop** — ponowne uruchamianie tej samej nieskutecznej strategii mimo znanego negatywnego outcome.
+1. **false reuse** — selecting an inappropriate prior competence;
+2. **failure loop** — re-running the same ineffective strategy despite a known negative outcome.
 
-## Evidence z Testu 3
+## Test 3 evidence
 
-W opublikowanym Test 3 zarejestrowano:
+Published Test 3 recorded:
 
 ```text
 lookups:             600
@@ -240,26 +240,26 @@ errors:                0
 known correctness: 100/100
 ```
 
-Test 3 pokazuje, że V10 nie działał wyłącznie jako exact-key cache i że selektywny routing potrafił ominąć część kosztownego full-flow w badanym zakresie.
+Test 3 shows that V10 did not operate only as an exact-key cache and that selective routing could avoid part of the expensive full flow within the tested scope.
 
-Zmierzony czas `57.61 s` wobec `126.65 s` Testu 2 jest istotnym wynikiem wydajnościowym, ale **nie jest najważniejszą hipotezą V10**.
+The measured `57.61 s` versus `126.65 s` in Test 2 is a meaningful performance result, but **it is not the primary V10 hypothesis**.
 
-## Co już pokazano, a czego jeszcze nie pokazano
+## What has been shown — and what has not
 
-Publiczne evidence wspiera obecnie m.in.:
+Current public evidence supports, within its tested scope:
 
 - exact + similarity routing;
-- selektywne `REUSE_TOP1` i `VERIFY_TOPK`;
+- selective `REUSE_TOP1` and `VERIFY_TOPK`;
 - route compilation;
 - feedback/state growth;
-- wcześniejsze replay/retry/restart/idempotency hardening w lifecycle;
-- persistence i odporność na duplikację w badanym zakresie.
+- earlier replay/retry/restart/idempotency hardening in the lifecycle;
+- persistence and duplication resistance in tested scenarios.
 
-Nie należy natomiast jeszcze twierdzić, że publiczne testy udowodniły pełną skuteczność anti-loop w dowolnym dynamicznym zadaniu. Test 3 nie zawierał wystarczającej liczby wymuszonych `FULL_FLOW`, celowo powtarzanych failure signatures ani szerokiego zestawu unknown/conflicting/adversarial cases.
+Public tests should **not** yet be described as proving full anti-loop effectiveness in arbitrary dynamic tasks. Test 3 did not contain enough forced `FULL_FLOW` cases, deliberately repeated failure signatures, or a broad set of unknown/conflicting/adversarial cases.
 
-## Najważniejszy następny test: stateful anti-loop + recovery
+## Most important next benchmark: stateful anti-loop + recovery
 
-Kolejny benchmark powinien mierzyć nie tylko szybkość i trafność routingu, ale zmianę strategii po niepowodzeniu:
+The next benchmark should measure not only speed and routing correctness, but whether strategy changes after failure:
 
 ```text
 1. CLEAN STATE
@@ -277,7 +277,7 @@ Kolejny benchmark powinien mierzyć nie tylko szybkość i trafność routingu, 
 13. VERIFY HISTORY PERSISTENCE
 ```
 
-Równolegle powinny zostać zbadane:
+In parallel, test:
 
 ```text
 KNOWN                    -> REUSE_TOP1
@@ -288,7 +288,7 @@ REPEATED FAILURE         -> NO BLIND LOOP
 NEW EVIDENCE AFTER FAIL  -> CONTROLLED RECONSIDERATION
 ```
 
-## Metryki, które powinny być raportowane
+## Metrics to report
 
 - routing precision / recall;
 - false-reuse rate;
@@ -302,8 +302,8 @@ NEW EVIDENCE AFTER FAIL  -> CONTROLLED RECONSIDERATION
 - final task correctness;
 - persistence of failure history after restart.
 
-## Najkrótsza definicja grantowa
+## Short grant/reviewer definition
 
-**V10 jest stanowym, predykcyjnym routerem kompetencji i recovery. Jego zadaniem jest nie tylko szybko znaleźć istniejącą zwalidowaną kompetencję, ale również wykorzystać historię prób i outcomes do wyboru kolejnej ścieżki, uniknąć bezsensownego powtarzania znanej nieskutecznej strategii oraz zdecydować między reuse, weryfikacją, alternatywną kompozycją LEGO i pełnym flow.**
+**V10 is a stateful predictive competence and recovery router. Its role is not only to locate validated competence quickly, but also to use attempt history and outcomes to choose the next path, avoid blindly repeating known ineffective strategies, and decide between reuse, verification, alternative LEGO composition and full flow.**
 
-Publiczna dokumentacja opisuje kontrakt i evidence bez ujawniania prywatnej implementacji predyktora ani pełnego silnika mikrosieci.
+Public documentation describes this contract and its evidence without publishing the private predictor implementation or the full Micronetwork engine.
