@@ -1,15 +1,15 @@
-# ROBERT — Idempotency, Replay & Persistence Stress Validation (600×)
+# ROBERT — Idempotency, Replay & Persistence Stress Validation (600x)
 
-**Data walidacji:** 2026-08-31  
-**Zakres:** ROBERT / micronetwork lifecycle / candidate → challenger / Experience persistence  
-**Status końcowy:** `DEVELOPMENT_VALIDATED`  
-**Źródło:** lokalny bundle `SSI_ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_BUNDLE`  
+**Validation date:** 2026-08-31  
+**Scope:** ROBERT / Micronetwork lifecycle / Candidate -> Challenger / Experience persistence  
+**Final status:** `DEVELOPMENT_VALIDATED`  
+**Source:** local bundle `SSI_ROBERT_IDEMPOTENCY_REPLAY_STRESS_600X_BUNDLE`
 
-## Cel etapu
+## Stage objective
 
-Celem etapu było sprawdzenie, czy lifecycle ROBERTA zachowuje jeden spójny stan przy wielokrotnych replayach, retry, restartach, duplikatach evidence, wartościach null oraz równoległych próbach wykonania tej samej operacji.
+The objective was to verify whether the ROBERT lifecycle preserves one consistent logical state across repeated replay, retry, restart, duplicate evidence, null values and concurrent attempts to perform the same operation.
 
-Badanie dotyczyło przede wszystkim własności operacyjnych systemu, a nie jakości odpowiedzi modelu LLM:
+The test primarily concerns system operational properties rather than LLM answer quality:
 
 ```text
 SAME EVENT / SAME EXPERIENCE / SAME PROMOTION
@@ -21,9 +21,9 @@ SAME EVENT / SAME EXPERIENCE / SAME PROMOTION
 -> SAME CONSISTENT STATE
 ```
 
-## Stan wejściowy
+## Input state
 
-Pierwszy zapis baseline zawierał:
+The first recorded baseline contained:
 
 ```text
 candidate files:     125
@@ -31,15 +31,15 @@ challengers:          31
 experiences:        4761
 ```
 
-Przed właściwym finalnym stress-runem liczba Experience wzrosła do `5195`, przy zachowaniu `125` kandydatów i `31` challengerów.
+Before the final stress run, Experience count increased to `5195`, while Candidate count remained `125` and Challenger count remained `31`.
 
-Według opisu autora wzrost ten nastąpił po dołączeniu pozostałych mikrosieci / Experience do badanego stanu (`ROOT_ATTESTED`). Liczby wejściowe i końcowe są natomiast zapisane w machine-generated evidence bundle.
+According to the author's description, this growth followed connection of the remaining Micronetwork / Experience state (`ROOT_ATTESTED`). The input and final counts themselves are recorded in the machine-generated evidence bundle.
 
-## Wcześniejsze FAIL są zachowane
+## Earlier FAIL results are preserved
 
-Etap nie usuwa wcześniejszych niepowodzeń z historii.
+This stage does not remove earlier failures from the record.
 
-### H03 — replay 100×
+### H03 — replay 100x
 
 ```text
 attempts:   100
@@ -48,7 +48,7 @@ duplicate:  100
 pass:      false
 ```
 
-### H05 — restart storm 20×
+### H05 — restart storm 20x
 
 ```text
 cycles:                  20
@@ -59,11 +59,11 @@ all_replay_ok:          true
 pass:                  false
 ```
 
-Te wyniki są istotne badawczo: pokazują, że późniejszy PASS nie jest deklaracją opartą wyłącznie na jednym pozytywnym przebiegu, ale następuje po wcześniej wykrytych problemach replay/restart consistency.
+These failures matter: later PASS evidence follows real replay/restart consistency problems rather than replacing them retroactively.
 
-## Testy częściowe, które przeszły
+## Partial tests that passed
 
-### H02 — promotion 100×
+### H02 — promotion 100x
 
 ```text
 attempts:                    100
@@ -72,13 +72,13 @@ already_challenger_results:  100
 pass:                       true
 ```
 
-### H04 — retry storm 100×
+### H04 — retry storm 100x
 
 ```text
-attempts:                 100
-any_new_challenger:     false
+attempts:                   100
+any_new_challenger:       false
 all_promotions_idempotent: true
-pass:                    true
+pass:                      true
 ```
 
 ### H07 — duplicate evidence guard
@@ -89,9 +89,9 @@ all_duplicate: true
 pass:          true
 ```
 
-### H08 — null contract torture
+### H08 — null-contract torture
 
-Przetestowano m.in. `null_evidence`, brak context, stale candidate ID i stale challenger ID. Wszystkie cztery przypadki zakończyły się kontrolowanym statusem zamiast awarią.
+Cases included `null_evidence`, missing context, stale Candidate ID and stale Challenger ID. All four produced controlled statuses instead of crashing.
 
 ### H09 — concurrency torture
 
@@ -103,9 +103,9 @@ all_idempotent:     true
 pass:               true
 ```
 
-## Finalny HARDCORE 600×
+## Final HARDCORE 600x
 
-Końcowy test wykonał `600` przypadków w `40` rundach po `15` przypadków.
+The final test executed `600` cases in `40` rounds of `15` cases.
 
 ```text
 cases_total:              600
@@ -132,7 +132,7 @@ PASS:                    true
 
 ## Persistence replay
 
-Dodatkowy test trwałości wykonał `50` przypadków replay:
+An additional persistence test executed `50` replay cases:
 
 ```text
 replay_cases:   50
@@ -140,9 +140,9 @@ all_replay_ok: true
 pass:          true
 ```
 
-## Spójność raportu i stanu
+## Report/state consistency
 
-Końcowa kontrola wykazała:
+Final consistency checks recorded:
 
 ```text
 final_candidates:                         125
@@ -155,29 +155,27 @@ none_get_errors:                            0
 pass:                                    true
 ```
 
-## Obserwacje po dołączeniu pozostałych mikrosieci
+## Observations after connecting the larger Micronetwork state
 
-Najważniejszą obserwacją nie jest sama liczba `600/600`, lecz zachowanie systemu po zwiększeniu rzeczywistego stanu Experience.
+1. **The larger state did not cause uncontrolled lifecycle growth.** The final stress run began and ended with exactly `125` Candidates and `31` Challengers.
 
-1. **Większy stan nie spowodował lawinowego wzrostu obiektów lifecycle.** Finalny stress-run rozpoczął i zakończył się z dokładnie `125` kandydatami i `31` challengerami.
+2. **Replay did not generate secondary Experience records.** After 600 cases, Experience remained `5195`, and the final report recorded `0` duplicates across Candidates.
 
-2. **Replay nie wygenerował wtórnych Experience.** Po 600 przypadkach liczba Experience pozostała `5195`, a raport końcowy wykazał `0` duplikatów pomiędzy kandydatami.
+3. **Promotion remained idempotent.** Repeating promotion for an existing object did not create additional Challengers.
 
-3. **Promotion zachowała idempotencję.** Powtarzanie promocji istniejącego obiektu nie tworzyło kolejnych challengerów.
+4. **No partially promoted objects appeared.** `half_promoted_objects = 0` matters because duplicate prevention alone would not be enough if inconsistent intermediate state remained possible.
 
-4. **Nie pojawiły się obiekty częściowo wypromowane.** `half_promoted_objects = 0` jest ważne, ponieważ brak duplikatu nie wystarcza, jeżeli system może pozostawić niespójny stan pośredni.
+5. **Persistence and in-memory state remained aligned within scope.** `file_challengers_match_memory = true`, and 50/50 persistence replay passed.
 
-5. **Warstwa persistence i stan pamięci pozostały zgodne w badanym zakresie.** `file_challengers_match_memory = true`, a 50/50 persistence replay zakończyło się PASS.
+6. **Null/stale inputs were handled contractually.** Controlled `NOT_ELIGIBLE` or `NOT_FOUND` states appeared instead of exceptions.
 
-6. **Null/stale inputs zostały obsłużone kontraktowo.** Zamiast wyjątku pojawiały się kontrolowane statusy `NOT_ELIGIBLE` albo `NOT_FOUND`.
+7. **Concurrency did not break the promotion guard.** The multithreaded test recorded no errors and no competing new Challenger creation.
 
-7. **Concurrency nie złamało promotion guard.** W teście wielowątkowym nie zanotowano błędów ani konkurencyjnego utworzenia nowego challengera.
+8. **Earlier FAIL evidence remains visible.** H03 and H05 show that replay/restart consistency required real hardening; the final PASS is a later, broader validation result, not a claim that the earlier problems never existed.
 
-8. **Wcześniejsze FAIL pozostają częścią evidence.** H03 i H05 pokazują, że replay/restart consistency wymagały realnego hardeningu; finalny PASS powinien być interpretowany jako wynik późniejszego, szerszego testu, nie jako stwierdzenie, że wcześniejsze problemy nigdy nie istniały.
+## Architectural meaning
 
-## Znaczenie architektoniczne
-
-Ten etap wzmacnia tezę, że mikrosieć w SSI nie jest tylko kolekcją wyników modelu, ale częścią trwałego lifecycle, w którym powtarzalne zdarzenia powinny prowadzić do tego samego logicznego stanu.
+This stage strengthens the scoped claim that a Micronetwork in SSI is not merely a collection of model outputs, but part of a persistent lifecycle in which repeated events should converge on the same logical state.
 
 ```text
 EXPERIENCE
@@ -190,13 +188,13 @@ EXPERIENCE
 -> SAME LOGICAL STATE
 ```
 
-Jest to istotne przed dalszym rozszerzaniem liczby mikrosieci, Agent Body i autonomicznych wykonawców, ponieważ bez idempotencji każda dodatkowa ścieżka wykonawcza zwiększałaby ryzyko sztucznego wzrostu Experience, podwójnych promocji i rozjazdu pamięć ↔ pliki.
+This matters before adding more Micronetworks, Agent Bodies and autonomous executors because without idempotency, every extra execution path would increase the risk of artificial Experience growth, double promotion and memory/file divergence.
 
-## Granice wyniku
+## Result boundary
 
-Ten etap **nie dowodzi**, że cały SSI jest odporny na wszystkie możliwe awarie ani że system jest production-proof.
+This stage **does not prove** that all of SSI is resistant to every possible failure or that the system is production-proof.
 
-Wynik oznacza wyłącznie, że badany lifecycle ROBERTA przeszedł opisany zestaw stress/replay/persistence tests w przedstawionym stanie i zakresie.
+It means only that the tested ROBERT lifecycle passed the declared stress/replay/persistence suite in the recorded state and scope.
 
 ```text
 600/600 PASS
@@ -204,6 +202,6 @@ Wynik oznacza wyłącznie, że badany lifecycle ROBERTA przeszedł opisany zesta
 ALL POSSIBLE FAILURES ELIMINATED
 ```
 
-Status tego etapu powinien więc być interpretowany jako:
+Appropriate status:
 
 **`DEVELOPMENT_VALIDATED — scoped idempotency/replay/persistence hardening`**.
