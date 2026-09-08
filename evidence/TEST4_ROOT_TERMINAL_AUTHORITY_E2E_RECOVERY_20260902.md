@@ -1,16 +1,16 @@
 # TEST 4 — ROOT Terminal: Authority, E2E, Concurrency & Recovery
 
-**Data:** 2026-09-02  
+**Date:** 2026-09-02  
 **Status:** `DEVELOPMENT_VALIDATED / ROOT_TERMINAL_MIGRATION_CLOSED`  
-**Zakres:** kanoniczny lokalny Terminal ROOT i ścieżka sterowania ROOT -> ROBERT/runtime -> result/receipt/audit.
+**Scope:** canonical local ROOT Terminal and the ROOT -> ROBERT/runtime -> result/receipt/audit control path.
 
-## Cel testu
+## Test purpose
 
-TEST 4 sprawdza, czy historyczne komponenty `root_control` i `root_runtime_bridge` zostały zintegrowane z bieżącym ROBERTEM jako **jedna kanoniczna ścieżka sterowania**, a następnie utwardzone pod kątem authority, E2E, idempotency, concurrency, restart/recovery i regresji.
+TEST 4 verifies that the historical `root_control` and `root_runtime_bridge` components were integrated into the current ROBERT as **one canonical control path**, then hardened for authority, E2E, idempotency, concurrency, restart/recovery and regression.
 
-Nie jest to test jakości modelu językowego. Długie stress-testy pipeline używają jawnie oznaczonego `CONTROLLED_E2E_BACKEND`, aby deterministycznie mierzyć kontrakt systemowy. Test restartu 20× używa realnego procesu ROBERTA.
+This is not a language-model quality test. Long pipeline stress tests use an explicitly marked `CONTROLLED_E2E_BACKEND` to measure the system contract deterministically. The 20x restart test uses a real ROBERT process.
 
-## Lineage: migracja -> audyt -> hardening -> closure
+## Lineage: migration -> audit -> hardening -> closure
 
 ```text
 MIGRATION SOURCE
@@ -28,11 +28,11 @@ MIGRATION SOURCE
 -> FINAL CLOSURE V4
 ```
 
-Pierwszy closure-candidate **nie został przyjęty bezkrytycznie**. Audyt evidence wykrył m.in. niejednoznaczną granicę authentication, zbyt słaby początkowy stress concurrency, restart bez dowodu zmiany procesu oraz niewyjaśnione `1000 -> 2000` receipt records. Te punkty zostały naprawione lub doprecyzowane i ponownie przetestowane.
+The first closure candidate was **not accepted uncritically**. The evidence audit found an ambiguous authentication boundary, an initially weak concurrency stress level, a restart test without proof of process replacement, and unexplained `1000 -> 2000` receipt records. These issues were repaired or clarified and then retested.
 
-## Wynik końcowy
+## Final result
 
-| Obszar | Wynik |
+| Area | Result |
 |---|---:|
 | Final regression | **461 / 461 PASS** |
 | Authority boundary | **PASS** |
@@ -55,7 +55,7 @@ missing identity -> DENY
 denied command   -> not persisted into command registry
 ```
 
-### 1000× pełny pipeline
+### Full 1000x pipeline
 
 ```text
 received      1000
@@ -73,7 +73,7 @@ duplicate_effects 0
 
 ### Receipt accounting
 
-Każda komenda generuje dwa różne rekordy receipt z odmienną semantyką:
+Each command generates two receipt records with distinct semantics:
 
 ```text
 INTERFACE_RECORDED = 1000
@@ -84,15 +84,13 @@ orphan_receipts    = 0
 missing_receipts   = 0
 ```
 
-Jest to świadome rozdzielenie potwierdzenia zapisania komendy od potwierdzenia akceptacji/wykonania, a nie podwójne wykonanie efektu.
+This intentionally separates confirmation that the command was recorded from confirmation that it was accepted/executed. It is not double execution of the effect.
 
-### Real process restart 20×
+### Real process restart 20x
 
-Każda iteracja uruchamiała nowy proces ROBERTA. W każdym cyklu potwierdzono zmianę PID, aktywność ROOT control, wykonanie komendy oraz wynik po restarcie.
+Each iteration launched a new ROBERT process. Every cycle verified PID change, ROOT-control availability, command execution and a returned result after restart.
 
 ## Channel boundary
-
-Stan kanałów w tym teście:
 
 ```text
 local     IMPLEMENTED / PASS
@@ -102,22 +100,22 @@ realtime  NOT_IMPLEMENTED
 remote    NOT_IMPLEMENTED
 ```
 
-`realtime` i `remote` **nie są przedstawiane jako działające** i pozostają poza zakresem closure TEST 4.
+`realtime` and `remote` are **not represented as operational** and remain outside TEST 4 closure scope.
 
 ## Claim boundary
 
-TEST 4 wspiera twierdzenie, że w badanym środowisku rozwojowym istnieje kanoniczny lokalny Terminal ROOT z przetestowanym authority boundary, pełnym pipeline, concurrency, receipt/audit semantics i real-process restart recovery.
+TEST 4 supports the claim that, in the tested development environment, a canonical local ROOT Terminal exists with tested authority boundary, full pipeline, concurrency, receipt/audit semantics and real-process restart recovery.
 
-TEST 4 **nie** dowodzi:
+TEST 4 does **not** prove:
 
-- production readiness całego SSI;
-- gotowości kanałów realtime/remote;
-- jakości albo niezawodności zewnętrznego model/provider API;
-- AGI, świadomości ani uniwersalnej autonomii.
+- production readiness of the whole SSI system;
+- readiness of realtime/remote channels;
+- quality or reliability of external model/provider APIs;
+- AGI, consciousness or universal autonomy.
 
 ## Public/private boundary
 
-Publiczny zestaw zawiera wyłącznie oczyszczone summary i machine evidence. Nie publikuje prywatnego kodu `root_control`, `root_runtime_bridge`, plików kodu źródłowego, service definitions, lokalnych ścieżek, raw logów, backupów, sekretów ani tokenów.
+The public package contains only sanitized summaries and machine evidence. It does not publish private `root_control` or `root_runtime_bridge` source, source files, service definitions, local paths, raw logs, backups, secrets or tokens.
 
 ## Final verdict
 
