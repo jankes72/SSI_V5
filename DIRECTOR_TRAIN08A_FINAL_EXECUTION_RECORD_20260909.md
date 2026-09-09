@@ -4,7 +4,7 @@
 **Target baseline:** `DIRECTOR_FROZEN_C0`  
 **Executed package:** `SSI_TRAIN08A_DIRECTOR_FOUNDATION_V1_20260909_REBUILT_FOR_KILO`  
 **Training phase:** `TRAIN08A FOUNDATION`  
-**Final status:** `PASS`  
+**Final status:** `CLOSED / VERIFIED PASS`  
 **Steps:** `48/48 PASS`  
 **FAIL:** `0`  
 **INCONCLUSIVE:** `0`  
@@ -35,6 +35,68 @@ foundation_s1_created = true
 ```
 
 This is a scoped training result. It does not claim external validation, AGI, consciousness, production readiness, universal transfer or completion of TRAIN08B.
+
+## Predeclaration chronology
+
+The original TRAIN08A package family was publicly recorded before the final result was known:
+
+```text
+PREDECLARED PACKAGE
+SSI_TRAIN08A_DIRECTOR_FOUNDATION_V1_20260909
+
+STEPS
+48
+
+ZIP_SHA256
+76847299993eb24090921b73de5e0bacb1bc021859327e0cebabf66a5526f739
+
+FROZEN_MANIFEST_SHA256
+eb38c5f8d9f914382202d410923c729bbdc3a37439e8450f85d78245a0ec3a27
+
+FOUNDATION_CURRICULUM_SHA256
+61a3069ce68d19c64d4ae7c5ebc730d04283d81b2e534f487c3fd5063d9b75b8
+
+PREDECLARATION COMMIT
+5433200ec2a1b10804050b03df9cf151a26bde0a
+
+PREDECLARATION TIME
+2026-09-09T00:00:18Z
+```
+
+The final execution record was published later:
+
+```text
+FINAL EXECUTION RECORD COMMIT
+c7ebcfceda02cee74dd502180ea3097a189dd482
+
+FINAL RECORD TIME
+2026-09-09T15:30:27Z
+```
+
+This chronology supports that the declared package family, baseline, 48-step scope and Foundation curriculum identity existed publicly before publication of the final 48/48 outcome.
+
+## Rebuilt-package integrity boundary
+
+The execution continuation is labeled:
+
+```text
+SSI_TRAIN08A_DIRECTOR_FOUNDATION_V1_20260909_REBUILT_FOR_KILO
+```
+
+The public repository currently does not publish a separate exact ZIP SHA-256 for this rebuilt archive and does not publish a byte-by-byte or file-by-file proof that it is identical to the originally predeclared ZIP.
+
+Therefore this record does **not** claim:
+
+```text
+REBUILT PACKAGE = BYTE-FOR-BYTE IDENTICAL TO PREDECLARED ZIP
+REBUILT ZIP SHA256 = PUBLICLY VERIFIED
+```
+
+What the public evidence does support is continuity of the declared TRAIN08A Foundation target/scope, the 48 unique steps, the shared Foundation curriculum identity, the preserved executor transition, the final held-out contamination PASS and the recorded `material_integrity_violation = false` state.
+
+Authoritative rebuild/provenance boundary:
+
+- [`evidence/DIRECTOR_TRAIN08A_REBUILD_INTEGRITY_RECORD_20260909.md`](evidence/DIRECTOR_TRAIN08A_REBUILD_INTEGRITY_RECORD_20260909.md)
 
 ## Executor history — preserved, not hidden
 
@@ -146,14 +208,14 @@ The corrected run reports all three tests PASS.
 
 The original event was not erased or overwritten. This is treated as a preserved test-oracle correction, not as a hidden rewrite of history.
 
-## Important distinction: seeded/internal debugging failures vs experiment-level outcome
+## Important distinction: seeded/internal debugging failures vs step-level outcome
 
 Several curriculum steps intentionally contain defects or debugging/recovery exercises. An internal attempt may fail inside a step before the required root-cause fix and final verification succeed.
 
 Therefore:
 
 ```text
-experiment-level step FAIL outcomes = 0
+step-level FAIL outcomes = 0
 curriculum-contained/debugging failure events may exist inside PASS steps
 ```
 
@@ -181,11 +243,11 @@ DIRECTOR_FOUNDATION_S1
 
 ## Claim boundary
 
-Supported by the final local evidence package:
+Supported by the final local evidence package and public chronology:
 
 ```text
-TRAIN08A = COMPLETE / PASS
-48/48 declared steps = PASS
+TRAIN08A = CLOSED / VERIFIED PASS
+48/48 declared unique steps = PASS
 0 step-level FAIL
 0 step-level INCONCLUSIVE
 16/16 blind validations = PASS
@@ -193,11 +255,15 @@ TRAIN08A = COMPLETE / PASS
 final checkpoint = CHECKPOINT_16
 Kiro -> Kilo handoff = step 17 -> 18
 DIRECTOR_FOUNDATION_S1 = created by the TRAIN08A procedure
+predeclaration before final result = publicly traceable
+rebuild provenance = documented
 ```
 
 Not claimed:
 
 ```text
+REBUILT PACKAGE BYTE-LEVEL EQUIVALENCE = VERIFIED
+REBUILT ZIP SHA256 = PUBLICLY VERIFIED
 TRAIN08B = COMPLETE
 DIRECTOR_TRAINED_START_S2 = CREATED
 external independent scientific validation
@@ -211,4 +277,4 @@ executor-independent timing equivalence between Kiro and Kilo
 
 The public repository remains an evidence-oriented research mirror. Proprietary Director/SSI source, private runtime implementation and sensitive operational material remain private.
 
-This document publishes the training outcome, interruption/handoff history, checkpoint structure, correction history and claim boundaries without requiring release of proprietary source code.
+This document publishes the training outcome, predeclaration chronology, interruption/handoff history, checkpoint structure, correction history, rebuild-integrity boundary and claim boundaries without requiring release of proprietary source code.
