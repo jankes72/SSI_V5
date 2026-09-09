@@ -71,6 +71,28 @@ CANONICAL ROBERT
 = not reset by experiment-branch cleaning
 ```
 
+## Commercial availability — verified TRAIN08A reference
+
+As of `2026-09-10`, the author has decided to make the first verified SSI Foundation training package methodology available for **commercial licensing / controlled delivery and target-specific adaptation**.
+
+The reference execution is:
+
+```text
+SSI_TRAIN08A_DIRECTOR_FOUNDATION_V1_20260909_REBUILT_FOR_KILO
+-> DIRECTOR_FROZEN_C0
+-> CLOSED / VERIFIED PASS
+-> 48/48 declared unique steps PASS
+-> 16/16 blind validations PASS
+-> 16 checkpoints
+-> DIRECTOR_FOUNDATION_S1 CREATED
+```
+
+This commercial declaration does **not** claim that the package has already been validated on all BODY/ISKRA lines. BODY/ISKRA use requires its own target-specific package identity, start-state verification, execution, evidence and PASS/FAIL/INCONCLUSIVE closure.
+
+Commercial availability does not change the public/private boundary: proprietary SSI, Router V10, Micronetwork, private prompt/runtime and memory implementation remain private unless separately licensed or explicitly disclosed by the author.
+
+See [`COMMERCIAL_TRAIN08A_FOUNDATION_20260910.md`](COMMERCIAL_TRAIN08A_FOUNDATION_20260910.md).
+
 ## Two deliberately separated tracks
 
 ### A. Controlled BODY/ISKRA research track
@@ -320,13 +342,14 @@ Public evidence may include sanitized architecture descriptions, declared test p
 1. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
 2. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
 3. [`DIRECTOR_TRAINING_START_HERE.md`](DIRECTOR_TRAINING_START_HERE.md)
-4. [`evidence/DIRECTOR_TRAIN08A_FINAL_CLOSURE_20260909.md`](evidence/DIRECTOR_TRAIN08A_FINAL_CLOSURE_20260909.md)
-5. [`DIRECTOR_TRAIN08A_FINAL_EXECUTION_RECORD_20260909.md`](DIRECTOR_TRAIN08A_FINAL_EXECUTION_RECORD_20260909.md)
-6. [`DIRECTOR_TRAIN08A_LIVE_EXECUTION_RECORD_20260909.md`](DIRECTOR_TRAIN08A_LIVE_EXECUTION_RECORD_20260909.md)
-7. [`7BODY_TECHNICAL_READINESS_START_HERE.md`](7BODY_TECHNICAL_READINESS_START_HERE.md)
-8. [`evidence/7BODY_TECHNICAL_READINESS_FINAL_CLOSURE_20260909.md`](evidence/7BODY_TECHNICAL_READINESS_FINAL_CLOSURE_20260909.md)
-9. [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
-10. [`CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md`](CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md)
-11. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
+4. [`COMMERCIAL_TRAIN08A_FOUNDATION_20260910.md`](COMMERCIAL_TRAIN08A_FOUNDATION_20260910.md)
+5. [`evidence/DIRECTOR_TRAIN08A_FINAL_CLOSURE_20260909.md`](evidence/DIRECTOR_TRAIN08A_FINAL_CLOSURE_20260909.md)
+6. [`DIRECTOR_TRAIN08A_FINAL_EXECUTION_RECORD_20260909.md`](DIRECTOR_TRAIN08A_FINAL_EXECUTION_RECORD_20260909.md)
+7. [`DIRECTOR_TRAIN08A_LIVE_EXECUTION_RECORD_20260909.md`](DIRECTOR_TRAIN08A_LIVE_EXECUTION_RECORD_20260909.md)
+8. [`7BODY_TECHNICAL_READINESS_START_HERE.md`](7BODY_TECHNICAL_READINESS_START_HERE.md)
+9. [`evidence/7BODY_TECHNICAL_READINESS_FINAL_CLOSURE_20260909.md`](evidence/7BODY_TECHNICAL_READINESS_FINAL_CLOSURE_20260909.md)
+10. [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
+11. [`CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md`](CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md)
+12. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
 
 The standard remains: **predeclare what will be tested, preserve what actually happened, never hide a failure or executor transition, keep engineering and experiment claims separate, and make stronger claims only when stronger evidence exists.**
