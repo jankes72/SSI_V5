@@ -3,16 +3,16 @@
 **Updated:** 2026-09-09  
 **Baseline:** `DIRECTOR_FROZEN_C0 / VALIDATED ENGINEERING BASELINE`  
 **Training packages:** `2`  
-**Status:** `TRAIN08A IN PROGRESS / EXTERNAL INTERRUPTION RECORDED / KIRO -> KILO CONTINUATION`
+**Status:** `TRAIN08A COMPLETE / 48 OF 48 PASS / FOUNDATION_S1 CREATED`
 
 ## Sequence
 
 ```text
 DIRECTOR_FROZEN_C0
--> TRAIN08A FOUNDATION [IN PROGRESS]
--> DIRECTOR_FOUNDATION_S1 [NOT YET CLAIMED]
+-> TRAIN08A FOUNDATION [COMPLETE / 48 OF 48 PASS]
+-> DIRECTOR_FOUNDATION_S1 [CREATED]
 -> TRAIN08B LEGO + MICRONETWORK + V10 PRACTICUM [NOT YET STARTED]
--> DIRECTOR_TRAINED_START_S2
+-> DIRECTOR_TRAINED_START_S2 [NOT YET CLAIMED]
 -> RECORD EXACT S2 IDENTITY / HASH
 ```
 
@@ -21,8 +21,8 @@ DIRECTOR_FROZEN_C0
 ## TRAIN08A — Foundation
 
 ```text
-PACKAGE
-SSI_TRAIN08A_DIRECTOR_FOUNDATION_V1_20260909
+EXECUTED PACKAGE
+SSI_TRAIN08A_DIRECTOR_FOUNDATION_V1_20260909_REBUILT_FOR_KILO
 
 TARGET
 DIRECTOR_FROZEN_C0
@@ -30,28 +30,78 @@ DIRECTOR_FROZEN_C0
 STEPS
 48
 
-ZIP_SHA256
-76847299993eb24090921b73de5e0bacb1bc021859327e0cebabf66a5526f739
+FINAL RESULT
+PASS
 
-FROZEN_MANIFEST_SHA256
-eb38c5f8d9f914382202d410923c729bbdc3a37439e8450f85d78245a0ec3a27
+STEP OUTCOMES
+48 PASS / 0 FAIL / 0 INCONCLUSIVE
 
-STATE
-IN_PROGRESS
+BLIND VALIDATIONS
+16/16 PASS
 
-EXECUTION EVENT
-Kiro execution interrupted by external monthly usage limit.
-Continuation is being handed to Kilo from preserved state/evidence.
-Final 48-step outcome is NOT YET CLAIMED.
+CHECKPOINTS
+16
+
+FINAL CHECKPOINT
+CHECKPOINT_16
+
+OUTPUT STATE
+DIRECTOR_FOUNDATION_S1 CREATED
 ```
 
 Shared Foundation curriculum identity:
 
 `61a3069ce68d19c64d4ae7c5ebc730d04283d81b2e534f487c3fd5063d9b75b8`
 
-Live same-day execution record:
+## Executor history
+
+TRAIN08A was executed in two auditable segments:
+
+```text
+Kiro / kiro-cli / Auto cloud model
+steps 01-17
+
+Kilo / kilo-cli / free model
+steps 18-48
+```
+
+Exact handoff boundary:
+
+```text
+step 17 -> step 18
+M06 GUIDED_PRACTICE -> M06 BLIND_VALIDATION
+executor_transition_step = 18
+```
+
+The handoff was caused by exhaustion of Kiro's monthly usage allowance. It was an external service-usage interruption, not a TRAIN08A acceptance failure and not a model switch selected because of a poor Director outcome.
+
+At takeover time, `PROGRESS.json` lagged behind the event log: it reported step 15 as last completed while steps 16-17 were already present as PASS in the preserved events. Kilo reconstructed progress from the evidence and continued from the first unrecorded step 18 rather than restarting or repeating prior work.
+
+Historical Kiro evidence remained preserved.
+
+## Event-log accounting
+
+Final `TRAIN08A_EVENTS.jsonl` contains 67 valid JSON records:
+
+```text
+1 INIT
+49 step records representing 48 unique steps
+16 CHECKPOINT records
+1 EXECUTOR_HANDOFF
+= 67 total valid JSON events
+```
+
+Step 47 appears twice because an original PASS record and a preserved correction record are both retained. The correction fixes a test-oracle arithmetic expectation (`210.0` -> `190.0`, where `50+100+40=190`) rather than silently overwriting the first event.
+
+## Public records
+
+Same-day live interruption record:
 
 - [`DIRECTOR_TRAIN08A_LIVE_EXECUTION_RECORD_20260909.md`](DIRECTOR_TRAIN08A_LIVE_EXECUTION_RECORD_20260909.md)
+
+Final execution record:
+
+- [`DIRECTOR_TRAIN08A_FINAL_EXECUTION_RECORD_20260909.md`](DIRECTOR_TRAIN08A_FINAL_EXECUTION_RECORD_20260909.md)
 
 ## TRAIN08B — LEGO + Micronetwork + V10 Practicum
 
@@ -92,7 +142,7 @@ But Director training is an independent evidence/history line. It does not share
 
 ## Evidence rule
 
-Training must preserve actual outcomes:
+Training preserves actual outcomes and execution history:
 
 ```text
 PASS
@@ -101,6 +151,8 @@ INCONCLUSIVE
 INTERRUPTION
 RECOVERY
 CHECKPOINT
+EXECUTOR_HANDOFF
+CORRECTION
 ```
 
 Instruction and guided examples do not count as blind validation. Held-out experiment answers must not be taught during training.
@@ -111,10 +163,12 @@ Executor changes must be recorded explicitly and historical evidence must not be
 
 ```text
 DIRECTOR_FROZEN_C0 = CLOSED / VALIDATED IN DECLARED ENGINEERING SCOPE
-TRAIN08A = IN PROGRESS / PARTIAL STEP-LEVEL EVIDENCE EXISTS
-KIRO INTERRUPTION = RECORDED / EXTERNAL USAGE-LIMIT EVENT
-KILO CONTINUATION = STARTING FROM PRESERVED STATE
-DIRECTOR_FOUNDATION_S1 = NOT YET CLAIMED
+TRAIN08A = COMPLETE / PASS
+TRAIN08A STEPS = 48/48 PASS
+BLIND VALIDATIONS = 16/16 PASS
+CHECKPOINTS = 16 / FINAL CHECKPOINT_16
+KIRO -> KILO HANDOFF = STEP 17 -> STEP 18 / RECORDED
+DIRECTOR_FOUNDATION_S1 = CREATED
 TRAIN08B = PREDECLARED / NOT YET EXECUTED
 DIRECTOR_TRAINED_START_S2 = NOT YET CLAIMED
 ```
