@@ -31,7 +31,7 @@ STEPS
 48
 
 FINAL RESULT
-PASS
+CLOSED / VERIFIED PASS
 
 STEP OUTCOMES
 48 PASS / 0 FAIL / 0 INCONCLUSIVE
@@ -48,13 +48,79 @@ CHECKPOINT_16
 OUTPUT STATE
 DIRECTOR_FOUNDATION_S1 CREATED
 
-CLOSURE
-CLOSED / VERIFIED PASS
+HELD-OUT CONTAMINATION CHECK
+PASS
+
+MATERIAL INTEGRITY VIOLATION
+false
 ```
 
 Shared Foundation curriculum identity:
 
 `61a3069ce68d19c64d4ae7c5ebc730d04283d81b2e534f487c3fd5063d9b75b8`
+
+## Predeclaration chronology
+
+The original TRAIN08A package family was committed before the final result was published.
+
+```text
+ORIGINAL PREDECLARED PACKAGE
+SSI_TRAIN08A_DIRECTOR_FOUNDATION_V1_20260909
+
+ZIP_SHA256
+76847299993eb24090921b73de5e0bacb1bc021859327e0cebabf66a5526f739
+
+FROZEN_MANIFEST_SHA256
+eb38c5f8d9f914382202d410923c729bbdc3a37439e8450f85d78245a0ec3a27
+
+PREDECLARATION COMMIT
+5433200ec2a1b10804050b03df9cf151a26bde0a
+
+PREDECLARATION TIME
+2026-09-09T00:00:18Z
+
+FINAL EXECUTION RECORD COMMIT
+c7ebcfceda02cee74dd502180ea3097a189dd482
+
+FINAL RECORD TIME
+2026-09-09T15:30:27Z
+```
+
+This supports that the declared Director Foundation package family, target, step count and curriculum identity existed publicly before the final 48/48 result was published.
+
+## Rebuilt package integrity boundary
+
+The continued execution package is labeled:
+
+```text
+SSI_TRAIN08A_DIRECTOR_FOUNDATION_V1_20260909_REBUILT_FOR_KILO
+```
+
+The public repository currently does not publish a separate exact ZIP SHA-256 for that rebuilt archive and does not publish a byte-by-byte/file-by-file proof that it is byte-identical to the originally predeclared ZIP.
+
+Therefore the project does **not** claim:
+
+```text
+REBUILT PACKAGE = BYTE-FOR-BYTE IDENTICAL TO ORIGINAL PREDECLARED ZIP
+REBUILT ZIP SHA256 = PUBLICLY VERIFIED
+```
+
+The public evidence supports the narrower continuity claim:
+
+```text
+TARGET = DIRECTOR_FROZEN_C0
+PHASE = FOUNDATION
+UNIQUE STEPS = 48
+FOUNDATION CURRICULUM IDENTITY = PRESERVED IN PUBLIC RECORDS
+FINAL STEP OUTCOMES = 48/48 PASS
+BLIND VALIDATIONS = 16/16 PASS
+CHECKPOINTS = 16
+HELD-OUT CONTAMINATION CHECK = PASS
+MATERIAL INTEGRITY VIOLATION = false
+OUTPUT = DIRECTOR_FOUNDATION_S1 CREATED
+```
+
+See [`evidence/DIRECTOR_TRAIN08A_REBUILD_INTEGRITY_RECORD_20260909.md`](evidence/DIRECTOR_TRAIN08A_REBUILD_INTEGRITY_RECORD_20260909.md).
 
 ## Executor history
 
@@ -96,19 +162,15 @@ Final `TRAIN08A_EVENTS.jsonl` contains 67 valid JSON records:
 
 Step 47 appears twice because an original PASS record and a preserved correction record are both retained. The correction fixes a test-oracle arithmetic expectation (`210.0` -> `190.0`, where `50+100+40=190`) rather than silently overwriting the first event.
 
+Curriculum-contained debugging failures may exist inside PASS steps. The public `48/48 PASS` claim refers to the final acceptance outcome of the 48 declared steps, not to an assertion that no intermediate debugging failure occurred.
+
 ## Public records
 
-Same-day live interruption record:
-
-- [`DIRECTOR_TRAIN08A_LIVE_EXECUTION_RECORD_20260909.md`](DIRECTOR_TRAIN08A_LIVE_EXECUTION_RECORD_20260909.md)
-
-Final execution record:
-
-- [`DIRECTOR_TRAIN08A_FINAL_EXECUTION_RECORD_20260909.md`](DIRECTOR_TRAIN08A_FINAL_EXECUTION_RECORD_20260909.md)
-
-Formal closure record:
-
-- [`evidence/DIRECTOR_TRAIN08A_FINAL_CLOSURE_20260909.md`](evidence/DIRECTOR_TRAIN08A_FINAL_CLOSURE_20260909.md)
+- [`DIRECTOR_TRAIN08A_LIVE_EXECUTION_RECORD_20260909.md`](DIRECTOR_TRAIN08A_LIVE_EXECUTION_RECORD_20260909.md) — same-day interruption/handoff record published before final completion.
+- [`DIRECTOR_TRAIN08A_FINAL_EXECUTION_RECORD_20260909.md`](DIRECTOR_TRAIN08A_FINAL_EXECUTION_RECORD_20260909.md) — authoritative final execution result.
+- [`evidence/DIRECTOR_TRAIN08A_FINAL_CLOSURE_20260909.md`](evidence/DIRECTOR_TRAIN08A_FINAL_CLOSURE_20260909.md) — formal closure.
+- [`evidence/DIRECTOR_TRAIN08A_REBUILD_INTEGRITY_RECORD_20260909.md`](evidence/DIRECTOR_TRAIN08A_REBUILD_INTEGRITY_RECORD_20260909.md) — rebuild/provenance reconciliation.
+- [`PREDECLARED_DIRECTOR_TRAINING_PACKAGES_20260909.md`](PREDECLARED_DIRECTOR_TRAINING_PACKAGES_20260909.md) — original precommitment and package hashes.
 
 ## TRAIN08B — LEGO + Micronetwork + V10 Practicum
 
@@ -176,13 +238,12 @@ BLIND VALIDATIONS = 16/16 PASS
 CHECKPOINTS = 16 / FINAL CHECKPOINT_16
 KIRO -> KILO HANDOFF = STEP 17 -> STEP 18 / RECORDED
 DIRECTOR_FOUNDATION_S1 = CREATED
+PREDECLARATION BEFORE FINAL RESULT = PUBLICLY TRACEABLE
+REBUILD PROVENANCE = DOCUMENTED
+REBUILT BYTE-LEVEL EQUIVALENCE = NOT PUBLICLY CLAIMED
 TRAIN08B = NEXT / PREDECLARED / NOT YET EXECUTED
 DIRECTOR_TRAINED_START_S2 = NOT YET CLAIMED
 ```
-
-Detailed registry:
-
-- [`PREDECLARED_DIRECTOR_TRAINING_PACKAGES_20260909.md`](PREDECLARED_DIRECTOR_TRAINING_PACKAGES_20260909.md)
 
 Director integration/C0 record:
 
