@@ -3,15 +3,16 @@
 **Status:** `PUBLIC RESEARCH INDEX / 2026-09-09`  
 **Frozen common baseline:** `T0 / BODY_FROZEN / PRE-ISKRA / RECORDED / 2026-09-05`  
 **Current ISKRA start state:** `6X BODY ISKRA / START_STATE_VALIDATED / 2026-09-06`  
-**Latest closed validation:** `TEST 5 / DEVELOPMENT_VALIDATED`  
-**7-BODY technical readiness:** `PRE-REPAIR AUDIT COMPLETE 43/43 / FINAL 7/7 NOT YET CLOSED`  
-**Pre-experiment training:** `14 HASH-SEALED PACKAGES / PREDECLARED / NOT YET EXECUTED`  
+**Latest closed development validation:** `TEST 5 / DEVELOPMENT_VALIDATED`  
+**7-BODY technical readiness:** `CLOSED / 7 OF 7 PASS / 147 OF 147 A01-A21 CELLS PASS`  
+**Immediate research stage:** `TRAIN-A FOUNDATION / GATE OPEN / NOT YET EXECUTED`  
+**Pre-experiment training:** `14 HASH-SEALED PACKAGES / 7 BODY x 2 PHASES / NOT YET EXECUTED`  
 **Mechanism-test packages:** `7 INDEPENDENT MICRONETWORK + V10 PACKAGES / HASH-SEALED / NOT YET EXECUTED`  
 **Cross-domain program:** `7 x 3 = 21 EXPERIMENTS / PREDECLARED / FINAL OUTCOMES UNKNOWN`  
 **Director mainline:** `DIRECTOR_FROZEN_C0 / ENGINEERING BASELINE CLOSED / INTEGRITY VERIFIED`  
 **Canonical ROBERT:** `CONTINUOUS ENGINEERING LINE / NOT RESET BY EXPERIMENT CLEANING`
 
-This index separates historical controls, current start states, pre-repair readiness evidence, future training descendants, frozen experiment precommitments, the later 21-run program and the parallel Director engineering mainline.
+This index separates historical controls, closed technical-readiness evidence, the immediate training gate, future training descendants, frozen experiment precommitments and the parallel Director engineering mainline.
 
 > Public documentation is evidence-oriented. Proprietary implementation source, private execution logic, secrets and internal operational details remain private.
 
@@ -57,123 +58,115 @@ OPEN_BLOCKERS = 0
 
 This result is scoped development validation. It is not production-readiness, AGI or consciousness evidence.
 
-## 2. 7-BODY technical-readiness gate
+## 2. 7-BODY technical-readiness gate — CLOSED
 
-The readiness gate must close before pre-experiment training is executed.
-
-Required scope includes:
+The readiness gate has now closed successfully in its declared technical scope.
 
 ```text
-7/7 BODY LINES
-+ REVIEWER INTERFACE
-+ STARTUP / IDENTITY
-+ RUNTIME RESPONSIVENESS
-+ CONTINUUM / MICRONETWORK / V10 WHERE REQUIRED
-+ PERSISTENCE / CHECKPOINT
-+ BODY ISOLATION
-+ LOCAL ROOT AUTHORITY
-+ READ-ONLY REVIEWER BOUNDARY
-+ DECLARED ACCEPTANCE / REGRESSION
-+ NO UNRESOLVED BLOCKER KNOWN TO INVALIDATE INTERPRETATION
+BODY_FROZEN        = PASS
+ISKRA 1 NICE       = PASS
+ISKRA 2 GUARDIAN   = PASS
+ISKRA 3 JUSTICE    = PASS
+ISKRA 4 EXPLORER   = PASS
+ISKRA 5 PRAGMATIST = PASS
+ISKRA 6 SKEPTIC    = PASS
+
+GLOBAL = 7/7 PASS
+A01-A21 x 7 = 147/147 PASS
+CLOSURE VALIDATOR = PASS / CLOSURE EVIDENCE COMPLETE
 ```
 
-The sequential pre-repair audit completed `43/43` declared audit stages on 2026-09-08 in `READ_ONLY / TEST_ONLY` mode with zero BODY modifications and zero automatic repairs.
+The pre-repair audit remains preserved. Its earlier findings are not erased by the later PASS.
 
-However, the same audit preserved open findings, including:
+Final package integrity reference:
 
 ```text
-JUSTICE standard-launcher deviation
-repeated ISKRA Stage 09 test-fixture failures
-CONTINUUM full-flow orchestrator syntax issue
-unequal full-acceptance coverage across ISKRA lines
+SSI_7BODY_READINESS_REPAIR_RETEST_KILO_V1_20260908(3).zip
+SHA256 = 543092a3fe51540405d771415ffd25c376201e1aaa739ce4f8a672a8a41ac1d8
 ```
 
-Therefore the strict current truth is:
+The executed restart/persistence scope in this package was `1 controlled restart per BODY`. No stronger `20/20` claim is made.
 
-```text
-AUDIT_PROCEDURE_COMPLETE = YES
-7_BODY_TECHNICAL_READINESS = NOT YET CLOSED
-REPAIR_REQUIRED = YES
-COMMON_RETEST_REQUIRED = YES
-TRAINING_EXECUTION_GATE = CLOSED UNTIL READINESS PASSES
-```
+A launcher PID/status observability discrepancy remains recorded as a `KNOWN NON-BLOCKING ISSUE`; therefore the project does not claim zero known issues.
 
 References:
 
 - [`7BODY_TECHNICAL_READINESS_START_HERE.md`](7BODY_TECHNICAL_READINESS_START_HERE.md)
 - [`evidence/7BODY_TECHNICAL_READINESS_PRE_REPAIR_AUDIT_20260908.md`](evidence/7BODY_TECHNICAL_READINESS_PRE_REPAIR_AUDIT_20260908.md)
+- [`evidence/7BODY_TECHNICAL_READINESS_FINAL_CLOSURE_20260909.md`](evidence/7BODY_TECHNICAL_READINESS_FINAL_CLOSURE_20260909.md)
 
-A readiness failure is infrastructure/platform evidence, not automatically a V10 research-hypothesis result.
+A readiness result is infrastructure/platform evidence, not automatically a V10 research-hypothesis result.
 
-## 3. Pre-experiment training — 14 packages
+## 3. Immediate next research stage — TRAIN-A FOUNDATION
 
-Recorded on 2026-09-08 before outcomes were known.
-
-```text
-7 BODY LINES x 2 TRAINING PHASES = 14 PACKAGES
-```
-
-Phase A:
+The successful readiness closure opens the first training gate.
 
 ```text
-FOUNDATION
--> programming
--> debugging
--> task decomposition
--> project/task management
--> evidence/provenance
--> test-before-closure
--> checkpoint/resume
--> resource-aware execution
+TRAIN-A FOUNDATION GATE = OPEN
+EXECUTION = NOT YET STARTED / NOT YET CLAIMED
 ```
 
-Phase B:
+The immediate scope is seven independent Phase A packages:
 
 ```text
-LEGO + MICRONETWORK + V10 PRACTICUM
--> reuse
--> verification
--> composition
--> false-reuse protection
--> controlled failure
--> anti-loop
--> recovery
--> restart persistence
--> route-cost measurement
--> live reviewer correlation
+SSI_TRAIN01A_BODY_FROZEN_FOUNDATION_V1_20260908
+SSI_TRAIN02A_BODY_ISKRA1_NICE_FOUNDATION_V1_20260908
+SSI_TRAIN03A_BODY_ISKRA2_GUARDIAN_FOUNDATION_V1_20260908
+SSI_TRAIN04A_BODY_ISKRA3_JUSTICE_FOUNDATION_V1_20260908
+SSI_TRAIN05A_BODY_ISKRA4_EXPLORER_FOUNDATION_V1_20260908
+SSI_TRAIN06A_BODY_ISKRA5_PRAGMATIST_FOUNDATION_V1_20260908
+SSI_TRAIN07A_BODY_ISKRA6_SKEPTIC_FOUNDATION_V1_20260908
 ```
 
-Shared curriculum hashes:
+Shared Phase A curriculum identity:
 
 ```text
 FOUNDATION_CURRICULUM_SHA256
 = 61a3069ce68d19c64d4ae7c5ebc730d04283d81b2e534f487c3fd5063d9b75b8
-
-PRACTICUM_CURRICULUM_SHA256
-= abc3eccc4e19849f2d3b3be5b1a4d2752377b6024225f0da8d7d54f4ebafc7ce
 ```
 
-Training descendants are future versioned states:
+Phase A covers programming/debugging, task decomposition, project/task management, evidence/provenance, test-before-closure, checkpoint/resume and resource-aware execution.
+
+Required lineage:
 
 ```text
-T0
+T0 / VALIDATED START STATE
+-> TRAIN-A FOUNDATION
 -> FOUNDATION_S1
--> TRAINED_START_S2
 ```
 
-No training PASS, S1 or S2 outcome is currently claimed.
+Each `FOUNDATION_S1` must be independently frozen and identified after real execution. No S1 currently exists by claim.
 
 References:
 
+- [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
 - [`PREEXPERIMENT_TRAINING_PROGRAM_20260908.md`](PREEXPERIMENT_TRAINING_PROGRAM_20260908.md)
 - [`PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md`](PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md)
-- [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
 
-## 4. Mechanism-test packages — 7 independent lines
+## 4. Phase B training — prepared, not yet current
 
-The seven Micronetwork + Router V10 mechanism-test packages were predeclared and hash-sealed before outcomes were known.
+Phase B remains predeclared and hash-sealed but is not the immediate execution step.
 
-Current status:
+```text
+LEGO + MICRONETWORK + V10 PRACTICUM
+PRACTICUM_CURRICULUM_SHA256
+= abc3eccc4e19849f2d3b3be5b1a4d2752377b6024225f0da8d7d54f4ebafc7ce
+
+EXECUTION = NOT YET EXECUTED
+REQUIRES = PHASE A / FOUNDATION_S1
+```
+
+Its future output is:
+
+```text
+FOUNDATION_S1
+-> TRAIN-B PRACTICUM
+-> TRAINED_START_S2
+```
+
+## 5. Mechanism-test packages — 7 independent lines
+
+The seven Micronetwork + Router V10 mechanism-test packages remain predeclared and hash-sealed.
 
 ```text
 PREDECLARED = YES
@@ -182,25 +175,19 @@ EXECUTED = NO
 FINAL OUTCOMES = UNKNOWN
 ```
 
-Post-training execution rule:
+After training:
 
 ```text
 TRAINED_START_S2
 -> RECORD EXACT S2 IDENTITY / HASH
 -> CHECK COMPATIBILITY WITH EXISTING FROZEN EXPERIMENT CONTRACT
-
-IF COMPATIBLE
--> execution record binds exact S2 state
-
-IF MATERIAL INPUT CHANGES
--> NEW EXPERIMENT PACKAGE VERSION
--> NEW HASH
--> OLD PRECOMMITMENT PRESERVED
 ```
+
+A material input change requires a new package version/hash while preserving the historical precommitment.
 
 Reference: [`PREDECLARED_7BODY_MICRONETWORK_V10_PACKAGES_20260908.md`](PREDECLARED_7BODY_MICRONETWORK_V10_PACKAGES_20260908.md).
 
-## 5. 21-experiment cross-domain program
+## 6. 21-experiment cross-domain program
 
 ```text
 LINES = 7
@@ -212,16 +199,16 @@ B = HUMANOID
 C = NEW DOMAIN SELECTED BY THAT SSI LINE
 ```
 
-This program remains predeclared. Final controlled 21-run outcomes are unknown.
+This program remains predeclared. Final controlled outcomes are unknown.
 
 References:
 
 - [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
 - [`EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md`](EXPERIMENT_EXECUTION_METHODOLOGY_20260906.md)
 
-## 6. Director canonical mainline — DIRECTOR_FROZEN_C0
+## 7. Director canonical mainline — DIRECTOR_FROZEN_C0
 
-The separate canonical Director engineering/operational line has now reached a closed baseline:
+The separate canonical Director engineering/operational line has reached a closed baseline:
 
 ```text
 DIRECTOR_FROZEN_C0
@@ -237,12 +224,9 @@ DIRECTOR_FROZEN_C0
 = separate engineering descendant/integration baseline
 ```
 
-The Director line does not retroactively change BODY_FROZEN or ISKRA experiment evidence.
-
 Current Director truth in the C0 tested scope:
 
 ```text
-DIRECTOR MAINLINE DECLARED = YES
 LOCAL DIRECTOR RUNTIME = VALIDATED / RUNNING
 SINGLE RUNTIME PROTECTION = PASS
 IPC = ACTIVE / VALIDATED
@@ -273,38 +257,11 @@ FREEZE MANIFEST = CREATED
 FREEZE INTEGRITY = VERIFIED
 ```
 
-This is scoped internal engineering validation, not an external certification or production-readiness claim.
-
 Reference: [`DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md`](DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md).
-
-## 7. Director Control Panel vs reviewer interface
-
-The Director Control Panel is a validated local owner/operator execution and administration surface.
-
-It consolidates approved control and status paths without creating a second runtime or alternate authority.
-
-The reviewer interface remains separate and read-only.
-
-```text
-DIRECTOR CONTROL PANEL
-= LOCAL
-= OWNER / OPERATOR
-= AUTHORIZED EXECUTION + ADMINISTRATION
-= EXISTING CONTROL PATHS ONLY
-
-REVIEWER INTERFACE
-= OBSERVER_ONLY
-= READ-ONLY
-= SANITIZED OBSERVABILITY
-= NO ROOT
-= NO REMOTE EXECUTION
-```
-
-The separation is a deliberate security boundary preserved by the C0 baseline.
 
 ## 8. Performance / route-cost truth
 
-The project records the route actually reported by SSI and measures its cost rather than inferring route identity from timing.
+SSI records the route actually reported by the runtime and measures its cost rather than inferring route identity from timing.
 
 Comparable route families include:
 
@@ -355,14 +312,16 @@ Reference: [`CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md`](CANONICAL_EXPER
 
 ## 10. Current claim boundary
 
-SSI V5 does not currently claim that:
+SSI V5 currently claims that the declared 7-BODY technical-readiness gate closed `7/7 PASS` on internal evidence. It does **not** currently claim that:
 
-- 7-BODY technical readiness is already closed 7/7;
-- the readiness repair/retest has passed;
-- the 14 training packages have passed;
+- TRAIN-A FOUNDATION has already been executed or passed;
+- all seven `FOUNDATION_S1` states exist;
+- TRAIN-B PRACTICUM has passed;
 - all seven `TRAINED_START_S2` states exist;
 - the seven mechanism-test packages have passed;
 - the final controlled 21-run program has passed;
+- the PID/status known non-blocking issue does not exist;
+- the readiness package demonstrated `20/20` restarts per BODY;
 - `DIRECTOR_FROZEN_C0` is an external certification or proof of production readiness;
 - the central Director node is currently connected — C0 intentionally operates LOCAL-ONLY;
 - the Director currently controls the experimental ISKRA lines;
@@ -372,35 +331,24 @@ SSI V5 does not currently claim that:
 - drones/humanoids are validated physical deployments;
 - Kilo execution is independent scientific validation;
 - a package hash proves scientific correctness;
-- the live reviewer layer equals independent replication;
 - AGI, consciousness, universal transfer or production readiness has been established.
 
 ## 11. Public/private disclosure boundary
 
-Public materials may include:
+Public materials may include sanitized architecture descriptions, declared protocols, scoped measurements/results, safe hashes/manifests, failure/repair/retest history and reviewer-facing status summaries.
 
-```text
-SANITIZED ARCHITECTURE DESCRIPTIONS
-DECLARED TEST PROTOCOLS
-SCOPED MEASUREMENTS / RESULTS
-HASHES / MANIFESTS WHERE SAFE
-FAILURE / REPAIR / RETEST HISTORY
-REVIEWER-FACING STATUS SUMMARIES
-CLAIM BOUNDARIES
-```
-
-Public materials do not publish proprietary implementation source, internal execution logic, credentials, API keys, tokens, private runtime configuration, internal prompts or data that would materially reconstruct the private system.
+Public materials do not publish proprietary implementation source, internal execution logic, credentials, API keys, tokens, private runtime configuration or internal prompts/data that would materially reconstruct the private system.
 
 ## 12. Current correct sequence
 
 Controlled research track:
 
 ```text
-REPAIR + CLOSE 7/7 BODY READINESS
+7-BODY TECHNICAL READINESS = CLOSED 7/7 PASS
 -> EXECUTE TRAIN-A FOUNDATION PER BODY
--> RECORD FOUNDATION_S1
+-> RECORD 7 x FOUNDATION_S1 + HASH/IDENTITY
 -> EXECUTE TRAIN-B PRACTICUM PER BODY
--> RECORD TRAINED_START_S2 + HASH
+-> RECORD 7 x TRAINED_START_S2 + HASH/IDENTITY
 -> CHECK MECHANISM-PACKAGE / S2 COMPATIBILITY
 -> EXECUTE 7 MECHANISM TESTS
 -> EXECUTE 21 CROSS-DOMAIN PROGRAM
