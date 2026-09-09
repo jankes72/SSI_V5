@@ -5,11 +5,11 @@
 **Current ISKRA start state:** `6 independent T0 variants / START_STATE_VALIDATED / 2026-09-06`  
 **Latest closed development validation:** `TEST 5 / DEVELOPMENT_VALIDATED`  
 **7-BODY readiness:** `CLOSED / 7 OF 7 PASS / 147 OF 147 A01-A21 CELLS PASS`  
-**Immediate research stage:** `TRAIN-A FOUNDATION / GATE OPEN / NOT YET EXECUTED`  
+**BODY/ISKRA immediate research stage:** `TRAIN-A FOUNDATION / GATE OPEN / NOT YET EXECUTED`  
+**Director Foundation training:** `TRAIN08A COMPLETE / 48 OF 48 PASS / FOUNDATION_S1 CREATED`  
 **Training package set:** `14 HASH-SEALED PACKAGES / 7 BODY x 2 PHASES`  
 **Mechanism tests:** `7 INDEPENDENT MICRONETWORK + V10 PACKAGES / PREDECLARED / NOT YET EXECUTED`  
-**Cross-domain program:** `7 x 3 = 21 EXPERIMENTS / PREDECLARED / OUTCOMES UNKNOWN`  
-**Director mainline:** `DIRECTOR_FROZEN_C0 / ENGINEERING BASELINE CLOSED / INTEGRITY VERIFIED`
+**Cross-domain program:** `7 x 3 = 21 EXPERIMENTS / PREDECLARED / OUTCOMES UNKNOWN`
 
 > **Disclosure boundary:** this repository is a public evidence/review mirror, not a source-code distribution. Proprietary SSI, DIRECTOR, ROBERT, Router V10, Micronetwork and ISKRA implementation code remains private. Public materials describe validated behavior, architecture at a safe level, test status, sanitized evidence and claim boundaries.
 
@@ -17,7 +17,7 @@
 
 SSI V5 has two deliberately separated tracks.
 
-### Controlled research track
+### Controlled BODY/ISKRA research track
 
 ```text
 IMMUTABLE T0 CONTROLS
@@ -33,18 +33,18 @@ IMMUTABLE T0 CONTROLS
 -> LATER EXTERNAL FALSIFICATION CHALLENGES
 ```
 
-### Parallel canonical engineering track
+### Parallel Director engineering/training track
 
 ```text
 VALIDATED BODY FOUNDATION
 + EXISTING WORKING DIRECTOR FUNCTIONS
 -> NEW CANONICAL DIRECTOR
--> LOCAL DIRECTOR CONTROL PANEL
--> SHARED READ-ONLY REVIEWER OBSERVABILITY
--> RESTART / PERSISTENCE / CHECKPOINT / IPC VALIDATION
 -> DIRECTOR_FROZEN_C0
+-> TRAIN08A FOUNDATION = COMPLETE / 48 OF 48 PASS
+-> DIRECTOR_FOUNDATION_S1 = CREATED
+-> TRAIN08B PRACTICUM = NEXT / NOT YET EXECUTED
+-> DIRECTOR_TRAINED_START_S2 = FUTURE
 -> LATER DIRECTOR -> ROBERT INTEGRATION
--> LATER WORLD / AGENT INTEGRATION
 ```
 
 The Director line is not a completed BODY experiment and does not rewrite `BODY_FROZEN T0`.
@@ -84,49 +84,16 @@ Read first:
 - [`evidence/7BODY_TECHNICAL_READINESS_PRE_REPAIR_AUDIT_20260908.md`](evidence/7BODY_TECHNICAL_READINESS_PRE_REPAIR_AUDIT_20260908.md)
 - [`evidence/7BODY_TECHNICAL_READINESS_FINAL_CLOSURE_20260909.md`](evidence/7BODY_TECHNICAL_READINESS_FINAL_CLOSURE_20260909.md)
 
-## Immediate next stage — TRAIN-A FOUNDATION
+## BODY/ISKRA immediate next stage — TRAIN-A FOUNDATION
 
-The readiness gate is no longer blocking training.
-
-The immediate controlled execution scope is now exactly seven Phase A packages:
+The readiness gate is no longer blocking training for the seven controlled BODY/ISKRA lines.
 
 ```text
-SSI_TRAIN01A_BODY_FROZEN_FOUNDATION_V1_20260908
-SSI_TRAIN02A_BODY_ISKRA1_NICE_FOUNDATION_V1_20260908
-SSI_TRAIN03A_BODY_ISKRA2_GUARDIAN_FOUNDATION_V1_20260908
-SSI_TRAIN04A_BODY_ISKRA3_JUSTICE_FOUNDATION_V1_20260908
-SSI_TRAIN05A_BODY_ISKRA4_EXPLORER_FOUNDATION_V1_20260908
-SSI_TRAIN06A_BODY_ISKRA5_PRAGMATIST_FOUNDATION_V1_20260908
-SSI_TRAIN07A_BODY_ISKRA6_SKEPTIC_FOUNDATION_V1_20260908
+7 BODY/ISKRA TRAIN-A RUNS = NOT YET EXECUTED
+7 BODY/ISKRA FOUNDATION_S1 STATES = NOT YET CLAIMED
 ```
 
-Shared Foundation curriculum identity:
-
-```text
-61a3069ce68d19c64d4ae7c5ebc730d04283d81b2e534f487c3fd5063d9b75b8
-```
-
-Phase A covers:
-
-```text
-task interpretation
-programming / debugging
-decomposition
-project / task management
-testing / evidence
-checkpoint / resume
-resource-aware execution
-```
-
-Required lineage:
-
-```text
-T0 / VALIDATED START STATE
--> TRAIN-A FOUNDATION
--> FOUNDATION_S1
-```
-
-No Phase A run has started or passed yet, and no `FOUNDATION_S1` is currently claimed.
+This remains separate from the Director TRAIN08A result below.
 
 References:
 
@@ -134,63 +101,60 @@ References:
 - [`PREEXPERIMENT_TRAINING_PROGRAM_20260908.md`](PREEXPERIMENT_TRAINING_PROGRAM_20260908.md)
 - [`PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md`](PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md)
 
-## Phase B and later experiments remain future work
+## Director TRAIN08A — first completed Foundation acquisition run
 
-Phase B — LEGO + Micronetwork + V10 Practicum — remains prepared and hash-sealed but follows Phase A / `FOUNDATION_S1`.
-
-```text
-FOUNDATION_S1
--> TRAIN-B PRACTICUM
--> TRAINED_START_S2
--> S2 IDENTITY / HASH
--> MECHANISM-PACKAGE COMPATIBILITY CHECK
--> 7 V10 MECHANISM TESTS
--> 21 CROSS-DOMAIN EXPERIMENTS
-```
-
-No success is claimed in advance for these later stages.
-
-## Director mainline — validated C0 baseline
-
-The canonical Director engineering line has reached:
+The separate Director line has completed TRAIN08A against `DIRECTOR_FROZEN_C0`.
 
 ```text
-DIRECTOR_FROZEN_C0
+RESULT = PASS
+STEPS = 48/48 PASS
+FAIL = 0
+INCONCLUSIVE = 0
+BLIND VALIDATIONS = 16/16 PASS
+CHECKPOINTS = 16
+FINAL CHECKPOINT = CHECKPOINT_16
+OUTPUT STATE = DIRECTOR_FOUNDATION_S1 CREATED
 ```
 
-Validated in the C0 tested scope are the local runtime, single-runtime protection, IPC, lifecycle controls, checkpoint/restart/persistence, CONTINUUM, LAB, Micronetworks, Router V10, persistent conversation memory, local Control Panel, observer-only shared WWW surface, hardware status and model/backend status.
-
-Final C0 verification recorded:
+Execution history is explicitly preserved:
 
 ```text
-FINAL PANEL / SYSTEM CHECKS = 27/27 PASS
-SELECTED PYTEST VALIDATION = 19/19 PASS
-INDEPENDENCE VALIDATION = PASS
-FREEZE MANIFEST = CREATED
-FREEZE INTEGRITY = VERIFIED
+Kiro = steps 01-17
+Kilo = steps 18-48
+handoff boundary = step 17 -> step 18
 ```
 
-Reference:
+Kiro stopped accepting requests after the account reached its monthly usage limit. This was an external service-usage interruption, not a TRAIN08A acceptance failure. The handoff was recorded while the final outcome was still unknown.
 
-- [`DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md`](DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md)
+At takeover, `PROGRESS.json` lagged behind the event log: it reported step 15 while steps 16-17 were already present as PASS. Kilo reconstructed progress from preserved evidence and resumed from step 18 rather than restarting.
 
-## Local Director Control Panel vs reviewer interface
+Final event-log accounting:
 
 ```text
-DIRECTOR CONTROL PANEL
-= LOCAL
-= OWNER / OPERATOR
-= AUTHORIZED EXECUTION + ADMINISTRATION
-
-SHARED REVIEWER INTERFACE
-= OBSERVER_ONLY
-= READ-ONLY
-= SANITIZED OBSERVABILITY
-= NO ROOT
-= NO REMOTE EXECUTION
+67 valid JSON records
+48 unique training steps
+16 checkpoints
+1 executor handoff
+1 preserved correction event for step 47
 ```
 
-The separation is deliberate and preserved in C0.
+The step-47 correction preserves both records and corrects a test-oracle arithmetic expectation from `210.0` to `190.0` (`50+100+40=190`).
+
+Read:
+
+- [`DIRECTOR_TRAINING_START_HERE.md`](DIRECTOR_TRAINING_START_HERE.md)
+- [`DIRECTOR_TRAIN08A_LIVE_EXECUTION_RECORD_20260909.md`](DIRECTOR_TRAIN08A_LIVE_EXECUTION_RECORD_20260909.md)
+- [`DIRECTOR_TRAIN08A_FINAL_EXECUTION_RECORD_20260909.md`](DIRECTOR_TRAIN08A_FINAL_EXECUTION_RECORD_20260909.md)
+
+## Director next gate
+
+```text
+DIRECTOR_FOUNDATION_S1
+-> TRAIN08B LEGO + MICRONETWORK + V10 PRACTICUM
+-> DIRECTOR_TRAINED_START_S2
+```
+
+TRAIN08B has not yet been executed and S2 is not claimed.
 
 ## Current established evidence
 
@@ -201,25 +165,24 @@ START_STATE_QA = 8/8 per agent
 GROUP_QA = 48/48 PASS
 TEST 5 = 29/29 acceptance
 TEST 5 TOTAL REGRESSION = 524/524 PASS
-7-BODY PRE-REPAIR AUDIT = 43/43 PROCEDURE COMPLETE
 7-BODY FINAL READINESS = 7/7 PASS
 A01-A21 COMMON MATRIX = 147/147 PASS
 DIRECTOR_FROZEN_C0 = CLOSED ENGINEERING BASELINE / INTEGRITY VERIFIED
-DIRECTOR FINAL PANEL/SYSTEM CHECKS = 27/27 PASS
-DIRECTOR SELECTED PYTEST = 19/19 PASS
+DIRECTOR TRAIN08A = 48/48 PASS
+DIRECTOR TRAIN08A BLIND VALIDATIONS = 16/16 PASS
+DIRECTOR FOUNDATION_S1 = CREATED BY DECLARED TRAIN08A PROCEDURE
 ```
 
 ## Current unknowns / not yet claimed
 
 ```text
-TRAIN-A outcomes
-FOUNDATION_S1 contents
-TRAIN-B outcomes
-TRAINED_START_S2 contents
+7 BODY/ISKRA TRAIN-A outcomes
+7 BODY/ISKRA FOUNDATION_S1 states
+Director TRAIN08B outcome
+DIRECTOR_TRAINED_START_S2
 7 mechanism-test outcomes
 21 cross-domain outcomes
 Director -> ROBERT integration
-Director control of experimental ISKRA lines
 post-21 consolidation outcome
 three-new-domain result
 long-run ISKRA divergence
@@ -232,13 +195,12 @@ AGI / consciousness / production readiness
 
 1. [`README.md`](README.md)
 2. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
-3. [`7BODY_TECHNICAL_READINESS_START_HERE.md`](7BODY_TECHNICAL_READINESS_START_HERE.md)
-4. [`evidence/7BODY_TECHNICAL_READINESS_FINAL_CLOSURE_20260909.md`](evidence/7BODY_TECHNICAL_READINESS_FINAL_CLOSURE_20260909.md)
-5. [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
-6. [`PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md`](PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md)
-7. [`DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md`](DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md)
-8. [`CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md`](CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md)
-9. [`PREDECLARED_7BODY_MICRONETWORK_V10_PACKAGES_20260908.md`](PREDECLARED_7BODY_MICRONETWORK_V10_PACKAGES_20260908.md)
-10. [`evidence/README.md`](evidence/README.md)
+3. [`DIRECTOR_TRAINING_START_HERE.md`](DIRECTOR_TRAINING_START_HERE.md)
+4. [`DIRECTOR_TRAIN08A_FINAL_EXECUTION_RECORD_20260909.md`](DIRECTOR_TRAIN08A_FINAL_EXECUTION_RECORD_20260909.md)
+5. [`DIRECTOR_TRAIN08A_LIVE_EXECUTION_RECORD_20260909.md`](DIRECTOR_TRAIN08A_LIVE_EXECUTION_RECORD_20260909.md)
+6. [`7BODY_TECHNICAL_READINESS_START_HERE.md`](7BODY_TECHNICAL_READINESS_START_HERE.md)
+7. [`evidence/7BODY_TECHNICAL_READINESS_FINAL_CLOSURE_20260909.md`](evidence/7BODY_TECHNICAL_READINESS_FINAL_CLOSURE_20260909.md)
+8. [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
+9. [`CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md`](CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md)
 
-The repository should be read with a strict separation between historical evidence, closed readiness/engineering baselines, prepared future work and actually executed research outcomes.
+The repository should be read with a strict separation between historical evidence, closed readiness/engineering baselines, actual executed training outcomes and prepared future work.
