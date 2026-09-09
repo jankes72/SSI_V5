@@ -14,6 +14,14 @@ The project should be evaluated from its **predeclared protocols, measured outco
 
 See [`AUTHOR_CONTEXT.md`](AUTHOR_CONTEXT.md).
 
+## Project origin, methodology, and long-term architecture
+
+A consolidated provenance document now records how SSI V5 evolved from earlier sports/world-model experimentation into the current persistent-competence research architecture, how the author’s working method changed over time, how ROBERT and DIRECTOR are separated from controlled BODY/ISKRA research, how post-21 competence consolidation is intended to work, and which longer-term R&D/world/agent/economic ideas remain explicitly planned rather than validated.
+
+It also records the intended role of GitHub as a **versioned public memory of architectural provenance**: not only what SSI contains, but why mechanisms were introduced, what failed, what was repaired or superseded, and what evidence justified later changes.
+
+See [`SSI_V5_ORIGIN_RESEARCH_METHODOLOGY_AND_LONG_TERM_ARCHITECTURE.md`](SSI_V5_ORIGIN_RESEARCH_METHODOLOGY_AND_LONG_TERM_ARCHITECTURE.md).
+
 ## Current state — 2026-09-09
 
 ```text
@@ -330,13 +338,14 @@ Public evidence may include sanitized architecture descriptions, declared test p
 
 1. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
 2. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
-3. [`7BODY_TECHNICAL_READINESS_START_HERE.md`](7BODY_TECHNICAL_READINESS_START_HERE.md)
-4. [`evidence/7BODY_TECHNICAL_READINESS_FINAL_CLOSURE_20260909.md`](evidence/7BODY_TECHNICAL_READINESS_FINAL_CLOSURE_20260909.md)
-5. [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
-6. [`PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md`](PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md)
-7. [`DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md`](DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md)
-8. [`EXPERIMENT_PACKAGES_START_HERE.md`](EXPERIMENT_PACKAGES_START_HERE.md)
-9. [`CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md`](CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md)
-10. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
+3. [`SSI_V5_ORIGIN_RESEARCH_METHODOLOGY_AND_LONG_TERM_ARCHITECTURE.md`](SSI_V5_ORIGIN_RESEARCH_METHODOLOGY_AND_LONG_TERM_ARCHITECTURE.md)
+4. [`7BODY_TECHNICAL_READINESS_START_HERE.md`](7BODY_TECHNICAL_READINESS_START_HERE.md)
+5. [`evidence/7BODY_TECHNICAL_READINESS_FINAL_CLOSURE_20260909.md`](evidence/7BODY_TECHNICAL_READINESS_FINAL_CLOSURE_20260909.md)
+6. [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
+7. [`PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md`](PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md)
+8. [`DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md`](DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md)
+9. [`EXPERIMENT_PACKAGES_START_HERE.md`](EXPERIMENT_PACKAGES_START_HERE.md)
+10. [`CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md`](CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md)
+11. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
 
 The standard remains: **predeclare what will be tested, preserve what actually happened, never hide a failure, keep engineering and experiment claims separate, and make stronger claims only when stronger evidence exists.**
