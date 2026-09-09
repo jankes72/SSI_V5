@@ -1,17 +1,19 @@
 # DIRECTOR Mainline — BODY Foundation Integration
 
 **Declared:** 2026-09-08  
+**Updated:** 2026-09-09  
 **Line type:** `CANONICAL ENGINEERING / OPERATIONAL MAINLINE`  
-**Current status:** `IMPLEMENTATION IN PROGRESS`  
-**Final Director validation:** `NOT YET CLOSED`
+**Current frozen baseline:** `DIRECTOR_FROZEN_C0`  
+**C0 engineering validation:** `CLOSED / PASS IN DECLARED SCOPE`  
+**Next stage:** `2 DIRECTOR TRAINING PACKAGES / PREDECLARED / HASH-SEALED / NOT YET EXECUTED`
 
 ## Purpose
 
-SSI V5 is now opening the canonical `DIRECTOR` engineering line using the validated BODY architecture as its technical foundation.
+SSI V5 uses the validated BODY architecture as the technical foundation of the canonical `DIRECTOR` engineering line.
 
-This is **not** a rewrite of the historical `BODY_FROZEN T0` control and is **not** represented as a completed research outcome. `BODY_FROZEN T0` remains preserved as an immutable experimental baseline. The Director line is a separate operational descendant/integration line.
+This is **not** a rewrite of historical `BODY_FROZEN T0`. `BODY_FROZEN T0` remains an immutable experimental baseline. The Director is a separate operational descendant/integration line with its own state, runtime, authority and engineering history.
 
-The engineering direction is:
+The completed C0 engineering path is:
 
 ```text
 VALIDATED BODY FOUNDATION
@@ -20,141 +22,202 @@ VALIDATED BODY FOUNDATION
 -> DIRECTOR-SPECIFIC AUTHORITY / PLANNING / OPERATIONAL FUNCTIONS
 -> LOCAL DIRECTOR CONTROL PANEL
 -> SHARED READ-ONLY REVIEWER OBSERVABILITY
--> FULL INTEGRATION / RESTART / PERSISTENCE VALIDATION
--> FINAL DIRECTOR VERDICT
+-> INTEGRATION / RESTART / PERSISTENCE / IPC VALIDATION
+-> DIRECTOR_FROZEN_C0
 ```
 
-## Two migration sources, one new canonical line
+The next declared competence-development path is:
 
-The new Director is being built from two controlled sources:
+```text
+DIRECTOR_FROZEN_C0
+-> TRAIN08A FOUNDATION
+-> DIRECTOR_FOUNDATION_S1
+-> TRAIN08B LEGO + MICRONETWORK + V10 PRACTICUM
+-> DIRECTOR_TRAINED_START_S2
+-> record exact S2 identity/hash
+```
 
-1. the validated BODY foundation, including the current runtime architecture, Micronetworks, Router V10, CONTINUUM, persistence/recovery, lifecycle and evidence mechanisms;
+No Director training outcome is claimed yet.
+
+## Two migration sources, one canonical line
+
+The canonical Director was built from two controlled sources:
+
+1. the validated BODY foundation, including runtime architecture, Micronetworks, Router V10, CONTINUUM, persistence/recovery, lifecycle and evidence mechanisms;
 2. the already functioning historical Director implementation and its Director-specific operational capabilities.
 
-These sources are used as **migration inputs**, not as locations to repair in place. The intended result is one new canonical Director implementation with one coherent runtime path rather than multiple competing active copies.
+These were migration inputs rather than locations repaired in place. The result is one canonical Director line rather than multiple competing active Director truths.
 
 ## BODY_FROZEN relationship
-
-`BODY_FROZEN T0` remains unchanged as a historical experimental control.
-
-The Director line reuses the validated BODY architecture as an engineering foundation, but Director development does not retroactively change BODY_FROZEN evidence or the seven BODY experimental lines.
 
 ```text
 BODY_FROZEN T0
 = immutable experiment baseline
 
-DIRECTOR
-= separate canonical engineering descendant/integration line
+DIRECTOR_FROZEN_C0
+= separate validated engineering baseline
 ```
 
-## Director function scope
+Director development and training do not retroactively change BODY_FROZEN evidence or the seven BODY/ISKRA experimental histories.
 
-The Director line is intended to combine the BODY foundation with Director-specific capabilities, including where applicable:
+## DIRECTOR_FROZEN_C0 — validated engineering scope
 
-- strategic planning and project-state management;
-- Director memory and continuity;
-- Micronetwork competence access;
-- Router V10 routing;
-- Candidate -> Challenger -> Champion lifecycle use;
-- CONTINUUM and checkpoint/recovery;
-- model/provider and resource awareness;
-- local authority and operational control;
-- later controlled coordination with ROBERT and Worlds.
+Within the declared C0 scope, the public sanitized record states:
 
-No current claim is made that every listed function has already passed final Director validation.
+```text
+LOCAL DIRECTOR RUNTIME = RUNNING / validated
+SINGLE RUNTIME PROTECTION = PASS
+IPC = ACTIVE / validated
+CHECKPOINT + RESTART/PERSISTENCE = PASS
+CONTINUUM local integration = ACTIVE / validated
+LAB integration = ACTIVE / validated
+MICRONETWORK integration = validated
+ROUTER V10 integration = validated
+COLLECTIVE INTELLIGENCE status = validated
+PERSISTENT CONVERSATION MEMORY = validated across restart
+LOCAL DIRECTOR CONTROL PANEL = PASS
+SHARED WWW INTERFACE = PASS / OBSERVER_ONLY
+ROOT commands in shared WWW = NOT EXPOSED
+HARDWARE STATUS incl. NVIDIA GPU/VRAM = validated
+MODEL/BACKEND STATUS = validated in C0 scope
+CENTRAL DIRECTOR NODE = intentionally OFFLINE / LOCAL-ONLY mode
+
+FINAL PANEL / SYSTEM CHECKS = 27/27 PASS
+SELECTED PYTEST VALIDATION = 19/19 PASS
+INDEPENDENCE VALIDATION = PASS
+FREEZE MANIFEST = CREATED
+FREEZE INTEGRITY = VERIFIED
+```
+
+These are scoped internal engineering-validation results, not external certification and not a claim of production readiness, AGI or consciousness.
 
 ## Local Director Control Panel
 
-A dedicated **local Director Control Panel** is being developed as part of this line.
+The Director includes a dedicated **local Director Control Panel** for the owner/operator.
 
-This panel must not be confused with the shared reviewer/developer interface.
+It must not be confused with the shared reviewer/developer interface.
 
-The Director Control Panel is an owner/operator execution and administration surface intended to reduce routine dependence on manually opening multiple terminal windows.
+The Control Panel consolidates authorized local operations and status that otherwise required multiple terminal windows, including within the C0 tested scope:
 
-Planned/implemented-as-developed functions may include:
+- Director runtime lifecycle and service state;
+- local ROOT/command access through authorized control paths;
+- orchestrator and checkpoint/persistence state;
+- CONTINUUM status;
+- Micronetwork and Router V10 state;
+- model/provider status;
+- hardware/resource status;
+- diagnostics, logs and maintenance visibility.
 
-```text
-Director runtime start / stop / restart
-service and orchestrator state
-local ROOT / command access
-model/provider state
-CONTINUUM status
-Micronetwork / V10 status
-checkpoint and diagnostic state
-hardware/resource monitoring
-logs and maintenance actions
-```
-
-The exact validated control-panel function set will be recorded only after integration testing.
+The panel does not create a second runtime, second CONTINUUM or independent execution authority.
 
 ## Reviewer interface remains separate and read-only
-
-The shared reviewer/grant/developer interface remains an observability surface.
 
 ```text
 DIRECTOR CONTROL PANEL
 = LOCAL OWNER / OPERATOR
-= EXECUTION + ADMINISTRATION
+= AUTHORIZED EXECUTION + ADMINISTRATION
 
 SHARED REVIEWER INTERFACE
+= OBSERVER_ONLY
 = READ-ONLY
 = SANITIZED OBSERVABILITY
 = NO ROOT
 = NO REMOTE EXECUTION
 ```
 
-The Director is intended to appear as an additional independently identified entity in the shared interface, with reviewer-safe state such as runtime, checkpoint, CONTINUUM, Micronetwork/V10 summary and hardware telemetry where available.
+These remain deliberately separate security surfaces.
 
-This document does **not** claim that the Director reviewer-interface integration has already passed final validation.
+## Director training — same methodology, independent history
+
+Two Director training packages are now predeclared under the same general methodology used for BODY_FROZEN and the six ISKRA lines.
+
+Shared curriculum identities remain:
+
+```text
+FOUNDATION_CURRICULUM_SHA256
+= 61a3069ce68d19c64d4ae7c5ebc730d04283d81b2e534f487c3fd5063d9b75b8
+
+PRACTICUM_CURRICULUM_SHA256
+= abc3eccc4e19849f2d3b3be5b1a4d2752377b6024225f0da8d7d54f4ebafc7ce
+```
+
+Director package identities:
+
+```text
+SSI_TRAIN08A_DIRECTOR_FOUNDATION_V1_20260909
+ZIP_SHA256 = 76847299993eb24090921b73de5e0bacb1bc021859327e0cebabf66a5526f739
+STATE = NOT_YET_EXECUTED
+
+SSI_TRAIN08B_DIRECTOR_LEGO_MICRONETWORK_PRACTICUM_V1_20260909
+ZIP_SHA256 = 5db64c0ed006f785e1eb64c611be22d37d9386553f2815cc45fe7a83592cd441
+STATE = NOT_YET_EXECUTED
+```
+
+Full registry:
+
+- [`PREDECLARED_DIRECTOR_TRAINING_PACKAGES_20260909.md`](PREDECLARED_DIRECTOR_TRAINING_PACKAGES_20260909.md)
+
+The Director shares the curriculum family, not state. It retains its own memory, Experience, lifecycle and evidence lineage.
+
+## Training contamination boundary
+
+The same held-out separation rule applies:
+
+```text
+TRAIN THE GENERAL MECHANISM
+!=
+TRAIN THE HELD-OUT ANSWER
+```
+
+Exact reserved mechanism-test answers must not be taught during training. Instruction and guided practice do not count as independent blind-validation evidence.
 
 ## Current architecture sequence
 
-The current engineering/research program separates the lines deliberately:
+The project deliberately separates controlled BODY research from the canonical engineering line:
 
 ```text
-7-BODY TECHNICAL READINESS / REPAIR / RETEST
+CONTROLLED BODY RESEARCH
+BODY_FROZEN / ISKRA
+-> technical readiness repair/retest
+-> BODY/ISKRA training
+-> mechanism tests
+-> cross-domain program
 
-PARALLEL CANONICAL ENGINEERING LINE:
-BODY FOUNDATION -> DIRECTOR
-
-THEN:
-DIRECTOR -> ROBERT integration
--> Football World infrastructure
+CANONICAL ENGINEERING LINE
+DIRECTOR_FROZEN_C0
+-> Director Foundation training
+-> DIRECTOR_FOUNDATION_S1
+-> Director Practicum training
+-> DIRECTOR_TRAINED_START_S2
+-> later Director -> ROBERT integration
+-> later World infrastructure
 -> later Agent/World integration
 ```
 
-The experimental BODY/ISKRA lines remain isolated from Director authority while their controlled testing is in progress.
+The experimental BODY/ISKRA lines remain isolated from Director authority during their controlled testing.
 
-## Validation required before closure
+## Preservation rule
 
-The Director line must not be marked `VALIDATED` merely because components launch.
+`DIRECTOR_FROZEN_C0` is now the immutable reference baseline for this engineering stage.
 
-Closure requires evidence for the declared integration scope, including as applicable:
+Later training or engineering work must create a versioned descendant and must not rewrite C0 as if later competence existed at freeze time.
 
-- identity and one canonical runtime path;
-- Director-specific migrated functions;
-- V10/Micronetwork/CONTINUUM integration;
-- local authority boundaries;
-- control-panel functionality;
-- reviewer read-only separation;
-- restart/persistence;
-- no unintended duplicate active subsystem;
-- regression/integration tests;
-- preserved failure/repair/retest history.
-
-Final status must be evidence-based: `PASS`, `FAIL` or `INCONCLUSIVE` in the tested scope.
+A failure during later training does not invalidate C0 automatically; it becomes new training evidence and must be preserved as PASS / FAIL / INCONCLUSIVE according to the applicable contract.
 
 ## Claim boundary
 
-As of 2026-09-08:
+As of 2026-09-09:
 
 ```text
-DIRECTOR MAINLINE DECLARED = YES
-DIRECTOR IMPLEMENTATION = IN PROGRESS
+DIRECTOR MAINLINE = ESTABLISHED
+DIRECTOR_FROZEN_C0 = CLOSED / VALIDATED IN DECLARED ENGINEERING SCOPE
 BODY_FROZEN T0 MODIFIED = NO
-DIRECTOR CONTROL PANEL FINAL VALIDATION = NOT YET CLOSED
-DIRECTOR SHARED-INTERFACE FINAL VALIDATION = NOT YET CLOSED
-DIRECTOR FULL INTEGRATION PASS = NOT YET CLAIMED
+LOCAL DIRECTOR CONTROL PANEL = VALIDATED IN C0 SCOPE
+SHARED OBSERVER INTERFACE = VALIDATED READ-ONLY IN C0 SCOPE
+DIRECTOR TRAIN08A = PREDECLARED / HASH-SEALED / NOT YET EXECUTED
+DIRECTOR TRAIN08B = PREDECLARED / HASH-SEALED / NOT YET EXECUTED
+DIRECTOR_FOUNDATION_S1 = NOT YET CLAIMED
+DIRECTOR_TRAINED_START_S2 = NOT YET CLAIMED
 ```
 
-This is an engineering-line declaration and chronology record, not a claim of AGI, consciousness, production readiness or completed autonomous operation.
+This record does not claim external certification, production readiness, AGI, consciousness, universal transfer or successful future training.
