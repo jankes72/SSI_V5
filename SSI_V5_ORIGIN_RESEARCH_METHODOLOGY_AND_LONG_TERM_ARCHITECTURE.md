@@ -1,6 +1,7 @@
 # SSI V5 — Origin, Research Methodology, System Evolution, and Long-Term Architecture
 
 **Recorded:** 2026-09-09  
+**Last status sync:** 2026-09-09 / after DIRECTOR TRAIN08A closure  
 **Status:** `PUBLIC PROJECT PROVENANCE / RESEARCH ROADMAP / CLAIM-BOUNDED`  
 **Author / architecture:** Paweł Jankiewicz (`jankes72`)  
 **Repository role:** public evidence-indexed research mirror; proprietary implementation remains private
@@ -564,7 +565,7 @@ AGENT DISCOVERY
 
 DIRECTOR is a separate canonical engineering line.
 
-The current frozen engineering baseline is `DIRECTOR_FROZEN_C0`, documented in [`DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md`](DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md).
+The immutable frozen engineering baseline remains `DIRECTOR_FROZEN_C0`, documented in [`DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md`](DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md). The current post-Foundation Director descendant is now `DIRECTOR_FOUNDATION_S1`, created by the closed TRAIN08A procedure.
 
 Within the declared C0 engineering scope, public evidence records the validated local runtime, persistence/checkpoint behavior, CONTINUUM, LAB, Micronetwork and Router V10 integration, persistent conversation memory, local owner control panel, shared read-only observability, hardware/model status, and other scoped checks.
 
@@ -578,6 +579,111 @@ FREEZE INTEGRITY = VERIFIED
 ```
 
 These are internal engineering-validation results, not external certification or production-readiness evidence.
+
+### 16.1 DIRECTOR TRAIN08A — first closed Foundation acquisition
+
+After the original recording of this long-term document, the separate Director training line executed and formally closed its first Foundation stage:
+
+```text
+TARGET = DIRECTOR_FROZEN_C0
+TRAINING PHASE = TRAIN08A FOUNDATION
+RESULT = CLOSED / VERIFIED PASS
+UNIQUE STEPS = 48
+STEP OUTCOMES = 48 PASS / 0 FAIL / 0 INCONCLUSIVE
+BLIND VALIDATIONS = 16/16 PASS
+CHECKPOINTS = 16
+FINAL CHECKPOINT = CHECKPOINT_16
+VALID JSON EVENT RECORDS = 67
+OUTPUT = DIRECTOR_FOUNDATION_S1 CREATED
+HELD-OUT CONTAMINATION CHECK = PASS
+MATERIAL INTEGRITY VIOLATION = false
+```
+
+Execution provenance was preserved rather than rewritten as uninterrupted:
+
+```text
+Kiro / kiro-cli / Auto cloud model = steps 01-17
+Kilo / kilo-cli / free model = steps 18-48
+handoff boundary = step 17 -> step 18
+executor_transition_step = 18
+```
+
+Kiro stopped accepting requests because its monthly usage allowance was exhausted. This was an external service interruption, not a TRAIN08A acceptance failure and not a model switch selected because of a poor Director outcome.
+
+At takeover, `PROGRESS.json` lagged behind the append-only event evidence: it reported step 15 while steps 16-17 were already preserved as PASS. Kilo reconstructed progress from the evidence and resumed from the first unrecorded step 18 rather than restarting the run or deleting the earlier Kiro history.
+
+The final event-log accounting is:
+
+```text
+1 INIT
+49 step-event records representing 48 unique steps
+16 CHECKPOINT records
+1 EXECUTOR_HANDOFF
+= 67 valid JSON records
+```
+
+Step 47 has two preserved PASS records because a test-oracle arithmetic expectation was corrected from `210.0` to `190.0` (`50 + 100 + 40 = 190`). The original record remains preserved.
+
+### 16.2 Predeclaration chronology and rebuild integrity boundary
+
+The original Director Foundation package was publicly predeclared before the final outcome was known:
+
+```text
+PREDECLARED PACKAGE
+SSI_TRAIN08A_DIRECTOR_FOUNDATION_V1_20260909
+
+ZIP_SHA256
+76847299993eb24090921b73de5e0bacb1bc021859327e0cebabf66a5526f739
+
+FROZEN_MANIFEST_SHA256
+eb38c5f8d9f914382202d410923c729bbdc3a37439e8450f85d78245a0ec3a27
+
+FOUNDATION_CURRICULUM_SHA256
+61a3069ce68d19c64d4ae7c5ebc730d04283d81b2e534f487c3fd5063d9b75b8
+
+PREDECLARATION COMMIT
+5433200ec2a1b10804050b03df9cf151a26bde0a
+2026-09-09T00:00:18Z
+```
+
+The final execution result was published later:
+
+```text
+FINAL EXECUTION RECORD COMMIT
+c7ebcfceda02cee74dd502180ea3097a189dd482
+2026-09-09T15:30:27Z
+```
+
+The continued execution package is identified in the final records as:
+
+```text
+SSI_TRAIN08A_DIRECTOR_FOUNDATION_V1_20260909_REBUILT_FOR_KILO
+```
+
+The current public repository does **not** publish a separate exact ZIP SHA-256 or byte-by-byte/file-by-file diff for that rebuilt archive. Therefore SSI does not claim that the `REBUILT_FOR_KILO` archive is publicly proven byte-for-byte identical to the original predeclared ZIP.
+
+The supported public statement is narrower: the TRAIN08A family, target, 48-step Foundation scope and curriculum identity were predeclared before the final result; the executor handoff and final evidence were preserved; the final evidence reports no material integrity violation; exact rebuilt-archive byte equivalence is not independently established by a separately published rebuilt hash/diff.
+
+See:
+
+- [`DIRECTOR_TRAINING_START_HERE.md`](DIRECTOR_TRAINING_START_HERE.md)
+- [`PREDECLARED_DIRECTOR_TRAINING_PACKAGES_20260909.md`](PREDECLARED_DIRECTOR_TRAINING_PACKAGES_20260909.md)
+- [`DIRECTOR_TRAIN08A_LIVE_EXECUTION_RECORD_20260909.md`](DIRECTOR_TRAIN08A_LIVE_EXECUTION_RECORD_20260909.md)
+- [`DIRECTOR_TRAIN08A_FINAL_EXECUTION_RECORD_20260909.md`](DIRECTOR_TRAIN08A_FINAL_EXECUTION_RECORD_20260909.md)
+- [`evidence/DIRECTOR_TRAIN08A_FINAL_CLOSURE_20260909.md`](evidence/DIRECTOR_TRAIN08A_FINAL_CLOSURE_20260909.md)
+- [`evidence/DIRECTOR_TRAIN08A_REBUILD_INTEGRITY_RECORD_20260909.md`](evidence/DIRECTOR_TRAIN08A_REBUILD_INTEGRITY_RECORD_20260909.md)
+
+### 16.3 Current Director lineage and future role
+
+The evidence-backed Director line is now:
+
+```text
+DIRECTOR_FROZEN_C0
+-> TRAIN08A FOUNDATION = CLOSED / VERIFIED PASS / 48 OF 48 PASS
+-> DIRECTOR_FOUNDATION_S1 = CREATED
+-> TRAIN08B LEGO + MICRONETWORK + V10 PRACTICUM = NEXT / PREDECLARED / NOT YET EXECUTED
+-> DIRECTOR_TRAINED_START_S2 = FUTURE / NOT YET CLAIMED
+```
 
 The intended future Director role is to compare and coordinate information across:
 
@@ -594,7 +700,7 @@ LONG-TERM EVIDENCE
 CAPITAL / OPERATIONAL STATE
 ```
 
-The current repository also explicitly states that Director does **not yet control the experimental ISKRA lines**. Later Director -> ROBERT -> World -> Agent integration remains a future engineering stage.
+The current repository still explicitly states that Director does **not yet control the experimental ISKRA lines**. Later Director -> ROBERT -> World -> Agent integration remains a future engineering stage.
 
 ---
 
@@ -888,6 +994,8 @@ THIS MECHANISM WAS TRIED
 
 Without such history, an adaptive system could repeatedly rediscover its own old mistakes.
 
+The TRAIN08A Kiro -> Kilo handoff and the preserved step-47 oracle correction are current concrete examples of this rule: interruption and correction remain part of provenance even though the final scoped result is PASS.
+
 ---
 
 ## 24. Official experiments are package-driven, not manually improvised runs
@@ -906,8 +1014,8 @@ EXPERIMENT IDEA / EXTERNAL CHALLENGE
 -> MICROSTEP PLAN
 -> MANIFEST
 -> SHA256 / INTEGRITY DIGEST
--> KILO PRE-RUN VERIFICATION
--> REAL SSI BODY EXECUTION
+-> DECLARED EXECUTOR PRE-RUN VERIFICATION
+-> REAL SSI BODY / TARGET EXECUTION
 -> STEP RECEIPTS
 -> CHECKPOINTS
 -> FAILURE / INTERRUPTION / RECOVERY PRESERVED
@@ -915,11 +1023,13 @@ EXPERIMENT IDEA / EXTERNAL CHALLENGE
 -> SANITIZED PUBLIC EXPORT
 ```
 
-Kilo is the procedural executor.
+Kilo is the normal procedural executor in the current package methodology.
 
 Kilo is **not** presented as an independent scientific auditor.
 
-It must not silently:
+TRAIN08A is a documented execution-continuity exception: Kiro executed steps 01-17 and Kilo executed steps 18-48 after the Kiro monthly usage-limit interruption. The executor transition is part of the evidence and is not rewritten as an uninterrupted single-executor run.
+
+A procedural executor must not silently:
 
 ```text
 CHANGE THE RESEARCH QUESTION
@@ -949,9 +1059,13 @@ The package/manifest/hash model reduces that ambiguity.
 
 A cryptographic hash does **not** prove scientific correctness.
 
-It does provide an integrity reference for artifact identity:
+It does provide an integrity reference for artifact identity when the executed artifact itself is hash-identified:
 
-> “This is the previously identified package that was executed.”
+> “This is the previously identified artifact associated with this execution record.”
+
+If an executor-specific rebuild, repackaging, recovery artifact, or continuation package is used, its identity and relationship to the predeclared package must be recorded separately. A hash for the original archive must not be silently reused as proof of byte identity for a rebuilt archive.
+
+TRAIN08A is a concrete example. The original predeclared ZIP and frozen manifest have public SHA-256 references, while the final execution record uses the label `...REBUILT_FOR_KILO`. Because the repository currently does not publish a separate rebuilt ZIP hash/diff, SSI does not claim byte-for-byte equivalence between those two archives. See [`evidence/DIRECTOR_TRAIN08A_REBUILD_INTEGRITY_RECORD_20260909.md`](evidence/DIRECTOR_TRAIN08A_REBUILD_INTEGRITY_RECORD_20260909.md).
 
 That distinction is explicitly preserved in the current methodology.
 
@@ -984,8 +1098,8 @@ EXTERNAL EXPERT
 -> SHA256
 -> PUBLIC PRECOMMIT / IDENTIFIER WHERE APPROPRIATE
 -> SCHEDULED RUN
--> KILO EXECUTION
--> SSI BODY
+-> DECLARED PROCEDURAL EXECUTOR
+-> SSI BODY / TARGET
 -> LIVE READ-ONLY OBSERVATION
 -> PASS / FAIL / INCONCLUSIVE
 ```
@@ -1059,7 +1173,7 @@ EXPERIMENT IDENTITY
 BODY IDENTITY
 PACKAGE IDENTITY
 HASH / MANIFEST
-KILO EXECUTION
+DECLARED PROCEDURAL EXECUTOR
 READ-ONLY LIVE OBSERVATION
 FAILURE / RECOVERY PRESERVATION
 FINAL PASS / FAIL / INCONCLUSIVE
@@ -1216,19 +1330,51 @@ BODY_FROZEN T0
 = INDEPENDENT START STATES / START_STATE_VALIDATED
 
 TEST 5
+= DEVELOPMENT_VALIDATED
 = 29/29 acceptance
 = 524/524 total regression
 
 7-BODY TECHNICAL READINESS
-= 7/7 PASS
+= CLOSED / 7/7 PASS
 = 147/147 declared common matrix
 
 DIRECTOR_FROZEN_C0
 = CLOSED ENGINEERING BASELINE
 = INTEGRITY VERIFIED
+
+DIRECTOR TRAIN08A FOUNDATION
+= CLOSED / VERIFIED PASS
+= 48/48 unique steps PASS
+= 0 FAIL / 0 INCONCLUSIVE
+= 16/16 blind validations PASS
+= 16 checkpoints / final CHECKPOINT_16
+= Kiro steps 01-17 -> Kilo steps 18-48
+= DIRECTOR_FOUNDATION_S1 CREATED
+
+DIRECTOR TRAIN08A REBUILD PROVENANCE
+= DOCUMENTED
+= PREDECLARATION BEFORE FINAL RESULT TRACEABLE
+= REBUILT BYTE-LEVEL EQUIVALENCE NOT PUBLICLY CLAIMED
 ```
 
-The immediate training stage, later Practicum stage, seven mechanism-test packages, and the complete 21-run cross-domain outcome set are not claimed as completed.
+The immediate next gates are deliberately separated:
+
+```text
+7 BODY/ISKRA TRAIN-A FOUNDATION RUNS
+= NOT YET EXECUTED / NOT YET CLAIMED
+
+DIRECTOR TRAIN08B LEGO + MICRONETWORK + V10 PRACTICUM
+= NEXT / PREDECLARED / NOT YET EXECUTED
+
+DIRECTOR_TRAINED_START_S2
+= NOT YET CLAIMED
+
+7 MICRONETWORK + V10 MECHANISM TESTS
+= PREDECLARED / NOT YET EXECUTED
+
+21 CROSS-DOMAIN EXPERIMENTS
+= PREDECLARED / FINAL OUTCOMES UNKNOWN
+```
 
 See [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md).
 
@@ -1241,15 +1387,23 @@ SSI V5 does not currently claim that:
 - AGI has been established;
 - consciousness has been established;
 - universal transfer has been demonstrated;
+- the seven BODY/ISKRA TRAIN-A Foundation runs have already passed;
+- all seven BODY/ISKRA `FOUNDATION_S1` states exist;
+- Director TRAIN08B has passed;
+- `DIRECTOR_TRAINED_START_S2` exists;
 - the 21 experiments have all passed;
+- the seven Micronetwork + V10 mechanism tests have passed;
 - long-term ISKRA divergence has been demonstrated;
 - physical drone deployment has been validated;
 - physical humanoid deployment has been validated;
 - Router V10 is universally faster or more accurate than unrelated systems;
-- Kilo is an independent scientific auditor;
+- Kiro or Kilo is an independent scientific auditor;
+- executor-independent speed equivalence between Kiro and Kilo has been established;
 - a cryptographic hash proves a scientific result;
+- the `REBUILT_FOR_KILO` TRAIN08A archive is publicly proven byte-for-byte identical to the original predeclared ZIP;
 - BODY_FROZEN 2.0 already exists as a completed autonomous R&D organization;
 - full Director -> ROBERT -> Worlds -> Agents integration is complete;
+- Director currently controls the experimental ISKRA lines;
 - the technology-radar workflow has already produced validated SSI upgrades;
 - future practical work is guaranteed to be profitable;
 - emergent behavior would by itself prove consciousness.
@@ -1354,6 +1508,12 @@ It is not assumed in advance.
 - [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md) — six ISKRA start states
 - [`ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md`](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md) — ROBERT continuity
 - [`DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md`](DIRECTOR_MAINLINE_BODY_INTEGRATION_20260908.md) — Director mainline and C0
+- [`DIRECTOR_TRAINING_START_HERE.md`](DIRECTOR_TRAINING_START_HERE.md) — current Director training lineage
+- [`PREDECLARED_DIRECTOR_TRAINING_PACKAGES_20260909.md`](PREDECLARED_DIRECTOR_TRAINING_PACKAGES_20260909.md) — Director package predeclaration and original integrity references
+- [`DIRECTOR_TRAIN08A_LIVE_EXECUTION_RECORD_20260909.md`](DIRECTOR_TRAIN08A_LIVE_EXECUTION_RECORD_20260909.md) — preserved interruption/handoff record
+- [`DIRECTOR_TRAIN08A_FINAL_EXECUTION_RECORD_20260909.md`](DIRECTOR_TRAIN08A_FINAL_EXECUTION_RECORD_20260909.md) — authoritative final TRAIN08A execution result
+- [`evidence/DIRECTOR_TRAIN08A_FINAL_CLOSURE_20260909.md`](evidence/DIRECTOR_TRAIN08A_FINAL_CLOSURE_20260909.md) — formal TRAIN08A closure
+- [`evidence/DIRECTOR_TRAIN08A_REBUILD_INTEGRITY_RECORD_20260909.md`](evidence/DIRECTOR_TRAIN08A_REBUILD_INTEGRITY_RECORD_20260909.md) — rebuild provenance and exact public integrity boundary
 - [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md) — 21-experiment program
 - [`POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md`](POST21_COMPETENCE_CONSOLIDATION_AND_NOVEL_TRANSFER_PROTOCOL_20260907.md) — post-21 consolidation
 - [`CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md`](CANONICAL_EXPERIMENT_PACKAGE_STANDARD_20260908.md) — official package/evidence methodology
