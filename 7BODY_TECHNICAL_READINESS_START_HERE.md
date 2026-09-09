@@ -1,124 +1,156 @@
 # SSI V5 — 7-BODY Technical Readiness
 
-**Status:** `PRE-REPAIR EVIDENCE FROZEN / REPAIR + RETEST PENDING`  
-**Date:** `2026-09-08`  
-**Global readiness:** `NOT YET CLOSED 7/7`
+**Status:** `CLOSED / 7 OF 7 PASS`  
+**Updated:** `2026-09-09`  
+**Global readiness:** `PASS IN DECLARED TECHNICAL-READINESS SCOPE`  
+**Next research gate:** `TRAIN-A FOUNDATION / PREDECLARED / HASH-SEALED / NOT YET EXECUTED`
 
-This file is the reviewer-facing front door for the final technical-readiness stage that must close before pre-experiment training and later controlled research execution begin.
+This file is the reviewer-facing front door for the technical-readiness stage that precedes pre-experiment training.
 
-## Current state
+## Final state
 
-The first full sequential audit completed all declared procedural stages:
-
-```text
-AUDIT PROCEDURE = COMPLETE
-STAGES = 43/43
-MODE = READ_ONLY / TEST_ONLY
-BODY MODIFICATIONS = 0
-AUTOMATIC REPAIRS = 0
-PUBLICATION DURING AUDIT = 0
-```
-
-However, completion of the audit procedure is **not equivalent to 7/7 technical readiness**.
-
-The audit itself preserved several findings that require repair or stronger retesting before the gate can close:
+The 7-BODY readiness program is now closed in its declared technical scope:
 
 ```text
-ISKRA 3 — JUSTICE
--> missing standard launcher infrastructure
+BODY_FROZEN        = PASS
+ISKRA 1 NICE       = PASS
+ISKRA 2 GUARDIAN   = PASS
+ISKRA 3 JUSTICE    = PASS
+ISKRA 4 EXPLORER   = PASS
+ISKRA 5 PRAGMATIST = PASS
+ISKRA 6 SKEPTIC    = PASS
 
-ISKRA TEST PATHS
--> repeated Stage 09 test-fixture failure recorded
-
-CONTINUUM FULL-FLOW TEST PATH
--> pre-existing orchestrator syntax error recorded
-
-ISKRA ACCEPTANCE COVERAGE
--> not all mandatory per-line root_control / root_runtime_bridge /
-   full-acceptance / CONTINUUM groups were executed equivalently
+GLOBAL = 7/7 PASS
 ```
 
-Therefore the current claim is:
+The final common acceptance matrix contains:
 
 ```text
-BODY_FROZEN BASELINE
-= PASS IN THE AUDITED SCOPE
-
-7-BODY TECHNICAL READINESS
-= OPEN
-= REPAIR REQUIRED
-= FULL RETEST REQUIRED
+A01-A21 x 7 BODY
+= 147 required cells
+= 147/147 PASS
 ```
 
-## Frozen pre-repair evidence
+The final closure validator completed successfully and reported `CLOSURE EVIDENCE COMPLETE`.
 
-The exact audit-package integrity reference is:
+## Evidence chronology preserved
+
+This PASS does not erase the earlier pre-repair findings.
+
+The first sequential audit completed `43/43` declared stages on 2026-09-08 in `READ_ONLY / TEST_ONLY` mode and preserved issues including:
 
 ```text
-PACKAGE
-SSI_V5_7BODY_SEQUENTIAL_AUDIT_KILO_V2_FIXED_LAYOUT_20260908.zip
-
-SHA256
-3098758906e5652f72496006e8454d6eb1bed40b2e4d343ecdcab4bc4f327c03
-
-FINAL CHECKPOINT
-2026-09-08T20:28:00
+JUSTICE launcher deviation / incomplete launcher evidence
+repeated ISKRA Stage 09 test-fixture failure
+CONTINUUM full-flow orchestrator syntax issue
+unequal full-acceptance coverage across lines
 ```
 
-Full pre-repair evidence record:
-
-- [`evidence/7BODY_TECHNICAL_READINESS_PRE_REPAIR_AUDIT_20260908.md`](evidence/7BODY_TECHNICAL_READINESS_PRE_REPAIR_AUDIT_20260908.md)
-
-## Required chronology
-
-The readiness program is intentionally evidence-preserving:
+The preserved chronology is:
 
 ```text
 PRE-REPAIR AUDIT
--> FREEZE OBSERVED STATE
--> PUBLISH PRE-REPAIR EVIDENCE + HASH
--> TARGETED REPAIR
--> RECORD TOUCHED FILES / ROOT CAUSE / CHANGE RATIONALE
+-> FINDINGS FROZEN
+-> TARGETED REPAIR / STATE RECONSTRUCTION
 -> TARGETED RETEST
--> FULL COMMON 7-BODY RETEST
--> RESTART / PERSISTENCE / ISOLATION / REVIEWER READ-ONLY CHECKS
--> PER-BODY REPORTS
--> FINAL GLOBAL VERDICT
+-> COMMON 7-BODY RETEST
+-> RESTART / PERSISTENCE / ISOLATION / SECURITY CHECKS
+-> FINAL CLOSURE
+-> 7/7 PASS
 ```
 
-A later PASS must not overwrite or hide the pre-repair findings.
+References:
 
-## Final acceptance rule
+- [`evidence/7BODY_TECHNICAL_READINESS_PRE_REPAIR_AUDIT_20260908.md`](evidence/7BODY_TECHNICAL_READINESS_PRE_REPAIR_AUDIT_20260908.md)
+- [`evidence/7BODY_TECHNICAL_READINESS_FINAL_CLOSURE_20260909.md`](evidence/7BODY_TECHNICAL_READINESS_FINAL_CLOSURE_20260909.md)
 
-The final global readiness verdict may only be:
+## Final package integrity reference
 
 ```text
-PASS
-FAIL
-INCONCLUSIVE
+PACKAGE
+SSI_7BODY_READINESS_REPAIR_RETEST_KILO_V1_20260908(3).zip
+
+SHA256
+543092a3fe51540405d771415ffd25c376201e1aaa739ce4f8a672a8a41ac1d8
 ```
 
-`PASS` requires executed evidence for all mandatory readiness gates across all seven BODY lines. A mandatory gate that was not executed cannot be counted as PASS by inference.
+The full package remains private execution evidence unless separately published. The public repository records sanitized closure facts and integrity references.
 
-## Research gate
+## Scope notes
 
-Until the final readiness retest closes successfully:
+The final readiness package records:
 
 ```text
-PRE-EXPERIMENT TRAINING EXECUTION
-= BLOCKED
+status = COMPLETED
+current_stage = R11_CLOSE
+technical_readiness_7body = PASS
+restart/persistence scope = 1 controlled restart per BODY
+launcher PID/status discrepancy = KNOWN NON-BLOCKING ISSUE
+```
 
-7 MICRONETWORK + V10 MECHANISM TESTS
-= NOT YET EXECUTED
+No stronger restart claim such as `20/20` is made for this package.
 
-21 CROSS-DOMAIN PROGRAM
+## Security boundary
+
+The final readiness state preserves:
+
+```text
+SHARED REVIEWER / WWW
+= READ_ONLY / OBSERVER_ONLY
+= NO ROOT
+= NO MISSION EXECUTION
+= NO RUNTIME CONTROL
+= NO CONFIG EDIT
+= NO REMOTE COMMAND EXECUTION
+
+LOCAL OWNER / OPERATOR PATH
+= separate authorized control surface
+```
+
+## Research gate transition
+
+Technical readiness no longer blocks training.
+
+The next controlled stage is now:
+
+```text
+TRAIN-A FOUNDATION
+= 7 independent BODY packages
+= PREDECLARED
+= HASH-SEALED
 = NOT YET EXECUTED
 ```
 
-This protects the research sequence from contaminating later results with unresolved platform-readiness defects.
+Each BODY starts from its preserved T0/start-state lineage and training creates a versioned descendant rather than modifying the historical control.
+
+After successful Phase A execution:
+
+```text
+T0 / current validated start state
+-> TRAIN-A FOUNDATION
+-> FOUNDATION_S1
+```
+
+No `FOUNDATION_S1` result is claimed yet.
+
+Training references:
+
+- [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
+- [`PREEXPERIMENT_TRAINING_PROGRAM_20260908.md`](PREEXPERIMENT_TRAINING_PROGRAM_20260908.md)
+- [`PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md`](PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md)
 
 ## Claim boundary
 
-This readiness stage concerns local system/platform integrity and observability. It does not establish production readiness, AGI, consciousness, universal competence transfer, universal V10 superiority or successful completion of the later training/mechanism/cross-domain programs.
+This readiness PASS concerns system/platform readiness within the declared local test scope. It does not establish successful training, mechanism-test success, cross-domain transfer, production readiness, AGI, consciousness or universal Router V10 superiority.
 
-The intended standard is simple: **show the state before repair, preserve what failed, repair only after the evidence is frozen, then prove the corrected state with a new retest record.**
+The current evidence sequence is now:
+
+```text
+7-BODY TECHNICAL READINESS = CLOSED PASS
+-> TRAIN-A FOUNDATION = NEXT / NOT YET EXECUTED
+-> FOUNDATION_S1 = FUTURE RESULT
+-> TRAIN-B PRACTICUM = FUTURE EXECUTION
+-> TRAINED_START_S2 = FUTURE RESULT
+-> V10 MECHANISM TESTS = FUTURE EXECUTION
+-> 21 CROSS-DOMAIN PROGRAM = FUTURE EXECUTION
+```
