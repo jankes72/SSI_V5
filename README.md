@@ -6,6 +6,107 @@ SSI V5 investigates whether a long-running system can build, validate, preserve,
 
 The public repository is an **evidence-indexed research mirror, not a source-code distribution**. Proprietary SSI, Micronetwork, Router V10, ISKRA, DIRECTOR and ROBERT implementation remains private by design. Public materials expose protocols, sanitized state, measurements, failures, repairs, retests, hashes, provenance and claim boundaries.
 
+## SSI V5 in two minutes — the essence
+
+SSI V5 is intended to become a **persistent adaptive research-and-execution ecosystem**, not a single chatbot, model or one-purpose application.
+
+The long-term idea is to connect several layers that can learn from real outcomes, preserve evidence, build reusable competence and then apply validated competence to practical work and new R&D domains.
+
+```text
+REAL WORLD / PROBLEM
+-> DATA / WORLD
+-> HERMES / VERSIONED KNOWLEDGE
+-> BODY / ISKRA / AGENTS
+-> LAB / EXPERIENCE / VERIFIED OUTCOME
+-> MICRONETWORK COMPETENCE
+-> ROUTER V10
+-> CANDIDATE -> CHALLENGER -> CHAMPION
+-> DIRECTOR
+-> ROBERT / BODY_FROZEN 2.0
+-> PRACTICAL PROJECT / NEW DOMAIN
+-> EXTERNAL OUTCOME
+-> EVIDENCE
+-> NEXT VERSION
+```
+
+### What the main parts are for
+
+```text
+WORLDS
+= long-running domains with real external outcomes and accumulated history
+  Football World is the oldest mature lineage.
+  Capital-market / currency / cryptocurrency worlds are emerging data worlds.
+  Additional worlds may be created when useful.
+
+HERMES
+= changing, versioned knowledge sources / Teachers.
+  Different agents may learn from different generations of the same source.
+
+BODY_FROZEN
+= controlled baseline and research line used to test competence acquisition,
+  transfer, recovery and later consolidation.
+
+6 x BODY ISKRA
+= six independent descendants with different initial priors and later
+  independent longitudinal histories.
+
+MICRONETWORKS + ROUTER V10
+= evidence-linked competence lifecycle and routing between reuse,
+  verification/adaptation, composition, full flow and recovery.
+
+CONTINUUM + LAB + EVIDENCE
+= persistence, checkpoints, experiment history, failures, recovery,
+  outcome verification and provenance.
+
+DIRECTOR
+= long-term coordination, comparison, reputation/evidence aggregation,
+  resource/cost awareness and organizational memory.
+  Director is not intended to be an unquestionable oracle.
+
+ROBERT
+= continuous engineering/execution line: tools, programming,
+  practical interaction and later Eyes / Hands / execution.
+
+BODY_FROZEN 2.0
+= planned evidence-gated R&D layer for both external technology problems
+  and controlled improvement of SSI itself.
+```
+
+### Long-term objectives
+
+The project is designed around several parallel goals rather than one final demo.
+
+1. **Build persistent competence** that can be tested, versioned, reused, revised and rejected when evidence turns negative.
+2. **Measure transfer** between known, similar and genuinely novel problems instead of treating every prompt as an isolated event.
+3. **Compare independent agent histories** and observe whether different priors, experiences, knowledge generations and relationships produce measurably different long-term strategies.
+4. **Run cross-domain falsifiable experiments** in drones, humanoid robotics and independently selected new domains.
+5. **Consolidate competence after evidence**, using functional identity, Candidate / Challenger / Champion gates and regression rather than blindly accumulating skills.
+6. **Develop BODY_FROZEN 2.0 as an R&D engine** for drones, robotics, automation, industrial systems and other new technology domains while keeping the current SSI Champion protected from silent self-rewrite.
+7. **Use Worlds as long-running learning environments**, beginning with Football World and expanding to market/currency/crypto and other domains where external outcomes can verify or falsify decisions.
+8. **Apply SSI to practical economic activity**. Current intended directions include e-commerce / dropshipping, programming and software projects, SEO / content portals, and later additional domains selected because they can produce measurable real-world value.
+9. **Turn practical outcomes into stronger infrastructure** rather than depending only on grants. The planned economic policy remains `50% author / execution income`, `40% operational or investment capital`, `10% direct SSI infrastructure development`.
+10. **Move from internal evidence toward external falsification** through reviewer-safe observability, externally proposed challenge packages, independent methodology review and domain-expert validation.
+
+The intended long-term reinforcing loop is therefore:
+
+```text
+WORLDS + REAL PROBLEMS
+-> KNOWLEDGE + AGENT EXPERIENCE
+-> VERIFIED COMPETENCE
+-> CONSOLIDATION
+-> DIRECTOR / ROBERT / BODY_FROZEN 2.0
+-> E-COMMERCE / PROGRAMMING / SEO / R&D / NEW WORLDS / NEW TECHNOLOGIES
+-> REAL OUTCOMES
+-> ECONOMIC OR RESEARCH VALUE
+-> STRONGER COMPUTE / MODELS / DATA / HARDWARE
+-> NEW EXPERIMENTS
+-> NEXT SSI VERSION
+```
+
+This is the **long-term architecture and objective**, not a claim that all of these layers are already complete, integrated, profitable or externally validated. The repository deliberately distinguishes `EXISTS`, `VALIDATED`, `PREDECLARED`, `PLANNED` and `UNKNOWN` states.
+
+For the full provenance and long-term reasoning behind this architecture, see [`SSI_V5_ORIGIN_RESEARCH_METHODOLOGY_AND_LONG_TERM_ARCHITECTURE.md`](SSI_V5_ORIGIN_RESEARCH_METHODOLOGY_AND_LONG_TERM_ARCHITECTURE.md). For the current execution state, see [`CURRENT_RESEARCH_ROADMAP_20260910.md`](CURRENT_RESEARCH_ROADMAP_20260910.md).
+
 ## Current state — 2026-09-10
 
 ```text
@@ -170,17 +271,22 @@ SSI V5 does **not** currently claim that:
 
 ## Start here
 
-1. [`CURRENT_RESEARCH_ROADMAP_20260910.md`](CURRENT_RESEARCH_ROADMAP_20260910.md)
-2. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
-3. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
-4. [`CURRENT_BODY_S3_TRAINING_STATUS_20260910.md`](CURRENT_BODY_S3_TRAINING_STATUS_20260910.md)
-5. [`evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md`](evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md)
-6. [`DIRECTOR_TRAINING_START_HERE.md`](DIRECTOR_TRAINING_START_HERE.md)
-7. [`evidence/DIRECTOR_TRAIN08A_FINAL_CLOSURE_20260909.md`](evidence/DIRECTOR_TRAIN08A_FINAL_CLOSURE_20260909.md)
-8. [`7BODY_TECHNICAL_READINESS_START_HERE.md`](7BODY_TECHNICAL_READINESS_START_HERE.md)
-9. [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
-10. [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
-11. [`POST21_RESEARCH_PHASE_INDEX_20260907.md`](POST21_RESEARCH_PHASE_INDEX_20260907.md)
-12. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
+**If you have only 2–3 minutes, read the section `SSI V5 in two minutes — the essence` above.**
+
+For deeper review:
+
+1. [`SSI_V5_ORIGIN_RESEARCH_METHODOLOGY_AND_LONG_TERM_ARCHITECTURE.md`](SSI_V5_ORIGIN_RESEARCH_METHODOLOGY_AND_LONG_TERM_ARCHITECTURE.md)
+2. [`CURRENT_RESEARCH_ROADMAP_20260910.md`](CURRENT_RESEARCH_ROADMAP_20260910.md)
+3. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
+4. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
+5. [`CURRENT_BODY_S3_TRAINING_STATUS_20260910.md`](CURRENT_BODY_S3_TRAINING_STATUS_20260910.md)
+6. [`evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md`](evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md)
+7. [`DIRECTOR_TRAINING_START_HERE.md`](DIRECTOR_TRAINING_START_HERE.md)
+8. [`evidence/DIRECTOR_TRAIN08A_FINAL_CLOSURE_20260909.md`](evidence/DIRECTOR_TRAIN08A_FINAL_CLOSURE_20260909.md)
+9. [`7BODY_TECHNICAL_READINESS_START_HERE.md`](7BODY_TECHNICAL_READINESS_START_HERE.md)
+10. [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
+11. [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
+12. [`POST21_RESEARCH_PHASE_INDEX_20260907.md`](POST21_RESEARCH_PHASE_INDEX_20260907.md)
+13. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
 
 The standard remains: **predeclare what will be tested, preserve what actually happened, keep historical and current status distinguishable, never hide failure or executor transition, and strengthen claims only when stronger evidence exists.**
