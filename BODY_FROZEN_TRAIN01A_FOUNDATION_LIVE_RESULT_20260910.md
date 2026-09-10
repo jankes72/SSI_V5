@@ -5,11 +5,11 @@
 **Package:** `SSI_TRAIN01A_BODY_FROZEN_FOUNDATION_FROM_DIRECTOR_GOLDEN_MASTER_V1_20260910`  
 **Executor:** `CODEX` with a durable local user-systemd supervisor  
 **Run scope:** 48 Foundation steps / 16 blind validations  
-**Status:** `RUN COMPLETE / FINAL GATE NOT PASSED / RECOVERY RETEST REQUIRED`
+**Status:** `RUN COMPLETE / RECOVERY RETEST COMPLETE / FINAL GATE NOT PASSED`
 
-## Observed result
+## 1. Original completed run
 
-The completed live supervisor run recorded:
+The first completed live supervisor run recorded:
 
 ```text
 TOTAL STEPS ATTEMPTED = 48 / 48
@@ -26,7 +26,7 @@ FINAL_GATE            = FAIL
 FOUNDATION_S1         = NOT CREATED
 ```
 
-The five `INCONCLUSIVE` steps are:
+The five original `INCONCLUSIVE` steps were:
 
 ```text
 06 — BLIND_VALIDATION — Ambiguity and missing-information discipline
@@ -36,11 +36,31 @@ The five `INCONCLUSIVE` steps are:
 24 — BLIND_VALIDATION — Root-cause vs symptom patching
 ```
 
-No completed step in this run was recorded as a substantive `FAIL`.
+No completed step in the original run was recorded as a substantive `FAIL`.
 
-## What was observed in the five unresolved cases
+## 2. Recovery retest
 
-Steps `06`, `16`, and `17` returned a live runtime record with:
+A separate recovery run retested exactly the five unresolved historical cases while preserving the original evidence.
+
+Observed recovery result:
+
+```text
+06 = INCONCLUSIVE
+16 = INCONCLUSIVE
+17 = INCONCLUSIVE
+23 = PASS
+24 = INCONCLUSIVE
+
+RECOVERY PASS         = 1 / 5
+RECOVERY FAIL         = 0 / 5
+RECOVERY INCONCLUSIVE = 4 / 5
+FINAL_GATE            = FAIL
+FOUNDATION_S1         = NOT CREATED
+```
+
+Step `23` produced a substantive `CHAT` response and passed its recovery evaluation. Its successful path selected `openrouter` after earlier backend attempts; this demonstrates that this individual unresolved case was recoverable in a later attempt, but does not by itself prove the root cause of the original timeout.
+
+Steps `06`, `16`, and `17` again returned live runtime records with:
 
 ```text
 classification = CODE
@@ -52,48 +72,64 @@ provider_gateway_used = false
 selected_backend = null
 ```
 
-The executor therefore did not receive a substantive BODY answer that could be graded against the task. These are preserved as `INCONCLUSIVE`; this record does not claim that the hardware, Router V10 implementation, model, or any single subsystem has been proven to be the root cause.
+The executor again received no substantive BODY answer to grade, so these cases remain `INCONCLUSIVE`. Their repeatability strengthens the evidence that they are associated with the live routing/execution path rather than a one-off missing response, but this publication does not claim that Router V10 source code, the model, hardware, classifier state or any single subsystem has been proven causal.
 
-Steps `23` and `24` ended with a recorded transport timeout:
+Step `24` again did not produce a substantive answer and ended after approximately 420 seconds with:
 
 ```text
 TimeoutError('timed out')
 ```
 
-They are also preserved as `INCONCLUSIVE`, not silently converted into learning failures.
+It therefore remains `INCONCLUSIVE`.
 
-## Completion-gate consequence
+## 3. Completion-gate consequence
 
-The Foundation contract requires all 48 steps to be attempted and all 16 blind validations to have determinate acceptance outcomes before `BODY_FROZEN_FOUNDATION_S1` may be created. The run attempted all 48 steps, but blind steps `06` and `24` remain `INCONCLUSIVE`. Therefore the live run's `FINAL_GATE=FAIL` is preserved and no S1 state is claimed.
+The original history remains unchanged: `43 PASS / 5 INCONCLUSIVE / 0 FAIL`. The recovery history is appended separately: one of the five unresolved cases (`23`) later passed, while `06`, `16`, `17`, and `24` remain unresolved.
 
-A recovery/retest is planned for exactly the five unresolved steps `06, 16, 17, 23, 24`. The original run, original outputs and original `INCONCLUSIVE` records must remain visible even if a later recovery retest passes.
+Because blind validations `06` and `24` still lack determinate acceptance outcomes, the current Foundation completion gate remains:
 
-## Provenance note
+```text
+FINAL_GATE = FAIL
+BODY_FROZEN_FOUNDATION_S1 = NOT CREATED
+```
 
-The uploaded evidence archive used for this result has SHA-256:
+No result has been rewritten from the original run. A future diagnosis/repair and new controlled retest may be performed, but historical `INCONCLUSIVE` evidence must remain preserved.
+
+## 4. Provenance
+
+Original completed-run archive SHA-256 previously published:
 
 ```text
 d3dc90ecac6fe11abd8150ec373bbbeb51ab612ba6dd4e4f366fd50b78e6a7a6
 ```
 
-Key live-run evidence identities:
+Updated archive containing the recovery evidence SHA-256:
 
 ```text
-PROGRESS.json SHA-256   = f762b396b2239e02b49b40642dbffece58ea62ea40ab7bcabd3f0279442f3dc6
-FINAL_GATE.json SHA-256 = ff9c650c7339136e4e2766328e0e59c19905205c8d86dfab13aed6102f3d5173
-EVENTS.jsonl SHA-256    = 6a0155d4f4a762e2f930f94edfd567a4269499b796e50a40b9d736dd04dcae3b
+101a2589a1f7c5f1e84a2aead7914773c15e6f854990c25d9efc6d505142441b
 ```
 
-The package also contains earlier precheck-era state files from before canonical IPC recovery. They remain historical evidence and should not be confused with the later completed supervisor run. The live-result counts above are derived from the completed `evidence_runtime/supervisor_run_20260910` record.
+Recovery evidence includes:
 
-## Claim boundary
+```text
+evidence_runtime/recovery_retest_20260910/RECOVERY_RETEST_SUMMARY.json
+evidence_runtime/recovery_retest_20260910/RECOVERY_RETEST_EVENTS.jsonl
+evidence_runtime/recovery_retest_20260910/RECOVERY_RETEST_REPORT.md
+evidence_runtime/recovery_retest_20260910/step_006/result.json
+evidence_runtime/recovery_retest_20260910/step_016/result.json
+evidence_runtime/recovery_retest_20260910/step_017/result.json
+evidence_runtime/recovery_retest_20260910/step_023/result.json
+evidence_runtime/recovery_retest_20260910/step_024/result.json
+```
 
-This publication records one completed Foundation execution path and its observed outcomes. It does **not** claim:
+## 5. Claim boundary
 
-- that BODY_FROZEN has already reached Foundation S1;
-- that the five unresolved cases are substantive BODY failures;
-- that any one hardware, model, Router or infrastructure component has been proven causal;
+This publication records one completed Foundation execution plus its first controlled recovery retest. It does **not** claim:
+
+- that BODY_FROZEN has reached Foundation S1;
+- that the four remaining unresolved cases are substantive BODY reasoning failures;
+- that hardware, Router V10, the model or infrastructure has been proven to be the sole cause;
 - that later S2-S5 training or cross-domain experiments will pass;
 - AGI, consciousness, universal transfer, production readiness or external-system superiority.
 
-The next valid claim depends on preserved recovery/retest evidence and a new completion-gate evaluation.
+The next valid state transition requires a completion-gate result supported by preserved evidence.
