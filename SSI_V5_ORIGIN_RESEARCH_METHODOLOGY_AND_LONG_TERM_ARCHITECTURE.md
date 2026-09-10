@@ -1,10 +1,12 @@
 # SSI V5 — Origin, Research Methodology, System Evolution, and Long-Term Architecture
 
 **Recorded:** 2026-09-09  
-**Last status sync:** 2026-09-09 / after DIRECTOR TRAIN08A closure  
+**Last status sync:** 2026-09-10 / after BODY_FROZEN TRAIN01A Foundation closure  
 **Status:** `PUBLIC PROJECT PROVENANCE / RESEARCH ROADMAP / CLAIM-BOUNDED`  
 **Author / architecture:** Paweł Jankiewicz (`jankes72`)  
 **Repository role:** public evidence-indexed research mirror; proprietary implementation remains private
+
+**Current status synchronization — 2026-09-10:** `BODY_FROZEN TRAIN01A FOUNDATION` is now `CLOSED / VERIFIED PASS`: `48/48 PASS`, `16/16 blind validations determinate PASS`, `16/16 checkpoints`, `T0 integrity PASS`, and `BODY_FROZEN_FOUNDATION_S1` has been created. Historical outcomes remain preserved. For the canonical living status, see [`CURRENT_RESEARCH_ROADMAP_20260910.md`](CURRENT_RESEARCH_ROADMAP_20260910.md), [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md), and [`evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md`](evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md).
 
 ---
 
@@ -1318,7 +1320,7 @@ This is **long-term planned architecture**, not a current experimental result.
 
 ## 33. Current public technical state
 
-As of 2026-09-09, the public repository separates closed milestones from future research stages.
+As of 2026-09-10, the public repository separates closed milestones from future research stages.
 
 Current closed or recorded states include:
 
@@ -1355,13 +1357,33 @@ DIRECTOR TRAIN08A REBUILD PROVENANCE
 = DOCUMENTED
 = PREDECLARATION BEFORE FINAL RESULT TRACEABLE
 = REBUILT BYTE-LEVEL EQUIVALENCE NOT PUBLICLY CLAIMED
+
+BODY_FROZEN TRAIN01A FOUNDATION
+= CLOSED / VERIFIED PASS
+= 48/48 PASS
+= 16/16 blind validations determinate PASS
+= 16/16 checkpoints
+= T0 integrity PASS
+= BODY_FROZEN_FOUNDATION_S1 CREATED
+= S1 SHA256 ed1331e38909db829859ca377e9858ee42fe5528537cf6c9c6d2a5ecc5e253e9
 ```
+
+The BODY_FROZEN Foundation closure preserves the earlier `43 PASS / 5 INCONCLUSIVE / 0 FAIL` run, recovery attempts, infrastructure diagnosis, and step-24 evaluator-error lineage. The later PASS does not erase the earlier evidence.
 
 The immediate next gates are deliberately separated:
 
 ```text
-7 BODY/ISKRA TRAIN-A FOUNDATION RUNS
-= NOT YET EXECUTED / NOT YET CLAIMED
+BODY_FROZEN
+= FOUNDATION_S1 ACHIEVED
+-> TRAIN-B -> S2 -> TRAIN-C -> S3 = NEXT CONTROLLED QUEUE
+
+6 BODY ISKRA LINES
+= T0 START STATES VALIDATED
+-> TRAIN-A -> S1 -> TRAIN-B -> S2 -> TRAIN-C -> S3 = NOT YET EXECUTED
+
+FUTURE PRE-EXPERIMENT MATURITY
+= S3 -> TRAIN-D -> S4 -> TRAIN-E -> S5
+= TRAIN-D/E NOT YET FROZEN OR EXECUTED
 
 DIRECTOR TRAIN08B LEGO + MICRONETWORK + V10 PRACTICUM
 = NEXT / PREDECLARED / NOT YET EXECUTED
@@ -1376,7 +1398,7 @@ DIRECTOR_TRAINED_START_S2
 = PREDECLARED / FINAL OUTCOMES UNKNOWN
 ```
 
-See [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md).
+For the current execution sequence and status precedence, see [`CURRENT_RESEARCH_ROADMAP_20260910.md`](CURRENT_RESEARCH_ROADMAP_20260910.md), [`CURRENT_BODY_S3_TRAINING_STATUS_20260910.md`](CURRENT_BODY_S3_TRAINING_STATUS_20260910.md), and [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md).
 
 ---
 
@@ -1503,7 +1525,10 @@ It is not assumed in advance.
 ## Related public records
 
 - [`README.md`](README.md) — current research front door
+- [`CURRENT_RESEARCH_ROADMAP_20260910.md`](CURRENT_RESEARCH_ROADMAP_20260910.md) — canonical living roadmap and current status precedence
 - [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md) — current public truth index
+- [`CURRENT_BODY_S3_TRAINING_STATUS_20260910.md`](CURRENT_BODY_S3_TRAINING_STATUS_20260910.md) — current sequential BODY/ISKRA training status
+- [`evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md`](evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md) — BODY_FROZEN Foundation S1 closure
 - [`AUTHOR_CONTEXT.md`](AUTHOR_CONTEXT.md) — author/project context
 - [`BODY_ISKRA_6X_T0.md`](BODY_ISKRA_6X_T0.md) — six ISKRA start states
 - [`ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md`](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md) — ROBERT continuity
