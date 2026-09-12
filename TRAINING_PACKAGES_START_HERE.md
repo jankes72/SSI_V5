@@ -1,191 +1,123 @@
 # SSI V5 — Pre-Experiment Training Packages
 
-**Recorded:** `2026-09-08`  
-**Updated:** `2026-09-09`  
-**Program status:** `A/B PREDECLARED + TRAIN-C S3 EXTENSION PREPARED / OUTCOMES NOT YET CLAIMED`  
-**Execution gate:** `OPEN AFTER 7-BODY TECHNICAL READINESS PASS`  
-**Immediate next stage:** `TRAIN-A FOUNDATION`  
-**Future experiment-entry maturity gate:** `S5`
+**Originally recorded:** `2026-09-08`  
+**Updated:** `2026-09-12`  
+**Program status:** `HISTORICAL A/B/C PRESERVED + COMPLETE S1→S5 V2 SUITE PREDECLARED / HASH-IDENTIFIED / NOT YET EXECUTED AS A COMPLETE V2 SUITE`  
+**Experiment-entry maturity gate:** `S5`  
+**Public boundary:** evidence, methodology, identities, hashes and claim limits only; executable package payloads and proprietary implementation remain private.
 
-SSI V5 has a controlled preparation ladder between technical readiness and the later held-out mechanism/cross-domain experiments.
+## Current training truth
 
-The 7-BODY technical-readiness gate is closed `7/7 PASS` in its declared scope. Phase A may therefore execute, but no seven-line BODY/ISKRA training outcome is claimed yet.
+The historical training records remain part of the evidence chain. They are not rewritten by the new package series.
 
-## Training program evolution
-
-The original pre-experiment program recorded two packages per BODY:
+Established execution evidence currently includes:
 
 ```text
-A — FOUNDATION
-B — LEGO / MICRONETWORK / V10 PRACTICUM
+BODY_FROZEN TRAIN01A FOUNDATION
+= CLOSED / VERIFIED PASS
+= 48/48 PASS
+= 16/16 blind validations determinate PASS
+= 16/16 checkpoints
+= BODY_FROZEN_FOUNDATION_S1 CREATED
 ```
 
-Those historical precommitments remain preserved.
-
-On `2026-09-09`, before the final 21-experiment outcomes were known, the project prospectively extended the maturity ladder:
+The complete prospective V2 preparation suite recorded on `2026-09-12` is separate from that historical result:
 
 ```text
-T0 / VALIDATED START STATE
--> TRAIN-A FOUNDATION
--> FOUNDATION_S1
--> TRAIN-B LEGO + MICRONETWORK + V10 PRACTICUM
--> TRAINED_START_S2
--> TRAIN-C CHILD / APPLIED AUTONOMY
--> CHILD_S3
--> TRAIN-D TEEN / INDEPENDENT ADAPTATION
--> TEEN_S4
--> TRAIN-E PRE-PROFESSIONAL QUALIFICATION
--> QUALIFIED_S5
--> HELD-OUT MICRONETWORK + V10 MECHANISM TESTS
--> 21 CROSS-DOMAIN EXPERIMENTS
+7 BODY lines × 5 stages = 35 BODY-specific packages
+
+T0 / VALIDATED START
+-> TRAIN-A / corrected FOUNDATION -> S1
+-> TRAIN-B / LEGO + MICRONETWORK + V10 PRACTICUM -> S2
+-> TRAIN-C / CHILD + APPLIED AUTONOMY -> S3
+-> TRAIN-D / TEEN + INDEPENDENT ADAPTATION -> S4
+-> TRAIN-E / PRE-PROFESSIONAL QUALIFICATION -> S5
+-> held-out mechanism tests
+-> 21 cross-domain experiments
 ```
 
-The important new boundary is:
+Canonical new predeclaration:
 
-```text
-S2 != EXPERIMENT_READY
-S3 != EXPERIMENT_READY
-S4 != EXPERIMENT_READY
-S5 = REQUIRED FUTURE EXPERIMENT-ENTRY STATE
-```
+- [`PREDECLARED_S1_S5_RESEARCH_TRAINING_SUITE_V2_20260912.md`](PREDECLARED_S1_S5_RESEARCH_TRAINING_SUITE_V2_20260912.md)
+- [`S1_S5_TRAINING_PACKAGE_COMPATIBILITY_AUDIT_20260912.md`](S1_S5_TRAINING_PACKAGE_COMPATIBILITY_AUDIT_20260912.md)
 
-Canonical extension:
+## Why the V2 series exists
 
-- [`PREEXPERIMENT_TRAINING_S3_S5_EXTENSION_20260909.md`](PREEXPERIMENT_TRAINING_S3_S5_EXTENSION_20260909.md)
+The first BODY_FROZEN Foundation run produced useful methodological evidence, including infrastructure interruptions, executor/backend availability issues and an evaluator-path defect. Those historical events remain preserved.
 
-## Prepared package set now
+The corrected S1 V2 package series uses those lessons prospectively. It requires:
 
-Prepared training packages now cover three stages for seven BODY lines:
+- explicit executor/model availability where applicable before scored work;
+- backend health checks before a scored path depends on that backend;
+- separate classification of infrastructure failure and BODY reasoning failure;
+- no hidden evaluator requirement outside the frozen task contract;
+- preservation of every FAIL / INCONCLUSIVE / interruption;
+- no retry-until-PASS behavior;
+- creation of a versioned descendant only after the declared gate passes.
 
-```text
-7 BODY lines x TRAIN-A = 7 packages
-7 BODY lines x TRAIN-B = 7 packages
-7 BODY lines x TRAIN-C = 7 packages
--------------------------------------
-21 prepared training packages through S3
-```
+This is a new package version, not retroactive repair of historical evidence.
 
-TRAIN-D and TRAIN-E are required future stages but their detailed curricula/packages/hashes are not yet frozen and are not claimed as executed.
+## Five-stage common school
 
-## Shared curriculum identities
-
-```text
-FOUNDATION_CURRICULUM_SHA256
-= 61a3069ce68d19c64d4ae7c5ebc730d04283d81b2e534f487c3fd5063d9b75b8
-
-PRACTICUM_CURRICULUM_SHA256
-= abc3eccc4e19849f2d3b3be5b1a4d2752377b6024225f0da8d7d54f4ebafc7ce
-
-TRAIN_C_CHILD_APPLIED_AUTONOMY_CURRICULUM_SHA256
-= 4f9bb32d9a7f6074357b1f1eb55e539ab0e70e7ccc44bea73b10f2ca916061b5
-```
-
-A/B registry:
-
-- [`PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md`](PREDECLARED_14BODY_TRAINING_PACKAGES_20260908.md)
-
-TRAIN-C registry and curriculum:
-
-- [`PREDECLARED_7BODY_TRAIN_C_S3_PACKAGES_20260909.md`](PREDECLARED_7BODY_TRAIN_C_S3_PACKAGES_20260909.md)
-- [`TRAIN_C_CHILD_APPLIED_AUTONOMY_CURRICULUM_20260909.md`](TRAIN_C_CHILD_APPLIED_AUTONOMY_CURRICULUM_20260909.md)
-
-## Immediate execution scope remains TRAIN-A
-
-The next authorized BODY/ISKRA operation is still:
-
-```text
-TRAIN-A FOUNDATION
-```
-
-for:
+At each stage all seven BODY lines receive the same shared curriculum core. This protects later comparisons from the trivial explanation that different lines received different schools.
 
 ```text
 BODY_FROZEN
-BODY_ISKRA1_NICE
-BODY_ISKRA2_GUARDIAN
-BODY_ISKRA3_JUSTICE
-BODY_ISKRA4_EXPLORER
-BODY_ISKRA5_PRAGMATIST
-BODY_ISKRA6_SKEPTIC
+ISKRA1 NICE
+ISKRA2 GUARDIAN
+ISKRA3 JUSTICE
+ISKRA4 EXPLORER
+ISKRA5 PRAGMATIST
+ISKRA6 SKEPTIC
 ```
 
-The corresponding Phase A packages remain the first execution gate:
+Shared curriculum identities:
 
 ```text
-SSI_TRAIN01A_BODY_FROZEN_FOUNDATION_V1_20260908
-SSI_TRAIN02A_BODY_ISKRA1_NICE_FOUNDATION_V1_20260908
-SSI_TRAIN03A_BODY_ISKRA2_GUARDIAN_FOUNDATION_V1_20260908
-SSI_TRAIN04A_BODY_ISKRA3_JUSTICE_FOUNDATION_V1_20260908
-SSI_TRAIN05A_BODY_ISKRA4_EXPLORER_FOUNDATION_V1_20260908
-SSI_TRAIN06A_BODY_ISKRA5_PRAGMATIST_FOUNDATION_V1_20260908
-SSI_TRAIN07A_BODY_ISKRA6_SKEPTIC_FOUNDATION_V1_20260908
+S1 / TRAIN-A
+f4241cae0cb8abf9df7a8977cde4ae35bfab857c614cbceae2cda6c52a79bbd9
+
+S2 / TRAIN-B
+7e656232bd1c4a40240caf06cc6c6489423844e4893b3b57bd302e86915ffcfb
+
+S3 / TRAIN-C
+be9b092838c641ea7cbf94e628d8191c06198c3a8b397d03994fec04bd30dc34
+
+S4 / TRAIN-D
+00cb13c8f354f08927ac9d56253a37dcfc1804e56f7275272a6b594e62b78a25
+
+S5 / TRAIN-E
+258416007b3cf394ccc6d6e0ada560bb2145e0796d08092b3da37ad08cf8d99a
 ```
 
-All remain outcome-unknown until real execution evidence exists.
+The 35 individual package hashes are recorded in the canonical V2 predeclaration.
 
-## Phase A output rule
+## Stage contracts
 
-Each Phase A run must preserve the exact starting state and produce an independently versioned result:
+### TRAIN-A — corrected Foundation → S1
 
-```text
-T0 / validated start state
--> TRAIN-A FOUNDATION
--> FOUNDATION_S1
-```
+Foundation develops general reusable execution discipline: task-contract reading, decomposition, simple structured/programming work, debugging, tests-before-closure, dependency order, checkpoints, evidence, provenance, failure preservation, resume and resource-aware work.
 
-Before execution:
+The V2 series retains the `48-step / 16 blind-validation` Foundation structure while hardening execution and evaluation boundaries.
 
-```text
-verify target BODY identity
-verify package/hash
-verify start-state identity/checkpoint
-verify training package has not been silently modified
-```
+### TRAIN-B — LEGO + Micronetwork + V10 Practicum → S2
 
-After execution:
+TRAIN-B develops composition and routing competence including:
 
-```text
-record PASS / FAIL / INCONCLUSIVE
-preserve interruptions and recovery
-record checkpoint/evidence
-freeze exact FOUNDATION_S1 identity/hash if created
-```
+- LEGO decomposition;
+- reuse of verified competence;
+- verification/adaptation of similar competence;
+- multi-skill composition;
+- deceptive-similarity / false-reuse protection;
+- escalation for novel cases;
+- anti-loop behavior;
+- alternative recovery after failure;
+- persistence and checkpoint continuity;
+- route/cost evidence where available.
 
-A failed or inconclusive Phase A run must not be converted into `FOUNDATION_S1 PASS` by inference or by rerunning until success without preserving the earlier outcome.
+### TRAIN-C — Child / Applied Autonomy → S3
 
-## Phase B
-
-Phase B remains dependent on the corresponding S1 state:
-
-```text
-FOUNDATION_S1
--> TRAIN-B PRACTICUM
--> TRAINED_START_S2
-```
-
-It includes LEGO decomposition, Micronetwork/V10 reuse/verification/composition, deceptive-similarity protection, anti-loop/recovery, persistence and route-cost measurement.
-
-Historical A/B methodology remains:
-
-- [`PREEXPERIMENT_TRAINING_PROGRAM_20260908.md`](PREEXPERIMENT_TRAINING_PROGRAM_20260908.md)
-
-## Phase C — CHILD / APPLIED AUTONOMY
-
-TRAIN-C consumes an identified/frozen S2 predecessor and may create a separately versioned S3 descendant:
-
-```text
-TRAINED_START_S2
--> TRAIN-C CHILD / APPLIED AUTONOMY
--> CHILD_S3
-```
-
-TRAIN-C contains:
-
-```text
-12 modules x 5 phases = 60 steps per BODY
-```
-
-Each module uses:
+TRAIN-C uses the established five-phase learning pattern:
 
 ```text
 INSTRUCTION
@@ -195,138 +127,108 @@ INSTRUCTION
 -> NEAR_TRANSFER
 ```
 
-Competence targets include:
+Its purpose is to distinguish exact-case retention from reusable functional competence and to increase autonomous decomposition, verification, debugging, recovery and context-management ability.
 
-- reconstructing a task contract from incomplete but sufficient information;
-- prioritizing hard constraints and correctness gates;
-- self-generated LEGO decomposition;
-- dependency-aware planning;
-- evidence-based REUSE vs VERIFY_ADAPT vs NOVEL_DEEPER_FLOW selection;
-- similarity verification before adaptation;
-- multi-skill composition;
-- root-cause debugging;
-- alternative recovery after failed strategy;
-- checkpoint/context compression and resume;
-- resource-aware scheduling;
-- integrated autonomous mini-mission execution.
+### TRAIN-D — Teen / Independent Adaptation → S4
 
-### Immediate exact-repeat rule
+TRAIN-D is now a **newly frozen prospective V1 stage**. It raises the requirement from guided applied autonomy toward independent adaptation under incomplete information, conflicting evidence, route uncertainty, changed constraints and recovery pressure.
 
-After every `BLIND_FIRST`, the same BODY immediately receives the exact same task before another module or BODY is started.
+Its detailed executable task/oracle material remains private until/through controlled execution.
 
-If `BLIND_FIRST = PASS`, the repeat is an `EXACT_REPEAT_BENCHMARK` and may measure exact-case reuse/retention and route/cost change.
+### TRAIN-E — Pre-Professional Qualification → S5
 
-If `BLIND_FIRST = FAIL` or `INCONCLUSIVE`, the repeat is a `RECOVERY_RETEST_NOT_SPEED_BENCHMARK`.
+TRAIN-E is now a **newly frozen prospective V1 stage** and is the final training qualification before held-out mechanism/cross-domain testing.
 
-No minimum speedup is a PASS criterion. A slower repeat is preserved as evidence.
+S5 does not mean that later experiments have passed. It means only that the corresponding BODY has passed the declared pre-professional training gate.
 
-### Near transfer
+## S10 between stages
 
-The fifth phase is a different task from the same functional skill family. This is intended to distinguish memorizing the exact answer from transferring the competence.
-
-A clean S3 PASS therefore depends on both declared blind-first and near-transfer gates, not only on a fast exact repeat.
-
-## Training-set / experiment-set separation
-
-Training must not rehearse the held-out experiment answers.
-
-The firewall includes:
+The V2 methodology supports an evidence-preserving cross-consolidation checkpoint between maturity levels where explicitly declared.
 
 ```text
-drones
-humanoid
-future self-selected Experiment C answers
-SEQ_PROFILE_STANDARD_V1
-SEQ_PROFILE_ABS_V1
-STATE_DIFF_V1
-later held-out mechanism-test oracles
-future TRAIN-D / TRAIN-E hidden validation cases
+7 independent stage outcomes
+-> freeze / hash / preserve PRE-CONSOLIDATION states
+-> Router S10 cross-consolidation
+-> new versioned descendants
+-> identify exact next-stage predecessor
+-> same next-stage curriculum for all lines
 ```
 
-The principle remains:
+S10 never authorizes overwriting FAIR baselines or deleting pre-consolidation evidence.
+
+## Training / held-out experiment firewall
+
+The training suite must not rehearse the answers to the later held-out scientific tests.
+
+The frozen firewall includes:
 
 ```text
-TRAIN THE MECHANISM / GENERAL SKILL
-!=
-TRAIN THE HELD-OUT EXPERIMENT ANSWER
+drone experiment answers
+humanoid experiment answers
+future self-selected Experiment-C answers
+held-out Micronetwork/V10 mechanism-test vectors/oracles
+future external challenge answers
 ```
 
-## Timing / route evidence
+A structural audit of the V2 package task/oracle material found no configured held-out leakage markers in the checked scope.
 
-Where runtime exposes it, training records the route actually reported by runtime and its measured cost, including where available:
+## Package integrity audit
+
+The complete 2026-09-12 suite was checked structurally before publication of its registry:
 
 ```text
-FULL_FLOW
-VERIFY_TOPK / VERIFY-ADAPT
-REUSE_TOP1
-LEGO / ALTERNATIVE COMPOSITION
-RECOVERY
+PACKAGES = 35
+BODY/STAGE MATRIX = 7 x 5 COMPLETE
+MISSING PAIRS = 0
+MANIFEST / INTERNAL HASH ISSUES = 0
+HELD-OUT LEAKAGE MARKERS IN TASK/ORACLE MATERIAL = 0
+ONE SHARED CURRICULUM IDENTITY PER STAGE = PASS
 ```
 
-Timing must never be used to infer which route occurred.
+This proves package structure/integrity in the audited scope. It does not prove a training outcome.
 
-For exact-repeat pairs, reviewer-safe evidence may record:
+## Local control / runner boundary
+
+The private control architecture provides per-BODY training directories and a training action. The package BODY identifiers match that directory architecture.
+
+However, the package gate and runner gate are separate. The current live installation must verify that the training action is mapped to a real authorized existing runner before execution. An archived control snapshot intentionally returns a missing-backend state rather than inventing a runner when such mapping is absent.
+
+Therefore:
 
 ```text
-FIRST_STATUS
-REPEAT_STATUS
-FIRST_ELAPSED
-REPEAT_ELAPSED
-FIRST_RUNTIME_ROUTE
-REPEAT_RUNTIME_ROUTE
-FIRST_MODEL_CALLS
-REPEAT_MODEL_CALLS
-FIRST_TOOL_CALLS
-REPEAT_TOOL_CALLS
-FIRST_COMPETENCE_STATE
-REPEAT_COMPETENCE_STATE
-EXACT_REPEAT_SPEEDUP
+PACKAGE FORMAT = VERIFIED
+BODY/STAGE BINDING = VERIFIED
+LOCAL REAL RUNNER MAPPING = VERIFY ON CURRENT LIVE INSTALLATION BEFORE EXECUTION
 ```
 
-Speedup is calculated only when the first execution is PASS and both timings are valid.
+See [`S1_S5_TRAINING_PACKAGE_COMPATIBILITY_AUDIT_20260912.md`](S1_S5_TRAINING_PACKAGE_COMPATIBILITY_AUDIT_20260912.md).
 
-## Relationship to frozen mechanism-test and cross-domain packages
+## Historical documents remain valid history
 
-The earlier mechanism-test and 21-experiment precommitments remain historical records and are not silently rewritten.
+Earlier records remain preserved as historical predeclarations and execution evidence, including:
 
-However, the prospective maturity gate has changed before those outcomes are known:
-
-```text
-S5 must be the identified experiment-entry state.
-```
-
-If binding S5 materially changes an older frozen experiment input contract, a new experiment-package version/hash must be created while preserving the earlier precommitment.
-
-The later 21 unique cross-domain experiments retain their identity:
-
-```text
-7 lines x 3 unique domains = 21 unique experiments
-```
-
-The execution methodology is extended so that after a successful first exposure, the same BODY immediately repeats the exact experiment for route/time/reuse measurement. Thus the program may yield up to 42 execution runs while remaining 21 unique experiments.
-
-Canonical extension details:
-
+- [`PREEXPERIMENT_TRAINING_PROGRAM_20260908.md`](PREEXPERIMENT_TRAINING_PROGRAM_20260908.md)
 - [`PREEXPERIMENT_TRAINING_S3_S5_EXTENSION_20260909.md`](PREEXPERIMENT_TRAINING_S3_S5_EXTENSION_20260909.md)
+- [`TRAIN_C_CHILD_APPLIED_AUTONOMY_CURRICULUM_20260909.md`](TRAIN_C_CHILD_APPLIED_AUTONOMY_CURRICULUM_20260909.md)
+- [`evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md`](evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md)
+
+Statements in those files describe what was true when they were recorded. The 2026-09-12 V2 predeclaration adds new prospective package identities without erasing the earlier record.
 
 ## Current claim boundary
 
-As of `2026-09-09`:
+As of `2026-09-12`:
 
 ```text
-7-BODY TECHNICAL READINESS = CLOSED 7/7 PASS
-TRAIN-A FOUNDATION = NEXT / OUTCOMES NOT YET CLAIMED FOR 7 BODY LINES
-FOUNDATION_S1 x7 = NOT YET CLAIMED
-TRAIN-B PRACTICUM = PREPARED / NOT YET EXECUTED FOR 7 BODY LINES
-TRAINED_START_S2 x7 = NOT YET CLAIMED
-TRAIN-C S3 PACKAGES = 7 PREPARED / HASH-IDENTIFIED / NOT YET EXECUTED
-CHILD_S3 x7 = NOT YET CLAIMED
-TRAIN-D -> S4 = REQUIRED FUTURE STAGE / CURRICULUM NOT YET FROZEN
-TRAIN-E -> S5 = REQUIRED FUTURE STAGE / CURRICULUM NOT YET FROZEN
-S5 = REQUIRED FUTURE EXPERIMENT-ENTRY STATE
-7 MECHANISM TESTS = NOT YET EXECUTED
-21 UNIQUE CROSS-DOMAIN EXPERIMENTS = NOT YET EXECUTED
-EXACT-REPEAT SPEEDUP RESULTS = UNKNOWN
+BODY_FROZEN historical Foundation S1 = VERIFIED PASS
+S1→S5 V2 PACKAGE SUITE = PREDECLARED / HASH-IDENTIFIED
+35 V2 BODY-SPECIFIC PACKAGES = PREPARED
+TRAIN-D S4 V1 = NOW PROSPECTIVELY FROZEN / NOT EXECUTED
+TRAIN-E S5 V1 = NOW PROSPECTIVELY FROZEN / NOT EXECUTED
+COMPLETE V2 SUITE EXECUTION = NOT CLAIMED
+ALL 7 BODY AT S5 = NOT CLAIMED
+S10 BETWEEN-STAGE SCIENTIFIC BENEFIT = NOT CLAIMED
+7 HELD-OUT MECHANISM TESTS = NOT YET CLAIMED PASS
+21 CROSS-DOMAIN EXPERIMENTS = NOT YET CLAIMED PASS
 ```
 
-The standard remains: preserve earlier precommitments, record extensions before outcomes, keep training separate from held-out experiments, preserve failures, and claim only what the evidence actually establishes.
+The standard remains: **freeze first, execute later, preserve failures and historical versions, keep training separate from held-out experiments, and claim only what the evidence establishes.**
