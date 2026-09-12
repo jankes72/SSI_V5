@@ -1,7 +1,8 @@
 # SSI V5 — CURRENT TRUTH INDEX
 
 **Status:** `PUBLIC RESEARCH INDEX / 2026-09-12`  
-**Canonical roadmap:** [`CURRENT_RESEARCH_ROADMAP_20260910.md`](CURRENT_RESEARCH_ROADMAP_20260910.md)
+**Canonical roadmap:** [`CURRENT_RESEARCH_ROADMAP_20260910.md`](CURRENT_RESEARCH_ROADMAP_20260910.md)  
+**Latest training predeclaration:** [`PREDECLARED_S1_S5_RESEARCH_TRAINING_SUITE_V2_20260912.md`](PREDECLARED_S1_S5_RESEARCH_TRAINING_SUITE_V2_20260912.md)
 
 ## Current established truth
 
@@ -22,14 +23,10 @@ TEST 5
 = CLOSED / 7/7 PASS
 = 147/147 A01-A21 common matrix
 
-DIRECTOR_FROZEN_C0
-= CLOSED / validated engineering baseline in declared scope
-
 DIRECTOR TRAIN08A FOUNDATION
 = CLOSED / VERIFIED PASS
 = 48/48 unique steps PASS
 = 16/16 blind validations PASS
-= 16 checkpoints
 = DIRECTOR_FOUNDATION_S1 CREATED
 
 BODY_FROZEN TRAIN01A FOUNDATION
@@ -42,13 +39,69 @@ BODY_FROZEN TRAIN01A FOUNDATION
 = S1 SHA256 ed1331e38909db829859ca377e9858ee42fe5528537cf6c9c6d2a5ecc5e253e9
 ```
 
-The BODY_FROZEN final closure preserves earlier `43 PASS / 5 INCONCLUSIVE / 0 FAIL`, recovery attempts, infrastructure diagnosis and the step-24 evaluator-error lineage. Historical outcomes were not deleted.
+The BODY_FROZEN closure preserves earlier `43 PASS / 5 INCONCLUSIVE / 0 FAIL`, recovery attempts, infrastructure diagnosis and the step-24 evaluator-error lineage. Historical outcomes were not deleted.
 
-## S10 cross-consolidation engineering truth — 2026-09-12
+## S1→S5 prospective training-suite truth — 2026-09-12
 
-SSI V5 now includes a private Router S10 engineering line for **cross-consolidation of competence across independent BODY / ISKRA histories**.
+A new, separately versioned complete research-training suite has now been **predeclared and hash-identified** for all seven BODY lines:
 
-Public architectural statement:
+```text
+7 BODY x 5 stages = 35 BODY-specific packages
+
+T0 -> TRAIN-A corrected Foundation -> S1
+S1 -> TRAIN-B LEGO + Micronetwork + V10 Practicum -> S2
+S2 -> TRAIN-C Child / Applied Autonomy -> S3
+S3 -> TRAIN-D Teen / Independent Adaptation -> S4
+S4 -> TRAIN-E Pre-Professional Qualification -> S5
+```
+
+Important boundary:
+
+```text
+PACKAGE PREDECLARATION != EXECUTION
+PACKAGE HASH != SCIENTIFIC PASS
+```
+
+TRAIN-D and TRAIN-E are therefore no longer merely unspecified future concepts: their new V1 curricula/packages are prospectively frozen as of `2026-09-12`, but **no S4/S5 execution result is claimed**.
+
+The earlier A/B/C predeclarations remain historical evidence and are not rewritten.
+
+Structural audit of the new suite:
+
+```text
+PACKAGES = 35
+BODY/STAGE MATRIX = COMPLETE 7 x 5
+MISSING PAIRS = 0
+MANIFEST / INTERNAL HASH ISSUES = 0
+HELD-OUT LEAKAGE MARKERS IN CHECKED TASK/ORACLE MATERIAL = 0
+ONE SHARED CURRICULUM IDENTITY PER STAGE = PASS
+```
+
+References:
+
+- [`PREDECLARED_S1_S5_RESEARCH_TRAINING_SUITE_V2_20260912.md`](PREDECLARED_S1_S5_RESEARCH_TRAINING_SUITE_V2_20260912.md)
+- [`S1_S5_TRAINING_PACKAGE_COMPATIBILITY_AUDIT_20260912.md`](S1_S5_TRAINING_PACKAGE_COMPATIBILITY_AUDIT_20260912.md)
+- [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
+
+## Local training-control compatibility truth
+
+The package suite matches the canonical seven BODY identifiers and the per-BODY `TRAINING_PACKAGES/<BODY_ID>/` layout of the private control architecture.
+
+A read-only audit of the archived control snapshot also confirmed a deliberate fail-closed rule: the panel uses only a real, explicitly mapped local training backend and does not invent one when mapping is absent.
+
+Therefore the current evidence-backed distinction is:
+
+```text
+PACKAGE FORMAT / BODY / STAGE COMPATIBILITY = PASS
+PACKAGE INTEGRITY = PASS
+CURRENT LIVE TRAINING-RUNNER MAPPING = MUST BE VERIFIED ON THE LIVE INSTALLATION BEFORE REAL EXECUTION
+```
+
+No real training run was performed as part of that compatibility audit.
+
+## Router S10 cross-consolidation engineering truth
+
+SSI V5 includes a private Router S10 engineering line for **cross-consolidation of competence across independent BODY / ISKRA histories**.
 
 ```text
 Router V10
@@ -58,7 +111,7 @@ Router S10
 = competence from multiple BODY lines -> identify, compare, rank and consolidate competence
 ```
 
-The intended S10 flow is:
+Public S10 flow:
 
 ```text
 LOCAL BODY COMPETENCE
@@ -74,22 +127,36 @@ LOCAL BODY COMPETENCE
 -> RELOAD / VERIFICATION
 ```
 
-Current scoped local engineering evidence supports a real descendant import/reload path on a limited subset of BODY data, including expected-vs-loaded verification, Challenger promotion behavior and incremental change detection. This is **internal engineering validation**, not independent scientific validation and not a claim that the complete seven-line cross-consolidation experiment has already succeeded.
-
-S10 calibration is being treated as an explicit engineering/research step rather than an arbitrary fixed-threshold assumption. Calibration profiles and metrics are kept private; the public repository exposes only methodology, sanitized status and claim boundaries.
+Scoped local engineering evidence supports a real descendant import/reload path on a limited subset, including expected-vs-loaded verification, Challenger promotion behavior and incremental-change detection. This is internal engineering validation, not independent scientific validation and not a claim that the complete seven-line scientific hypothesis has succeeded.
 
 See [`S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md`](S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md).
 
-## Central control and reviewer-interface truth — 2026-09-12
+## Relationship of S10 to the training ladder
 
-SSI V5 now distinguishes two intentionally separate control surfaces:
+Where cross-consolidation is explicitly used between training levels, the experimental rule is:
+
+```text
+7 independent stage outcomes
+-> freeze PRE-CONSOLIDATION identities / hashes / evidence
+-> S10 cross-consolidation
+-> new versioned descendants
+-> exact next-stage predecessor identified
+-> same next-stage curriculum
+```
+
+FAIR baselines and pre-consolidation states are not overwritten.
+
+## Central control and reviewer-interface truth
+
+SSI V5 distinguishes two separate surfaces:
 
 ```text
 LOCAL CENTRAL CONTROL
 = owner/operator authority
-= access to per-BODY local control views
-= supervision of training / experiment workflows
-= S10 collect / evaluate / descendant workflow
+= per-BODY local control views
+= training / experiment supervision
+= Hermes guidance
+= S10 workflow
 
 PUBLIC REVIEWER INTERFACE
 = sanitized observer-only surface
@@ -104,51 +171,22 @@ The governing rule remains:
 OBSERVE != CONTROL
 ```
 
-The local control center is intended as a single entry point for BODY_FROZEN and the six ISKRA lines, with guided workflow, live progress, Hermes operator guidance, training/experiment package access and S10 cross-consolidation status. The implementation, private paths, credentials and executable control code are not public.
-
 See [`CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md`](CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md).
 
-## Immediate BODY/ISKRA execution truth
+## Current execution truth
 
-The currently authorized queue is sequential and stops at S3:
+The latest preparation package set reaches S5 prospectively, but preparation does not itself prove or authorize completed execution.
 
-```text
-BODY_FROZEN
-S1 -> TRAIN-B -> S2 -> TRAIN-C -> S3
-
-then each ISKRA in order
-T0 -> TRAIN-A -> S1 -> TRAIN-B -> S2 -> TRAIN-C -> S3
-```
-
-Current evidence supports:
+Current public evidence still supports:
 
 ```text
-BODY_FROZEN = S1 ACHIEVED
-BODY_FROZEN S2/S3 = UNKNOWN
-ISKRA1-6 TRAIN-A/B/C = UNKNOWN
-ISKRA1-6 S1/S2/S3 = NOT YET CLAIMED
+BODY_FROZEN = historical Foundation S1 ACHIEVED
+BODY_FROZEN S2/S3/S4/S5 = NOT YET CLAIMED
+ISKRA1-6 S1/S2/S3/S4/S5 = NOT YET CLAIMED
+COMPLETE V2 S1->S5 SUITE EXECUTION = NOT YET CLAIMED
 ```
 
-References:
-
-- [`CURRENT_BODY_S3_TRAINING_STATUS_20260910.md`](CURRENT_BODY_S3_TRAINING_STATUS_20260910.md)
-- [`BODY_S3_TRAINING_START_HERE_20260910.md`](BODY_S3_TRAINING_START_HERE_20260910.md)
-- [`evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md`](evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md)
-
-## Future maturity gate
-
-A prospectively recorded extension establishes that S3 is not the intended final experiment-entry state:
-
-```text
-CURRENT AUTHORIZED QUEUE = STOP AT S3
-
-FUTURE MATURITY EXTENSION
-S3 -> TRAIN-D -> S4 -> TRAIN-E -> S5
-
-S5 -> held-out mechanism tests -> 21 cross-domain experiments
-```
-
-TRAIN-D/E are not yet frozen or executed. No S4/S5 result is claimed.
+Older S3 queue documents remain historical protocol records. The new 2026-09-12 S1→S5 package series records a stronger future preparation ladder before outcomes are known.
 
 ## Held-out Micronetwork + Router V10 mechanism tests
 
@@ -160,7 +198,7 @@ EXECUTED = NO
 OUTCOMES = UNKNOWN
 ```
 
-The eventual S5 state for each line must be bound explicitly before execution. If a new start state materially changes a frozen package contract, the experiment must receive a new version/hash rather than rewriting the original precommitment.
+The actual S5 start state for each line must be identified before execution. If binding a later state materially changes an older frozen input contract, the experiment receives a new version/hash rather than silently rewriting the earlier precommitment.
 
 ## 21 cross-domain experiments
 
@@ -183,53 +221,37 @@ PHYSICAL HUMANOID VALIDATION = NOT CLAIMED
 FINAL CONTROLLED OUTCOMES = UNKNOWN
 ```
 
-A successful first exposure may later be followed by an immediate exact repeat for route/time/reuse measurement under the already recorded methodology. This can produce up to 42 execution runs while remaining 21 unique experiments.
-
-## Post-21 roadmap
-
-The later research sequence remains predeclared:
+## Post-experiment roadmap
 
 ```text
 21 EXPERIMENT EVIDENCE SETS
 -> competence inventory
 -> functional identity analysis
--> deduplication
--> Champion enrichment
--> Challenger enrichment / evidence-gated promotion
--> new Micronetwork only for genuinely new competence
+-> Router S10 cross-consolidation
+-> Champion / Challenger evidence-gated decisions
 -> regression / validation
--> versioned consolidated BODY
--> 3 genuinely new self-selected domains
--> control vs consolidated comparison
--> drone configuration transfer A -> B -> C
--> humanoid higher-level transfer challenge
+-> versioned consolidated BODY descendants
+-> genuinely new post-consolidation domains
+-> transfer challenges
 -> external falsification / independent replication
 ```
 
 No positive outcome is assumed in advance.
 
-## Director current truth
+## Director / ROBERT truth
 
 ```text
 DIRECTOR_FROZEN_C0
 -> TRAIN08A FOUNDATION = CLOSED / VERIFIED PASS
 -> DIRECTOR_FOUNDATION_S1 = CREATED
--> TRAIN08B LEGO + MICRONETWORK + V10 PRACTICUM = NEXT / NOT YET EXECUTED
--> DIRECTOR_TRAINED_START_S2 = NOT YET CLAIMED
--> later controlled DIRECTOR <-> ROBERT integration
+-> TRAIN08B = NOT YET CLAIMED PASS
 ```
 
-Director remains separate from the isolated BODY/ISKRA research track and does not currently control the experimental ISKRA lines.
-
-## ROBERT current truth
-
-ROBERT is a continuous engineering/execution line. It is not reset by cleaning/freeze operations applied to experimental BODY branches.
-
-Future validated competence may be integrated into ROBERT only through explicit evidence, regression and versioning gates.
+Director remains separate from isolated BODY/ISKRA research. ROBERT remains a continuous engineering/execution line and is not reset by experimental BODY freeze/cleanup operations.
 
 ## Router V10 current truth
 
-V10 is treated as a state/history/outcome-aware competence and recovery router. Its core research contract includes:
+V10 remains a state/history/outcome-aware competence and recovery router:
 
 ```text
 HIGH CONFIDENCE + VALID HISTORY -> REUSE_TOP1
@@ -241,19 +263,6 @@ KNOWN NEGATIVE ROUTE -> DO NOT BLINDLY REPEAT
 
 Historical scoped evidence includes `REUSE_TOP1 = 534`, `VERIFY_TOPK = 66`, `fallback = 0`, `known-case correctness = 100/100` and `57.61 s` versus `126.65 s` in the referenced earlier test. No universal superiority claim is made.
 
-## Collaboration / funding truth
-
-SSI V5 is open to controlled collaboration in areas such as agentic AI, multi-agent systems, continual/lifelong learning, adaptive routing, robotics, humanoids, drones, autonomous systems and trusted/auditable agent workflows.
-
-Possible roles depend on programme rules and legal structure and may include research/technology collaborator, eligible consortium partner, associated partner, subcontractor/technology provider or external validation partner.
-
-No specific grant award, consortium position or programme eligibility is currently claimed.
-
-References:
-
-- [`COLLABORATION_AND_PARTNER_ENTRY.md`](COLLABORATION_AND_PARTNER_ENTRY.md)
-- [`FUNDING_STRATEGY_AND_INDEPENDENT_ROADMAP.md`](FUNDING_STRATEGY_AND_INDEPENDENT_ROADMAP.md)
-
 ## Publication boundary
 
 ```text
@@ -263,7 +272,6 @@ PUBLIC
 + status
 + measured outcomes
 + failures / repairs / retests
-+ route/timing summaries where safe
 + provenance
 + S10 purpose / workflow / sanitized status
 + central-control / reviewer-interface architecture
@@ -271,55 +279,49 @@ PUBLIC
 
 PRIVATE
 = proprietary SSI source
++ executable S1-S5 package payloads / private oracles before controlled execution
 + Router V10 implementation
 + Router S10 implementation
 + exact S10 scoring / thresholds / private feature construction
 + Micronetwork internals
-+ private Hermes memory contents
++ private Hermes memory
 + private ISKRA / DIRECTOR / ROBERT implementation
-+ private prompts / memory
-+ executable ROOT control code
++ private local training / experiment runner implementation
++ executable ROOT-control code
 + credentials / tokens / sensitive endpoints
-+ reconstructive internal runtime detail
 ```
 
 ## Current claim boundary
 
 SSI V5 does **not** currently claim that:
 
-- BODY_FROZEN has reached S2/S3;
-- any ISKRA has completed TRAIN-A/B/C;
-- all seven lines have reached S3/S4/S5;
-- TRAIN-D/E have been frozen or executed;
+- the new complete V2 S1→S5 suite has been executed;
+- BODY_FROZEN has reached S2/S3/S4/S5;
+- any ISKRA has reached S1/S2/S3/S4/S5;
+- frozen TRAIN-D/E packages have passed;
+- current live runner mapping has been verified by the public compatibility audit;
 - the seven held-out mechanism tests have passed;
 - the 21 cross-domain experiments have passed;
-- long-run ISKRA divergence has been demonstrated;
 - physical drone/humanoid deployment has been validated;
-- the complete seven-line S10 scientific cross-consolidation experiment has succeeded;
+- complete seven-line scientific S10 cross-consolidation has succeeded;
 - S10 calibration is complete unless later evidence explicitly closes it;
-- three post-consolidation domains have passed;
-- transfer-mechanism improvement has been demonstrated;
-- Director TRAIN08B has passed or Director S2 exists;
-- Director -> ROBERT -> Worlds -> Agents integration is complete;
 - V10 or S10 is universally superior to unrelated systems;
-- local execution tools constitute independent external scientific validation;
+- local executor tools constitute independent external scientific validation;
 - a hash proves scientific correctness;
 - AGI, consciousness, universal transfer or production readiness has been established.
 
 ## Correct reading order
 
 1. [`README.md`](README.md)
-2. [`CURRENT_RESEARCH_ROADMAP_20260910.md`](CURRENT_RESEARCH_ROADMAP_20260910.md)
-3. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
-4. [`S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md`](S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md)
-5. [`CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md`](CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md)
-6. [`CURRENT_BODY_S3_TRAINING_STATUS_20260910.md`](CURRENT_BODY_S3_TRAINING_STATUS_20260910.md)
-7. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
-8. [`evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md`](evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md)
-9. [`DIRECTOR_TRAINING_START_HERE.md`](DIRECTOR_TRAINING_START_HERE.md)
-10. [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
-11. [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
-12. [`POST21_RESEARCH_PHASE_INDEX_20260907.md`](POST21_RESEARCH_PHASE_INDEX_20260907.md)
-13. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
+2. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
+3. [`PREDECLARED_S1_S5_RESEARCH_TRAINING_SUITE_V2_20260912.md`](PREDECLARED_S1_S5_RESEARCH_TRAINING_SUITE_V2_20260912.md)
+4. [`S1_S5_TRAINING_PACKAGE_COMPATIBILITY_AUDIT_20260912.md`](S1_S5_TRAINING_PACKAGE_COMPATIBILITY_AUDIT_20260912.md)
+5. [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
+6. [`CURRENT_RESEARCH_ROADMAP_20260910.md`](CURRENT_RESEARCH_ROADMAP_20260910.md)
+7. [`S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md`](S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md)
+8. [`CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md`](CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md)
+9. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
+10. [`evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md`](evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md)
+11. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
 
-Historical predeclarations remain historical evidence; this index records the latest evidence-backed state.
+Historical predeclarations remain historical evidence; this index records the latest evidence-backed and prospectively frozen state.
