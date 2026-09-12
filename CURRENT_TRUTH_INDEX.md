@@ -1,6 +1,6 @@
 # SSI V5 — CURRENT TRUTH INDEX
 
-**Status:** `PUBLIC RESEARCH INDEX / 2026-09-10`  
+**Status:** `PUBLIC RESEARCH INDEX / 2026-09-12`  
 **Canonical roadmap:** [`CURRENT_RESEARCH_ROADMAP_20260910.md`](CURRENT_RESEARCH_ROADMAP_20260910.md)
 
 ## Current established truth
@@ -43,6 +43,70 @@ BODY_FROZEN TRAIN01A FOUNDATION
 ```
 
 The BODY_FROZEN final closure preserves earlier `43 PASS / 5 INCONCLUSIVE / 0 FAIL`, recovery attempts, infrastructure diagnosis and the step-24 evaluator-error lineage. Historical outcomes were not deleted.
+
+## S10 cross-consolidation engineering truth — 2026-09-12
+
+SSI V5 now includes a private Router S10 engineering line for **cross-consolidation of competence across independent BODY / ISKRA histories**.
+
+Public architectural statement:
+
+```text
+Router V10
+= task/state -> choose how competence should be used
+
+Router S10
+= competence from multiple BODY lines -> identify, compare, rank and consolidate competence
+```
+
+The intended S10 flow is:
+
+```text
+LOCAL BODY COMPETENCE
+-> LOCAL HERMES MEMORY / IDENTITY SUMMARY
+-> SHARED SKILL POOL
+-> FAST PRE-SELECTION
+-> FAMILY GROUPING
+-> DEEP COMPARISON WHERE NEEDED
+-> EVIDENCE RANKING
+-> CHAMPION / CHALLENGER / SPECIALIST / HOLD
+-> CONSOLIDATION PLAN
+-> VERSIONED DESCENDANT
+-> RELOAD / VERIFICATION
+```
+
+Current scoped local engineering evidence supports a real descendant import/reload path on a limited subset of BODY data, including expected-vs-loaded verification, Challenger promotion behavior and incremental change detection. This is **internal engineering validation**, not independent scientific validation and not a claim that the complete seven-line cross-consolidation experiment has already succeeded.
+
+S10 calibration is being treated as an explicit engineering/research step rather than an arbitrary fixed-threshold assumption. Calibration profiles and metrics are kept private; the public repository exposes only methodology, sanitized status and claim boundaries.
+
+See [`S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md`](S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md).
+
+## Central control and reviewer-interface truth — 2026-09-12
+
+SSI V5 now distinguishes two intentionally separate control surfaces:
+
+```text
+LOCAL CENTRAL CONTROL
+= owner/operator authority
+= access to per-BODY local control views
+= supervision of training / experiment workflows
+= S10 collect / evaluate / descendant workflow
+
+PUBLIC REVIEWER INTERFACE
+= sanitized observer-only surface
+= no ROOT authority
+= no arbitrary mission execution
+= no runtime configuration writes
+```
+
+The governing rule remains:
+
+```text
+OBSERVE != CONTROL
+```
+
+The local control center is intended as a single entry point for BODY_FROZEN and the six ISKRA lines, with guided workflow, live progress, Hermes operator guidance, training/experiment package access and S10 cross-consolidation status. The implementation, private paths, credentials and executable control code are not public.
+
+See [`CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md`](CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md).
 
 ## Immediate BODY/ISKRA execution truth
 
@@ -201,14 +265,20 @@ PUBLIC
 + failures / repairs / retests
 + route/timing summaries where safe
 + provenance
++ S10 purpose / workflow / sanitized status
++ central-control / reviewer-interface architecture
 + claim boundaries
 
 PRIVATE
 = proprietary SSI source
 + Router V10 implementation
++ Router S10 implementation
++ exact S10 scoring / thresholds / private feature construction
 + Micronetwork internals
++ private Hermes memory contents
 + private ISKRA / DIRECTOR / ROBERT implementation
 + private prompts / memory
++ executable ROOT control code
 + credentials / tokens / sensitive endpoints
 + reconstructive internal runtime detail
 ```
@@ -225,12 +295,13 @@ SSI V5 does **not** currently claim that:
 - the 21 cross-domain experiments have passed;
 - long-run ISKRA divergence has been demonstrated;
 - physical drone/humanoid deployment has been validated;
-- post-21 consolidation has succeeded;
+- the complete seven-line S10 scientific cross-consolidation experiment has succeeded;
+- S10 calibration is complete unless later evidence explicitly closes it;
 - three post-consolidation domains have passed;
 - transfer-mechanism improvement has been demonstrated;
 - Director TRAIN08B has passed or Director S2 exists;
 - Director -> ROBERT -> Worlds -> Agents integration is complete;
-- V10 is universally faster or more accurate than unrelated systems;
+- V10 or S10 is universally superior to unrelated systems;
 - local execution tools constitute independent external scientific validation;
 - a hash proves scientific correctness;
 - AGI, consciousness, universal transfer or production readiness has been established.
@@ -239,13 +310,16 @@ SSI V5 does **not** currently claim that:
 
 1. [`README.md`](README.md)
 2. [`CURRENT_RESEARCH_ROADMAP_20260910.md`](CURRENT_RESEARCH_ROADMAP_20260910.md)
-3. [`CURRENT_BODY_S3_TRAINING_STATUS_20260910.md`](CURRENT_BODY_S3_TRAINING_STATUS_20260910.md)
-4. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
-5. [`evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md`](evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md)
-6. [`DIRECTOR_TRAINING_START_HERE.md`](DIRECTOR_TRAINING_START_HERE.md)
-7. [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
-8. [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
-9. [`POST21_RESEARCH_PHASE_INDEX_20260907.md`](POST21_RESEARCH_PHASE_INDEX_20260907.md)
-10. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
+3. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
+4. [`S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md`](S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md)
+5. [`CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md`](CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md)
+6. [`CURRENT_BODY_S3_TRAINING_STATUS_20260910.md`](CURRENT_BODY_S3_TRAINING_STATUS_20260910.md)
+7. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
+8. [`evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md`](evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md)
+9. [`DIRECTOR_TRAINING_START_HERE.md`](DIRECTOR_TRAINING_START_HERE.md)
+10. [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
+11. [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
+12. [`POST21_RESEARCH_PHASE_INDEX_20260907.md`](POST21_RESEARCH_PHASE_INDEX_20260907.md)
+13. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
 
 Historical predeclarations remain historical evidence; this index records the latest evidence-backed state.
