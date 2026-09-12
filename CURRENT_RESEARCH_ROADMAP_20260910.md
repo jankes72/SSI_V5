@@ -1,10 +1,10 @@
 # SSI V5 — Current Research Roadmap
 
-**Updated:** `2026-09-10`  
+**Updated:** `2026-09-12`  
 **Role:** `CANONICAL LIVING ROADMAP / CURRENT STATUS + LONG-TERM RESEARCH SEQUENCE`  
 **Project:** SSI V5  
 **Author / architecture:** Paweł Jankiewicz (`jankes72`)  
-**Public boundary:** evidence, protocols, status, sanitized measurements and claim boundaries; proprietary implementation remains private.
+**Public boundary:** evidence, protocols, status, sanitized measurements, architectural summaries and claim boundaries; proprietary implementation remains private.
 
 ## 1. Status precedence
 
@@ -13,6 +13,8 @@ This file is the current roadmap. For current state, read it together with:
 - [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
 - [`CURRENT_BODY_S3_TRAINING_STATUS_20260910.md`](CURRENT_BODY_S3_TRAINING_STATUS_20260910.md)
 - [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
+- [`S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md`](S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md)
+- [`CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md`](CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md)
 
 Older files remain valuable as historical evidence and predeclarations. A historical statement such as `NOT_YET_EXECUTED` remains evidence of what was true when that document was recorded; it must not be mistaken for current status after a later execution has closed.
 
@@ -68,6 +70,16 @@ BODY_FROZEN TRAIN01A FOUNDATION
 = T0 integrity PASS
 = BODY_FROZEN_FOUNDATION_S1 CREATED
 = S1 SHA256 ed1331e38909db829859ca377e9858ee42fe5528537cf6c9c6d2a5ecc5e253e9
+
+ROUTER S10 ENGINEERING LINE
+= cross-consolidation architecture exists
+= scoped local descendant import / reload path exercised
+= calibration / regression work in progress
+= complete seven-line scientific outcome not yet claimed
+
+CENTRAL CONTROL / REVIEW INFRASTRUCTURE
+= private local owner/operator control and public observer boundary documented
+= OBSERVE != CONTROL
 ```
 
 The BODY_FROZEN Foundation closure preserves the earlier `43 PASS / 5 INCONCLUSIVE / 0 FAIL` run, recovery attempts, infrastructure diagnosis and the step-24 evaluator-error lineage. The final PASS is a later evidence-backed closure, not a deletion of earlier outcomes.
@@ -134,7 +146,7 @@ TRAIN-D and TRAIN-E remain future stages. Their detailed curricula/packages/hash
 
 Reference: [`PREEXPERIMENT_TRAINING_S3_S5_EXTENSION_20260909.md`](PREEXPERIMENT_TRAINING_S3_S5_EXTENSION_20260909.md).
 
-## 4. Held-out mechanism tests
+## 4. Held-out Micronetwork + Router V10 mechanism tests
 
 Seven Micronetwork + Router V10 mechanism-test packages were predeclared and hash-identified before their results were known.
 
@@ -195,30 +207,98 @@ For a successful first exposure, the later predeclared methodology permits an im
 
 No drone, humanoid or self-selected-domain PASS is currently claimed.
 
-## 6. Phase 2 — competence consolidation
+## 6. Phase 2 — competence consolidation with Router S10
 
 The 21 experiments are not the endpoint.
 
-After Phase 1 evidence closes, the planned consolidation stage is:
+The planned consolidation stage now has an explicit architectural mechanism: Router S10.
 
 ```text
-COLLECT VERIFIED COMPETENCE
--> FUNCTIONAL IDENTITY ANALYSIS
--> DETECT EQUIVALENT / DUPLICATE COMPETENCE
--> PRESERVE ALL PROVENANCE
--> ENRICH EXISTING CHAMPIONS WHERE JUSTIFIED
--> ENRICH CHALLENGERS
--> PROMOTE CHALLENGER ONLY AFTER EVIDENCE
--> CREATE NEW MICRONETWORK ONLY FOR GENUINELY NEW FUNCTION
--> REGRESSION / VALIDATION
+COLLECT VERIFIED COMPETENCE FROM SELECTED BODY LINES
+-> LOCAL HERMES MEMORY / IDENTITY SUMMARY
+-> SHARED SKILL POOL
+-> FAST PRE-SELECTION
+-> FUNCTIONAL FAMILY GROUPING
+-> DEEP COMPARISON WHERE NEEDED
+-> EVIDENCE RANKING
+-> CHAMPION / CHALLENGER / SPECIALIST / HOLD
+-> CONSOLIDATION PLAN
 -> VERSIONED CONSOLIDATED BODY DESCENDANT
+-> RELOAD / VERIFICATION
 ```
 
 Dynamic naming is not treated as proof of functional novelty. Different names may describe equivalent competence; similar names may still represent different functions.
 
-The historical `BODY_FROZEN T0` remains immutable and recoverable. Consolidation must create a new versioned descendant rather than rewriting the control.
+An existing Champion is not permanently protected by historical status. If later combined evidence supports a Challenger more strongly, the role may change while preserving the former Champion and full provenance.
 
-## 7. Phase 3 — three genuinely new domains
+The historical `BODY_FROZEN T0` and other FAIR baselines remain immutable and recoverable. Consolidation must create a new versioned descendant rather than rewriting the controls.
+
+### 6.1 Incremental local Hermes memory
+
+Each BODY line may maintain a local Hermes memory summary for S10. The first pass is intended as a full bootstrap; later passes should consume deltas where possible:
+
+```text
+NEW SKILL
+NEW EVIDENCE FOR EXISTING CHAMPION
+NEW EVIDENCE FOR CHALLENGER
+FAILURE / NEGATIVE EVIDENCE
+TRANSFER EVIDENCE
+IDENTITY CHANGE / CONFLICT
+-> mark affected family dirty
+-> reevaluate only what changed where possible
+```
+
+This is intended to reduce repeated full scans as the competence base grows.
+
+### 6.2 S10 calibration
+
+S10 is being treated as a system that should be empirically calibrated rather than assumed correct under one arbitrary parameter set.
+
+The public methodology allows comparison of conservative, balanced, aggressive and research-oriented profiles using measures such as:
+
+- false merge;
+- false split;
+- classification quality;
+- Champion/Challenger promotion correctness;
+- deep-comparison rate;
+- processing cost;
+- regression after tuning.
+
+The exact implementation, thresholds, features and private representations remain proprietary.
+
+### 6.3 Current scoped engineering evidence
+
+A local engineering validation has exercised a real descendant import/reload path on a limited subset of BODY data, including expected-vs-loaded verification. Local checks have also exercised Challenger promotion behavior and incremental change detection.
+
+This supports the engineering existence of the pipeline. It does **not** establish the final scientific result of seven-line cross-consolidation, calibration or later transfer.
+
+Reference: [`S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md`](S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md).
+
+## 7. Central control and observability layer
+
+A private local control center is being used as a single owner/operator entry point across the seven BODY lines and S10 workflow.
+
+Its public architectural role includes:
+
+- opening per-BODY local control views;
+- training and experiment package supervision;
+- live progress and audit status;
+- Hermes operator guidance;
+- S10 collect / evaluate / descendant workflow;
+- access to sanitized reviewer observability.
+
+The public reviewer interface remains intentionally separate and observer-only.
+
+```text
+LOCAL OWNER CONTROL != PUBLIC REVIEWER OBSERVER
+OBSERVE != CONTROL
+```
+
+No executable ROOT-control implementation, private path, credential, internal S10 scoring or private Hermes-memory content is published.
+
+Reference: [`CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md`](CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md).
+
+## 8. Phase 3 — three genuinely new domains
 
 After consolidation and regression validation, the versioned consolidated BODY is intended to independently select three new domains.
 
@@ -243,7 +323,7 @@ on final task outcome, time-to-valid-solution, full-flow/reuse/verify rates, fal
 
 The consolidated system is not preclaimed to outperform the control.
 
-## 8. Phase 4 — transfer-mechanism evolution
+## 9. Phase 4 — transfer-mechanism evolution
 
 A later predeclared stage tests whether transfer experience itself can become reusable competence.
 
@@ -270,7 +350,7 @@ HUMANOID EXTENSION
 
 This is a test of transfer mechanism evolution, not a claim that drone skills directly control a humanoid.
 
-## 9. Workstream B — DIRECTOR -> ROBERT -> Worlds / Agents
+## 10. Workstream B — DIRECTOR -> ROBERT -> Worlds / Agents
 
 The canonical engineering line remains separate from controlled BODY/ISKRA experiments.
 
@@ -298,7 +378,7 @@ DIRECTOR_TRAINED_START_S2
 
 The Director does not currently control the isolated experimental ISKRA lines. ROBERT remains a continuous engineering/execution line and is not reset when experimental BODY branches are cleaned.
 
-## 10. Longer-term R&D architecture
+## 11. Longer-term R&D architecture
 
 If the consolidation and transfer hypotheses obtain supporting evidence, a later R&D layer may use the same lifecycle internally and externally:
 
@@ -317,7 +397,7 @@ Potential external domains include robotics, drones, autonomous systems, industr
 
 A technology radar may feed candidate tools/models/techniques into this process, but discovery alone never authorizes insertion into the canonical SSI core.
 
-## 11. External review and independent validation
+## 12. External review and independent validation
 
 The long-term evidence ladder should move from internal controlled validation toward stronger external challenge:
 
@@ -332,7 +412,9 @@ INTERNAL PREDECLARED TESTS
 
 External reviewers may define challenge cases and falsification criteria under an agreed frozen contract. They remain observers/challenge providers rather than remote ROOT operators.
 
-## 12. Collaboration and funding route
+S10 adds further externally reviewable questions around functional identity, consolidation safety, evidence-gated promotion, calibration and reproducibility of descendants without requiring publication of proprietary implementation.
+
+## 13. Collaboration and funding route
 
 SSI V5 is open to controlled collaboration where a partner can add domain expertise, legal consortium eligibility, laboratory/simulation infrastructure, independent evaluation or physical validation.
 
@@ -350,7 +432,7 @@ No role is preclaimed for a specific funding call. Eligibility, IP, liability, b
 
 See [`COLLABORATION_AND_PARTNER_ENTRY.md`](COLLABORATION_AND_PARTNER_ENTRY.md) and [`FUNDING_STRATEGY_AND_INDEPENDENT_ROADMAP.md`](FUNDING_STRATEGY_AND_INDEPENDENT_ROADMAP.md).
 
-## 13. Planned economic reinvestment model
+## 14. Planned economic reinvestment model
 
 The long-term independent-development policy remains a plan, not a revenue forecast:
 
@@ -362,7 +444,7 @@ The long-term independent-development policy remains a plan, not a revenue forec
 
 The infrastructure share may support compute, storage, models/APIs, networking, backup and laboratory hardware. A positive economic outcome is not guaranteed.
 
-## 14. Current claim boundary
+## 15. Current claim boundary
 
 SSI V5 does **not** currently claim that:
 
@@ -373,19 +455,20 @@ SSI V5 does **not** currently claim that:
 - the seven held-out mechanism tests have passed;
 - the 21 unique cross-domain experiments have passed;
 - long-run ISKRA divergence has been demonstrated;
-- post-21 consolidation has succeeded;
+- full seven-line scientific S10 cross-consolidation has succeeded;
+- S10 calibration is complete unless later evidence explicitly closes it;
 - the three post-consolidation domains have been selected or passed;
 - drone A -> B -> C transfer improvement has been demonstrated;
 - higher-level humanoid transfer has been demonstrated;
 - physical drone or humanoid deployment has been validated;
 - Director TRAIN08B has passed or Director S2 exists;
 - Director -> ROBERT -> Worlds -> Agents integration is complete;
-- Router V10 is universally superior to unrelated systems;
+- Router V10 or Router S10 is universally superior to unrelated systems;
 - a hash proves scientific correctness;
 - Kiro, Kilo, Codex or another execution tool is an independent scientific auditor;
 - AGI, consciousness, universal transfer or production readiness has been established.
 
-## 15. Canonical long-term sequence
+## 16. Canonical long-term sequence
 
 ```text
 TEST 5 + T0 + 7-BODY READINESS
@@ -394,8 +477,8 @@ TEST 5 + T0 + 7-BODY READINESS
 -> PREDECLARE + EXECUTE TRAIN-D/E TO S5 [FUTURE]
 -> 7 HELD-OUT MICRONETWORK + V10 MECHANISM TESTS
 -> 21 UNIQUE CROSS-DOMAIN EXPERIMENTS
--> COMPETENCE INVENTORY / DEDUPLICATION / CONSOLIDATION
--> VERSIONED CONSOLIDATED BODY
+-> COMPETENCE INVENTORY / ROUTER S10 CROSS-CONSOLIDATION
+-> VERSIONED CONSOLIDATED BODY DESCENDANT
 -> 3 GENUINELY NEW SELF-SELECTED DOMAINS
 -> DRONE CONFIGURATION TRANSFER A -> B -> C
 -> HUMANOID HIGHER-LEVEL TRANSFER CHALLENGE
