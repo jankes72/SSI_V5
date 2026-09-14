@@ -1,6 +1,6 @@
 # SSI V5 — Collaboration and Partner Entry
 
-**Updated:** `2026-09-12`  
+**Updated:** `2026-09-14`  
 **Status:** `OPEN TO CONTROLLED RESEARCH / TECHNOLOGY COLLABORATION`  
 **Public boundary:** proprietary implementation remains private unless separately licensed or explicitly disclosed.
 
@@ -11,8 +11,6 @@ SSI V5 is open to collaboration with researchers, laboratories, universities, st
 The preferred collaboration model is evidence-driven and narrowly scoped around a concrete research or engineering question.
 
 ## Relevant technology areas
-
-Potentially relevant areas include:
 
 ```text
 AGENTIC AI
@@ -30,9 +28,67 @@ TRANSFER LEARNING / CROSS-DOMAIN ADAPTATION
 VERSIONED DESCENDANT / BEFORE-AFTER VALIDATION
 ```
 
+## Current collaboration-ready infrastructure
+
+As of 2026-09-14, SSI V5 has two implemented software-level external-domain research demonstrators:
+
+```text
+DRONES / SWARM
+= implemented software research laboratory
+= multiple simulated grids/groups
+= local vs collective experience
+= routing/recovery scenarios
+= before/after comparison
+= cross-grid consultation / consolidation path
+= external challenge entry path
+
+HUMANOID MOTION / STABILITY
+= implemented software research laboratory
+= dedicated 3D interface
+= articulated-body state
+= obstacle / terrain / slip / low-friction scenarios
+= failure/recovery loops
+= before/after comparison
+= external-scene challenge entry path
+```
+
+These are implemented domain-transfer environments. They are not claims of certified physical operation or completed scientific outcomes for the full 21-experiment programme.
+
+See:
+
+- [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
+- [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
+- [`HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md`](HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md)
+
+## Router S10 as a collaboration surface
+
+SSI V5 now preserves two Router S10 engineering variants for controlled comparison:
+
+```text
+V1 = lean control/reference
+V2 = richer optimized control/observability
+```
+
+Both variants are predeclared to receive the same S1–S10 curriculum. Current public evidence includes scoped S10 engineering measurements and integrity behavior, but not a complete seven-line scientific conclusion.
+
+Relevant questions for collaborators include:
+
+- functional identity of competence across independent agent histories;
+- false merge / false split;
+- Champion / Challenger promotion correctness;
+- selective re-evaluation after local change;
+- provenance-preserving descendant creation;
+- whether cross-line consolidation improves later transfer without increasing false reuse;
+- whether local-vs-collective consultation improves drone/swarm behavior under controlled tests.
+
+See:
+
+- [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
+- [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md)
+
 ## Possible entry modes
 
-Where programme and legal rules permit, collaboration may take forms such as:
+Where programme and legal rules permit:
 
 ```text
 RESEARCH COLLABORATOR
@@ -45,105 +101,56 @@ INDEPENDENT VALIDATION / REPLICATION PARTNER
 DOMAIN-EXPERT ADVISER OR LAB PARTNER
 ```
 
-No specific role is guaranteed or preclaimed. Formal status depends on the call, consortium agreement, legal entity, budget, IP terms and liability structure.
+## Strongest near-term collaboration targets
 
-## What SSI can contribute
+```text
+1. external challenge / falsification of Router V10 and persistent competence;
+2. independent review of S10 V1/V2 comparison methodology;
+3. externally supplied drone/swarm software challenge;
+4. drone-domain consultation / collective-learning test;
+5. externally supplied humanoid motion/stability scene;
+6. humanoid locomotion / balance / slip expert review;
+7. continual-learning or multi-agent research group willing to compare methods;
+8. consortium partner able to provide eligible legal/funding structure;
+9. later physical validation partner for drones or humanoids.
+```
 
-At the current evidence-backed stage, SSI may contribute a research/engineering layer around:
-
-- persistent competence and versioned state;
-- Candidate -> Challenger -> Champion competence lifecycle;
-- state/history/outcome-aware Router V10;
-- cross-line competence analysis through Router S10;
-- reuse vs verify/adapt vs alternative composition vs full-flow routing;
-- evidence-gated Champion / Challenger comparison and promotion;
-- incremental local Hermes competence memory;
-- repeated-failure suppression / anti-loop logic;
-- recovery routing after negative outcomes;
-- evidence-preserving checkpoints and provenance;
-- controlled package-driven experiments;
-- versioned descendant creation rather than silent baseline rewrite;
-- sanitized reviewer observability;
-- cross-domain transfer research methodology.
-
-The public repository documents claims and evidence without distributing proprietary source code.
-
-## Router S10 as a collaboration surface
-
-S10 introduces a new class of externally reviewable research questions without requiring disclosure of proprietary implementation.
-
-Examples include:
-
-- whether competence from independent agent histories can be grouped by function rather than by name;
-- whether cross-line evidence can justify Champion / Challenger role changes;
-- whether false merges and false splits can be measured and reduced through calibration;
-- whether incremental Hermes memory reduces repeated full-history scans;
-- whether a consolidated descendant preserves provenance and reloadability;
-- whether post-consolidation transfer improves without increasing false reuse.
-
-Current public status is intentionally limited: a scoped local descendant import/reload path has been exercised, while full seven-line scientific cross-consolidation and calibration remain subject to further evidence.
-
-See [`S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md`](S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md).
-
-## Current readiness for collaboration
-
-Established public milestones include:
+## Current evidence-backed milestones
 
 ```text
 TEST 5 = 29/29 acceptance / 524/524 regression PASS
 7-BODY readiness = 7/7 PASS / 147/147 common matrix
 DIRECTOR TRAIN08A = 48/48 PASS / 16/16 blind validations
-DIRECTOR_FOUNDATION_S1 = CREATED
 BODY_FROZEN TRAIN01A = 48/48 PASS / 16/16 blind validations
 BODY_FROZEN_FOUNDATION_S1 = CREATED
-ROUTER S10 = architecture exists / scoped local descendant import-reload path exercised
-CENTRAL CONTROL = private owner/operator layer + separate public observer boundary
-21 cross-domain experiments = PREDECLARED / outcomes unknown
-```
-
-This supports discussion of a real experimental system, but does not establish production readiness, full S10 scientific validation or physical robotics/drone validation.
-
-## Best current collaboration targets
-
-The strongest near-term entry points are:
-
-```text
-1. independent challenge / falsification of Router V10 and persistent competence;
-2. independent review of S10 functional-identity / consolidation methodology;
-3. simulation partner for drones / multi-robot autonomy;
-4. humanoid / locomotion / stability simulation partner;
-5. continual-learning or multi-agent research group willing to compare methods;
-6. consortium partner able to provide eligible legal/funding structure;
-7. external evaluator for later S5 / held-out mechanism / cross-domain experiments;
-8. industrial partner with a bounded adaptive-routing, competence-consolidation or autonomous-workflow problem.
+S1-S10 V1/V2 TRAINING CONTROL = PREDECLARED
+S10 V1/V2 COMPARISON = ACTIVE / PARTIALLY EVIDENCED
+DRONE SOFTWARE DOMAIN TRANSFER = IMPLEMENTED
+HUMANOID SOFTWARE DOMAIN TRANSFER = IMPLEMENTED
+21 CONTROLLED CROSS-DOMAIN EXPERIMENTS = NOT CLAIMED COMPLETE
 ```
 
 ## External challenge model
-
-An external partner may propose the task, failure conditions, acceptance criteria and measurements. After agreement, the challenge should be frozen before execution.
 
 ```text
 EXTERNAL CHALLENGE
 -> SAFETY / FORMAT REVIEW
 -> FROZEN CONTRACT
--> PACKAGE / MANIFEST / IDENTITY
--> DECLARED EXECUTOR
--> SSI TARGET
--> LIVE READ-ONLY OBSERVATION WHERE APPROPRIATE
+-> DECLARED ACCEPTANCE CRITERIA
+-> SSI TARGET / DOMAIN LAB
+-> RUN
 -> PASS / FAIL / INCONCLUSIVE
 -> SANITIZED EVIDENCE
+-> EXTERNAL REVIEW
 ```
 
-The reviewer or challenge provider is not given remote ROOT control of the private SSI runtime.
+The reviewer or challenge provider is not given remote ROOT control.
 
 ## Central control and reviewer boundary
-
-SSI V5 now documents two deliberately separate operational surfaces:
 
 ```text
 LOCAL CENTRAL CONTROL
 = private owner/operator authority
-= per-BODY control entry points
 = training / experiment supervision
 = Hermes guidance
 = S10 workflow
@@ -156,59 +163,48 @@ PUBLIC REVIEWER INTERFACE
 = no runtime configuration writes
 ```
 
-The principle is:
+Principle:
 
 ```text
 OBSERVE != CONTROL
 ```
 
-This separation is intended to support expert review, grant evaluation and external challenge design without exposing private execution authority.
-
-See [`CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md`](CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md).
-
 ## IP and disclosure boundary
-
-The normal public/collaboration boundary is:
 
 ```text
 PUBLIC / REVIEWABLE
 = architecture at safe level
 + protocols
-+ package identities / hashes
 + sanitized measurements
 + failures / repairs / retests
 + provenance
-+ S10 purpose / workflow / sanitized status
-+ reviewer-interface / authority boundaries
++ S10 purpose / variants / sanitized status
++ domain-transfer capability
++ reviewer-interface boundaries
 + claim boundaries
 
 PRIVATE
 = proprietary SSI source
 + Router V10 implementation
 + Router S10 implementation
-+ exact S10 scoring / thresholds / private feature construction
++ exact scoring / thresholds / private feature construction
 + Micronetwork internals
-+ private Hermes memory contents
-+ executable ROOT-control implementation
-+ private prompts / memory
-+ credentials / tokens / endpoints
-+ private filesystem / reconstructive runtime detail
++ private Hermes memory
++ ROOT implementation
++ prompts / private configuration
++ credentials / endpoints
 ```
 
-Broader disclosure may occur only through a separate negotiated agreement.
+## Claim boundary
 
-## Contact objective
+Current collaboration-ready software infrastructure does not establish:
 
-The preferred first conversation is not a request to accept SSI claims. It is a request to identify a concrete test, integration problem or work package where SSI can be challenged and measured.
+- physical drone or humanoid certification;
+- completion of all 21 controlled experiments;
+- complete S1–S10 training on every line;
+- universal superiority of V10 or S10;
+- proven scientific benefit of cross-grid consultation in every scenario;
+- independent external replication;
+- production readiness.
 
-The strongest collaboration outcome is therefore:
-
-```text
-PARTNER PROBLEM
-+ SSI HYPOTHESIS
-+ FROZEN TEST
-+ INDEPENDENT / SHARED EVIDENCE
--> RESULT THAT CAN SUPPORT OR FALSIFY THE CLAIM
-```
-
-See also [`CURRENT_RESEARCH_ROADMAP_20260910.md`](CURRENT_RESEARCH_ROADMAP_20260910.md), [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md), [`S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md`](S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md), [`CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md`](CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md), [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md) and [`FUNDING_STRATEGY_AND_INDEPENDENT_ROADMAP.md`](FUNDING_STRATEGY_AND_INDEPENDENT_ROADMAP.md).
+For latest status synchronization see [`STATUS_SYNC_20260914.md`](STATUS_SYNC_20260914.md).
