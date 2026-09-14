@@ -17,11 +17,42 @@ Current established layers include:
 - Router S10 cross-line consolidation architecture;
 - explicit S10 Variant V1, V3 and V2 comparison lines;
 - a predeclared shared S1–S10 curriculum for three-variant comparison;
+- implemented and locally validated Director Command Center pre-training gate;
 - implemented software-level drone/swarm research laboratory;
 - implemented software-level humanoid motion/stability research laboratory;
 - separated local control and public reviewer-observer surfaces.
 
 For the latest compact state, see [`CURRENT_TRUTH_INDEX_20260914.md`](CURRENT_TRUTH_INDEX_20260914.md).
+
+## Pre-training gate — DIRECTOR Command Center
+
+Before later matched BODY / ISKRA training outcomes across S10 V1 / V3 / V2, SSI V5 now records a concrete Director Command Center implementation and integration-contract stage.
+
+Public gate record:
+
+[`DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md`](DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md)
+
+Private artifact identity:
+
+```text
+SSI_DIRECTOR_COMMAND_CENTER_V1_20260914.zip
+SHA256 = 168a22ee69283c1f1b2bb4e939399c242d2b0b9c2b9e8a42899f5c07208eb09d
+```
+
+The repository does not publish the proprietary implementation archive. It records chronology, architecture, local validation scope, prepared integration slots and extension rules.
+
+The current gate establishes in advance:
+
+- a professional owner/operator Command Center separate from the lower-level developer diagnostics;
+- organization views for Director, ROBERT, BODY_FROZEN 2.0 and the six ISKRA lines;
+- prepared multi-node/Tailscale data-source slots;
+- Hermes change/delta reporting;
+- competence/skill provenance and transfer views;
+- project/order and Technology Radar slots;
+- finance/capital extension slots with truthful `NOT_CONNECTED` states until real sources exist;
+- an adapter-first rule so later integrations connect to versioned contracts rather than silently redesigning SSI.
+
+This is an infrastructure/chronology gate, not evidence that all remote nodes or future finance/world integrations are already live.
 
 ## Workstream A — controlled BODY / ISKRA training and comparison
 
@@ -43,6 +74,8 @@ S10 Generalization Readiness Gate
 ```
 
 S10 Variants V1, V3 and V2 are intended to receive the same S1–S10 curriculum under matched comparison conditions.
+
+The Command Center gate above is recorded before those future matched outcomes so the organizational/control architecture is not invented after seeing the results.
 
 This is a prospective controlled-training protocol. It does not claim that all BODY lines or all variants have already completed S1–S10.
 
@@ -130,6 +163,7 @@ Therefore:
 DOMAIN IMPLEMENTED != EXPERIMENT PASSED
 DOMAIN INTERFACE EXISTS != PHYSICAL VALIDATION
 CONSULTATION / CONSOLIDATION OPTION EXISTS != BENEFIT PROVEN
+COMMAND CENTER IMPLEMENTED != ALL FUTURE INTEGRATIONS LIVE
 ```
 
 The software laboratories reduce implementation risk and create a concrete environment for later controlled testing, external challenge design and evidence capture.
@@ -155,6 +189,8 @@ independent BODY histories
 -> regression
 -> later transfer challenge
 ```
+
+The Command Center already reserves a visible organizational path for such provenance-preserving competence movement, but it does not make promotion automatic.
 
 No positive outcome is assumed in advance.
 
@@ -197,6 +233,8 @@ Not currently claimed:
 - complete S1–S10 training of all BODY lines;
 - complete matched V1/V3/V2 scientific comparison;
 - final V3 engineering/performance closure;
+- every BODY / ISKRA / ROBERT Command Center integration already live;
+- bank, brokerage, crypto or FX integration already connected;
 - seven held-out mechanism-test PASS results;
 - all 21 cross-domain experiment PASS results;
 - complete seven-line S10 scientific success;
@@ -208,6 +246,7 @@ Not currently claimed:
 ## Current references
 
 - [`CURRENT_TRUTH_INDEX_20260914.md`](CURRENT_TRUTH_INDEX_20260914.md)
+- [`DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md`](DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md)
 - [`STATUS_SYNC_20260914.md`](STATUS_SYNC_20260914.md)
 - [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md)
 - [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
