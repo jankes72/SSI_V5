@@ -18,6 +18,7 @@ TEST 5 = 29/29 acceptance PASS / 524/524 regression PASS
 BODY_FROZEN Foundation S1 = VERIFIED PASS
 DIRECTOR Foundation S1 = CREATED
 DIRECTOR Command Center pre-training gate = IMPLEMENTED / LOCAL VALIDATION PASS / HASH-IDENTIFIED
+DIRECTOR Tailscale cross-consolidation architecture = PREDECLARED BEFORE MATCHED V1/V3/V2 TRAINING
 Router S10 = explicit V1 / V3 / V2 comparison lines
 S1-S10 = latest shared predeclared three-variant training-control protocol
 DRONE / SWARM = implemented software-level research laboratory
@@ -27,7 +28,12 @@ PUBLIC REVIEWER INTERFACE = observer-only
 
 The Director Command Center gate is deliberately recorded **before** later matched BODY / ISKRA training outcomes across S10 V1 / V3 / V2. It freezes the organizational UI/data-contract stage before those results and keeps the proprietary implementation private.
 
-See [`DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md`](DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md).
+See:
+
+- [`DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md`](DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md)
+- [`DIRECTOR_COMMAND_CENTER_TAILSCALE_CROSS_CONSOLIDATION_ARCHITECTURE_20260914.md`](DIRECTOR_COMMAND_CENTER_TAILSCALE_CROSS_CONSOLIDATION_ARCHITECTURE_20260914.md)
+
+The second record predeclares the detailed cross-node model: independent local histories, delta publication, Tailscale transport, incremental Hermes memory, S10 family grouping/deep comparison, Champion/Challenger/Specialist/Hold decisions, target-specific ROBERT/BODY_FROZEN 2.0/DIRECTOR adoption, mandatory target re-test/regression control, Hermes change reporting and Director organizational updates.
 
 Canonical current index:
 
@@ -94,10 +100,18 @@ S10 Generalization Readiness Gate
 
 This is a **predeclared comparison-control protocol**, not a claim that all BODY lines or all three variants have already completed S1–S10.
 
-The Command Center architecture and extension contracts were recorded before those later matched outcomes. See [`DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md`](DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md).
+The Command Center architecture and extension contracts were recorded before those later matched outcomes. The cross-consolidation record also freezes a critical contamination boundary:
+
+```text
+OBSERVATION != COMPETENCE TRANSFER
+```
+
+During controlled training, the Command Center may observe multiple lines without silently sharing newly learned competence between them. Cross-consolidation occurs only at its declared gate.
 
 See:
 
+- [`DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md`](DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md)
+- [`DIRECTOR_COMMAND_CENTER_TAILSCALE_CROSS_CONSOLIDATION_ARCHITECTURE_20260914.md`](DIRECTOR_COMMAND_CENTER_TAILSCALE_CROSS_CONSOLIDATION_ARCHITECTURE_20260914.md)
 - [`TRAINING_CURRENT_STATUS_20260914.md`](TRAINING_CURRENT_STATUS_20260914.md)
 - [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md)
 
@@ -121,6 +135,19 @@ The drone laboratory includes:
 - cross-grid consultation/consolidation path;
 - external challenge entry path.
 
+The organization-wide Command Center cross-consolidation pattern deliberately follows the same higher-level discipline used in the drone laboratory:
+
+```text
+LOCAL EXPERIENCE
+-> LOCAL RESULT
+-> COMPARISON / VALIDATION
+-> CONSOLIDATION DECISION
+-> COLLECTIVE / TARGET AVAILABILITY
+-> RE-TEST
+```
+
+The drone benchmark preserved a post-consolidation `wind_corridor` `PASS -> FAIL` regression, which is why wider competence availability is explicitly followed by target-specific regression testing rather than assumed to be beneficial.
+
 ### HUMANOID MOTION / STABILITY
 
 The humanoid laboratory includes:
@@ -139,6 +166,7 @@ See:
 - [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
 - [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
 - [`HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md`](HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md)
+- [`DRONE_MEASURED_RESULTS_20260914.md`](DRONE_MEASURED_RESULTS_20260914.md)
 
 ## Critical distinction
 
@@ -149,6 +177,8 @@ DOMAIN LAB EXISTS != EXPERIMENT PASSED
 SOFTWARE DOMAIN TRANSFER != PHYSICAL VALIDATION
 CONSULTATION / CONSOLIDATION OPTION != BENEFIT PROVEN
 COMMAND CENTER IMPLEMENTED != FUTURE AGENT / FINANCE INTEGRATIONS COMPLETED
+TAILSCALE DELIVERY != SCIENTIFIC VALIDATION
+COLLECTIVE AVAILABILITY != TARGET ACCEPTANCE
 ```
 
 The original 21-experiment programme remains open:
@@ -216,6 +246,7 @@ SSI V5 does **not** currently claim:
 - universal superiority of V1, V2 or V3;
 - universal benefit from consultation/consolidation;
 - all BODY / ISKRA / ROBERT remote Command Center integrations already live;
+- organization-wide cross-consolidation already validated scientifically;
 - bank, brokerage, crypto or FX integrations already connected;
 - physical drone or humanoid validation;
 - independent external replication;
@@ -227,14 +258,15 @@ SSI V5 does **not** currently claim:
 1. [`START_HERE.md`](START_HERE.md)
 2. [`CURRENT_TRUTH_INDEX_20260914.md`](CURRENT_TRUTH_INDEX_20260914.md)
 3. [`DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md`](DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md)
-4. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
-5. [`GRANT_REVIEWER_CURRENT_STATUS_20260914.md`](GRANT_REVIEWER_CURRENT_STATUS_20260914.md)
-6. [`CURRENT_RESEARCH_ROADMAP_20260914.md`](CURRENT_RESEARCH_ROADMAP_20260914.md)
-7. [`TRAINING_CURRENT_STATUS_20260914.md`](TRAINING_CURRENT_STATUS_20260914.md)
-8. [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
-9. [`S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md`](S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md)
-10. [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
-11. [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
-12. [`HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md`](HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md)
+4. [`DIRECTOR_COMMAND_CENTER_TAILSCALE_CROSS_CONSOLIDATION_ARCHITECTURE_20260914.md`](DIRECTOR_COMMAND_CENTER_TAILSCALE_CROSS_CONSOLIDATION_ARCHITECTURE_20260914.md)
+5. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
+6. [`GRANT_REVIEWER_CURRENT_STATUS_20260914.md`](GRANT_REVIEWER_CURRENT_STATUS_20260914.md)
+7. [`CURRENT_RESEARCH_ROADMAP_20260914.md`](CURRENT_RESEARCH_ROADMAP_20260914.md)
+8. [`TRAINING_CURRENT_STATUS_20260914.md`](TRAINING_CURRENT_STATUS_20260914.md)
+9. [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
+10. [`S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md`](S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md)
+11. [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
+12. [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
+13. [`HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md`](HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md)
 
 Older dated files remain preserved as historical evidence. When an older status conflicts with a later evidence-backed status, use the newest dated current-state document without rewriting the historical record.
