@@ -17,12 +17,17 @@ TEST 5 = 29/29 acceptance PASS / 524/524 regression PASS
 7-BODY readiness = 7/7 PASS / 147/147 common matrix
 BODY_FROZEN Foundation S1 = VERIFIED PASS
 DIRECTOR Foundation S1 = CREATED
+DIRECTOR Command Center pre-training gate = IMPLEMENTED / LOCAL VALIDATION PASS / HASH-IDENTIFIED
 Router S10 = explicit V1 / V3 / V2 comparison lines
 S1-S10 = latest shared predeclared three-variant training-control protocol
 DRONE / SWARM = implemented software-level research laboratory
 HUMANOID MOTION / STABILITY = implemented software-level research laboratory
 PUBLIC REVIEWER INTERFACE = observer-only
 ```
+
+The Director Command Center gate is deliberately recorded **before** later matched BODY / ISKRA training outcomes across S10 V1 / V3 / V2. It freezes the organizational UI/data-contract stage before those results and keeps the proprietary implementation private.
+
+See [`DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md`](DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md).
 
 Canonical current index:
 
@@ -89,6 +94,8 @@ S10 Generalization Readiness Gate
 
 This is a **predeclared comparison-control protocol**, not a claim that all BODY lines or all three variants have already completed S1–S10.
 
+The Command Center architecture and extension contracts were recorded before those later matched outcomes. See [`DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md`](DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md).
+
 See:
 
 - [`TRAINING_CURRENT_STATUS_20260914.md`](TRAINING_CURRENT_STATUS_20260914.md)
@@ -141,6 +148,7 @@ The project deliberately separates **implementation readiness** from **scientifi
 DOMAIN LAB EXISTS != EXPERIMENT PASSED
 SOFTWARE DOMAIN TRANSFER != PHYSICAL VALIDATION
 CONSULTATION / CONSOLIDATION OPTION != BENEFIT PROVEN
+COMMAND CENTER IMPLEMENTED != FUTURE AGENT / FINANCE INTEGRATIONS COMPLETED
 ```
 
 The original 21-experiment programme remains open:
@@ -207,6 +215,8 @@ SSI V5 does **not** currently claim:
 - universal V10/S10 superiority;
 - universal superiority of V1, V2 or V3;
 - universal benefit from consultation/consolidation;
+- all BODY / ISKRA / ROBERT remote Command Center integrations already live;
+- bank, brokerage, crypto or FX integrations already connected;
 - physical drone or humanoid validation;
 - independent external replication;
 - production readiness;
@@ -216,14 +226,15 @@ SSI V5 does **not** currently claim:
 
 1. [`START_HERE.md`](START_HERE.md)
 2. [`CURRENT_TRUTH_INDEX_20260914.md`](CURRENT_TRUTH_INDEX_20260914.md)
-3. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
-4. [`GRANT_REVIEWER_CURRENT_STATUS_20260914.md`](GRANT_REVIEWER_CURRENT_STATUS_20260914.md)
-5. [`CURRENT_RESEARCH_ROADMAP_20260914.md`](CURRENT_RESEARCH_ROADMAP_20260914.md)
-6. [`TRAINING_CURRENT_STATUS_20260914.md`](TRAINING_CURRENT_STATUS_20260914.md)
-7. [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
-8. [`S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md`](S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md)
-9. [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
-10. [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
-11. [`HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md`](HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md)
+3. [`DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md`](DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md)
+4. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
+5. [`GRANT_REVIEWER_CURRENT_STATUS_20260914.md`](GRANT_REVIEWER_CURRENT_STATUS_20260914.md)
+6. [`CURRENT_RESEARCH_ROADMAP_20260914.md`](CURRENT_RESEARCH_ROADMAP_20260914.md)
+7. [`TRAINING_CURRENT_STATUS_20260914.md`](TRAINING_CURRENT_STATUS_20260914.md)
+8. [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
+9. [`S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md`](S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md)
+10. [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
+11. [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
+12. [`HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md`](HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md)
 
 Older dated files remain preserved as historical evidence. When an older status conflicts with a later evidence-backed status, use the newest dated current-state document without rewriting the historical record.
