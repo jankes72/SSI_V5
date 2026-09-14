@@ -15,7 +15,7 @@ TEST 5 = 29/29 acceptance / 524/524 regression PASS
 7-BODY READINESS = 7/7 PASS / 147/147
 DIRECTOR TRAIN08A = 48/48 PASS / 16/16 blind validations / FOUNDATION_S1 created
 BODY_FROZEN TRAIN01A = 48/48 PASS / 16/16 blind validations / FOUNDATION_S1 created
-S10 V1/V2 = explicit controlled comparison lines
+S10 V1/V3/V2 = explicit controlled comparison lines
 DRONE DOMAIN = implemented software-level R&D demonstrator
 HUMANOID DOMAIN = implemented software-level R&D demonstrator
 ```
@@ -32,7 +32,7 @@ The final PASS does not erase earlier `43 PASS / 5 INCONCLUSIVE / 0 FAIL` histor
 
 The 2026-09-12 S1–S5 V2 package suite remains a valid frozen historical predeclaration. It is not deleted or rewritten.
 
-The latest training-control methodology is now the shared **S1–S10** protocol for S10 Variant V1 and V2:
+The latest training-control methodology is now the shared **S1–S10** protocol for S10 Variants V1, V2 and V3:
 
 ```text
 S1  FOUNDATION
@@ -47,15 +47,38 @@ S9  NOVEL RECOMBINATION
 S10 GENERALIZATION READINESS GATE
 ```
 
-V1 and V2 are intended to receive the same curriculum, task families and acceptance contract so later differences can be attributed to the S10 execution/control variant rather than unequal training exposure.
+All three variants are intended to receive the same curriculum, task families and acceptance contract so later differences can be attributed to the execution/control architecture rather than unequal training exposure.
 
 This is a **predeclared protocol**, not a claim that all S1–S10 stages have already been executed or passed.
 
 See:
 
 - [`TRAINING_CURRENT_STATUS_20260914.md`](TRAINING_CURRENT_STATUS_20260914.md)
-- [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md)
+- [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md)
 - [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
+
+## Router S10 variants
+
+SSI V5 now preserves three Router S10 engineering variants for controlled comparison:
+
+```text
+V1 = lean control/reference variant
+V3 = intermediate MetaNetwork variant
+V2 = richer optimized control/observability variant
+```
+
+The numbering is historical lineage, not ranking. V3 is the third explicit research line even though its architecture is intentionally positioned between V1 and V2.
+
+V3 is being synchronized to the common SSI V5 operational/evidence contracts while preserving its own MetaNetwork architecture. It is not being converted into a copy of V2.
+
+V2 has published scoped engineering measurements including warm reuse around `1.48–1.51 s`, cold init + evaluation around `3.60 s`, and a localized-change case with `12/13` families reused and `1/13` recomputed while matching an independent full modified evaluation.
+
+V1, V2 and V3 are not yet claimed to have completed the full shared S1–S10 training programme, and no variant is claimed universally superior.
+
+See:
+
+- [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
+- [`S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md`](S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md)
 
 ## Cross-domain status — drones and humanoid
 
@@ -125,21 +148,6 @@ CONSULTATION OPTION EXISTS != SCIENTIFIC BENEFIT PROVEN
 
 The implemented drone/humanoid laboratories now provide infrastructure in which later controlled experiments and external challenges can be run.
 
-## Router S10 variants
-
-SSI V5 preserves two Router S10 engineering variants for controlled comparison:
-
-```text
-V1 = lean control/reference variant
-V2 = richer optimized control/observability variant
-```
-
-V2 has published scoped engineering measurements including warm reuse around `1.48–1.51 s`, cold init + evaluation around `3.60 s`, and a localized-change case with `12/13` families reused and `1/13` recomputed while matching an independent full modified evaluation.
-
-V1 and V2 are not yet claimed to have completed the full shared S1–S10 training programme, and V2 is not claimed universally superior.
-
-See [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md).
-
 ## DIRECTOR and ROBERT
 
 ```text
@@ -161,7 +169,7 @@ OBSERVE != CONTROL
 
 ## Current claim boundary
 
-SSI V5 does not currently claim completed S1–S10 training, completed/pass outcomes for all 21 cross-domain experiments, universal V10/S10 superiority, complete seven-line S10 scientific success, physical drone/humanoid validation, independent external replication, production readiness, AGI or consciousness.
+SSI V5 does not currently claim completed S1–S10 training, completed/pass outcomes for all 21 cross-domain experiments, universal V10/S10 superiority, universal superiority of V1/V2/V3, complete seven-line S10 scientific success, physical drone/humanoid validation, independent external replication, production readiness, AGI or consciousness.
 
 ## Read these current documents first
 
@@ -170,11 +178,12 @@ SSI V5 does not currently claim completed S1–S10 training, completed/pass outc
 3. [`GRANT_REVIEWER_CURRENT_STATUS_20260914.md`](GRANT_REVIEWER_CURRENT_STATUS_20260914.md)
 4. [`TRAINING_CURRENT_STATUS_20260914.md`](TRAINING_CURRENT_STATUS_20260914.md)
 5. [`STATUS_SYNC_20260914.md`](STATUS_SYNC_20260914.md)
-6. [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md)
+6. [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md)
 7. [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
-8. [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
-9. [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
-10. [`HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md`](HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md)
+8. [`S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md`](S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md)
+9. [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
+10. [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
+11. [`HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md`](HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md)
 
 Older `CURRENT_TRUTH_INDEX.md`, `CURRENT_RESEARCH_ROADMAP_20260910.md`, S1–S5 and older grant/experiment documents remain valid **historical evidence** of what was known or planned at those dates; they are not the current front door.
 
