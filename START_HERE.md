@@ -53,15 +53,15 @@ This is a **predeclared protocol**, not a claim that all S1–S10 stages have al
 
 See:
 
+- [`TRAINING_CURRENT_STATUS_20260914.md`](TRAINING_CURRENT_STATUS_20260914.md)
 - [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md)
 - [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
-- [`STATUS_SYNC_20260914.md`](STATUS_SYNC_20260914.md)
 
 ## Cross-domain status — drones and humanoid
 
 Drones and humanoid robotics are no longer only future software targets.
 
-As of 2026-09-14 SSI V5 has two implemented software-level domain-transfer laboratories:
+As of 2026-09-14 SSI V5 has two implemented software-level domain-transfer laboratories.
 
 ### DRONES / SWARM
 
@@ -123,11 +123,11 @@ SOFTWARE TRANSFER IMPLEMENTED != PHYSICAL VALIDATION
 CONSULTATION OPTION EXISTS != SCIENTIFIC BENEFIT PROVEN
 ```
 
-The implemented drone/humanoid laboratories now provide infrastructure in which the later controlled experiments and external challenges can be run.
+The implemented drone/humanoid laboratories now provide infrastructure in which later controlled experiments and external challenges can be run.
 
 ## Router S10 variants
 
-SSI V5 now preserves two Router S10 engineering variants for controlled comparison:
+SSI V5 preserves two Router S10 engineering variants for controlled comparison:
 
 ```text
 V1 = lean control/reference variant
@@ -149,57 +149,34 @@ DIRECTOR_FROZEN_C0
 -> later stages only when separately evidenced
 ```
 
-ROBERT remains a continuous engineering/execution line and is not reset by cleaning experimental copies. Director does not currently control isolated ISKRA research lines.
+ROBERT remains a continuous engineering/execution line and is not reset by cleaning experimental copies.
 
-## Router V10
-
-V10 is treated as a state-, history-, outcome-, and failure-aware competence/recovery router.
+## Reviewer and control boundary
 
 ```text
-HIGH CONFIDENCE + VALID HISTORY -> REUSE_TOP1
-SIMILAR / AMBIGUOUS -> VERIFY_TOPK / VERIFY-ADAPT
-LOW / UNKNOWN / CONFLICT -> FULL_FLOW
-KNOWN FAILED ROUTE -> DO NOT BLINDLY REPEAT
--> ALTERNATIVE / LEGO / VERIFY / ESCALATE
+LOCAL CENTRAL CONTROL = private owner/operator authority
+PUBLIC REVIEWER INTERFACE = sanitized observer-only surface
+OBSERVE != CONTROL
 ```
 
-Historical scoped Test 3 evidence includes `REUSE_TOP1 = 534`, `VERIFY_TOPK = 66`, `fallback = 0`, `known correctness = 100/100`, and `57.61 s` vs `126.65 s`. This is not a universal superiority claim.
+## Current claim boundary
 
-## Collaboration and funding
+SSI V5 does not currently claim completed S1–S10 training, completed/pass outcomes for all 21 cross-domain experiments, universal V10/S10 superiority, complete seven-line S10 scientific success, physical drone/humanoid validation, independent external replication, production readiness, AGI or consciousness.
 
-SSI V5 is open to controlled collaboration in:
+## Read these current documents first
 
-```text
-agentic AI
-multi-agent systems
-continual / lifelong learning
-persistent competence
-adaptive routing
-cross-agent competence consolidation
-autonomous systems
-robotics / humanoids
-drones / multi-robot systems
-trusted / auditable agent workflows
-cross-domain transfer
-```
+1. [`CURRENT_TRUTH_INDEX_20260914.md`](CURRENT_TRUTH_INDEX_20260914.md)
+2. [`CURRENT_RESEARCH_ROADMAP_20260914.md`](CURRENT_RESEARCH_ROADMAP_20260914.md)
+3. [`GRANT_REVIEWER_CURRENT_STATUS_20260914.md`](GRANT_REVIEWER_CURRENT_STATUS_20260914.md)
+4. [`TRAINING_CURRENT_STATUS_20260914.md`](TRAINING_CURRENT_STATUS_20260914.md)
+5. [`STATUS_SYNC_20260914.md`](STATUS_SYNC_20260914.md)
+6. [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md)
+7. [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
+8. [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
+9. [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
+10. [`HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md`](HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md)
 
-The current drone and humanoid software laboratories are now practical collaboration entry points for externally supplied challenge cases, simulation expertise and later physical validation.
-
-## Key documents
-
-1. [`README.md`](README.md)
-2. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
-3. [`STATUS_SYNC_20260914.md`](STATUS_SYNC_20260914.md)
-4. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
-5. [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md)
-6. [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
-7. [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
-8. [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
-9. [`HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md`](HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md)
-10. [`CURRENT_RESEARCH_ROADMAP_20260910.md`](CURRENT_RESEARCH_ROADMAP_20260910.md)
-11. [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
-12. [`COLLABORATION_AND_PARTNER_ENTRY.md`](COLLABORATION_AND_PARTNER_ENTRY.md)
-13. [`FUNDING_STRATEGY_AND_INDEPENDENT_ROADMAP.md`](FUNDING_STRATEGY_AND_INDEPENDENT_ROADMAP.md)
+Older `CURRENT_TRUTH_INDEX.md`, `CURRENT_RESEARCH_ROADMAP_20260910.md`, S1–S5 and older grant/experiment documents remain valid **historical evidence** of what was known or planned at those dates; they are not the current front door.
 
 ## Publication boundary
 
