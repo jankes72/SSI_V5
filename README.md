@@ -17,8 +17,8 @@ TEST 5 = 29/29 acceptance PASS / 524/524 regression PASS
 7-BODY readiness = 7/7 PASS / 147/147 common matrix
 BODY_FROZEN Foundation S1 = VERIFIED PASS
 DIRECTOR Foundation S1 = CREATED
-Router S10 = explicit V1/V2 comparison lines
-S1-S10 = latest shared predeclared V1/V2 training-control protocol
+Router S10 = explicit V1 / V3 / V2 comparison lines
+S1-S10 = latest shared predeclared three-variant training-control protocol
 DRONE / SWARM = implemented software-level research laboratory
 HUMANOID MOTION / STABILITY = implemented software-level research laboratory
 PUBLIC REVIEWER INTERFACE = observer-only
@@ -56,20 +56,23 @@ V10 is a state/history/outcome-aware competence and recovery router. Its role is
 
 S10 compares competence from independent histories, groups functionally related competence, evaluates evidence and supports Champion/Challenger/Specialist/Hold decisions while preserving provenance and immutable FAIR baselines.
 
-Two explicit S10 engineering variants are currently preserved:
+Three explicit S10 engineering variants are currently preserved:
 
 ```text
 V1 = lean control/reference variant
+V3 = intermediate MetaNetwork variant
 V2 = richer optimized control/observability variant
 ```
 
-See [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md).
+The numbering is lineage, not a ranking. V3 is the third explicit line while occupying an intermediate architectural role.
+
+See [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md) and [`S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md`](S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md).
 
 ## Training — S1–S10 current control protocol
 
 The S1–S5 V2 suite from 2026-09-12 remains historical frozen evidence.
 
-The latest training-control methodology is the shared S1–S10 curriculum for S10 V1 and V2:
+The latest training-control methodology is the shared S1–S10 curriculum for S10 V1, V2 and V3:
 
 ```text
 S1  Foundation
@@ -84,12 +87,14 @@ S9  Novel Recombination
 S10 Generalization Readiness Gate
 ```
 
-This is a **predeclared comparison-control protocol**, not a claim that all BODY lines or both variants have already completed S1–S10.
+This is a **predeclared comparison-control protocol**, not a claim that all BODY lines or all three variants have already completed S1–S10.
 
 See:
 
 - [`TRAINING_CURRENT_STATUS_20260914.md`](TRAINING_CURRENT_STATUS_20260914.md)
-- [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md)
+- [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md)
+
+The earlier V1/V2-only protocol remains preserved as dated historical evidence.
 
 ## Cross-domain transfer — implemented software laboratories
 
@@ -195,11 +200,12 @@ See [`COLLABORATION_AND_PARTNER_ENTRY.md`](COLLABORATION_AND_PARTNER_ENTRY.md).
 
 SSI V5 does **not** currently claim:
 
-- completed S1–S10 training across all BODY lines;
+- completed S1–S10 training across all BODY lines or all three variants;
 - completed/pass outcomes for all seven held-out mechanism tests;
 - completed/pass outcomes for all 21 cross-domain experiments;
 - complete seven-line scientific S10 validation;
 - universal V10/S10 superiority;
+- universal superiority of V1, V2 or V3;
 - universal benefit from consultation/consolidation;
 - physical drone or humanoid validation;
 - independent external replication;
@@ -215,8 +221,9 @@ SSI V5 does **not** currently claim:
 5. [`CURRENT_RESEARCH_ROADMAP_20260914.md`](CURRENT_RESEARCH_ROADMAP_20260914.md)
 6. [`TRAINING_CURRENT_STATUS_20260914.md`](TRAINING_CURRENT_STATUS_20260914.md)
 7. [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
-8. [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
-9. [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
-10. [`HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md`](HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md)
+8. [`S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md`](S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md)
+9. [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
+10. [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
+11. [`HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md`](HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md)
 
 Older dated files remain preserved as historical evidence. When an older status conflicts with a later evidence-backed status, use the newest dated current-state document without rewriting the historical record.
