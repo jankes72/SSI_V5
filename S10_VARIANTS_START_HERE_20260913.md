@@ -1,38 +1,47 @@
-# SSI V5 — Router S10 Variants: V1 vs V2
+# SSI V5 — Router S10 Variants: V1, V3 and V2
 
-**Date:** `2026-09-13`  
+**Originally opened:** `2026-09-13`  
+**Updated:** `2026-09-14`  
 **Role:** reviewer-facing comparison front door  
 **Public boundary:** sanitized evidence only / no proprietary implementation source
 
-## Why two variants exist
+## Why multiple variants exist
 
-SSI V5 retains two Router S10 engineering lines for controlled comparison rather than treating every optimization as a silent replacement of the previous configuration.
+SSI V5 retains multiple Router S10 engineering lines for controlled comparison rather than treating every architectural change as a silent replacement of the previous configuration.
+
+The current comparison space contains three explicit research lines:
 
 ```text
 V1 = lean control/reference variant
+V3 = intermediate MetaNetwork variant
 V2 = richer optimized control/observability variant
 ```
 
-The purpose is to measure the engineering trade-off between explicit recomputation and safe reuse while preserving the same research boundaries, calibration discipline and immutable FAIR controls.
+The numbering is historical lineage, not a performance ranking. V3 is the third explicitly maintained line even though its architectural role is intermediate between the lean V1 line and the richer V2 line.
+
+The purpose is to measure engineering trade-offs among different execution/control architectures while preserving common research boundaries, calibration discipline, provenance and immutable FAIR controls.
 
 ## Shared S1–S10 training control
 
-Both variants are predeclared to receive the **same ten-stage S1–S10 training curriculum**.
+All three variants are intended to receive the **same ten-stage S1–S10 training curriculum**.
 
 ```text
 V1 = S1 -> S2 -> S3 -> S4 -> S5 -> S6 -> S7 -> S8 -> S9 -> S10
+V3 = S1 -> S2 -> S3 -> S4 -> S5 -> S6 -> S7 -> S8 -> S9 -> S10
 V2 = S1 -> S2 -> S3 -> S4 -> S5 -> S6 -> S7 -> S8 -> S9 -> S10
 ```
 
-The curriculum, task families, ordering/randomization rules and acceptance contract are intended to remain matched. The experimental variable is therefore the S10 execution/control variant, not unequal training exposure.
+The curriculum, task families, ordering/randomization rules and acceptance contract are intended to remain matched. The experimental variable is therefore the execution/control architecture, not unequal training exposure.
 
-The ten stages progress from foundation and routing practice through autonomy, robustness, multiple-solution reasoning, rerouting, cross-domain abstraction, novel recombination and a final generalization-readiness gate.
+Current three-variant methodology:
 
-Detailed shared-training methodology:
+[`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md)
+
+The earlier two-variant methodology remains preserved as historical evidence:
 
 [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md)
 
-This shared curriculum is a predeclared methodology. It does not claim that both variants have already completed all ten stages.
+Neither document is proof that all variants have already completed all ten stages.
 
 ## Variant V1 — control/reference
 
@@ -60,6 +69,28 @@ Detailed V1 evidence and comparison protocol:
 
 [`S10_VARIANT_V1_CONTROL_BASELINE_AND_V1_V2_COMPARISON_20260913.md`](S10_VARIANT_V1_CONTROL_BASELINE_AND_V1_V2_COMPARISON_20260913.md)
 
+## Variant V3 — intermediate MetaNetwork
+
+V3 is the third explicit SSI V5 S10 engineering line.
+
+Its research role is different from both V1 and V2:
+
+```text
+V1 = deliberately lean reference/control path
+V3 = intermediate MetaNetwork-oriented path
+V2 = richer control/observability/integrity path
+```
+
+V3 preserves its own MetaNetwork architecture. It is not being converted into a copy of V2. Where common SSI V5 contracts already have verified implementations, the current V2 line may be used as a reference for repair and compatibility work, but only the shared contract is transferred; V3 retains its distinct architecture.
+
+The current V3 synchronization/validation target includes the common SSI V5 operational boundaries around seven BODY lines, FAIR protection, local ROOT versus public observer separation, runtime/IPC identity, Hermes/S10 integration, training discovery/preflight, evidence/checkpoints and fail-closed handling of unavailable execution capabilities.
+
+Current V3 status document:
+
+[`S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md`](S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md)
+
+V3 timings and final closure claims remain unclaimed until separate evidence is published.
+
 ## Variant V2 — optimized control/observability
 
 V2 adds richer execution optimization and integrity-aware reuse around the S10 workflow.
@@ -85,9 +116,9 @@ Detailed V2 evidence:
 
 [`S10_VARIANT_V2_PERFORMANCE_AND_INTEGRITY_EVIDENCE_20260913.md`](S10_VARIANT_V2_PERFORMANCE_AND_INTEGRITY_EVIDENCE_20260913.md)
 
-## What must stay identical in a fair V1/V2 benchmark
+## What must stay identical in a fair three-variant benchmark
 
-A formal comparison should keep the following matched:
+A formal comparison should keep the following matched wherever practical:
 
 - S1–S10 training curriculum;
 - task-family identities;
@@ -100,14 +131,14 @@ A formal comparison should keep the following matched:
 - declared evaluation mode;
 - measurement boundaries.
 
-The benchmark should compare not only time but also semantic result equivalence, family assignments, Champion/Challenger agreement, false merge/split behavior, wrong promotions, amount of work recomputed or reused, regression outcome and fail-closed integrity behavior.
+The benchmark should compare not only time but also semantic result equivalence, family assignments, Champion/Challenger agreement, false merge/split behavior, wrong promotions, amount of work recomputed or reused, regression outcome, recovery behavior and fail-closed integrity behavior.
 
 ## Claim boundary
 
-The current evidence does not justify a universal claim that V1 is slower or that V2 is superior in every condition. V2 has measured optimization evidence under its declared conditions; V1 now has a separately documented control snapshot and must receive matched timing runs before timing claims are made across variants.
+The current evidence does not justify a universal claim that any one variant is superior.
 
-The shared S1–S10 curriculum is predeclared as the same for both variants, but this document does not claim that both variants have already completed the ten training stages.
+V2 has scoped measured optimization evidence under declared conditions. V1 has a separately documented control snapshot. V3 is now an explicit active intermediate MetaNetwork comparison line and must receive its own closure and timing evidence before matched performance conclusions are drawn.
 
 The intended scientific value is the controlled comparison itself:
 
-> preserve a lean reference path, introduce an optimized path, give both variants the same training exposure, hold the research invariants fixed, and accept performance or efficiency improvements only when the resulting decisions remain evidence-equivalent and integrity gates remain intact.
+> preserve a lean reference path, preserve an intermediate MetaNetwork path, preserve a richer optimized path, expose all three to matched training and evaluation conditions, and accept performance or efficiency claims only when the resulting decisions remain evidence-backed and integrity boundaries remain intact.
