@@ -11,9 +11,9 @@ The 2026-09-12 S1–S5 V2 package suite remains a valid frozen historical predec
 
 The latest training-control methodology is now:
 
-[`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md)
+[`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md)
 
-It predeclares the same S1–S10 curriculum for S10 Variant V1 and V2:
+It predeclares the same S1–S10 curriculum for S10 Variants V1, V2 and V3:
 
 ```text
 S1 Foundation
@@ -28,15 +28,33 @@ S9 Novel Recombination
 S10 Generalization Readiness Gate
 ```
 
-This is a predeclared comparison-control protocol. It does **not** claim that all ten stages have already been executed or passed.
+The earlier V1/V2-only protocol remains preserved as historical evidence of the two-variant phase.
 
-### 2. Router S10: V1 and V2 are now explicit comparison variants
+This is a predeclared comparison-control protocol. It does **not** claim that all ten stages have already been executed or passed by all variants.
+
+### 2. Router S10: V1, V3 and V2 are now explicit comparison variants
 
 Current reviewer entry:
 
 [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
 
-V1 is the lean reference/control line. V2 is the richer optimized control/observability line. Published evidence remains scoped engineering evidence, not proof of universal superiority or complete seven-line scientific success.
+Current three-line identity:
+
+```text
+V1 = lean reference/control line
+V3 = intermediate MetaNetwork line
+V2 = richer optimized control/observability line
+```
+
+The numbering is historical lineage, not a performance ranking.
+
+V3 is the third explicit research line. It preserves its own MetaNetwork-oriented architecture while being synchronized to the common SSI V5 operational, FAIR, observer, training and evidence contracts. Verified V2 behavior may serve as a reference for common-contract repair, but V3 is not to be converted into a copy of V2.
+
+Current V3 status:
+
+[`S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md`](S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md)
+
+No universal superiority of V1, V2 or V3 is claimed. V3 final timing/performance closure remains pending separate evidence.
 
 ### 3. Drones and humanoid are no longer only planned software domains
 
@@ -66,11 +84,11 @@ It does **not** mean that:
 - complete scientific cross-domain transfer has been proven;
 - the consultation/consolidation option by itself proves scientific benefit.
 
-### 4. Historical experiment documents remain historical
+### 4. Historical experiment and variant documents remain historical
 
-Files recorded before 2026-09-14 may correctly describe drones/humanoid as planned because that was the state when they were committed. They remain evidence of chronology.
+Files recorded before the current synchronization may correctly describe only V1/V2 or may describe drones/humanoid as planned because that was the state when they were committed. They remain evidence of chronology.
 
-When reading current state, use the latest status documents above rather than interpreting historical `PLANNED` statements as the present project state.
+When reading current state, use the latest status documents above rather than interpreting historical two-variant or `PLANNED` statements as the present project state.
 
 ### 5. Current execution boundary
 
@@ -78,9 +96,10 @@ Public evidence still distinguishes implementation from outcome:
 
 ```text
 BODY_FROZEN Foundation S1 = verified historical PASS
-S1–S10 shared curriculum = predeclared
+S1–S10 shared curriculum = predeclared for V1/V2/V3
 complete S1–S10 execution = not claimed
-S10 V1/V2 engineering comparison = active / partially evidenced
+S10 V1/V2/V3 engineering comparison = active / partially evidenced
+V3 final closure = not yet claimed
 drone software-domain transfer = implemented
 humanoid software-domain transfer = implemented
 21 controlled cross-domain experiment outcomes = not claimed complete
@@ -92,7 +111,7 @@ independent external replication = not claimed
 
 For current-state questions use this order:
 
-1. `CURRENT_TRUTH_INDEX.md`
+1. `CURRENT_TRUTH_INDEX_20260914.md`
 2. this synchronization note
 3. `README.md`
 4. `START_HERE_FOR_REVIEWERS.md`
