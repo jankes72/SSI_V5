@@ -26,9 +26,9 @@ The final Foundation PASS preserves earlier inconclusive outcomes, recovery atte
 
 The S1–S5 V2 suite recorded on `2026-09-12` remains a valid historical predeclaration and structural audit.
 
-The latest training-control methodology is the shared S1–S10 curriculum for Router S10 Variant V1 and V2:
+The latest training-control methodology is now the shared S1–S10 curriculum for Router S10 Variants V1, V2 and V3:
 
-[`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md)
+[`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md)
 
 ```text
 S1  Foundation
@@ -43,24 +43,33 @@ S9  Novel Recombination
 S10 Generalization Readiness Gate
 ```
 
+The earlier V1/V2-only training protocol remains historical evidence. The current three-variant protocol extends the comparison design without rewriting the earlier record.
+
 The S1–S10 protocol is predeclared comparison control, not proof that all ten stages have already been executed or passed.
 
 Current public execution evidence still supports BODY_FROZEN Foundation S1 as the established training milestone. Later stages require separate execution evidence.
 
 ## Router S10 truth
 
-Two explicit engineering variants are preserved for controlled comparison:
+Three explicit engineering variants are now preserved for controlled comparison:
 
 ```text
 V1 = lean control/reference variant
+V3 = intermediate MetaNetwork variant
 V2 = richer optimized control/observability variant
 ```
+
+The numbering is historical lineage, not a ranking. V3 is the third explicit research line and is architecturally positioned between the deliberately lean V1 line and the richer V2 line.
 
 Reviewer entry:
 
 [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
 
-Published evidence is scoped engineering evidence. It does not prove universal V2 superiority or complete seven-line scientific cross-consolidation.
+V3 current status:
+
+[`S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md`](S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md)
+
+Published evidence remains scoped engineering evidence. It does not prove universal superiority of any variant or complete seven-line scientific cross-consolidation.
 
 ## Cross-domain transfer truth
 
@@ -127,7 +136,8 @@ The implemented drone and humanoid labs improve experiment readiness. They do no
 BODY_FROZEN Foundation S1 = VERIFIED PASS
 complete S1-S10 execution = NOT CLAIMED
 all 7 BODY at S10 = NOT CLAIMED
-full matched V1/V2 training comparison = NOT CLAIMED COMPLETE
+full matched V1/V2/V3 training comparison = NOT CLAIMED COMPLETE
+V3 final engineering closure = NOT YET CLAIMED
 7 held-out mechanism tests = NOT CLAIMED PASS
 21 cross-domain experiments = NOT CLAIMED COMPLETE
 drone software-domain transfer = IMPLEMENTED
@@ -146,7 +156,7 @@ OBSERVE != CONTROL
 
 ## Claim boundary
 
-SSI V5 does not currently claim AGI, consciousness, production readiness, universal transfer, universal V10/S10 superiority, complete seven-line S10 scientific success, completed physical drone/humanoid validation, or completed independent replication.
+SSI V5 does not currently claim AGI, consciousness, production readiness, universal transfer, universal V10/S10 superiority, universal superiority of V1/V2/V3, complete seven-line S10 scientific success, completed physical drone/humanoid validation, or completed independent replication.
 
 ## Current reading order
 
@@ -154,10 +164,10 @@ SSI V5 does not currently claim AGI, consciousness, production readiness, univer
 2. [`CURRENT_TRUTH_INDEX_20260914.md`](CURRENT_TRUTH_INDEX_20260914.md)
 3. [`STATUS_SYNC_20260914.md`](STATUS_SYNC_20260914.md)
 4. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
-5. [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md)
+5. [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md)
 6. [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
-7. [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
-8. [`CURRENT_RESEARCH_ROADMAP_20260914.md`](CURRENT_RESEARCH_ROADMAP_20260914.md)
-9. [`FUNDING_STRATEGY_AND_INDEPENDENT_ROADMAP_20260914.md`](FUNDING_STRATEGY_AND_INDEPENDENT_ROADMAP_20260914.md)
+7. [`S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md`](S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md)
+8. [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
+9. [`CURRENT_RESEARCH_ROADMAP_20260914.md`](CURRENT_RESEARCH_ROADMAP_20260914.md)
 
 Earlier files remain valid historical evidence of what was known or planned when they were committed.
