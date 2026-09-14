@@ -12,6 +12,7 @@ TEST 5 = 29/29 acceptance PASS / 524/524 regression PASS
 7-BODY readiness = CLOSED / 7/7 PASS / 147/147 common matrix
 DIRECTOR TRAIN08A = 48/48 PASS / 16/16 blind validations / S1 created
 BODY_FROZEN TRAIN01A = 48/48 PASS / 16/16 blind validations / 16 checkpoints / S1 created
+DIRECTOR COMMAND CENTER PRE-TRAINING GATE = IMPLEMENTED / LOCAL VALIDATION PASS / HASH-IDENTIFIED
 ```
 
 BODY_FROZEN S1:
@@ -20,7 +21,39 @@ BODY_FROZEN S1:
 SHA256 = ed1331e38909db829859ca377e9858ee42fe5528537cf6c9c6d2a5ecc5e253e9
 ```
 
+Director Command Center private artifact identity:
+
+```text
+SSI_DIRECTOR_COMMAND_CENTER_V1_20260914.zip
+SHA256 = 168a22ee69283c1f1b2bb4e939399c242d2b0b9c2b9e8a42899f5c07208eb09d
+```
+
+Public gate record:
+
+[`DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md`](DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md)
+
+The Command Center artifact remains proprietary. The public repository records architecture, validation scope, chronology, extension contracts and claim boundaries rather than source code.
+
 The final Foundation PASS preserves earlier inconclusive outcomes, recovery attempts and the evaluator-error lineage.
+
+## Pre-training architecture gate
+
+Before later matched BODY / ISKRA training outcomes across S10 V1 / V3 / V2, the project now has a concrete Director Command Center stage.
+
+Recorded boundary:
+
+```text
+COMMAND CENTER = IMPLEMENTED / LOCALLY VALIDATED
+GUI / ORGANIZATION MODEL = VERSIONED
+REMOTE NODE SLOTS = PREPARED
+HERMES CHANGE FEED CONTRACT = PREPARED
+SKILL / COMPETENCE FLOW VIEW = PREPARED
+PROJECT / ORDER / TECHNOLOGY RADAR SLOTS = PREPARED
+FINANCE SLOTS = PREPARED BUT NOT CONNECTED
+BODY / ISKRA REMOTE SOURCES = NOT CLAIMED ALL LIVE
+```
+
+This gate is intentionally earlier in chronology than the future matched multi-line training results.
 
 ## Training truth
 
@@ -134,10 +167,13 @@ The implemented drone and humanoid labs improve experiment readiness. They do no
 
 ```text
 BODY_FROZEN Foundation S1 = VERIFIED PASS
+DIRECTOR Command Center pre-training gate = IMPLEMENTED / LOCAL VALIDATION PASS
 complete S1-S10 execution = NOT CLAIMED
 all 7 BODY at S10 = NOT CLAIMED
 full matched V1/V2/V3 training comparison = NOT CLAIMED COMPLETE
 V3 final engineering closure = NOT YET CLAIMED
+all BODY / ISKRA remote Command Center endpoints = NOT CLAIMED LIVE
+finance integrations = NOT CONNECTED / NOT CLAIMED
 7 held-out mechanism tests = NOT CLAIMED PASS
 21 cross-domain experiments = NOT CLAIMED COMPLETE
 drone software-domain transfer = IMPLEMENTED
@@ -156,18 +192,19 @@ OBSERVE != CONTROL
 
 ## Claim boundary
 
-SSI V5 does not currently claim AGI, consciousness, production readiness, universal transfer, universal V10/S10 superiority, universal superiority of V1/V2/V3, complete seven-line S10 scientific success, completed physical drone/humanoid validation, or completed independent replication.
+SSI V5 does not currently claim AGI, consciousness, production readiness, universal transfer, universal V10/S10 superiority, universal superiority of V1/V2/V3, complete seven-line S10 scientific success, completed physical drone/humanoid validation, completed independent replication, live financial integration, or complete live connection of every future Command Center node.
 
 ## Current reading order
 
 1. [`START_HERE.md`](START_HERE.md)
 2. [`CURRENT_TRUTH_INDEX_20260914.md`](CURRENT_TRUTH_INDEX_20260914.md)
-3. [`STATUS_SYNC_20260914.md`](STATUS_SYNC_20260914.md)
-4. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
-5. [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md)
-6. [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
-7. [`S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md`](S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md)
-8. [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
-9. [`CURRENT_RESEARCH_ROADMAP_20260914.md`](CURRENT_RESEARCH_ROADMAP_20260914.md)
+3. [`DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md`](DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md)
+4. [`STATUS_SYNC_20260914.md`](STATUS_SYNC_20260914.md)
+5. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
+6. [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md)
+7. [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
+8. [`S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md`](S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md)
+9. [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
+10. [`CURRENT_RESEARCH_ROADMAP_20260914.md`](CURRENT_RESEARCH_ROADMAP_20260914.md)
 
 Earlier files remain valid historical evidence of what was known or planned when they were committed.
