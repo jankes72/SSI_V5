@@ -6,6 +6,21 @@ SSI V5 investigates whether a long-running system can build, validate, preserve,
 
 The public repository is an **evidence-indexed research mirror, not a source-code distribution**. Proprietary SSI, Micronetwork, Router V10, Router S10, ISKRA, DIRECTOR, ROBERT and ROOT-control implementation remains private by design. Public materials expose protocols, sanitized state, measurements, failures, repairs, retests, hashes, provenance, architectural boundaries and claim limits.
 
+## Cross-domain transfer — implemented software research demonstrators
+
+As of 2026-09-14, SSI V5 has implemented software-level research demonstrators in **two external domains** that were previously primarily planned research targets:
+
+- **DRONES / SWARM** — multi-grid research environment, local-vs-collective experience, representative routing/recovery scenarios, before/after memory effects, flow-depth/timing comparison, evidence capture and external challenge entry path.
+- **HUMANOID MOTION / STABILITY** — dedicated 3D humanoid research environment with articulated-body state, obstacle/terrain scenes, slip and low-friction cases, instability/recovery scenarios, before/after learning loops, scene switching and evidence capture.
+
+This is an **implemented software-level domain transfer**, not a claim of certified physical-drone or physical-humanoid operation. Proprietary SSI/V10/S10/Micronetwork implementation remains private; the public repository documents only capability, sanitized outcomes, evidence boundaries and current limitations.
+
+Start here for cross-domain status:
+
+- [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
+- [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
+- [`HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md`](HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md)
+
 ## SSI V5 in two minutes — the essence
 
 SSI V5 is intended to become a **persistent adaptive research-and-execution ecosystem**, not a single chatbot, model or one-purpose application.
@@ -365,19 +380,11 @@ SSI V5 does **not** currently claim that:
 For deeper review:
 
 1. [`SSI_V5_ORIGIN_RESEARCH_METHODOLOGY_AND_LONG_TERM_ARCHITECTURE.md`](SSI_V5_ORIGIN_RESEARCH_METHODOLOGY_AND_LONG_TERM_ARCHITECTURE.md)
-2. [`CURRENT_RESEARCH_ROADMAP_20260910.md`](CURRENT_RESEARCH_ROADMAP_20260910.md)
+2. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
 3. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
-4. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
-5. [`S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md`](S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md)
-6. [`CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md`](CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md)
-7. [`CURRENT_BODY_S3_TRAINING_STATUS_20260910.md`](CURRENT_BODY_S3_TRAINING_STATUS_20260910.md)
-8. [`evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md`](evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md)
-9. [`DIRECTOR_TRAINING_START_HERE.md`](DIRECTOR_TRAINING_START_HERE.md)
-10. [`evidence/DIRECTOR_TRAIN08A_FINAL_CLOSURE_20260909.md`](evidence/DIRECTOR_TRAIN08A_FINAL_CLOSURE_20260909.md)
-11. [`7BODY_TECHNICAL_READINESS_START_HERE.md`](7BODY_TECHNICAL_READINESS_START_HERE.md)
-12. [`TRAINING_PACKAGES_START_HERE.md`](TRAINING_PACKAGES_START_HERE.md)
-13. [`EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md`](EXPERIMENT_PROGRAM_21_CROSS_DOMAIN_20260906.md)
-14. [`POST21_RESEARCH_PHASE_INDEX_20260907.md`](POST21_RESEARCH_PHASE_INDEX_20260907.md)
-15. [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md)
-
-The standard remains: **predeclare what will be tested, preserve what actually happened, keep historical and current status distinguishable, never hide failure or executor transition, and strengthen claims only when stronger evidence exists.**
+4. [`CURRENT_RESEARCH_ROADMAP_20260910.md`](CURRENT_RESEARCH_ROADMAP_20260910.md)
+5. [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
+6. [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
+7. [`HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md`](HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md)
+8. [`S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md`](S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md)
+9. [`CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md`](CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md)
