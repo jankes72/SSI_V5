@@ -18,6 +18,7 @@ Current established layers include:
 - explicit S10 Variant V1, V3 and V2 comparison lines;
 - a predeclared shared S1–S10 curriculum for three-variant comparison;
 - implemented and locally validated Director Command Center pre-training gate;
+- predeclared Tailscale organization-wide cross-consolidation architecture;
 - implemented software-level drone/swarm research laboratory;
 - implemented software-level humanoid motion/stability research laboratory;
 - separated local control and public reviewer-observer surfaces.
@@ -28,9 +29,10 @@ For the latest compact state, see [`CURRENT_TRUTH_INDEX_20260914.md`](CURRENT_TR
 
 Before later matched BODY / ISKRA training outcomes across S10 V1 / V3 / V2, SSI V5 now records a concrete Director Command Center implementation and integration-contract stage.
 
-Public gate record:
+Public gate records:
 
-[`DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md`](DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md)
+- [`DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md`](DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md)
+- [`DIRECTOR_COMMAND_CENTER_TAILSCALE_CROSS_CONSOLIDATION_ARCHITECTURE_20260914.md`](DIRECTOR_COMMAND_CENTER_TAILSCALE_CROSS_CONSOLIDATION_ARCHITECTURE_20260914.md)
 
 Private artifact identity:
 
@@ -43,7 +45,7 @@ The repository does not publish the proprietary implementation archive. It recor
 
 The current gate establishes in advance:
 
-- a professional owner/operator Command Center separate from the lower-level developer diagnostics;
+- a professional owner/operator Command Center separate from lower-level developer diagnostics;
 - organization views for Director, ROBERT, BODY_FROZEN 2.0 and the six ISKRA lines;
 - prepared multi-node/Tailscale data-source slots;
 - Hermes change/delta reporting;
@@ -51,6 +53,34 @@ The current gate establishes in advance:
 - project/order and Technology Radar slots;
 - finance/capital extension slots with truthful `NOT_CONNECTED` states until real sources exist;
 - an adapter-first rule so later integrations connect to versioned contracts rather than silently redesigning SSI.
+
+The detailed cross-node predeclaration also freezes the intended organizational consolidation sequence:
+
+```text
+LOCAL EXPERIENCE
+-> LOCAL EVIDENCE
+-> DELTA PUBLICATION
+-> TAILSCALE TRANSPORT
+-> INCREMENTAL HERMES / IDENTITY UPDATE
+-> S10 FAST PRE-SELECTION
+-> FAMILY / SIMILARITY GROUPING
+-> DEEP COMPARISON WHERE REQUIRED
+-> CHAMPION / CHALLENGER / SPECIALIST / HOLD
+-> VERSIONED TARGET PLAN
+-> ROBERT / BODY_FROZEN 2.0 / DIRECTOR TARGET-SPECIFIC RETEST
+-> ACCEPT / HOLD / REJECT / ROLLBACK
+-> EFFECT MEASUREMENT
+-> HERMES CHANGE REPORT
+-> DIRECTOR ORGANIZATIONAL UPDATE
+```
+
+Critical training boundary:
+
+```text
+OBSERVATION != COMPETENCE TRANSFER
+```
+
+The Command Center may observe multiple training lines without making their newly learned competence available to one another before the declared consolidation gate.
 
 This is an infrastructure/chronology gate, not evidence that all remote nodes or future finance/world integrations are already live.
 
@@ -75,7 +105,7 @@ S10 Generalization Readiness Gate
 
 S10 Variants V1, V3 and V2 are intended to receive the same S1–S10 curriculum under matched comparison conditions.
 
-The Command Center gate above is recorded before those future matched outcomes so the organizational/control architecture is not invented after seeing the results.
+The Command Center and Tailscale cross-consolidation architecture are recorded before those future matched outcomes so the organizational/control and competence-transfer architecture is not invented after seeing the results.
 
 This is a prospective controlled-training protocol. It does not claim that all BODY lines or all variants have already completed S1–S10.
 
@@ -103,6 +133,7 @@ References:
 
 - [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
 - [`S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md`](S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md)
+- [`S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md`](S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md)
 
 ## Workstream C — implemented drone/swarm domain transfer
 
@@ -123,9 +154,25 @@ Current capabilities include:
 - evidence-oriented run records;
 - external challenge entry path.
 
+The drone branch is also the methodological precedent for the Command Center's local-to-collective competence model:
+
+```text
+LOCAL EXPERIENCE IN GRID A
+-> LOCAL RESULT
+-> COMPARISON / VALIDATION
+-> CONSOLIDATION DECISION
+-> COLLECTIVE AVAILABILITY
+-> RE-TEST ON OTHER GRIDS
+```
+
+A measured scoped drone benchmark showed post-consolidation cost reduction in the tested set, but also preserved a `wind_corridor` `PASS -> FAIL` regression. The roadmap therefore requires target-specific re-validation after organization-wide competence consolidation; collective availability is not treated as proof of benefit.
+
 This does not claim certified physical UAS operation or production readiness.
 
-Reference: [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md).
+References:
+
+- [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
+- [`DRONE_MEASURED_RESULTS_20260914.md`](DRONE_MEASURED_RESULTS_20260914.md)
 
 ## Workstream D — implemented humanoid domain transfer
 
@@ -164,6 +211,8 @@ DOMAIN IMPLEMENTED != EXPERIMENT PASSED
 DOMAIN INTERFACE EXISTS != PHYSICAL VALIDATION
 CONSULTATION / CONSOLIDATION OPTION EXISTS != BENEFIT PROVEN
 COMMAND CENTER IMPLEMENTED != ALL FUTURE INTEGRATIONS LIVE
+TAILSCALE DELIVERY != SCIENTIFIC VALIDATION
+COLLECTIVE AVAILABILITY != TARGET ACCEPTANCE
 ```
 
 The software laboratories reduce implementation risk and create a concrete environment for later controlled testing, external challenge design and evidence capture.
@@ -185,12 +234,13 @@ independent BODY histories
 -> frozen evidence
 -> S10 functional comparison
 -> Champion / Challenger / Specialist / Hold decisions
--> versioned descendant
--> regression
+-> versioned target integration proposal
+-> target-specific regression / acceptance
+-> effect measurement
 -> later transfer challenge
 ```
 
-The Command Center already reserves a visible organizational path for such provenance-preserving competence movement, but it does not make promotion automatic.
+The Command Center already reserves a visible organizational path for this provenance-preserving competence movement, but it does not make promotion or adoption automatic.
 
 No positive outcome is assumed in advance.
 
@@ -234,6 +284,7 @@ Not currently claimed:
 - complete matched V1/V3/V2 scientific comparison;
 - final V3 engineering/performance closure;
 - every BODY / ISKRA / ROBERT Command Center integration already live;
+- organization-wide cross-consolidation scientifically validated;
 - bank, brokerage, crypto or FX integration already connected;
 - seven held-out mechanism-test PASS results;
 - all 21 cross-domain experiment PASS results;
@@ -247,6 +298,7 @@ Not currently claimed:
 
 - [`CURRENT_TRUTH_INDEX_20260914.md`](CURRENT_TRUTH_INDEX_20260914.md)
 - [`DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md`](DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md)
+- [`DIRECTOR_COMMAND_CENTER_TAILSCALE_CROSS_CONSOLIDATION_ARCHITECTURE_20260914.md`](DIRECTOR_COMMAND_CENTER_TAILSCALE_CROSS_CONSOLIDATION_ARCHITECTURE_20260914.md)
 - [`STATUS_SYNC_20260914.md`](STATUS_SYNC_20260914.md)
 - [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md)
 - [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
