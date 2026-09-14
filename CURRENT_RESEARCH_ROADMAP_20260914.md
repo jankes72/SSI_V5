@@ -15,8 +15,8 @@ Current established layers include:
 - verified BODY_FROZEN Foundation S1;
 - Router V10 competence/recovery routing;
 - Router S10 cross-line consolidation architecture;
-- explicit S10 Variant V1 and V2 comparison lines;
-- a predeclared shared S1–S10 curriculum for V1/V2 comparison;
+- explicit S10 Variant V1, V3 and V2 comparison lines;
+- a predeclared shared S1–S10 curriculum for three-variant comparison;
 - implemented software-level drone/swarm research laboratory;
 - implemented software-level humanoid motion/stability research laboratory;
 - separated local control and public reviewer-observer surfaces.
@@ -42,26 +42,34 @@ S9  Novel Recombination
 S10 Generalization Readiness Gate
 ```
 
-Both S10 Variant V1 and Variant V2 are intended to receive the same S1–S10 curriculum under matched comparison conditions.
+S10 Variants V1, V3 and V2 are intended to receive the same S1–S10 curriculum under matched comparison conditions.
 
-This is a prospective controlled-training protocol. It does not claim that all BODY lines or both variants have already completed S1–S10.
+This is a prospective controlled-training protocol. It does not claim that all BODY lines or all variants have already completed S1–S10.
 
-Reference: [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md).
+Current reference: [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md).
+
+The earlier V1/V2-only protocol remains preserved as historical methodology.
 
 ## Workstream B — Router S10 controlled comparison
 
-Two S10 lines are maintained rather than silently replacing one with another:
+Three S10 lines are now maintained rather than silently replacing one configuration with another:
 
 ```text
 V1 = lean reference/control configuration
+V3 = intermediate MetaNetwork configuration
 V2 = richer optimized control/observability configuration
 ```
 
-The comparison target is broader than speed. It includes semantic equivalence, family assignment, Champion/Challenger decisions, false merge/split behavior, wrong promotions, recomputation/reuse amount, regression and fail-closed integrity behavior.
+The numeric order is lineage, not ranking. V3 is the third explicit research line and tests an intermediate architectural trade-off while preserving its own MetaNetwork design.
 
-Current published engineering evidence remains scoped. Full scientific seven-line success is not claimed.
+The comparison target is broader than speed. It includes semantic equivalence, family assignment, Champion/Challenger decisions, false merge/split behavior, wrong promotions, recomputation/reuse amount, regression, recovery and fail-closed integrity behavior.
 
-Reference: [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md).
+Current published engineering evidence remains scoped. V3 is under synchronization/validation and does not yet have a final performance closure record. Full scientific seven-line success is not claimed.
+
+References:
+
+- [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
+- [`S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md`](S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md)
 
 ## Workstream C — implemented drone/swarm domain transfer
 
@@ -172,7 +180,7 @@ Funding should accelerate:
 
 - stronger compute and parallelism;
 - matched longitudinal S1–S10 training runs;
-- controlled V1/V2 comparison;
+- controlled V1/V3/V2 comparison;
 - larger cross-domain experiment series;
 - external benchmark design;
 - domain-expert review;
@@ -187,7 +195,8 @@ Funding does not convert untested hypotheses into results and does not justify w
 Not currently claimed:
 
 - complete S1–S10 training of all BODY lines;
-- complete matched V1/V2 scientific comparison;
+- complete matched V1/V3/V2 scientific comparison;
+- final V3 engineering/performance closure;
 - seven held-out mechanism-test PASS results;
 - all 21 cross-domain experiment PASS results;
 - complete seven-line S10 scientific success;
@@ -200,8 +209,9 @@ Not currently claimed:
 
 - [`CURRENT_TRUTH_INDEX_20260914.md`](CURRENT_TRUTH_INDEX_20260914.md)
 - [`STATUS_SYNC_20260914.md`](STATUS_SYNC_20260914.md)
-- [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md)
+- [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md)
 - [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
+- [`S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md`](S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md)
 - [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
 - [`CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md`](CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md)
 
