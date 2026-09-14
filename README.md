@@ -1,390 +1,222 @@
 # SSI V5 — Research Front Door
 
-**Experimental persistent-competence architecture for adaptive AI systems.**
+**Experimental persistent-competence architecture for adaptive AI systems**  
+**Current public status:** `2026-09-14`  
+**Repository role:** evidence-indexed public research mirror; proprietary implementation remains private.
 
-SSI V5 investigates whether a long-running system can build, validate, preserve, reuse, compare, revise and consolidate competence across tasks using persistent state, Experience, Micronetworks, Candidate -> Challenger -> Champion lifecycle, Router V10, Router S10, LEGO composition, Hermes memory and CONTINUUM persistence.
+SSI V5 investigates whether a long-running system can build, validate, preserve, reuse, compare, revise and consolidate competence across tasks using persistent state, Experience, Micronetworks, Candidate → Challenger → Champion lifecycle, Router V10, Router S10, LEGO composition, Hermes memory and CONTINUUM persistence.
 
-The public repository is an **evidence-indexed research mirror, not a source-code distribution**. Proprietary SSI, Micronetwork, Router V10, Router S10, ISKRA, DIRECTOR, ROBERT and ROOT-control implementation remains private by design. Public materials expose protocols, sanitized state, measurements, failures, repairs, retests, hashes, provenance, architectural boundaries and claim limits.
+This repository publishes **evidence, protocols, status, failures, repairs, retests, hashes, provenance and claim boundaries**. It does not distribute the proprietary SSI/V10/S10/Micronetwork/ISKRA/DIRECTOR/ROBERT implementation.
 
-## Cross-domain transfer — implemented software research demonstrators
+## Current state — 2026-09-14
 
-As of 2026-09-14, SSI V5 has implemented software-level research demonstrators in **two external domains** that were previously primarily planned research targets:
+```text
+BODY_FROZEN T0 = immutable historical control
+6 BODY ISKRA T0 = START_STATE_VALIDATED / group QA 48/48 PASS
+TEST 5 = 29/29 acceptance PASS / 524/524 regression PASS
+7-BODY readiness = 7/7 PASS / 147/147 common matrix
+BODY_FROZEN Foundation S1 = VERIFIED PASS
+DIRECTOR Foundation S1 = CREATED
+Router S10 = explicit V1/V2 comparison lines
+S1-S10 = latest shared predeclared V1/V2 training-control protocol
+DRONE / SWARM = implemented software-level research laboratory
+HUMANOID MOTION / STABILITY = implemented software-level research laboratory
+PUBLIC REVIEWER INTERFACE = observer-only
+```
 
-- **DRONES / SWARM** — multi-grid research environment, local-vs-collective experience, representative routing/recovery scenarios, before/after memory effects, flow-depth/timing comparison, evidence capture and external challenge entry path.
-- **HUMANOID MOTION / STABILITY** — dedicated 3D humanoid research environment with articulated-body state, obstacle/terrain scenes, slip and low-friction cases, instability/recovery scenarios, before/after learning loops, scene switching and evidence capture.
+Canonical current index:
 
-This is an **implemented software-level domain transfer**, not a claim of certified physical-drone or physical-humanoid operation. Proprietary SSI/V10/S10/Micronetwork implementation remains private; the public repository documents only capability, sanitized outcomes, evidence boundaries and current limitations.
+[`CURRENT_TRUTH_INDEX_20260914.md`](CURRENT_TRUTH_INDEX_20260914.md)
 
-Start here for cross-domain status:
+Canonical current roadmap:
+
+[`CURRENT_RESEARCH_ROADMAP_20260914.md`](CURRENT_RESEARCH_ROADMAP_20260914.md)
+
+## SSI V5 in one architecture view
+
+```text
+REAL PROBLEM / WORLD
+-> HERMES / VERSIONED KNOWLEDGE
+-> BODY / ISKRA / AGENT
+-> EXPERIENCE / VERIFIED OUTCOME
+-> MICRONETWORK COMPETENCE
+-> ROUTER V10
+-> CANDIDATE -> CHALLENGER -> CHAMPION
+-> ROUTER S10 / CROSS-LINE CONSOLIDATION
+-> VERSIONED DESCENDANT
+-> NEW TASK / DOMAIN
+-> EVIDENCE
+```
+
+### Router V10
+
+V10 is a state/history/outcome-aware competence and recovery router. Its role is to choose among reuse, verification/adaptation, composition, deeper/full flow and recovery rather than treating every task as a fresh identical computation.
+
+### Router S10
+
+S10 compares competence from independent histories, groups functionally related competence, evaluates evidence and supports Champion/Challenger/Specialist/Hold decisions while preserving provenance and immutable FAIR baselines.
+
+Two explicit S10 engineering variants are currently preserved:
+
+```text
+V1 = lean control/reference variant
+V2 = richer optimized control/observability variant
+```
+
+See [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md).
+
+## Training — S1–S10 current control protocol
+
+The S1–S5 V2 suite from 2026-09-12 remains historical frozen evidence.
+
+The latest training-control methodology is the shared S1–S10 curriculum for S10 V1 and V2:
+
+```text
+S1  Foundation
+S2  LEGO + Micronetwork + Routing Practicum
+S3  Applied Autonomy
+S4  Robustness / Transfer Preparation
+S5  Pre-Experiment Maturity Gate
+S6  Multi-Path Equivalence
+S7  Counterfactual Rerouting
+S8  Cross-Domain Abstraction
+S9  Novel Recombination
+S10 Generalization Readiness Gate
+```
+
+This is a **predeclared comparison-control protocol**, not a claim that all BODY lines or both variants have already completed S1–S10.
+
+See:
+
+- [`TRAINING_CURRENT_STATUS_20260914.md`](TRAINING_CURRENT_STATUS_20260914.md)
+- [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md)
+
+## Cross-domain transfer — implemented software laboratories
+
+Two external domains that were previously mainly planned research targets are now implemented at software-demonstrator level.
+
+### DRONES / SWARM
+
+The drone laboratory includes:
+
+- multiple simulated grids/groups;
+- local versus collective experience;
+- routing and recovery scenarios;
+- communication/localization degradation cases;
+- retained incident history;
+- before/after comparison;
+- flow-depth and timing evidence;
+- cross-grid consultation/consolidation path;
+- external challenge entry path.
+
+### HUMANOID MOTION / STABILITY
+
+The humanoid laboratory includes:
+
+- dedicated 3D humanoid interface;
+- articulated-body/joint-chain state;
+- obstacle and terrain scenes;
+- slip/low-friction cases;
+- instability and recovery loops;
+- prediction-versus-reaction observation;
+- before/after learning comparison;
+- external-scene entry path.
+
+See:
 
 - [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
 - [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
 - [`HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md`](HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md)
 
-## SSI V5 in two minutes — the essence
+## Critical distinction
 
-SSI V5 is intended to become a **persistent adaptive research-and-execution ecosystem**, not a single chatbot, model or one-purpose application.
-
-The long-term idea is to connect several layers that can learn from real outcomes, preserve evidence, build reusable competence, compare independent learning histories and later consolidate validated competence without silently rewriting historical controls.
+The project deliberately separates **implementation readiness** from **scientific outcome**:
 
 ```text
-REAL WORLD / PROBLEM
--> DATA / WORLD
--> HERMES / VERSIONED KNOWLEDGE
--> BODY / ISKRA / AGENTS
--> LAB / EXPERIENCE / VERIFIED OUTCOME
--> MICRONETWORK COMPETENCE
--> ROUTER V10
--> CANDIDATE -> CHALLENGER -> CHAMPION
--> ROUTER S10 / CROSS-CONSOLIDATION
--> VERSIONED DESCENDANT
--> DIRECTOR
--> ROBERT / BODY_FROZEN 2.0
--> PRACTICAL PROJECT / NEW DOMAIN
--> EXTERNAL OUTCOME
--> EVIDENCE
--> NEXT VERSION
+DOMAIN LAB EXISTS != EXPERIMENT PASSED
+SOFTWARE DOMAIN TRANSFER != PHYSICAL VALIDATION
+CONSULTATION / CONSOLIDATION OPTION != BENEFIT PROVEN
 ```
 
-### What the main parts are for
+The original 21-experiment programme remains open:
 
 ```text
-WORLDS
-= long-running domains with real external outcomes and accumulated history.
-  Football World is the oldest mature lineage.
-  Capital-market / currency / cryptocurrency worlds are emerging data worlds.
-  Additional worlds may be created when useful.
-
-HERMES
-= changing, versioned knowledge sources / Teachers plus local competence-memory support.
-  Different agents may learn from different generations of the same source.
-  Local Hermes memory can summarize competence identity and later deltas for S10.
-
-BODY_FROZEN
-= controlled baseline and research line used to test competence acquisition,
-  transfer, recovery and later consolidation.
-
-6 x BODY ISKRA
-= six independent descendants with different initial priors and later
-  independent longitudinal histories.
-
-MICRONETWORKS + ROUTER V10
-= evidence-linked competence lifecycle and routing between reuse,
-  verification/adaptation, composition, full flow and recovery.
-
-ROUTER S10
-= cross-consolidation layer for collecting competence from multiple BODY lines,
-  grouping functionally related competence, comparing evidence and producing
-  versioned consolidation plans / descendants without rewriting FAIR baselines.
-
-CONTINUUM + LAB + EVIDENCE
-= persistence, checkpoints, experiment history, failures, recovery,
-  outcome verification and provenance.
-
-CENTRAL LOCAL CONTROL
-= private owner/operator control center for the seven BODY lines, training and
-  experiment supervision, Hermes guidance and S10 workflow.
-
-PUBLIC REVIEWER INTERFACE
-= sanitized observer-only surface. OBSERVE != CONTROL.
-
-DIRECTOR
-= long-term coordination, comparison, reputation/evidence aggregation,
-  resource/cost awareness and organizational memory.
-  Director is not intended to be an unquestionable oracle.
-
-ROBERT
-= continuous engineering/execution line: tools, programming,
-  practical interaction and later Eyes / Hands / execution.
-
-BODY_FROZEN 2.0
-= planned evidence-gated R&D layer for both external technology problems
-  and controlled improvement of SSI itself.
+7 BODY lines x 3 experiments = 21
+A = DRONES
+B = HUMANOID
+C = NEW DOMAIN independently selected by that SSI line
 ```
 
-### Long-term objectives
+The software laboratories provide the infrastructure for those experiments. The complete 21-outcome set is not claimed finished.
 
-The project is designed around several parallel goals rather than one final demo.
+## Reviewer access
 
-1. **Build persistent competence** that can be tested, versioned, reused, revised and rejected when evidence turns negative.
-2. **Measure transfer** between known, similar and genuinely novel problems instead of treating every prompt as an isolated event.
-3. **Compare independent agent histories** and observe whether different priors, experiences, knowledge generations and relationships produce measurably different long-term strategies.
-4. **Run cross-domain falsifiable experiments** in drones, humanoid robotics and independently selected new domains.
-5. **Consolidate competence after evidence**, using functional identity, Candidate / Challenger / Champion gates, S10 cross-consolidation and regression rather than blindly accumulating skills.
-6. **Preserve historical controls while upgrading descendants**, so before/after comparisons remain auditable.
-7. **Develop BODY_FROZEN 2.0 as an R&D engine** for drones, robotics, automation, industrial systems and other new technology domains while keeping the current SSI Champion protected from silent self-rewrite.
-8. **Use Worlds as long-running learning environments**, beginning with Football World and expanding to market/currency/crypto and other domains where external outcomes can verify or falsify decisions.
-9. **Apply SSI to practical economic activity**. Current intended directions include e-commerce / dropshipping, programming and software projects, SEO / content portals, and later additional domains selected because they can produce measurable real-world value.
-10. **Turn practical outcomes into stronger infrastructure** rather than depending only on grants. The planned economic policy remains `50% author / execution income`, `40% operational or investment capital`, `10% direct SSI infrastructure development`.
-11. **Move from internal evidence toward external falsification** through reviewer-safe observability, externally proposed challenge packages, independent methodology review and domain-expert validation.
-
-The intended long-term reinforcing loop is therefore:
-
-```text
-WORLDS + REAL PROBLEMS
--> KNOWLEDGE + AGENT EXPERIENCE
--> VERIFIED COMPETENCE
--> V10 ROUTING + S10 CONSOLIDATION
--> DIRECTOR / ROBERT / BODY_FROZEN 2.0
--> E-COMMERCE / PROGRAMMING / SEO / R&D / NEW WORLDS / NEW TECHNOLOGIES
--> REAL OUTCOMES
--> ECONOMIC OR RESEARCH VALUE
--> STRONGER COMPUTE / MODELS / DATA / HARDWARE
--> NEW EXPERIMENTS
--> NEXT SSI VERSION
-```
-
-This is the **long-term architecture and objective**, not a claim that all of these layers are already complete, integrated, profitable or externally validated. The repository deliberately distinguishes `EXISTS`, `VALIDATED`, `PREDECLARED`, `PLANNED` and `UNKNOWN` states.
-
-For the full provenance and long-term reasoning behind this architecture, see [`SSI_V5_ORIGIN_RESEARCH_METHODOLOGY_AND_LONG_TERM_ARCHITECTURE.md`](SSI_V5_ORIGIN_RESEARCH_METHODOLOGY_AND_LONG_TERM_ARCHITECTURE.md). For the current execution state, see [`CURRENT_RESEARCH_ROADMAP_20260910.md`](CURRENT_RESEARCH_ROADMAP_20260910.md).
-
-## Current state — 2026-09-12
-
-```text
-BODY_FROZEN T0
-= PRESERVED IMMUTABLE HISTORICAL CONTROL / 2026-09-05
-
-6 BODY ISKRA T0 DESCENDANTS
-= NICE / GUARDIAN / JUSTICE / EXPLORER / PRAGMATIST / SKEPTIC
-= START_STATE_VALIDATED / GROUP QA 48/48 PASS
-
-TEST 5
-= DEVELOPMENT_VALIDATED
-= 29/29 acceptance PASS
-= 524/524 total regression PASS
-
-7-BODY TECHNICAL READINESS
-= CLOSED / 7/7 PASS
-= A01-A21 x 7 = 147/147 PASS
-
-DIRECTOR TRAIN08A FOUNDATION
-= CLOSED / VERIFIED PASS
-= 48/48 unique steps PASS
-= 16/16 blind validations PASS
-= 16 checkpoints
-= DIRECTOR_FOUNDATION_S1 CREATED
-
-BODY_FROZEN TRAIN01A FOUNDATION
-= CLOSED / VERIFIED PASS
-= 48/48 PASS
-= 16/16 blind validations determinate PASS
-= 16/16 checkpoints
-= T0 integrity PASS
-= BODY_FROZEN_FOUNDATION_S1 CREATED
-= S1 SHA256 ed1331e38909db829859ca377e9858ee42fe5528537cf6c9c6d2a5ecc5e253e9
-
-ROUTER S10 ENGINEERING LINE
-= CROSS-CONSOLIDATION ARCHITECTURE EXISTS
-= SCOPED DESCENDANT IMPORT / RELOAD PATH EXERCISED LOCALLY
-= CALIBRATION / REGRESSION WORK IN PROGRESS
-= FULL SEVEN-LINE SCIENTIFIC OUTCOME NOT YET CLAIMED
-
-CENTRAL CONTROL / REVIEW INFRASTRUCTURE
-= PRIVATE LOCAL OWNER CONTROL + PUBLIC OBSERVER BOUNDARY DOCUMENTED
-= OBSERVE != CONTROL
-```
-
-The final BODY_FROZEN Foundation PASS preserves the earlier `43 PASS / 5 INCONCLUSIVE / 0 FAIL` run, recovery attempts, infrastructure diagnosis and step-24 evaluator-error lineage. Later closure does not erase earlier evidence.
-
-## Router S10 — cross-consolidation
-
-Router S10 is conceptually complementary to V10:
-
-```text
-V10:
-TASK / STATE -> choose how competence should be used
-
-S10:
-COMPETENCE FROM MULTIPLE BODY LINES -> identify, compare, rank and consolidate competence
-```
-
-The public S10 architecture is:
-
-```text
-LOCAL COMPETENCE
--> LOCAL HERMES MEMORY / IDENTITY SUMMARY
--> SHARED SKILL POOL
--> FAST PRE-SELECTION
--> FAMILY GROUPING
--> DEEP COMPARISON WHERE NEEDED
--> EVIDENCE RANKING
--> CHAMPION / CHALLENGER / SPECIALIST / HOLD
--> CONSOLIDATION PLAN
--> VERSIONED DESCENDANT
--> RELOAD / VERIFICATION
-```
-
-An existing Champion is not permanently protected by historical status. If later cross-line evidence supports a Challenger more strongly, promotion may be recommended while preserving the former Champion and full provenance.
-
-The first Hermes-memory pass is a full bootstrap; later passes are designed to consume deltas and revisit only changed/dirty competence families where possible.
-
-A scoped local engineering validation has exercised a real descendant import/reload path and expected-vs-loaded verification on a limited subset. This is internal engineering evidence, **not** a claim that the complete seven-BODY scientific cross-consolidation experiment has succeeded.
-
-See [`S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md`](S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md).
-
-## Central local control and public reviewer interface
-
-SSI V5 now documents two deliberately separated surfaces:
+SSI V5 separates public observability from private execution authority.
 
 ```text
 LOCAL CENTRAL CONTROL
-= private owner/operator authority
-= per-BODY local control entry points
-= training / experiment supervision
-= Hermes guidance
-= S10 collect / evaluate / descendant workflow
+= owner/operator authority
 
 PUBLIC REVIEWER INTERFACE
-= observer-only
-= sanitized state / evidence
-= no ROOT authority
+= sanitized observer-only status/evidence access
+= no ROOT
 = no arbitrary mission execution
 = no runtime configuration writes
 ```
 
-The local control center is intended to provide one operational entry point across BODY_FROZEN and six ISKRA lines, while the public interface remains safe for reviewers and grant/technical evaluation.
-
-See [`CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md`](CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md).
-
-## Immediate controlled BODY/ISKRA queue
-
-The currently authorized execution sequence is sequential and stops at S3:
+The governing rule is:
 
 ```text
-BODY_FROZEN:
-S1 -> TRAIN-B -> S2 -> TRAIN-C -> S3
-
-then each ISKRA in order:
-T0 -> TRAIN-A -> S1 -> TRAIN-B -> S2 -> TRAIN-C -> S3
+OBSERVE != CONTROL
 ```
 
-Current public evidence supports **BODY_FROZEN through S1 only**. BODY_FROZEN S2/S3 and all six ISKRA A/B/C outcomes remain unknown until real execution evidence exists.
+## Research and collaboration areas
 
-See:
-
-- [`CURRENT_BODY_S3_TRAINING_STATUS_20260910.md`](CURRENT_BODY_S3_TRAINING_STATUS_20260910.md)
-- [`BODY_S3_TRAINING_START_HERE_20260910.md`](BODY_S3_TRAINING_START_HERE_20260910.md)
-- [`evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md`](evidence/BODY_FROZEN_TRAIN01A_FINAL_CLOSURE_20260910.md)
-
-## Long-term research sequence
-
-The current S3 queue is an execution boundary, not the final research endpoint. A previously recorded prospective extension sets the intended experiment-entry maturity at S5:
+Current collaboration targets include:
 
 ```text
-CURRENT QUEUE
--> 7 BODY lines to S3
-
-FUTURE PRE-EXPERIMENT MATURITY
-S3 -> TRAIN-D -> S4 -> TRAIN-E -> S5
-
-THEN
--> 7 held-out Micronetwork + V10 mechanism tests
--> 21 unique cross-domain experiments
-   A = DRONES
-   B = HUMANOID
-   C = new domain independently selected by each SSI line
--> competence inventory
--> functional identity / S10 cross-consolidation
--> Champion / Challenger evidence-gated consolidation
--> versioned consolidated BODY descendant
--> 3 genuinely new self-selected domains
--> drone configuration transfer A -> B -> C
--> humanoid higher-level transfer challenge
--> external falsification / independent replication
--> controlled transfer of validated competence into ROBERT / DIRECTOR and external R&D
+agentic AI
+multi-agent systems
+continual / lifelong learning
+persistent memory / persistent competence
+adaptive routing and recovery
+cross-agent competence consolidation
+trusted / auditable agent workflows
+cross-domain transfer
+drones / swarm systems
+humanoid motion / stability
+external challenge design
+independent falsification / replication
 ```
 
-The canonical living roadmap is [`CURRENT_RESEARCH_ROADMAP_20260910.md`](CURRENT_RESEARCH_ROADMAP_20260910.md).
-
-## Router V10
-
-V10 is documented as a **stateful predictive competence and recovery router**, not merely a cache or latency optimizer.
-
-```text
-CURRENT STATE / INPUT
-+ ATTEMPT HISTORY
-+ PRIOR OUTCOMES / FAILURE SIGNATURES
-+ VERIFIED COMPETENCE
-+ CONFIDENCE
--> REUSE_TOP1
--> VERIFY_TOPK / VERIFY-ADAPT
--> ALTERNATIVE / LEGO COMPOSITION
--> FULL_FLOW
--> RECOVERY / ANTI-LOOP RESPONSE
-```
-
-Historical scoped Test 3 evidence includes `REUSE_TOP1 = 534`, `VERIFY_TOPK = 66`, `fallback = 0`, `known-case correctness = 100/100` and `57.61 s` versus `126.65 s` in Test 2. This remains scoped internal evidence, not a universal superiority claim.
-
-See [`V10_PREDICTIVE_ROUTING.md`](V10_PREDICTIVE_ROUTING.md).
-
-## Director engineering line
-
-The Director line remains separate from controlled BODY/ISKRA experiments:
-
-```text
-DIRECTOR_FROZEN_C0
--> TRAIN08A FOUNDATION = CLOSED / VERIFIED PASS
--> DIRECTOR_FOUNDATION_S1 = CREATED
--> TRAIN08B LEGO + MICRONETWORK + V10 PRACTICUM = NEXT
--> DIRECTOR_TRAINED_START_S2 = NOT YET CLAIMED
--> later controlled DIRECTOR <-> ROBERT integration
-```
-
-Director does not currently control the isolated experimental ISKRA lines. ROBERT remains a continuous engineering/execution line and is not reset by experiment-branch cleaning.
-
-## Research collaboration and partner entry
-
-SSI V5 is open to **controlled research and technology collaboration** where an external party can add domain expertise, eligible consortium structure, laboratory/simulation infrastructure, independent evaluation, hardware access or physical validation.
-
-Possible modes, where the relevant programme permits them, include research/technology collaborator, consortium partner through an eligible legal entity, associated partner, subcontractor/technology provider and external challenge/validation partner.
-
-The addition of S10 cross-consolidation and reviewer-safe observability expands the set of technically reviewable questions: competence identity across independent agents, evidence-gated promotion, consolidation safety, incremental memory, transfer after consolidation and reproducibility of versioned descendants.
-
-This does not imply eligibility for every programme or an existing place in a named consortium. IP, role, budget, liability and disclosure boundaries must be agreed per project.
-
-See [`COLLABORATION_AND_PARTNER_ENTRY.md`](COLLABORATION_AND_PARTNER_ENTRY.md) and [`FUNDING_STRATEGY_AND_INDEPENDENT_ROADMAP.md`](FUNDING_STRATEGY_AND_INDEPENDENT_ROADMAP.md).
-
-## Commercial availability
-
-The completed Director TRAIN08A Foundation execution is the current verified commercial reference for controlled Foundation methodology/licensing/adaptation. BODY/ISKRA target-specific use still requires its own state verification, package identity, execution and evidence.
-
-See [`COMMERCIAL_TRAIN08A_FOUNDATION_20260910.md`](COMMERCIAL_TRAIN08A_FOUNDATION_20260910.md).
+See [`COLLABORATION_AND_PARTNER_ENTRY.md`](COLLABORATION_AND_PARTNER_ENTRY.md).
 
 ## Current claim boundary
 
-SSI V5 does **not** currently claim that:
+SSI V5 does **not** currently claim:
 
-- BODY_FROZEN has reached S2/S3;
-- any ISKRA has completed TRAIN-A/B/C;
-- all seven BODY lines have reached S3/S4/S5;
-- TRAIN-D/E have been frozen or executed;
-- the seven mechanism tests have passed;
-- the 21 cross-domain experiments have passed;
-- physical drones or humanoids have been validated;
-- the full seven-line scientific S10 cross-consolidation experiment has succeeded;
-- S10 calibration is complete unless later evidence explicitly closes it;
-- the three post-consolidation domains have passed;
-- transfer-mechanism improvement has been demonstrated;
-- long-run ISKRA divergence has been demonstrated;
-- Director TRAIN08B has passed or Director S2 exists;
-- Director -> ROBERT -> Worlds -> Agents integration is complete;
-- V10 or S10 is universally faster or more accurate than unrelated systems;
-- Kiro, Kilo, Codex or another executor is an independent scientific auditor;
-- a cryptographic hash proves scientific correctness;
-- AGI, consciousness, universal transfer or production readiness has been established.
+- completed S1–S10 training across all BODY lines;
+- completed/pass outcomes for all seven held-out mechanism tests;
+- completed/pass outcomes for all 21 cross-domain experiments;
+- complete seven-line scientific S10 validation;
+- universal V10/S10 superiority;
+- universal benefit from consultation/consolidation;
+- physical drone or humanoid validation;
+- independent external replication;
+- production readiness;
+- AGI or consciousness.
 
-## Start here
+## Recommended reading order
 
-**If you have only 2–3 minutes, read the section `SSI V5 in two minutes — the essence` above.**
+1. [`START_HERE.md`](START_HERE.md)
+2. [`CURRENT_TRUTH_INDEX_20260914.md`](CURRENT_TRUTH_INDEX_20260914.md)
+3. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
+4. [`GRANT_REVIEWER_CURRENT_STATUS_20260914.md`](GRANT_REVIEWER_CURRENT_STATUS_20260914.md)
+5. [`CURRENT_RESEARCH_ROADMAP_20260914.md`](CURRENT_RESEARCH_ROADMAP_20260914.md)
+6. [`TRAINING_CURRENT_STATUS_20260914.md`](TRAINING_CURRENT_STATUS_20260914.md)
+7. [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
+8. [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
+9. [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
+10. [`HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md`](HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md)
 
-For deeper review:
-
-1. [`SSI_V5_ORIGIN_RESEARCH_METHODOLOGY_AND_LONG_TERM_ARCHITECTURE.md`](SSI_V5_ORIGIN_RESEARCH_METHODOLOGY_AND_LONG_TERM_ARCHITECTURE.md)
-2. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
-3. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
-4. [`CURRENT_RESEARCH_ROADMAP_20260910.md`](CURRENT_RESEARCH_ROADMAP_20260910.md)
-5. [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
-6. [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
-7. [`HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md`](HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md)
-8. [`S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md`](S10_CROSS_CONSOLIDATION_PUBLIC_OVERVIEW_20260912.md)
-9. [`CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md`](CENTRAL_CONTROL_AND_REVIEW_INTERFACE_OVERVIEW_20260912.md)
+Older dated files remain preserved as historical evidence. When an older status conflicts with a later evidence-backed status, use the newest dated current-state document without rewriting the historical record.
