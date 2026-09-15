@@ -43,6 +43,28 @@ Canonical current roadmap:
 
 [`CURRENT_RESEARCH_ROADMAP_20260914.md`](CURRENT_RESEARCH_ROADMAP_20260914.md)
 
+## Current implementation order
+
+The current active engineering stage is **DIRECTOR + DIRECTOR Command Center**. DIRECTOR is being stabilized first together with its organizational state, CONTINUUM, Hermes integration, management logic and operational interface. The Command Center already contains prepared slots and versioned contracts for future data sources, but this does **not** mean that ROBERT, BODY_FROZEN 2.0 or the ISKRA lines are already connected as completed live integrations.
+
+The next engineering stage is **ROBERT**. ROBERT will be prepared and stabilized after the DIRECTOR / Command Center stage, and only then will it be connected into the broader operational architecture. The existence of prepared ROBERT views, adapters or remote-node contracts in the Command Center must therefore be interpreted as integration readiness, not as a claim that the final ROBERT connection is already complete.
+
+**BODY_FROZEN 2.0 and the ISKRA research lines are later stages.** Their matched training programme is still being prepared and is intended to run through the declared **S1–S10 curriculum**. They are not currently presented as finished sources of validated competence. Only after training produces frozen results, evidence, comparative measurements and S10 evaluation material will controlled integration and competence-consolidation work begin.
+
+The intended execution order is therefore:
+
+```text
+DIRECTOR + COMMAND CENTER
+-> ROBERT
+-> BODY_FROZEN 2.0 + ISKRA S1-S10 TRAINING
+-> EVIDENCE / COMPARISON / S10 EVALUATION
+-> CONTROLLED SYSTEM CONNECTION
+-> TARGET-SPECIFIC VALIDATION
+-> COMPETENCE CONSOLIDATION
+```
+
+The architecture is deliberately being prepared **before** those later outcomes exist. Prepared interface slots, data contracts and Tailscale paths are infrastructure commitments; they are not evidence that future training, remote integrations or consolidation results have already been completed.
+
 ## SSI V5 in one architecture view
 
 ```text
