@@ -1,14 +1,14 @@
 # SSI V5 — Research Front Door
 
 **Experimental persistent-competence architecture for adaptive AI systems**  
-**Current public status:** `2026-09-14`  
+**Current public status:** `2026-09-15`  
 **Repository role:** evidence-indexed public research mirror; proprietary implementation remains private.
 
-SSI V5 investigates whether a long-running system can build, validate, preserve, reuse, compare, revise and consolidate competence across tasks using persistent state, Experience, Micronetworks, Candidate → Challenger → Champion lifecycle, Router V10, Router S10, LEGO composition, Hermes memory and CONTINUUM persistence.
+SSI V5 investigates whether a long-running adaptive system can build, validate, preserve, reuse, compare, revise and consolidate competence across tasks using persistent state, Experience, Micronetworks, Candidate → Challenger → Champion lifecycle, Router V10, Router S10, LEGO composition, Hermes memory and CONTINUUM persistence.
 
 This repository publishes **evidence, protocols, status, failures, repairs, retests, hashes, provenance and claim boundaries**. It does not distribute the proprietary SSI/V10/S10/Micronetwork/ISKRA/DIRECTOR/ROBERT implementation.
 
-## Current state — 2026-09-14
+## Current state — 2026-09-15
 
 ```text
 BODY_FROZEN T0 = immutable historical control
@@ -21,37 +21,17 @@ DIRECTOR Command Center pre-training gate = IMPLEMENTED / LOCAL VALIDATION PASS 
 DIRECTOR Tailscale cross-consolidation architecture = PREDECLARED BEFORE MATCHED V1/V3/V2 TRAINING
 Router S10 = explicit V1 / V3 / V2 comparison lines
 S1-S10 = latest shared predeclared three-variant training-control protocol
-DRONE / SWARM = implemented software-level research laboratory
-HUMANOID MOTION / STABILITY = implemented software-level research laboratory
+DRONE / SWARM = implemented + measured software research domain
+HUMANOID MOTION / STABILITY = implemented + measured software research domain
+PUBLIC CROSS-DOMAIN SHOWCASE = 24 experiments presented = 12 drone + 12 humanoid
 PUBLIC REVIEWER INTERFACE = observer-only
+PHYSICAL VALIDATION = not claimed
+INDEPENDENT EXTERNAL REPLICATION = not claimed
 ```
-
-The Director Command Center gate is deliberately recorded **before** later matched BODY / ISKRA training outcomes across S10 V1 / V3 / V2. It freezes the organizational UI/data-contract stage before those results and keeps the proprietary implementation private.
-
-See:
-
-- [`DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md`](DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md)
-- [`DIRECTOR_COMMAND_CENTER_TAILSCALE_CROSS_CONSOLIDATION_ARCHITECTURE_20260914.md`](DIRECTOR_COMMAND_CENTER_TAILSCALE_CROSS_CONSOLIDATION_ARCHITECTURE_20260914.md)
-
-The second record predeclares the detailed cross-node model: independent local histories, delta publication, Tailscale transport, incremental Hermes memory, S10 family grouping/deep comparison, Champion/Challenger/Specialist/Hold decisions, target-specific ROBERT/BODY_FROZEN 2.0/DIRECTOR adoption, mandatory target re-test/regression control, Hermes change reporting and Director organizational updates.
-
-Canonical current index:
-
-[`CURRENT_TRUTH_INDEX_20260914.md`](CURRENT_TRUTH_INDEX_20260914.md)
-
-Canonical current roadmap:
-
-[`CURRENT_RESEARCH_ROADMAP_20260914.md`](CURRENT_RESEARCH_ROADMAP_20260914.md)
 
 ## Current implementation order
 
-The current active engineering stage is **DIRECTOR + DIRECTOR Command Center**. DIRECTOR is being stabilized first together with its organizational state, CONTINUUM, Hermes integration, management logic and operational interface. The Command Center already contains prepared slots and versioned contracts for future data sources, but this does **not** mean that ROBERT, BODY_FROZEN 2.0 or the ISKRA lines are already connected as completed live integrations.
-
-The next engineering stage is **ROBERT**. ROBERT will be prepared and stabilized after the DIRECTOR / Command Center stage, and only then will it be connected into the broader operational architecture. The existence of prepared ROBERT views, adapters or remote-node contracts in the Command Center must therefore be interpreted as integration readiness, not as a claim that the final ROBERT connection is already complete.
-
-**BODY_FROZEN 2.0 and the ISKRA research lines are later stages.** Their matched training programme is still being prepared and is intended to run through the declared **S1–S10 curriculum**. They are not currently presented as finished sources of validated competence. Only after training produces frozen results, evidence, comparative measurements and S10 evaluation material will controlled integration and competence-consolidation work begin.
-
-The intended execution order is therefore:
+The active engineering order is deliberately staged:
 
 ```text
 DIRECTOR + COMMAND CENTER
@@ -63,7 +43,105 @@ DIRECTOR + COMMAND CENTER
 -> COMPETENCE CONSOLIDATION
 ```
 
-The architecture is deliberately being prepared **before** those later outcomes exist. Prepared interface slots, data contracts and Tailscale paths are infrastructure commitments; they are not evidence that future training, remote integrations or consolidation results have already been completed.
+The current active engineering stage is **DIRECTOR + DIRECTOR Command Center**. DIRECTOR is being stabilized first together with its organizational state, CONTINUUM, Hermes integration, management logic and operational interface.
+
+The next engineering stage is **ROBERT**. ROBERT will be prepared and stabilized after the DIRECTOR / Command Center stage.
+
+**BODY_FROZEN 2.0 and the ISKRA research lines are later stages.** Their matched S1-S10 training programme is being prepared and is not claimed complete. Prepared interface slots, adapters, Tailscale paths and remote-node contracts are integration readiness, not evidence that those future systems are already fully connected.
+
+## Public cross-domain showcase — 24 experiments
+
+The current public showcase presents:
+
+```text
+12 DRONE / SWARM EXPERIMENTS
++
+12 HUMANOID MOTION / STABILITY EXPERIMENTS
+=
+24 PUBLIC CROSS-DOMAIN EXPERIMENTS
+```
+
+Public showcase:
+
+https://echotrip.jankespawel98.workers.dev/
+
+The showcase is a reviewer-facing presentation layer over executed software-domain evidence. It is not the source of truth for measurements; dated runner outputs and evidence records remain the measurement source of truth.
+
+Canonical counting clarification:
+
+[`CROSS_DOMAIN_24_EXPERIMENT_SHOWCASE_STATUS_20260915.md`](CROSS_DOMAIN_24_EXPERIMENT_SHOWCASE_STATUS_20260915.md)
+
+### Important distinction: 24 showcase experiments != 21 BODY / ISKRA programme
+
+The public `12 + 12 = 24` cross-domain showcase is separate from the predeclared longitudinal BODY / ISKRA programme:
+
+```text
+PUBLIC SHOWCASE
+= 12 drone + 12 humanoid
+= 24 reviewer-facing cross-domain experiments
+
+SEPARATE LONGITUDINAL PROGRAMME
+= 7 BODY lines x 3 experiments
+= 21 BODY / ISKRA experiments
+```
+
+The 24-experiment showcase is already public. The separate 21-experiment BODY / ISKRA programme is **not claimed complete**.
+
+## Measured cross-domain evidence
+
+The drone and humanoid branches are no longer roadmap-only targets. Both are implemented software research domains with dedicated interfaces, scenario libraries, repeatable execution and evidence paths.
+
+Published drone evidence includes:
+
+- FAST / PARTIAL / FULL / MAX-SAFETY flow-depth measurements;
+- measured flow-cost differences;
+- scoped post-consolidation median speedup of approximately `1.384x`;
+- approximately `27.76%` lower median flow cost in the scoped comparative benchmark;
+- competence-pool availability change from `6/5/5` to `8/8/8` in the demonstrator;
+- preserved `wind_corridor` post-consolidation regression: `PASS -> FAIL`.
+
+Published humanoid evidence includes:
+
+- executed H00-H14 runner-family measurements preserved as dated evidence;
+- baseline/consolidated paths;
+- `13/13` humanoid self-tests PASS;
+- measured simulator-clock events;
+- retained failure experience changing a later slip-response path;
+- first forced-slip attempt producing a fall, followed by retained experience and `PREEMPTIVE_SLIP_PREP` on retry without the corresponding first-attempt fall.
+
+Measurement semantics remain strict:
+
+```text
+FLOW-COST / WALL-CLOCK
+= measured software runtime
+
+SIMULATION TIME
+= measured simulator-clock result
+
+NOT CLAIMED
+= physical drone or humanoid response-time equivalence
+```
+
+See:
+
+- [`PUBLIC_SHOWCASE_AND_MEASURED_DOMAIN_TRANSFER_EVIDENCE_20260914.md`](PUBLIC_SHOWCASE_AND_MEASURED_DOMAIN_TRANSFER_EVIDENCE_20260914.md)
+- [`DRONE_MEASURED_RESULTS_20260914.md`](DRONE_MEASURED_RESULTS_20260914.md)
+- [`HUMANOID_MEASURED_RESULTS_20260914.md`](HUMANOID_MEASURED_RESULTS_20260914.md)
+- [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
+
+## Why historical counts are not rewritten
+
+SSI preserves dated evidence instead of rewriting it after later presentation layers are created.
+
+Earlier runner-level records may therefore use different scenario counts or evidence granularity from the current 12+12 public showcase. For example, the dated drone runner record preserves an 11-scenario benchmark across four execution profiles, while the dated humanoid runner record preserves the H00-H14 family and baseline/consolidated measurements.
+
+The rule is:
+
+```text
+HISTORICAL RUNNER EVIDENCE = PRESERVE AS RECORDED
+CURRENT SHOWCASE COUNT = 12 DRONE + 12 HUMANOID
+NEWER CURRENT-STATE FILES = CLARIFY, NOT REWRITE HISTORY
+```
 
 ## SSI V5 in one architecture view
 
@@ -76,8 +154,8 @@ REAL PROBLEM / WORLD
 -> ROUTER V10
 -> CANDIDATE -> CHALLENGER -> CHAMPION
 -> ROUTER S10 / CROSS-LINE CONSOLIDATION
--> VERSIONED DESCENDANT
--> NEW TASK / DOMAIN
+-> VERSIONED TARGET INTEGRATION
+-> TARGET-SPECIFIC RE-TEST
 -> EVIDENCE
 ```
 
@@ -87,9 +165,9 @@ V10 is a state/history/outcome-aware competence and recovery router. Its role is
 
 ### Router S10
 
-S10 compares competence from independent histories, groups functionally related competence, evaluates evidence and supports Champion/Challenger/Specialist/Hold decisions while preserving provenance and immutable FAIR baselines.
+S10 compares competence from independent histories, groups functionally related competence, evaluates evidence and supports Champion/Challenger/Specialist/Hold decisions while preserving provenance and immutable baselines.
 
-Three explicit S10 engineering variants are currently preserved:
+Three explicit S10 engineering variants are preserved:
 
 ```text
 V1 = lean control/reference variant
@@ -97,15 +175,11 @@ V3 = intermediate MetaNetwork variant
 V2 = richer optimized control/observability variant
 ```
 
-The numbering is lineage, not a ranking. V3 is the third explicit line while occupying an intermediate architectural role.
+The numbering is lineage, not ranking.
 
-See [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md) and [`S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md`](S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md).
+## Training — S1-S10 current control protocol
 
-## Training — S1–S10 current control protocol
-
-The S1–S5 V2 suite from 2026-09-12 remains historical frozen evidence.
-
-The latest training-control methodology is the shared S1–S10 curriculum for S10 V1, V2 and V3:
+The latest training-control methodology is the shared S1-S10 curriculum for S10 V1, V2 and V3:
 
 ```text
 S1  Foundation
@@ -120,103 +194,65 @@ S9  Novel Recombination
 S10 Generalization Readiness Gate
 ```
 
-This is a **predeclared comparison-control protocol**, not a claim that all BODY lines or all three variants have already completed S1–S10.
+This is a **predeclared comparison-control protocol**, not a claim that all BODY lines or all three variants have already completed S1-S10.
 
-The Command Center architecture and extension contracts were recorded before those later matched outcomes. The cross-consolidation record also freezes a critical contamination boundary:
+Critical contamination boundary:
 
 ```text
 OBSERVATION != COMPETENCE TRANSFER
 ```
 
-During controlled training, the Command Center may observe multiple lines without silently sharing newly learned competence between them. Cross-consolidation occurs only at its declared gate.
+The Command Center may observe multiple training lines without silently sharing newly learned competence before the declared consolidation gate.
+
+## DIRECTOR Command Center and cross-node architecture
+
+The Director Command Center gate is recorded **before** later matched BODY / ISKRA training outcomes across S10 V1 / V3 / V2. It freezes the organizational UI/data-contract stage before those results.
+
+The predeclared cross-node path is:
+
+```text
+LOCAL EXPERIENCE
+-> LOCAL EVIDENCE
+-> DELTA PUBLICATION
+-> TAILSCALE TRANSPORT
+-> HERMES / IDENTITY UPDATE
+-> S10 PRE-SELECTION
+-> FAMILY GROUPING
+-> DEEP COMPARISON WHERE REQUIRED
+-> CHAMPION / CHALLENGER / SPECIALIST / HOLD
+-> VERSIONED TARGET PLAN
+-> ROBERT / BODY_FROZEN 2.0 / DIRECTOR TARGET-SPECIFIC RETEST
+-> ACCEPT / HOLD / REJECT / ROLLBACK
+-> EFFECT MEASUREMENT
+-> HERMES CHANGE REPORT
+-> DIRECTOR ORGANIZATIONAL UPDATE
+```
 
 See:
 
 - [`DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md`](DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md)
 - [`DIRECTOR_COMMAND_CENTER_TAILSCALE_CROSS_CONSOLIDATION_ARCHITECTURE_20260914.md`](DIRECTOR_COMMAND_CENTER_TAILSCALE_CROSS_CONSOLIDATION_ARCHITECTURE_20260914.md)
-- [`TRAINING_CURRENT_STATUS_20260914.md`](TRAINING_CURRENT_STATUS_20260914.md)
-- [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md)
 
-The earlier V1/V2-only protocol remains preserved as dated historical evidence.
+## External challenge path
 
-## Cross-domain transfer — implemented software laboratories
-
-Two external domains that were previously mainly planned research targets are now implemented at software-demonstrator level.
-
-### DRONES / SWARM
-
-The drone laboratory includes:
-
-- multiple simulated grids/groups;
-- local versus collective experience;
-- routing and recovery scenarios;
-- communication/localization degradation cases;
-- retained incident history;
-- before/after comparison;
-- flow-depth and timing evidence;
-- cross-grid consultation/consolidation path;
-- external challenge entry path.
-
-The organization-wide Command Center cross-consolidation pattern deliberately follows the same higher-level discipline used in the drone laboratory:
+The strongest next validation step is an externally supplied unseen problem with frozen acceptance criteria.
 
 ```text
-LOCAL EXPERIENCE
--> LOCAL RESULT
--> COMPARISON / VALIDATION
--> CONSOLIDATION DECISION
--> COLLECTIVE / TARGET AVAILABILITY
--> RE-TEST
+EXTERNAL PARTNER DEFINES PROBLEM
+-> CHALLENGE FROZEN BEFORE RUN
+-> PASS / FAIL / INCONCLUSIVE CRITERIA DECLARED
+-> RUN
+-> FAILURES PRESERVED
+-> TIMINGS RECORDED
+-> TRANSFER / CONSOLIDATION IF APPLICABLE
+-> TARGET-SPECIFIC RE-VALIDATION
+-> RESULT RETURNED TO PARTNER
+-> PUBLICATION ONLY WITH PARTNER APPROVAL
 ```
 
-The drone benchmark preserved a post-consolidation `wind_corridor` `PASS -> FAIL` regression, which is why wider competence availability is explicitly followed by target-specific regression testing rather than assumed to be beneficial.
-
-### HUMANOID MOTION / STABILITY
-
-The humanoid laboratory includes:
-
-- dedicated 3D humanoid interface;
-- articulated-body/joint-chain state;
-- obstacle and terrain scenes;
-- slip/low-friction cases;
-- instability and recovery loops;
-- prediction-versus-reaction observation;
-- before/after learning comparison;
-- external-scene entry path.
-
-See:
-
-- [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
-- [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
-- [`HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md`](HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md)
-- [`DRONE_MEASURED_RESULTS_20260914.md`](DRONE_MEASURED_RESULTS_20260914.md)
-
-## Critical distinction
-
-The project deliberately separates **implementation readiness** from **scientific outcome**:
-
-```text
-DOMAIN LAB EXISTS != EXPERIMENT PASSED
-SOFTWARE DOMAIN TRANSFER != PHYSICAL VALIDATION
-CONSULTATION / CONSOLIDATION OPTION != BENEFIT PROVEN
-COMMAND CENTER IMPLEMENTED != FUTURE AGENT / FINANCE INTEGRATIONS COMPLETED
-TAILSCALE DELIVERY != SCIENTIFIC VALIDATION
-COLLECTIVE AVAILABILITY != TARGET ACCEPTANCE
-```
-
-The original 21-experiment programme remains open:
-
-```text
-7 BODY lines x 3 experiments = 21
-A = DRONES
-B = HUMANOID
-C = NEW DOMAIN independently selected by that SSI line
-```
-
-The software laboratories provide the infrastructure for those experiments. The complete 21-outcome set is not claimed finished.
+See [`EXTERNAL_CHALLENGE_ENTRY_20260914.md`](EXTERNAL_CHALLENGE_ENTRY_20260914.md).
 
 ## Reviewer access
-
-SSI V5 separates public observability from private execution authority.
 
 ```text
 LOCAL CENTRAL CONTROL
@@ -235,34 +271,13 @@ The governing rule is:
 OBSERVE != CONTROL
 ```
 
-## Research and collaboration areas
-
-Current collaboration targets include:
-
-```text
-agentic AI
-multi-agent systems
-continual / lifelong learning
-persistent memory / persistent competence
-adaptive routing and recovery
-cross-agent competence consolidation
-trusted / auditable agent workflows
-cross-domain transfer
-drones / swarm systems
-humanoid motion / stability
-external challenge design
-independent falsification / replication
-```
-
-See [`COLLABORATION_AND_PARTNER_ENTRY.md`](COLLABORATION_AND_PARTNER_ENTRY.md).
-
 ## Current claim boundary
 
 SSI V5 does **not** currently claim:
 
-- completed S1–S10 training across all BODY lines or all three variants;
+- completed S1-S10 training across all BODY lines or all three variants;
 - completed/pass outcomes for all seven held-out mechanism tests;
-- completed/pass outcomes for all 21 cross-domain experiments;
+- completion of the separate 21 BODY / ISKRA experiment programme;
 - complete seven-line scientific S10 validation;
 - universal V10/S10 superiority;
 - universal superiority of V1, V2 or V3;
@@ -278,17 +293,18 @@ SSI V5 does **not** currently claim:
 ## Recommended reading order
 
 1. [`START_HERE.md`](START_HERE.md)
-2. [`CURRENT_TRUTH_INDEX_20260914.md`](CURRENT_TRUTH_INDEX_20260914.md)
-3. [`DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md`](DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md)
-4. [`DIRECTOR_COMMAND_CENTER_TAILSCALE_CROSS_CONSOLIDATION_ARCHITECTURE_20260914.md`](DIRECTOR_COMMAND_CENTER_TAILSCALE_CROSS_CONSOLIDATION_ARCHITECTURE_20260914.md)
+2. [`CURRENT_TRUTH_INDEX_20260915.md`](CURRENT_TRUTH_INDEX_20260915.md)
+3. [`CROSS_DOMAIN_24_EXPERIMENT_SHOWCASE_STATUS_20260915.md`](CROSS_DOMAIN_24_EXPERIMENT_SHOWCASE_STATUS_20260915.md)
+4. [`LATEST_PUBLIC_STATUS_20260915.md`](LATEST_PUBLIC_STATUS_20260915.md)
 5. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
-6. [`GRANT_REVIEWER_CURRENT_STATUS_20260914.md`](GRANT_REVIEWER_CURRENT_STATUS_20260914.md)
-7. [`CURRENT_RESEARCH_ROADMAP_20260914.md`](CURRENT_RESEARCH_ROADMAP_20260914.md)
-8. [`TRAINING_CURRENT_STATUS_20260914.md`](TRAINING_CURRENT_STATUS_20260914.md)
-9. [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
-10. [`S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md`](S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md)
-11. [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
-12. [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
-13. [`HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md`](HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md)
+6. [`GRANT_REVIEWER_CURRENT_STATUS_20260915.md`](GRANT_REVIEWER_CURRENT_STATUS_20260915.md)
+7. [`CURRENT_RESEARCH_ROADMAP_20260915.md`](CURRENT_RESEARCH_ROADMAP_20260915.md)
+8. [`DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md`](DIRECTOR_COMMAND_CENTER_PRETRAINING_GATE_20260914.md)
+9. [`DIRECTOR_COMMAND_CENTER_TAILSCALE_CROSS_CONSOLIDATION_ARCHITECTURE_20260914.md`](DIRECTOR_COMMAND_CENTER_TAILSCALE_CROSS_CONSOLIDATION_ARCHITECTURE_20260914.md)
+10. [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md)
+11. [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
+12. [`PUBLIC_SHOWCASE_AND_MEASURED_DOMAIN_TRANSFER_EVIDENCE_20260914.md`](PUBLIC_SHOWCASE_AND_MEASURED_DOMAIN_TRANSFER_EVIDENCE_20260914.md)
+13. [`DRONE_MEASURED_RESULTS_20260914.md`](DRONE_MEASURED_RESULTS_20260914.md)
+14. [`HUMANOID_MEASURED_RESULTS_20260914.md`](HUMANOID_MEASURED_RESULTS_20260914.md)
 
 Older dated files remain preserved as historical evidence. When an older status conflicts with a later evidence-backed status, use the newest dated current-state document without rewriting the historical record.
