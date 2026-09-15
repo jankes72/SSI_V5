@@ -3,36 +3,82 @@
 ## Experimental Persistent Adaptive Intelligence System
 
 **Architecture author:** Paweł Jankiewicz (`jankes72`, `PROGRAMMER_ROOT`)  
-**Updated:** `2026-09-14`  
+**Updated:** `2026-09-15`  
 **Repository role:** public research mirror / evidence-only; proprietary implementation remains private.
 
 ## Current status
 
 ```text
-BODY_FROZEN T0 = preserved immutable historical baseline / 2026-09-05
-6 BODY ISKRA T0 = START_STATE_VALIDATED / group QA 48/48 PASS
-TEST 5 = 29/29 acceptance / 524/524 regression PASS
-7-BODY READINESS = 7/7 PASS / 147/147
-DIRECTOR TRAIN08A = 48/48 PASS / 16/16 blind validations / FOUNDATION_S1 created
-BODY_FROZEN TRAIN01A = 48/48 PASS / 16/16 blind validations / FOUNDATION_S1 created
+TEST 5 = 29/29 acceptance PASS / 524/524 regression PASS
+7-BODY readiness = 7/7 PASS / 147/147 common matrix
+BODY_FROZEN Foundation S1 = VERIFIED PASS
+DIRECTOR Foundation S1 = CREATED
+DIRECTOR Command Center = IMPLEMENTED / LOCAL VALIDATION PASS
 S10 V1/V3/V2 = explicit controlled comparison lines
-DRONE DOMAIN = implemented software-level R&D demonstrator
-HUMANOID DOMAIN = implemented software-level R&D demonstrator
+S1-S10 = shared predeclared three-variant training-control protocol
+DRONE DOMAIN = implemented + measured software R&D domain
+HUMANOID DOMAIN = implemented + measured software R&D domain
+PUBLIC CROSS-DOMAIN SHOWCASE = 24 experiments = 12 drone + 12 humanoid
+PHYSICAL VALIDATION = not claimed
+INDEPENDENT EXTERNAL REPLICATION = not claimed
 ```
 
-`BODY_FROZEN_FOUNDATION_S1` public identity:
+## Current implementation order
 
 ```text
-SHA256 = ed1331e38909db829859ca377e9858ee42fe5528537cf6c9c6d2a5ecc5e253e9
+DIRECTOR + COMMAND CENTER
+-> ROBERT
+-> BODY_FROZEN 2.0 + ISKRA S1-S10 TRAINING
+-> EVIDENCE / COMPARISON / S10 EVALUATION
+-> CONTROLLED SYSTEM CONNECTION
+-> TARGET-SPECIFIC VALIDATION
+-> COMPETENCE CONSOLIDATION
 ```
 
-The final PASS does not erase earlier `43 PASS / 5 INCONCLUSIVE / 0 FAIL` history, recovery attempts, infrastructure findings, or the step-24 evaluator-error record.
+DIRECTOR and its Command Center are the current active engineering focus. ROBERT follows. BODY_FROZEN 2.0 and ISKRA lines are later stages and are not claimed as finished integrated sources of validated competence before S1-S10 training and evidence exist.
 
-## Training status — historical S1–S5 and latest S1–S10 control protocol
+## Public cross-domain showcase
 
-The 2026-09-12 S1–S5 V2 package suite remains a valid frozen historical predeclaration. It is not deleted or rewritten.
+The current public reviewer-facing set is:
 
-The latest training-control methodology is now the shared **S1–S10** protocol for S10 Variants V1, V2 and V3:
+```text
+12 DRONE / SWARM EXPERIMENTS
++
+12 HUMANOID MOTION / STABILITY EXPERIMENTS
+=
+24 PUBLIC CROSS-DOMAIN EXPERIMENTS
+```
+
+Public showcase:
+
+https://echotrip.jankespawel98.workers.dev/
+
+See [`CROSS_DOMAIN_24_EXPERIMENT_SHOWCASE_STATUS_20260915.md`](CROSS_DOMAIN_24_EXPERIMENT_SHOWCASE_STATUS_20260915.md).
+
+## 24 showcase experiments and 21 BODY / ISKRA experiments are different programmes
+
+```text
+PUBLIC SHOWCASE = 12 drone + 12 humanoid = 24
+SEPARATE LONGITUDINAL PROGRAMME = 7 BODY lines x 3 experiments = 21
+```
+
+The public 24-experiment showcase exists now. The separate 21 BODY / ISKRA programme is not claimed complete.
+
+Earlier runner-level files preserve their original counting granularity and are not rewritten.
+
+## Router S10 variants
+
+```text
+V1 = lean control/reference variant
+V3 = intermediate MetaNetwork variant
+V2 = richer optimized control/observability variant
+```
+
+The numbering is lineage, not ranking. No variant is claimed universally superior.
+
+## Training status
+
+The latest shared S1-S10 curriculum for V1, V2 and V3 is:
 
 ```text
 S1  FOUNDATION
@@ -47,117 +93,68 @@ S9  NOVEL RECOMBINATION
 S10 GENERALIZATION READINESS GATE
 ```
 
-All three variants are intended to receive the same curriculum, task families and acceptance contract so later differences can be attributed to the execution/control architecture rather than unequal training exposure.
+This is a predeclared comparison-control protocol, not a claim that every BODY / ISKRA line has already completed S1-S10.
 
-This is a **predeclared protocol**, not a claim that all S1–S10 stages have already been executed or passed.
-
-See:
-
-- [`TRAINING_CURRENT_STATUS_20260914.md`](TRAINING_CURRENT_STATUS_20260914.md)
-- [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md)
-- [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
-
-## Router S10 variants
-
-SSI V5 now preserves three Router S10 engineering variants for controlled comparison:
+Critical rule:
 
 ```text
-V1 = lean control/reference variant
-V3 = intermediate MetaNetwork variant
-V2 = richer optimized control/observability variant
+OBSERVATION != COMPETENCE TRANSFER
 ```
 
-The numbering is historical lineage, not ranking. V3 is the third explicit research line even though its architecture is intentionally positioned between V1 and V2.
-
-V3 is being synchronized to the common SSI V5 operational/evidence contracts while preserving its own MetaNetwork architecture. It is not being converted into a copy of V2.
-
-V2 has published scoped engineering measurements including warm reuse around `1.48–1.51 s`, cold init + evaluation around `3.60 s`, and a localized-change case with `12/13` families reused and `1/13` recomputed while matching an independent full modified evaluation.
-
-V1, V2 and V3 are not yet claimed to have completed the full shared S1–S10 training programme, and no variant is claimed universally superior.
-
-See:
-
-- [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
-- [`S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md`](S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md)
-
-## Cross-domain status — drones and humanoid
-
-Drones and humanoid robotics are no longer only future software targets.
-
-As of 2026-09-14 SSI V5 has two implemented software-level domain-transfer laboratories.
+## Cross-domain measured evidence
 
 ### DRONES / SWARM
 
+Current software-domain evidence includes:
+
+- multiple simulated grids/groups;
+- local versus collective experience;
+- route adaptation and recovery;
+- communication/localization degradation;
+- task handoff and rerouting;
+- FAST / PARTIAL / FULL / MAX-SAFETY flow-depth measurement;
+- scoped consolidation measurements;
+- preserved `wind_corridor PASS -> FAIL` regression;
+- external challenge entry.
+
+Published scoped comparative result:
+
 ```text
-implemented domain-specific research interface
-multiple simulated grids / groups
-local vs collective experience representation
-routing / recovery scenarios
-retained incident history
-before / after comparisons
-flow-depth / timing / evidence path
-cross-grid consultation / consolidation option
-external challenge entry path
+median post-consolidation speedup ~= 1.384x
+median flow-cost reduction ~= 27.76%
+competence-pool availability 6/5/5 -> 8/8/8
 ```
 
 ### HUMANOID MOTION / STABILITY
 
-```text
-implemented 3D humanoid research interface
-articulated-body / joint-chain state
-obstacle / terrain / slip / low-friction scenarios
-instability and recovery loops
-retained failure experience
-before / after learning comparison
-prediction / reaction comparison
-external-scene entry path
-```
+Current software-domain evidence includes:
 
-This is **implemented software-level domain transfer and research infrastructure**.
+- dedicated 3D humanoid interface;
+- articulated-body/joint-chain state;
+- obstacle / terrain / slip / low-friction cases;
+- instability and recovery loops;
+- measured simulator-clock events;
+- baseline/consolidated paths;
+- `13/13` self-tests PASS;
+- retained failure experience changing a later slip-response path.
 
-It is not yet a claim that:
+The first forced slip produced a fall; after retaining experience, the retry selected `PREEMPTIVE_SLIP_PREP` and did not show the corresponding first-attempt fall.
 
-- the complete 21-experiment programme has finished;
-- all drone/humanoid experiment outcomes are PASS;
-- physical drone operation is validated;
-- physical humanoid operation is validated;
-- cross-grid or cross-line consultation/consolidation has proven a scientific benefit in every case.
-
-See:
-
-- [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
-- [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
-- [`HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md`](HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md)
-
-## 21 cross-domain experiments remain a separate scientific programme
+## Measurement semantics
 
 ```text
-7 lines x 3 unique experiments = 21
-A = DRONES
-B = HUMANOID
-C = NEW DOMAIN independently selected by that SSI line
+FLOW-COST / WALL-CLOCK = measured software runtime
+SIMULATION TIME = measured simulator-clock result
+NOT CLAIMED = physical drone/humanoid response equivalence
 ```
-
-The important distinction is:
-
-```text
-DOMAIN LAB EXISTS != 21 EXPERIMENTS COMPLETED
-SOFTWARE TRANSFER IMPLEMENTED != PHYSICAL VALIDATION
-CONSULTATION OPTION EXISTS != SCIENTIFIC BENEFIT PROVEN
-```
-
-The implemented drone/humanoid laboratories now provide infrastructure in which later controlled experiments and external challenges can be run.
 
 ## DIRECTOR and ROBERT
 
-```text
-DIRECTOR_FROZEN_C0
--> TRAIN08A = CLOSED / VERIFIED PASS
--> DIRECTOR_FOUNDATION_S1 = CREATED
--> later stages only when separately evidenced
-```
+DIRECTOR is currently being stabilized together with its Command Center, organizational state, CONTINUUM, Hermes integration and management logic.
 
-ROBERT remains a continuous engineering/execution line and is not reset by cleaning experimental copies.
+ROBERT is the next canonical engineering/execution line after the Director stage.
+
+Prepared Command Center views and adapters for ROBERT, BODY_FROZEN 2.0 and ISKRA lines are integration readiness, not claims that all integrations are already live.
 
 ## Reviewer and control boundary
 
@@ -169,23 +166,34 @@ OBSERVE != CONTROL
 
 ## Current claim boundary
 
-SSI V5 does not currently claim completed S1–S10 training, completed/pass outcomes for all 21 cross-domain experiments, universal V10/S10 superiority, universal superiority of V1/V2/V3, complete seven-line S10 scientific success, physical drone/humanoid validation, independent external replication, production readiness, AGI or consciousness.
+SSI V5 does not currently claim:
+
+- complete S1-S10 training across all BODY / ISKRA lines;
+- completion of the separate 21 BODY / ISKRA programme;
+- universal V10/S10 superiority;
+- universal superiority of V1/V2/V3;
+- complete seven-line S10 scientific success;
+- physical drone/humanoid validation;
+- independent external replication;
+- all future Command Center integrations already live;
+- production readiness;
+- AGI or consciousness.
 
 ## Read these current documents first
 
-1. [`CURRENT_TRUTH_INDEX_20260914.md`](CURRENT_TRUTH_INDEX_20260914.md)
-2. [`CURRENT_RESEARCH_ROADMAP_20260914.md`](CURRENT_RESEARCH_ROADMAP_20260914.md)
-3. [`GRANT_REVIEWER_CURRENT_STATUS_20260914.md`](GRANT_REVIEWER_CURRENT_STATUS_20260914.md)
-4. [`TRAINING_CURRENT_STATUS_20260914.md`](TRAINING_CURRENT_STATUS_20260914.md)
-5. [`STATUS_SYNC_20260914.md`](STATUS_SYNC_20260914.md)
-6. [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md)
-7. [`S10_VARIANTS_START_HERE_20260913.md`](S10_VARIANTS_START_HERE_20260913.md)
-8. [`S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md`](S10_VARIANT_V3_INTERMEDIATE_METANETWORK_STATUS_20260914.md)
-9. [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
-10. [`DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md`](DRONE_DOMAIN_RND_COLLABORATION_STATUS_20260914.md)
-11. [`HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md`](HUMANOID_DOMAIN_TRANSFER_RND_STATUS_20260914.md)
+1. [`README.md`](README.md)
+2. [`CURRENT_TRUTH_INDEX_20260915.md`](CURRENT_TRUTH_INDEX_20260915.md)
+3. [`CROSS_DOMAIN_24_EXPERIMENT_SHOWCASE_STATUS_20260915.md`](CROSS_DOMAIN_24_EXPERIMENT_SHOWCASE_STATUS_20260915.md)
+4. [`LATEST_PUBLIC_STATUS_20260915.md`](LATEST_PUBLIC_STATUS_20260915.md)
+5. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
+6. [`GRANT_REVIEWER_CURRENT_STATUS_20260915.md`](GRANT_REVIEWER_CURRENT_STATUS_20260915.md)
+7. [`CURRENT_RESEARCH_ROADMAP_20260915.md`](CURRENT_RESEARCH_ROADMAP_20260915.md)
+8. [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md)
+9. [`PUBLIC_SHOWCASE_AND_MEASURED_DOMAIN_TRANSFER_EVIDENCE_20260914.md`](PUBLIC_SHOWCASE_AND_MEASURED_DOMAIN_TRANSFER_EVIDENCE_20260914.md)
+10. [`DRONE_MEASURED_RESULTS_20260914.md`](DRONE_MEASURED_RESULTS_20260914.md)
+11. [`HUMANOID_MEASURED_RESULTS_20260914.md`](HUMANOID_MEASURED_RESULTS_20260914.md)
 
-Older `CURRENT_TRUTH_INDEX.md`, `CURRENT_RESEARCH_ROADMAP_20260910.md`, S1–S5 and older grant/experiment documents remain valid **historical evidence** of what was known or planned at those dates; they are not the current front door.
+Older dated status, roadmap, benchmark and predeclaration files remain valid historical evidence. They are not rewritten to match later project state.
 
 ## Publication boundary
 
@@ -202,6 +210,6 @@ WEAK PASS -> PRESERVE / SUPERSEDE
 NEW VERIFIED EVIDENCE -> REVISE
 HISTORICAL PREDECLARATION -> PRESERVE AS HISTORY
 LATEST CURRENT STATUS -> USE LATEST EVIDENCE-BACKED STATUS FILES
-DOMAIN TRANSFER -> DO NOT CONFUSE WITH COMPLETED EXPERIMENT OUTCOME
-SOFTWARE DEMONSTRATOR -> DO NOT CONFUSE WITH PHYSICAL VALIDATION
+SOFTWARE DOMAIN EVIDENCE -> DO NOT CONFUSE WITH PHYSICAL VALIDATION
+SHOWCASE COUNT -> DO NOT RETROACTIVELY REWRITE RUNNER EVIDENCE
 ```
