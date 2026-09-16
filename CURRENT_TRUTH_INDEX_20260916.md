@@ -22,40 +22,26 @@ PUBLIC CROSS-DOMAIN SHOWCASE = 24 experiments = 12 drone + 12 humanoid
 PUBLIC REVIEWER ACCESS = observer-only
 ```
 
-## Source-project authorship and lineage
+## Narrow source-archive authorship boundary
 
-Important historical attribution is now explicit.
-
-According to direct author attribution from Paweł Jankiewicz, four earlier source projects used as conceptual/mechanical inputs to later SSI development were authored by his brother, **Michał Jankiewicz**:
+According to direct attribution from Paweł Jankiewicz, exactly four supplied private source archives are attributed to his brother, **Michał Jankiewicz**:
 
 ```text
-Moralna SI
-Recursio
-Diana
-Pierwotne JA
+Moralna SI.zip
+recursio.zip
+diana_core.zip
+pierwotne JA.7z
 ```
 
-Paweł Jankiewicz later selected, expanded and integrated mechanisms from those source projects into his own SSI V5 architecture.
+This attribution does **not** extend to Football World, T17, Organizer_swiat_Pilki, SSI V5, V10, S10, Micronetworks, CONTINUUM, Hermes, Director, Robert, BODY/ISKRA, current Worlds architecture or the multi-year football data/history.
 
-The attribution boundary is:
+Those remain Paweł Jankiewicz's own project lines unless separately documented otherwise.
 
-```text
-SOURCE PROJECTS
-= Michał Jankiewicz
-
-LATER SSI V5 ADAPTATION / EXPANSION / INTEGRATION
-= Paweł Jankiewicz
-```
-
-`Agora` is not currently documented as a separate fifth Michał Jankiewicz project. In SSI it is a later social-world construct combining relationship/interaction concepts, persistent conversational context and SSI-specific provenance/contamination rules.
+Selected mechanisms from the four Michał archives were later reviewed, modified, generalized or reimplemented by Paweł Jankiewicz inside SSI. Mechanism-level influence does not transfer ownership of the later SSI or Football World architecture.
 
 Canonical attribution record:
 
 [`MICHAL_JANKIEWICZ_SOURCE_PROJECTS_AND_SSI_ADAPTATION_20260916.md`](MICHAL_JANKIEWICZ_SOURCE_PROJECTS_AND_SSI_ADAPTATION_20260916.md)
-
-Historical Moral AI attribution record:
-
-[`evidence/ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md`](evidence/ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md)
 
 ## Football World truth
 
@@ -77,6 +63,8 @@ Reflection
 Director Worlds read-only integration
 future-world _template contract
 ```
+
+Football World / Świat Piłki, the historical T17 system, Organizer_swiat_Pilki and the underlying multi-year football work are Paweł Jankiewicz's own project history.
 
 The world reads the existing sibling `Organizer_swiat_Pilki` source tree through a read-only adapter. It does not silently overwrite or duplicate source assets.
 
@@ -128,8 +116,8 @@ Not currently claimed:
 
 1. [`README.md`](README.md)
 2. [`CURRENT_TRUTH_INDEX_20260916.md`](CURRENT_TRUTH_INDEX_20260916.md)
-3. [`MICHAL_JANKIEWICZ_SOURCE_PROJECTS_AND_SSI_ADAPTATION_20260916.md`](MICHAL_JANKIEWICZ_SOURCE_PROJECTS_AND_SSI_ADAPTATION_20260916.md)
-4. [`FOOTBALL_WORLD_CURRENT_STATUS_20260916.md`](FOOTBALL_WORLD_CURRENT_STATUS_20260916.md)
+3. [`FOOTBALL_WORLD_CURRENT_STATUS_20260916.md`](FOOTBALL_WORLD_CURRENT_STATUS_20260916.md)
+4. [`MICHAL_JANKIEWICZ_SOURCE_PROJECTS_AND_SSI_ADAPTATION_20260916.md`](MICHAL_JANKIEWICZ_SOURCE_PROJECTS_AND_SSI_ADAPTATION_20260916.md)
 5. [`LATEST_PUBLIC_STATUS_20260916.md`](LATEST_PUBLIC_STATUS_20260916.md)
 6. [`CURRENT_RESEARCH_ROADMAP_20260916.md`](CURRENT_RESEARCH_ROADMAP_20260916.md)
 7. [`GRANT_REVIEWER_CURRENT_STATUS_20260916.md`](GRANT_REVIEWER_CURRENT_STATUS_20260916.md)
