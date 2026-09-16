@@ -1,222 +1,144 @@
-# SSI V5 — Moral AI / Iskra Origin and Attribution
+# SSI V5 — Moralna SI / Iskra Origin and Attribution
 
 **Status:** `HISTORICAL ATTRIBUTION / ROOT_ATTESTED`  
 **Recorded:** `2026-08-29`  
 **Attribution clarified:** `2026-09-16`
 
-> This document explicitly separates authorship of the source Moral AI idea from its later adaptation into SSI V5. The goal is to preserve honest project lineage and avoid attributing to one person work or concepts that originated earlier in a family project.
+> This document records authorship of one specific source archive, `Moralna SI.zip`, and the later use of selected mechanisms from that archive inside Paweł Jankiewicz's own SSI work. It must not be read as attribution of Football World, SSI V5 or other Paweł Jankiewicz projects to Michał Jankiewicz.
 
-## 2026-09-16 authorship clarification
+## 2026-09-16 narrow authorship clarification
 
-According to the direct attribution of Paweł Jankiewicz (`jankes72`, `PROGRAMMER_ROOT`), the earlier source project referred to here as Moral AI / Moralna SI was authored by his brother, **Michał Jankiewicz**.
-
-The broader source-project lineage is now documented in:
-
-[`MICHAL_JANKIEWICZ_SOURCE_PROJECTS_AND_SSI_ADAPTATION_20260916.md`](../MICHAL_JANKIEWICZ_SOURCE_PROJECTS_AND_SSI_ADAPTATION_20260916.md)
-
-The correct attribution boundary is:
+According to the direct attribution of Paweł Jankiewicz (`jankes72`, `PROGRAMMER_ROOT`):
 
 ```text
-MORALNA SI / SOURCE MORAL-AI PROJECT
+Moralna SI.zip
 = Michał Jankiewicz
 
-LATER SSI / ISKRA ADAPTATION, EXPANSION AND INTEGRATION
+Later SSI / ISKRA adaptation, modification and integration
 = Paweł Jankiewicz
 ```
 
-This clarification names the previously described family-project author; it does not retroactively attribute later SSI-specific architecture to the source project.
+The broader narrow archive record is:
 
----
+[`MICHAL_JANKIEWICZ_SOURCE_PROJECTS_AND_SSI_ADAPTATION_20260916.md`](../MICHAL_JANKIEWICZ_SOURCE_PROJECTS_AND_SSI_ADAPTATION_20260916.md)
 
-## 1. The source idea is not solely authored by SSI V5
-
-According to the direct attribution of `PROGRAMMER_ROOT`, the source **Moral AI / Moralna SI** concept from which the SSI layer later called `Iskra` was derived comes from an earlier project by **Michał Jankiewicz**, brother of Paweł Jankiewicz.
-
-In earlier user materials this project was also referred to as **`Amnezja / Moral AI model`**.
-
-At the time this document was first created, the public GitHub index available from the `SSI_V5` repository did not allow the source repository URL to be uniquely located and verified from the name alone. Therefore this record remains `ROOT_ATTESTED`, not `VERIFIED_REPOSITORY_EVIDENCE`.
-
-When a canonical URL or exact public source-repository name is available, this document may be extended with direct repository/commit evidence.
-
----
-
-## 2. What comes from Michał Jankiewicz's source idea
-
-The source inspiration was a system in which a decision is not evaluated only instrumentally or numerically, but has an additional value/moral evaluation layer.
-
-That idea became a missing component for the later SSI experiment with independent Agents.
-
-Attribution should therefore be explicit:
+That record attributes exactly four supplied private archives to Michał Jankiewicz:
 
 ```text
-SOURCE MORAL-AI / MORALNA SI IDEA AND PROJECT
+Moralna SI.zip
+recursio.zip
+diana_core.zip
+pierwotne JA.7z
+```
+
+It does **not** attribute Football World / Świat Piłki, T17, Organizer_swiat_Pilki, SSI V5, V10, S10, Micronetworks, CONTINUUM, Hermes, Director, Robert, BODY/ISKRA or the current Worlds architecture to Michał Jankiewicz.
+
+---
+
+## 1. What is attributed to Michał Jankiewicz
+
+The private source archive `Moralna SI.zip` is attributed to **Michał Jankiewicz**.
+
+The reviewed archive includes high-level mechanics such as:
+
+- world/room structure;
+- Agents and Teachers/residents;
+- inventory/items;
+- knowledge and skills;
+- movement, take/use/talk style actions;
+- relationships and trust/loyalty-style state;
+- moral/value parameters;
+- emotional-state mechanisms;
+- experience after action and consequence.
+
+Abstractly:
+
+```text
+WORLD / ROOM
++
+AGENT STATE
++
+ITEM / KNOWLEDGE / SKILL
++
+TEACHER / OTHER AGENT
+        |
+        v
+ACTION
+        |
+        v
+CONSEQUENCE / EXPERIENCE / RELATIONSHIP CHANGE
+```
+
+---
+
+## 2. What Paweł Jankiewicz later did with selected mechanisms
+
+Paweł Jankiewicz later studied and reused selected mechanisms while developing his own SSI architecture.
+
+Those later structures were modified, generalized and integrated with Paweł Jankiewicz's own systems, including his existing Agent/World work, Micronetworks, CONTINUUM, V10/S10, Director and Football World.
+
+The correct distinction is:
+
+```text
+SOURCE ARCHIVE
+= Moralna SI.zip
 = Michał Jankiewicz
 
-SSI ISKRA / MORAL-AI ADAPTATION
-= later development and integration by Paweł Jankiewicz
-  inside SSI architecture
+LATER SSI IMPLEMENTATION / ARCHITECTURE
+= Paweł Jankiewicz
 ```
 
-Documentation should not state:
-
-```text
-PROGRAMMER_ROOT INVENTED MORAL AI FROM SCRATCH
-```
-
-because the source project is attributed to Michał Jankiewicz.
+Mechanism-level influence does not transfer ownership of the later SSI implementation.
 
 ---
 
-## 3. What SSI changed and extended
+## 3. Football World boundary
 
-SSI does not copy the source idea 1:1.
+Football World / Świat Piłki, T17, Organizer_swiat_Pilki, the football datasets/history and the current Football World / Świat Hipnozy 01 are **Paweł Jankiewicz's own multi-year project line**.
 
-Paweł Jankiewicz adapted selected mechanisms into his own experimental architecture and connected them with:
-
-- `SSI ORGANISM CORE`;
-- individual Agent identity;
-- private memory and Experience;
-- micronetworks;
-- beliefs / policies;
-- social relationships;
-- World rules;
-- independent outcome;
-- Director meta-observation;
-- six independent Agents.
-
-A key extension is the move from abstract decision scoring into a dynamic environment where an Agent may operate on objects in the world.
-
-Example:
+Selected interaction mechanics from `Moralna SI.zip` may have been adapted later into that world, but this does not make the Football World a Michał Jankiewicz project.
 
 ```text
-NOT ONLY:
-"Agent computes that the key opens the door"
+MORALNA SI SOURCE MECHANISM
+may influence
+LATER FOOTBALL WORLD FEATURE
 
-BUT:
-Agent observes the KEY object
--> makes a decision
--> picks up the object in the world model
--> moves / uses it
--> observes the consequence
--> records Experience
--> updates micronetworks / beliefs / policy
+BUT
+
+FOOTBALL WORLD AUTHORSHIP
+remains Paweł Jankiewicz
 ```
-
-This connects the Moral AI idea with learning through action and consequence.
 
 ---
 
-## 4. Dynamic world / room mechanics
+## 4. Iskra boundary
 
-The later SSI adaptation treats the environment as a dynamic experimental space rather than a static multiple-choice test.
+The Moralna SI archive contributed source material for later value/moral interpretation concepts, but the current SSI Iskra architecture is a later Paweł Jankiewicz development integrated with his own Agent histories, Experience, Micronetworks, Worlds and Director observation.
 
-```text
-WORLD STATE
--> OBJECTS / ROOMS / POSITIONS
--> POSSIBLE ACTIONS
--> AGENT CHOICE
--> CHANGE IN WORLD STATE
--> CONSEQUENCE
--> EXPERIENCE
--> MORAL AI / ISKRA INTERPRETATION
--> MICRONETWORK DEVELOPMENT
-```
-
-The Agent can therefore conduct actions and experiments rather than only answer questions.
+This document therefore does not claim that the complete Iskra system was authored by Michał Jankiewicz.
 
 ---
 
-## 5. Why this matters for an Agent society
+## 5. Lineage rule
 
-Combining Moral AI with separate Experience and micronetworks means different Agents may interpret the same social event differently.
-
-Over time this may affect:
-
-- trust and distrust;
-- cooperation;
-- refusal to cooperate;
-- knowledge exchange;
-- protection of private knowledge;
-- preference for specific partners;
-- distancing from others;
-- coalitions;
-- coalition breakdown;
-- conflicts of interest;
-- reactions to exploitation or unmet expectations;
-- group strategies and counter-strategies.
-
-These relationships are not intended to be manually written as personality traits.
+The intended public rule is:
 
 ```text
-INTERACTION
--> OUTCOME
--> MORAL AI / ISKRA EVALUATION
--> SOCIAL EXPERIENCE
--> MICRONETWORK / BELIEF UPDATE
--> FUTURE RELATIONSHIP POLICY
-```
-
-Director is intended to observe the lineage of these changes.
-
----
-
-## 6. Director as experiment observer
-
-Director should not see only the Agent's final score.
-
-It should be able to audit, where permitted:
-
-```text
-INITIAL ISKRA / VALUE PRIOR
-+
-PRIVATE EXPERIENCE
-+
-SOCIAL EXPERIENCE
-+
-MICRONETWORK TRAJECTORY
-+
-RELATIONSHIP HISTORY
-+
-DECISION TRACE
-+
-OUTCOME
-```
-
-This supports research not only into **what the Agent did**, but also **how it arrived at that behavior**.
-
----
-
-## 7. Honest attribution
-
-SSI documentation should consistently preserve this distinction:
-
-```text
-SOURCE MORALNA SI / MORAL-AI PROJECT
--> Michał Jankiewicz
-
-SSI / ISKRA ADAPTATION
--> Paweł Jankiewicz
--> integration with Agent Body, Experience, micronetworks,
-   dynamic worlds, social relationships
-   and Director meta-observation
-```
-
-The same distinction should apply in README files, evidence, publications and later research descriptions.
-
----
-
-## 8. Lineage rule
-
-SSI applies here the same principle it uses for its own Agents:
-
-```text
-SOURCE IDEA
+SOURCE FILE AUTHORSHIP
 !=
-LATER ADAPTATION
+LATER ADAPTATION AUTHORSHIP
 !=
-LATER DISCOVERY
+LATER SYSTEM OWNERSHIP
 ```
 
-Developing an idea does not erase its origin.
+For this file specifically:
 
-Later Agent experiments may produce new structures or strategies, but the historical source of the original Moral AI concept should remain preserved while SSI-specific additions are attributed separately.
+```text
+Moralna SI.zip
+= Michał Jankiewicz
+
+SSI V5 / Iskra / Football World adaptations
+= Paweł Jankiewicz
+```
+
+This narrow attribution should be used in future README, evidence, grant and research documentation.
