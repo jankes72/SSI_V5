@@ -1,54 +1,36 @@
-# SSI V5 — CURRENT TRUTH INDEX — historical 2026-09-12 snapshot
+# SSI V5 — CURRENT TRUTH INDEX
 
-**Status:** `HISTORICAL SNAPSHOT / SUPERSEDED FOR CURRENT-STATE READING`  
-**Recorded state:** `2026-09-12`
+**Status:** `CURRENT POINTER / 2026-09-16`  
+**History rule:** earlier dated truth/status files remain preserved and are not retroactively rewritten.
 
-This file is preserved as evidence of what the project state was on 2026-09-12.
+Use the latest canonical current-state documents:
 
-It is **not** the current project-state index after later Router S10 V1/V3/V2 work, the shared S1-S10 training-control predeclaration, the implemented/measured drone and humanoid software domains, the 24-experiment public showcase, or the Director Command Center pre-training gate.
+1. [`CURRENT_TRUTH_INDEX_20260916.md`](CURRENT_TRUTH_INDEX_20260916.md)
+2. [`FOOTBALL_WORLD_CURRENT_STATUS_20260916.md`](FOOTBALL_WORLD_CURRENT_STATUS_20260916.md)
+3. [`LATEST_PUBLIC_STATUS_20260916.md`](LATEST_PUBLIC_STATUS_20260916.md)
+4. [`CURRENT_RESEARCH_ROADMAP_20260916.md`](CURRENT_RESEARCH_ROADMAP_20260916.md)
+5. [`GRANT_REVIEWER_CURRENT_STATUS_20260916.md`](GRANT_REVIEWER_CURRENT_STATUS_20260916.md)
+6. [`CROSS_DOMAIN_24_EXPERIMENT_SHOWCASE_STATUS_20260915.md`](CROSS_DOMAIN_24_EXPERIMENT_SHOWCASE_STATUS_20260915.md)
 
-For current status use:
-
-1. [`CURRENT_TRUTH_INDEX_20260915.md`](CURRENT_TRUTH_INDEX_20260915.md)
-2. [`STATUS_SYNC_20260915.md`](STATUS_SYNC_20260915.md)
-3. [`CROSS_DOMAIN_24_EXPERIMENT_SHOWCASE_STATUS_20260915.md`](CROSS_DOMAIN_24_EXPERIMENT_SHOWCASE_STATUS_20260915.md)
-4. [`LATEST_PUBLIC_STATUS_20260915.md`](LATEST_PUBLIC_STATUS_20260915.md)
-5. [`CURRENT_RESEARCH_ROADMAP_20260915.md`](CURRENT_RESEARCH_ROADMAP_20260915.md)
-6. [`GRANT_REVIEWER_CURRENT_STATUS_20260915.md`](GRANT_REVIEWER_CURRENT_STATUS_20260915.md)
-
-Historical facts from this snapshot remain preserved in Git history. They must not be silently rewritten into later outcomes.
-
-Key status evolution after this snapshot includes:
+## Key 2026-09-16 evolution
 
 ```text
-S1-S5 historical predeclaration
--> preserved
+FOOTBALL WORLD / SWIAT HIPNOZY 01
+= IMPLEMENTED PROFESSIONAL WORLD TEMPLATE / DIRECTOR-INTEGRATED
 
-latest training-control methodology
--> shared S1-S10 protocol for S10 V1/V3/V2
+17-HERMES WORLD STRUCTURE
+= IMPLEMENTED
 
-DRONES / HUMANOID
--> implemented + measured software research domains
+FOOTBALL SOURCE CONNECTION
+= READ-ONLY / PARTIAL
 
-PUBLIC CROSS-DOMAIN SHOWCASE
--> 12 drone + 12 humanoid = 24 experiments
+FULL BODY/ISKRA LIVE WORLD PARTICIPATION
+= NOT YET CLAIMED COMPLETE
 
-SEPARATE 21 BODY / ISKRA PROGRAMME
--> still NOT claimed complete
-
-DIRECTOR COMMAND CENTER
--> implemented / locally validated pre-training gate
-
-physical validation
--> still NOT claimed
+MATCH-IDENTITY / VERIFIED OUTCOME AUTOMATION
+= NOT YET COMPLETE
 ```
 
-The distinction remains:
+The historical Football/T17 mechanism remains documented in [`evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md`](evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md), while the new V1 world status is documented in [`FOOTBALL_WORLD_CURRENT_STATUS_20260916.md`](FOOTBALL_WORLD_CURRENT_STATUS_20260916.md).
 
-```text
-HISTORICAL PREDECLARATION != CURRENT STATUS
-PUBLIC SHOWCASE COUNT != HISTORICAL RUNNER COUNT
-24 SHOWCASE EXPERIMENTS != 21 BODY / ISKRA PROGRAMME
-SOFTWARE DEMONSTRATOR != PHYSICAL VALIDATION
-ARCHITECTURE READINESS != COMPLETED LIVE INTEGRATION
-```
+Older dated snapshots remain valid evidence of what was known, planned or measured at their commit dates.
