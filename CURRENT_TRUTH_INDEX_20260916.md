@@ -22,6 +22,41 @@ PUBLIC CROSS-DOMAIN SHOWCASE = 24 experiments = 12 drone + 12 humanoid
 PUBLIC REVIEWER ACCESS = observer-only
 ```
 
+## Source-project authorship and lineage
+
+Important historical attribution is now explicit.
+
+According to direct author attribution from Paweł Jankiewicz, four earlier source projects used as conceptual/mechanical inputs to later SSI development were authored by his brother, **Michał Jankiewicz**:
+
+```text
+Moralna SI
+Recursio
+Diana
+Pierwotne JA
+```
+
+Paweł Jankiewicz later selected, expanded and integrated mechanisms from those source projects into his own SSI V5 architecture.
+
+The attribution boundary is:
+
+```text
+SOURCE PROJECTS
+= Michał Jankiewicz
+
+LATER SSI V5 ADAPTATION / EXPANSION / INTEGRATION
+= Paweł Jankiewicz
+```
+
+`Agora` is not currently documented as a separate fifth Michał Jankiewicz project. In SSI it is a later social-world construct combining relationship/interaction concepts, persistent conversational context and SSI-specific provenance/contamination rules.
+
+Canonical attribution record:
+
+[`MICHAL_JANKIEWICZ_SOURCE_PROJECTS_AND_SSI_ADAPTATION_20260916.md`](MICHAL_JANKIEWICZ_SOURCE_PROJECTS_AND_SSI_ADAPTATION_20260916.md)
+
+Historical Moral AI attribution record:
+
+[`evidence/ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md`](evidence/ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md)
+
 ## Football World truth
 
 Football World is no longer roadmap-only. The current V1 world template includes:
@@ -93,9 +128,10 @@ Not currently claimed:
 
 1. [`README.md`](README.md)
 2. [`CURRENT_TRUTH_INDEX_20260916.md`](CURRENT_TRUTH_INDEX_20260916.md)
-3. [`FOOTBALL_WORLD_CURRENT_STATUS_20260916.md`](FOOTBALL_WORLD_CURRENT_STATUS_20260916.md)
-4. [`LATEST_PUBLIC_STATUS_20260916.md`](LATEST_PUBLIC_STATUS_20260916.md)
-5. [`CURRENT_RESEARCH_ROADMAP_20260916.md`](CURRENT_RESEARCH_ROADMAP_20260916.md)
-6. [`GRANT_REVIEWER_CURRENT_STATUS_20260916.md`](GRANT_REVIEWER_CURRENT_STATUS_20260916.md)
-7. [`CROSS_DOMAIN_24_EXPERIMENT_SHOWCASE_STATUS_20260915.md`](CROSS_DOMAIN_24_EXPERIMENT_SHOWCASE_STATUS_20260915.md)
-8. [`evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md`](evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md)
+3. [`MICHAL_JANKIEWICZ_SOURCE_PROJECTS_AND_SSI_ADAPTATION_20260916.md`](MICHAL_JANKIEWICZ_SOURCE_PROJECTS_AND_SSI_ADAPTATION_20260916.md)
+4. [`FOOTBALL_WORLD_CURRENT_STATUS_20260916.md`](FOOTBALL_WORLD_CURRENT_STATUS_20260916.md)
+5. [`LATEST_PUBLIC_STATUS_20260916.md`](LATEST_PUBLIC_STATUS_20260916.md)
+6. [`CURRENT_RESEARCH_ROADMAP_20260916.md`](CURRENT_RESEARCH_ROADMAP_20260916.md)
+7. [`GRANT_REVIEWER_CURRENT_STATUS_20260916.md`](GRANT_REVIEWER_CURRENT_STATUS_20260916.md)
+8. [`CROSS_DOMAIN_24_EXPERIMENT_SHOWCASE_STATUS_20260915.md`](CROSS_DOMAIN_24_EXPERIMENT_SHOWCASE_STATUS_20260915.md)
+9. [`evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md`](evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md)
