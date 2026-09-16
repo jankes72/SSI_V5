@@ -2,7 +2,8 @@
 
 **Status:** `IMPLEMENTED WORLD TEMPLATE / DIRECTOR-INTEGRATED / LOCAL SOFTWARE VALIDATION / PARTIAL SOURCE CONNECTION`  
 **Repository role:** public evidence/status description only; proprietary implementation remains private.  
-**Historical lineage:** Football World / T17 Teacher system, Moral AI room/inventory mechanics, Recursio narrative/world-state concepts, persistent Agent memory/self-history concepts.
+**Authorship:** Football World / Świat Piłki, historical T17, Organizer_swiat_Pilki, accumulated football data/history and the current Football World / Świat Hipnozy 01 are Paweł Jankiewicz's own project line.  
+**Mechanism-level influence:** selected mechanics later added to the current world were adapted from four private source archives by Michał Jankiewicz: `Moralna SI.zip`, `recursio.zip`, `diana_core.zip`, `pierwotne JA.7z`. This does not transfer authorship of Football World or SSI V5.
 
 ## Current status
 
@@ -28,6 +29,32 @@ worlds/_template/
 
 No drone, humanoid, market or other future world is claimed active inside this package.
 
+## Authorship boundary
+
+The authorship boundary for this world is explicit:
+
+```text
+FOOTBALL WORLD / ŚWIAT PIŁKI
+T17 / 17 football Teachers
+Organizer_swiat_Pilki
+multi-year football data/history
+current Football World / Świat Hipnozy 01
+= Paweł Jankiewicz
+```
+
+Only the following four private source archives are attributed to Michał Jankiewicz:
+
+```text
+Moralna SI.zip
+recursio.zip
+diana_core.zip
+pierwotne JA.7z
+```
+
+Some selected mechanisms from those four archives were later studied, modified or reimplemented inside the current world, but Football World itself is not derived ownership-wise from Michał Jankiewicz.
+
+See [`MICHAL_JANKIEWICZ_SOURCE_PROJECTS_AND_SSI_ADAPTATION_20260916.md`](MICHAL_JANKIEWICZ_SOURCE_PROJECTS_AND_SSI_ADAPTATION_20260916.md).
+
 ## What now exists
 
 The implemented Football World V1 template includes:
@@ -41,7 +68,7 @@ The implemented Football World V1 template includes:
 - fail-closed `NOT_CONNECTED` state when a real source is unavailable;
 - private Agent Pocket state for selected Hermes-generation snapshots and later artifacts;
 - persistent room/visit/movement history;
-- state-grounded Recursio-style narrative cues;
+- state-grounded narrative cues;
 - an Agora/social-interaction state layer;
 - SOLO and SHARED LAB1 paths;
 - LAB2 grouping stage;
@@ -267,7 +294,7 @@ The current Football World status does **not** claim:
 Football World is now best described as:
 
 ```text
-HISTORICAL ORIGIN WORLD
+PAWEŁ JANKIEWICZ MULTI-YEAR FOOTBALL WORLD / T17 LINE
 +
 IMPLEMENTED PROFESSIONAL WORLD TEMPLATE
 +
@@ -285,7 +312,7 @@ The next steps are controlled live Agent entry, explicit match/result identity i
 ## Related evidence and architecture
 
 - [`evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md`](evidence/FOOTBALL_WORLD_T17_TEACHER_SYSTEM.md)
-- [`evidence/ISKRA_AGENT_MICRONETWORK_SOCIAL_DYNAMICS.md`](evidence/ISKRA_AGENT_MICRONETWORK_SOCIAL_DYNAMICS.md)
+- [`MICHAL_JANKIEWICZ_SOURCE_PROJECTS_AND_SSI_ADAPTATION_20260916.md`](MICHAL_JANKIEWICZ_SOURCE_PROJECTS_AND_SSI_ADAPTATION_20260916.md)
 - [`evidence/ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md`](evidence/ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md)
 - [`SSI_V5_ORIGIN_RESEARCH_METHODOLOGY_AND_LONG_TERM_ARCHITECTURE.md`](SSI_V5_ORIGIN_RESEARCH_METHODOLOGY_AND_LONG_TERM_ARCHITECTURE.md)
 - [`DIRECTOR_COMMAND_CENTER_TAILSCALE_CROSS_CONSOLIDATION_ARCHITECTURE_20260914.md`](DIRECTOR_COMMAND_CENTER_TAILSCALE_CROSS_CONSOLIDATION_ARCHITECTURE_20260914.md)
