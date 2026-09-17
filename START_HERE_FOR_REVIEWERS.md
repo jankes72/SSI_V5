@@ -1,179 +1,147 @@
 # SSI V5 — Start Here for Grant and Technical Reviewers
 
-**Updated:** `2026-09-15`  
+**Updated:** `2026-09-17`  
 **Repository role:** `PUBLIC EVIDENCE / REVIEW MIRROR`  
 **Proprietary implementation:** private by design.
 
 ## Current status in one view
 
 ```text
-TEST 5 = 29/29 acceptance PASS / 524/524 regression PASS
-7-BODY readiness = 7/7 PASS / 147/147 common matrix
-BODY_FROZEN Foundation S1 = VERIFIED PASS
-DIRECTOR Foundation S1 = CREATED
-DIRECTOR Command Center = IMPLEMENTED / LOCAL VALIDATION PASS
-S10 = V1 / V3 / V2 explicit controlled comparison lines
-S1-S10 = latest shared predeclared three-variant training-control protocol
-DRONE / SWARM = implemented + measured software research domain
-HUMANOID MOTION / STABILITY = implemented + measured software research domain
-PUBLIC SHOWCASE = 24 experiments = 12 drone + 12 humanoid
-SEPARATE 21 BODY / ISKRA PROGRAMME = NOT CLAIMED COMPLETE
-PHYSICAL VALIDATION = NOT CLAIMED
+V4 S1-S10 = COMPLETE / PASS under one run ID
+7 BODY final state = 7/7 PASS
+CONSOLIDATION / PROMOTION / BRIDGE = PASS
+REGRESSION = PASS
+ROLLBACK = NOT REQUIRED
+BODY_FROZEN final promoted reload = 144/144 expected entries
+POST-S10 DRONE SOFTWARE LAB = 6/6 scenarios PASS
+POST-S10 HUMANOID SOFTWARE LAB = 15/15 scenarios PASS
+POST-S10 TOTAL = 21 scenarios
 PUBLIC REVIEWER ACCESS = observer-only
+PHYSICAL VALIDATION = not claimed
+INDEPENDENT EXTERNAL REPLICATION = not claimed
 ```
 
-## Current implementation order
+## Why this project is now collaboration-ready
+
+The 2026-09-17 V4 run moved SSI beyond a roadmap-only stage. A complete controlled software cycle now exists with:
+
+- seven independent BODY development lines;
+- staged S1-S10 progression under one run ID;
+- declared consolidation / promotion / bridge gates;
+- regression verification before advance;
+- rollback accounting;
+- promoted-state reload verification;
+- post-training domain execution;
+- preserved evidence, hashes and provenance;
+- explicit claim boundaries.
+
+The strongest current collaboration opportunities are therefore not generic advisory work, but externally defined validation, falsification, replication and domain transfer.
+
+## Research areas relevant to partners
 
 ```text
-DIRECTOR + COMMAND CENTER
--> ROBERT
--> BODY_FROZEN 2.0 + ISKRA S1-S10 TRAINING
--> EVIDENCE / COMPARISON / S10 EVALUATION
--> CONTROLLED SYSTEM CONNECTION
--> TARGET-SPECIFIC VALIDATION
--> COMPETENCE CONSOLIDATION
+AGENTIC AI
+MULTI-AGENT SYSTEMS
+CONTINUAL / LIFELONG LEARNING
+PERSISTENT COMPETENCE AND MEMORY
+ADAPTIVE ROUTING
+CROSS-AGENT COMPETENCE CONSOLIDATION
+FAILURE-AWARE RECOVERY
+AUTONOMOUS SYSTEMS
+DRONES / MULTI-ROBOT SYSTEMS
+HUMANOID MOTION / STABILITY
+AUDITABLE / EVIDENCE-ORIENTED AGENT WORKFLOWS
+CROSS-DOMAIN TRANSFER
 ```
 
-The current active engineering focus is DIRECTOR + Command Center. ROBERT follows. BODY_FROZEN 2.0 and ISKRA are later training/integration stages.
+## External collaboration model
 
-Prepared integration slots are not claims that every remote system is already live.
-
-## Public cross-domain showcase
-
-The current reviewer-facing experiment set is:
+Preferred model:
 
 ```text
-12 DRONE / SWARM EXPERIMENTS
-12 HUMANOID MOTION / STABILITY EXPERIMENTS
-24 TOTAL
-```
-
-Public showcase:
-
-https://echotrip.jankespawel98.workers.dev/
-
-Canonical counting clarification:
-
-[`CROSS_DOMAIN_24_EXPERIMENT_SHOWCASE_STATUS_20260915.md`](CROSS_DOMAIN_24_EXPERIMENT_SHOWCASE_STATUS_20260915.md)
-
-## Why 24 does not replace the 21-experiment programme
-
-The 24-experiment public showcase and the predeclared 21-experiment BODY / ISKRA programme are separate layers:
-
-```text
-PUBLIC SHOWCASE
-= 12 drone + 12 humanoid
-= 24
-
-LONGITUDINAL BODY / ISKRA PROGRAMME
-= 7 BODY lines x 3 experiments
-= 21
-```
-
-The 24-experiment showcase exists now. The 21-experiment programme remains incomplete unless separately evidenced.
-
-## Historical measurement integrity
-
-Earlier dated runner-level evidence is preserved exactly as recorded. It may use different scenario counts because it records a different evidence granularity.
-
-Examples:
-
-- drone runner benchmark: 11 scenarios across FAST / PARTIAL / FULL / MAX-SAFETY plus separate consolidation evidence;
-- humanoid runner family: H00-H14 with baseline/consolidated paths and self-test evidence.
-
-SSI does not rewrite historical records to make later presentation counts look identical.
-
-## Router S10
-
-Three variants are preserved:
-
-```text
-V1 = lean reference/control
-V3 = intermediate MetaNetwork
-V2 = richer optimized control/observability
-```
-
-No universal superiority is claimed.
-
-## Training control — S1-S10
-
-The shared protocol for V1, V2 and V3 is:
-
-```text
-S1 Foundation
-S2 LEGO + Micronetwork + Routing Practicum
-S3 Applied Autonomy
-S4 Robustness / Transfer Preparation
-S5 Pre-Experiment Maturity Gate
-S6 Multi-Path Equivalence
-S7 Counterfactual Rerouting
-S8 Cross-Domain Abstraction
-S9 Novel Recombination
-S10 Generalization Readiness Gate
-```
-
-This is predeclared methodology, not proof that all lines have completed all ten stages.
-
-Critical rule:
-
-```text
-OBSERVATION != COMPETENCE TRANSFER
-```
-
-## Measured drone evidence
-
-Published scoped evidence includes:
-
-- four execution-depth profiles;
-- measured flow-cost differences;
-- approximately `1.384x` median post-consolidation speedup;
-- approximately `27.76%` lower median flow cost;
-- competence-pool availability `6/5/5 -> 8/8/8`;
-- preserved `wind_corridor PASS -> FAIL` regression.
-
-The negative regression is intentionally retained because consolidation is not assumed beneficial without re-validation.
-
-## Measured humanoid evidence
-
-Published scoped evidence includes:
-
-- baseline/consolidated software scenarios;
-- `13/13` self-tests PASS;
-- measured simulator-clock events;
-- retained failure experience changing a later slip response;
-- first forced-slip attempt falling, then retrying with `PREEMPTIVE_SLIP_PREP` without the corresponding first-attempt fall.
-
-These are software/simulator results, not physical robot timing claims.
-
-## Why this is relevant to external reviewers
-
-SSI V5 can currently be reviewed at several levels:
-
-- historical engineering evidence and regressions;
-- persistent competence and Router V10 behavior;
-- Router S10 V1/V3/V2 controlled comparison design;
-- S1-S10 training methodology;
-- measured drone/swarm domain research;
-- measured humanoid motion/stability research;
-- public 24-experiment cross-domain showcase;
-- externally supplied unseen challenge cases;
-- later physical and independent validation.
-
-## Strongest next credibility step
-
-An external reviewer, laboratory, company or domain expert defines a previously unseen problem and freezes acceptance criteria before execution.
-
-```text
-EXTERNAL PROBLEM
--> CRITERIA FROZEN
--> RUN
+EXTERNAL PARTNER DEFINES A PREVIOUSLY UNSEEN PROBLEM
+-> ACCEPTANCE CRITERIA FROZEN BEFORE RUN
+-> SSI EXECUTION
 -> PASS / FAIL / INCONCLUSIVE PRESERVED
--> TIMINGS / EVIDENCE RECORDED
--> OPTIONAL TRANSFER / CONSOLIDATION
+-> EVIDENCE / TIMINGS / FAILURES RETAINED
+-> OPTIONAL CONSOLIDATION
 -> TARGET-SPECIFIC RE-VALIDATION
 -> RESULT RETURNED TO PARTNER
--> PUBLICATION ONLY WITH APPROVAL
 ```
+
+Possible partner roles include:
+
+- research collaborator;
+- consortium partner / beneficiary where programme rules permit;
+- external challenge designer;
+- independent replication / validation partner;
+- continual-learning or multi-agent methods reviewer;
+- drone/swarm research laboratory;
+- humanoid/robotics research laboratory;
+- later physical validation partner.
+
+## Current architecture summary
+
+SSI is a persistent multi-agent software ecosystem containing:
+
+```text
+DIRECTOR
++ BODY_FROZEN
++ ISKRA1..ISKRA6
++ HERMES
++ CONTINUUM
++ ROUTER V10
++ ROUTER S10
++ MICRONETWORKS / LEGO / POCKET
++ WORLD / DOMAIN LAYERS
++ EVIDENCE / CHECKPOINT / PROVENANCE
+```
+
+S1-S10 is one controlled training/evaluation process inside this ecosystem, not the entire system.
+
+## Latest completed V4 milestone
+
+```text
+RUN_ID = RUN_20260917T024400_DCD7FD
+TRACE_ROOT = TRACE_5EE50008986B
+FINAL_STAGE = S10
+COMPLETE = true
+```
+
+Final state:
+
+```text
+BODY_FROZEN = PASS
+ISKRA1 = PASS
+ISKRA2 = PASS
+ISKRA3 = PASS
+ISKRA4 = PASS
+ISKRA5 = PASS
+ISKRA6 = PASS
+CONSOLIDATION = PASS
+REGRESSION = PASS
+ROLLBACK = NOT_REQUIRED
+ADVANCE_ALLOWED = true
+```
+
+Final promoted BODY_FROZEN reload:
+
+```text
+expected_count = 144
+loaded_count = 144
+complete_accounting = true
+fresh_process = true
+```
+
+## Post-S10 software-domain results
+
+```text
+DRONE / SWARM = PASS / 6 scenarios
+HUMANOID MOTION / STABILITY = PASS / 15 scenarios
+TOTAL = 21 scenarios
+```
+
+These are software-domain results only. No physical drone or humanoid validation is claimed.
 
 ## Reviewer access boundary
 
@@ -187,31 +155,24 @@ PUBLIC REVIEWER
 
 ## What reviewers should not infer
 
-SSI V5 does not currently claim:
+Do not infer:
 
-- completed S1-S10 training across all lines;
-- completion of the separate 21 BODY / ISKRA programme;
-- complete seven-line S10 scientific validation;
-- universal V10/S10 superiority;
-- universal superiority of V1/V2/V3;
-- physical drone or humanoid validation;
+- physical drone validation;
+- physical humanoid validation;
+- live autonomous financial-account execution;
 - independent external replication;
-- all future Command Center integrations already live;
+- universal superiority of SSI, V10, S10 or any V1-V4 configuration;
 - production readiness;
 - AGI or consciousness.
 
-## Recommended current reading order
+## Recommended reading order
 
-1. [`README.md`](README.md)
-2. [`CURRENT_TRUTH_INDEX_20260915.md`](CURRENT_TRUTH_INDEX_20260915.md)
-3. [`CROSS_DOMAIN_24_EXPERIMENT_SHOWCASE_STATUS_20260915.md`](CROSS_DOMAIN_24_EXPERIMENT_SHOWCASE_STATUS_20260915.md)
-4. [`LATEST_PUBLIC_STATUS_20260915.md`](LATEST_PUBLIC_STATUS_20260915.md)
-5. [`GRANT_REVIEWER_CURRENT_STATUS_20260915.md`](GRANT_REVIEWER_CURRENT_STATUS_20260915.md)
-6. [`CURRENT_RESEARCH_ROADMAP_20260915.md`](CURRENT_RESEARCH_ROADMAP_20260915.md)
-7. [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_V3_20260914.md)
-8. [`PUBLIC_SHOWCASE_AND_MEASURED_DOMAIN_TRANSFER_EVIDENCE_20260914.md`](PUBLIC_SHOWCASE_AND_MEASURED_DOMAIN_TRANSFER_EVIDENCE_20260914.md)
-9. [`DRONE_MEASURED_RESULTS_20260914.md`](DRONE_MEASURED_RESULTS_20260914.md)
-10. [`HUMANOID_MEASURED_RESULTS_20260914.md`](HUMANOID_MEASURED_RESULTS_20260914.md)
-11. [`EXTERNAL_CHALLENGE_ENTRY_20260914.md`](EXTERNAL_CHALLENGE_ENTRY_20260914.md)
+1. [`CURRENT_TRUTH_INDEX_20260917.md`](CURRENT_TRUTH_INDEX_20260917.md)
+2. [`SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md`](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
+3. [`RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md`](RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md)
+4. [`RESULTS/V4_PUBLIC_SUMMARY_20260917.json`](RESULTS/V4_PUBLIC_SUMMARY_20260917.json)
+5. [`VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md`](VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md)
+6. [`COLLABORATION_AND_PARTNER_ENTRY.md`](COLLABORATION_AND_PARTNER_ENTRY.md)
+7. [`EXTERNAL_CHALLENGE_ENTRY_20260914.md`](EXTERNAL_CHALLENGE_ENTRY_20260914.md)
 
-Older dated files remain preserved as historical evidence of what was known, planned or measured at their commit dates.
+Older dated files remain preserved as historical evidence. If an older status conflicts with the 2026-09-17 evidence-backed state, use the newer current-state documents above.
