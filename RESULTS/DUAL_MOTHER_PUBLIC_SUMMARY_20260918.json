@@ -1,0 +1,67 @@
+{
+  "status_date": "2026-09-18",
+  "lab": "SSI_DUAL_MOTHER_CROSS_LAB_V1_20260918",
+  "evidence_type": "software_only",
+  "domains": {
+    "DRONE_MOTHER": {
+      "scenario_families_passed": 12,
+      "scenario_families_total": 12
+    },
+    "RESCUE_ROBOT_MOTHER": {
+      "scenario_families_passed": 12,
+      "scenario_families_total": 12,
+      "humanoid_used": false
+    }
+  },
+  "repeats_per_scenario_family": 60,
+  "paired_missions": 720,
+  "domain_result_rows": 1440,
+  "cross_consultation": {
+    "scenario_ids": [
+      "M07",
+      "M08",
+      "M09",
+      "M10",
+      "M11",
+      "M12"
+    ],
+    "scenario_families": 6,
+    "paired_missions": 360,
+    "measured_rounds": 720,
+    "mean_ms_across_scenario_means": 2.4896
+  },
+  "cross_consolidation": {
+    "scenario_ids": [
+      "M01",
+      "M02",
+      "M03",
+      "M04",
+      "M05",
+      "M06"
+    ],
+    "scenario_families": 6,
+    "measured_merge_executions": 360,
+    "mean_ms_across_scenario_means": 0.0369
+  },
+  "rollback": {
+    "scenario_ids": [
+      "M07",
+      "M08",
+      "M09",
+      "M10",
+      "M11",
+      "M12"
+    ],
+    "scenario_families": 6,
+    "measured_executions": 360,
+    "mean_ms_across_scenario_means": 0.117
+  },
+  "mean_total_software_flow_ms_across_12_scenario_means": 5.2559,
+  "claim_boundary": [
+    "no physical drone validation claimed",
+    "no physical rescue robot validation claimed",
+    "no safety certification claimed",
+    "no independent external replication claimed",
+    "no production-readiness claim"
+  ]
+}

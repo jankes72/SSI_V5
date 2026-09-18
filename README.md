@@ -1,36 +1,49 @@
 # SSI V5 — Research Front Door
 
 **Experimental persistent-competence architecture for adaptive multi-agent AI systems**  
-**Current public status:** `2026-09-17`  
+**Current public status:** `2026-09-18`  
 **Repository role:** evidence-indexed public research mirror; proprietary implementation remains private.
 
 SSI V5 investigates whether a long-running adaptive system can build, validate, preserve, reuse, compare, revise and consolidate competence across tasks using persistent state, experience, Micronetworks, Candidate -> Challenger -> Champion lifecycle, Router V10, Router S10, LEGO composition, Hermes memory and CONTINUUM persistence.
 
 This repository publishes **evidence, protocols, status, failures, repairs, retests, hashes, provenance and claim boundaries**. It does not distribute the proprietary SSI/V10/S10/Micronetwork/ISKRA/DIRECTOR/ROBERT implementation.
 
-## Current state — 2026-09-17
+## Current state — 2026-09-18
 
 ```text
 V4 S1-S10 = COMPLETE / PASS under one run ID
 7 BODY final state = 7/7 PASS
 CONSOLIDATION / PROMOTION / BRIDGE = PASS
 REGRESSION = PASS
-ROLLBACK = NOT REQUIRED
 BODY_FROZEN final promoted reload = 144/144 expected entries
+
 POST-S10 DRONE SOFTWARE LAB = PASS / 6 scenarios
 POST-S10 HUMANOID SOFTWARE LAB = PASS / 15 scenarios
-POST-S10 TOTAL = 21 scenarios
+
+NEW: SSI DUAL MOTHER CROSS LAB V1
+DRONE MOTHER = 12/12 paired scenario families PASS
+RESCUE ROBOT MOTHER = 12/12 paired scenario families PASS
+60 deterministic repeats per scenario family
+720 paired missions / 1,440 domain result rows
+
+CROSS CONSULTATION = 6 scenario families / 360 missions / 720 measured rounds
+CROSS CONSOLIDATION = 6 scenario families / 360 measured merge executions
+ROLLBACK = 6 scenario families / 360 measured rollback executions
+
 PUBLIC REVIEWER INTERFACE = observer-only
 PHYSICAL VALIDATION = not claimed
 INDEPENDENT EXTERNAL REPLICATION = not claimed
 ```
 
-The latest complete V4 run is documented in:
+Latest public evidence:
 
-- [`CURRENT_TRUTH_INDEX_20260917.md`](CURRENT_TRUTH_INDEX_20260917.md)
-- [`SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md`](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
+- [`CURRENT_TRUTH_INDEX_20260918.md`](CURRENT_TRUTH_INDEX_20260918.md)
+- [`RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md`](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md)
+- [`RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json`](RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json)
 - [`RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md`](RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md)
-- [`RESULTS/V4_PUBLIC_SUMMARY_20260917.json`](RESULTS/V4_PUBLIC_SUMMARY_20260917.json)
+- [`SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md`](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
+
+The new Dual Mother laboratory is software-only. The Rescue Robot Mother side uses specialist non-humanoid rescue robots. M01-M06 exercise validation followed by cross consolidation; M07-M12 exercise dynamic invalidation, rollback, cross consultation, conservative replanning and validation.
 
 ## SSI is a complete persistent ecosystem
 
