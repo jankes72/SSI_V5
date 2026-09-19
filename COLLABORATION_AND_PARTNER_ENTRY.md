@@ -1,146 +1,106 @@
 # SSI V5 — Collaboration and Partner Entry
 
-**Updated:** `2026-09-17`  
+**Updated:** `2026-09-19`  
+**Current verified evidence state:** `2026-09-18`  
 **Status:** `OPEN TO CONTROLLED RESEARCH / TECHNOLOGY / CONSORTIUM COLLABORATION`  
 **Public boundary:** proprietary implementation remains private unless separately licensed or explicitly disclosed.
 
-## Purpose
+> Grant and technical reviewers should start with [REVIEWER_INDEX.md](REVIEWER_INDEX.md).
 
-SSI V5 is open to collaboration with researchers, laboratories, universities, startups, companies and grant consortia that can add domain expertise, experimental infrastructure, independent evaluation, legal consortium eligibility, simulation environments, physical validation or external challenge design.
+## What SSI can offer a partner now
 
-The preferred collaboration model is evidence-driven and narrowly scoped around a concrete research or engineering question.
+SSI V5 can already be evaluated through a bounded evidence contract without requiring a partner to accept broad claims about the system.
 
-## Relevant technology areas
+Current verified software evidence includes:
+
+```text
+V4 S1-S10 = COMPLETE / PASS
+7 BODY final state = 7/7 PASS
+BODY_FROZEN promoted reload = 144/144
+
+POST-S10 DRONE = 6/6 software scenarios PASS
+POST-S10 HUMANOID = 15/15 software scenarios PASS
+
+DUAL MOTHER CROSS LAB V1
+DRONE MOTHER = 12/12 paired scenario families PASS
+RESCUE ROBOT MOTHER = 12/12 paired scenario families PASS
+60 deterministic repeats per scenario family
+720 paired missions / 1,440 domain result rows
+
+CROSS CONSULTATION = 720 measured rounds
+CROSS CONSOLIDATION = 360 measured executions
+ROLLBACK = 360 measured executions
+```
+
+These are software-laboratory results. Physical validation and independent external replication are not claimed.
+
+## Relevant collaboration areas
 
 ```text
 AGENTIC AI
 MULTI-AGENT SYSTEMS
 CONTINUAL / LIFELONG LEARNING
-PERSISTENT COMPETENCE
-PERSISTENT MEMORY / STATE
+PERSISTENT COMPETENCE AND MEMORY
 ADAPTIVE ROUTING
-CROSS-AGENT COMPETENCE CONSOLIDATION
-FAILURE-AWARE / ANTI-LOOP ROUTING
+CROSS-AGENT CONSOLIDATION
+FAILURE-AWARE RECOVERY / ROLLBACK
+CROSS-DOMAIN CONSULTATION
 AUTONOMOUS SYSTEMS
-ROBOTICS / HUMANOIDS
 DRONES / MULTI-ROBOT SYSTEMS
-TRUSTED / AUDITABLE AGENT WORKFLOWS
-TRANSFER LEARNING / CROSS-DOMAIN ADAPTATION
-VERSIONED DESCENDANT / BEFORE-AFTER VALIDATION
+SPECIALIST RESCUE ROBOTICS
+HUMANOID MOTION / STABILITY
+AUDITABLE AGENT WORKFLOWS
+EXTERNAL FALSIFICATION / REPLICATION
 ```
 
-## Current collaboration-ready milestone
-
-The 2026-09-17 V4 run completed a full controlled software cycle:
+## Preferred external challenge model
 
 ```text
-RUN_ID = RUN_20260917T024400_DCD7FD
-FINAL_STAGE = S10
-COMPLETE = true
-
-BODY_FROZEN = PASS
-ISKRA1 = PASS
-ISKRA2 = PASS
-ISKRA3 = PASS
-ISKRA4 = PASS
-ISKRA5 = PASS
-ISKRA6 = PASS
-
-CONSOLIDATION = PASS
-REGRESSION = PASS
-ROLLBACK = NOT_REQUIRED
-ADVANCE_ALLOWED = true
-```
-
-The promoted BODY_FROZEN state then reloaded with complete accounting:
-
-```text
-expected_count = 144
-loaded_count = 144
-complete_accounting = true
-fresh_process = true
-```
-
-After S10, the promoted state was executed in two software-domain harnesses:
-
-```text
-DRONE / SWARM = PASS / 6 scenarios
-HUMANOID MOTION / STABILITY = PASS / 15 scenarios
-TOTAL = 21 post-S10 software-domain scenarios
-```
-
-These results are software-domain evidence. They are not physical drone or humanoid validation.
-
-## Strongest near-term collaboration targets
-
-```text
-1. external unseen challenge / falsification of persistent competence and Router V10;
-2. independent review of S10 cross-line comparison and consolidation methodology;
-3. continual-learning / lifelong-learning benchmark design;
-4. multi-agent competence identity / false-merge / false-split evaluation;
-5. externally supplied drone/swarm software challenge;
-6. externally supplied humanoid motion/stability challenge;
-7. independent replication of selected V4 results;
-8. grant consortium partner able to provide eligible legal/funding structure;
-9. later physical drone/swarm validation;
-10. later physical humanoid / robotics validation.
-```
-
-## External challenge model
-
-```text
-EXTERNAL PARTNER DEFINES PROBLEM
+EXTERNAL PARTNER DEFINES A PREVIOUSLY UNSEEN PROBLEM
 -> SAFETY / FORMAT REVIEW
--> FROZEN CONTRACT
--> DECLARED ACCEPTANCE CRITERIA
--> SSI TARGET / DOMAIN LAB
+-> ACCEPTANCE CRITERIA FROZEN
+-> SSI VERSION / TARGET DECLARED
 -> RUN
--> PASS / FAIL / INCONCLUSIVE
--> FAILURES / TIMINGS / EVIDENCE PRESERVED
+-> PASS / FAIL / INCONCLUSIVE PRESERVED
+-> FAILURES / TIMINGS / EVIDENCE RETAINED
 -> OPTIONAL CONSOLIDATION
 -> TARGET-SPECIFIC RE-VALIDATION
 -> RESULT RETURNED TO PARTNER
--> PUBLICATION ONLY WITH PARTNER APPROVAL
 ```
 
-## Possible entry modes
+## Possible partner roles
 
-Where programme and legal rules permit:
+- research collaborator;
+- consortium partner / beneficiary where programme rules permit;
+- external challenge designer;
+- independent replication / validation partner;
+- continual-learning or multi-agent methods reviewer;
+- drone/swarm research laboratory;
+- specialist rescue-robotics laboratory;
+- humanoid/robotics research laboratory;
+- later physical validation partner.
 
-```text
-RESEARCH COLLABORATOR
-TECHNOLOGY COLLABORATOR
-CONSORTIUM PARTNER / BENEFICIARY
-ASSOCIATED PARTNER
-SUBCONTRACTOR / TECHNOLOGY PROVIDER
-EXTERNAL CHALLENGE DESIGNER
-INDEPENDENT VALIDATION / REPLICATION PARTNER
-DOMAIN-EXPERT ADVISER OR LAB PARTNER
-PHYSICAL VALIDATION PARTNER
-```
+## What a partner does not need to trust
 
-## What SSI can offer a partner now
+A partner does not need to rely on a marketing claim about SSI.
 
-A collaborator does not need to accept broad claims about SSI. The system can be evaluated through a narrower evidence contract:
+The preferred evaluation model is:
 
-- partner supplies a previously unseen problem or benchmark;
-- success and failure criteria are frozen before execution;
-- SSI runs under declared version / configuration;
+- partner supplies an unseen problem or benchmark;
+- success/failure criteria are frozen before execution;
+- SSI runs under a declared version/configuration;
 - PASS / FAIL / INCONCLUSIVE is retained;
-- failures are preserved rather than hidden;
-- before/after consolidation states can be compared;
+- failures are preserved;
+- before/after consolidation states may be compared;
 - provenance and version identity are retained;
-- public disclosure occurs only by agreement.
+- disclosure occurs only by agreement.
 
-This makes collaboration suitable for academic review, grant work packages, benchmarking, falsification and later physical transfer.
-
-## Central control and reviewer boundary
+## Reviewer / control boundary
 
 ```text
 LOCAL CENTRAL CONTROL
 = private owner/operator authority
 = training / experiment supervision
-= S10 workflow
 = promotion / rollback / recovery
 
 PUBLIC REVIEWER INTERFACE
@@ -166,15 +126,13 @@ PUBLIC / REVIEWABLE
 + sanitized measurements
 + failures / repairs / retests
 + provenance
-+ S10 purpose / variants / sanitized status
-+ domain-transfer capability
++ domain-transfer evidence
 + reviewer-interface boundaries
 + claim boundaries
 
 PRIVATE
 = proprietary SSI source
-+ Router V10 implementation
-+ Router S10 implementation
++ Router V10 / S10 internals
 + exact scoring / thresholds / private feature construction
 + Micronetwork internals
 + private Hermes memory
@@ -187,18 +145,21 @@ PRIVATE
 
 Current evidence does **not** establish:
 
-- physical drone or humanoid certification;
+- physical drone validation or certification;
+- physical rescue-robot validation;
+- physical humanoid validation;
+- safety certification;
 - independent external replication;
-- universal superiority of V10, S10 or SSI;
-- live autonomous financial-account execution;
+- universal superiority of SSI, V10 or S10;
 - production readiness;
 - AGI or consciousness.
 
 ## Start review here
 
-1. [`CURRENT_TRUTH_INDEX_20260917.md`](CURRENT_TRUTH_INDEX_20260917.md)
-2. [`SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md`](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
-3. [`RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md`](RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md)
-4. [`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
+1. [REVIEWER_INDEX.md](REVIEWER_INDEX.md)
+2. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
+3. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)
+4. [RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md)
+5. [SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
 
-Older dated collaboration/status files remain historical records and are not rewritten retroactively.
+Older dated collaboration/status documents remain historical records.
