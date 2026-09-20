@@ -42,24 +42,36 @@ All timings above are execution timings of the software laboratory and must not 
 
 ## SSI V5 implementation update — 2026-09-20
 
-SSI V5 now contains the implemented DIRECTOR Technology Radar path, extended LEGO Pocket integration and the corresponding V5 interface. These capabilities follow the earlier recorded architecture and development plan.
+SSI V5 contains the implemented DIRECTOR Technology Radar path, extended LEGO Pocket, Pocket Micro, META-LEGO, Contract Binding and the corresponding V5 interface. These capabilities follow the earlier recorded architecture and development plan.
 
 ```text
 IMPLEMENTED
 = Technology Radar / discovery path
-+ need and novelty matching path
++ need and novelty matching
 + LEGO Pocket candidate intake
++ Pocket Micro + META-LEGO routing/evidence layer
++ Contract Binding
 + V5 interface integration
 + independent DIRECTOR runtime
 + 7/7 BODY-family runtime availability
 
-CURRENT TEST GATE
-= S11 native smoke PASS
-+ Collective Intelligence INCONCLUSIVE
-+ full S11-S40 NOT COMPLETED
+S11 TERMINAL GATE
+= smoke after META-LEGO PASS
++ 22 full-run cases PASS
++ 0 FAIL
++ 1 INCONCLUSIVE at S11-04-05
++ native evaluation at stop PASS
++ Collective Intelligence INCONCLUSIVE / PARTIAL
++ full S11 PASS NOT CLAIMED
++ S12-S40 NOT YET CLAIMED
+
+ŚWIAT PIŁKI — HIPNOZA
+= IMPLEMENTED / OPERATOR-OBSERVED
++ complete data-path validation PENDING
++ evidence-backed domain validation PENDING
 ```
 
-The full Radar → candidate → LAB → evidence → decision → regression → transfer lifecycle is not yet claimed as validated end-to-end. Pocket entries remain candidates until their applicable validation gates close. See [the dated V5 implementation report](RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md).
+The full Radar → candidate → LAB → evidence → decision → regression → transfer lifecycle is not yet claimed as validated end-to-end. Pocket entries remain candidates until their applicable validation gates close. BODY_FROZEN and DIRECTOR retain separate runtime, memory and lifecycle. See [the terminal S11 record](RESULTS/SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md) and [the V5 implementation report](RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md).
 
 ## Why this project is now collaboration-ready
 
