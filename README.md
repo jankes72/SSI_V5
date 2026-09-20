@@ -46,21 +46,44 @@ These are software execution timings, not physical drone/robot response times.
 
 ## SSI V5 implementation state — 2026-09-20
 
-**Status:** `IMPLEMENTED / NOT YET VALIDATED END-TO-END`
+**Status:** `LIVE S11 VALIDATION IN PROGRESS`
 
 ```text
 SSI V5 Final = INSTALLED
 BODY_FROZEN + ISKRA1..ISKRA6 = 7/7 runtimes available
 DIRECTOR = independent runtime
 LUNA profiles = available
-S11 native smoke = PASS
-S11 Collective Intelligence = INCONCLUSIVE
-FULL S11-S40 VALIDATION = NOT COMPLETED
+
+S11 smoke after META-LEGO = PASS
+FULL S11 BODY_FROZEN = IN PROGRESS
+current full-run snapshot = 13 PASS / 0 FAIL / 0 INCONCLUSIVE
+next requested case at snapshot = S11-03-02
+S11 stage PASS = NOT YET CLAIMED
+S12-S40 = NOT YET CLAIMED
 ```
 
-DIRECTOR Technology Radar, the extended LEGO Pocket path and the corresponding V5 interface are implemented according to the earlier documented roadmap. V4 already preserves the verified BODY_FROZEN consolidation/promotion baseline and the documented transfer path toward the independent DIRECTOR.
+The current performance evolution is being documented as a controlled architecture path rather than as a single-patch result:
 
-Implemented does not mean validated. Radar findings and Pocket resources remain candidates until license/security/provenance checks, LAB evidence, Champion/Challenger/Hold/Reject decision, regression and target-specific revalidation are complete. See [RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md](RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md).
+```text
+FREE-ONLY / FULL-FLOW BASELINE
+-> PAID COST/QUALITY MODEL CASCADE
+-> TECHNOLOGY RADAR
+-> CONTRACT BINDING
+-> LEGO POCKET / POCKET MICRO
+-> META-LEGO
+-> ROUTER V10 + MICRONETWORK-ASSISTED SELECTION
+-> NATIVE EVALUATOR
+-> INDEPENDENT COLLECTIVE VERIFICATION
+-> S11 LIVE VALIDATION
+```
+
+The earlier "~2 days" free-only duration remains an operator estimate, not a measured benchmark.
+
+DIRECTOR Technology Radar, the extended LEGO Pocket path, Pocket Micro and META-LEGO are implemented according to the documented roadmap. Radar findings and Pocket resources remain candidates until the applicable license/security/provenance, LAB, Champion/Challenger/Hold/Reject, regression and target-specific validation gates are complete.
+
+See:
+- [RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md](RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md)
+- [RESULTS/SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md](RESULTS/SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md)
 
 ## Architecture at a glance
 
@@ -72,7 +95,10 @@ DIRECTOR
 + CONTINUUM
 + ROUTER V10
 + ROUTER S10
-+ MICRONETWORKS / LEGO / POCKET
++ TECHNOLOGY RADAR
++ MICRONETWORKS / LEGO / POCKET / POCKET MICRO / META-LEGO
++ COST/QUALITY MODEL CASCADE
++ CONTRACT BINDING
 + WORLD / DOMAIN LAYERS
 + LOCAL ROOT CONTROL
 + PUBLIC OBSERVER INTERFACE
@@ -82,12 +108,13 @@ DIRECTOR
 ## Read this repository in this order
 
 1. [REVIEWER_INDEX.md](REVIEWER_INDEX.md)
-2. [RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md](RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md)
-3. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
-4. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)
-5. [RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md)
-6. [SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
-7. [COLLABORATION_AND_PARTNER_ENTRY.md](COLLABORATION_AND_PARTNER_ENTRY.md)
+2. [RESULTS/SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md](RESULTS/SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md)
+3. [RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md](RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md)
+4. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
+5. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)
+6. [RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md)
+7. [SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
+8. [COLLABORATION_AND_PARTNER_ENTRY.md](COLLABORATION_AND_PARTNER_ENTRY.md)
 
 ## Current milestone lineage
 
@@ -98,8 +125,14 @@ BODY / ISKRA foundations
 -> promotion / regression
 -> post-S10 drone + humanoid software labs
 -> Dual Mother cross-domain consultation / rollback / consolidation
--> V5 Technology Radar + LEGO + interface implementation
--> S11 native PASS / CI INCONCLUSIVE validation gate
+-> free-only / full-flow baseline
+-> paid cost/quality model cascade
+-> Technology Radar
+-> Contract Binding
+-> Pocket Micro
+-> META-LEGO
+-> S11 smoke PASS
+-> full S11 BODY_FROZEN live validation in progress
 ```
 
 Older dated files remain preserved as historical evidence. They are not the recommended starting point unless a reviewer is auditing provenance.
@@ -134,6 +167,8 @@ The public evidence supports bounded software-laboratory claims about persistent
 
 It does **not** establish:
 
+- full S11 completion while the live stage is still running;
+- S12-S40 completion;
 - physical drone validation;
 - physical rescue-robot validation;
 - physical humanoid validation;
