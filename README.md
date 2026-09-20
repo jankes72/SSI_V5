@@ -55,7 +55,7 @@ DIRECTOR = independent runtime
 LUNA profiles = available
 
 S11 smoke after META-LEGO = PASS
-FULL S11 BODY_FROZEN = IN PROGRESS
+FULL S11 BODY_FROZEN = STOPPED_INCONCLUSIVE
 current full-run result = 22 PASS / 0 FAIL / 1 INCONCLUSIVE
 stopped at = S11-04-05
 native evaluation at stop = PASS
@@ -186,7 +186,7 @@ The public evidence supports bounded software-laboratory claims about persistent
 
 It does **not** establish:
 
-- full S11 completion while the live stage is still running;
+- full S11 completion; the stage stopped INCONCLUSIVE at S11-04-05 after 22 PASS;
 - S12-S40 completion;
 - physical drone validation;
 - physical rescue-robot validation;
