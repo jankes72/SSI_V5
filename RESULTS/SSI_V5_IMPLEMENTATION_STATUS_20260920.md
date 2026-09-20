@@ -1,46 +1,64 @@
 # SSI V5 — IMPLEMENTATION STATUS — 2026-09-20
 
-**Status:** `IMPLEMENTED / NOT YET VALIDATED END-TO-END`  
+**Status:** `IMPLEMENTED / LIVE S11 VALIDATION IN PROGRESS`  
 **Repository role:** public evidence and review mirror; proprietary source code remains private.  
-**Claim boundary:** this document records implementation state and test-gate state. It does not convert uncompleted validation into PASS.
+**Claim boundary:** this document records implementation state and the current live validation snapshot. It does not convert an unfinished stage into PASS.
 
 ## Executive status
-
-SSI V5 Final is installed at the private runtime location and the current launch check reached:
 
 ```text
 BODY_FROZEN + ISKRA1..ISKRA6 = 7/7 runtimes available
 DIRECTOR = independent runtime
 LUNA profiles = available
-S11 native smoke = PASS
-S11 Collective Intelligence = INCONCLUSIVE
+
+S11 smoke after META-LEGO = PASS
+FULL S11 BODY_FROZEN = IN PROGRESS
+current snapshot = 13 PASS / 0 FAIL / 0 INCONCLUSIVE
+current run = RUN_20260920T170905Z_77204708
+next requested case at snapshot = S11-03-02
+S11 stage PASS = NOT YET CLAIMED
 FULL S11-S40 VALIDATION = NOT COMPLETED
 ```
 
-The validation cycle stopped at S11. Therefore SSI V5 exists as an implemented system state, but S11-S40 and the complete Technology Radar-to-transfer path are not published as validated.
+The current S11 validation is intentionally documenting a controlled SSI evolution rather than presenting a single component as the source of the observed acceleration.
 
-## Planned → implemented → validated taxonomy
+## Controlled evolution path
 
 ```text
-PLANNED / DOCUMENTED
-= capability appeared in earlier architecture and roadmap records
-
-IMPLEMENTED / NOT YET VALIDATED
-= code and/or interface are present in SSI V5
-= complete end-to-end evidence is not yet closed
-
-VALIDATED / EVIDENCE-BACKED
-= frozen criteria were executed
-= PASS / FAIL / INCONCLUSIVE and evidence were preserved
+FREE-ONLY / FULL-FLOW BASELINE
+-> PAID COST/QUALITY MODEL CASCADE
+-> TECHNOLOGY RADAR
+-> CONTRACT BINDING
+-> LEGO POCKET / POCKET MICRO
+-> META-LEGO
+-> ROUTER V10 + MICRONETWORK-ASSISTED SELECTION
+-> NATIVE EVALUATOR
+-> INDEPENDENT COLLECTIVE VERIFICATION
+-> S11 LIVE VALIDATION
 ```
 
-This distinction prevents both under-reporting implemented work and overstating unfinished validation.
+The earlier "~2 days" free-only/full-flow duration is an operator estimate, not a measured timing benchmark.
+
+## Paid cost/quality cascade
+
+The current staged model path is:
+
+```text
+validated LEGO / deterministic rules / cache
+-> local Ollama Qwen3 4B when suitable
+-> Groq free path when suitable
+-> Together DeepSeek V4 Flash
+-> Together GPT-OSS 120B challenger/verifier
+-> OpenAI GPT-5.6 Luna arbiter/supervisor
+```
+
+The native evaluator remains authoritative. Provider/model output alone does not create a training PASS.
 
 ## DIRECTOR Technology Radar and LEGO lifecycle
 
-The Technology Radar, LEGO Pocket integration and V5 interface path are implemented in SSI V5 according to the previously documented development plan.
+The Technology Radar, LEGO Pocket integration and V5 interface path are implemented according to the previously documented development plan.
 
-Intended controlled lifecycle:
+Controlled lifecycle:
 
 ```text
 FORUMS / TECHNICAL SOURCES / NEW SOLUTIONS
@@ -56,7 +74,7 @@ FORUMS / TECHNICAL SOURCES / NEW SOLUTIONS
 -> VERSIONED SSI DEVELOPMENT
 ```
 
-Implementation does not equal automatic trust. A discovered or decomposed resource remains a candidate until it passes the applicable gates.
+Radar discovery is candidate-only until the applicable gates are complete.
 
 ## Current LEGO Pocket state
 
@@ -77,37 +95,115 @@ standalone=false = 6,840
 
 These resources are an implemented candidate base, not 15,417 validated production skills.
 
-Previously completed preparation includes LEGO Decomposer processing, SHA-256 deduplication and integration of the difficult extracted package into the shared Pocket. The latest resource smoke completed without an LLM using an explicit pinned recipe; V10 returned low confidence and escalation rather than decision-grade advice. Those boundaries remain preserved.
+## Contract Binding
+
+The input/contract preflight produced:
+
+```text
+S11-S40 contract/input preflight = 900/900 PASS
+training grades created = false
+native evaluator executed by preflight = false
+model calls = 0
+network calls = 0
+```
+
+This proves schema/contract compilation only; it is not a training PASS.
+
+## Pocket Micro and META-LEGO
+
+The canonical LEGO ID remains unchanged. META-LEGO adds routing/evidence metadata separately.
+
+Latest recorded META-LEGO check before the current run:
+
+```text
+META_LEGO_BUILD = PASS
+META_LEGO_CHECK = PASS
+records = 2
+CHAMPION = 1
+UNBOUND = 1
+canonical_ids_changed = false
+raw_lego_modified = false
+native_weights_modified = false
+automatic_champion = false
+```
+
+Unknown execution/feature/micronetwork facts remain UNKNOWN rather than being fabricated.
+
+## S11 smoke immediately before the full run
+
+```text
+run = SMOKE_20260920T170738Z_9d2beacb
+actor = BODY_FROZEN
+native evaluation = PASS
+Collective Intelligence = PASS
+S11 smoke = PASS
+result = SMOKE_PASS
+```
+
+## Current full S11 snapshot
+
+```text
+run = RUN_20260920T170905Z_77204708
+actor = BODY_FROZEN
+stage = S11
+status = IN PROGRESS
+```
+
+Completed at the repository snapshot:
+
+```text
+S11-01-01 PASS
+S11-01-02 PASS
+S11-01-03 PASS
+S11-01-04 PASS
+S11-01-05 PASS
+S11-01-06 PASS
+
+S11-02-01 PASS
+S11-02-02 PASS
+S11-02-03 PASS
+S11-02-04 PASS
+S11-02-05 PASS
+S11-02-06 PASS
+
+S11-03-01 PASS
+```
+
+Observed pattern for all 13 completed cases:
+
+```text
+native evaluation = PASS
+Collective Intelligence = PASS
+CASE_DONE = PASS []
+```
+
+At snapshot time, `S11-03-02` had been requested but had not yet completed. No result is claimed for that case.
 
 ## Continuity from V4 to V5
-
-V5 is not an unrelated redesign. It continues a documented sequence:
 
 ```text
 EARLIER ARCHITECTURE AND ROADMAP
 -> V4 S1-S10 VERIFIED BASELINE
 -> BODY_FROZEN COMPETENCE CONSOLIDATION / PROMOTION
 -> DOCUMENTED TRANSFER PATH TO INDEPENDENT DIRECTOR
--> V5 RADAR + LEGO + INTERFACE IMPLEMENTATION
--> S11 VALIDATION GATE
--> LATER S11-S40 AND END-TO-END VALIDATION
+-> FREE/FULL-FLOW BASELINE
+-> PAID CASCADE
+-> TECHNOLOGY RADAR
+-> CONTRACT BINDING
+-> POCKET MICRO
+-> META-LEGO
+-> S11 LIVE VALIDATION
+-> LATER S12-S40 VALIDATION
 ```
 
 The preserved V4 evidence remains authoritative for its completed run. V5 adds implemented capability without rewriting V4 history.
 
-## Current blockers before an evidence-backed V5 PASS
-
-- confirm and record `SAFE_STOP`;
-- freeze the B5 sorting/decision criterion;
-- freeze LAB schemas, units and command semantics;
-- resolve or classify the S11 Collective Intelligence `INCONCLUSIVE`;
-- execute the remaining validation path with preserved evidence;
-- test the full Radar → candidate → LAB → decision → transfer path end-to-end.
-
 ## Public claim
 
-The defensible public statement is:
+The defensible public statement at this snapshot is:
 
-> DIRECTOR Technology Radar, the extended LEGO Pocket path and the corresponding SSI V5 interface are implemented according to an earlier documented plan. The V5 runtime reached 7/7 BODY-family availability with an independent DIRECTOR. S11 native smoke passed, while Collective Intelligence remained inconclusive. Full end-to-end validation and S11-S40 completion are not claimed.
+> SSI V5 is in live S11 validation after a controlled architecture evolution that includes a paid cost/quality model cascade, Technology Radar, Contract Binding, Pocket Micro and META-LEGO. The immediately preceding S11 smoke passed with both native evaluation and Collective Intelligence PASS. In the current full BODY_FROZEN S11 run, 13 completed cases are PASS with 0 FAIL and 0 INCONCLUSIVE at the captured snapshot. The S11 stage itself is still in progress and is not yet claimed as complete.
 
-No physical validation, safety certification, production readiness, autonomous unrestricted code ingestion, independent external replication, AGI or consciousness is claimed.
+No physical validation, safety certification, production readiness, unrestricted autonomous code ingestion, independent external replication, full S11 completion, S12-S40 completion, AGI or consciousness is claimed.
+
+For the detailed live chronology see [SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md](SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md).
