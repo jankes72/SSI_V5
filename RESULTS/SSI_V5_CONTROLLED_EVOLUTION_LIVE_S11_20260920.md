@@ -2,11 +2,11 @@
 
 **Status:** `S11 STOPPED INCONCLUSIVE AFTER 22 PASS`  
 **Repository role:** public evidence/review mirror; proprietary implementation remains private.  
-**Claim boundary:** this document records the current state of a running validation process. It does **not** claim full S11 PASS until the stage finishes.
+**Claim boundary:** this document records the terminal state of the S11 run. It does **not** convert the preserved INCONCLUSIVE gate into a full S11 PASS.
 
 ## Why this update matters
 
-The current S11 run is being used to document a controlled evolution of SSI V5 performance. The observed acceleration is not attributed to a single component. It follows a staged architecture path:
+The completed-to-gate S11 run documents a controlled evolution of SSI V5 performance. The observed acceleration is not attributed to a single component. It follows a staged architecture path:
 
 ```text
 FREE-ONLY / FULL-FLOW BASELINE
@@ -18,7 +18,7 @@ FREE-ONLY / FULL-FLOW BASELINE
 -> ROUTER V10 + MICRONETWORK-ASSISTED SELECTION
 -> NATIVE EVALUATOR
 -> INDEPENDENT COLLECTIVE VERIFICATION
--> S11 LIVE VALIDATION
+-> S11 VALIDATION STOPPED INCONCLUSIVE AFTER 22 PASS
 ```
 
 The free-only/full-flow path is retained as a baseline. The earlier "~2 days" figure is an **operator estimate**, not a measured benchmark, and is therefore not presented as a verified timing result.
@@ -116,7 +116,7 @@ result = SMOKE_PASS
 
 This is one smoke case only and is not presented as full S11 completion.
 
-## 6. Current full S11 live state
+## 6. Terminal full S11 state
 
 Current run:
 
@@ -229,4 +229,4 @@ This live record does not establish:
 - independent external replication;
 - universal model or architecture superiority.
 
-The repository will be updated again when the current S11 stage reaches a terminal PASS / FAIL / INCONCLUSIVE state.
+This record preserves the terminal S11 outcome: 22 PASS cases followed by one INCONCLUSIVE gate at S11-04-05. Any later retry or superseding run must receive a new run identity and separate evidence.
