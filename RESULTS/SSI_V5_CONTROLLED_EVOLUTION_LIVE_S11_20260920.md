@@ -1,6 +1,6 @@
 # SSI V5 — Controlled Evolution / Live S11 Validation — 2026-09-20
 
-**Status:** `LIVE VALIDATION IN PROGRESS`  
+**Status:** `S11 STOPPED INCONCLUSIVE AFTER 22 PASS`  
 **Repository role:** public evidence/review mirror; proprietary implementation remains private.  
 **Claim boundary:** this document records the current state of a running validation process. It does **not** claim full S11 PASS until the stage finishes.
 
@@ -124,7 +124,7 @@ Current run:
 RUN_20260920T170905Z_77204708
 actor = BODY_FROZEN
 stage = S11
-status = IN PROGRESS
+status = STOPPED_S11_INCONCLUSIVE
 ```
 
 Completed cases at the moment of this repository update:
@@ -145,9 +145,20 @@ S11-02-05 PASS
 S11-02-06 PASS
 
 S11-03-01 PASS
+S11-03-02 PASS
+S11-03-03 PASS
+S11-03-04 PASS
+S11-03-05 PASS
+S11-03-06 PASS
+
+S11-04-01 PASS
+S11-04-02 PASS
+S11-04-03 PASS
+S11-04-04 PASS
+S11-04-05 INCONCLUSIVE (native PASS / CI PARTIAL)
 ```
 
-For all 13 completed cases above, the observed pattern is:
+For the 22 completed PASS cases above, the observed pattern is:
 
 ```text
 native evaluation = PASS
@@ -155,18 +166,44 @@ Collective Intelligence = PASS
 CASE_DONE = PASS []
 ```
 
-The next case, `S11-03-02`, had been requested when this snapshot was recorded. Its result is **not yet claimed**.
+At `S11-04-05`, native evaluation remained PASS, while Collective Intelligence returned INCONCLUSIVE/PARTIAL. The stage stopped at that preserved gate; no later S11 case is claimed.
 
 Therefore the current defensible state is:
 
 ```text
-FULL S11 = IN PROGRESS
-completed live cases = 13 PASS / 0 FAIL / 0 INCONCLUSIVE
-S11 stage PASS = NOT YET CLAIMED
+FULL S11 = STOPPED INCONCLUSIVE
+completed PASS cases before stop = 22
+FAIL = 0
+INCONCLUSIVE = 1 at S11-04-05
+native evaluation at stop = PASS
+S11 stage PASS = NOT CLAIMED
 S12-S40 = NOT YET CLAIMED
 ```
 
-## 7. What this experiment is intended to show
+## 7. ŚWIAT PIŁKI — HIPNOZA and final consolidation sequence
+
+The private implementation also contains the **ŚWIAT PIŁKI — HIPNOZA** layer. It is operator-observed as functioning, but its full end-to-end data path is not yet closed with the same evidence standard used for staged training.
+
+```text
+status = IMPLEMENTED / OPERATOR-OBSERVED
+full data-path validation = PENDING
+domain evidence closure = PENDING
+```
+
+Current intended closure sequence:
+
+```text
+micronetworks / META-LEGO / routing
+-> full flow / data path
+-> BODY_FROZEN staged validation
+-> BODY_FROZEN + ISKRA1..ISKRA6 consolidation
+-> validated consolidated BODY_FROZEN view
+-> corresponding consolidation into the independent DIRECTOR view
+```
+
+BODY_FROZEN and DIRECTOR remain independent cores.
+
+## 8. What this experiment is intended to show
 
 The purpose is not to show that "one patch made S11 pass." The purpose is to preserve evidence of a broader SSI design principle:
 
