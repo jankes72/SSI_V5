@@ -1,7 +1,7 @@
 # SSI V5 — Research Front Door
 
 **Experimental persistent-competence architecture for adaptive multi-agent AI systems**  
-**Current verified public state:** `2026-09-18`  
+**Current public state:** `2026-09-20`  
 **Repository role:** public evidence/review mirror; proprietary implementation remains private.
 
 > New here? Start with **[REVIEWER_INDEX.md](REVIEWER_INDEX.md)**.
@@ -43,6 +43,24 @@ mean total software flow = 5.2559 ms
 ```
 
 These are software execution timings, not physical drone/robot response times.
+
+## SSI V5 implementation state — 2026-09-20
+
+**Status:** `IMPLEMENTED / NOT YET VALIDATED END-TO-END`
+
+```text
+SSI V5 Final = INSTALLED
+BODY_FROZEN + ISKRA1..ISKRA6 = 7/7 runtimes available
+DIRECTOR = independent runtime
+LUNA profiles = available
+S11 native smoke = PASS
+S11 Collective Intelligence = INCONCLUSIVE
+FULL S11-S40 VALIDATION = NOT COMPLETED
+```
+
+DIRECTOR Technology Radar, the extended LEGO Pocket path and the corresponding V5 interface are implemented according to the earlier documented roadmap. V4 already preserves the verified BODY_FROZEN consolidation/promotion baseline and the documented transfer path toward the independent DIRECTOR.
+
+Implemented does not mean validated. Radar findings and Pocket resources remain candidates until license/security/provenance checks, LAB evidence, Champion/Challenger/Hold/Reject decision, regression and target-specific revalidation are complete. See [RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md](RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md).
 
 ## Architecture at a glance
 
