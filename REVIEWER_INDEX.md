@@ -1,6 +1,6 @@
 # SSI V5 — Reviewer Index
 
-**Current verified public state:** `2026-09-18`  
+**Current public state:** `2026-09-20`  
 **Repository role:** public evidence and review mirror for a private SSI implementation.  
 **Audience:** grant reviewers, research collaborators, technical reviewers and validation partners.
 
@@ -8,11 +8,12 @@ This file is the shortest route through the repository. Historical files remain 
 
 ## 5-minute review
 
-1. [README.md](README.md) — concise project front door and current verified state.
-2. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md) — canonical pointer to the latest evidence-backed state.
-3. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md) — reviewer-oriented project summary.
-4. [RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md) — latest measured cross-domain laboratory report.
-5. [RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json](RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json) — machine-readable public summary.
+1. [README.md](README.md) — concise project front door and current state.
+2. [RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md](RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md) — implemented V5 scope and explicit validation boundary.
+3. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md) — canonical pointer to the latest evidence-backed state.
+4. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md) — reviewer-oriented project summary.
+5. [RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md) — latest measured cross-domain laboratory report.
+6. [RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json](RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json) — machine-readable public summary.
 
 ## Technical architecture review
 
@@ -39,7 +40,22 @@ SEPARATE SOFTWARE-LAB RESULTS FROM PHYSICAL VALIDATION
 DO NOT CLAIM UNPUBLISHED OR IN-PROGRESS WORK AS VERIFIED
 ```
 
-## Current verified milestone
+## Current V5 implementation status
+
+```text
+Technology Radar + extended LEGO Pocket + V5 interface
+= IMPLEMENTED / NOT YET VALIDATED END-TO-END
+
+7 BODY-family runtimes = AVAILABLE
+independent DIRECTOR = AVAILABLE
+S11 native smoke = PASS
+S11 Collective Intelligence = INCONCLUSIVE
+full S11-S40 validation = NOT COMPLETED
+```
+
+This work continues the previously documented roadmap and the preserved V4 BODY_FROZEN consolidation/promotion and Director-transfer lineage. Repository wording distinguishes `PLANNED / DOCUMENTED`, `IMPLEMENTED / NOT YET VALIDATED` and `VALIDATED / EVIDENCE-BACKED`.
+
+## Preserved verified milestone
 
 ```text
 V4 S1-S10 = COMPLETE / PASS
