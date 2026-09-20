@@ -7,15 +7,16 @@
 
 ## Use these current documents first
 
-1. [`RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md`](RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md)
-2. [`CURRENT_TRUTH_INDEX_20260918.md`](CURRENT_TRUTH_INDEX_20260918.md)
-3. [`RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md`](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md)
-4. [`RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json`](RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json)
-5. [`SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md`](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
-6. [`RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md`](RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md)
-7. [`RESULTS/V4_PUBLIC_SUMMARY_20260917.json`](RESULTS/V4_PUBLIC_SUMMARY_20260917.json)
-8. [`VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md`](VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md)
-9. [`docs/index.html`](docs/index.html) — source of the published public research portal.
+1. [`RESULTS/SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md`](RESULTS/SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md)
+2. [`RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md`](RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md)
+3. [`CURRENT_TRUTH_INDEX_20260918.md`](CURRENT_TRUTH_INDEX_20260918.md)
+4. [`RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md`](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md)
+5. [`RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json`](RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json)
+6. [`SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md`](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
+7. [`RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md`](RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md)
+8. [`RESULTS/V4_PUBLIC_SUMMARY_20260917.json`](RESULTS/V4_PUBLIC_SUMMARY_20260917.json)
+9. [`VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md`](VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md)
+10. [`docs/index.html`](docs/index.html) — source of the published public research portal.
 
 ## Current implementation milestone — 2026-09-20 — SSI V5
 
@@ -24,15 +25,28 @@ SSI V5 Final = IMPLEMENTED
 7 BODY-family runtimes = AVAILABLE
 DIRECTOR = INDEPENDENT RUNTIME
 LUNA profiles = AVAILABLE
-S11 native smoke = PASS
-S11 Collective Intelligence = INCONCLUSIVE
-S11-S40 = NOT COMPLETED
-Technology Radar + LEGO path + V5 interface = IMPLEMENTED / NOT END-TO-END VALIDATED
+
+S11 smoke after META-LEGO = PASS
+FULL S11 BODY_FROZEN = STOPPED_INCONCLUSIVE
+completed before stop = 22 PASS / 0 FAIL
+terminal gate = 1 INCONCLUSIVE at S11-04-05
+native evaluation at stop = PASS
+Collective Intelligence at stop = INCONCLUSIVE / PARTIAL
+S11 stage PASS = NOT CLAIMED
+S12-S40 = NOT YET CLAIMED
+
+Technology Radar + LEGO/Pocket Micro + META-LEGO + V5 interface
+= IMPLEMENTED / NOT END-TO-END VALIDATED
+
+ŚWIAT PIŁKI — HIPNOZA
+= IMPLEMENTED / OPERATOR-OBSERVED / EVIDENCE CLOSURE PENDING
 ```
 
-The Technology Radar follows an earlier documented plan rather than a newly invented claim. Its implemented path connects technical-source discovery, novelty and need matching, raw LEGO Pocket candidates, controlled LAB/evidence gates and later transfer toward BODY_FROZEN and DIRECTOR. No automatic trust or completed end-to-end PASS is claimed.
+The Technology Radar follows the earlier documented roadmap. Its implemented path connects technical-source discovery, novelty and need matching, quarantined LEGO Pocket candidates, controlled LAB/evidence gates and later transfer toward BODY_FROZEN and the independent DIRECTOR. No automatic trust or completed end-to-end PASS is claimed.
 
 The latest Pocket audit recorded 15,417 resources: 8,695 ATOM, 1,648 BLOCK and 5,074 MODULE, with 15,415 unique IDs and two collisions. These are candidates; source-project and extracted-runtime validation remain incomplete.
+
+The S11 run `RUN_20260920T170905Z_77204708` preserved 22 PASS cases and then stopped at `S11-04-05` because native evaluation remained PASS while Collective Intelligence returned INCONCLUSIVE/PARTIAL. No later S11 case is claimed.
 
 ## Preserved V4 baseline — 2026-09-17
 
