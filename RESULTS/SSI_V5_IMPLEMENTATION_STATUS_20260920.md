@@ -1,6 +1,6 @@
 # SSI V5 — IMPLEMENTATION STATUS — 2026-09-20
 
-**Status:** `IMPLEMENTED / LIVE S11 VALIDATION IN PROGRESS`  
+**Status:** `IMPLEMENTED / S11 STOPPED INCONCLUSIVE AFTER 22 PASS`  
 **Repository role:** public evidence and review mirror; proprietary source code remains private.  
 **Claim boundary:** this document records implementation state and the current live validation snapshot. It does not convert an unfinished stage into PASS.
 
@@ -13,10 +13,12 @@ LUNA profiles = available
 
 S11 smoke after META-LEGO = PASS
 FULL S11 BODY_FROZEN = IN PROGRESS
-current snapshot = 13 PASS / 0 FAIL / 0 INCONCLUSIVE
+current result = 22 PASS / 0 FAIL / 1 INCONCLUSIVE
 current run = RUN_20260920T170905Z_77204708
-next requested case at snapshot = S11-03-02
-S11 stage PASS = NOT YET CLAIMED
+stopped at = S11-04-05
+native evaluation at stop = PASS
+Collective Intelligence at stop = INCONCLUSIVE / PARTIAL
+S11 stage PASS = NOT CLAIMED
 FULL S11-S40 VALIDATION = NOT COMPLETED
 ```
 
@@ -146,7 +148,7 @@ result = SMOKE_PASS
 run = RUN_20260920T170905Z_77204708
 actor = BODY_FROZEN
 stage = S11
-status = IN PROGRESS
+status = STOPPED_S11_INCONCLUSIVE
 ```
 
 Completed at the repository snapshot:
@@ -167,9 +169,20 @@ S11-02-05 PASS
 S11-02-06 PASS
 
 S11-03-01 PASS
+S11-03-02 PASS
+S11-03-03 PASS
+S11-03-04 PASS
+S11-03-05 PASS
+S11-03-06 PASS
+
+S11-04-01 PASS
+S11-04-02 PASS
+S11-04-03 PASS
+S11-04-04 PASS
+S11-04-05 INCONCLUSIVE (native PASS / CI PARTIAL)
 ```
 
-Observed pattern for all 13 completed cases:
+Observed pattern for the 22 completed PASS cases:
 
 ```text
 native evaluation = PASS
@@ -177,7 +190,32 @@ Collective Intelligence = PASS
 CASE_DONE = PASS []
 ```
 
-At snapshot time, `S11-03-02` had been requested but had not yet completed. No result is claimed for that case.
+The run then reached `S11-04-05`: native evaluation remained PASS, but Collective Intelligence returned INCONCLUSIVE/PARTIAL. The stage stopped there by design; no later S11 case is claimed.
+
+## ŚWIAT PIŁKI — HIPNOZA
+
+The private installation also includes the **ŚWIAT PIŁKI — HIPNOZA** layer.
+
+```text
+implementation = PRESENT
+operator observation = WORKING
+complete end-to-end data connection = NOT YET FULLY VALIDATED
+full evidence-backed domain validation = PENDING
+```
+
+The validation order remains:
+
+```text
+MICRONETWORKS / META-LEGO / ROUTING
+-> FULL FLOW / DATA PATH
+-> BODY_FROZEN staged validation
+-> BODY_FROZEN + ISKRA1..ISKRA6 knowledge consolidation
+-> consolidated BODY_FROZEN view
+-> corresponding validated consolidation into independent DIRECTOR view
+-> rollback and target-specific revalidation
+```
+
+DIRECTOR remains independent; consolidation transfers validated knowledge/views and lineage rather than cloning BODY_FROZEN.
 
 ## Continuity from V4 to V5
 
@@ -202,7 +240,7 @@ The preserved V4 evidence remains authoritative for its completed run. V5 adds i
 
 The defensible public statement at this snapshot is:
 
-> SSI V5 is in live S11 validation after a controlled architecture evolution that includes a paid cost/quality model cascade, Technology Radar, Contract Binding, Pocket Micro and META-LEGO. The immediately preceding S11 smoke passed with both native evaluation and Collective Intelligence PASS. In the current full BODY_FROZEN S11 run, 13 completed cases are PASS with 0 FAIL and 0 INCONCLUSIVE at the captured snapshot. The S11 stage itself is still in progress and is not yet claimed as complete.
+> SSI V5 is in live S11 validation after a controlled architecture evolution that includes a paid cost/quality model cascade, Technology Radar, Contract Binding, Pocket Micro and META-LEGO. The immediately preceding S11 smoke passed with both native evaluation and Collective Intelligence PASS. In the current full BODY_FROZEN S11 run, 22 cases completed PASS with 0 FAIL before `S11-04-05`, where native evaluation remained PASS but Collective Intelligence returned INCONCLUSIVE/PARTIAL. The stage stopped there and is not claimed complete.
 
 No physical validation, safety certification, production readiness, unrestricted autonomous code ingestion, independent external replication, full S11 completion, S12-S40 completion, AGI or consciousness is claimed.
 
