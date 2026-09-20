@@ -9,11 +9,12 @@ This file is the shortest route through the repository. Historical files remain 
 ## 5-minute review
 
 1. [README.md](README.md) — concise project front door and current state.
-2. [RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md](RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md) — implemented V5 scope and explicit validation boundary.
-3. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md) — canonical pointer to the latest evidence-backed state.
-4. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md) — reviewer-oriented project summary.
-5. [RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md) — latest measured cross-domain laboratory report.
-6. [RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json](RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json) — machine-readable public summary.
+2. [RESULTS/SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md](RESULTS/SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md) — terminal S11 record: 22 PASS, then one INCONCLUSIVE gate.
+3. [RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md](RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md) — implemented V5 scope and explicit validation boundary.
+4. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md) — canonical pointer to the latest evidence-backed state.
+5. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md) — reviewer-oriented project summary.
+6. [RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md) — latest measured cross-domain laboratory report.
+7. [RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json](RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json) — machine-readable public summary.
 
 ## Technical architecture review
 
@@ -43,17 +44,26 @@ DO NOT CLAIM UNPUBLISHED OR IN-PROGRESS WORK AS VERIFIED
 ## Current V5 implementation status
 
 ```text
-Technology Radar + extended LEGO Pocket + V5 interface
+Technology Radar + extended LEGO Pocket + Pocket Micro + META-LEGO + V5 interface
 = IMPLEMENTED / NOT YET VALIDATED END-TO-END
 
 7 BODY-family runtimes = AVAILABLE
 independent DIRECTOR = AVAILABLE
-S11 native smoke = PASS
-S11 Collective Intelligence = INCONCLUSIVE
-full S11-S40 validation = NOT COMPLETED
+S11 smoke after META-LEGO = PASS
+FULL S11 BODY_FROZEN = STOPPED_INCONCLUSIVE
+result before/at stop = 22 PASS / 0 FAIL / 1 INCONCLUSIVE
+stopped at = S11-04-05
+native evaluation at stop = PASS
+Collective Intelligence at stop = INCONCLUSIVE / PARTIAL
+S11 stage PASS = NOT CLAIMED
+S12-S40 = NOT YET CLAIMED
+
+ŚWIAT PIŁKI — HIPNOZA
+= IMPLEMENTED / OPERATOR-OBSERVED
+= FULL DATA-PATH AND DOMAIN EVIDENCE PENDING
 ```
 
-This work continues the previously documented roadmap and the preserved V4 BODY_FROZEN consolidation/promotion and Director-transfer lineage. Repository wording distinguishes `PLANNED / DOCUMENTED`, `IMPLEMENTED / NOT YET VALIDATED` and `VALIDATED / EVIDENCE-BACKED`.
+This work continues the previously documented roadmap and preserved V4 BODY_FROZEN consolidation/promotion and Director-transfer lineage. BODY_FROZEN and DIRECTOR remain independent cores. Repository wording distinguishes `PLANNED / DOCUMENTED`, `IMPLEMENTED / NOT YET VALIDATED` and `VALIDATED / EVIDENCE-BACKED`.
 
 ## Preserved verified milestone
 
