@@ -46,7 +46,7 @@ These are software execution timings, not physical drone/robot response times.
 
 ## SSI V5 implementation state — 2026-09-20
 
-**Status:** `LIVE S11 VALIDATION IN PROGRESS`
+**Status:** `S11 STOPPED INCONCLUSIVE AFTER 22 PASS`
 
 ```text
 SSI V5 Final = INSTALLED
@@ -56,9 +56,11 @@ LUNA profiles = available
 
 S11 smoke after META-LEGO = PASS
 FULL S11 BODY_FROZEN = IN PROGRESS
-current full-run snapshot = 13 PASS / 0 FAIL / 0 INCONCLUSIVE
-next requested case at snapshot = S11-03-02
-S11 stage PASS = NOT YET CLAIMED
+current full-run result = 22 PASS / 0 FAIL / 1 INCONCLUSIVE
+stopped at = S11-04-05
+native evaluation at stop = PASS
+Collective Intelligence at stop = INCONCLUSIVE / PARTIAL
+S11 stage PASS = NOT CLAIMED
 S12-S40 = NOT YET CLAIMED
 ```
 
@@ -74,7 +76,7 @@ FREE-ONLY / FULL-FLOW BASELINE
 -> ROUTER V10 + MICRONETWORK-ASSISTED SELECTION
 -> NATIVE EVALUATOR
 -> INDEPENDENT COLLECTIVE VERIFICATION
--> S11 LIVE VALIDATION
+-> S11 LIVE VALIDATION / PRESERVED STOP ON INCONCLUSIVE
 ```
 
 The earlier "~2 days" free-only duration remains an operator estimate, not a measured benchmark.
@@ -84,6 +86,21 @@ DIRECTOR Technology Radar, the extended LEGO Pocket path, Pocket Micro and META-
 See:
 - [RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md](RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md)
 - [RESULTS/SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md](RESULTS/SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md)
+
+## ŚWIAT PIŁKI — HIPNOZA
+
+The private SSI V5 installation also contains the **ŚWIAT PIŁKI — HIPNOZA** world/interface layer.
+
+```text
+implementation = PRESENT
+operator-observed runtime/interface behavior = WORKING
+complete end-to-end data connection = NOT YET FULLY VALIDATED
+evidence-backed domain validation = PENDING
+```
+
+It is recorded as implemented, but not yet promoted to `VALIDATED / EVIDENCE-BACKED`. The intended closure sequence remains: micronetworks/routing → full data flow → BODY validation → cross-BODY consolidation into BODY_FROZEN → corresponding validated consolidation into the independent DIRECTOR view.
+
+BODY_FROZEN and DIRECTOR remain separate cores with separate runtime, memory and lifecycle.
 
 ## Architecture at a glance
 
@@ -100,6 +117,7 @@ DIRECTOR
 + COST/QUALITY MODEL CASCADE
 + CONTRACT BINDING
 + WORLD / DOMAIN LAYERS
++ ŚWIAT PIŁKI — HIPNOZA
 + LOCAL ROOT CONTROL
 + PUBLIC OBSERVER INTERFACE
 + EVIDENCE / CHECKPOINT / PROVENANCE
@@ -131,8 +149,9 @@ BODY / ISKRA foundations
 -> Contract Binding
 -> Pocket Micro
 -> META-LEGO
+-> ŚWIAT PIŁKI — HIPNOZA implemented / operator-observed
 -> S11 smoke PASS
--> full S11 BODY_FROZEN live validation in progress
+-> full S11 BODY_FROZEN run: 22 PASS, then CI INCONCLUSIVE at S11-04-05
 ```
 
 Older dated files remain preserved as historical evidence. They are not the recommended starting point unless a reviewer is auditing provenance.
