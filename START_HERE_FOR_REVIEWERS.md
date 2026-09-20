@@ -1,6 +1,6 @@
 # SSI V5 — Start Here for Grant and Technical Reviewers
 
-**Updated:** `2026-09-18`  
+**Updated:** `2026-09-20`  
 **Repository role:** `PUBLIC EVIDENCE / REVIEW MIRROR + PUBLISHED RESEARCH PORTAL`  
 **Proprietary implementation:** private by design.
 
@@ -39,6 +39,27 @@ INDEPENDENT EXTERNAL REPLICATION = not claimed
 ```
 
 All timings above are execution timings of the software laboratory and must not be interpreted as physical drone or robot response times.
+
+## SSI V5 implementation update — 2026-09-20
+
+SSI V5 now contains the implemented DIRECTOR Technology Radar path, extended LEGO Pocket integration and the corresponding V5 interface. These capabilities follow the earlier recorded architecture and development plan.
+
+```text
+IMPLEMENTED
+= Technology Radar / discovery path
++ need and novelty matching path
++ LEGO Pocket candidate intake
++ V5 interface integration
++ independent DIRECTOR runtime
++ 7/7 BODY-family runtime availability
+
+CURRENT TEST GATE
+= S11 native smoke PASS
++ Collective Intelligence INCONCLUSIVE
++ full S11-S40 NOT COMPLETED
+```
+
+The full Radar → candidate → LAB → evidence → decision → regression → transfer lifecycle is not yet claimed as validated end-to-end. Pocket entries remain candidates until their applicable validation gates close. See [the dated V5 implementation report](RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md).
 
 ## Why this project is now collaboration-ready
 
