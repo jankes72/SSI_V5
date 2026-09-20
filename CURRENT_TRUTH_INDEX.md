@@ -1,20 +1,38 @@
 # SSI V5 — CURRENT TRUTH INDEX
 
-**Status:** `CURRENT POINTER / 2026-09-18`  
+**Status:** `CURRENT POINTER / 2026-09-20`  
 **Repository role:** public evidence mirror with a published research portal; proprietary implementation remains private.  
 **Evidence boundary:** software-only unless a document explicitly states otherwise.  
 **History rule:** earlier dated truth/status files remain preserved and are not retroactively rewritten.
 
 ## Use these current documents first
 
-1. [`CURRENT_TRUTH_INDEX_20260918.md`](CURRENT_TRUTH_INDEX_20260918.md)
-2. [`RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md`](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md)
-3. [`RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json`](RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json)
-4. [`SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md`](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
-5. [`RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md`](RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md)
-6. [`RESULTS/V4_PUBLIC_SUMMARY_20260917.json`](RESULTS/V4_PUBLIC_SUMMARY_20260917.json)
-7. [`VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md`](VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md)
-8. [`docs/index.html`](docs/index.html) — source of the published public research portal.
+1. [`RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md`](RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md)
+2. [`CURRENT_TRUTH_INDEX_20260918.md`](CURRENT_TRUTH_INDEX_20260918.md)
+3. [`RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md`](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md)
+4. [`RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json`](RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json)
+5. [`SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md`](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
+6. [`RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md`](RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md)
+7. [`RESULTS/V4_PUBLIC_SUMMARY_20260917.json`](RESULTS/V4_PUBLIC_SUMMARY_20260917.json)
+8. [`VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md`](VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md)
+9. [`docs/index.html`](docs/index.html) — source of the published public research portal.
+
+## Current implementation milestone — 2026-09-20 — SSI V5
+
+```text
+SSI V5 Final = IMPLEMENTED
+7 BODY-family runtimes = AVAILABLE
+DIRECTOR = INDEPENDENT RUNTIME
+LUNA profiles = AVAILABLE
+S11 native smoke = PASS
+S11 Collective Intelligence = INCONCLUSIVE
+S11-S40 = NOT COMPLETED
+Technology Radar + LEGO path + V5 interface = IMPLEMENTED / NOT END-TO-END VALIDATED
+```
+
+The Technology Radar follows an earlier documented plan rather than a newly invented claim. Its implemented path connects technical-source discovery, novelty and need matching, raw LEGO Pocket candidates, controlled LAB/evidence gates and later transfer toward BODY_FROZEN and DIRECTOR. No automatic trust or completed end-to-end PASS is claimed.
+
+The latest Pocket audit recorded 15,417 resources: 8,695 ATOM, 1,648 BLOCK and 5,074 MODULE, with 15,415 unique IDs and two collisions. These are candidates; source-project and extracted-runtime validation remain incomplete.
 
 ## Preserved V4 baseline — 2026-09-17
 
