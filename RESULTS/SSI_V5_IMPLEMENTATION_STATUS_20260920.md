@@ -12,7 +12,7 @@ DIRECTOR = independent runtime
 LUNA profiles = available
 
 S11 smoke after META-LEGO = PASS
-FULL S11 BODY_FROZEN = IN PROGRESS
+FULL S11 BODY_FROZEN = STOPPED_INCONCLUSIVE
 current result = 22 PASS / 0 FAIL / 1 INCONCLUSIVE
 current run = RUN_20260920T170905Z_77204708
 stopped at = S11-04-05
@@ -22,7 +22,7 @@ S11 stage PASS = NOT CLAIMED
 FULL S11-S40 VALIDATION = NOT COMPLETED
 ```
 
-The current S11 validation is intentionally documenting a controlled SSI evolution rather than presenting a single component as the source of the observed acceleration.
+The stopped S11 run documents a controlled SSI evolution without presenting a single component as the source of the observed acceleration.
 
 ## Controlled evolution path
 
@@ -36,7 +36,7 @@ FREE-ONLY / FULL-FLOW BASELINE
 -> ROUTER V10 + MICRONETWORK-ASSISTED SELECTION
 -> NATIVE EVALUATOR
 -> INDEPENDENT COLLECTIVE VERIFICATION
--> S11 LIVE VALIDATION
+-> S11 VALIDATION STOPPED INCONCLUSIVE AFTER 22 PASS
 ```
 
 The earlier "~2 days" free-only/full-flow duration is an operator estimate, not a measured timing benchmark.
@@ -240,7 +240,7 @@ The preserved V4 evidence remains authoritative for its completed run. V5 adds i
 
 The defensible public statement at this snapshot is:
 
-> SSI V5 is in live S11 validation after a controlled architecture evolution that includes a paid cost/quality model cascade, Technology Radar, Contract Binding, Pocket Micro and META-LEGO. The immediately preceding S11 smoke passed with both native evaluation and Collective Intelligence PASS. In the current full BODY_FROZEN S11 run, 22 cases completed PASS with 0 FAIL before `S11-04-05`, where native evaluation remained PASS but Collective Intelligence returned INCONCLUSIVE/PARTIAL. The stage stopped there and is not claimed complete.
+> SSI V5 reached a terminal S11 INCONCLUSIVE gate after a controlled architecture evolution that includes a paid cost/quality model cascade, Technology Radar, Contract Binding, Pocket Micro and META-LEGO. The immediately preceding S11 smoke passed with both native evaluation and Collective Intelligence PASS. In the current full BODY_FROZEN S11 run, 22 cases completed PASS with 0 FAIL before `S11-04-05`, where native evaluation remained PASS but Collective Intelligence returned INCONCLUSIVE/PARTIAL. The stage stopped there and is not claimed complete.
 
 No physical validation, safety certification, production readiness, unrestricted autonomous code ingestion, independent external replication, full S11 completion, S12-S40 completion, AGI or consciousness is claimed.
 
