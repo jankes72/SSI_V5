@@ -1,7 +1,7 @@
 # SSI V5 — Collaboration and Partner Entry
 
-**Updated:** `2026-09-19`  
-**Current verified evidence state:** `2026-09-18`  
+**Updated:** `2026-09-22`  
+**Preserved cross-domain evidence:** `2026-09-18`; current LAB/continuation update: `2026-09-22`  
 **Status:** `OPEN TO CONTROLLED RESEARCH / TECHNOLOGY / CONSORTIUM COLLABORATION`  
 **Public boundary:** proprietary implementation remains private unless separately licensed or explicitly disclosed.
 
@@ -33,6 +33,20 @@ ROLLBACK = 360 measured executions
 ```
 
 These are software-laboratory results. Physical validation and independent external replication are not claimed.
+
+## Permanent controlled-experiment laboratory — 2026-09-22
+
+The private installation now includes registered protocols, bounded comparison
+execution, retained reports and expert review/stop controls. The release passed
+165 offline software tests. The owner can issue private observer or expert
+access; this does not grant ROOT or remote experiment-launch authority. The
+public research portal remains observer-only.
+
+The [component overview](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md) describes the capability and limits. A real
+external expert session, independent replication and physical vehicle integration
+are not established by the offline tests. The [latest runtime excerpt](RESULTS/SSI_V5_LAB_AND_S11_CONTINUATION_20260922.md)
+records three additional BODY_FROZEN training case passes, not full curriculum
+closure. The [Football World](RESULTS/FOOTBALL_WORLD_IMPLEMENTATION_BOUNDARY_20260922.md) retains its own pending data-path checks.
 
 ## Relevant collaboration areas
 

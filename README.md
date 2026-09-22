@@ -1,7 +1,7 @@
 # SSI V5 — Research Front Door
 
 **Experimental persistent-competence architecture for adaptive multi-agent AI systems**  
-**Current public state:** `2026-09-20`  
+**Current public state:** `2026-09-22`  
 **Repository role:** public evidence/review mirror; proprietary implementation remains private.
 
 > New here? Start with **[REVIEWER_INDEX.md](REVIEWER_INDEX.md)**.
@@ -44,48 +44,39 @@ mean total software flow = 5.2559 ms
 
 These are software execution timings, not physical drone/robot response times.
 
-## SSI V5 implementation state — 2026-09-20
+## SSI V5 implementation state — 2026-09-22
 
-**Status:** `S11 STOPPED INCONCLUSIVE AFTER 22 PASS`
-
-```text
-SSI V5 Final = INSTALLED
-BODY_FROZEN + ISKRA1..ISKRA6 = 7/7 runtimes available
-DIRECTOR = independent runtime
-LUNA profiles = available
-
-S11 smoke after META-LEGO = PASS
-FULL S11 BODY_FROZEN = STOPPED_INCONCLUSIVE
-current full-run result = 22 PASS / 0 FAIL / 1 INCONCLUSIVE
-stopped at = S11-04-05
-native evaluation at stop = PASS
-Collective Intelligence at stop = INCONCLUSIVE / PARTIAL
-S11 stage PASS = NOT CLAIMED
-S12-S40 = NOT YET CLAIMED
-```
-
-The current performance evolution is being documented as a controlled architecture path rather than as a single-patch result:
+LEGO Pocket, Pocket Micro, META-LEGO and permanent Director-connected R&D
+laboratories are implemented in the private SSI V5 installation. The newest
+operator excerpt shows successful continuation through S11-05-06 for BODY_FROZEN.
 
 ```text
-FREE-ONLY / FULL-FLOW BASELINE
--> PAID COST/QUALITY MODEL CASCADE
--> TECHNOLOGY RADAR
--> CONTRACT BINDING
--> LEGO POCKET / POCKET MICRO
--> META-LEGO
--> ROUTER V10 + MICRONETWORK-ASSISTED SELECTION
--> NATIVE EVALUATOR
--> INDEPENDENT COLLECTIVE VERIFICATION
--> S11 LIVE VALIDATION / PRESERVED STOP ON INCONCLUSIVE
+SSI V5 Final = IMPLEMENTED / CONTINUATION RUN OBSERVED
+BODY_FROZEN + ISKRA1..ISKRA6 = 7/7 runtime/profile readiness reported
+DIRECTOR = INDEPENDENT CORE
+POCKET readiness = 1 qualified package checked for 7 actors
+
+BODY_FROZEN S11 continuation
+inherited prefix = 27 cases verified by the local continuation checker
+S11-05-04 = native PASS / CI PASS / CASE_DONE PASS
+S11-05-05 = native PASS / CI PASS / CASE_DONE PASS
+S11-05-06 = native PASS / CI PASS / CASE_DONE PASS
+pending at the last shown CASE_DONE = 0
+
+S11 stage summary = NOT INCLUDED IN THE SUPPLIED EXCERPT
+S11 completion for all 7 BODY = NOT ESTABLISHED BY THIS EXCERPT
+S12-S40 completion = NOT CLAIMED
+PRIVATE LAB FIX = 165/165 offline tests across 14 suites
 ```
 
-The earlier "~2 days" free-only duration remains an operator estimate, not a measured benchmark.
+Implementation, offline tests and live operator observations are separate evidence
+levels. The 165 regression tests are not a completed training curriculum. Earlier
+failures remain preserved in dated reports.
 
-DIRECTOR Technology Radar, the extended LEGO Pocket path, Pocket Micro and META-LEGO are implemented according to the documented roadmap. Radar findings and Pocket resources remain candidates until the applicable license/security/provenance, LAB, Champion/Challenger/Hold/Reject, regression and target-specific validation gates are complete.
-
-See:
-- [RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md](RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md)
-- [RESULTS/SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md](RESULTS/SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md)
+- [LEGO Pocket, META-LEGO and Director-connected laboratories](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md)
+- [Current S11 continuation and LAB release report](RESULTS/SSI_V5_LAB_AND_S11_CONTINUATION_20260922.md)
+- [Sanitized operator excerpt](evidence/SSI_V5_S11_CONTINUATION_20260922_OPERATOR_EXCERPT.md)
+- [Offline test summary](RESULTS/SSI_V5_LAB_FIX_OFFLINE_TEST_SUMMARY_20260922.json)
 
 ## ŚWIAT PIŁKI — HIPNOZA
 
@@ -98,7 +89,7 @@ complete end-to-end data connection = NOT YET FULLY VALIDATED
 evidence-backed domain validation = PENDING
 ```
 
-It is recorded as implemented, but not yet promoted to `VALIDATED / EVIDENCE-BACKED`. The intended closure sequence remains: micronetworks/routing → full data flow → BODY validation → cross-BODY consolidation into BODY_FROZEN → corresponding validated consolidation into the independent DIRECTOR view.
+See the [current Football World status](RESULTS/FOOTBALL_WORLD_IMPLEMENTATION_BOUNDARY_20260922.md). It is recorded as implemented, but not yet promoted to `VALIDATED / EVIDENCE-BACKED`. The intended closure sequence remains: micronetworks/routing → full data flow → BODY validation → cross-BODY consolidation into BODY_FROZEN → corresponding validated consolidation into the independent DIRECTOR view.
 
 BODY_FROZEN and DIRECTOR remain separate cores with separate runtime, memory and lifecycle.
 
@@ -126,8 +117,8 @@ DIRECTOR
 ## Read this repository in this order
 
 1. [REVIEWER_INDEX.md](REVIEWER_INDEX.md)
-2. [RESULTS/SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md](RESULTS/SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md)
-3. [RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md](RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md)
+2. [Current S11 continuation and LAB report](RESULTS/SSI_V5_LAB_AND_S11_CONTINUATION_20260922.md)
+3. [LEGO Pocket, META-LEGO, laboratories and Football World](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md)
 4. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
 5. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)
 6. [RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md)
@@ -151,7 +142,10 @@ BODY / ISKRA foundations
 -> META-LEGO
 -> ŚWIAT PIŁKI — HIPNOZA implemented / operator-observed
 -> S11 smoke PASS
--> full S11 BODY_FROZEN run: 22 PASS, then CI INCONCLUSIVE at S11-04-05
+-> preserved earlier S11 stops and repairs
+-> permanent R&D / controlled-experiment LAB and independent-case continuation
+-> 27 checked inherited cases + S11-05-04 / 05 / 06 native and CI PASS
+-> stage-level and remaining BODY results still await their own evidence
 ```
 
 Older dated files remain preserved as historical evidence. They are not the recommended starting point unless a reviewer is auditing provenance.
@@ -186,7 +180,7 @@ The public evidence supports bounded software-laboratory claims about persistent
 
 It does **not** establish:
 
-- full S11 completion; the stage stopped INCONCLUSIVE at S11-04-05 after 22 PASS;
+- full S11 completion; the latest excerpt contains case results but no stage summary;
 - S12-S40 completion;
 - physical drone validation;
 - physical rescue-robot validation;

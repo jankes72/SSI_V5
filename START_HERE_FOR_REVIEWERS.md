@@ -1,10 +1,10 @@
 # SSI V5 — Start Here for Grant and Technical Reviewers
 
-**Updated:** `2026-09-20`  
+**Updated:** `2026-09-22`  
 **Repository role:** `PUBLIC EVIDENCE / REVIEW MIRROR + PUBLISHED RESEARCH PORTAL`  
 **Proprietary implementation:** private by design.
 
-## Current status in one view
+## Preserved software evidence in one view
 
 ```text
 V4 S1-S10 BASELINE = COMPLETE / PASS under one run ID
@@ -40,38 +40,36 @@ INDEPENDENT EXTERNAL REPLICATION = not claimed
 
 All timings above are execution timings of the software laboratory and must not be interpreted as physical drone or robot response times.
 
-## SSI V5 implementation update — 2026-09-20
-
-SSI V5 contains the implemented DIRECTOR Technology Radar path, extended LEGO Pocket, Pocket Micro, META-LEGO, Contract Binding and the corresponding V5 interface. These capabilities follow the earlier recorded architecture and development plan.
+## SSI V5 implementation update — 2026-09-22
 
 ```text
-IMPLEMENTED
-= Technology Radar / discovery path
-+ need and novelty matching
-+ LEGO Pocket candidate intake
-+ Pocket Micro + META-LEGO routing/evidence layer
-+ Contract Binding
-+ V5 interface integration
-+ independent DIRECTOR runtime
-+ 7/7 BODY-family runtime availability
+SSI V5 Final = IMPLEMENTED / CONTINUATION RUN OBSERVED
+BODY_FROZEN + ISKRA1..ISKRA6 = 7/7 runtime/profile readiness reported
+DIRECTOR = INDEPENDENT CORE
+POCKET readiness = 1 qualified package checked for 7 actors
 
-S11 TERMINAL GATE
-= smoke after META-LEGO PASS
-+ 22 full-run cases PASS
-+ 0 FAIL
-+ 1 INCONCLUSIVE at S11-04-05
-+ native evaluation at stop PASS
-+ Collective Intelligence INCONCLUSIVE / PARTIAL
-+ full S11 PASS NOT CLAIMED
-+ S12-S40 NOT YET CLAIMED
+BODY_FROZEN S11 continuation
+inherited prefix = 27 cases verified by the local continuation checker
+S11-05-04 = native PASS / CI PASS / CASE_DONE PASS
+S11-05-05 = native PASS / CI PASS / CASE_DONE PASS
+S11-05-06 = native PASS / CI PASS / CASE_DONE PASS
+pending at the last shown CASE_DONE = 0
 
-ŚWIAT PIŁKI — HIPNOZA
-= IMPLEMENTED / OPERATOR-OBSERVED
-+ complete data-path validation PENDING
-+ evidence-backed domain validation PENDING
+S11 stage summary = NOT INCLUDED IN THE SUPPLIED EXCERPT
+S11 completion for all 7 BODY = NOT ESTABLISHED BY THIS EXCERPT
+S12-S40 completion = NOT CLAIMED
+PRIVATE LAB FIX = 165/165 offline tests across 14 suites
 ```
 
-The full Radar → candidate → LAB → evidence → decision → regression → transfer lifecycle is not yet claimed as validated end-to-end. Pocket entries remain candidates until their applicable validation gates close. BODY_FROZEN and DIRECTOR retain separate runtime, memory and lifecycle. See [the terminal S11 record](RESULTS/SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md) and [the V5 implementation report](RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md).
+The newly published [component overview](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md) explains LEGO Pocket,
+Pocket Micro, META-LEGO and the permanent laboratories available to the independent
+DIRECTOR. The [current report](RESULTS/SSI_V5_LAB_AND_S11_CONTINUATION_20260922.md) distinguishes native/CI case results,
+operator-supplied evidence and offline software tests.
+
+A private experiment panel supports frozen protocols, retained results and expert
+review/stop controls. Public access remains observational. The
+[Football World](RESULTS/FOOTBALL_WORLD_IMPLEMENTATION_BOUNDARY_20260922.md) is implemented and previously operator-observed;
+complete data ingress, identity and outcome validation still require evidence.
 
 ## Why this project is now collaboration-ready
 
@@ -250,4 +248,4 @@ Do not infer:
 8. [`COLLABORATION_AND_PARTNER_ENTRY.md`](COLLABORATION_AND_PARTNER_ENTRY.md)
 9. [`EXTERNAL_CHALLENGE_ENTRY_20260914.md`](EXTERNAL_CHALLENGE_ENTRY_20260914.md)
 
-Older dated files remain preserved as historical evidence. If an older status conflicts with the 2026-09-18 evidence-backed state, use the newer current-state documents above.
+Older dated files remain preserved as historical evidence. Use the current-state documents above for the latest implementation and continuation status; measured domain results retain their original dates and scope.

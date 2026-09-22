@@ -3,10 +3,24 @@
 ## Experimental Persistent Adaptive Intelligence System
 
 **Architecture author:** Paweł Jankiewicz (`jankes72`, `PROGRAMMER_ROOT`)  
-**Updated:** `2026-09-18`  
+**Updated:** `2026-09-22`  
 **Repository role:** public research/evidence mirror with a published observer portal; proprietary implementation remains private.
 
-## Current status
+## Current SSI V5 continuation — 2026-09-22
+
+The latest operator excerpt reports 27 checked inherited BODY_FROZEN cases and
+new native/CI PASS for S11-05-04, S11-05-05 and S11-05-06. A complete S11 stage
+summary, the remaining BODY results and S12–S40 closure were not supplied.
+
+LEGO Pocket, META-LEGO and permanent Director-connected R&D laboratories are
+implemented. The private LAB release passed 165 offline tests. ŚWIAT PIŁKI —
+HIPNOZA retains pending full data-path validation.
+
+- [Latest continuation and LAB report](RESULTS/SSI_V5_LAB_AND_S11_CONTINUATION_20260922.md)
+- [Component overview](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md)
+- [Football World status](RESULTS/FOOTBALL_WORLD_IMPLEMENTATION_BOUNDARY_20260922.md)
+
+## Preserved earlier software results
 
 ```text
 V4 S1-S10 BASELINE = COMPLETE / PASS under one run ID
@@ -85,7 +99,7 @@ TOTAL = 21 post-S10 software-domain scenarios
 
 These remain the preserved 2026-09-17 baseline results.
 
-## Current cross-domain milestone — 2026-09-18
+## Preserved cross-domain milestone — 2026-09-18
 
 SSI Dual Mother Cross Lab V1 exercises two independent domain sides:
 

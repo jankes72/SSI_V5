@@ -1,11 +1,19 @@
 # SSI V5 — CURRENT TRUTH INDEX
 
-**Status:** `CURRENT POINTER / 2026-09-20`  
+**Status:** `CURRENT POINTER / 2026-09-22`  
 **Repository role:** public evidence mirror with a published research portal; proprietary implementation remains private.  
 **Evidence boundary:** software-only unless a document explicitly states otherwise.  
 **History rule:** earlier dated truth/status files remain preserved and are not retroactively rewritten.
 
 ## Use these current documents first
+
+- [2026-09-22 S11 continuation and LAB report](RESULTS/SSI_V5_LAB_AND_S11_CONTINUATION_20260922.md)
+- [LEGO Pocket, META-LEGO and Director-connected laboratories](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md)
+- [Football World implementation boundary](RESULTS/FOOTBALL_WORLD_IMPLEMENTATION_BOUNDARY_20260922.md)
+- [Sanitized operator excerpt](evidence/SSI_V5_S11_CONTINUATION_20260922_OPERATOR_EXCERPT.md)
+- [Offline release tests](RESULTS/SSI_V5_LAB_FIX_OFFLINE_TEST_SUMMARY_20260922.json)
+
+Earlier milestones and historical evidence:
 
 1. [`RESULTS/SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md`](RESULTS/SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md)
 2. [`RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md`](RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md)
@@ -18,35 +26,40 @@
 9. [`VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md`](VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md)
 10. [`docs/index.html`](docs/index.html) — source of the published public research portal.
 
-## Current implementation milestone — 2026-09-20 — SSI V5
+## Current implementation milestone — 2026-09-22
 
 ```text
-SSI V5 Final = IMPLEMENTED
-7 BODY-family runtimes = AVAILABLE
-DIRECTOR = INDEPENDENT RUNTIME
-LUNA profiles = AVAILABLE
+SSI V5 Final = IMPLEMENTED / CONTINUATION RUN OBSERVED
+BODY_FROZEN + ISKRA1..ISKRA6 = 7/7 runtime/profile readiness reported
+DIRECTOR = INDEPENDENT CORE
+POCKET readiness = 1 qualified package checked for 7 actors
 
-S11 smoke after META-LEGO = PASS
-FULL S11 BODY_FROZEN = STOPPED_INCONCLUSIVE
-completed before stop = 22 PASS / 0 FAIL
-terminal gate = 1 INCONCLUSIVE at S11-04-05
-native evaluation at stop = PASS
-Collective Intelligence at stop = INCONCLUSIVE / PARTIAL
-S11 stage PASS = NOT CLAIMED
-S12-S40 = NOT YET CLAIMED
+BODY_FROZEN S11 continuation
+inherited prefix = 27 cases verified by the local continuation checker
+S11-05-04 = native PASS / CI PASS / CASE_DONE PASS
+S11-05-05 = native PASS / CI PASS / CASE_DONE PASS
+S11-05-06 = native PASS / CI PASS / CASE_DONE PASS
+pending at the last shown CASE_DONE = 0
 
-Technology Radar + LEGO/Pocket Micro + META-LEGO + V5 interface
-= IMPLEMENTED / NOT END-TO-END VALIDATED
-
-ŚWIAT PIŁKI — HIPNOZA
-= IMPLEMENTED / OPERATOR-OBSERVED / EVIDENCE CLOSURE PENDING
+S11 stage summary = NOT INCLUDED IN THE SUPPLIED EXCERPT
+S11 completion for all 7 BODY = NOT ESTABLISHED BY THIS EXCERPT
+S12-S40 completion = NOT CLAIMED
+PRIVATE LAB FIX = 165/165 offline tests across 14 suites
 ```
 
-The Technology Radar follows the earlier documented roadmap. Its implemented path connects technical-source discovery, novelty and need matching, quarantined LEGO Pocket candidates, controlled LAB/evidence gates and later transfer toward BODY_FROZEN and the independent DIRECTOR. No automatic trust or completed end-to-end PASS is claimed.
+The latest source is an operator-provided excerpt from
+`RUN_20260922T182234Z_5ffa1394`. The 27-case prefix was revalidated by the local
+continuation checker; the three shown cases then obtained native and CI PASS.
+The record ends before a stage or full-run summary.
 
-The latest Pocket audit recorded 15,417 resources: 8,695 ATOM, 1,648 BLOCK and 5,074 MODULE, with 15,415 unique IDs and two collisions. These are candidates; source-project and extracted-runtime validation remain incomplete.
+LEGO Pocket, Pocket Micro, META-LEGO and permanent R&D/controlled-experiment
+laboratories are implemented. The independent DIRECTOR can consume laboratory
+metadata and has an implemented delegation path. That new end-to-end path and
+ŚWIAT PIŁKI — HIPNOZA data/outcome closure retain separate pending validation.
 
-The S11 run `RUN_20260920T170905Z_77204708` preserved 22 PASS cases and then stopped at `S11-04-05` because native evaluation remained PASS while Collective Intelligence returned INCONCLUSIVE/PARTIAL. No later S11 case is claimed.
+The historical catalog totals and META-LEGO audit remain in the
+[2026-09-20 implementation report](RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md).
+The latest preflight's one qualified package is not a new full-catalog audit.
 
 ## Preserved V4 baseline — 2026-09-17
 

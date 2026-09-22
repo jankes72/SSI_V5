@@ -1,13 +1,24 @@
 # SSI V5 — Public Evidence Index
 
-**Current index sync:** `2026-09-19`  
-**Latest verified evidence state covered here:** `2026-09-18`
+**Current index sync:** `2026-09-22`  
+**Latest update:** operator continuation excerpt and offline LAB release tests, `2026-09-22`; historical domain measurements retain their original dates.
 
 This directory preserves sanitized evidence, lineage, failure/repair history, integrity references and claim boundaries. Historical files are intentionally retained.
 
 > For the shortest reviewer path, start with [../REVIEWER_INDEX.md](../REVIEWER_INDEX.md).
 
-## Current verified milestone
+## Latest continuation and LAB evidence — 2026-09-22
+
+- [Operator-supplied S11 continuation excerpt](SSI_V5_S11_CONTINUATION_20260922_OPERATOR_EXCERPT.md): 27 checked inherited cases and three new BODY_FROZEN native/CI passes; no stage summary supplied.
+- [Current report](../RESULTS/SSI_V5_LAB_AND_S11_CONTINUATION_20260922.md): implementation changes and evidence boundaries.
+- [Offline release summary](../RESULTS/SSI_V5_LAB_FIX_OFFLINE_TEST_SUMMARY_20260922.json): 165 tests across 14 suites, zero paid model calls in that suite.
+- [Component overview](../SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md): LEGO Pocket, META-LEGO and Director-connected laboratories.
+- [Football World boundary](../RESULTS/FOOTBALL_WORLD_IMPLEMENTATION_BOUNDARY_20260922.md): implementation retained; full data-path validation pending.
+
+The operator excerpt and offline summary have different origins. Neither is
+presented as a full public raw training archive or an independent replication.
+
+## Preserved verified milestone
 
 ```text
 V4 S1-S10 = COMPLETE / PASS

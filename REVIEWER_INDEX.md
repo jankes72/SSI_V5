@@ -1,6 +1,6 @@
 # SSI V5 — Reviewer Index
 
-**Current public state:** `2026-09-20`  
+**Current public state:** `2026-09-22`  
 **Repository role:** public evidence and review mirror for a private SSI implementation.  
 **Audience:** grant reviewers, research collaborators, technical reviewers and validation partners.
 
@@ -9,8 +9,8 @@ This file is the shortest route through the repository. Historical files remain 
 ## 5-minute review
 
 1. [README.md](README.md) — concise project front door and current state.
-2. [RESULTS/SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md](RESULTS/SSI_V5_CONTROLLED_EVOLUTION_LIVE_S11_20260920.md) — terminal S11 record: 22 PASS, then one INCONCLUSIVE gate.
-3. [RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md](RESULTS/SSI_V5_IMPLEMENTATION_STATUS_20260920.md) — implemented V5 scope and explicit validation boundary.
+2. [Current S11 continuation and LAB report](RESULTS/SSI_V5_LAB_AND_S11_CONTINUATION_20260922.md) — 27 checked inherited cases and three new BODY_FROZEN case passes; stage summary pending.
+3. [LEGO Pocket, META-LEGO and Director-connected laboratories](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md) — component roles and implementation/validation boundaries.
 4. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md) — canonical pointer to the latest evidence-backed state.
 5. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md) — reviewer-oriented project summary.
 6. [RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md) — latest measured cross-domain laboratory report.
@@ -21,7 +21,7 @@ This file is the shortest route through the repository. Historical files remain 
 1. [SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
 2. [VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md](VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md)
 3. [RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md](RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md)
-4. [FOOTBALL_WORLD_CURRENT_STATUS_20260916.md](FOOTBALL_WORLD_CURRENT_STATUS_20260916.md)
+4. [Current Football World implementation boundary](RESULTS/FOOTBALL_WORLD_IMPLEMENTATION_BOUNDARY_20260922.md)
 
 ## Evidence / falsification review
 
@@ -44,26 +44,29 @@ DO NOT CLAIM UNPUBLISHED OR IN-PROGRESS WORK AS VERIFIED
 ## Current V5 implementation status
 
 ```text
-Technology Radar + extended LEGO Pocket + Pocket Micro + META-LEGO + V5 interface
-= IMPLEMENTED / NOT YET VALIDATED END-TO-END
+SSI V5 Final = IMPLEMENTED / CONTINUATION RUN OBSERVED
+BODY_FROZEN + ISKRA1..ISKRA6 = 7/7 runtime/profile readiness reported
+DIRECTOR = INDEPENDENT CORE
+POCKET readiness = 1 qualified package checked for 7 actors
 
-7 BODY-family runtimes = AVAILABLE
-independent DIRECTOR = AVAILABLE
-S11 smoke after META-LEGO = PASS
-FULL S11 BODY_FROZEN = STOPPED_INCONCLUSIVE
-result before/at stop = 22 PASS / 0 FAIL / 1 INCONCLUSIVE
-stopped at = S11-04-05
-native evaluation at stop = PASS
-Collective Intelligence at stop = INCONCLUSIVE / PARTIAL
-S11 stage PASS = NOT CLAIMED
-S12-S40 = NOT YET CLAIMED
+BODY_FROZEN S11 continuation
+inherited prefix = 27 cases verified by the local continuation checker
+S11-05-04 = native PASS / CI PASS / CASE_DONE PASS
+S11-05-05 = native PASS / CI PASS / CASE_DONE PASS
+S11-05-06 = native PASS / CI PASS / CASE_DONE PASS
+pending at the last shown CASE_DONE = 0
 
-ŚWIAT PIŁKI — HIPNOZA
-= IMPLEMENTED / OPERATOR-OBSERVED
-= FULL DATA-PATH AND DOMAIN EVIDENCE PENDING
+S11 stage summary = NOT INCLUDED IN THE SUPPLIED EXCERPT
+S11 completion for all 7 BODY = NOT ESTABLISHED BY THIS EXCERPT
+S12-S40 completion = NOT CLAIMED
+PRIVATE LAB FIX = 165/165 offline tests across 14 suites
 ```
 
-This work continues the previously documented roadmap and preserved V4 BODY_FROZEN consolidation/promotion and Director-transfer lineage. BODY_FROZEN and DIRECTOR remain independent cores. Repository wording distinguishes `PLANNED / DOCUMENTED`, `IMPLEMENTED / NOT YET VALIDATED` and `VALIDATED / EVIDENCE-BACKED`.
+The [operator excerpt](evidence/SSI_V5_S11_CONTINUATION_20260922_OPERATOR_EXCERPT.md) and [offline test summary](RESULTS/SSI_V5_LAB_FIX_OFFLINE_TEST_SUMMARY_20260922.json) are
+separate evidence sources. The private experiment panel adds authorized expert
+review/stop controls for software experiments; the public observer surface gains
+no execution authority. Full football data-path validation and physical vehicle
+integration remain open. BODY_FROZEN and DIRECTOR remain separate cores.
 
 ## Preserved verified milestone
 

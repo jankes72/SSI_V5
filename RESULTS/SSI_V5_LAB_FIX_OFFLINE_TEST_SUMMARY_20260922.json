@@ -1,0 +1,63 @@
+{
+  "schema": "ssi.public.offline-release-summary.v1",
+  "publication_date": "2026-09-22",
+  "release": "SSI_V5_LAB_FIX_20260922",
+  "result": "PASS",
+  "test_count": 165,
+  "suite_count": 14,
+  "tests_per_suite": [
+    12,
+    10,
+    12,
+    16,
+    14,
+    10,
+    9,
+    20,
+    8,
+    12,
+    14,
+    9,
+    6,
+    13
+  ],
+  "paid_model_calls": 0,
+  "source_type": "PRIVATE_RELEASE_TEST_REPORT_REVIEWED_DURING_PREPARATION; SUMMARY_ONLY",
+  "private_test_report_sha256": "6f21e6178d931cdb26f337da7a1bebd60a20b15f19801e95162baabfc088af5a",
+  "private_release_archive_sha256": "5afc62c355bcb454903fc1e714ce4d7098a9faa652abbc138917e8c9660871e7",
+  "native_acceptance_changed": false,
+  "scope": "OFFLINE_SOFTWARE_REGRESSION_TESTS",
+  "executed": [
+    "bounded data comparison",
+    "native evaluator on recorded cases",
+    "seven-actor stage-runner fixtures",
+    "format regression",
+    "continuation and prerequisite gates",
+    "integrity and rollback",
+    "UAV 2-D point-mass comparison",
+    "HTTP role and revocation checks",
+    "expert review and software stop",
+    "presence expiry",
+    "native-entry fixture with local supervisor"
+  ],
+  "fixture_boundaries": [
+    "model and reviewer responses",
+    "live BODY environment for new experiment entry",
+    "new S11-05-05 candidate adapted from earlier supplied graph"
+  ],
+  "not_established": [
+    "S11-S40 training completion",
+    "new end-to-end Director experiment result",
+    "football data-path validation",
+    "physical drone flight",
+    "Tailscale deployment",
+    "autopilot SIL/HIL",
+    "real independent expert review or external replication"
+  ],
+  "browser_visual_test": "NOT_RUN_BROWSER_EXECUTABLE_UNAVAILABLE",
+  "javascript_syntax": "PASS",
+  "http_behavior": "PASS",
+  "private_source_distributed": false,
+  "public_summary_is_full_raw_test_archive": false,
+  "later_operator_training_usage": "NOT_QUANTIFIED_BY_THIS_OFFLINE_REPORT"
+}
