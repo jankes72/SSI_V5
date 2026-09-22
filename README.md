@@ -1,12 +1,29 @@
-# SSI V5 — Research Front Door
+# SSI V5
 
-**Experimental persistent-competence architecture for adaptive multi-agent AI systems**  
-**Current public state:** `2026-09-22`  
-**Repository role:** public evidence/review mirror; proprietary implementation remains private.
+**Evidence-first research platform for persistent, adaptive multi-agent AI systems.**
 
-> New here? Start with **[REVIEWER_INDEX.md](REVIEWER_INDEX.md)**.
+SSI V5 is an independently developed R&D project focused on persistent competence, continual learning, cross-agent consolidation, adaptive routing, rollback/recovery and cross-domain transfer.
 
-SSI V5 investigates persistent competence, continual learning, cross-agent consolidation, adaptive routing, rollback/recovery and cross-domain transfer in a versioned multi-agent software ecosystem.
+> **Repository status:** public evidence and review mirror. Proprietary implementation, credentials, private runtime state and reconstructive internals remain private.
+
+## Start here
+
+| Purpose | Document |
+|---|---|
+| First technical review | **[REVIEWER_INDEX.md](REVIEWER_INDEX.md)** |
+| Current verified claims | **[CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)** |
+| Reviewer orientation | **[START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)** |
+| Collaboration and external challenges | **[COLLABORATION_AND_PARTNER_ENTRY.md](COLLABORATION_AND_PARTNER_ENTRY.md)** |
+
+## Project at a glance
+
+- **Architecture:** independent DIRECTOR core, BODY_FROZEN and six ISKRA agents with separate runtimes, memory and lifecycle.
+- **Research controls:** versioned evidence, provenance, checkpoints, rollback and bounded claims.
+- **Capability layers:** Router V10/S10, Micronetworks, LEGO Pocket, Pocket Micro, META-LEGO, laboratories and domain/world layers.
+- **Demonstrated scope:** software laboratory results for drone, humanoid and cross-domain rescue scenarios.
+- **Current boundary:** software evidence is published; physical validation, safety certification and independent external replication are not claimed.
+
+**Current public state:** 2026-09-22
 
 ## Current verified state
 
