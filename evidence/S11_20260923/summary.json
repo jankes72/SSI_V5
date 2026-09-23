@@ -1,0 +1,100 @@
+{
+  "schema": "ssi.public.training-summary.v1",
+  "published_on": "2026-09-23",
+  "run_id": "RUN_20260922T221012Z_88df9df1",
+  "started_at": "2026-09-22T22:10:12.182712+00:00",
+  "finished_at": "2026-09-23T02:35:13.531137+00:00",
+  "run_status": "COMPLETED_WITH_FAILURES",
+  "s11_status": "INCONCLUSIVE",
+  "cases": 210,
+  "counts": {
+    "PASS": 197,
+    "INCONCLUSIVE": 12,
+    "FAIL": 1
+  },
+  "pass_fraction": 0.9380952380952381,
+  "per_body": {
+    "BODY_FROZEN": {
+      "PASS": 29,
+      "INCONCLUSIVE": 1,
+      "FAIL": 0
+    },
+    "ISKRA1": {
+      "PASS": 28,
+      "INCONCLUSIVE": 2,
+      "FAIL": 0
+    },
+    "ISKRA2": {
+      "PASS": 28,
+      "INCONCLUSIVE": 2,
+      "FAIL": 0
+    },
+    "ISKRA3": {
+      "PASS": 29,
+      "INCONCLUSIVE": 1,
+      "FAIL": 0
+    },
+    "ISKRA4": {
+      "PASS": 27,
+      "INCONCLUSIVE": 3,
+      "FAIL": 0
+    },
+    "ISKRA5": {
+      "PASS": 28,
+      "INCONCLUSIVE": 2,
+      "FAIL": 0
+    },
+    "ISKRA6": {
+      "PASS": 28,
+      "INCONCLUSIVE": 1,
+      "FAIL": 1
+    }
+  },
+  "s12_s40": {
+    "stages": 29,
+    "status": "DEFERRED_PREREQUISITE",
+    "model_calls": 0
+  },
+  "memory_reset": false,
+  "role_prompt": "ssi.task-role.v1",
+  "flow_policy": "RECORD_CASE_FAILURES_CONTINUE_INDEPENDENT_V1",
+  "ancestry": {
+    "mode": "EXPLICIT_ANCESTOR_CONTINUATION",
+    "fresh_final_s10_pass": false,
+    "ancestor_run_id": "FULL_S1_S40_20260918T184622Z"
+  },
+  "evidence_trust": {
+    "trust_mode": "LOCAL_DEVELOPMENT",
+    "external_pilot_ready": false,
+    "external_timestamp": "NOT_CONFIGURED",
+    "historical_ancestry_signed": false
+  },
+  "collection_evidence_verified": false,
+  "uploaded_file_hashes_match_manifest": true,
+  "collection_manifest_sha256": "315afb54c90a653ce927703d5e0ce5f416f8d5fabdd6464dff868617ed35a613",
+  "source_archive_sha256": "ec6f738a0221adb6f8cbd20cccf977f83471e15a3204e3540329777512332711",
+  "source_run_report_sha256": "03569bcc15ab0e5013e969dfe55feea66cd4a417d934e0a73f8226fe11fd34d8",
+  "source_research_summary_sha256": "27ffd1fc6fcafa0c514feb41cb76b9593c04e39c1c21774f16e324f2ef1f8313",
+  "full_case_reports_reviewed": 13,
+  "full_pass_case_reports_reviewed": 0,
+  "full_pass_case_reports_not_uploaded": 197,
+  "failed_lab_reports_replayed": 30,
+  "historical_grades_changed": false,
+  "measurement_controls_in_source_run": false,
+  "historical_daily_budget_usd": 3,
+  "historical_actual_cost_usd": null,
+  "new_release": {
+    "id": "SSI_V5_LAB_RND_FIX_20260923_R3",
+    "daily_budget_usd": 6,
+    "budget_scope": "SHARED_ACROSS_ALL_SEVEN_BODY",
+    "operator_installation_confirmed": false,
+    "new_paid_training_executed_in_release_validation": false
+  },
+  "causal_claims": {
+    "emotion_effect_established": false,
+    "micronetwork_learning_established": false,
+    "role_prompt_effect_established": false
+  },
+  "physical_validation": false,
+  "independent_external_replication": false
+}

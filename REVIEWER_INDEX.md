@@ -1,6 +1,6 @@
 # SSI V5 — Reviewer Index
 
-**Current public state:** `2026-09-22`  
+**Current public state:** `2026-09-23`  
 **Repository role:** public evidence and review mirror for a private SSI implementation.  
 **Audience:** grant reviewers, research collaborators, technical reviewers and validation partners.
 
@@ -9,7 +9,7 @@ This file is the shortest route through the repository. Historical files remain 
 ## 5-minute review
 
 1. [README.md](README.md) — concise project front door and current state.
-2. [Current S11 continuation and LAB report](RESULTS/SSI_V5_LAB_AND_S11_CONTINUATION_20260922.md) — 27 checked inherited cases and three new BODY_FROZEN case passes; stage summary pending.
+2. [Complete S11 results](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md) — all 210 outcomes, unresolved cases and deferred stages.
 3. [LEGO Pocket, META-LEGO and Director-connected laboratories](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md) — component roles and implementation/validation boundaries.
 4. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md) — canonical pointer to the latest evidence-backed state.
 5. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md) — reviewer-oriented project summary.
@@ -41,32 +41,22 @@ SEPARATE SOFTWARE-LAB RESULTS FROM PHYSICAL VALIDATION
 DO NOT CLAIM UNPUBLISHED OR IN-PROGRESS WORK AS VERIFIED
 ```
 
-## Current V5 implementation status
+## Current S11 and laboratory update — 2026-09-23
 
-```text
-SSI V5 Final = IMPLEMENTED / CONTINUATION RUN OBSERVED
-BODY_FROZEN + ISKRA1..ISKRA6 = 7/7 runtime/profile readiness reported
-DIRECTOR = INDEPENDENT CORE
-POCKET readiness = 1 qualified package checked for 7 actors
+The previous run `RUN_20260922T221012Z_88df9df1` traversed all **210 S11 cases** across seven BODY: **197 PASS, 12 INCONCLUSIVE and 1 FAIL**. S11 remained **INCONCLUSIVE**, and all **29 S12–S40 stages were DEFERRED_PREREQUISITE**, with zero model calls recorded for them. Every case outcome and the original aggregate metrics are now published.
 
-BODY_FROZEN S11 continuation
-inherited prefix = 27 cases verified by the local continuation checker
-S11-05-04 = native PASS / CI PASS / CASE_DONE PASS
-S11-05-05 = native PASS / CI PASS / CASE_DONE PASS
-S11-05-06 = native PASS / CI PASS / CASE_DONE PASS
-pending at the last shown CASE_DONE = 0
+The follow-up private R3 package adds shared training/R&D diagnostics, no-progress detection, measurement controls and a **6 USD daily budget shared by all seven BODY**. Offline validation completed with **105 tests passed and one skipped**. Delivery is recorded; installation on the operator's machine and a new post-R3 run are not yet confirmed.
 
-S11 stage summary = NOT INCLUDED IN THE SUPPLIED EXCERPT
-S11 completion for all 7 BODY = NOT ESTABLISHED BY THIS EXCERPT
-S12-S40 completion = NOT CLAIMED
-PRIVATE LAB FIX = 165/165 offline tests across 14 suites
-```
+The signed evidence verifier detected all five controlled tampering attempts. Separate-UID key custody was not verified end to end here; external timestamping is not configured. The run remains **LOCAL_DEVELOPMENT / external_pilot_ready=false**. The UAV lab supports software experiments; physical adapters and an external Tailscale session are not demonstrated.
 
-The [operator excerpt](evidence/SSI_V5_S11_CONTINUATION_20260922_OPERATOR_EXCERPT.md) and [offline test summary](RESULTS/SSI_V5_LAB_FIX_OFFLINE_TEST_SUMMARY_20260922.json) are
-separate evidence sources. The private experiment panel adds authorized expert
-review/stop controls for software experiments; the public observer surface gains
-no execution authority. Full football data-path validation and physical vehicle
-integration remain open. BODY_FROZEN and DIRECTOR remain separate cores.
+- [Complete previous S11 results: 197 PASS / 12 INCONCLUSIVE / 1 FAIL](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
+- [All 210 case outcomes and source hashes](evidence/S11_20260923/README.md)
+- [DEV safeguards and adversarial tests](RESULTS/SSI_V5_DEV_SAFEGUARDS_20260923.md)
+- [UAV and permanent R&D laboratory status](SYSTEM/SSI_V5_UAV_AND_RND_LABS_20260923.md)
+- [R3 offline test summary](RESULTS/SSI_V5_LAB_RND_R3_TEST_SUMMARY_20260923.json)
+
+The public outcome index and aggregate reports cover all 210 cases, but the review received full raw case records for only the 13 unresolved cases. The 197 PASS records require verification on the target machine before reuse. This update does not establish causal effects of feelings, learning or role prompts. Earlier dated reports remain unchanged.
+
 
 ## Preserved verified milestone
 
@@ -145,3 +135,4 @@ KEEP THE OLDER FILE AS HISTORICAL EVIDENCE
 ```
 
 No historical file needs to be deleted to keep the reviewer path concise.
+

@@ -23,7 +23,7 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 - **Demonstrated scope:** software laboratory results for drone, humanoid and cross-domain rescue scenarios.
 - **Current boundary:** software evidence is published; physical validation, safety certification and independent external replication are not claimed.
 
-**Current public state:** 2026-09-22
+**Current public state:** 2026-09-23
 
 ## Current verified state
 
@@ -61,39 +61,22 @@ mean total software flow = 5.2559 ms
 
 These are software execution timings, not physical drone/robot response times.
 
-## SSI V5 implementation state — 2026-09-22
+## Current S11 and laboratory update — 2026-09-23
 
-LEGO Pocket, Pocket Micro, META-LEGO and permanent Director-connected R&D
-laboratories are implemented in the private SSI V5 installation. The newest
-operator excerpt shows successful continuation through S11-05-06 for BODY_FROZEN.
+The previous run `RUN_20260922T221012Z_88df9df1` traversed all **210 S11 cases** across seven BODY: **197 PASS, 12 INCONCLUSIVE and 1 FAIL**. S11 remained **INCONCLUSIVE**, and all **29 S12–S40 stages were DEFERRED_PREREQUISITE**, with zero model calls recorded for them. Every case outcome and the original aggregate metrics are now published.
 
-```text
-SSI V5 Final = IMPLEMENTED / CONTINUATION RUN OBSERVED
-BODY_FROZEN + ISKRA1..ISKRA6 = 7/7 runtime/profile readiness reported
-DIRECTOR = INDEPENDENT CORE
-POCKET readiness = 1 qualified package checked for 7 actors
+The follow-up private R3 package adds shared training/R&D diagnostics, no-progress detection, measurement controls and a **6 USD daily budget shared by all seven BODY**. Offline validation completed with **105 tests passed and one skipped**. Delivery is recorded; installation on the operator's machine and a new post-R3 run are not yet confirmed.
 
-BODY_FROZEN S11 continuation
-inherited prefix = 27 cases verified by the local continuation checker
-S11-05-04 = native PASS / CI PASS / CASE_DONE PASS
-S11-05-05 = native PASS / CI PASS / CASE_DONE PASS
-S11-05-06 = native PASS / CI PASS / CASE_DONE PASS
-pending at the last shown CASE_DONE = 0
+The signed evidence verifier detected all five controlled tampering attempts. Separate-UID key custody was not verified end to end here; external timestamping is not configured. The run remains **LOCAL_DEVELOPMENT / external_pilot_ready=false**. The UAV lab supports software experiments; physical adapters and an external Tailscale session are not demonstrated.
 
-S11 stage summary = NOT INCLUDED IN THE SUPPLIED EXCERPT
-S11 completion for all 7 BODY = NOT ESTABLISHED BY THIS EXCERPT
-S12-S40 completion = NOT CLAIMED
-PRIVATE LAB FIX = 165/165 offline tests across 14 suites
-```
+- [Complete previous S11 results: 197 PASS / 12 INCONCLUSIVE / 1 FAIL](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
+- [All 210 case outcomes and source hashes](evidence/S11_20260923/README.md)
+- [DEV safeguards and adversarial tests](RESULTS/SSI_V5_DEV_SAFEGUARDS_20260923.md)
+- [UAV and permanent R&D laboratory status](SYSTEM/SSI_V5_UAV_AND_RND_LABS_20260923.md)
+- [R3 offline test summary](RESULTS/SSI_V5_LAB_RND_R3_TEST_SUMMARY_20260923.json)
 
-Implementation, offline tests and live operator observations are separate evidence
-levels. The 165 regression tests are not a completed training curriculum. Earlier
-failures remain preserved in dated reports.
+The public outcome index and aggregate reports cover all 210 cases, but the review received full raw case records for only the 13 unresolved cases. The 197 PASS records require verification on the target machine before reuse. This update does not establish causal effects of feelings, learning or role prompts. Earlier dated reports remain unchanged.
 
-- [LEGO Pocket, META-LEGO and Director-connected laboratories](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md)
-- [Current S11 continuation and LAB release report](RESULTS/SSI_V5_LAB_AND_S11_CONTINUATION_20260922.md)
-- [Sanitized operator excerpt](evidence/SSI_V5_S11_CONTINUATION_20260922_OPERATOR_EXCERPT.md)
-- [Offline test summary](RESULTS/SSI_V5_LAB_FIX_OFFLINE_TEST_SUMMARY_20260922.json)
 
 ## ŚWIAT PIŁKI — HIPNOZA
 
@@ -134,7 +117,7 @@ DIRECTOR
 ## Read this repository in this order
 
 1. [REVIEWER_INDEX.md](REVIEWER_INDEX.md)
-2. [Current S11 continuation and LAB report](RESULTS/SSI_V5_LAB_AND_S11_CONTINUATION_20260922.md)
+2. [Complete previous S11 results and follow-up release](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
 3. [LEGO Pocket, META-LEGO, laboratories and Football World](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md)
 4. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
 5. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)
@@ -161,8 +144,9 @@ BODY / ISKRA foundations
 -> S11 smoke PASS
 -> preserved earlier S11 stops and repairs
 -> permanent R&D / controlled-experiment LAB and independent-case continuation
--> 27 checked inherited cases + S11-05-04 / 05 / 06 native and CI PASS
--> stage-level and remaining BODY results still await their own evidence
+-> new full S11 traversal: 197 PASS / 12 INCONCLUSIVE / 1 FAIL
+-> S12-S40 deferred by prerequisites
+-> R3 diagnostics and measurement safeguards delivered; target installation pending
 ```
 
 Older dated files remain preserved as historical evidence. They are not the recommended starting point unless a reviewer is auditing provenance.
@@ -197,7 +181,7 @@ The public evidence supports bounded software-laboratory claims about persistent
 
 It does **not** establish:
 
-- full S11 completion; the latest excerpt contains case results but no stage summary;
+- successful S11 acceptance; the complete traversal contains 13 unresolved cases;
 - S12-S40 completion;
 - physical drone validation;
 - physical rescue-robot validation;
@@ -225,3 +209,4 @@ EXTERNAL PARTNER DEFINES UNSEEN PROBLEM
 ```
 
 See [COLLABORATION_AND_PARTNER_ENTRY.md](COLLABORATION_AND_PARTNER_ENTRY.md).
+

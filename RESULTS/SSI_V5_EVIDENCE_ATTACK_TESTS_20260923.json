@@ -1,0 +1,47 @@
+{
+  "schema": "ssi.evidence.adversarial-result.v1",
+  "status": "PASS",
+  "passed": true,
+  "baseline": "VALID_CHAIN_ACCEPTED",
+  "trials": [
+    {
+      "attack": "FAIL_TO_PASS_WITH_RECOMPUTED_HASH",
+      "expected_rejection": "SIGNATURE_INVALID",
+      "actual": "SIGNATURE_INVALID",
+      "detected": true
+    },
+    {
+      "attack": "DELETE_EARLIER_ENTRY",
+      "expected_rejection": "CHAIN_SEQUENCE_GAP",
+      "actual": "CHAIN_SEQUENCE_GAP",
+      "detected": true
+    },
+    {
+      "attack": "FABRICATED_PASS_UNREGISTERED_PROTOCOL",
+      "expected_rejection": "UNREGISTERED_PROTOCOL",
+      "actual": "UNREGISTERED_PROTOCOL",
+      "detected": true
+    },
+    {
+      "attack": "TRUNCATE_TAIL_WITH_TRUSTED_HEAD",
+      "expected_rejection": "TRUSTED_HEAD_MISMATCH",
+      "actual": "TRUSTED_HEAD_MISMATCH",
+      "detected": true
+    },
+    {
+      "attack": "MODIFY_SOURCE_REPORT",
+      "expected_rejection": "REPORT_CHANGED",
+      "actual": "REPORT_CHANGED",
+      "detected": true
+    }
+  ],
+  "elapsed_ns": 122980156,
+  "paid_calls": 0,
+  "fixture_only": true,
+  "historical_ssi_breach_proven": false,
+  "operator_key_isolation_tested": false,
+  "external_timestamp_tested": false,
+  "boundary": "Production cryptographic verifier on isolated test data; not a claim of resistance to an administrator controlling the signing key.",
+  "source_report_sha256": "448963b38d9ecfa3247c1fd18ba9c3b4d14099fcb25e4da6362e710c6b318850",
+  "publication_note": "Controlled fixture attacks against the implemented verifier; not attacks performed by the DEV commenter and not an independent audit of the historical run."
+}

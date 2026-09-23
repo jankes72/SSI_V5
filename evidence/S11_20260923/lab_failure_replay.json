@@ -1,0 +1,1006 @@
+{
+  "schema": "ssi.public.failure-replay.v1",
+  "run_id": "RUN_20260922T221012Z_88df9df1",
+  "sample": "30 rejected candidate reports from 10 unresolved S11-05 cases; selected failures, not the whole run.",
+  "new_paid_calls": 0,
+  "grades_changed": false,
+  "summary": {
+    "reports_replayed": 30,
+    "binding_and_replay_checks_all_match": true,
+    "duplicate_candidate_transitions": 4,
+    "lab_issue_counts": {
+      "LAB_OUTPUT_OR_REPEATABILITY_MISMATCH": 6,
+      "LAB_NONSTRING": 15,
+      "LAB_EDGE": 2,
+      "LAB_CONCAT_INPUTS": 4,
+      "LAB_OPERATION_FIELDS": 3
+    },
+    "attempts_with_no_failed_row_or_feedback_example": 24,
+    "source_case_bytes_unchanged": true
+  },
+  "timing_fields_compared": false,
+  "duplicate_transitions": [
+    {
+      "actor": "ISKRA1",
+      "case_id": "S11-05-06",
+      "candidate_sha256": "7fcfd093835ae9b294ad48c8664072553dfb34705e3cd9634bf05fb649a6456b"
+    },
+    {
+      "actor": "ISKRA3",
+      "case_id": "S11-05-05",
+      "candidate_sha256": "f1e2477769f750b16b6d89e50e25ff2c7b39e92102f234ecfba747df1048d104"
+    },
+    {
+      "actor": "ISKRA4",
+      "case_id": "S11-05-01",
+      "candidate_sha256": "6bdb9540e6ea705852fe677bf366fee0b136b3c5c799a32624edcbd75b041bf8"
+    },
+    {
+      "actor": "ISKRA4",
+      "case_id": "S11-05-06",
+      "candidate_sha256": "c9b989dd1d199eb8e900ce79b22980dffa72a41a6c4eb71f9ea4d9113ad1a293"
+    }
+  ],
+  "reports": [
+    {
+      "actor": "BODY_FROZEN",
+      "case_id": "S11-05-06",
+      "candidate_index": 1,
+      "report_id": "LAB_9c5c66d316b040519044a3d59a06fdfb",
+      "candidate_sha256": "6edd46329fe9afccd12bbfa6556655af2ac9a2f0cbb8751ea45b514ad48c1ee2",
+      "issues": [
+        "LAB_OUTPUT_OR_REPEATABILITY_MISMATCH"
+      ],
+      "recorded_tests": 24,
+      "recorded_failed_test_rows": 14,
+      "feedback_examples": 2,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "BODY_FROZEN",
+      "case_id": "S11-05-06",
+      "candidate_index": 2,
+      "report_id": "LAB_defefc749d304d259abbd37c0ee8f1d5",
+      "candidate_sha256": "2c56f98605d97a2fd72d19199fcf98bc094fa6f941cfa2238651319f3bf8f7f4",
+      "issues": [
+        "LAB_NONSTRING"
+      ],
+      "recorded_tests": 2,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "BODY_FROZEN",
+      "case_id": "S11-05-06",
+      "candidate_index": 3,
+      "report_id": "LAB_47438c4c80b147d79ebb2e39b15b37f1",
+      "candidate_sha256": "234640dc88425c3b45eec47fe2585d42c77893380a19b2a27a53d6a356e5d9e2",
+      "issues": [
+        "LAB_NONSTRING"
+      ],
+      "recorded_tests": 2,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA1",
+      "case_id": "S11-05-06",
+      "candidate_index": 1,
+      "report_id": "LAB_4f413cca882e4b68bfbf68f9a4b2ff1f",
+      "candidate_sha256": "7fcfd093835ae9b294ad48c8664072553dfb34705e3cd9634bf05fb649a6456b",
+      "issues": [
+        "LAB_EDGE"
+      ],
+      "recorded_tests": 0,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA1",
+      "case_id": "S11-05-06",
+      "candidate_index": 2,
+      "report_id": "LAB_bd110a7fd53a406abb4e7b7d088c9a5a",
+      "candidate_sha256": "7fcfd093835ae9b294ad48c8664072553dfb34705e3cd9634bf05fb649a6456b",
+      "issues": [
+        "LAB_EDGE"
+      ],
+      "recorded_tests": 0,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA1",
+      "case_id": "S11-05-06",
+      "candidate_index": 3,
+      "report_id": "LAB_66bd3826f9244998ba328184f6dbb6c1",
+      "candidate_sha256": "a1c68ed81cf09f43fbe57cf8bbfc5278d9ebe62b206184eab8d0125da9557b28",
+      "issues": [
+        "LAB_CONCAT_INPUTS"
+      ],
+      "recorded_tests": 0,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA2",
+      "case_id": "S11-05-02",
+      "candidate_index": 1,
+      "report_id": "LAB_71d4a5023cc244e3af936d024cd4232c",
+      "candidate_sha256": "27a78180051542d21b5c24f9c9f1710574fdd43b6db29539f9c4fca8794d29bf",
+      "issues": [
+        "LAB_NONSTRING"
+      ],
+      "recorded_tests": 1,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA2",
+      "case_id": "S11-05-02",
+      "candidate_index": 2,
+      "report_id": "LAB_cd657d845a8245ebbe93c7b9c59ab7a4",
+      "candidate_sha256": "4a38ff388d344c1a1243be0b7cd459e000968f9ebc42e4f6d4e41627b77df597",
+      "issues": [
+        "LAB_NONSTRING"
+      ],
+      "recorded_tests": 1,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA2",
+      "case_id": "S11-05-02",
+      "candidate_index": 3,
+      "report_id": "LAB_5ce4d1c1732444619d4f7a178749c858",
+      "candidate_sha256": "066c122ac05c942d1a87892f925bdc7a32fbc84a3b959f56475c2b041dd3f668",
+      "issues": [
+        "LAB_NONSTRING"
+      ],
+      "recorded_tests": 1,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA2",
+      "case_id": "S11-05-04",
+      "candidate_index": 1,
+      "report_id": "LAB_73be91004312448e929c531017a4f729",
+      "candidate_sha256": "0acfc6d4a11b6e7c3f375789dba0d5b44534a12b560f98ae70ddd0767db82dbc",
+      "issues": [
+        "LAB_CONCAT_INPUTS"
+      ],
+      "recorded_tests": 0,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA2",
+      "case_id": "S11-05-04",
+      "candidate_index": 2,
+      "report_id": "LAB_8b47ff355362498bab2577639df533c9",
+      "candidate_sha256": "3a429bf039c8eac815895e2c00f2d427b7ce0751765fb78a95053529acb33d44",
+      "issues": [
+        "LAB_CONCAT_INPUTS"
+      ],
+      "recorded_tests": 0,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA2",
+      "case_id": "S11-05-04",
+      "candidate_index": 3,
+      "report_id": "LAB_320303ab2c014b6797ae10abc7baf994",
+      "candidate_sha256": "771280fa3ddee036fe9dad0ca9adda61d6685ee1a7ea23b3a91c3d481f1d86f3",
+      "issues": [
+        "LAB_OPERATION_FIELDS:b11:missing=[]:extra=[\"input_blocks\"]"
+      ],
+      "recorded_tests": 0,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA3",
+      "case_id": "S11-05-05",
+      "candidate_index": 1,
+      "report_id": "LAB_40042a75d2134c8aa5b897381ad8b0cb",
+      "candidate_sha256": "f1e2477769f750b16b6d89e50e25ff2c7b39e92102f234ecfba747df1048d104",
+      "issues": [
+        "LAB_NONSTRING"
+      ],
+      "recorded_tests": 1,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA3",
+      "case_id": "S11-05-05",
+      "candidate_index": 2,
+      "report_id": "LAB_34bdde331e004bebb236a9727912404f",
+      "candidate_sha256": "f1e2477769f750b16b6d89e50e25ff2c7b39e92102f234ecfba747df1048d104",
+      "issues": [
+        "LAB_NONSTRING"
+      ],
+      "recorded_tests": 1,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA3",
+      "case_id": "S11-05-05",
+      "candidate_index": 3,
+      "report_id": "LAB_5c426c819d524c6cab87adc6ddec60f0",
+      "candidate_sha256": "45cb8e993b702a2e15e286344711da41629e2bea6c19bb758980868a60390fc4",
+      "issues": [
+        "LAB_NONSTRING"
+      ],
+      "recorded_tests": 1,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA4",
+      "case_id": "S11-05-01",
+      "candidate_index": 1,
+      "report_id": "LAB_ea710c59a6bd4fe8939684228905535f",
+      "candidate_sha256": "6bdb9540e6ea705852fe677bf366fee0b136b3c5c799a32624edcbd75b041bf8",
+      "issues": [
+        "LAB_OPERATION_FIELDS:b_concat:missing=[]:extra=[\"input_blocks\"]"
+      ],
+      "recorded_tests": 0,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA4",
+      "case_id": "S11-05-01",
+      "candidate_index": 2,
+      "report_id": "LAB_077f3c0a4c2c4038b81094ff3764bb25",
+      "candidate_sha256": "6bdb9540e6ea705852fe677bf366fee0b136b3c5c799a32624edcbd75b041bf8",
+      "issues": [
+        "LAB_OPERATION_FIELDS:b_concat:missing=[]:extra=[\"input_blocks\"]"
+      ],
+      "recorded_tests": 0,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA4",
+      "case_id": "S11-05-01",
+      "candidate_index": 3,
+      "report_id": "LAB_07f09c55a756436590b394f3bb5e4038",
+      "candidate_sha256": "fc4f3975f31c76e9ea1880d4db979e788d4d68f31a69612044939fc247ac3b82",
+      "issues": [
+        "LAB_CONCAT_INPUTS"
+      ],
+      "recorded_tests": 0,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA4",
+      "case_id": "S11-05-06",
+      "candidate_index": 1,
+      "report_id": "LAB_30fc2dc96b1b442b968beb93fc0f1766",
+      "candidate_sha256": "c9b989dd1d199eb8e900ce79b22980dffa72a41a6c4eb71f9ea4d9113ad1a293",
+      "issues": [
+        "LAB_NONSTRING"
+      ],
+      "recorded_tests": 1,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA4",
+      "case_id": "S11-05-06",
+      "candidate_index": 2,
+      "report_id": "LAB_db3ef2028c3841d4a65cca7bde12a4d4",
+      "candidate_sha256": "c9b989dd1d199eb8e900ce79b22980dffa72a41a6c4eb71f9ea4d9113ad1a293",
+      "issues": [
+        "LAB_NONSTRING"
+      ],
+      "recorded_tests": 1,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA4",
+      "case_id": "S11-05-06",
+      "candidate_index": 3,
+      "report_id": "LAB_10eda4b705bf4a54b2b868e000b54421",
+      "candidate_sha256": "b2c998c6829ac822aba392b7f92fd373f919682b8e6c7e91308cea749d074552",
+      "issues": [
+        "LAB_NONSTRING"
+      ],
+      "recorded_tests": 1,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA5",
+      "case_id": "S11-05-01",
+      "candidate_index": 1,
+      "report_id": "LAB_4076107a744e45e98830c43aa0348309",
+      "candidate_sha256": "a7f89867afc1cfb55d4f9ccd1480a45122c4b477ded24c5c517a765a3b469aa8",
+      "issues": [
+        "LAB_OUTPUT_OR_REPEATABILITY_MISMATCH"
+      ],
+      "recorded_tests": 24,
+      "recorded_failed_test_rows": 14,
+      "feedback_examples": 2,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA5",
+      "case_id": "S11-05-01",
+      "candidate_index": 2,
+      "report_id": "LAB_12c84a229ed44d2593c10c0fbc2d1458",
+      "candidate_sha256": "f0cdba853d97e70086b9703986a9427c6a90f8a8d067f17d6ff433625f6617d8",
+      "issues": [
+        "LAB_OUTPUT_OR_REPEATABILITY_MISMATCH"
+      ],
+      "recorded_tests": 24,
+      "recorded_failed_test_rows": 14,
+      "feedback_examples": 2,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA5",
+      "case_id": "S11-05-01",
+      "candidate_index": 3,
+      "report_id": "LAB_60e3e8a92d7440bb81e89e3bc0339611",
+      "candidate_sha256": "aabd400f4bb6e381803ce53520f48286f7b04352aff2d299858ac21bf61f3b46",
+      "issues": [
+        "LAB_OUTPUT_OR_REPEATABILITY_MISMATCH"
+      ],
+      "recorded_tests": 24,
+      "recorded_failed_test_rows": 18,
+      "feedback_examples": 2,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA5",
+      "case_id": "S11-05-06",
+      "candidate_index": 1,
+      "report_id": "LAB_c15eb88b2fe94d21a540a82815a3b42d",
+      "candidate_sha256": "7704c16f1bb336e4de9f1c8718accbe38b474cff3f14cd597bb9ec23988ed247",
+      "issues": [
+        "LAB_NONSTRING"
+      ],
+      "recorded_tests": 2,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA5",
+      "case_id": "S11-05-06",
+      "candidate_index": 2,
+      "report_id": "LAB_f8b58ad88ef44ef1b4cdcb87531b431c",
+      "candidate_sha256": "bd7d99b3b7a2bd43ab84f702e316095e4f51a8cf9b7c13648cc2683cd8ab7ef1",
+      "issues": [
+        "LAB_NONSTRING"
+      ],
+      "recorded_tests": 2,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA5",
+      "case_id": "S11-05-06",
+      "candidate_index": 3,
+      "report_id": "LAB_4c94e100eb2348c39f463374d005b1a6",
+      "candidate_sha256": "4015532a849874836d1a93cac1882480d1730a772c3cd6b063f5d6172802358b",
+      "issues": [
+        "LAB_NONSTRING"
+      ],
+      "recorded_tests": 2,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA6",
+      "case_id": "S11-05-05",
+      "candidate_index": 1,
+      "report_id": "LAB_9e4eb918fd3748b19b577f4124067b8a",
+      "candidate_sha256": "bbb7ac4ddf11210ed9cd1e726e7c184c8a6744113b1ed18284174043c5880351",
+      "issues": [
+        "LAB_OUTPUT_OR_REPEATABILITY_MISMATCH"
+      ],
+      "recorded_tests": 24,
+      "recorded_failed_test_rows": 14,
+      "feedback_examples": 2,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA6",
+      "case_id": "S11-05-05",
+      "candidate_index": 2,
+      "report_id": "LAB_086b981fd285409094d8c71048194f85",
+      "candidate_sha256": "a2cd9edfb0affd41914a30aeef2a66c9fffadbc81eec053413c1461c9c1dfaa3",
+      "issues": [
+        "LAB_OUTPUT_OR_REPEATABILITY_MISMATCH"
+      ],
+      "recorded_tests": 24,
+      "recorded_failed_test_rows": 14,
+      "feedback_examples": 2,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    },
+    {
+      "actor": "ISKRA6",
+      "case_id": "S11-05-05",
+      "candidate_index": 3,
+      "report_id": "LAB_6f7f4a07b06745e2957365212cfefc22",
+      "candidate_sha256": "10e041da169ac0b2643811b0d189237bf0415339bc930ec247e0343ce48d0cc8",
+      "issues": [
+        "LAB_NONSTRING"
+      ],
+      "recorded_tests": 2,
+      "recorded_failed_test_rows": 0,
+      "feedback_examples": 0,
+      "binding_checks": {
+        "receipt_self_hash": true,
+        "report_hash": true,
+        "candidate_hash": true,
+        "engine_hash": true,
+        "actor_case": true
+      },
+      "replay_checks": {
+        "status": true,
+        "passed": true,
+        "issues": true,
+        "tests": true,
+        "requirements": true,
+        "program_sha256": true,
+        "suite_sha256": true,
+        "engine_sha256": true,
+        "candidate_sha256": true,
+        "scenario_sha256": true
+      }
+    }
+  ]
+}

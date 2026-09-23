@@ -1,0 +1,67 @@
+{
+  "schema": "ssi.release-validation.v1",
+  "release": "SSI_V5_LAB_RND_FIX_20260923_R3",
+  "entrypoint": "python3 SSI_V5_LAB_RND_FIX.zip --self-test",
+  "exit_code": 0,
+  "tests_total": 106,
+  "passed": 105,
+  "skipped": 1,
+  "skip_details": [
+    "test_custodian_socket_and_key_access_under_two_actual_uids (__main__.EvidenceTests.test_custodian_socket_and_key_access_under_two_actual_uids) ... skipped 'Execution environment forbids Unix sockets; external custodian not end-to-end tested here'"
+  ],
+  "suites": [
+    {
+      "file": "test_dev_training.py",
+      "seconds": 3.3
+    },
+    {
+      "file": "test_retry_training.py",
+      "seconds": 10.0
+    },
+    {
+      "file": "test_dev_installer.py",
+      "seconds": 0.8
+    },
+    {
+      "file": "test_events.py",
+      "seconds": 0.3
+    },
+    {
+      "file": "test_research_flow.py",
+      "seconds": 3.2
+    },
+    {
+      "file": "test_llm_costs.py",
+      "seconds": 0.2
+    },
+    {
+      "file": "test_evidence.py",
+      "seconds": 2.6
+    },
+    {
+      "file": "test_training_variants.py",
+      "seconds": 5.3
+    },
+    {
+      "file": "test_lab_diagnostics.py",
+      "seconds": 2.3
+    }
+  ],
+  "actual_lab_reports_replayed": 30,
+  "captured_final_failures_checked": 13,
+  "selection_fixture_parent_passes": 197,
+  "selection_fixture_retries": 13,
+  "real_197_pass_revalidation": "REQUIRED_ON_TARGET; full passing records not uploaded",
+  "shared_daily_usd": 6.0,
+  "daily_limit_enforcement_tested_all_seven_actors": true,
+  "native_evaluator_modified": false,
+  "rnd_validator_modified": false,
+  "ledger_reset": false,
+  "paid_calls": 0,
+  "external_pilot_ready": false,
+  "s40_guard": "UNTESTED; blocked before paid requests",
+  "self_test_log_sha256": "c3ccc530a602b74e2937a28534d5dea77f0b86624d7ee92a7aa8080be36df75a",
+  "publication_scope": "Private R3 ZIP entrypoint tests in the preparation environment; model responses use explicit fixtures; no target installation or external pilot established.",
+  "private_release_zip_sha256": "ff729f644ff628908f16b472e6ff5d3bfb6e49564a610996357c9e3b42928469",
+  "source_test_report_sha256": "066ad3a64a2f50a064094af29df21607ff840fdab69eeb61673245015e2d939c"
+}

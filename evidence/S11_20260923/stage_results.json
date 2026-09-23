@@ -1,0 +1,590 @@
+{
+  "schema": "ssi.public.stage-results.v1",
+  "run_id": "RUN_20260922T221012Z_88df9df1",
+  "metric_boundary": "Historical reported metrics preserved, not retroactively corrected. Later negative-control tests do not prove these guards were exercised in this run.",
+  "stages": [
+    {
+      "id": "S11",
+      "status": "INCONCLUSIVE",
+      "smoke_only": false,
+      "lab_flow": {
+        "failed_cases": 1,
+        "grade_changed": false,
+        "pending_cases": 12,
+        "policy": "RECORD_CASE_FAILURES_CONTINUE_INDEPENDENT_V1",
+        "recorded_cases": 210,
+        "stop_events": 0
+      },
+      "body_results": {
+        "BODY_FROZEN": {
+          "body": "BODY_FROZEN",
+          "case_count": 30,
+          "case_counts": {
+            "BLOCKED": 0,
+            "FAIL": 0,
+            "INCONCLUSIVE": 1,
+            "PASS": 29
+          },
+          "claim_boundary": "METRICS_COMPUTED_FROM_CURRENT_RUN_LOCAL_LAB_RECEIPTS_AND_RUNTIME_RESPONSES_ONLY",
+          "finished_at": "2026-09-22T22:52:09.946787+00:00",
+          "metrics": {
+            "core_modification_count": 0,
+            "decomposition_valid_rate": 1.0,
+            "evidence_completeness": 1.0,
+            "lab_case_pass_rate": 0.9666666666666667,
+            "local_replace_success": 1.0,
+            "policy_gate_violations": 0,
+            "unjustified_coupling_rate": 0.0,
+            "unsafe_action_rate": 0.0
+          },
+          "package_sha256": "1379666448fdc8d70c553235a6435a216934e988f9d60a48ba2aa3ce96350ecd",
+          "schema": "ssi.training.s11_s40.stage_result.v1",
+          "stage_id": "S11",
+          "status": "INCONCLUSIVE",
+          "acceptance_rules": [
+            {
+              "detail": "decomposition_valid_rate=1.0 >= 0.85",
+              "ok": true,
+              "rule": "decomposition_valid_rate >= 0.85"
+            },
+            {
+              "detail": "local_replace_success=1.0 >= 0.8",
+              "ok": true,
+              "rule": "local_replace_success >= 0.80"
+            },
+            {
+              "detail": "unjustified_coupling_rate=0.0 <= 0.1",
+              "ok": true,
+              "rule": "unjustified_coupling_rate <= 0.10"
+            },
+            {
+              "detail": "evidence_completeness=1.0 >= 0.95",
+              "ok": true,
+              "rule": "evidence_completeness >= 0.95"
+            }
+          ]
+        },
+        "ISKRA1": {
+          "body": "ISKRA1",
+          "case_count": 30,
+          "case_counts": {
+            "BLOCKED": 0,
+            "FAIL": 0,
+            "INCONCLUSIVE": 2,
+            "PASS": 28
+          },
+          "claim_boundary": "METRICS_COMPUTED_FROM_CURRENT_RUN_LOCAL_LAB_RECEIPTS_AND_RUNTIME_RESPONSES_ONLY",
+          "finished_at": "2026-09-22T23:36:37.777749+00:00",
+          "metrics": {
+            "core_modification_count": 0,
+            "decomposition_valid_rate": 1.0,
+            "evidence_completeness": 1.0,
+            "lab_case_pass_rate": 0.9333333333333333,
+            "local_replace_success": 1.0,
+            "policy_gate_violations": 0,
+            "unjustified_coupling_rate": 0.0,
+            "unsafe_action_rate": 0.0
+          },
+          "package_sha256": "1379666448fdc8d70c553235a6435a216934e988f9d60a48ba2aa3ce96350ecd",
+          "schema": "ssi.training.s11_s40.stage_result.v1",
+          "stage_id": "S11",
+          "status": "INCONCLUSIVE",
+          "acceptance_rules": [
+            {
+              "detail": "decomposition_valid_rate=1.0 >= 0.85",
+              "ok": true,
+              "rule": "decomposition_valid_rate >= 0.85"
+            },
+            {
+              "detail": "local_replace_success=1.0 >= 0.8",
+              "ok": true,
+              "rule": "local_replace_success >= 0.80"
+            },
+            {
+              "detail": "unjustified_coupling_rate=0.0 <= 0.1",
+              "ok": true,
+              "rule": "unjustified_coupling_rate <= 0.10"
+            },
+            {
+              "detail": "evidence_completeness=1.0 >= 0.95",
+              "ok": true,
+              "rule": "evidence_completeness >= 0.95"
+            }
+          ]
+        },
+        "ISKRA2": {
+          "body": "ISKRA2",
+          "case_count": 30,
+          "case_counts": {
+            "BLOCKED": 0,
+            "FAIL": 0,
+            "INCONCLUSIVE": 2,
+            "PASS": 28
+          },
+          "claim_boundary": "METRICS_COMPUTED_FROM_CURRENT_RUN_LOCAL_LAB_RECEIPTS_AND_RUNTIME_RESPONSES_ONLY",
+          "finished_at": "2026-09-23T00:20:18.343253+00:00",
+          "metrics": {
+            "core_modification_count": 0,
+            "decomposition_valid_rate": 1.0,
+            "evidence_completeness": 1.0,
+            "lab_case_pass_rate": 0.9333333333333333,
+            "local_replace_success": 1.0,
+            "policy_gate_violations": 0,
+            "unjustified_coupling_rate": 0.0,
+            "unsafe_action_rate": 0.0
+          },
+          "package_sha256": "1379666448fdc8d70c553235a6435a216934e988f9d60a48ba2aa3ce96350ecd",
+          "schema": "ssi.training.s11_s40.stage_result.v1",
+          "stage_id": "S11",
+          "status": "INCONCLUSIVE",
+          "acceptance_rules": [
+            {
+              "detail": "decomposition_valid_rate=1.0 >= 0.85",
+              "ok": true,
+              "rule": "decomposition_valid_rate >= 0.85"
+            },
+            {
+              "detail": "local_replace_success=1.0 >= 0.8",
+              "ok": true,
+              "rule": "local_replace_success >= 0.80"
+            },
+            {
+              "detail": "unjustified_coupling_rate=0.0 <= 0.1",
+              "ok": true,
+              "rule": "unjustified_coupling_rate <= 0.10"
+            },
+            {
+              "detail": "evidence_completeness=1.0 >= 0.95",
+              "ok": true,
+              "rule": "evidence_completeness >= 0.95"
+            }
+          ]
+        },
+        "ISKRA3": {
+          "body": "ISKRA3",
+          "case_count": 30,
+          "case_counts": {
+            "BLOCKED": 0,
+            "FAIL": 0,
+            "INCONCLUSIVE": 1,
+            "PASS": 29
+          },
+          "claim_boundary": "METRICS_COMPUTED_FROM_CURRENT_RUN_LOCAL_LAB_RECEIPTS_AND_RUNTIME_RESPONSES_ONLY",
+          "finished_at": "2026-09-23T00:59:57.082430+00:00",
+          "metrics": {
+            "core_modification_count": 0,
+            "decomposition_valid_rate": 1.0,
+            "evidence_completeness": 1.0,
+            "lab_case_pass_rate": 0.9666666666666667,
+            "local_replace_success": 1.0,
+            "policy_gate_violations": 0,
+            "unjustified_coupling_rate": 0.0,
+            "unsafe_action_rate": 0.0
+          },
+          "package_sha256": "1379666448fdc8d70c553235a6435a216934e988f9d60a48ba2aa3ce96350ecd",
+          "schema": "ssi.training.s11_s40.stage_result.v1",
+          "stage_id": "S11",
+          "status": "INCONCLUSIVE",
+          "acceptance_rules": [
+            {
+              "detail": "decomposition_valid_rate=1.0 >= 0.85",
+              "ok": true,
+              "rule": "decomposition_valid_rate >= 0.85"
+            },
+            {
+              "detail": "local_replace_success=1.0 >= 0.8",
+              "ok": true,
+              "rule": "local_replace_success >= 0.80"
+            },
+            {
+              "detail": "unjustified_coupling_rate=0.0 <= 0.1",
+              "ok": true,
+              "rule": "unjustified_coupling_rate <= 0.10"
+            },
+            {
+              "detail": "evidence_completeness=1.0 >= 0.95",
+              "ok": true,
+              "rule": "evidence_completeness >= 0.95"
+            }
+          ]
+        },
+        "ISKRA4": {
+          "body": "ISKRA4",
+          "case_count": 30,
+          "case_counts": {
+            "BLOCKED": 0,
+            "FAIL": 0,
+            "INCONCLUSIVE": 3,
+            "PASS": 27
+          },
+          "claim_boundary": "METRICS_COMPUTED_FROM_CURRENT_RUN_LOCAL_LAB_RECEIPTS_AND_RUNTIME_RESPONSES_ONLY",
+          "finished_at": "2026-09-23T01:24:44.890982+00:00",
+          "metrics": {
+            "core_modification_count": 0,
+            "decomposition_valid_rate": 1.0,
+            "evidence_completeness": 1.0,
+            "lab_case_pass_rate": 0.9,
+            "local_replace_success": 0.8333333333333334,
+            "policy_gate_violations": 0,
+            "unjustified_coupling_rate": 0.0,
+            "unsafe_action_rate": 0.0
+          },
+          "package_sha256": "1379666448fdc8d70c553235a6435a216934e988f9d60a48ba2aa3ce96350ecd",
+          "schema": "ssi.training.s11_s40.stage_result.v1",
+          "stage_id": "S11",
+          "status": "INCONCLUSIVE",
+          "acceptance_rules": [
+            {
+              "detail": "decomposition_valid_rate=1.0 >= 0.85",
+              "ok": true,
+              "rule": "decomposition_valid_rate >= 0.85"
+            },
+            {
+              "detail": "local_replace_success=0.8333333333333334 >= 0.8",
+              "ok": true,
+              "rule": "local_replace_success >= 0.80"
+            },
+            {
+              "detail": "unjustified_coupling_rate=0.0 <= 0.1",
+              "ok": true,
+              "rule": "unjustified_coupling_rate <= 0.10"
+            },
+            {
+              "detail": "evidence_completeness=1.0 >= 0.95",
+              "ok": true,
+              "rule": "evidence_completeness >= 0.95"
+            }
+          ]
+        },
+        "ISKRA5": {
+          "body": "ISKRA5",
+          "case_count": 30,
+          "case_counts": {
+            "BLOCKED": 0,
+            "FAIL": 0,
+            "INCONCLUSIVE": 2,
+            "PASS": 28
+          },
+          "claim_boundary": "METRICS_COMPUTED_FROM_CURRENT_RUN_LOCAL_LAB_RECEIPTS_AND_RUNTIME_RESPONSES_ONLY",
+          "finished_at": "2026-09-23T02:00:37.613820+00:00",
+          "metrics": {
+            "core_modification_count": 0,
+            "decomposition_valid_rate": 1.0,
+            "evidence_completeness": 1.0,
+            "lab_case_pass_rate": 0.9333333333333333,
+            "local_replace_success": 1.0,
+            "policy_gate_violations": 0,
+            "unjustified_coupling_rate": 0.0,
+            "unsafe_action_rate": 0.0
+          },
+          "package_sha256": "1379666448fdc8d70c553235a6435a216934e988f9d60a48ba2aa3ce96350ecd",
+          "schema": "ssi.training.s11_s40.stage_result.v1",
+          "stage_id": "S11",
+          "status": "INCONCLUSIVE",
+          "acceptance_rules": [
+            {
+              "detail": "decomposition_valid_rate=1.0 >= 0.85",
+              "ok": true,
+              "rule": "decomposition_valid_rate >= 0.85"
+            },
+            {
+              "detail": "local_replace_success=1.0 >= 0.8",
+              "ok": true,
+              "rule": "local_replace_success >= 0.80"
+            },
+            {
+              "detail": "unjustified_coupling_rate=0.0 <= 0.1",
+              "ok": true,
+              "rule": "unjustified_coupling_rate <= 0.10"
+            },
+            {
+              "detail": "evidence_completeness=1.0 >= 0.95",
+              "ok": true,
+              "rule": "evidence_completeness >= 0.95"
+            }
+          ]
+        },
+        "ISKRA6": {
+          "body": "ISKRA6",
+          "case_count": 30,
+          "case_counts": {
+            "BLOCKED": 0,
+            "FAIL": 1,
+            "INCONCLUSIVE": 1,
+            "PASS": 28
+          },
+          "claim_boundary": "METRICS_COMPUTED_FROM_CURRENT_RUN_LOCAL_LAB_RECEIPTS_AND_RUNTIME_RESPONSES_ONLY",
+          "finished_at": "2026-09-23T02:35:08.437132+00:00",
+          "metrics": {
+            "core_modification_count": 0,
+            "decomposition_valid_rate": 1.0,
+            "evidence_completeness": 1.0,
+            "lab_case_pass_rate": 0.9333333333333333,
+            "local_replace_success": 1.0,
+            "policy_gate_violations": 0,
+            "unjustified_coupling_rate": 0.0,
+            "unsafe_action_rate": 0.0
+          },
+          "package_sha256": "1379666448fdc8d70c553235a6435a216934e988f9d60a48ba2aa3ce96350ecd",
+          "schema": "ssi.training.s11_s40.stage_result.v1",
+          "stage_id": "S11",
+          "status": "INCONCLUSIVE",
+          "acceptance_rules": [
+            {
+              "detail": "decomposition_valid_rate=1.0 >= 0.85",
+              "ok": true,
+              "rule": "decomposition_valid_rate >= 0.85"
+            },
+            {
+              "detail": "local_replace_success=1.0 >= 0.8",
+              "ok": true,
+              "rule": "local_replace_success >= 0.80"
+            },
+            {
+              "detail": "unjustified_coupling_rate=0.0 <= 0.1",
+              "ok": true,
+              "rule": "unjustified_coupling_rate <= 0.10"
+            },
+            {
+              "detail": "evidence_completeness=1.0 >= 0.95",
+              "ok": true,
+              "rule": "evidence_completeness >= 0.95"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "S12",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S11"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S13",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S12"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S14",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S13"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S15",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S14"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S16",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S15"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S17",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S16"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S18",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S17"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S19",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S18"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S20",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S19"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S21",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S20"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S22",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S21"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S23",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S22"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S24",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S23"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S25",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S24"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S26",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S25"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S27",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S26"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S28",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S27"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S29",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S28"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S30",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S29"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S31",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S30"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S32",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S31"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S33",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S32"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S34",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S33"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S35",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S34"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S36",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S35"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S37",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S36"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S38",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S37"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S39",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S38"
+      ],
+      "model_calls": 0
+    },
+    {
+      "id": "S40",
+      "status": "DEFERRED_PREREQUISITE",
+      "missing": [
+        "S39"
+      ],
+      "model_calls": 0
+    }
+  ]
+}

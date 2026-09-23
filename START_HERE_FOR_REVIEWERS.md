@@ -1,6 +1,6 @@
 # SSI V5 — Start Here for Grant and Technical Reviewers
 
-**Updated:** `2026-09-22`  
+**Updated:** `2026-09-23`  
 **Repository role:** `PUBLIC EVIDENCE / REVIEW MIRROR + PUBLISHED RESEARCH PORTAL`  
 **Proprietary implementation:** private by design.
 
@@ -40,36 +40,22 @@ INDEPENDENT EXTERNAL REPLICATION = not claimed
 
 All timings above are execution timings of the software laboratory and must not be interpreted as physical drone or robot response times.
 
-## SSI V5 implementation update — 2026-09-22
+## Current S11 and laboratory update — 2026-09-23
 
-```text
-SSI V5 Final = IMPLEMENTED / CONTINUATION RUN OBSERVED
-BODY_FROZEN + ISKRA1..ISKRA6 = 7/7 runtime/profile readiness reported
-DIRECTOR = INDEPENDENT CORE
-POCKET readiness = 1 qualified package checked for 7 actors
+The previous run `RUN_20260922T221012Z_88df9df1` traversed all **210 S11 cases** across seven BODY: **197 PASS, 12 INCONCLUSIVE and 1 FAIL**. S11 remained **INCONCLUSIVE**, and all **29 S12–S40 stages were DEFERRED_PREREQUISITE**, with zero model calls recorded for them. Every case outcome and the original aggregate metrics are now published.
 
-BODY_FROZEN S11 continuation
-inherited prefix = 27 cases verified by the local continuation checker
-S11-05-04 = native PASS / CI PASS / CASE_DONE PASS
-S11-05-05 = native PASS / CI PASS / CASE_DONE PASS
-S11-05-06 = native PASS / CI PASS / CASE_DONE PASS
-pending at the last shown CASE_DONE = 0
+The follow-up private R3 package adds shared training/R&D diagnostics, no-progress detection, measurement controls and a **6 USD daily budget shared by all seven BODY**. Offline validation completed with **105 tests passed and one skipped**. Delivery is recorded; installation on the operator's machine and a new post-R3 run are not yet confirmed.
 
-S11 stage summary = NOT INCLUDED IN THE SUPPLIED EXCERPT
-S11 completion for all 7 BODY = NOT ESTABLISHED BY THIS EXCERPT
-S12-S40 completion = NOT CLAIMED
-PRIVATE LAB FIX = 165/165 offline tests across 14 suites
-```
+The signed evidence verifier detected all five controlled tampering attempts. Separate-UID key custody was not verified end to end here; external timestamping is not configured. The run remains **LOCAL_DEVELOPMENT / external_pilot_ready=false**. The UAV lab supports software experiments; physical adapters and an external Tailscale session are not demonstrated.
 
-The newly published [component overview](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md) explains LEGO Pocket,
-Pocket Micro, META-LEGO and the permanent laboratories available to the independent
-DIRECTOR. The [current report](RESULTS/SSI_V5_LAB_AND_S11_CONTINUATION_20260922.md) distinguishes native/CI case results,
-operator-supplied evidence and offline software tests.
+- [Complete previous S11 results: 197 PASS / 12 INCONCLUSIVE / 1 FAIL](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
+- [All 210 case outcomes and source hashes](evidence/S11_20260923/README.md)
+- [DEV safeguards and adversarial tests](RESULTS/SSI_V5_DEV_SAFEGUARDS_20260923.md)
+- [UAV and permanent R&D laboratory status](SYSTEM/SSI_V5_UAV_AND_RND_LABS_20260923.md)
+- [R3 offline test summary](RESULTS/SSI_V5_LAB_RND_R3_TEST_SUMMARY_20260923.json)
 
-A private experiment panel supports frozen protocols, retained results and expert
-review/stop controls. Public access remains observational. The
-[Football World](RESULTS/FOOTBALL_WORLD_IMPLEMENTATION_BOUNDARY_20260922.md) is implemented and previously operator-observed;
-complete data ingress, identity and outcome validation still require evidence.
+The public outcome index and aggregate reports cover all 210 cases, but the review received full raw case records for only the 13 unresolved cases. The 197 PASS records require verification on the target machine before reuse. This update does not establish causal effects of feelings, learning or role prompts. Earlier dated reports remain unchanged.
+
 
 ## Why this project is now collaboration-ready
 
@@ -249,3 +235,4 @@ Do not infer:
 9. [`EXTERNAL_CHALLENGE_ENTRY_20260914.md`](EXTERNAL_CHALLENGE_ENTRY_20260914.md)
 
 Older dated files remain preserved as historical evidence. Use the current-state documents above for the latest implementation and continuation status; measured domain results retain their original dates and scope.
+

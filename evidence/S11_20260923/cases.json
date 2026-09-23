@@ -1,0 +1,1716 @@
+{
+  "schema": "ssi.public.case-outcomes.v1",
+  "run_id": "RUN_20260922T221012Z_88df9df1",
+  "scope": "All 210 recorded outcomes; PASS source hashes are collector-reported, not independently revalidated here.",
+  "cases": [
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-01-01",
+      "status": "PASS",
+      "original_report_sha256": "93cb1c8138a29820b08ee3ad18689326dabfef2666cf8895edfa854bf6d7f7a2",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-01-02",
+      "status": "PASS",
+      "original_report_sha256": "d7efed7a4a6ebf90a442a47ab8de4baf20a128632bc9fbb61eeee21bb1341d08",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-01-03",
+      "status": "PASS",
+      "original_report_sha256": "b09522f9522758a2713be4ee40abf1297d904efb5ae96029cc97d70f45e70189",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-01-04",
+      "status": "PASS",
+      "original_report_sha256": "38259a066fac3cfaa424f1fd0d6ac76db4155991f17175be3ef3c37f91617334",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-01-05",
+      "status": "PASS",
+      "original_report_sha256": "d311a1ba7174c3021c31a01b45d2cc4f8d66912ec4ed3afc12c46326571fed8c",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-01-06",
+      "status": "PASS",
+      "original_report_sha256": "8e7738e01d096680272471684e5d827fab64362f3be5e464238cdddf35f203a4",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-02-01",
+      "status": "PASS",
+      "original_report_sha256": "90bcd62708138fc656221263648aff1c28d7109b11168e6172783f8ca997e699",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-02-02",
+      "status": "PASS",
+      "original_report_sha256": "712a8cf7059d63cf3ecd1fe8734bcde92b3d3fccf24b2261454dd5d3b8bc9740",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-02-03",
+      "status": "PASS",
+      "original_report_sha256": "3b5a9d269c6cfb20b59b7ca2cd7196d6a3267db16764ea2d5fc4fe6b11793869",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-02-04",
+      "status": "PASS",
+      "original_report_sha256": "51619ec43b68c38b7188848e6a49127ab6208db85018a4f4ad16e70d29eb46e6",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-02-05",
+      "status": "PASS",
+      "original_report_sha256": "c45f03b3a0caee659bd7a80f1d714ca0440100e00f9ce7e3885ff5b3d0c02043",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-02-06",
+      "status": "PASS",
+      "original_report_sha256": "b4f65eed09467d681e54813387903462565aa1a2a29ad7818d654a7dfa231a3e",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-03-01",
+      "status": "PASS",
+      "original_report_sha256": "f5ec8c884441174eb40a3202074bfacbb0deea04db97c66923952269e96aef01",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-03-02",
+      "status": "PASS",
+      "original_report_sha256": "611c34e3bf4c56244e1b344dce81955217e7db6418e7491eb6ccec710d95cf05",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-03-03",
+      "status": "PASS",
+      "original_report_sha256": "54cdd0e731999b7488d3130c733ad64384880ddfc9f31417765dcd4764364fe8",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-03-04",
+      "status": "PASS",
+      "original_report_sha256": "c5873283a51fa86c55cdcd0a1eed1fa228b4b7053d2033c08f59e96cfdb4f7d8",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-03-05",
+      "status": "PASS",
+      "original_report_sha256": "48f81b0409a5efedc96630e1fb4f5d2a75fe192976662efcbb4d011259796732",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-03-06",
+      "status": "PASS",
+      "original_report_sha256": "ec80b7de41f23eb8d3952ce9dae41cae078ae6ebbe829af0f9fea4175f3a3bf1",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-04-01",
+      "status": "PASS",
+      "original_report_sha256": "4512d65d167b68a0af194ed229800f494300a1a7d8709fc771276381eb62f098",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-04-02",
+      "status": "PASS",
+      "original_report_sha256": "6eb59704080f144cc0b44a8c1a6eb3d46755cf507b21eb75cba00661d1ff4046",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-04-03",
+      "status": "PASS",
+      "original_report_sha256": "1d7d74aef77321f9944c678154366e67275abcd1285dbe68ae4d33fcd43d6cb7",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-04-04",
+      "status": "PASS",
+      "original_report_sha256": "00e613e2d716ab71f4336c2b996237e36a5c31715fa0ce292709a899d13180a5",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-04-05",
+      "status": "PASS",
+      "original_report_sha256": "e957894e8d5ad500086c7d02e16e5abf9ba2bfd29d615563d48964205687841e",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-04-06",
+      "status": "PASS",
+      "original_report_sha256": "705cfbfdb80da603519f15faf5e4c296fe22f9e088ef9cb02e76dbb4843f1372",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-05-01",
+      "status": "PASS",
+      "original_report_sha256": "0fc8af41b8e0cefd4d19952722453994094da84757af08743337d01bcca8310f",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-05-02",
+      "status": "PASS",
+      "original_report_sha256": "f80cb754bd9bf6b320ef9f615a7a5d3c3892f747101108225a0bdb13e547a19f",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-05-03",
+      "status": "PASS",
+      "original_report_sha256": "c7e0ad54718eac434f2f7a157d6c8623ff89ed4458cc5883394804de59959ecc",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-05-04",
+      "status": "PASS",
+      "original_report_sha256": "9808e7bc2c5227e43afd3b3767fcbc8c5d20917aa31d60e78915f5f7f3310d8b",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-05-05",
+      "status": "PASS",
+      "original_report_sha256": "2fefcbadb41d0753fedf16a00da240d329463aec0dc4a255aa76d73022e4614f",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-05-06",
+      "status": "INCONCLUSIVE",
+      "original_report_sha256": "b43075afbdb8bc76532a46c216235ca84fbfc3aba3192e07b6b30044222e9bb9",
+      "full_report_available_for_this_review": true,
+      "reason_codes": [
+        "LAB_NONSTRING"
+      ]
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-01-01",
+      "status": "PASS",
+      "original_report_sha256": "73ca5e570d6b88de2abf78c2778880ba337a2d92f47eeb9ab000492df8344cef",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-01-02",
+      "status": "PASS",
+      "original_report_sha256": "68d5af2c0701280915008c0f59ea983631e272b64c8aba040534c332f6d28ca6",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-01-03",
+      "status": "PASS",
+      "original_report_sha256": "f67d8eb8cf1696fbffc5db427b0e96765507de65cd4d903b02fdf59588ea7b56",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-01-04",
+      "status": "PASS",
+      "original_report_sha256": "7aebcc8a680a226e536cec84c7cbea55439b7db13758435cb4e9eb9b190312ee",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-01-05",
+      "status": "PASS",
+      "original_report_sha256": "7ae1087b2a317672144d9eeca5c8c932046eaf7d945bb47b4327fabf0740be9a",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-01-06",
+      "status": "PASS",
+      "original_report_sha256": "7269ecefc6ba2e1634001b79a89535e1422af0d69280a5cd770e61ab87b43bcb",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-02-01",
+      "status": "PASS",
+      "original_report_sha256": "7bd86216ba13b02bba333df43297d49fe6da3229674ed9e4453dc743df9e4469",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-02-02",
+      "status": "PASS",
+      "original_report_sha256": "388b8f7f0c979e990924aaaa3916a09fdf5986496f0277381388752c9a3f829b",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-02-03",
+      "status": "PASS",
+      "original_report_sha256": "1c8bf9f49539bcd1470d614133e7fdcfb7103530cb90cbbd3a1b63e117482ab6",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-02-04",
+      "status": "PASS",
+      "original_report_sha256": "bd49f1819fe0ecc947d7efc367aae156372d944508163420b1ec1f763c99b73c",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-02-05",
+      "status": "PASS",
+      "original_report_sha256": "9a2cabcfe94abb382bcba4147e2a7be03e589ccfc7f5fbcce9593d8243c77b77",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-02-06",
+      "status": "PASS",
+      "original_report_sha256": "95747c3cc34c8cf7ba25ff0c7a135ca1a0b7d3996d0edad01b66c34ad264280d",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-03-01",
+      "status": "PASS",
+      "original_report_sha256": "5c8a91e65faf7700b14beb3b915253d018727abe2930de6850984b0c091a543c",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-03-02",
+      "status": "PASS",
+      "original_report_sha256": "fc16664e9d8eba3bbf82ee92e50c41b63e933f38bb17cbdc40716e0fc9843d4f",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-03-03",
+      "status": "PASS",
+      "original_report_sha256": "f1d98207f85e30d0315c5e5bd85f2edeaa78b429ff5321bf58ee8faacc11b50a",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-03-04",
+      "status": "PASS",
+      "original_report_sha256": "13640d4693fc1c3df9d006b3d53e9bb638778298e1f8cf49a2bad0fe310c3466",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-03-05",
+      "status": "PASS",
+      "original_report_sha256": "c816c5b73abd7fba6f1d387e5c40a32d0c77eb472077210d62360f6a2241f5d8",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-03-06",
+      "status": "PASS",
+      "original_report_sha256": "d5f225656c5f9f0e038544ed65c2938f84b99e67ff9455f2ea69ca22d4b97506",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-04-01",
+      "status": "PASS",
+      "original_report_sha256": "5d422295783e60bff8c23b20e7e7e08cd8a123cf8dfc896c0726d3ffc42e7c90",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-04-02",
+      "status": "PASS",
+      "original_report_sha256": "af3ac280743de197dbc39ba0567dbefe97aeae1b1720cd501e6564fd7c6d673e",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-04-03",
+      "status": "PASS",
+      "original_report_sha256": "877005baddab3ea9842f3379a129ab7df678cdde3f491c5b1669f6f877562653",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-04-04",
+      "status": "PASS",
+      "original_report_sha256": "af861d5517ec733191a2a268a95161b6e39a2ae292a192ad5cb0cb27f29d482f",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-04-05",
+      "status": "PASS",
+      "original_report_sha256": "e694242a7b2b0bc0bd9f76a9832defb846c605b382aa56e9a2db572434d6bda8",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-04-06",
+      "status": "INCONCLUSIVE",
+      "original_report_sha256": "d54004fce0c5d4847d8a9055a86ef8873d341d9e4f568c19f51d72d14708e596",
+      "full_report_available_for_this_review": true,
+      "reason_codes": [
+        "UNRELATED_EDGE_CHANGED"
+      ]
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-05-01",
+      "status": "PASS",
+      "original_report_sha256": "ef543e08a25e337ed643306742b533176d60d8f60b252a393a40bbbcca396186",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-05-02",
+      "status": "PASS",
+      "original_report_sha256": "4c6417ac19508ecb085effdc9df2f7ec9ae45672ead01898b454aefeddf0b019",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-05-03",
+      "status": "PASS",
+      "original_report_sha256": "48f0d0987ecd9419774f8115e34633e1414d5eee5677891aa54e455a282c81fa",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-05-04",
+      "status": "PASS",
+      "original_report_sha256": "a5e9c8fe4471df41a78aca883536f9c20a05f9ec99ced0f686e2d4de2cc6a6e1",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-05-05",
+      "status": "PASS",
+      "original_report_sha256": "edf83ed1fa94d1907d11bb8f4ccb34ef22d73f5e0d9ab24cc48e613a464cda07",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-05-06",
+      "status": "INCONCLUSIVE",
+      "original_report_sha256": "bf0f1f63ad65ee64592790adcbdb9dc34cc818d4def48aa47b76531e13f9da73",
+      "full_report_available_for_this_review": true,
+      "reason_codes": [
+        "LAB_CONCAT_INPUTS"
+      ]
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-01-01",
+      "status": "PASS",
+      "original_report_sha256": "92e500c6c6f883f5705ed89760e71a626ad147cac75e3b82312a65d54aa5d49c",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-01-02",
+      "status": "PASS",
+      "original_report_sha256": "4134610298e84ae328127dce4b0def2869df690298498737e006c9b0444846bd",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-01-03",
+      "status": "PASS",
+      "original_report_sha256": "66df3e36ba984affbeae41bf6ae5336c231b02c08c844492022af8d515ef2976",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-01-04",
+      "status": "PASS",
+      "original_report_sha256": "bf95b210ce7953e97bdd1411e87952d4162ea81b1ecfd9d3f737ae7ed42679fc",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-01-05",
+      "status": "PASS",
+      "original_report_sha256": "7d29cc5574fce2f720577879bf3c8778142eb6adbbf96b47cd961ea8c76606a3",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-01-06",
+      "status": "PASS",
+      "original_report_sha256": "914e11e3602d05b3138c90a92c46f256144504036487ba69ddc36f463cbae60b",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-02-01",
+      "status": "PASS",
+      "original_report_sha256": "cdcb090ac66f1dbef55d13889850cb8dbdba8dc44136688bd2ce6ec14d6a26de",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-02-02",
+      "status": "PASS",
+      "original_report_sha256": "3e68c6359c1f922f7283ae9b2db2863f85fb6b07af4eea1c8931ce39edf3ef89",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-02-03",
+      "status": "PASS",
+      "original_report_sha256": "aff5fae6425a4d643b1563057086954fd4e886a6695da7d95033c679da66127f",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-02-04",
+      "status": "PASS",
+      "original_report_sha256": "8fad10088dbc8c8434ca3c04d5886a81615f11c7d8dee1710f7ce0c23af5d54d",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-02-05",
+      "status": "PASS",
+      "original_report_sha256": "f8468584b8c6a324d01f68f4dbc85a45591211972b485ccfa1c166a597847c55",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-02-06",
+      "status": "PASS",
+      "original_report_sha256": "d9572e510bfe00361061370cf39280cd92ae1f014b75f85756bad85e2b30b30f",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-03-01",
+      "status": "PASS",
+      "original_report_sha256": "4b3d03180cedbdc753648ecaefcdba276fd39aa58b33c3eee8840e497fe843d5",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-03-02",
+      "status": "PASS",
+      "original_report_sha256": "fcb74926eea31d15ab657cf6b2d0e2fed53f4aaa2348354e2f132bc1c360a621",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-03-03",
+      "status": "PASS",
+      "original_report_sha256": "9d95b91f15b0105aa8322f4e658b50c6be73ca85117a0e0813997efb7cde4517",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-03-04",
+      "status": "PASS",
+      "original_report_sha256": "cd7328e0e16ea9704fd06ded74fa621f73e45e21fbd1ffb080690f1bf8d1874a",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-03-05",
+      "status": "PASS",
+      "original_report_sha256": "dba6495d77ec183ec8ea78d3b1ea359b9331b05b9bae776bc6571404c37af3e7",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-03-06",
+      "status": "PASS",
+      "original_report_sha256": "b33bc767e32c64c7b5109fcef0388ba0030c7bde53740d211e7c749119cf06fe",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-04-01",
+      "status": "PASS",
+      "original_report_sha256": "9ae90457276545bb68ca7b2d85d5b51bf13a364b2af0552a277d4ff863e00e2e",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-04-02",
+      "status": "PASS",
+      "original_report_sha256": "99f88e84c5e0c6dba4dcb9dad4415634fdfd43b2b8c02b35b29ef027884de859",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-04-03",
+      "status": "PASS",
+      "original_report_sha256": "d7c4efff4005311a7dd95462ba0afda625767e510cefeb159bcc10385f1709ca",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-04-04",
+      "status": "PASS",
+      "original_report_sha256": "040b5698d6e39836bc55f6f5ae8987f560f29085c16dafc4783d0963086247e9",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-04-05",
+      "status": "PASS",
+      "original_report_sha256": "e8b7780c76118876dacb25476f49cd7a8cc3259adda3447ab4e8fe5455547124",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-04-06",
+      "status": "PASS",
+      "original_report_sha256": "72600f219aa333d5dc8e02e3ab5173e1a998ee259f1138497c4b2c1b42e05339",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-05-01",
+      "status": "PASS",
+      "original_report_sha256": "e0117166596d242667c74d97bf41ecf816818a27c0f31ae05601f3b79d741d49",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-05-02",
+      "status": "INCONCLUSIVE",
+      "original_report_sha256": "4be2572dc9be49f89c1cdb9b2e888a0b781ce6036b47fb6141829accf04ffc85",
+      "full_report_available_for_this_review": true,
+      "reason_codes": [
+        "LAB_NONSTRING"
+      ]
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-05-03",
+      "status": "PASS",
+      "original_report_sha256": "e32cfc771af78ed2490314806b9601263b3bdf94effbd42b72ea81ae50467d44",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-05-04",
+      "status": "INCONCLUSIVE",
+      "original_report_sha256": "b10efd110f484ff84c8523cec75b00f88812542acdef475119bbaae775697b95",
+      "full_report_available_for_this_review": true,
+      "reason_codes": [
+        "LAB_OPERATION_FIELDS:b11:missing=[]:extra=[\"input_blocks\"]"
+      ]
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-05-05",
+      "status": "PASS",
+      "original_report_sha256": "b692836c37158c97b5e6c1c8255bf240c54c69bfad6eba29f68584d5fd56056a",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-05-06",
+      "status": "PASS",
+      "original_report_sha256": "cf9c8d189f2a5cce43981e55ddaa9dc7be2fa9182117294d943fe9d6989bea9c",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-01-01",
+      "status": "PASS",
+      "original_report_sha256": "2128e80c8eeec812f3effc8f307eead00759562f88e0c0ca7ef8e7f8330ec285",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-01-02",
+      "status": "PASS",
+      "original_report_sha256": "8bf082114321f12b397fcff14180541cb23fbd13ce8e291fe6afc46e4b60f7f3",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-01-03",
+      "status": "PASS",
+      "original_report_sha256": "bd7aaaea5289f0bc37154dbc38d4a4e448fc5f1fb37ccf67e740088f2892c185",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-01-04",
+      "status": "PASS",
+      "original_report_sha256": "1467537719ec146ad26e40fe64922f3c6217970f0dbba19925251efa8d2962bf",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-01-05",
+      "status": "PASS",
+      "original_report_sha256": "5d3037b38b32dbdf9c7eab61f437e8352a6d9d1496b5030b4f0c9cc59c77667d",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-01-06",
+      "status": "PASS",
+      "original_report_sha256": "381ff13c7f5a030ef7f2d084be6f0971b169ceaaee31020ccbe3c2c3a1589b75",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-02-01",
+      "status": "PASS",
+      "original_report_sha256": "bafdcc679c6fc4ad4f2ab90d156bfb74f622f4ddade137cec2a76775ab2029f8",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-02-02",
+      "status": "PASS",
+      "original_report_sha256": "0a41ad7519e3c0ebc53e8af18575d86cd7935eab91da5b795459b0fd5cf564bf",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-02-03",
+      "status": "PASS",
+      "original_report_sha256": "ea52e5815043e114e2168758464b437830a009510c0eefaf1c111add2b2186fb",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-02-04",
+      "status": "PASS",
+      "original_report_sha256": "3fabba85620a05357817c947c3c05aa843aec37a02aabd313b24a0189db54d23",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-02-05",
+      "status": "PASS",
+      "original_report_sha256": "2b1f76ce3b36fbe22db564803aa27e17101f73a03c31819864564e7cb6d00db4",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-02-06",
+      "status": "PASS",
+      "original_report_sha256": "b0e41baeca338e0bf2472ab4269f31dd1a4f8845659a297b59dcf7959f3db417",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-03-01",
+      "status": "PASS",
+      "original_report_sha256": "a015475a190b82ab332c2ba218ffca8f6777f38289cb75962aa2ed298b9e1efa",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-03-02",
+      "status": "PASS",
+      "original_report_sha256": "b0d629a82ccdb79de367697a37330ba4730d55a0e9f2959e887378755891c803",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-03-03",
+      "status": "PASS",
+      "original_report_sha256": "b5418af87c2072367fcc8a779f7639e41dd9d3cc1964ecb9f29deb4e06760dba",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-03-04",
+      "status": "PASS",
+      "original_report_sha256": "9d8ac75e96d09c29acf9305547887fd4e1909617604df08882ee762ea28f2c9e",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-03-05",
+      "status": "PASS",
+      "original_report_sha256": "4118baa7be52d2200d67b4804e4fcb07269eca5a42ffdecfa7f4e3c154b1e3a4",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-03-06",
+      "status": "PASS",
+      "original_report_sha256": "4aaca751faea16ba7dcf7962693a682f6bb4ab4e9bb159d0d4e66e203f870949",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-04-01",
+      "status": "PASS",
+      "original_report_sha256": "e3995e216920f7f6ae8d4c560fbfe53203bf533d5585595bb6621ad1f2625677",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-04-02",
+      "status": "PASS",
+      "original_report_sha256": "836e0eb406f530b5e311a16a184597ede73b09e92b2abe6d290843364fe40e8d",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-04-03",
+      "status": "PASS",
+      "original_report_sha256": "1b341e8a47497457abe43bc156332bac10443d19cab911dca858cce40b85b819",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-04-04",
+      "status": "PASS",
+      "original_report_sha256": "677a8be235a599afddba27845a37490f38d1b97f5c6020fc17822ef5c5052175",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-04-05",
+      "status": "PASS",
+      "original_report_sha256": "64dbb98c60f0e6ee916a1f497afe1fab049e3b72116a660b460987c15707d98d",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-04-06",
+      "status": "PASS",
+      "original_report_sha256": "7884b295175875c801db860375a5e154e54260b11423a8a1ce0b3f026a27b790",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-05-01",
+      "status": "PASS",
+      "original_report_sha256": "567d082ba0583f2576fa9304cf635b600caceec31dd37f5881d25bb8e4785c0d",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-05-02",
+      "status": "PASS",
+      "original_report_sha256": "2cb1912d2a8912f6bca2c0cdac2cc835401b372faa782945bd8b6fc68c47f241",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-05-03",
+      "status": "PASS",
+      "original_report_sha256": "c48af890e33c9948de189611a5a8c74be7fe51b052201318425caf9f3e49bd22",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-05-04",
+      "status": "PASS",
+      "original_report_sha256": "b40322bbdda237ef3289a145de8a57c50109649f75315f771dc37d5bfaedcf8b",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-05-05",
+      "status": "INCONCLUSIVE",
+      "original_report_sha256": "8141f5e6d53022d6213d00f63841eb6deaba6c9d877169f4f6866458b61576ac",
+      "full_report_available_for_this_review": true,
+      "reason_codes": [
+        "LAB_NONSTRING"
+      ]
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-05-06",
+      "status": "PASS",
+      "original_report_sha256": "702f4518ca309f33428c31524183c30d723eb5e20b004d50459a2b151d78da09",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-01-01",
+      "status": "PASS",
+      "original_report_sha256": "356f42720f972eff1721875634bacc4ac6e5667263f2706076c60084bad01edd",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-01-02",
+      "status": "PASS",
+      "original_report_sha256": "d7039d7ea89201925e1727afa51a1abde453ef78f87daf1cad9b36bc6692edc2",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-01-03",
+      "status": "PASS",
+      "original_report_sha256": "223a5324bc07aa5d00aad0ea65614ec77b0f14d6167bfe36a3a3375d410abf09",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-01-04",
+      "status": "PASS",
+      "original_report_sha256": "838d9d6ad13434700935664b132c6225f1595f8a3be2464c6fce3cc8aff5b823",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-01-05",
+      "status": "PASS",
+      "original_report_sha256": "eadc58ad7c9c0f18b0c6e49b02df7790a3058b3d977ceebd26376912aec9c812",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-01-06",
+      "status": "PASS",
+      "original_report_sha256": "6acca1afb8a7a36fe0132875745f3495ef7f3ae173a995325090105d9845479e",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-02-01",
+      "status": "PASS",
+      "original_report_sha256": "e7c6be571e7b299c94515e3ae4c98458b81c4c53ad7b14aed4bd97d6bb629292",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-02-02",
+      "status": "PASS",
+      "original_report_sha256": "e965a4463884a5c1e9667fc55245df2d5b0494f176bf21125f20589804801dd4",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-02-03",
+      "status": "PASS",
+      "original_report_sha256": "60ac65fb91dbc8473c292bc156ce3a625ac439c6d3ed4a031fbf6ef853a23c5a",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-02-04",
+      "status": "PASS",
+      "original_report_sha256": "b044ebf8024f8f24f75d77efae954df294c838de9c1681520bcfe83cd412ba9c",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-02-05",
+      "status": "PASS",
+      "original_report_sha256": "01c1388e8c4a112b936bafda2517dd6bfce0f0ff2f5d172eae0b5722b52f2efd",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-02-06",
+      "status": "PASS",
+      "original_report_sha256": "1969783d861b6dfadcc1743fb7dd062e013845f6ebef363a9423dbd9b180a04f",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-03-01",
+      "status": "PASS",
+      "original_report_sha256": "ade04d61905023e4a6a41c78eb7560d0f78047b8299b81bc1d8814cf712079d8",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-03-02",
+      "status": "PASS",
+      "original_report_sha256": "0e5667fb6d7292d57cea3015b3b0f71707b42526530f3c467fb15fcd6ba82018",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-03-03",
+      "status": "PASS",
+      "original_report_sha256": "5265c22b1116bd2fd61f2b6b4dca39746075f774bcb19ca54388eeaf598da0ec",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-03-04",
+      "status": "PASS",
+      "original_report_sha256": "b4480a7c7853cf4153cc67ef11da3e7b8245c87b999995c30425ac20fc8488c1",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-03-05",
+      "status": "PASS",
+      "original_report_sha256": "546ec206f8826571ba1940215c32e3d48eef16dc64216253dfdd9ff19563cfa4",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-03-06",
+      "status": "PASS",
+      "original_report_sha256": "b9654ef3f2dad41bff05c1727ee2649c2593b94a0ad856ea847b3162525f6192",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-04-01",
+      "status": "PASS",
+      "original_report_sha256": "ab6b129ca2aae1f92d5bfb21f4e1c9accebd4a9fe9e1593d0635d85603296798",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-04-02",
+      "status": "PASS",
+      "original_report_sha256": "e8f20835818aecc87e5c59264c7a196dea2a0927e6011caaafca7b6a53d8bc27",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-04-03",
+      "status": "INCONCLUSIVE",
+      "original_report_sha256": "03058b6d299f44ff176478f6ba82390a4532f3e035050dd26d55293d7e05d697",
+      "full_report_available_for_this_review": true,
+      "reason_codes": [
+        "UNRELATED_EDGE_CHANGED"
+      ]
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-04-04",
+      "status": "PASS",
+      "original_report_sha256": "babc77b9566b54258517cdad7e71e11dd0495be9dca7bbdb0c8a7779b7e2b284",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-04-05",
+      "status": "PASS",
+      "original_report_sha256": "78c25417a02475a8f4a8990e34a63d74944199e1bd8612d2679e494b0e2dc580",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-04-06",
+      "status": "PASS",
+      "original_report_sha256": "c8622a58312a5c5e0b5f6d4b83e740603798917983905624f074869975a7761c",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-05-01",
+      "status": "INCONCLUSIVE",
+      "original_report_sha256": "963534ad1d9e6498577fb2c4ecabcd5281b6027e86ba76b663b8e22184f7b49d",
+      "full_report_available_for_this_review": true,
+      "reason_codes": [
+        "LAB_CONCAT_INPUTS"
+      ]
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-05-02",
+      "status": "PASS",
+      "original_report_sha256": "16d8a9256cfb1c4f860928fe65518bcabbf51f6a1bbc455bab8651bcbe53feee",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-05-03",
+      "status": "PASS",
+      "original_report_sha256": "b610e77d1994500a99e769f0e2ad6adc1f0b1a41b793c2d167ee1c7d3ed6cc3e",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-05-04",
+      "status": "PASS",
+      "original_report_sha256": "61dfb18faaabe06151c482faef6b4902c5a9a59ecdc37465b76ec4892248313b",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-05-05",
+      "status": "PASS",
+      "original_report_sha256": "5df3db2730af24f9c6e169287c291e1b5f904bb3504ec6774b1d681662c36884",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-05-06",
+      "status": "INCONCLUSIVE",
+      "original_report_sha256": "981e890a550bd667a3c4c8c098259c3424124d8d75786a18568aee727fdabb6e",
+      "full_report_available_for_this_review": true,
+      "reason_codes": [
+        "LAB_NONSTRING"
+      ]
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-01-01",
+      "status": "PASS",
+      "original_report_sha256": "2dd55e55026c3d6e3efef2e47b788fd9c4c970b1ee9d006b9a64fc2ea4f68f70",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-01-02",
+      "status": "PASS",
+      "original_report_sha256": "c8e48fb0744f2240accbf99c20dcd6fc56e76374d725b76f931629effa9bc3a7",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-01-03",
+      "status": "PASS",
+      "original_report_sha256": "678a01f3838be957cce583ccf208ab86175ed8225905ddae730d9bae0c6e305a",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-01-04",
+      "status": "PASS",
+      "original_report_sha256": "afbf3e36eda23922160257dc62203baa448763ea239a978d923140300fba9f4a",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-01-05",
+      "status": "PASS",
+      "original_report_sha256": "d3b123ac5bc48a761bbcc0b9aa92e05a37157094743ea58f333e792fe02ef386",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-01-06",
+      "status": "PASS",
+      "original_report_sha256": "813e08e7bb94b7daa87705b0427759771c402e11d229939b0a3bb7c253f25e29",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-02-01",
+      "status": "PASS",
+      "original_report_sha256": "a1cecdda7517628dd5c61c8067c2c45e057001037f4676886a5ba990323f5702",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-02-02",
+      "status": "PASS",
+      "original_report_sha256": "9725c14fc883a06768cf3a42253da822b74b60fedfbbb810ac1e37e430d68221",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-02-03",
+      "status": "PASS",
+      "original_report_sha256": "690db8c552081a1b0cff73f96af575d9aba14d6f1b7a71be2e5387b719bbf19e",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-02-04",
+      "status": "PASS",
+      "original_report_sha256": "310c4b1dc847e99c32d0023e42f50fc0cd911302a70b611535cbec42b55ec8cc",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-02-05",
+      "status": "PASS",
+      "original_report_sha256": "ccf0e341c805e2b485dd5ed63c99d37caec7b00e15bcbc2fee541e0770fddb1d",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-02-06",
+      "status": "PASS",
+      "original_report_sha256": "2d8d30652d99d4b91e828a1efb87e3a933949c1276cdc1fbdb9ff3d3a7acdd12",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-03-01",
+      "status": "PASS",
+      "original_report_sha256": "838fcfd9c3406ad15c501201153ec6c9c79f831c493a5ca7074ad36bca6cf63f",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-03-02",
+      "status": "PASS",
+      "original_report_sha256": "3721c95d3d11b64beb8313f688a10e6dc6502961b8cfdfdb3b0fe52f19e2eb0c",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-03-03",
+      "status": "PASS",
+      "original_report_sha256": "f147b7fbf0cbfc6dd060abe5d452498400700339b6a73db94748da2591427921",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-03-04",
+      "status": "PASS",
+      "original_report_sha256": "2505a4e0741fa7dc2d3127f9365d23e7a04030f30af177ef2b61a4e102ac0e46",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-03-05",
+      "status": "PASS",
+      "original_report_sha256": "a975fc9033dbe49044b45e853ae44e2093a511f7cdcdf0e482332c346ec0dc65",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-03-06",
+      "status": "PASS",
+      "original_report_sha256": "1d55d3f6687201ac78cb4cbf8de34f269fbfa88f2db067c913b2c2f38b35a8ed",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-04-01",
+      "status": "PASS",
+      "original_report_sha256": "c709b2ca0b08ba1730208cd3124b976ec6364634ffb31470c91c30b418d0f743",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-04-02",
+      "status": "PASS",
+      "original_report_sha256": "8bebcbb0b0b3121b2b99e30ace5e740b70a9e198ba9e317b23a6ef7d49f30aec",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-04-03",
+      "status": "PASS",
+      "original_report_sha256": "c9b112df71692a0bfcd2d1223e514c521ed86d6113e406575d908f66657fd875",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-04-04",
+      "status": "PASS",
+      "original_report_sha256": "54996218dff102db7703f9e45463d18ab66d0581a278232bf8689b29ec0e8605",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-04-05",
+      "status": "PASS",
+      "original_report_sha256": "f49e1a8161d0a7c5ceb2c68a8d07a4674bba0bbfc006cd9670bfd5136ed727c8",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-04-06",
+      "status": "PASS",
+      "original_report_sha256": "89e2af3c8a57a2caa9b43f4493e94da9f299f6f82c5a18d87cee50e5feb3fb63",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-05-01",
+      "status": "INCONCLUSIVE",
+      "original_report_sha256": "22bf5227c497038bd6ad137f75574e4b53023ec35158df439108e105cd8a3d50",
+      "full_report_available_for_this_review": true,
+      "reason_codes": [
+        "LAB_OUTPUT_OR_REPEATABILITY_MISMATCH"
+      ]
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-05-02",
+      "status": "PASS",
+      "original_report_sha256": "e84ab176ad9a03d452fec8166b63ef6df61462d95cc18b320f392b48f49dd030",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-05-03",
+      "status": "PASS",
+      "original_report_sha256": "f94c07495cfe8693745e017e2e4732ab48be10540fe5ed00fb3eff5530d7644c",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-05-04",
+      "status": "PASS",
+      "original_report_sha256": "9db2cf8ee8e2389e52b49b2c563ded7893d701a2605d3e722e3bb3d6f143e5f8",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-05-05",
+      "status": "PASS",
+      "original_report_sha256": "fdf52112aeb63a29479e7d54011aa54c6c8bfe0b8b56102917de5139b028795c",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-05-06",
+      "status": "INCONCLUSIVE",
+      "original_report_sha256": "9428369c98b484ae7bdde109d8e320b76a61c4530bc677f38f6250d65d4e3555",
+      "full_report_available_for_this_review": true,
+      "reason_codes": [
+        "LAB_NONSTRING"
+      ]
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-01-01",
+      "status": "PASS",
+      "original_report_sha256": "6e7e3a21269389f4b5d66c79a7022c8531b20acbaf15be167ef01bc490d0c0be",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-01-02",
+      "status": "PASS",
+      "original_report_sha256": "2f88ca19055b9ac6f1544dd75b0796d72c89c4720654e928f104fc8ec77f3c4e",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-01-03",
+      "status": "PASS",
+      "original_report_sha256": "70a74a3975d634e4f483a96130ed1389414aa4ffed7ccf5902097e2e4bf1a5db",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-01-04",
+      "status": "PASS",
+      "original_report_sha256": "4574ba99fd7d906ea5ee1249ad719c4241fce1e78ab50f563bd20c13adbc5761",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-01-05",
+      "status": "PASS",
+      "original_report_sha256": "63d9bb5d5622cb42935d578654560bf3362476ed951b6c00f8dccb7c73f69582",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-01-06",
+      "status": "PASS",
+      "original_report_sha256": "9573751e8dfa3717df7d492f889319ff31d99a6b125c43758019c0178c9c45ac",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-02-01",
+      "status": "PASS",
+      "original_report_sha256": "708d644455b0955b1fd7eb83284210aa7001a94509d13822df5e9b0691e212b2",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-02-02",
+      "status": "PASS",
+      "original_report_sha256": "237f6511d6bdb4a0110e4df4fafc0da31010a93e29a681643dffff3d20a75ae7",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-02-03",
+      "status": "PASS",
+      "original_report_sha256": "2b7de5bd9af3d6e099653ec18e139102cbd34f4f5148c290a62d2f4ef534d986",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-02-04",
+      "status": "PASS",
+      "original_report_sha256": "ab115727f25aff5f259e08ea52af1dbf30ca9b6b8be669a77d5f04fd965e05ac",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-02-05",
+      "status": "PASS",
+      "original_report_sha256": "183f8b5b0e672f8c3d36397443d999ae7a92e6a34b4d84fa4421303448680375",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-02-06",
+      "status": "PASS",
+      "original_report_sha256": "9b069eab8efe19f16048223fbe85ef3efe209edf83830f3582b1a98d27cc6891",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-03-01",
+      "status": "PASS",
+      "original_report_sha256": "c55667ba8c3dacf7d63028da1f9c5281114282854b6a9716888335db8d9f1f18",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-03-02",
+      "status": "PASS",
+      "original_report_sha256": "076119efa55a9f1b2169df110e2e46c38e682a5cbcd18889271ba81a9dad8187",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-03-03",
+      "status": "PASS",
+      "original_report_sha256": "1ec337b29e4c1d71972a3510f71a2f4a9599ca6583d0506e75c2d25696498948",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-03-04",
+      "status": "PASS",
+      "original_report_sha256": "bef9336c9b5fe4650dcc418ee702d0e0c067af63d063f03fae1e1ccfc6101b77",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-03-05",
+      "status": "PASS",
+      "original_report_sha256": "a11a901cfde6e77cfb77915d326a7677b2e69b9df0a77b65b11186eb090181c2",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-03-06",
+      "status": "PASS",
+      "original_report_sha256": "2e32893f0f865fe90f59c17d716c0f2eb71fd3caaf6508356f0dc32128b4e7b6",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-04-01",
+      "status": "PASS",
+      "original_report_sha256": "eb376acb897b4fcdaf250822090b1e1bead22e8d7b0fe7be7651fd09384adf84",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-04-02",
+      "status": "PASS",
+      "original_report_sha256": "342445a6728bf0d145bf5239cabeaa397b5eeca2a1b4fc9d8416f5862a9f16a3",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-04-03",
+      "status": "FAIL",
+      "original_report_sha256": "88dc7b90d7196d8aff386d930e36d05d2e53e4aea14878dd19cffed595d46096",
+      "full_report_available_for_this_review": true,
+      "reason_codes": [
+        {
+          "code": "FAULT_ANALYSIS_NOT_OBSERVED",
+          "path": "$.fault_analysis"
+        }
+      ]
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-04-04",
+      "status": "PASS",
+      "original_report_sha256": "0cb4a45f46017820afd96b2e7111d559b3ee0cff54329f4529b28090b5df8f85",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-04-05",
+      "status": "PASS",
+      "original_report_sha256": "9c2809784637a1484b942de41ac96b60af5a0857655f71ce1e94e181d8c6e443",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-04-06",
+      "status": "PASS",
+      "original_report_sha256": "b17e86e7fdb40b9e5d76e66454a583e2cc8ceeb4b29348fa5f1686efb2dd8a6c",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-05-01",
+      "status": "PASS",
+      "original_report_sha256": "95dc9d5b6201e845eff20f4caeff86dd0a30461dffad60c63da3036445eaa878",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-05-02",
+      "status": "PASS",
+      "original_report_sha256": "c7049f922061458348849221e8f86eaaca73187d658a244c2a736a7568533f7b",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-05-03",
+      "status": "PASS",
+      "original_report_sha256": "910d8bf0b3b9f5b7b1884978735f980495b6fee0b7f236ead48331806451c712",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-05-04",
+      "status": "PASS",
+      "original_report_sha256": "452dacf198e7fea7313df4fdbf1280b6cfa106c8746ede44782d3a72879a6bfb",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-05-05",
+      "status": "INCONCLUSIVE",
+      "original_report_sha256": "369973edf1429c2006542ebf5336831a1d75eef403eb69be2bf5fe44d102a3f4",
+      "full_report_available_for_this_review": true,
+      "reason_codes": [
+        "LAB_NONSTRING"
+      ]
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-05-06",
+      "status": "PASS",
+      "original_report_sha256": "2934061a1dc103b88487504775ecfeb2598ea4730c7294a411b73b75fc685462",
+      "full_report_available_for_this_review": false,
+      "reason_codes": []
+    }
+  ]
+}

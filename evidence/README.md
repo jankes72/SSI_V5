@@ -1,13 +1,22 @@
 # SSI V5 — Public Evidence Index
 
-**Current index sync:** `2026-09-22`  
-**Latest update:** operator continuation excerpt and offline LAB release tests, `2026-09-22`; historical domain measurements retain their original dates.
+**Current index sync:** `2026-09-23`  
+**Latest update:** complete recorded S11 outcomes, DEV safeguards and laboratory status, `2026-09-23`; historical domain measurements retain their original dates.
 
 This directory preserves sanitized evidence, lineage, failure/repair history, integrity references and claim boundaries. Historical files are intentionally retained.
 
 > For the shortest reviewer path, start with [../REVIEWER_INDEX.md](../REVIEWER_INDEX.md).
 
-## Latest continuation and LAB evidence — 2026-09-22
+## Complete S11 outcomes and safeguards — 2026-09-23
+
+[All 210 outcomes](S11_20260923/README.md): 197 PASS, 12 INCONCLUSIVE, one FAIL. S11 is INCONCLUSIVE and S12–S40 are deferred. Full case records were reviewed for the 13 unresolved cases; the 197 PASS source hashes are collector-reported. The export records provenance limits.
+
+- [Full report](../RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md).
+- [DEV safeguards and attack results](../RESULTS/SSI_V5_DEV_SAFEGUARDS_20260923.md).
+- [UAV / R&D implementation status](../SYSTEM/SSI_V5_UAV_AND_RND_LABS_20260923.md).
+- [R3 offline validation](../RESULTS/SSI_V5_LAB_RND_R3_TEST_SUMMARY_20260923.json): 105 passed, one skipped; distinct from live training.
+
+## Earlier continuation and LAB evidence — 2026-09-22
 
 - [Operator-supplied S11 continuation excerpt](SSI_V5_S11_CONTINUATION_20260922_OPERATOR_EXCERPT.md): 27 checked inherited cases and three new BODY_FROZEN native/CI passes; no stage summary supplied.
 - [Current report](../RESULTS/SSI_V5_LAB_AND_S11_CONTINUATION_20260922.md): implementation changes and evidence boundaries.
@@ -138,3 +147,4 @@ operational control endpoints
 ```
 
 The repository is an evidence mirror, not a source-code distribution.
+

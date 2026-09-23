@@ -1,0 +1,167 @@
+{
+  "schema": "ssi.public.unresolved-cases.v1",
+  "run_id": "RUN_20260922T221012Z_88df9df1",
+  "grade_changed": false,
+  "cases": [
+    {
+      "body": "BODY_FROZEN",
+      "case_id": "S11-05-06",
+      "status": "INCONCLUSIVE",
+      "issues": [
+        "rnd_lab_comparison_not_verified"
+      ],
+      "event_category": "RND_LAB_REJECTED",
+      "reasons": [
+        "LAB_NONSTRING"
+      ]
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-04-06",
+      "status": "INCONCLUSIVE",
+      "issues": [
+        "collective_not_verified:UNVERIFIED:PARTIAL"
+      ],
+      "event_category": "LOCALITY_REJECTED",
+      "reasons": [
+        "UNRELATED_EDGE_CHANGED"
+      ]
+    },
+    {
+      "body": "ISKRA1",
+      "case_id": "S11-05-06",
+      "status": "INCONCLUSIVE",
+      "issues": [
+        "rnd_lab_comparison_not_verified"
+      ],
+      "event_category": "RND_LAB_REJECTED",
+      "reasons": [
+        "LAB_CONCAT_INPUTS"
+      ]
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-05-02",
+      "status": "INCONCLUSIVE",
+      "issues": [
+        "rnd_lab_comparison_not_verified"
+      ],
+      "event_category": "RND_LAB_REJECTED",
+      "reasons": [
+        "LAB_NONSTRING"
+      ]
+    },
+    {
+      "body": "ISKRA2",
+      "case_id": "S11-05-04",
+      "status": "INCONCLUSIVE",
+      "issues": [
+        "rnd_lab_comparison_not_verified"
+      ],
+      "event_category": "RND_LAB_REJECTED",
+      "reasons": [
+        "LAB_OPERATION_FIELDS:b11:missing=[]:extra=[\"input_blocks\"]"
+      ]
+    },
+    {
+      "body": "ISKRA3",
+      "case_id": "S11-05-05",
+      "status": "INCONCLUSIVE",
+      "issues": [
+        "rnd_lab_comparison_not_verified"
+      ],
+      "event_category": "RND_LAB_REJECTED",
+      "reasons": [
+        "LAB_NONSTRING"
+      ]
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-04-03",
+      "status": "INCONCLUSIVE",
+      "issues": [
+        "collective_not_verified:UNVERIFIED:PARTIAL"
+      ],
+      "event_category": "LOCALITY_REJECTED",
+      "reasons": [
+        "UNRELATED_EDGE_CHANGED"
+      ]
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-05-01",
+      "status": "INCONCLUSIVE",
+      "issues": [
+        "rnd_lab_comparison_not_verified"
+      ],
+      "event_category": "RND_LAB_REJECTED",
+      "reasons": [
+        "LAB_CONCAT_INPUTS"
+      ]
+    },
+    {
+      "body": "ISKRA4",
+      "case_id": "S11-05-06",
+      "status": "INCONCLUSIVE",
+      "issues": [
+        "rnd_lab_comparison_not_verified"
+      ],
+      "event_category": "RND_LAB_REJECTED",
+      "reasons": [
+        "LAB_NONSTRING"
+      ]
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-05-01",
+      "status": "INCONCLUSIVE",
+      "issues": [
+        "rnd_lab_comparison_not_verified"
+      ],
+      "event_category": "RND_LAB_REJECTED",
+      "reasons": [
+        "LAB_OUTPUT_OR_REPEATABILITY_MISMATCH"
+      ]
+    },
+    {
+      "body": "ISKRA5",
+      "case_id": "S11-05-06",
+      "status": "INCONCLUSIVE",
+      "issues": [
+        "rnd_lab_comparison_not_verified"
+      ],
+      "event_category": "RND_LAB_REJECTED",
+      "reasons": [
+        "LAB_NONSTRING"
+      ]
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-04-03",
+      "status": "FAIL",
+      "issues": [
+        "contract_binding:FAULT_ANALYSIS_NOT_OBSERVED:$.fault_analysis",
+        "collective_not_verified:UNVERIFIED:PARTIAL"
+      ],
+      "event_category": "CONTRACT_REJECTED",
+      "reasons": [
+        {
+          "code": "FAULT_ANALYSIS_NOT_OBSERVED",
+          "path": "$.fault_analysis"
+        }
+      ]
+    },
+    {
+      "body": "ISKRA6",
+      "case_id": "S11-05-05",
+      "status": "INCONCLUSIVE",
+      "issues": [
+        "rnd_lab_comparison_not_verified"
+      ],
+      "event_category": "RND_LAB_REJECTED",
+      "reasons": [
+        "LAB_NONSTRING"
+      ]
+    }
+  ]
+}

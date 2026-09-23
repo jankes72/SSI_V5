@@ -3,22 +3,25 @@
 ## Experimental Persistent Adaptive Intelligence System
 
 **Architecture author:** Paweł Jankiewicz (`jankes72`, `PROGRAMMER_ROOT`)  
-**Updated:** `2026-09-22`  
+**Updated:** `2026-09-23`  
 **Repository role:** public research/evidence mirror with a published observer portal; proprietary implementation remains private.
 
-## Current SSI V5 continuation — 2026-09-22
+## Current S11 and laboratory update — 2026-09-23
 
-The latest operator excerpt reports 27 checked inherited BODY_FROZEN cases and
-new native/CI PASS for S11-05-04, S11-05-05 and S11-05-06. A complete S11 stage
-summary, the remaining BODY results and S12–S40 closure were not supplied.
+The previous run `RUN_20260922T221012Z_88df9df1` traversed all **210 S11 cases** across seven BODY: **197 PASS, 12 INCONCLUSIVE and 1 FAIL**. S11 remained **INCONCLUSIVE**, and all **29 S12–S40 stages were DEFERRED_PREREQUISITE**, with zero model calls recorded for them. Every case outcome and the original aggregate metrics are now published.
 
-LEGO Pocket, META-LEGO and permanent Director-connected R&D laboratories are
-implemented. The private LAB release passed 165 offline tests. ŚWIAT PIŁKI —
-HIPNOZA retains pending full data-path validation.
+The follow-up private R3 package adds shared training/R&D diagnostics, no-progress detection, measurement controls and a **6 USD daily budget shared by all seven BODY**. Offline validation completed with **105 tests passed and one skipped**. Delivery is recorded; installation on the operator's machine and a new post-R3 run are not yet confirmed.
 
-- [Latest continuation and LAB report](RESULTS/SSI_V5_LAB_AND_S11_CONTINUATION_20260922.md)
-- [Component overview](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md)
-- [Football World status](RESULTS/FOOTBALL_WORLD_IMPLEMENTATION_BOUNDARY_20260922.md)
+The signed evidence verifier detected all five controlled tampering attempts. Separate-UID key custody was not verified end to end here; external timestamping is not configured. The run remains **LOCAL_DEVELOPMENT / external_pilot_ready=false**. The UAV lab supports software experiments; physical adapters and an external Tailscale session are not demonstrated.
+
+- [Complete previous S11 results: 197 PASS / 12 INCONCLUSIVE / 1 FAIL](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
+- [All 210 case outcomes and source hashes](evidence/S11_20260923/README.md)
+- [DEV safeguards and adversarial tests](RESULTS/SSI_V5_DEV_SAFEGUARDS_20260923.md)
+- [UAV and permanent R&D laboratory status](SYSTEM/SSI_V5_UAV_AND_RND_LABS_20260923.md)
+- [R3 offline test summary](RESULTS/SSI_V5_LAB_RND_R3_TEST_SUMMARY_20260923.json)
+
+The public outcome index and aggregate reports cover all 210 cases, but the review received full raw case records for only the 13 unresolved cases. The 197 PASS records require verification on the target machine before reuse. This update does not establish causal effects of feelings, learning or role prompts. Earlier dated reports remain unchanged.
+
 
 ## Preserved earlier software results
 
@@ -214,3 +217,4 @@ PRIVATE = proprietary source code, ROOT internals, private state, reconstructive
 ```
 
 Older dated files remain historical evidence and are not rewritten to imitate the newest state.
+

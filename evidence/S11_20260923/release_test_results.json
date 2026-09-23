@@ -1,0 +1,538 @@
+{
+  "release": "SSI_V5_LAB_RND_FIX_20260923_R3",
+  "test_kind": "OFFLINE_SOFTWARE_REGRESSION",
+  "paid_calls": 0,
+  "tests": [
+    {
+      "test": "test_all_13_real_failures_are_reproduced_without_regrading",
+      "class": "__main__.CapturedFailuresTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_only_candidate_design_changes_fix_nonstrings_not_a_weakened_guard",
+      "class": "__main__.CapturedFailuresTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_all_30_actual_curriculum_rule_sets_have_counterfactual_controls",
+      "class": "__main__.MeasurementTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_constant_metric_and_always_accept_rule_are_detected",
+      "class": "__main__.MeasurementTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_disagreement_preserves_all_views_and_missing_is_unknown",
+      "class": "__main__.MeasurementTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_failed_measurement_control_blocks_paid_runner_and_promotion",
+      "class": "__main__.MeasurementTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_missing_and_inapplicable_fields_never_count_as_proven_guard",
+      "class": "__main__.MeasurementTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_nonfinite_metric_and_metric_exception_do_not_validate",
+      "class": "__main__.MeasurementTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_real_validator_controls_and_constant_lab_mutation",
+      "class": "__main__.MeasurementTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_stage_audit_rejects_changed_counts_and_metric_views",
+      "class": "__main__.MeasurementTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_unregistered_metric_is_untested_not_zero_or_pass",
+      "class": "__main__.MeasurementTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_exact_197_selected_passes_and_13_actor_specific_retries_no_history_change",
+      "class": "__main__.RetryTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_failure_feedback_bound_to_exact_actor_case_and_unchanged_source",
+      "class": "__main__.RetryTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_inherited_reports_are_committed_even_when_new_stage_stops",
+      "class": "__main__.RetryTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_new_native_runner_calls_only_thirteen_cases_across_all_seven_bodies",
+      "class": "__main__.RetryTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_only_declared_upgrade_compatible_and_budget_change_rejected",
+      "class": "__main__.RetryTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_parent_integrity_grade_and_summary_disagreement_block_reuse",
+      "class": "__main__.RetryTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_resource_timestamp_can_change_but_pinned_snapshot_content_cannot",
+      "class": "__main__.RetryTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_signed_parent_validation_and_new_artifact_tampering",
+      "class": "__main__.RetryTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_unknown_transport_outcome_is_not_automatically_retried",
+      "class": "__main__.RetryTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_both_training_locks_block_install",
+      "class": "__main__.InstallerTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_budget_ledger_gui_memory_and_previous_runs_are_untouched",
+      "class": "__main__.InstallerTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_dependency_guard_rejects",
+      "class": "__main__.InstallerTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_installs_sources_and_exact_registry_entries_together",
+      "class": "__main__.InstallerTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_launch_sequence_reloads_gateway_before_full_training",
+      "class": "__main__.InstallerTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_new_file_collision_rejects",
+      "class": "__main__.InstallerTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_real_test_failure_is_still_fatal_before_install",
+      "class": "__main__.InstallerTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_registry_write_failure_rolls_back_source_changes",
+      "class": "__main__.InstallerTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_rollback_refuses_newer_user_edits",
+      "class": "__main__.InstallerTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_rollback_restores_exact_source_and_metadata_bytes",
+      "class": "__main__.InstallerTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_self_tests_keep_all_suites_checked_with_bounded_time_and_progress",
+      "class": "__main__.InstallerTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_source_change_rejects_before_all_writes",
+      "class": "__main__.InstallerTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_symlink_rejects",
+      "class": "__main__.InstallerTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_test_timeout_stops_before_install_runtime_stop_or_paid_training",
+      "class": "__main__.InstallerTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_unknown_registry_value_not_blessed",
+      "class": "__main__.InstallerTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_bridge_saves_input_response_cost_and_failure_fixture",
+      "class": "__main__.EventTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_budget_deadline_and_format_are_distinct",
+      "class": "__main__.EventTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_budget_snapshot_is_readonly_and_actor_scoped",
+      "class": "__main__.EventTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_duplicate_checkpoint_stops_before_api",
+      "class": "__main__.EventTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_evaluator_error_keeps_received_answer",
+      "class": "__main__.EventTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_recorded_locality_failure_is_not_transport",
+      "class": "__main__.EventTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_retry_feedback_reaches_existing_author_call_without_extra_requests",
+      "class": "__main__.EventTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_review_checkpoint_preserves_candidate_and_negative_verdict",
+      "class": "__main__.EventTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_review_partial_and_fail_preserved",
+      "class": "__main__.EventTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_semantic_retry_only_with_remaining_tier_and_attempts",
+      "class": "__main__.EventTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_timeout_never_replays_and_no_missing_evidence_pass",
+      "class": "__main__.EventTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_aggregate_failure_and_mixed_results_cannot_be_reported_pass",
+      "class": "__main__.ResearchTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_failure_receipt_is_preserved_and_reloaded_with_no_grade_change",
+      "class": "__main__.ResearchTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_full_run_defers_dependency_but_executes_later_independent_stage",
+      "class": "__main__.ResearchTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_operational_failures_and_unknown_outcomes_stop_in_research",
+      "class": "__main__.ResearchTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_partial_stage_or_blocked_actor_never_continues",
+      "class": "__main__.ResearchTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_real_native_runner_reaches_next_case_and_all_seven_actors",
+      "class": "__main__.ResearchTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_receipt_mismatch_is_real_failure_but_research_continues",
+      "class": "__main__.ResearchTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_empty_ledger_real_zero_and_exhausted_budget_are_distinct",
+      "class": "__main__.CostTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_exact_enforced_day_total_holds_and_uncertain_costs_without_double_count",
+      "class": "__main__.CostTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_http_cost_endpoint_no_mutation_methods_no_secret_policy_fields",
+      "class": "__main__.CostTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_invalid_manual_balance_and_unknown_provider_rejected",
+      "class": "__main__.CostTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_ledger_without_rates_or_holds_is_luna_and_preserved",
+      "class": "__main__.CostTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_missing_or_corrupt_ledger_not_zero_balance_and_does_not_create_database",
+      "class": "__main__.CostTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_repeated_read_does_not_modify_ledger_holds_or_policy",
+      "class": "__main__.CostTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_zero_and_negative_manual_balance_timestamp_are_not_budget_or_live_balance",
+      "class": "__main__.CostTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_all_hamid_attacks_and_positive_control",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_append_after_final_is_rejected_but_exact_retransmit_is_idempotent",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_authority_rejects_unknown_protocol_and_unregistered_experiment",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_committed_authority_but_failed_mirror_stops_without_overwrite",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_custodian_rejects_lab_writable_code_and_exposed_private_key",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_custodian_socket_and_key_access_under_two_actual_uids",
+      "class": "__main__.EvidenceTests",
+      "status": "SKIPPED",
+      "reason": "Execution environment forbids Unix sockets; external custodian not end-to-end tested here"
+    },
+    {
+      "test": "test_director_rejects_modified_view_even_with_new_plain_hash",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_export_verifies_offline_with_separately_supplied_pins",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_idempotent_delivery_does_not_replay_or_change_result",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_reports_are_explicitly_unattested_and_never_silently_signed",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_pocket_export_requires_committed_views_and_cases",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_portable_verifier_runs_without_an_ssi_installation",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_registered_experiment_cannot_change_protocol_even_if_db_rehashed",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_registered_experiment_result_and_full_protocol_are_exported",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_registry_and_signatures_cannot_be_substituted",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_reordering_and_duplicate_record_are_rejected",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_report_symlink_is_never_followed",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_same_uid_signer_is_rejected_and_key_rotation_does_not_erase_history",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_source_case_missing_or_changed_blocks_run_verification",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_tail_deletion_even_with_local_head_rollback_is_detected",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_timestamp_request_and_local_tsa_verification_are_real_crypto",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_uncommitted_case_file_never_enters_consolidation",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_whole_local_chain_deletion_cannot_be_recreated_as_new",
+      "class": "__main__.EvidenceTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_67_positive_and_negative_controls_use_real_unchanged_validators",
+      "class": "__main__.VariantTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_author_guidance_is_bounded_and_does_not_add_model_calls",
+      "class": "__main__.VariantTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_current_lab_pass_does_not_override_negative_independent_review",
+      "class": "__main__.VariantTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_every_reported_negative_case_keeps_grade_and_continues_in_research",
+      "class": "__main__.VariantTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_invalid_unbound_or_different_actor_receipt_is_never_current_proof",
+      "class": "__main__.VariantTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_locality_variants_remain_rejected_without_mutation",
+      "class": "__main__.VariantTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_log_contains_resolved_attempts_and_does_not_establish_learning_cause",
+      "class": "__main__.VariantTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_native_invalid_edges_and_unknown_machine_still_fail",
+      "class": "__main__.VariantTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_real_cascade_labels_old_failing_comparisons_and_verifies_current_receipt",
+      "class": "__main__.VariantTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_variants_are_permanent_registered_lab_experiment",
+      "class": "__main__.VariantTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_all_30_real_lab_reports_reproduce_with_unchanged_verdicts_and_complete_error_context",
+      "class": "__main__.DiagnosticTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_canonical_duplicate_ignores_formatting_but_not_a_changed_candidate",
+      "class": "__main__.DiagnosticTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_concat_reports_block_path_and_all_distinct_missing_declarations",
+      "class": "__main__.DiagnosticTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_fault_feedback_uses_observed_jam_instead_of_erasing_it",
+      "class": "__main__.DiagnosticTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_timeout_remains_inconclusive_and_no_replay_is_started",
+      "class": "__main__.DiagnosticTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_two_locality_rejections_identify_description_field_without_waiving_it",
+      "class": "__main__.DiagnosticTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_cascade_does_not_reexecute_identical_rejected_candidate_or_call_reviewer",
+      "class": "__main__.IntegrationTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_failure_fixture_is_actor_bound_replayable_and_tamper_detected",
+      "class": "__main__.IntegrationTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_old_and_new_real_pass_receipts_use_same_validator_hash_and_still_verify",
+      "class": "__main__.IntegrationTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_rnd_registered_experiment_uses_same_diagnostics_and_signed_result",
+      "class": "__main__.IntegrationTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_six_dollar_limit_allows_above_three_and_stops_every_actor_at_six",
+      "class": "__main__.IntegrationTests",
+      "status": "PASS"
+    },
+    {
+      "test": "test_six_dollar_view_preserves_current_calls_and_holds",
+      "class": "__main__.IntegrationTests",
+      "status": "PASS"
+    }
+  ]
+}
