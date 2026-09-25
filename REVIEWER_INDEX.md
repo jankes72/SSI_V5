@@ -1,6 +1,6 @@
 # SSI V5 — Reviewer Index
 
-**Current public state:** `2026-09-23`  
+**Current public state:** `2026-09-26`  
 **Repository role:** public evidence and review mirror for a private SSI implementation.  
 **Audience:** grant reviewers, research collaborators, technical reviewers and validation partners.
 
@@ -9,12 +9,14 @@ This file is the shortest route through the repository. Historical files remain 
 ## 5-minute review
 
 1. [README.md](README.md) — concise project front door and current state.
-2. [Complete S11 results](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md) — all 210 outcomes, unresolved cases and deferred stages.
-3. [LEGO Pocket, META-LEGO and Director-connected laboratories](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md) — component roles and implementation/validation boundaries.
-4. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md) — canonical pointer to the latest evidence-backed state.
-5. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md) — reviewer-oriented project summary.
-6. [RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md) — latest measured cross-domain laboratory report.
-7. [RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json](RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json) — machine-readable public summary.
+2. [Latest S11 consolidation + WEB LEGO update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md) — full 210-case traversal, verified-subset consolidation and WEB LEGO readiness.
+3. [Machine-readable latest summary](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json).
+4. [Preserved previous S11 results](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md) — earlier 210-case traversal retained for provenance.
+5. [LEGO Pocket, META-LEGO and Director-connected laboratories](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md) — component roles and implementation/validation boundaries.
+6. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md) — canonical pointer to the latest evidence-backed state.
+7. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md) — reviewer-oriented project summary.
+8. [RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md) — latest measured cross-domain laboratory report.
+9. [RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json](RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json) — machine-readable public summary.
 
 ## Technical architecture review
 
@@ -41,22 +43,19 @@ SEPARATE SOFTWARE-LAB RESULTS FROM PHYSICAL VALIDATION
 DO NOT CLAIM UNPUBLISHED OR IN-PROGRESS WORK AS VERIFIED
 ```
 
-## Current S11 and laboratory update — 2026-09-23
+## Current S11, consolidation and WEB LEGO update — 2026-09-26
 
-The previous run `RUN_20260922T221012Z_88df9df1` traversed all **210 S11 cases** across seven BODY: **197 PASS, 12 INCONCLUSIVE and 1 FAIL**. S11 remained **INCONCLUSIVE**, and all **29 S12–S40 stages were DEFERRED_PREREQUISITE**, with zero model calls recorded for them. Every case outcome and the original aggregate metrics are now published.
+The latest private S11 training run `RUN_20260925T163311Z_820718d5` executed **all 210 cases** across the seven actors under the revised continuation policy: **196 PASS, 13 INCONCLUSIVE and 1 FAIL**. The stage remains **INCONCLUSIVE**, while `execution_complete=true`.
 
-The follow-up private R3 package adds shared training/R&D diagnostics, no-progress detection, measurement controls and a **6 USD daily budget shared by all seven BODY**. Offline validation completed with **105 tests passed and one skipped**. Delivery is recorded; installation on the operator's machine and a new post-R3 run are not yet confirmed.
+Only the **196 verified PASS** cases were admitted to the recorded downstream consolidation. The 14 unresolved cases remained excluded. Transaction `CC_82dd0b3af825cd8543dcd59835023a5a` then completed PASS for BODY_FROZEN and the independent DIRECTOR view while preserving the stated identity split.
 
-The signed evidence verifier detected all five controlled tampering attempts. Separate-UID key custody was not verified end to end here; external timestamping is not configured. The run remains **LOCAL_DEVELOPMENT / external_pilot_ready=false**. The UAV lab supports software experiments; physical adapters and an external Tailscale session are not demonstrated.
+The private WEB LEGO extension is installed and reports **READY** with **126 LEGO items, 15 templates, 24 stages, 192 cases, 7 actors** and a **SYNTHETIC_ONLY** data policy. No successful WEB01-WEB24 live completion is claimed yet.
 
-- [Complete previous S11 results: 197 PASS / 12 INCONCLUSIVE / 1 FAIL](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
-- [All 210 case outcomes and source hashes](evidence/S11_20260923/README.md)
-- [DEV safeguards and adversarial tests](RESULTS/SSI_V5_DEV_SAFEGUARDS_20260923.md)
-- [UAV and permanent R&D laboratory status](SYSTEM/SSI_V5_UAV_AND_RND_LABS_20260923.md)
-- [R3 offline test summary](RESULTS/SSI_V5_LAB_RND_R3_TEST_SUMMARY_20260923.json)
+The learning-mode cross-run prerequisite repair is installed and self-tested; a live S12 post-fix run is not yet evidenced in this update.
 
-The public outcome index and aggregate reports cover all 210 cases, but the review received full raw case records for only the 13 unresolved cases. The 197 PASS records require verification on the target machine before reuse. This update does not establish causal effects of feelings, learning or role prompts. Earlier dated reports remain unchanged.
-
+- [Detailed 2026-09-26 update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
+- [Machine-readable 2026-09-26 summary](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json)
+- [Preserved previous S11 results](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
 
 ## Preserved verified milestone
 
