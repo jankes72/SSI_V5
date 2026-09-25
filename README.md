@@ -23,7 +23,7 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 - **Demonstrated scope:** software laboratory results for drone, humanoid and cross-domain rescue scenarios.
 - **Current boundary:** software evidence is published; physical validation, safety certification and independent external replication are not claimed.
 
-**Current public state:** 2026-09-23
+**Current public state:** 2026-09-26
 
 ## Current verified state
 
@@ -61,22 +61,19 @@ mean total software flow = 5.2559 ms
 
 These are software execution timings, not physical drone/robot response times.
 
-## Current S11 and laboratory update — 2026-09-23
+## Current S11, consolidation and WEB LEGO update — 2026-09-26
 
-The previous run `RUN_20260922T221012Z_88df9df1` traversed all **210 S11 cases** across seven BODY: **197 PASS, 12 INCONCLUSIVE and 1 FAIL**. S11 remained **INCONCLUSIVE**, and all **29 S12–S40 stages were DEFERRED_PREREQUISITE**, with zero model calls recorded for them. Every case outcome and the original aggregate metrics are now published.
+The latest private S11 training run `RUN_20260925T163311Z_820718d5` completed all **210/210 cases** under the revised training-continuation policy: **196 PASS, 13 INCONCLUSIVE and 1 FAIL**. The stage remains **INCONCLUSIVE**, but `execution_complete=true`; FAIL/INCONCLUSIVE cases no longer stop the whole training traversal.
 
-The follow-up private R3 package adds shared training/R&D diagnostics, no-progress detection, measurement controls and a **6 USD daily budget shared by all seven BODY**. Offline validation completed with **105 tests passed and one skipped**. Delivery is recorded; installation on the operator's machine and a new post-R3 run are not yet confirmed.
+Only the **196 verified PASS** cases were exported for downstream consolidation. The remaining **14 cases** stayed excluded as unresolved/retry material. Cross-consolidation transaction `CC_82dd0b3af825cd8543dcd59835023a5a` subsequently completed **PASS** for both BODY_FROZEN and the independent DIRECTOR view, with `identity_transfer=false`, `BODY_FROZEN.identity_changed=false`, `DIRECTOR.body_core_imported=false` and `weights_retrained=false`.
 
-The signed evidence verifier detected all five controlled tampering attempts. Separate-UID key custody was not verified end to end here; external timestamping is not configured. The run remains **LOCAL_DEVELOPMENT / external_pilot_ready=false**. The UAV lab supports software experiments; physical adapters and an external Tailscale session are not demonstrated.
+A separate private **WEB LEGO** training extension is now installed and reports `READY`: **126 LEGO items, 15 templates, 24 WEB stages, 192 cases, 7 actors**, with `data_policy=SYNTHETIC_ONLY`. This records installation/readiness only; successful WEB01-WEB24 live training is not yet claimed.
 
-- [Complete previous S11 results: 197 PASS / 12 INCONCLUSIVE / 1 FAIL](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
-- [All 210 case outcomes and source hashes](evidence/S11_20260923/README.md)
-- [DEV safeguards and adversarial tests](RESULTS/SSI_V5_DEV_SAFEGUARDS_20260923.md)
-- [UAV and permanent R&D laboratory status](SYSTEM/SSI_V5_UAV_AND_RND_LABS_20260923.md)
-- [R3 offline test summary](RESULTS/SSI_V5_LAB_RND_R3_TEST_SUMMARY_20260923.json)
+- [2026-09-26 S11 consolidation + WEB LEGO update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
+- [Machine-readable 2026-09-26 summary](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json)
+- [Preserved previous S11 report: 197 PASS / 12 INCONCLUSIVE / 1 FAIL](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
 
-The public outcome index and aggregate reports cover all 210 cases, but the review received full raw case records for only the 13 unresolved cases. The 197 PASS records require verification on the target machine before reuse. This update does not establish causal effects of feelings, learning or role prompts. Earlier dated reports remain unchanged.
-
+A cross-run prerequisite repair has been installed and self-tested so learning-mode stages can recognize earlier execution-complete stages with committed consolidation. A live post-fix S12 run is **not yet evidenced** in this public update.
 
 ## ŚWIAT PIŁKI — HIPNOZA
 
@@ -144,9 +141,13 @@ BODY / ISKRA foundations
 -> S11 smoke PASS
 -> preserved earlier S11 stops and repairs
 -> permanent R&D / controlled-experiment LAB and independent-case continuation
--> new full S11 traversal: 197 PASS / 12 INCONCLUSIVE / 1 FAIL
--> S12-S40 deferred by prerequisites
--> R3 diagnostics and measurement safeguards delivered; target installation pending
+-> preserved 2026-09-23 S11 traversal: 197 PASS / 12 INCONCLUSIVE / 1 FAIL
+-> revised training continuation semantics
+-> latest S11 traversal: 210/210 executed; 196 PASS / 13 INCONCLUSIVE / 1 FAIL
+-> verified-subset export: 196 admitted / 14 excluded
+-> S11 cross consolidation PASS for BODY_FROZEN + independent DIRECTOR
+-> cross-run prerequisite repair installed/self-tested; live S12 post-fix run not yet evidenced
+-> WEB LEGO extension installed READY: 126 LEGO items / 15 templates / 24 stages / 192 cases / SYNTHETIC_ONLY
 ```
 
 Older dated files remain preserved as historical evidence. They are not the recommended starting point unless a reviewer is auditing provenance.
@@ -181,8 +182,9 @@ The public evidence supports bounded software-laboratory claims about persistent
 
 It does **not** establish:
 
-- successful S11 acceptance; the complete traversal contains 13 unresolved cases;
+- all-PASS S11 acceptance; the latest complete traversal contains 14 unresolved cases;
 - S12-S40 completion;
+- successful WEB01-WEB24 live training;
 - physical drone validation;
 - physical rescue-robot validation;
 - physical humanoid validation;
