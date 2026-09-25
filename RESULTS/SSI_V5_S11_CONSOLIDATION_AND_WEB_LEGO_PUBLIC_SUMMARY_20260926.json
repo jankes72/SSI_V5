@@ -1,0 +1,48 @@
+{
+  "schema": "ssi.public-update.v1",
+  "date": "2026-09-26",
+  "evidence_boundary": "software/runtime only",
+  "s11": {
+    "run_id": "RUN_20260925T163311Z_820718d5",
+    "execution_complete": true,
+    "training_status": "TRAINING_COMPLETE_WITH_FAILURES",
+    "stage_status": "INCONCLUSIVE",
+    "totals": {
+      "total": 210,
+      "pass": 196,
+      "fail": 1,
+      "inconclusive": 13,
+      "blocked": 0,
+      "unknown": 0
+    },
+    "retry_scope_count": 14
+  },
+  "consolidation": {
+    "transaction": "CC_82dd0b3af825cd8543dcd59835023a5a",
+    "status": "PASS",
+    "verified_case_count": 196,
+    "excluded_case_count": 14,
+    "body_frozen": "PASS",
+    "director": "PASS",
+    "identity_transfer": false,
+    "body_identity_changed": false,
+    "director_body_core_imported": false,
+    "director_knowledge_count": 196,
+    "resource_count": 586,
+    "weights_retrained": false,
+    "paid_calls": 0
+  },
+  "web_lego": {
+    "status": "READY",
+    "lego_items": 126,
+    "templates": 15,
+    "stages": 24,
+    "cases": 192,
+    "actors": 7,
+    "data_policy": "SYNTHETIC_ONLY",
+    "live_training_completion_claimed": false
+  },
+  "s12_s40_completion_claimed": false,
+  "physical_validation_claimed": false,
+  "independent_external_replication_claimed": false
+}
