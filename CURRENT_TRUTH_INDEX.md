@@ -1,12 +1,14 @@
 # SSI V5 — CURRENT TRUTH INDEX
 
-**Status:** `CURRENT POINTER / 2026-09-23`  
+**Status:** `CURRENT POINTER / 2026-09-26`  
 **Repository role:** public evidence mirror with a published research portal; proprietary implementation remains private.  
 **Evidence boundary:** software-only unless a document explicitly states otherwise.  
 **History rule:** earlier dated truth/status files remain preserved and are not retroactively rewritten.
 
 ## Use these current documents first
 
+- [Latest S11 consolidation + WEB LEGO update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
+- [Machine-readable latest summary](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json)
 - [Complete previous S11 results: 197 PASS / 12 INCONCLUSIVE / 1 FAIL](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
 - [All 210 case outcomes and source hashes](evidence/S11_20260923/README.md)
 - [DEV safeguards and adversarial tests](RESULTS/SSI_V5_DEV_SAFEGUARDS_20260923.md)
@@ -28,22 +30,42 @@ Earlier milestones and historical evidence:
 9. [`VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md`](VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md)
 10. [`docs/index.html`](docs/index.html) — source of the published public research portal.
 
-## Current S11 and laboratory update — 2026-09-23
+## Current S11, consolidation and WEB LEGO update — 2026-09-26
 
-The previous run `RUN_20260922T221012Z_88df9df1` traversed all **210 S11 cases** across seven BODY: **197 PASS, 12 INCONCLUSIVE and 1 FAIL**. S11 remained **INCONCLUSIVE**, and all **29 S12–S40 stages were DEFERRED_PREREQUISITE**, with zero model calls recorded for them. Every case outcome and the original aggregate metrics are now published.
+Latest observed S11 training run:
 
-The follow-up private R3 package adds shared training/R&D diagnostics, no-progress detection, measurement controls and a **6 USD daily budget shared by all seven BODY**. Offline validation completed with **105 tests passed and one skipped**. Delivery is recorded; installation on the operator's machine and a new post-R3 run are not yet confirmed.
+```text
+RUN = RUN_20260925T163311Z_820718d5
+execution_complete = true
+PASS = 196
+INCONCLUSIVE = 13
+FAIL = 1
+retry_scope_count = 14
+```
 
-The signed evidence verifier detected all five controlled tampering attempts. Separate-UID key custody was not verified end to end here; external timestamping is not configured. The run remains **LOCAL_DEVELOPMENT / external_pilot_ready=false**. The UAV lab supports software experiments; physical adapters and an external Tailscale session are not demonstrated.
+The revised learning-mode runner continued through all 210 cases rather than terminating the stage on FAIL/INCONCLUSIVE outcomes. S11 remains **INCONCLUSIVE** as an acceptance status; it is not relabeled PASS.
 
-- [Complete previous S11 results: 197 PASS / 12 INCONCLUSIVE / 1 FAIL](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
-- [All 210 case outcomes and source hashes](evidence/S11_20260923/README.md)
-- [DEV safeguards and adversarial tests](RESULTS/SSI_V5_DEV_SAFEGUARDS_20260923.md)
-- [UAV and permanent R&D laboratory status](SYSTEM/SSI_V5_UAV_AND_RND_LABS_20260923.md)
-- [R3 offline test summary](RESULTS/SSI_V5_LAB_RND_R3_TEST_SUMMARY_20260923.json)
+Only the 196 verified PASS cases were admitted to the subsequent consolidation. Transaction `CC_82dd0b3af825cd8543dcd59835023a5a` completed PASS for BODY_FROZEN and DIRECTOR with the declared identity split preserved: no BODY identity transfer, no Director import of the BODY core, and no weight retraining.
 
-The public outcome index and aggregate reports cover all 210 cases, but the review received full raw case records for only the 13 unresolved cases. The 197 PASS records require verification on the target machine before reuse. This update does not establish causal effects of feelings, learning or role prompts. Earlier dated reports remain unchanged.
+The private WEB LEGO extension is installed and reports:
 
+```text
+status = READY
+lego_items = 126
+templates = 15
+stages = 24
+cases = 192
+actors = 7
+data_policy = SYNTHETIC_ONLY
+```
+
+This is an installation/readiness claim only. Live WEB01-WEB24 completion is not yet claimed.
+
+The cross-run prerequisite repair for learning-mode stage continuation is installed and self-tested. A live S12 run after that repair is not yet evidenced here.
+
+- [Detailed 2026-09-26 update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
+- [Machine-readable 2026-09-26 summary](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json)
+- [Preserved 2026-09-23 S11 report](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
 
 ## Preserved V4 baseline — 2026-09-17
 
