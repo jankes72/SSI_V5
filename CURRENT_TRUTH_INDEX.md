@@ -63,6 +63,19 @@ This is an installation/readiness claim only. Live WEB01-WEB24 completion is not
 
 The cross-run prerequisite repair for learning-mode stage continuation is installed and self-tested. A live S12 run after that repair is not yet evidenced here.
 
+### Configured post-S40 training progression
+
+WEB01-WEB24 is now configured as the next SSI training phase after completion of the core S11-S40 sequence. The installed gate requires:
+
+```text
+S40 execution_complete = true
+AND S40 consolidation = COMMITTED
+AND WEB LEGO = READY
+-> start WEB01-WEB24
+```
+
+This records installed/configured sequencing, not an observed S40 -> WEB01 transition. That transition remains pending future runtime evidence.
+
 - [Detailed 2026-09-26 update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
 - [Machine-readable 2026-09-26 summary](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json)
 - [Preserved 2026-09-23 S11 report](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
