@@ -25,6 +25,29 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 
 **Current public state:** 2026-09-26
 
+## Current training progress — S12 consolidated, S13 next
+
+| Stage | Execution | PASS | INCONCLUSIVE | FAIL | Verified subset | Consolidation |
+|---|---:|---:|---:|---:|---:|---|
+| S11 | 210/210 | 196 (93.3%) | 13 | 1 | 196 | COMMITTED |
+| S12 | 210/210 | 203 (96.7%) | 7 | 0 | 203 | COMMITTED |
+| S13 | not run | — | — | — | — | NEXT |
+
+Observed S11 -> S12 progression:
+
+```text
+verified cases     196 -> 203   (+7)
+unresolved cases    14 -> 7     (-50%)
+FAIL                 1 -> 0
+live evidenced core stages = 2 / 30 in S11-S40
+next stage = S13
+```
+
+This is measured training progress, not a claim that S11 or S12 achieved all-PASS acceptance. Unresolved cases remain preserved rather than being promoted as verified knowledge.
+
+- [Latest S12 live report](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
+- [Current machine-readable training progress](RESULTS/SSI_V5_CURRENT_TRAINING_PROGRESS_20260926.json)
+
 ## Current verified state
 
 ```text
@@ -61,7 +84,7 @@ mean total software flow = 5.2559 ms
 
 These are software execution timings, not physical drone/robot response times.
 
-## Current S11, consolidation and WEB LEGO update — 2026-09-26
+## Current training front: S12 consolidated, S13 next — 2026-09-26
 
 The latest private S11 training run `RUN_20260925T163311Z_820718d5` completed all **210/210 cases** under the revised training-continuation policy: **196 PASS, 13 INCONCLUSIVE and 1 FAIL**. The stage remains **INCONCLUSIVE**, but `execution_complete=true`; FAIL/INCONCLUSIVE cases no longer stop the whole training traversal.
 
@@ -71,7 +94,8 @@ A separate private **WEB LEGO** training extension is now installed and reports 
 
 - [2026-09-26 S11 consolidation + WEB LEGO update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
 - [S12 live training + committed consolidation](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
-- [Machine-readable 2026-09-26 summary](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json)
+- [Current machine-readable training progress](RESULTS/SSI_V5_CURRENT_TRAINING_PROGRESS_20260926.json)
+- [Preserved S11-named machine-readable update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json)
 - [Preserved previous S11 report: 197 PASS / 12 INCONCLUSIVE / 1 FAIL](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
 
 The cross-run prerequisite repair is now backed by a **live post-fix S12 run**. Training run `RUN_20260925T223720Z_6e1b1fc8` executed **210/210 cases**: **203 PASS, 7 INCONCLUSIVE, 0 FAIL**, with `execution_complete=true`. Its verified subset contained 203 cases, while 7 remained excluded. Consolidation transaction `CC_db09484eefd9db783742336b69296eb5` is **COMMITTED** and explicitly references this S12 training run.
@@ -171,9 +195,9 @@ DIRECTOR
 ## Read this repository in this order
 
 1. [REVIEWER_INDEX.md](REVIEWER_INDEX.md)
-2. [Complete previous S11 results and follow-up release](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
-3. [LEGO Pocket, META-LEGO, laboratories and Football World](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md)
-4. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
+2. [Latest S12 live training + committed consolidation](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
+3. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
+4. [LEGO Pocket, META-LEGO, laboratories and Football World](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md)
 5. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)
 6. [RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md)
 7. [SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
