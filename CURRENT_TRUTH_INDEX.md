@@ -7,7 +7,8 @@
 
 ## Use these current documents first
 
-- [Latest S11 consolidation + WEB LEGO update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
+- [Latest S12 live training + committed consolidation](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
+- [S11 consolidation + WEB LEGO update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
 - [Machine-readable latest summary](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json)
 - [Complete previous S11 results: 197 PASS / 12 INCONCLUSIVE / 1 FAIL](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
 - [All 210 case outcomes and source hashes](evidence/S11_20260923/README.md)
@@ -61,7 +62,28 @@ data_policy = SYNTHETIC_ONLY
 
 This is an installation/readiness claim only. Live WEB01-WEB24 completion is not yet claimed.
 
-The cross-run prerequisite repair for learning-mode stage continuation is installed and self-tested. A live S12 run after that repair is not yet evidenced here.
+The cross-run prerequisite repair for learning-mode stage continuation is now validated by live execution. S12 run `RUN_20260925T223720Z_6e1b1fc8` completed all 210 assignments with **203 PASS, 7 INCONCLUSIVE and 0 FAIL**. The verified subset contained 203 cases; 7 remained excluded. Consolidation transaction `CC_db09484eefd9db783742336b69296eb5` is **COMMITTED** and its request explicitly binds `stage_id=S12` and `training_run_id=RUN_20260925T223720Z_6e1b1fc8`.
+
+### Live S12 result
+
+```text
+RUN = RUN_20260925T223720Z_6e1b1fc8
+execution_complete = true
+PASS = 203
+INCONCLUSIVE = 7
+FAIL = 0
+verified_subset = 203
+excluded = 7
+
+CONSOLIDATION = CC_db09484eefd9db783742336b69296eb5
+journal.status = COMMITTED
+request.stage_id = S12
+request.training_run_id = RUN_20260925T223720Z_6e1b1fc8
+```
+
+This confirms real cross-run progression from the earlier S11 state into live S12 training and a committed S12 consolidation. S12 remains non-all-PASS because seven cases were unresolved.
+
+- [Detailed S12 live report](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
 
 ### Configured post-S40 training progression
 
