@@ -98,7 +98,7 @@ Several safeguards stopped execution before successful completion and were repai
 5. The existing consolidation transaction was resumed and completed successfully; the 210 S11 cases were not rerun.
 6. A cross-run prerequisite patch was then installed and self-tested so learning-mode stages can recognize an earlier `execution_complete` stage with a committed consolidation.
 
-**Boundary:** a live S12 run after installation of the cross-run prerequisite patch is not yet evidenced in this repository update.
+**Follow-up:** the cross-run prerequisite patch is now validated by live S12 execution. Run `RUN_20260925T223720Z_6e1b1fc8` executed 210/210 cases with 203 PASS, 7 INCONCLUSIVE and 0 FAIL. Transaction `CC_db09484eefd9db783742336b69296eb5` subsequently reached `journal.status=COMMITTED` and its request explicitly references `stage_id=S12`, the same training run ID, and `excluded_case_count=7`. See [the dedicated S12 report](SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md).
 
 ## 5. WEB LEGO / web-programming training extension
 
@@ -161,12 +161,13 @@ The current evidence supports these bounded statements:
 - Only the 196 verified cases were admitted to the recorded S11 consolidation.
 - BODY_FROZEN and DIRECTOR both reported successful loading while preserving the declared identity split.
 - The WEB LEGO extension is installed and reports READY with 126 LEGO items, 15 templates, 24 stages and 192 cases under a SYNTHETIC_ONLY policy.
+- S12 live execution completed with 203 verified PASS and 7 unresolved cases; its linked consolidation transaction is COMMITTED.
 
 It does **not** establish:
 
 - all-PASS S11 acceptance;
 - resolution of the 14 unresolved S11 cases;
-- S12-S40 completion;
+- S13-S40 completion;
 - successful WEB01-WEB24 live training;
 - physical validation or safety certification;
 - independent external replication;
