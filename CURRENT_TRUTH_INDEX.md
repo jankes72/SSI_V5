@@ -9,7 +9,8 @@
 
 - [Latest S12 live training + committed consolidation](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
 - [S11 consolidation + WEB LEGO update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
-- [Machine-readable latest summary](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json)
+- [Current machine-readable training progress](RESULTS/SSI_V5_CURRENT_TRAINING_PROGRESS_20260926.json)
+- [Preserved S11-named machine-readable update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json)
 - [Complete previous S11 results: 197 PASS / 12 INCONCLUSIVE / 1 FAIL](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
 - [All 210 case outcomes and source hashes](evidence/S11_20260923/README.md)
 - [DEV safeguards and adversarial tests](RESULTS/SSI_V5_DEV_SAFEGUARDS_20260923.md)
@@ -31,7 +32,22 @@ Earlier milestones and historical evidence:
 9. [`VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md`](VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md)
 10. [`docs/index.html`](docs/index.html) — source of the published public research portal.
 
-## Current S11, consolidation and WEB LEGO update — 2026-09-26
+## Current training front — S12 consolidated, S13 next
+
+Current core-training progression:
+
+| Stage | Executed | Verified PASS | Unresolved | FAIL | Consolidation |
+|---|---:|---:|---:|---:|---|
+| S11 | 210/210 | 196 | 14 | 1 | COMMITTED |
+| S12 | 210/210 | 203 | 7 | 0 | COMMITTED |
+| S13 | not run | — | — | — | NEXT |
+
+```text
+S11 -> S12 observed delta
+verified:   196 -> 203
+unresolved:  14 -> 7
+FAIL:         1 -> 0
+```
 
 Latest observed S11 training run:
 
@@ -99,7 +115,8 @@ AND WEB LEGO = READY
 This records installed/configured sequencing, not an observed S40 -> WEB01 transition. That transition remains pending future runtime evidence.
 
 - [Detailed 2026-09-26 update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
-- [Machine-readable 2026-09-26 summary](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json)
+- [Current machine-readable training progress](RESULTS/SSI_V5_CURRENT_TRAINING_PROGRESS_20260926.json)
+- [Preserved S11-named machine-readable update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json)
 - [Preserved 2026-09-23 S11 report](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
 
 ## Preserved V4 baseline — 2026-09-17
