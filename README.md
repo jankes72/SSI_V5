@@ -75,6 +75,24 @@ A separate private **WEB LEGO** training extension is now installed and reports 
 
 A cross-run prerequisite repair has been installed and self-tested so learning-mode stages can recognize earlier execution-complete stages with committed consolidation. A live post-fix S12 run is **not yet evidenced** in this public update.
 
+### Next SSI training stage after S40
+
+The WEB training track is now configured as the **next automatic SSI training phase after S40**. The installed post-S40 gate is designed to start WEB01-WEB24 only after the core training reaches S40 with full execution and a committed consolidation.
+
+```text
+S11 -> S12 -> ... -> S40
+                    |
+                    v
+          execution_complete = true
+          S40 consolidation = COMMITTED
+          WEB LEGO = READY
+                    |
+                    v
+          WEB01 -> WEB02 -> ... -> WEB24
+```
+
+This is a configured training-roadmap/automation claim. The actual live transition from S40 to WEB01 has not yet occurred and is therefore not claimed as observed evidence.
+
 ## ŚWIAT PIŁKI — HIPNOZA
 
 The private SSI V5 installation also contains the **ŚWIAT PIŁKI — HIPNOZA** world/interface layer.
@@ -148,6 +166,7 @@ BODY / ISKRA foundations
 -> S11 cross consolidation PASS for BODY_FROZEN + independent DIRECTOR
 -> cross-run prerequisite repair installed/self-tested; live S12 post-fix run not yet evidenced
 -> WEB LEGO extension installed READY: 126 LEGO items / 15 templates / 24 stages / 192 cases / SYNTHETIC_ONLY
+-> configured next training phase after S40: automatic gated transition to WEB01-WEB24
 ```
 
 Older dated files remain preserved as historical evidence. They are not the recommended starting point unless a reviewer is auditing provenance.
