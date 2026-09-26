@@ -44,5 +44,16 @@
   },
   "s12_s40_completion_claimed": false,
   "physical_validation_claimed": false,
-  "independent_external_replication_claimed": false
+  "independent_external_replication_claimed": false,
+  "training_roadmap": {
+    "core_sequence": "S11-S40",
+    "next_phase": "WEB01-WEB24",
+    "post_s40_auto_hook_installed": true,
+    "gate": {
+      "s40_execution_complete": true,
+      "s40_consolidation_required": "COMMITTED",
+      "web_lego_required": "READY"
+    },
+    "live_s40_to_web01_transition_observed": false
+  }
 }
