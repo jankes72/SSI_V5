@@ -1,8 +1,61 @@
 # SSI V5 — Start Here for Grant and Technical Reviewers
 
-**Updated:** `2026-09-23`  
+**Updated:** `2026-09-26`  
+**Development model:** independent solo R&D. SSI V5 is designed and integrated by one author outside regular working hours. AI coding/reasoning tools support implementation, analysis and review; they do not represent a development team. External collaborators are introduced for domain expertise, challenge design and independent validation.  
+**Author context:** [AUTHOR_CONTEXT.md](AUTHOR_CONTEXT.md)  
 **Repository role:** `PUBLIC EVIDENCE / REVIEW MIRROR + PUBLISHED RESEARCH PORTAL`  
 **Proprietary implementation:** private by design.
+
+## Current live training progression
+
+| Stage | Executed | Verified PASS | Unresolved | FAIL | Consolidation |
+|---|---:|---:|---:|---:|---|
+| S11 | 210/210 | 196 | 14 | 1 | COMMITTED |
+| S12 | 210/210 | 203 | 7 | 0 | COMMITTED |
+| S13 | not run | — | — | — | NEXT |
+
+Latest live progression:
+
+```text
+S11
+RUN_20260925T163311Z_820718d5
+210/210 executed
+196 verified PASS
+13 INCONCLUSIVE
+1 FAIL
+-> verified-subset consolidation COMMITTED
+
+S12
+RUN_20260925T223720Z_6e1b1fc8
+210/210 executed
+203 verified PASS
+7 INCONCLUSIVE
+0 FAIL
+-> verified-subset consolidation COMMITTED
+
+S13 = NEXT
+```
+
+Observed S11 -> S12 delta:
+
+```text
+verified:   196 -> 203
+unresolved:  14 -> 7
+FAIL:         1 -> 0
+```
+
+The operator additionally reports approximately 3x lower wall-clock time and approximately 3x lower token use in S12 relative to comparable S11 work. Those efficiency observations are explicitly separated from repository-backed outcome counts because a complete public provider usage ledger is not yet available. They are treated as an efficiency signal consistent with competence reuse, not as causal proof of Champion-first routing.
+
+Current primary evidence:
+
+- [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
+- [S12 live training + committed consolidation](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
+- [S11 -> S12 quality and efficiency signal](RESULTS/SSI_V5_S11_S12_QUALITY_EFFICIENCY_SIGNAL_20260926.md)
+- [Current machine-readable training progress](RESULTS/SSI_V5_CURRENT_TRAINING_PROGRESS_20260926.json)
+- [S11 consolidation + WEB LEGO update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
+- [DEV safeguards and adversarial tests](RESULTS/SSI_V5_DEV_SAFEGUARDS_20260923.md)
+
+S12 remains non-all-PASS because seven cases are unresolved. S13-S40 completion, physical validation, production readiness and independent external replication are not claimed.
 
 ## Preserved software evidence in one view
 
@@ -39,23 +92,6 @@ INDEPENDENT EXTERNAL REPLICATION = not claimed
 ```
 
 All timings above are execution timings of the software laboratory and must not be interpreted as physical drone or robot response times.
-
-## Current S11 and laboratory update — 2026-09-23
-
-The previous run `RUN_20260922T221012Z_88df9df1` traversed all **210 S11 cases** across seven BODY: **197 PASS, 12 INCONCLUSIVE and 1 FAIL**. S11 remained **INCONCLUSIVE**, and all **29 S12–S40 stages were DEFERRED_PREREQUISITE**, with zero model calls recorded for them. Every case outcome and the original aggregate metrics are now published.
-
-The follow-up private R3 package adds shared training/R&D diagnostics, no-progress detection, measurement controls and a **6 USD daily budget shared by all seven BODY**. Offline validation completed with **105 tests passed and one skipped**. Delivery is recorded; installation on the operator's machine and a new post-R3 run are not yet confirmed.
-
-The signed evidence verifier detected all five controlled tampering attempts. Separate-UID key custody was not verified end to end here; external timestamping is not configured. The run remains **LOCAL_DEVELOPMENT / external_pilot_ready=false**. The UAV lab supports software experiments; physical adapters and an external Tailscale session are not demonstrated.
-
-- [Complete previous S11 results: 197 PASS / 12 INCONCLUSIVE / 1 FAIL](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
-- [All 210 case outcomes and source hashes](evidence/S11_20260923/README.md)
-- [DEV safeguards and adversarial tests](RESULTS/SSI_V5_DEV_SAFEGUARDS_20260923.md)
-- [UAV and permanent R&D laboratory status](SYSTEM/SSI_V5_UAV_AND_RND_LABS_20260923.md)
-- [R3 offline test summary](RESULTS/SSI_V5_LAB_RND_R3_TEST_SUMMARY_20260923.json)
-
-The public outcome index and aggregate reports cover all 210 cases, but the review received full raw case records for only the 13 unresolved cases. The 197 PASS records require verification on the target machine before reuse. This update does not establish causal effects of feelings, learning or role prompts. Earlier dated reports remain unchanged.
-
 
 ## Why this project is now collaboration-ready
 
@@ -225,14 +261,16 @@ Do not infer:
 ## Recommended reading order
 
 1. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
-2. [`CURRENT_TRUTH_INDEX_20260918.md`](CURRENT_TRUTH_INDEX_20260918.md)
-3. [`RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md`](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md)
-4. [`RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json`](RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json)
-5. [`SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md`](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
-6. [`RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md`](RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md)
-7. [`VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md`](VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md)
-8. [`COLLABORATION_AND_PARTNER_ENTRY.md`](COLLABORATION_AND_PARTNER_ENTRY.md)
-9. [`EXTERNAL_CHALLENGE_ENTRY_20260914.md`](EXTERNAL_CHALLENGE_ENTRY_20260914.md)
+2. [`AUTHOR_CONTEXT.md`](AUTHOR_CONTEXT.md)
+3. [`RESULTS/SSI_V5_S11_S12_QUALITY_EFFICIENCY_SIGNAL_20260926.md`](RESULTS/SSI_V5_S11_S12_QUALITY_EFFICIENCY_SIGNAL_20260926.md)
+4. [`CURRENT_TRUTH_INDEX_20260918.md`](CURRENT_TRUTH_INDEX_20260918.md)
+5. [`RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md`](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md)
+6. [`RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json`](RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json)
+7. [`SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md`](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
+8. [`RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md`](RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md)
+9. [`VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md`](VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md)
+10. [`COLLABORATION_AND_PARTNER_ENTRY.md`](COLLABORATION_AND_PARTNER_ENTRY.md)
+11. [`EXTERNAL_CHALLENGE_ENTRY_20260914.md`](EXTERNAL_CHALLENGE_ENTRY_20260914.md)
 
 Older dated files remain preserved as historical evidence. Use the current-state documents above for the latest implementation and continuation status; measured domain results retain their original dates and scope.
 
