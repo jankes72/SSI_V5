@@ -93,6 +93,44 @@ S11 -> S12 -> ... -> S40
 
 This is a configured training-roadmap/automation claim. The actual live transition from S40 to WEB01 has not yet occurred and is therefore not claimed as observed evidence.
 
+
+## Planned Mexico robotics training and external benchmark track — 2026-09-26
+
+A new **planned** research track has been documented for staged robotics training and later external benchmark collaboration with a research professor/team in Mexico.
+
+The design introduces **CZARA** as a dedicated multilingual research-context layer:
+
+```text
+MEXICO RESEARCH TEAM
+-> CZARA (Spanish / English -> original transcript + Polish translation)
+-> DIRECTOR
+-> BODY_FROZEN
+-> LAB
+-> EVIDENCE
+```
+
+CZARA is intentionally separated from DIRECTOR and BODY_FROZEN. It captures external research context, dissatisfaction, corrections and proposed changes; it does not directly control robots or replace the normal SSI training loop.
+
+The planned robotics curriculum contains **48 stages**:
+
+```text
+38 TRAINING
+  12 DRONES
+  12 HUMANOIDS
+   6 MOTHER / CROSS-DOMAIN
+   8 OFFLINE DIRECTOR / LEGO OFFLINE
+
+4 VALIDATION
+6 FINAL CAPSTONE
+```
+
+The intended policy is **Champion-first**: SSI should reuse validated competence before escalating to Challenger/deeper collective reasoning. Final validation/capstone runs are intended to freeze pre-result competence so the hidden case is not silently learned during scoring.
+
+Planned end-of-training scenarios include no-network underground mapping with `SPACE_LEGO`, multi-robot map merge, optical/acoustic offline relay, lost-unit recovery, dynamic map revision and an unseen partner-defined scenario. These are **planned benchmark designs**, not completed physical validations.
+
+- [CZARA — Mexico Research Context, Translation and Learning Layer](SYSTEM/CZARA_MEXICO_RESEARCH_LAYER_20260926.md)
+- [Mexico Robotics Training and External Benchmark Plan](MEXICO_ROBOTICS_TRAINING_AND_BENCHMARK_PLAN_20260926.md)
+
 ## ŚWIAT PIŁKI — HIPNOZA
 
 The private SSI V5 installation also contains the **ŚWIAT PIŁKI — HIPNOZA** world/interface layer.
