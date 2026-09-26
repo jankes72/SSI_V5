@@ -9,14 +9,15 @@ This file is the shortest route through the repository. Historical files remain 
 ## 5-minute review
 
 1. [README.md](README.md) — concise project front door and current state.
-2. [Latest S11 consolidation + WEB LEGO update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md) — full 210-case traversal, verified-subset consolidation and WEB LEGO readiness.
-3. [Machine-readable latest summary](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json).
-4. [Preserved previous S11 results](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md) — earlier 210-case traversal retained for provenance.
-5. [LEGO Pocket, META-LEGO and Director-connected laboratories](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md) — component roles and implementation/validation boundaries.
-6. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md) — canonical pointer to the latest evidence-backed state.
-7. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md) — reviewer-oriented project summary.
-8. [RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md) — latest measured cross-domain laboratory report.
-9. [RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json](RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json) — machine-readable public summary.
+2. [Latest S12 live training + committed consolidation](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md) — 210/210 live S12 traversal, 203 verified cases, 7 unresolved and committed consolidation.
+3. [S11 consolidation + WEB LEGO update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md).
+4. [Machine-readable latest summary](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json).
+5. [Preserved previous S11 results](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md) — earlier 210-case traversal retained for provenance.
+6. [LEGO Pocket, META-LEGO and Director-connected laboratories](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md) — component roles and implementation/validation boundaries.
+7. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md) — canonical pointer to the latest evidence-backed state.
+8. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md) — reviewer-oriented project summary.
+9. [RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md) — latest measured cross-domain laboratory report.
+10. [RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json](RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json) — machine-readable public summary.
 
 
 ## Planned Mexico robotics training / CZARA review path
@@ -63,9 +64,10 @@ The private WEB LEGO extension is installed and reports **READY** with **126 LEG
 
 WEB01-WEB24 is configured as the **next gated SSI training phase after S40**. The installed hook requires S40 `execution_complete=true`, a committed S40 consolidation and WEB LEGO `READY` before the web-training track may start. The live S40 -> WEB01 transition has not yet occurred.
 
-The learning-mode cross-run prerequisite repair is installed and self-tested; a live S12 post-fix run is not yet evidenced in this update.
+The learning-mode cross-run prerequisite repair is now validated by live S12 execution. Run `RUN_20260925T223720Z_6e1b1fc8` completed **210/210 cases: 203 PASS, 7 INCONCLUSIVE, 0 FAIL**. Consolidation transaction `CC_db09484eefd9db783742336b69296eb5` is **COMMITTED** and explicitly linked to this S12 training run; seven cases remained excluded.
 
-- [Detailed 2026-09-26 update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
+- [S12 live training + committed consolidation](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
+- [S11 / WEB LEGO 2026-09-26 update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
 - [Machine-readable 2026-09-26 summary](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json)
 - [Preserved previous S11 results](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
 
