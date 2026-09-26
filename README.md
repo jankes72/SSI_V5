@@ -70,10 +70,11 @@ Only the **196 verified PASS** cases were exported for downstream consolidation.
 A separate private **WEB LEGO** training extension is now installed and reports `READY`: **126 LEGO items, 15 templates, 24 WEB stages, 192 cases, 7 actors**, with `data_policy=SYNTHETIC_ONLY`. This records installation/readiness only; successful WEB01-WEB24 live training is not yet claimed.
 
 - [2026-09-26 S11 consolidation + WEB LEGO update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
+- [S12 live training + committed consolidation](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
 - [Machine-readable 2026-09-26 summary](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json)
 - [Preserved previous S11 report: 197 PASS / 12 INCONCLUSIVE / 1 FAIL](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
 
-A cross-run prerequisite repair has been installed and self-tested so learning-mode stages can recognize earlier execution-complete stages with committed consolidation. A live post-fix S12 run is **not yet evidenced** in this public update.
+The cross-run prerequisite repair is now backed by a **live post-fix S12 run**. Training run `RUN_20260925T223720Z_6e1b1fc8` executed **210/210 cases**: **203 PASS, 7 INCONCLUSIVE, 0 FAIL**, with `execution_complete=true`. Its verified subset contained 203 cases, while 7 remained excluded. Consolidation transaction `CC_db09484eefd9db783742336b69296eb5` is **COMMITTED** and explicitly references this S12 training run.
 
 ### Next SSI training stage after S40
 
@@ -202,7 +203,10 @@ BODY / ISKRA foundations
 -> latest S11 traversal: 210/210 executed; 196 PASS / 13 INCONCLUSIVE / 1 FAIL
 -> verified-subset export: 196 admitted / 14 excluded
 -> S11 cross consolidation PASS for BODY_FROZEN + independent DIRECTOR
--> cross-run prerequisite repair installed/self-tested; live S12 post-fix run not yet evidenced
+-> cross-run prerequisite repair validated by live S12 execution
+-> S12 traversal: 210/210 executed; 203 PASS / 7 INCONCLUSIVE / 0 FAIL
+-> S12 verified subset: 203 admitted / 7 excluded
+-> S12 consolidation COMMITTED: CC_db09484eefd9db783742336b69296eb5
 -> WEB LEGO extension installed READY: 126 LEGO items / 15 templates / 24 stages / 192 cases / SYNTHETIC_ONLY
 -> configured next training phase after S40: automatic gated transition to WEB01-WEB24
 ```
@@ -240,7 +244,7 @@ The public evidence supports bounded software-laboratory claims about persistent
 It does **not** establish:
 
 - all-PASS S11 acceptance; the latest complete traversal contains 14 unresolved cases;
-- S12-S40 completion;
+- S13-S40 completion;
 - successful WEB01-WEB24 live training;
 - physical drone validation;
 - physical rescue-robot validation;
