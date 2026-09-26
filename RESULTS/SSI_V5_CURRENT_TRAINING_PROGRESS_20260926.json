@@ -1,0 +1,60 @@
+{
+  "schema": "ssi.current-training-progress.v1",
+  "date": "2026-09-26",
+  "evidence_boundary": "software/runtime only",
+  "core_training": {
+    "sequence": "S11-S40",
+    "total_stages": 30,
+    "live_execution_evidenced_stages": 2,
+    "current_completed_execution_stage": "S12",
+    "next_stage": "S13",
+    "s11": {
+      "run_id": "RUN_20260925T163311Z_820718d5",
+      "execution_complete": true,
+      "total": 210,
+      "pass": 196,
+      "pass_rate": 0.9333333333333333,
+      "inconclusive": 13,
+      "fail": 1,
+      "unresolved_total": 14,
+      "verified_subset_count": 196,
+      "consolidation_transaction": "CC_82dd0b3af825cd8543dcd59835023a5a",
+      "consolidation_status": "COMMITTED"
+    },
+    "s12": {
+      "run_id": "RUN_20260925T223720Z_6e1b1fc8",
+      "execution_complete": true,
+      "total": 210,
+      "pass": 203,
+      "pass_rate": 0.9666666666666667,
+      "inconclusive": 7,
+      "fail": 0,
+      "unresolved_total": 7,
+      "verified_subset_count": 203,
+      "consolidation_transaction": "CC_db09484eefd9db783742336b69296eb5",
+      "consolidation_status": "COMMITTED"
+    },
+    "observed_delta_s11_to_s12": {
+      "verified_cases_change": 7,
+      "unresolved_cases_change": -7,
+      "unresolved_reduction_fraction": 0.5,
+      "fail_change": -1
+    }
+  },
+  "web_lego": {
+    "status": "READY",
+    "stages": 24,
+    "cases": 192,
+    "lego_items": 126,
+    "templates": 15,
+    "actors": 7,
+    "data_policy": "SYNTHETIC_ONLY",
+    "live_training_completion_claimed": false
+  },
+  "boundaries": {
+    "s13_s40_completion_claimed": false,
+    "web01_web24_live_completion_claimed": false,
+    "physical_validation_claimed": false,
+    "independent_external_replication_claimed": false
+  }
+}
