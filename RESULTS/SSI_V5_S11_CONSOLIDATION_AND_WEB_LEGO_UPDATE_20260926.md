@@ -130,6 +130,28 @@ The extension is designed as a separate WEB01-WEB24 training track covering reus
 
 **Boundary:** this update establishes installation/readiness metadata, not successful completion of WEB01-WEB24 training.
 
+### WEB01-WEB24 as the next SSI training phase
+
+A post-S40 automation hook is installed and self-tested. Its intended sequencing is:
+
+```text
+core training: S11 -> ... -> S40
+                         |
+                         v
+              S40 execution_complete
+                         +
+              S40 consolidation COMMITTED
+                         +
+                  WEB LEGO READY
+                         |
+                         v
+                WEB01 -> ... -> WEB24
+```
+
+The hook is designed not to modify or restart an already-running S-stage training process. It activates only after the S40 gate conditions are satisfied.
+
+**Evidence boundary:** installation and self-test of this sequencing are recorded; a real post-S40 automatic start of WEB01 has not yet been observed.
+
 ## 6. Current interpretation
 
 The current evidence supports these bounded statements:
