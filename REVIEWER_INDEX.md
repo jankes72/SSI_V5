@@ -51,6 +51,8 @@ Only the **196 verified PASS** cases were admitted to the recorded downstream co
 
 The private WEB LEGO extension is installed and reports **READY** with **126 LEGO items, 15 templates, 24 stages, 192 cases, 7 actors** and a **SYNTHETIC_ONLY** data policy. No successful WEB01-WEB24 live completion is claimed yet.
 
+WEB01-WEB24 is configured as the **next gated SSI training phase after S40**. The installed hook requires S40 `execution_complete=true`, a committed S40 consolidation and WEB LEGO `READY` before the web-training track may start. The live S40 -> WEB01 transition has not yet occurred.
+
 The learning-mode cross-run prerequisite repair is installed and self-tested; a live S12 post-fix run is not yet evidenced in this update.
 
 - [Detailed 2026-09-26 update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
