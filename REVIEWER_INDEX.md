@@ -11,7 +11,7 @@ This file is the shortest route through the repository. Historical files remain 
 1. [README.md](README.md) — concise project front door and current state.
 2. [Latest S12 live training + committed consolidation](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md) — 210/210 live S12 traversal, 203 verified cases, 7 unresolved and committed consolidation.
 3. [S11 consolidation + WEB LEGO update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md).
-4. [Machine-readable latest summary](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json).
+4. [Current machine-readable training progress](RESULTS/SSI_V5_CURRENT_TRAINING_PROGRESS_20260926.json) — neutral current-state summary with S11→S12 delta and S13 marked NEXT.
 5. [Preserved previous S11 results](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md) — earlier 210-case traversal retained for provenance.
 6. [LEGO Pocket, META-LEGO and Director-connected laboratories](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md) — component roles and implementation/validation boundaries.
 7. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md) — canonical pointer to the latest evidence-backed state.
@@ -54,7 +54,20 @@ SEPARATE SOFTWARE-LAB RESULTS FROM PHYSICAL VALIDATION
 DO NOT CLAIM UNPUBLISHED OR IN-PROGRESS WORK AS VERIFIED
 ```
 
-## Current S11, consolidation and WEB LEGO update — 2026-09-26
+## Current training progress — S12 consolidated, S13 next
+
+A reviewer can see the current progression without reconstructing it from separate reports:
+
+```text
+S11: 210/210 | 196 verified | 14 unresolved | 1 FAIL | consolidation COMMITTED
+S12: 210/210 | 203 verified |  7 unresolved | 0 FAIL | consolidation COMMITTED
+S13: NEXT
+
+delta S11 -> S12:
++7 verified cases
+-7 unresolved cases (50% reduction)
+1 -> 0 FAIL
+```
 
 The latest private S11 training run `RUN_20260925T163311Z_820718d5` executed **all 210 cases** across the seven actors under the revised continuation policy: **196 PASS, 13 INCONCLUSIVE and 1 FAIL**. The stage remains **INCONCLUSIVE**, while `execution_complete=true`.
 
@@ -68,7 +81,8 @@ The learning-mode cross-run prerequisite repair is now validated by live S12 exe
 
 - [S12 live training + committed consolidation](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
 - [S11 / WEB LEGO 2026-09-26 update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
-- [Machine-readable 2026-09-26 summary](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json)
+- [Current machine-readable training progress](RESULTS/SSI_V5_CURRENT_TRAINING_PROGRESS_20260926.json)
+- [Preserved S11-named machine-readable update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json)
 - [Preserved previous S11 results](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
 
 ## Preserved verified milestone
