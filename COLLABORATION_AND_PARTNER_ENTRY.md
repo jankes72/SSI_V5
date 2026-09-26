@@ -48,6 +48,31 @@ are not established by the offline tests. The [latest runtime excerpt](RESULTS/S
 records three additional BODY_FROZEN training case passes, not full curriculum
 closure. The [Football World](RESULTS/FOOTBALL_WORLD_IMPLEMENTATION_BOUNDARY_20260922.md) retains its own pending data-path checks.
 
+
+## Planned Mexico robotics collaboration track — 2026-09-26
+
+A dedicated future collaboration workflow is now documented for staged robotics training followed by external benchmark work with a research professor/team in Mexico.
+
+The design separates:
+
+```text
+CZARA = multilingual research context / translation
+DIRECTOR = planning / curriculum / revision control
+BODY_FROZEN = technical execution
+LAB = verification
+EVIDENCE = claim boundary
+```
+
+The external portal is intentionally narrow: the partner may submit files, request evidence, propose benchmark modifications, request reruns and inspect shared sanitized results. It is not intended to expose ROOT, the owner filesystem, private DIRECTOR/BODY chats, credentials or arbitrary runtime control.
+
+The planned curriculum contains 48 stages across drones, humanoids, cross-domain/Mother systems and Offline Director / LEGO_OFFLINE, followed by validation and final capstone scenarios. The final independent benchmark is intended to use a previously unseen partner-defined problem with criteria frozen before the run.
+
+See:
+- [CZARA — Mexico Research Context, Translation and Learning Layer](SYSTEM/CZARA_MEXICO_RESEARCH_LAYER_20260926.md)
+- [Mexico Robotics Training and External Benchmark Plan](MEXICO_ROBOTICS_TRAINING_AND_BENCHMARK_PLAN_20260926.md)
+
+This remains a **planned collaboration track**. Successful Mexico execution, physical validation and independent replication are not claimed yet.
+
 ## Relevant collaboration areas
 
 ```text
