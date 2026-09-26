@@ -42,7 +42,6 @@
     "data_policy": "SYNTHETIC_ONLY",
     "live_training_completion_claimed": false
   },
-  "s12_s40_completion_claimed": false,
   "physical_validation_claimed": false,
   "independent_external_replication_claimed": false,
   "training_roadmap": {
@@ -55,5 +54,32 @@
       "web_lego_required": "READY"
     },
     "live_s40_to_web01_transition_observed": false
-  }
+  },
+  "s12": {
+    "run_id": "RUN_20260925T223720Z_6e1b1fc8",
+    "execution_complete": true,
+    "training_status": "TRAINING_COMPLETE_WITH_INCONCLUSIVE",
+    "stage_status": "INCONCLUSIVE",
+    "totals": {
+      "total": 210,
+      "pass": 203,
+      "fail": 0,
+      "inconclusive": 7
+    },
+    "verified_subset_count": 203,
+    "excluded_case_count": 7,
+    "consolidation": {
+      "transaction": "CC_db09484eefd9db783742336b69296eb5",
+      "journal_status": "COMMITTED",
+      "request_stage_id": "S12",
+      "request_training_run_id": "RUN_20260925T223720Z_6e1b1fc8",
+      "request_run_id": "RUN_CONSOL_db09484eefd9db783742336b69296eb5",
+      "request_excluded_case_count": 7,
+      "runner_body_frozen_status": "PASS",
+      "runner_director_status": "PASS",
+      "paid_calls": 0
+    }
+  },
+  "s12_live_completion_claimed": true,
+  "s13_s40_completion_claimed": false
 }
