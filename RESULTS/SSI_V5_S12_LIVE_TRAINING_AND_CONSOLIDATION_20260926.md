@@ -74,7 +74,21 @@ S11 execution complete
 
 This is stronger evidence than the prior self-test-only state.
 
-## 5. Current boundary
+## 5. Observed progression relative to S11
+
+The immediately preceding evidenced stage provides a direct comparison:
+
+| Metric | S11 | S12 | Change |
+|---|---:|---:|---:|
+| Executed cases | 210 | 210 | 0 |
+| Verified PASS | 196 | 203 | +7 |
+| Unresolved | 14 | 7 | -7 (-50%) |
+| FAIL | 1 | 0 | -1 |
+| Consolidation | COMMITTED | COMMITTED | retained |
+
+This is evidence of improved verified-case yield between these two live stages. It does not by itself prove general performance improvement outside the S11/S12 training distributions.
+
+## 6. Current boundary
 
 This update establishes:
 
