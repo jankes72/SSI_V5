@@ -5,6 +5,9 @@
 **External collaboration target:** research professor/team in Mexico  
 **Validation boundary:** the curriculum and collaboration model described here are planned; successful external execution is not yet claimed.
 
+
+**Pre-benchmark integration and measurement protocol:** [Core S11-S40, WEB01-WEB24 and Mexico R&D paths](MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md). The linked protocol records the intended two-chat R&D workflow, CZARA context boundary, OFFLINE_DIRECTOR baseline, later ISKRA comparisons and token/reuse measurements before the first official Mexico benchmark.
+
 ## 1. Goal
 
 The planned Mexico track is intended to test a stronger form of SSI than a one-shot agent benchmark.
