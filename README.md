@@ -14,6 +14,7 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 | Current verified claims | **[CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)** |
 | Reviewer orientation | **[START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)** |
 | Collaboration and external challenges | **[COLLABORATION_AND_PARTNER_ENTRY.md](COLLABORATION_AND_PARTNER_ENTRY.md)** |
+| Mexico pre-benchmark R&D protocol | **[MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md](MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md)** |
 
 ## Project at a glance
 
@@ -23,7 +24,7 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 - **Demonstrated scope:** software laboratory results for drone, humanoid and cross-domain rescue scenarios.
 - **Current boundary:** software evidence is published; physical validation, safety certification and independent external replication are not claimed.
 
-**Current public state:** 2026-09-26
+**Current public state:** 2026-09-28
 
 ## Current training progress — S12 consolidated, S13 next
 
@@ -155,6 +156,7 @@ Planned end-of-training scenarios include no-network underground mapping with `S
 
 - [CZARA — Mexico Research Context, Translation and Learning Layer](SYSTEM/CZARA_MEXICO_RESEARCH_LAYER_20260926.md)
 - [Mexico Robotics Training and External Benchmark Plan](MEXICO_ROBOTICS_TRAINING_AND_BENCHMARK_PLAN_20260926.md)
+- [Pre-Benchmark R&D Protocol: Core, WEB and Mexico paths](MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md)
 
 ## ŚWIAT PIŁKI — HIPNOZA
 
@@ -201,7 +203,8 @@ DIRECTOR
 5. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)
 6. [RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md)
 7. [SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
-8. [COLLABORATION_AND_PARTNER_ENTRY.md](COLLABORATION_AND_PARTNER_ENTRY.md)
+8. [Mexico pre-benchmark R&D protocol](MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md)
+9. [COLLABORATION_AND_PARTNER_ENTRY.md](COLLABORATION_AND_PARTNER_ENTRY.md)
 
 ## Current milestone lineage
 
