@@ -26,13 +26,13 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 
 **Current public state:** 2026-09-28
 
-## Current training progress — S12 consolidated, S13 next
+## Current published training evidence — S12 consolidated
 
 | Stage | Execution | PASS | INCONCLUSIVE | FAIL | Verified subset | Consolidation |
 |---|---:|---:|---:|---:|---:|---|
 | S11 | 210/210 | 196 (93.3%) | 13 | 1 | 196 | COMMITTED |
 | S12 | 210/210 | 203 (96.7%) | 7 | 0 | 203 | COMMITTED |
-| S13 | not run | — | — | — | — | NEXT |
+| S13-S40 | active internal sequence; detailed package not yet published | — | — | — | — | PENDING PUBLIC EVIDENCE |
 
 Observed S11 -> S12 progression:
 
@@ -41,10 +41,12 @@ verified cases     196 -> 203   (+7)
 unresolved cases    14 -> 7     (-50%)
 FAIL                 1 -> 0
 live evidenced core stages = 2 / 30 in S11-S40
-next stage = S13
+next public evidence package = after the active sequence closes or stops
 ```
 
 This is measured training progress, not a claim that S11 or S12 achieved all-PASS acceptance. Unresolved cases remain preserved rather than being promoted as verified knowledge.
+
+The owner reports six committed consolidations through S16 and continued internal execution into the later S-stage sequence, including S19 activity. Those later stages are intentionally not promoted here to verified public results until the uninterrupted sequence closes or stops and its sanitized evidence package is published. See the [pre-benchmark R&D protocol](MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md).
 
 - [Latest S12 live report](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
 - [Current machine-readable training progress](RESULTS/SSI_V5_CURRENT_TRAINING_PROGRESS_20260926.json)
@@ -85,7 +87,7 @@ mean total software flow = 5.2559 ms
 
 These are software execution timings, not physical drone/robot response times.
 
-## Current training front: S12 consolidated, S13 next — 2026-09-26
+## Published training front and active internal continuation
 
 The latest private S11 training run `RUN_20260925T163311Z_820718d5` completed all **210/210 cases** under the revised training-continuation policy: **196 PASS, 13 INCONCLUSIVE and 1 FAIL**. The stage remains **INCONCLUSIVE**, but `execution_complete=true`; FAIL/INCONCLUSIVE cases no longer stop the whole training traversal.
 
@@ -271,7 +273,7 @@ The public evidence supports bounded software-laboratory claims about persistent
 It does **not** establish:
 
 - all-PASS S11 acceptance; the latest complete traversal contains 14 unresolved cases;
-- S13-S40 completion;
+- a published detailed S13-S40 completion package;
 - successful WEB01-WEB24 live training;
 - physical drone validation;
 - physical rescue-robot validation;
