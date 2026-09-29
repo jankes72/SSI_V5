@@ -24,7 +24,7 @@ Lower latency may result from correct reuse of validated competence, but **speed
 
 ## Why V10 exists
 
-In a long execution task — for example building a program from LEGO-style blocks, repairing an artifact, or later operating ROBERT in an environment such as Tetris — finding a merely "similar answer" is not enough.
+In a long execution task — for example building a program from modular building blocks, repairing an artifact, or later operating ROBERT in an environment such as Tetris — finding a merely "similar answer" is not enough.
 
 The system must distinguish, among other things:
 
@@ -34,7 +34,7 @@ The system must distinguish, among other things:
 - what the outcome was;
 - whether the same failure signature already occurred;
 - whether repeating the same route is still justified;
-- whether a different competence, LEGO composition, verification step, or full flow is required.
+- whether a different competence, BLOCKS composition, verification step, or full flow is required.
 
 Routing is therefore defined more broadly:
 
@@ -101,7 +101,7 @@ Instead, the system should move to at least one controlled response:
 ```text
 BLOCK SAME ROUTE
 OR
-MODIFY PARAMETERS / LEGO COMPOSITION
+MODIFY PARAMETERS / BLOCKS COMPOSITION
 OR
 SELECT ALTERNATIVE CHAMPION / COMPETENCE
 OR
@@ -114,11 +114,11 @@ This is more important than latency reduction alone. The router should help the 
 
 ## V10 + LEGO
 
-LEGO decomposes a large task into small contract-driven blocks. V10 is intended to help select and recombine those blocks according to execution state.
+The BLOCKS layer decomposes a large task into small contract-driven blocks. V10 is intended to help select and recombine those blocks according to execution state.
 
 ```text
 GOAL
--> LEGO DECOMPOSITION
+-> BLOCKS DECOMPOSITION
 -> BLOCK A
 -> BLOCK B
 -> TEST
@@ -270,7 +270,7 @@ The next benchmark should measure not only speed and routing correctness, but wh
 6. SAME OR EQUIVALENT STATE A'
 7. V10 SEES HISTORY F + X
 8. PROVE: NO BLIND X RETRY WITHOUT NEW EVIDENCE
-9. ALTERNATIVE ROUTE / MODIFIED LEGO / VERIFY / FULL_FLOW
+9. ALTERNATIVE ROUTE / MODIFIED BLOCKS / VERIFY / FULL_FLOW
 10. RETEST
 11. MEASURE RECOVERY SUCCESS
 12. RESTART
@@ -304,6 +304,6 @@ NEW EVIDENCE AFTER FAIL  -> CONTROLLED RECONSIDERATION
 
 ## Short grant/reviewer definition
 
-**V10 is a stateful predictive competence and recovery router. Its role is not only to locate validated competence quickly, but also to use attempt history and outcomes to choose the next path, avoid blindly repeating known ineffective strategies, and decide between reuse, verification, alternative LEGO composition and full flow.**
+**V10 is a stateful predictive competence and recovery router. Its role is not only to locate validated competence quickly, but also to use attempt history and outcomes to choose the next path, avoid blindly repeating known ineffective strategies, and decide between reuse, verification, alternative BLOCKS composition and full flow.**
 
 Public documentation describes this contract and its evidence without publishing the private predictor implementation or the full Micronetwork engine.
