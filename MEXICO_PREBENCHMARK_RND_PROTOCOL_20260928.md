@@ -17,7 +17,7 @@ This protocol declares in advance:
 - the first Mexico benchmark configuration;
 - two concurrent R&D communication channels;
 - the role of CZARA and unstructured conversation context;
-- the OFFLINE_DIRECTOR / LEGO Navigation / LEGO Space baseline;
+- the OFFLINE_DIRECTOR / BLOCKS Navigator / BLOCKS Space baseline;
 - later comparisons against independent ISKRA trajectories;
 - token, reuse, quality and evidence measurements;
 - preservation of FAIL and INCONCLUSIVE outcomes.
@@ -39,7 +39,7 @@ S11 -> S12 -> ... -> S40
   -> next stage
 ```
 
-The core path develops and measures reusable competence, routing, LEGO/micronetwork use, Champion-Challenger selection, failure handling, evidence and cross-stage continuity.
+The core path develops and measures reusable competence, routing, BLOCKS/micronetwork use, Champion-Challenger selection, failure handling, evidence and cross-stage continuity.
 
 BODY_FROZEN and DIRECTOR receive the same compatible verified competence payload and Champion state through consolidation, while retaining separate identity, runtime, memory, role and decision topology.
 
@@ -52,7 +52,7 @@ After S40, a separate WEB engineering track is configured to start only when:
 ```text
 S40 execution_complete = true
 AND S40 consolidation = COMMITTED
-AND WEB LEGO = READY
+AND WEB BLOCKS = READY
 -> WEB01 -> ... -> WEB24
 ```
 
@@ -61,7 +61,7 @@ Declared readiness metadata:
 ```text
 stages = 24
 cases = 192
-LEGO items = 126
+BLOCKS items = 126
 templates = 15
 actors = 7
 data policy = SYNTHETIC_ONLY
@@ -82,8 +82,8 @@ Its planned scope includes:
 - staged drone and humanoid work;
 - cross-domain coordination;
 - OFFLINE_DIRECTOR;
-- LEGO Navigation;
-- LEGO Space / SPACE_LEGO;
+- BLOCKS Navigator;
+- BLOCKS Space / SPACE_BLOCKS;
 - no-network state and map exchange;
 - CZARA multilingual research context;
 - versioned partner requests;
@@ -157,7 +157,7 @@ A candidate is not promoted merely because it is new. A reusable candidate is ex
 ```text
 competence
 + input/output contract
-+ LEGO / micronetwork artifact
++ BLOCKS / micronetwork artifact
 + LAB result
 + evidence
 + provenance
@@ -253,10 +253,10 @@ Already implemented or prepared components include:
 - contextual conversation memory;
 - DIRECTOR/BODY role separation;
 - consolidated competence compatibility;
-- Champion-Challenger and LEGO mechanisms;
+- Champion-Challenger and BLOCKS mechanisms;
 - laboratory/evidence foundations;
 - CZARA architectural boundary;
-- OFFLINE_DIRECTOR / LEGO Navigation / LEGO Space design.
+- OFFLINE_DIRECTOR / BLOCKS Navigator / BLOCKS Space design.
 
 Remaining work before the first official run includes integration, authorization, shared event chronology, stop/pause control verification, evidence completeness tests, offline synchronization checks, an internal rehearsal and version freeze.
 
@@ -269,8 +269,8 @@ DIRECTOR
 + BODY_FROZEN
 + OFFLINE_DIRECTOR
 + CZARA
-+ LEGO Navigation
-+ LEGO Space
++ BLOCKS Navigator
++ BLOCKS Space
 + LAB
 + EVIDENCE
 ```
@@ -279,7 +279,7 @@ ISKRA agents are excluded from the first baseline benchmark.
 
 The first question is:
 
-> Can the bounded OFFLINE_DIRECTOR mechanism execute a declared offline mission, use validated competence, preserve local state/evidence, build or exchange spatial LEGO fragments and synchronize after reconnection?
+> Can the bounded OFFLINE_DIRECTOR mechanism execute a declared offline mission, use validated competence, preserve local state/evidence, build or exchange spatial BLOCKS fragments and synchronize after reconnection?
 
 Only after this baseline is established should the project compare alternative ISKRA-based offline configurations.
 
@@ -367,7 +367,7 @@ ISKRA1..ISKRA6 Offline
 
 A preregistered research question is:
 
-> Can an independent ISKRA trajectory, using its own training history, affective-state evolution, micronetworks and Champion-Challenger state, outperform the consolidated OFFLINE_DIRECTOR/BODY_FROZEN baseline in selected LEGO Navigation or LEGO Space tasks without internet access?
+> Can an independent ISKRA trajectory, using its own training history, affective-state evolution, micronetworks and Champion-Challenger state, outperform the consolidated OFFLINE_DIRECTOR/BODY_FROZEN baseline in selected BLOCKS Navigator or BLOCKS Space tasks without internet access?
 
 Example hypothesis for ISKRA6:
 
@@ -445,7 +445,7 @@ The comparison should retain:
 - screenshots and interaction recordings;
 - code/version hashes;
 - DOM/component structure where applicable;
-- selected LEGO and templates;
+- selected BLOCKS and templates;
 - Champion/Challenger identity;
 - iterations, tokens, time and cost;
 - automated functional/security/accessibility results;
@@ -469,7 +469,7 @@ actor/runtime identity
 model/provider policy
 initial checkpoint
 selected Champion(s)
-selected LEGO/micronetwork packages
+selected BLOCKS/micronetwork packages
 routing decisions
 token/cost ledger
 execution events
