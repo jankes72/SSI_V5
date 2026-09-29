@@ -42,3 +42,28 @@ S40's native evaluator records `lab_access_revoked=True` unconditionally. Its ag
 The R3 ZIP entrypoint completed with **105 passing tests and one skipped test out of 106** in nine suites. Tests cover source/integrity checks, rollback, event flow, budget reservations, signed evidence, training variants, measurement controls, captured failures and shared LAB diagnostics. The [test summary](SSI_V5_LAB_RND_R3_TEST_SUMMARY_20260923.json) and [per-test list](../evidence/S11_20260923/release_test_results.json) disclose the skipped separate-UID custodian test.
 
 The [previous S11 run](SSI_V5_S11_FULL_RESULTS_20260923.md) completed before these R3 changes. Its outcomes remain 197 PASS, 12 INCONCLUSIVE and 1 FAIL. The uploaded run did not contain a measurement-controls report. Offline safeguards testing cannot retroactively certify that run or establish external pilot readiness. The new package has been delivered, with operator installation and the next training result awaiting evidence.
+
+## 29 September addendum — causal controls, notary buffer limit and observability non-interference
+
+Additional DEV feedback from **Hamid Ahmadian** on 28 September extends the earlier safeguard plan in two important ways.
+
+First, the verifier must demonstrate not only that bad records are rejected, but that the **hash-chain break itself** caused rejection. The next suite therefore preregisters:
+
+- previous-hash-only mutation;
+- missing-sequence test;
+- a negative-control mutation of a field explicitly outside the signed/hash-dependent payload.
+
+The negative control is expected to leave the chain valid. This is intended to provide evidence in both directions rather than only testing hand-built bad cases.
+
+Second, the external-signing/notary outage policy must define what happens when the local queue of unsigned external attestations reaches its limit. The preregistered default is a bounded queue followed by **DEGRADED_SAFE_MODE** rather than silently dropping old evidence or continuing indefinitely on local-only authority.
+
+These requirements are now frozen in:
+
+- [Pre-S20 observability and evidence hardening preregistration](../SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)
+- [External review feedback and attribution](../EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)
+
+A separate S19 incident also demonstrated a different safeguard requirement: instrumentation must not change the system being measured. Routing observability added to distinguish actual Champion execution and Full Flow from ambiguous markers was followed by a post-stage consolidation regression. This is recorded as an **observability-induced integration regression**, and the next observer revision is blocked behind a matched A/B non-interference gate.
+
+See [S19 observability incident and pre-S20 status](SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md).
+
+These 29 September controls are preregistered requirements. They are **not yet claimed as passed**.
