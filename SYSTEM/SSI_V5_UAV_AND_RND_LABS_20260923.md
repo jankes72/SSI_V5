@@ -39,11 +39,11 @@ The workspace can support an external UAV research collaboration, including the 
 
 The software stop acts on the experiment executor; it has not been shown to stop a physical vehicle. Tailscale connectivity alone does not supply a hardware driver or hardware safety interlock. Physical experiments require their own integrated adapter, measured behavior, expert control and evidence.
 
-## Relation to LEGO and earlier domain results
+## Relation to BLOCKS and earlier domain results
 
-LEGO Pocket retains candidates and provenance; Pocket Micro keeps qualified derived packages; META-LEGO supplies compatibility and evidence metadata. The previous preflight checked one qualified package for seven actors, without proving the whole catalog executable. R3 adds no automatic promotion or unrestricted cross-BODY consolidation.
+BLOCKS Pocket retains candidates and provenance; Pocket Micro keeps qualified derived packages; META-BLOCKS supplies compatibility and evidence metadata. The previous preflight checked one qualified package for seven actors, without proving the whole catalog executable. R3 adds no automatic promotion or unrestricted cross-BODY consolidation.
 
-The earlier [LEGO and Director-connected architecture](LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md) and [Dual Mother software results](../RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md) retain their original scope and dates. The new small UAV bench is a different harness. Historical humanoid software results do not demonstrate physical humanoid deployment. The [Football World](../RESULTS/FOOTBALL_WORLD_IMPLEMENTATION_BOUNDARY_20260922.md) still needs its own complete data/outcome validation.
+The earlier [BLOCKS and Director-connected architecture](LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md) and [Dual Mother software results](../RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md) retain their original scope and dates. The new small UAV bench is a different harness. Historical humanoid software results do not demonstrate physical humanoid deployment. The [Football World](../RESULTS/FOOTBALL_WORLD_IMPLEMENTATION_BOUNDARY_20260922.md) still needs its own complete data/outcome validation.
 
 ## Verified release boundary
 
