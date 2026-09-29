@@ -11,7 +11,7 @@ BODY_FROZEN + ISKRA1..ISKRA6 = 7/7 runtimes available
 DIRECTOR = independent runtime
 LUNA profiles = available
 
-S11 smoke after META-LEGO = PASS
+S11 smoke after META-BLOCKS = PASS
 FULL S11 BODY_FROZEN = STOPPED_INCONCLUSIVE
 current result = 22 PASS / 0 FAIL / 1 INCONCLUSIVE
 current run = RUN_20260920T170905Z_77204708
@@ -31,8 +31,8 @@ FREE-ONLY / FULL-FLOW BASELINE
 -> PAID COST/QUALITY MODEL CASCADE
 -> TECHNOLOGY RADAR
 -> CONTRACT BINDING
--> LEGO POCKET / POCKET MICRO
--> META-LEGO
+-> BLOCKS POCKET / POCKET MICRO
+-> META-BLOCKS
 -> ROUTER V10 + MICRONETWORK-ASSISTED SELECTION
 -> NATIVE EVALUATOR
 -> INDEPENDENT COLLECTIVE VERIFICATION
@@ -46,7 +46,7 @@ The earlier "~2 days" free-only/full-flow duration is an operator estimate, not 
 The current staged model path is:
 
 ```text
-validated LEGO / deterministic rules / cache
+validated BLOCKS / deterministic rules / cache
 -> local Ollama Qwen3 4B when suitable
 -> Groq free path when suitable
 -> Together DeepSeek V4 Flash
@@ -56,9 +56,9 @@ validated LEGO / deterministic rules / cache
 
 The native evaluator remains authoritative. Provider/model output alone does not create a training PASS.
 
-## DIRECTOR Technology Radar and LEGO lifecycle
+## DIRECTOR Technology Radar and BLOCKS lifecycle
 
-The Technology Radar, LEGO Pocket integration and V5 interface path are implemented according to the previously documented development plan.
+The Technology Radar, BLOCKS Pocket integration and V5 interface path are implemented according to the previously documented development plan.
 
 Controlled lifecycle:
 
@@ -67,7 +67,7 @@ FORUMS / TECHNICAL SOURCES / NEW SOLUTIONS
 -> TECHNOLOGY RADAR / SCOUT
 -> DELTA + LAST_SEEN
 -> NEED MATCHER + NOVELTY CHECK
--> LEGO POCKET RAW CANDIDATE
+-> BLOCKS POCKET RAW CANDIDATE
 -> LICENSE / SECURITY / PROVENANCE CHECK
 -> LAB + TEST + EVIDENCE
 -> CHAMPION / CHALLENGER / HOLD / REJECT
@@ -78,7 +78,7 @@ FORUMS / TECHNICAL SOURCES / NEW SOLUTIONS
 
 Radar discovery is candidate-only until the applicable gates are complete.
 
-## Current LEGO Pocket state
+## Current BLOCKS Pocket state
 
 Latest recorded audit:
 
@@ -111,11 +111,11 @@ network calls = 0
 
 This proves schema/contract compilation only; it is not a training PASS.
 
-## Pocket Micro and META-LEGO
+## Pocket Micro and META-BLOCKS
 
-The canonical LEGO ID remains unchanged. META-LEGO adds routing/evidence metadata separately.
+The canonical BLOCKS ID remains unchanged. META-BLOCKS adds routing/evidence metadata separately.
 
-Latest recorded META-LEGO check before the current run:
+Latest recorded META-BLOCKS check before the current run:
 
 ```text
 META_LEGO_BUILD = PASS
@@ -206,7 +206,7 @@ full evidence-backed domain validation = PENDING
 The validation order remains:
 
 ```text
-MICRONETWORKS / META-LEGO / ROUTING
+MICRONETWORKS / META-BLOCKS / ROUTING
 -> FULL FLOW / DATA PATH
 -> BODY_FROZEN staged validation
 -> BODY_FROZEN + ISKRA1..ISKRA6 knowledge consolidation
@@ -229,7 +229,7 @@ EARLIER ARCHITECTURE AND ROADMAP
 -> TECHNOLOGY RADAR
 -> CONTRACT BINDING
 -> POCKET MICRO
--> META-LEGO
+-> META-BLOCKS
 -> S11 LIVE VALIDATION
 -> LATER S12-S40 VALIDATION
 ```
@@ -240,7 +240,7 @@ The preserved V4 evidence remains authoritative for its completed run. V5 adds i
 
 The defensible public statement at this snapshot is:
 
-> SSI V5 reached a terminal S11 INCONCLUSIVE gate after a controlled architecture evolution that includes a paid cost/quality model cascade, Technology Radar, Contract Binding, Pocket Micro and META-LEGO. The immediately preceding S11 smoke passed with both native evaluation and Collective Intelligence PASS. In the current full BODY_FROZEN S11 run, 22 cases completed PASS with 0 FAIL before `S11-04-05`, where native evaluation remained PASS but Collective Intelligence returned INCONCLUSIVE/PARTIAL. The stage stopped there and is not claimed complete.
+> SSI V5 reached a terminal S11 INCONCLUSIVE gate after a controlled architecture evolution that includes a paid cost/quality model cascade, Technology Radar, Contract Binding, Pocket Micro and META-BLOCKS. The immediately preceding S11 smoke passed with both native evaluation and Collective Intelligence PASS. In the current full BODY_FROZEN S11 run, 22 cases completed PASS with 0 FAIL before `S11-04-05`, where native evaluation remained PASS but Collective Intelligence returned INCONCLUSIVE/PARTIAL. The stage stopped there and is not claimed complete.
 
 No physical validation, safety certification, production readiness, unrestricted autonomous code ingestion, independent external replication, full S11 completion, S12-S40 completion, AGI or consciousness is claimed.
 
