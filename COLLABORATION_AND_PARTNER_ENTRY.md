@@ -65,7 +65,7 @@ EVIDENCE = claim boundary
 
 The external portal is intentionally narrow: the partner may submit files, request evidence, propose benchmark modifications, request reruns and inspect shared sanitized results. It is not intended to expose ROOT, the owner filesystem, private DIRECTOR/BODY chats, credentials or arbitrary runtime control.
 
-The planned curriculum contains 48 stages across drones, humanoids, cross-domain/Mother systems and Offline Director / LEGO_OFFLINE, followed by validation and final capstone scenarios. The final independent benchmark is intended to use a previously unseen partner-defined problem with criteria frozen before the run.
+The planned curriculum contains 48 stages across drones, humanoids, cross-domain/Mother systems and Offline Director / BLOCKS_OFFLINE, followed by validation and final capstone scenarios. The final independent benchmark is intended to use a previously unseen partner-defined problem with criteria frozen before the run.
 
 See:
 - [CZARA — Mexico Research Context, Translation and Learning Layer](SYSTEM/CZARA_MEXICO_RESEARCH_LAYER_20260926.md)
