@@ -5,77 +5,66 @@
 **Architecture author:** Paweł Jankiewicz (`jankes72`, `PROGRAMMER_ROOT`)  
 **Development model:** independent solo R&D; designed and integrated by one author outside regular working hours. AI coding/reasoning tools support implementation, analysis and review; they do not constitute a development team. External collaborators are introduced for domain expertise, challenge design and independent validation.  
 **Author context:** [AUTHOR_CONTEXT.md](AUTHOR_CONTEXT.md)  
-**Updated:** `2026-09-26`  
+**Updated:** `2026-09-29`  
 **Repository role:** public research/evidence mirror with a published observer portal; proprietary implementation remains private.
 
-## Current training front — S12 consolidated, S13 next — 2026-09-26
+## Current training front — S19 executed; pre-S20 hardening active — 2026-09-29
 
-The current evidenced core-training progression is:
+The current evidenced core progression is:
 
-| Stage | Executed | Verified PASS | Unresolved | FAIL | Consolidation |
+| Stage | Executed | PASS | INCONCLUSIVE | FAIL | Consolidation |
 |---|---:|---:|---:|---:|---|
-| S11 | 210/210 | 196 | 14 | 1 | COMMITTED |
+| S11 | 210/210 | 196 | 13 | 1 | COMMITTED |
 | S12 | 210/210 | 203 | 7 | 0 | COMMITTED |
-| S13 | not run | — | — | — | NEXT |
+| S13 | 210/210 | 203 | 6 | 1 | COMMITTED |
+| S14 | 210/210 | 208 | 1 | 1 | COMMITTED |
+| S15 | 210/210 | 175 | 31 | 4 | COMMITTED |
+| S16 | 210/210 | 209 | 1 | 0 | COMMITTED |
+| S17 | 210/210 | 206 | 2 | 2 | COMMITTED |
+| S18 | 210/210 | 196 | 12 | 2 | COMMITTED |
+| **S19** | **210/210** | **182** | **24** | **4** | **NOT YET COMMITTED** |
 
-Latest S11 run:
+S19 completed execution under `RUN_20260929T005550Z_a356e86c`. The stage then stopped at cross-consolidation transaction `CC_09eae1705906e8acaa653eb28123fc84`.
 
-```text
-RUN = RUN_20260925T163311Z_820718d5
-execution_complete = true
-PASS = 196
-INCONCLUSIVE = 13
-FAIL = 1
-verified_subset = 196
-CONSOLIDATION = CC_82dd0b3af825cd8543dcd59835023a5a
-status = COMMITTED
-```
+The stop followed integration of new routing observability designed to make previously ambiguous routing claims directly measurable: actual Champion selection/execution, exact reuse, Full Flow entry and provider/model fallback. The current classification is **OBSERVABILITY-INDUCED INTEGRATION REGRESSION**. The completed S19 case verdicts remain valid as recorded; the post-stage consolidation is not yet claimed successful.
 
-Only the 196 verified PASS cases were admitted to the recorded S11 consolidation. The unresolved cases remained excluded rather than being relabeled.
-
-Live S12 then traversed all 210 assignments:
+Before S20, SSI has frozen a hardening plan covering:
 
 ```text
-RUN = RUN_20260925T223720Z_6e1b1fc8
-execution_complete = true
-PASS = 203
-INCONCLUSIVE = 7
-FAIL = 0
-verified_subset = 203
-CONSOLIDATION = CC_db09484eefd9db783742336b69296eb5
-status = COMMITTED
+PASSIVE ROUTING OBSERVER
++ OBSERVABILITY NON-INTERFERENCE A/B GATE
++ CHAMPION SELECTED / EXECUTED / RESULT EVIDENCE
++ EXACT REUSE / FULL FLOW / PROVIDER FALLBACK EVIDENCE
++ MODEL/PROVIDER CORRELATION
++ CROSS-ACTOR FAILURE MATRIX
++ 7/7 TRANSACTION-BOUND CONSOLIDATION SNAPSHOT
++ HASH-CHAIN CAUSAL CONTROLS
++ HASH-CHAIN NEGATIVE CONTROL
++ NOTARY OUTAGE + BUFFER-LIMIT SAFE MODE
 ```
 
-This provides live cross-run evidence of:
+The evidence-chain requirements were materially strengthened by external DEV feedback from **Hamid Ahmadian**. His contributions are explicitly attributed in the public review record.
+
+Current continuation target:
 
 ```text
-S11 execution
--> verified-subset consolidation
--> S12 execution
--> verified-subset consolidation
--> S13 NEXT
+pre-S20 hardening PASS
+-> S19 consolidation COMMITTED
+-> S20 ... S40
+-> S40 consolidation COMMITTED
+-> WEB01 ... WEB24
+-> final routing / Champion / Full-Flow / model diagnostic report
 ```
-
-Observed S11 -> S12 quality delta:
-
-```text
-verified:   196 -> 203
-unresolved:  14 -> 7
-FAIL:         1 -> 0
-```
-
-The operator additionally reports approximately 3x lower wall-clock time and approximately 3x lower model-token use for S12 relative to the comparable S11 work. These efficiency observations are not yet backed by a complete public provider usage ledger and are therefore published as an operator-observed signal, not an audited cost benchmark or causal proof of Champion routing.
 
 Current evidence links:
 
 - [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
-- [S12 live training + committed consolidation](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
-- [S11 -> S12 quality and efficiency signal](RESULTS/SSI_V5_S11_S12_QUALITY_EFFICIENCY_SIGNAL_20260926.md)
-- [Current machine-readable training progress](RESULTS/SSI_V5_CURRENT_TRAINING_PROGRESS_20260926.json)
-- [S11 consolidation + WEB LEGO update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
-- [DEV safeguards and adversarial tests](RESULTS/SSI_V5_DEV_SAFEGUARDS_20260923.md)
+- [S19 observability incident and current stop point](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)
+- [Pre-S20 hardening preregistration](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)
+- [External review feedback and attribution](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)
+- [S13-S18 routing evidence](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
 
-S12 is not presented as all-PASS: seven cases remain unresolved. S13-S40 completion, physical validation and independent external replication are not claimed.
+S20-S40 completion, successful S19 consolidation, live WEB01-WEB24 completion, physical validation and independent external replication are not claimed.
 
 ## Preserved earlier software results
 
@@ -239,7 +228,10 @@ OBSERVE != CONTROL
 
 1. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
 2. [`AUTHOR_CONTEXT.md`](AUTHOR_CONTEXT.md)
-3. [`RESULTS/SSI_V5_S11_S12_QUALITY_EFFICIENCY_SIGNAL_20260926.md`](RESULTS/SSI_V5_S11_S12_QUALITY_EFFICIENCY_SIGNAL_20260926.md)
+3. [`RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md`](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)
+4. [`SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md`](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)
+5. [`EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md`](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)
+6. [`RESULTS/SSI_V5_S11_S12_QUALITY_EFFICIENCY_SIGNAL_20260926.md`](RESULTS/SSI_V5_S11_S12_QUALITY_EFFICIENCY_SIGNAL_20260926.md)
 4. [`CURRENT_TRUTH_INDEX_20260918.md`](CURRENT_TRUTH_INDEX_20260918.md)
 5. [`RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md`](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md)
 6. [`RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json`](RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json)
