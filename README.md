@@ -12,7 +12,10 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 |---|---|
 | First technical review | **[REVIEWER_INDEX.md](REVIEWER_INDEX.md)** |
 | Current verified claims | **[CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)** |
-| Latest S13-S18 training/routing evidence | **[RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)** |
+| Latest S19 incident / current stop point | **[RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)** |
+| Pre-S20 hardening preregistration | **[SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)** |
+| External review attribution | **[EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)** |
+| S13-S18 routing evidence | **[RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)** |
 | Reviewer orientation | **[START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)** |
 | Collaboration and external challenges | **[COLLABORATION_AND_PARTNER_ENTRY.md](COLLABORATION_AND_PARTNER_ENTRY.md)** |
 | Mexico pre-benchmark R&D protocol | **[MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md](MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md)** |
@@ -27,43 +30,63 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 
 **Current public state:** 2026-09-29
 
-## Current published training evidence — S13-S18 completed
+## Current published training evidence — S19 executed, consolidation hardening in progress
 
-The current public training front now includes completed software/runtime evidence for **S13 through S18** from run `RUN_20260926T064644Z_793783ad`.
+The current public core-training front now includes completed software/runtime evidence for **S13 through S19**.
 
-| Stage | Execution | PASS | INCONCLUSIVE | FAIL | PASS rate | Consolidation |
-|---|---:|---:|---:|---:|---:|---|
-| S11 | 210/210 | 196 | 13 | 1 | 93.3% | COMMITTED |
-| S12 | 210/210 | 203 | 7 | 0 | 96.7% | COMMITTED |
-| S13 | 210/210 | 203 | 6 | 1 | 96.67% | COMMITTED |
-| S14 | 210/210 | 208 | 1 | 1 | 99.05% | COMMITTED |
-| S15 | 210/210 | 175 | 31 | 4 | 83.33% | COMMITTED |
-| S16 | 210/210 | 209 | 1 | 0 | 99.52% | COMMITTED |
-| S17 | 210/210 | 206 | 2 | 2 | 98.10% | COMMITTED |
-| S18 | 210/210 | 196 | 12 | 2 | 93.33% | COMMITTED |
-| **S13-S18 total** | **1,260/1,260** | **1,197** | **53** | **10** | **95.00%** | **6 committed consolidations** |
+| Stage | Execution | PASS | INCONCLUSIVE | FAIL | Consolidation |
+|---|---:|---:|---:|---:|---|
+| S13 | 210/210 | 203 | 6 | 1 | COMMITTED |
+| S14 | 210/210 | 208 | 1 | 1 | COMMITTED |
+| S15 | 210/210 | 175 | 31 | 4 | COMMITTED |
+| S16 | 210/210 | 209 | 1 | 0 | COMMITTED |
+| S17 | 210/210 | 206 | 2 | 2 | COMMITTED |
+| S18 | 210/210 | 196 | 12 | 2 | COMMITTED |
+| **S19** | **210/210** | **182** | **24** | **4** | **NOT YET COMMITTED** |
 
-Unique-case routing audit for completed S13-S18:
+S19 full execution was completed in `RUN_20260929T005550Z_a356e86c` with `execution_complete=true`. Its verified subset contains **182 cases**; 28 FAIL/INCONCLUSIVE cases remain preserved and excluded from the verified consolidation subset.
+
+The post-stage consolidation transaction `CC_09eae1705906e8acaa653eb28123fc84` then stopped on the runtime SNAPSHOT path. Current root-cause classification is **OBSERVABILITY-INDUCED INTEGRATION REGRESSION**: the regression appeared while integrating new routing observability intended to distinguish actual Champion execution, exact reuse and Full Flow escalation from catalog labels or ambiguous log markers.
+
+This is intentionally separated from the S19 capability result:
 
 ```text
-routing provenance present = 1,260 / 1,260
-micronetwork_used          = 1,260 / 1,260
-v10_used                   = 1,260 / 1,260
-collective_used            = 1,260 / 1,260
-provider_gateway_used      = 1,199 / 1,260 (95.16%)
-
-automatic_champion=true    = 0 / 1,260
-champion_route_used        = 0 / 1,260
-no_automatic_champion=true = 1,260 / 1,260
+S19 CASE EXECUTION = COMPLETE
+S19 VERDICTS = 182 PASS / 24 INCONCLUSIVE / 4 FAIL
+S19 CONSOLIDATION = NOT YET CLAIMED COMMITTED
+S20 START = NOT YET CLAIMED
 ```
 
-This supports Micronetwork/V10 participation in the recorded runtime path. It does **not** yet establish a measured percentage of exact reuse vs full-flow escalation because the older receipts lack a canonical final per-case route decision.
+The new pre-S20 hardening is being preregistered **before** continuation. It includes:
 
-S19 was interrupted after BODY_FROZEN produced 30 cases: **14 PASS, 16 INCONCLUSIVE, 0 FAIL**. After the host interruption, 15 already-existing BODY_FROZEN case files were missing CASE attestations; the recovery procedure restored only those attestations, preserved their original results, rechecked coverage and sealed the source run as interrupted. No successful post-recovery ISKRA1 S19 execution is claimed yet.
+- passive routing telemetry with an observability non-interference A/B gate;
+- explicit Champion available/selected/executed/result evidence;
+- explicit exact-reuse / Full-Flow / provider-fallback evidence;
+- per-model/provider and cross-actor failure correlation;
+- a 7/7 transaction-bound consolidation SNAPSHOT gate;
+- chain-specific evidence attacks plus a negative control;
+- explicit external-notary outage and buffer-limit behavior.
 
-- [Detailed S13-S18 routing and recovery report](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
-- [Machine-readable S13-S18 public summary](RESULTS/SSI_V5_S13_S18_ROUTING_PUBLIC_SUMMARY_20260929.json)
-- [Previous S12 live report](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
+External reviewer **Hamid Ahmadian** is credited for feedback that materially shaped the evidence-hardening requirements, including executor/verifier separation, append-only signed hash chains, mutation/deletion/forged-PASS tests, previous-hash/missing-sequence causal controls, the negative control, and the notary buffer-limit question. Attribution is feedback provenance, not an endorsement or independent audit.
+
+Current records:
+
+- [S19 observability incident and pre-S20 status](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)
+- [Pre-S20 hardening preregistration](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)
+- [External review feedback and attribution](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)
+- [Machine-readable pre-S20 hardening summary](RESULTS/SSI_V5_PRE_S20_HARDENING_PUBLIC_SUMMARY_20260929.json)
+- [S13-S18 routing and recovery report](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
+
+The intended continuation remains:
+
+```text
+pre-S20 hardening gates
+-> S19 consolidation COMMITTED
+-> S20 ... S40
+-> S40 consolidation COMMITTED
+-> WEB01 ... WEB24
+-> final routing / Champion / Full-Flow / model / cross-actor diagnostic report
+```
 
 ## Current verified state
 
@@ -251,6 +274,10 @@ BODY / ISKRA foundations
 -> S12 verified subset: 203 admitted / 7 excluded
 -> S12 consolidation COMMITTED: CC_db09484eefd9db783742336b69296eb5
 -> WEB LEGO extension installed READY: 126 LEGO items / 15 templates / 24 stages / 192 cases / SYNTHETIC_ONLY
+-> S13-S18 completed with committed consolidations
+-> S19 fully executed: 182 PASS / 24 INCONCLUSIVE / 4 FAIL
+-> S19 post-stage consolidation blocked during routing-observability integration
+-> pre-S20 observability/evidence hardening preregistered
 -> configured next training phase after S40: automatic gated transition to WEB01-WEB24
 ```
 
@@ -287,7 +314,7 @@ The public evidence supports bounded software-laboratory claims about persistent
 It does **not** establish:
 
 - all-PASS S11 acceptance; the latest complete traversal contains 14 unresolved cases;
-- a published detailed S13-S40 completion package;
+- committed S19 cross-consolidation or completed S20-S40 training;
 - successful WEB01-WEB24 live training;
 - physical drone validation;
 - physical rescue-robot validation;
