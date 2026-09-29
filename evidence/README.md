@@ -1,11 +1,37 @@
 # SSI V5 — Public Evidence Index
 
-**Current index sync:** `2026-09-23`  
-**Latest update:** complete recorded S11 outcomes, DEV safeguards and laboratory status, `2026-09-23`; historical domain measurements retain their original dates.
+**Current index sync:** `2026-09-29`  
+**Latest update:** S19 full execution, observability-induced consolidation regression, pre-S20 hardening preregistration and external review attribution, `2026-09-29`; historical measurements retain their original dates.
 
 This directory preserves sanitized evidence, lineage, failure/repair history, integrity references and claim boundaries. Historical files are intentionally retained.
 
 > For the shortest reviewer path, start with [../REVIEWER_INDEX.md](../REVIEWER_INDEX.md).
+
+## Current S19 / pre-S20 evidence — 2026-09-29
+
+Current public boundary:
+
+```text
+S19 execution = 210/210 complete
+PASS = 182
+INCONCLUSIVE = 24
+FAIL = 4
+verified subset = 182
+S19 consolidation = NOT YET CLAIMED COMMITTED
+S20 = NOT YET CLAIMED STARTED
+```
+
+The S19 post-stage stop is currently classified as an **observability-induced integration regression** introduced while routing telemetry was being expanded to distinguish real Champion execution and Full Flow from catalog state or ambiguous log markers.
+
+Primary current records:
+
+- [S19 observability incident and current stop point](../RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)
+- [Pre-S20 hardening preregistration](../SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)
+- [External review feedback and attribution](../EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)
+- [Machine-readable pre-S20 hardening summary](../RESULTS/SSI_V5_PRE_S20_HARDENING_PUBLIC_SUMMARY_20260929.json)
+- [S13-S18 routing evidence](../RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
+
+The preregistered evidence additions include chain-specific tamper controls, a negative control, explicit notary outage/buffer-limit behavior and an observability non-interference gate. External DEV reviewer Hamid Ahmadian is credited for feedback that materially shaped those evidence requirements.
 
 ## Complete S11 outcomes and safeguards — 2026-09-23
 
