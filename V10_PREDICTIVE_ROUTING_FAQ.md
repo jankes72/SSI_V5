@@ -23,7 +23,7 @@ A decision may result in:
 
 - `REUSE_TOP1`;
 - `VERIFY_TOPK`;
-- an alternative competence or LEGO composition;
+- an alternative competence or BLOCKS composition;
 - blocking blind retry of a known ineffective route;
 - `FULL_FLOW` for unknown/conflict/low-confidence cases.
 
@@ -50,7 +50,7 @@ After detecting a repeated negative outcome, V10 should consider:
 ```text
 BLOCK SAME ROUTE
 OR
-MODIFY PARAMETERS / LEGO COMPOSITION
+MODIFY PARAMETERS / BLOCKS COMPOSITION
 OR
 SELECT ALTERNATIVE CHAMPION
 OR
@@ -67,7 +67,7 @@ LEGO decomposes a large problem into smaller blocks. V10 helps decide which veri
 
 ```text
 GOAL
--> LEGO BLOCKS
+-> BLOCKS UNITS
 -> EXECUTION
 -> TEST
 -> FAILURE
