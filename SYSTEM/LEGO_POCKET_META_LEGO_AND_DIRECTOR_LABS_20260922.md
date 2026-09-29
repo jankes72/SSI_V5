@@ -1,10 +1,10 @@
-# SSI V5 — LEGO Pocket, META-LEGO and Director-connected laboratories
+# SSI V5 — BLOCKS Pocket, META-BLOCKS and Director-connected laboratories
 
 **Public update:** 2026-09-22  
 **Author / project owner:** Paweł Jankiewicz  
 **Scope:** implemented private software architecture and the evidence available for it.
 
-This document describes four connected areas: LEGO Pocket, META-LEGO, the
+This document describes four connected areas: BLOCKS Pocket, META-BLOCKS, the
 laboratory services available to the independent DIRECTOR, and ŚWIAT PIŁKI —
 HIPNOZA. The proprietary source, resource archives, private configuration,
 model prompts and operational access remain private.
@@ -13,15 +13,15 @@ model prompts and operational access remain private.
 
 | Component | Role | Evidence and current boundary |
 | --- | --- | --- |
-| LEGO Pocket | Retains raw collected resources and their provenance for possible reuse | Implemented candidate store; collection does not establish executable competence |
+| BLOCKS Pocket | Retains raw collected resources and their provenance for possible reuse | Implemented candidate store; collection does not establish executable competence |
 | Pocket Micro | Derived packages with contracts, compatibility, qualification and lifecycle evidence | The latest operator excerpt reports one qualified package checked for seven actors; raw resources remain distinct |
-| META-LEGO | Adds routing, capability, contract and evidence metadata around stable canonical identities | Implemented; earlier published checks and current case-level results exist; full S11–S40 closure remains open |
+| META-BLOCKS | Adds routing, capability, contract and evidence metadata around stable canonical identities | Implemented; earlier published checks and current case-level results exist; full S11–S40 closure remains open |
 | Local R&D LAB | Executes bounded data-transformation graphs and compares actual results with a reference | CPU execution is covered by the offline regression suite; candidate output alone cannot certify the comparison |
 | Controlled-experiment LAB | Registers protocols, executes bounded experiments, retains reports and expert reviews | Implemented and offline-tested; a real external reviewer session has not been demonstrated in this update |
 | Independent DIRECTOR | Coordinates resource needs, consumes evidence and can delegate registered experiments to BODY_FROZEN | Separate core and lifecycle; new delegation path is implemented, not newly proven end-to-end by the S11 excerpt |
 | ŚWIAT PIŁKI — HIPNOZA | Persistent world, versioned teacher knowledge and staged hypothesis/strategy laboratories | Implemented and previously operator-observed; live data ingress and outcome closure still require their own evidence |
 
-## LEGO Pocket and qualified reuse
+## BLOCKS Pocket and qualified reuse
 
 Raw acquired resources remain in the original Pocket. Prepared executable
 packages occupy a separate derived layer. Qualification carries the package's
@@ -40,9 +40,9 @@ not evidence that every raw Pocket resource has been executed or validated.
 The resource totals in the dated 2026-09-20 report remain historical audit
 figures; this update does not claim a fresh full-catalog census.
 
-## META-LEGO
+## META-BLOCKS
 
-META-LEGO preserves canonical LEGO identities and adds separately recorded
+META-BLOCKS preserves canonical BLOCKS identities and adds separately recorded
 metadata for routing, contract compatibility, evidence status and structural
 checks. Missing evidence remains explicitly unknown.
 
@@ -127,7 +127,7 @@ challenges still require their own declared inputs, baselines and criteria.
 The Football World is Paweł Jankiewicz's existing project line. Its documented
 architecture includes versioned T17/Hermes knowledge, agent-specific Pocket,
 SOLO/SHARED laboratories, grouping, allocation, decision freezing and separate
-outcome evaluation. The latest S11 LEGO results do not validate football data
+outcome evaluation. The latest S11 BLOCKS results do not validate football data
 ingress, match identity, predictions, results or profitability.
 
 The architecture retains independent DIRECTOR and BODY cores. DIRECTOR-led
