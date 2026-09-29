@@ -14,7 +14,7 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 | Supplied S20 runtime log | **[S20 live training excerpt](evidence/S20_20260929/S20_LIVE_EXCERPT_RUN_20260929T212837Z_92e516e1.log)** |
 | First technical review | **[REVIEWER_INDEX.md](REVIEWER_INDEX.md)** |
 | Current verified claims | **[CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)** |
-| Latest S19 incident / current stop point | **[RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)** |
+| Historical S19 incident / pre-S20 snapshot | **[RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)** |
 | Pre-S20 hardening preregistration | **[SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)** |
 | External review attribution | **[EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)** |
 | S13-S18 routing evidence | **[RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)** |
@@ -31,11 +31,19 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 - **Demonstrated scope:** software laboratory results for drone, humanoid and cross-domain rescue scenarios.
 - **Current boundary:** software evidence is published; physical validation, safety certification and independent external replication are not claimed.
 
-**Current public state:** 2026-09-29
+**Current public state:** 2026-09-30
 
-## Current published training evidence — S19 executed, consolidation hardening in progress
+## Ongoing training — operator update, 2026-09-30
 
-The current public core-training front now includes completed software/runtime evidence for **S13 through S19**.
+The project operator reports that the main SSI training is still running alongside CZARA training. The [supplied S20 runtime log](evidence/S20_20260929/S20_LIVE_EXCERPT_RUN_20260929T212837Z_92e516e1.log) is a partial capture of the ongoing run, not its final result.
+
+The [Dynamic Mission V6 installation note](DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md) describes a separate training track: at the recorded snapshot its scheduler is active, waiting for CZARA completion, with 0/72 dynamic missions completed.
+
+The earlier S19/pre-S20 snapshot below is preserved as historical context.
+
+## Historical pre-S20 snapshot — S19 incident and consolidation hardening
+
+The pre-S20 snapshot below includes completed software/runtime evidence for **S13 through S19**.
 
 | Stage | Execution | PASS | INCONCLUSIVE | FAIL | Consolidation |
 |---|---:|---:|---:|---:|---|
