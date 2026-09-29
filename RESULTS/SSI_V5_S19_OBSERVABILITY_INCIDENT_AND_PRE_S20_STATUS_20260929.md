@@ -119,10 +119,10 @@ Observed readiness checks include:
 Pocket Micro = READY
 Doctor = READY_FOR_BOOT
 BODY_FROZEN + ISKRA1..ISKRA6 runtimes = 7/7
-WEB LEGO preflight = READY
+WEB BLOCKS preflight = READY
 WEB stages = 24
 WEB cases = 192
-WEB LEGO items = 126
+WEB BLOCKS items = 126
 WEB templates = 15
 WEB data policy = SYNTHETIC_ONLY
 ```
