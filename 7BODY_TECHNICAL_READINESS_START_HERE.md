@@ -1,5 +1,7 @@
 # SSI V5 — 7-BODY Technical Readiness
 
+> **Historical stage record:** the results, next-step labels and dates below describe this stage's original snapshot. For current core/CZARA/V6 progress use [latest public status](LATEST_PUBLIC_STATUS_20260930.md) and [REVIEWER_INDEX.md](REVIEWER_INDEX.md).
+
 **Status:** `CLOSED / 7 OF 7 PASS`  
 **Updated:** `2026-09-09`  
 **Global readiness:** `PASS IN DECLARED TECHNICAL-READINESS SCOPE`  

@@ -1,11 +1,38 @@
 # SSI V5 — Collaboration and Partner Entry
 
-**Updated:** `2026-09-22`  
-**Preserved cross-domain evidence:** `2026-09-18`; current LAB/continuation update: `2026-09-22`  
+**Updated:** `2026-09-30`  
+**Preserved cross-domain evidence:** `2026-09-18`; latest internal training/installation snapshot: `2026-09-30`  
 **Status:** `OPEN TO CONTROLLED RESEARCH / TECHNOLOGY / CONSORTIUM COLLABORATION`  
 **Public boundary:** proprietary implementation remains private unless separately licensed or explicitly disclosed.
 
 > Grant and technical reviewers should start with [REVIEWER_INDEX.md](REVIEWER_INDEX.md).
+
+## Current training snapshot — 2026-09-30
+
+The operator reports that core SSI training continues alongside CZARA. The public S20 log is a partial capture of `RUN_20260929T212837Z_92e516e1`, not a final stage report.
+
+| Track | Latest published state | Evidence scope |
+|---|---|---|
+| Core S20-S40 | S20 started; core training reported ongoing | S20 excerpt: 116 unique completed cases, 79 PASS, 37 INCONCLUSIVE, 0 FAIL; full-stage completion not established |
+| S19 recovery / pre-S20 hardening | Startup banner reports hardening PASS and S19 COMMITTED | Operator-supplied log; transaction journal and detailed gate reports are not included in this excerpt |
+| CZARA Live Training | Running alongside core training | Internal integration snapshot; 160-item curriculum = 120 training + 24 frozen validation + 16 frozen Champion benchmark; final completion not published |
+| Dynamic Mission V6 | Installed; scheduler active; waiting for CZARA completion | 0/72 live missions at the recorded snapshot; 48 training + 12 frozen validation + 12 frozen blind Champion |
+| WEB01-WEB24 | Installed / READY; gated after S40 | Requires S40 execution completion and COMMITTED consolidation; live completion not published |
+| Mexico external benchmark | Planned | Internal simulations do not establish Mexico-side execution or independent validation |
+
+The S20 excerpt covers BODY_FROZEN, ISKRA1, ISKRA2 and part of ISKRA3. It declares seven actors and 210 assignments, but does not include results for the entire stage. All captured verdicts remain visible, including the 37 INCONCLUSIVE rows. The excerpt contains no FAIL rows; the final stage outcome is not established.
+
+V6 adds complete evolving experiments with a simulated professor and four experts, DIRECTOR-managed MAIN/SHADOW branches and explicit formal promotion. Installer self-tests are recorded separately from live mission results. The planned 48-stage Mexico robotics curriculum, the 160-item CZARA curriculum and the 72-mission V6 curriculum are distinct programmes.
+
+Current sources:
+
+- [Latest public status and source map](LATEST_PUBLIC_STATUS_20260930.md)
+- [Machine-readable current snapshot](RESULTS/SSI_V5_CURRENT_PUBLIC_STATUS_20260930.json)
+- [Supplied S20 runtime log](evidence/S20_20260929/S20_LIVE_EXCERPT_RUN_20260929T212837Z_92e516e1.log)
+- [Parallel core/CZARA integration simulation](MEXICO_PARALLEL_INTEGRATION_SIMULATION_20260929.md)
+- [V6 installation, self-tests and post-CZARA gate](DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md)
+
+The earlier S19 incident and pre-S20 preregistration remain historical evidence. S20 startup is now recorded; the excerpt does not independently audit all prerequisite gates or the S19 commit.
 
 ## What SSI can offer a partner now
 
@@ -44,34 +71,32 @@ public research portal remains observer-only.
 
 The [component overview](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md) describes the capability and limits. A real
 external expert session, independent replication and physical vehicle integration
-are not established by the offline tests. The [latest runtime excerpt](RESULTS/SSI_V5_LAB_AND_S11_CONTINUATION_20260922.md)
+are not established by the offline tests. The [earlier 22 September runtime excerpt](RESULTS/SSI_V5_LAB_AND_S11_CONTINUATION_20260922.md)
 records three additional BODY_FROZEN training case passes, not full curriculum
 closure. The [Football World](RESULTS/FOOTBALL_WORLD_IMPLEMENTATION_BOUNDARY_20260922.md) retains its own pending data-path checks.
 
 
-## Planned Mexico robotics collaboration track — 2026-09-26
+## Mexico research collaboration and internal preparation
 
-A dedicated future collaboration workflow is now documented for staged robotics training followed by external benchmark work with a research professor/team in Mexico.
+The external benchmark remains planned. Its internal preparation now includes concurrent core/CZARA training and the installed post-CZARA V6 scheduler.
 
-The design separates:
+The role boundary remains:
 
 ```text
-CZARA = multilingual research context / translation
-DIRECTOR = planning / curriculum / revision control
+CZARA = multilingual research context / translation / roles
+DIRECTOR = official contract / planning / routing / revision decisions
 BODY_FROZEN = technical execution
 LAB = verification
-EVIDENCE = claim boundary
+EVIDENCE = retained outcomes / provenance
 ```
 
-The external portal is intentionally narrow: the partner may submit files, request evidence, propose benchmark modifications, request reruns and inspect shared sanitized results. It is not intended to expose ROOT, the owner filesystem, private DIRECTOR/BODY chats, credentials or arbitrary runtime control.
+The planned partner interface supports files, shared results, evidence requests and proposed revisions under a declared session contract. The [team interface record](MEXICO_TEAM_INTERFACE_AND_CZARA_CONTROLS_20260928.md) describes these controls. Remote two-endpoint operation has not been established by the internal simulation.
 
-The planned curriculum contains 48 stages across drones, humanoids, cross-domain/Mother systems and Offline Director / BLOCKS_OFFLINE, followed by validation and final capstone scenarios. The final independent benchmark is intended to use a previously unseen partner-defined problem with criteria frozen before the run.
+The [pre-benchmark protocol](MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md) separates collaborative R&D and authorized revisions from official frozen scoring. The first intended baseline uses DIRECTOR, BODY_FROZEN, OFFLINE_DIRECTOR and CZARA; ISKRA comparisons follow later. The [48-stage robotics plan](MEXICO_ROBOTICS_TRAINING_AND_BENCHMARK_PLAN_20260926.md), 160-item CZARA training and 72-mission V6 programme are distinct.
 
-See:
-- [CZARA — Mexico Research Context, Translation and Learning Layer](SYSTEM/CZARA_MEXICO_RESEARCH_LAYER_20260926.md)
-- [Mexico Robotics Training and External Benchmark Plan](MEXICO_ROBOTICS_TRAINING_AND_BENCHMARK_PLAN_20260926.md)
+V6 prepares complete dynamic experiments with a simulated professor and four experts. MAIN remains official; exploratory SHADOW variants require explicit authorization and formal promotion lineage. Its installation self-tests do not establish live mission effectiveness.
 
-This remains a **planned collaboration track**. Successful Mexico execution, physical validation and independent replication are not claimed yet.
+See [latest public status](LATEST_PUBLIC_STATUS_20260930.md), [parallel integration simulation](MEXICO_PARALLEL_INTEGRATION_SIMULATION_20260929.md) and [V6 installation/gate](DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md). Mexico-side execution, physical validation and independent replication remain unestablished.
 
 ## Relevant collaboration areas
 

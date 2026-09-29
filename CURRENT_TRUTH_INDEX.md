@@ -1,13 +1,22 @@
 # SSI V5 — CURRENT TRUTH INDEX
 
-**Status:** `CURRENT POINTER / 2026-09-29`  
+**Status:** `CURRENT POINTER / 2026-09-30`  
 **Repository role:** public evidence mirror with a published research portal; proprietary implementation remains private.  
 **Evidence boundary:** software-only unless a document explicitly states otherwise.  
 **History rule:** earlier dated truth/status files remain preserved and are not retroactively rewritten.
 
 ## Use these current documents first
 
-- [S19 observability incident and pre-S20 status](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)
+- [Latest public status](LATEST_PUBLIC_STATUS_20260930.md)
+- [Machine-readable latest snapshot](RESULTS/SSI_V5_CURRENT_PUBLIC_STATUS_20260930.json)
+- [Supplied S20 runtime log](evidence/S20_20260929/S20_LIVE_EXCERPT_RUN_20260929T212837Z_92e516e1.log)
+- [Dynamic Mission V6 installation and gate](DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md)
+- [Parallel core/CZARA integration simulation](MEXICO_PARALLEL_INTEGRATION_SIMULATION_20260929.md)
+- [Current grant-reviewer summary](GRANT_REVIEWER_CURRENT_STATUS_20260930.md)
+- [Mexico pre-benchmark R&D protocol](MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md)
+- [Mexico team interface and CZARA controls](MEXICO_TEAM_INTERFACE_AND_CZARA_CONTROLS_20260928.md)
+
+- [Historical S19 incident and pre-S20 snapshot](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)
 - [Pre-S20 observability/evidence hardening preregistration](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)
 - [External review feedback and attribution](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)
 - [Latest S13-S18 routing and crash-recovery evidence](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
@@ -15,7 +24,7 @@
 - [Latest S12 live training + committed consolidation](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
 - [S11 -> S12 quality and efficiency signal](RESULTS/SSI_V5_S11_S12_QUALITY_EFFICIENCY_SIGNAL_20260926.md)
 - [S11 consolidation + WEB BLOCKS update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
-- [Current machine-readable training progress](RESULTS/SSI_V5_CURRENT_TRAINING_PROGRESS_20260926.json)
+- [Preserved 26 September training-progress snapshot](RESULTS/SSI_V5_CURRENT_TRAINING_PROGRESS_20260926.json)
 - [Preserved S11-named machine-readable update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json)
 - [Complete previous S11 results: 197 PASS / 12 INCONCLUSIVE / 1 FAIL](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
 - [All 210 case outcomes and source hashes](evidence/S11_20260923/README.md)
@@ -38,92 +47,50 @@ Earlier milestones and historical evidence:
 9. [`VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md`](VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md)
 10. [`docs/index.html`](docs/index.html) — source of the published public research portal.
 
-## Current training front — S19 fully executed; consolidation hardening before S20
+## Current training snapshot — 2026-09-30
 
-Current evidenced progression:
+The operator reports that core SSI training continues alongside CZARA. The public S20 log is a partial capture of `RUN_20260929T212837Z_92e516e1`, not a final stage report.
 
-| Stage | Executed | PASS | INCONCLUSIVE | FAIL | Consolidation |
+| Track | Latest published state | Evidence scope |
+|---|---|---|
+| Core S20-S40 | S20 started; core training reported ongoing | S20 excerpt: 116 unique completed cases, 79 PASS, 37 INCONCLUSIVE, 0 FAIL; full-stage completion not established |
+| S19 recovery / pre-S20 hardening | Startup banner reports hardening PASS and S19 COMMITTED | Operator-supplied log; transaction journal and detailed gate reports are not included in this excerpt |
+| CZARA Live Training | Running alongside core training | Internal integration snapshot; 160-item curriculum = 120 training + 24 frozen validation + 16 frozen Champion benchmark; final completion not published |
+| Dynamic Mission V6 | Installed; scheduler active; waiting for CZARA completion | 0/72 live missions at the recorded snapshot; 48 training + 12 frozen validation + 12 frozen blind Champion |
+| WEB01-WEB24 | Installed / READY; gated after S40 | Requires S40 execution completion and COMMITTED consolidation; live completion not published |
+| Mexico external benchmark | Planned | Internal simulations do not establish Mexico-side execution or independent validation |
+
+The S20 excerpt covers BODY_FROZEN, ISKRA1, ISKRA2 and part of ISKRA3. It declares seven actors and 210 assignments, but does not include results for the entire stage. All captured verdicts remain visible, including the 37 INCONCLUSIVE rows. The excerpt contains no FAIL rows; the final stage outcome is not established.
+
+V6 adds complete evolving experiments with a simulated professor and four experts, DIRECTOR-managed MAIN/SHADOW branches and explicit formal promotion. Installer self-tests are recorded separately from live mission results. The planned 48-stage Mexico robotics curriculum, the 160-item CZARA curriculum and the 72-mission V6 curriculum are distinct programmes.
+
+Current sources:
+
+- [Latest public status and source map](LATEST_PUBLIC_STATUS_20260930.md)
+- [Machine-readable current snapshot](RESULTS/SSI_V5_CURRENT_PUBLIC_STATUS_20260930.json)
+- [Supplied S20 runtime log](evidence/S20_20260929/S20_LIVE_EXCERPT_RUN_20260929T212837Z_92e516e1.log)
+- [Parallel core/CZARA integration simulation](MEXICO_PARALLEL_INTEGRATION_SIMULATION_20260929.md)
+- [V6 installation, self-tests and post-CZARA gate](DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md)
+
+The earlier S19 incident and pre-S20 preregistration remain historical evidence. S20 startup is now recorded; the excerpt does not independently audit all prerequisite gates or the S19 commit.
+
+## Preserved completed core stages
+
+| Stage | Executed | PASS | INCONCLUSIVE | FAIL | Consolidation evidence |
 |---|---:|---:|---:|---:|---|
-| S11 | 210/210 | 196 | 13 | 1 | COMMITTED |
-| S12 | 210/210 | 203 | 7 | 0 | COMMITTED |
-| S13 | 210/210 | 203 | 6 | 1 | COMMITTED |
-| S14 | 210/210 | 208 | 1 | 1 | COMMITTED |
-| S15 | 210/210 | 175 | 31 | 4 | COMMITTED |
-| S16 | 210/210 | 209 | 1 | 0 | COMMITTED |
-| S17 | 210/210 | 206 | 2 | 2 | COMMITTED |
-| S18 | 210/210 | 196 | 12 | 2 | COMMITTED |
-| **S19** | **210/210** | **182** | **24** | **4** | **NOT YET COMMITTED** |
+| S11 | 210/210 | 196 | 13 | 1 | COMMITTED in published stage report |
+| S12 | 210/210 | 203 | 7 | 0 | COMMITTED in published stage report |
+| S13 | 210/210 | 203 | 6 | 1 | COMMITTED in published stage report |
+| S14 | 210/210 | 208 | 1 | 1 | COMMITTED in published stage report |
+| S15 | 210/210 | 175 | 31 | 4 | COMMITTED in published stage report |
+| S16 | 210/210 | 209 | 1 | 0 | COMMITTED in published stage report |
+| S17 | 210/210 | 206 | 2 | 2 | COMMITTED in published stage report |
+| S18 | 210/210 | 196 | 12 | 2 | COMMITTED in published stage report |
+| S19 | 210/210 | 182 | 24 | 4 | Initially blocked; later S20 startup reports COMMITTED |
 
-S19 full execution run:
+S19 case execution is recorded under `RUN_20260929T005550Z_a356e86c`. Its original incident report recorded a blocked post-stage transaction `CC_09eae1705906e8acaa653eb28123fc84`, classified as `OBSERVABILITY_INDUCED_INTEGRATION_REGRESSION`. The later S20 banner reports recovery and states that S19 cases were not rerun. It does not identify a recovery transaction ID, so no new journal identity is inferred.
 
-```text
-RUN = RUN_20260929T005550Z_a356e86c
-execution_complete = true
-PASS = 182
-INCONCLUSIVE = 24
-FAIL = 4
-verified subset = 182
-excluded = 28
-```
-
-The S19 case workload completed. The subsequent cross-consolidation transaction `CC_09eae1705906e8acaa653eb28123fc84` did not commit.
-
-### Why consolidation stopped
-
-The stop is not classified as a case-level capability failure. It occurred after routing observability was expanded to resolve an earlier evidence gap: S13-S18 receipts showed Micronetwork/V10 participation but could not prove whether a Champion was actually selected/executed or when Full Flow actually ran.
-
-The current root-cause classification is:
-
-```text
-OBSERVABILITY_INDUCED_INTEGRATION_REGRESSION
-```
-
-The observability/continuation integration altered the runtime/bootstrap path used by post-stage consolidation. Recovery also exposed a stale pending-mission condition in BODY_FROZEN. The stage results remain preserved; S19 is not being relabeled.
-
-### Pre-S20 hardening is now preregistered
-
-Before continuation, SSI will gate:
-
-- observer non-interference using matched A/B execution;
-- explicit Champion available/selected/executed/result evidence;
-- explicit exact-reuse / Full-Flow / provider-fallback evidence;
-- model/provider correlation;
-- seven-actor failure overlap;
-- 7/7 actor+transaction SNAPSHOT validation;
-- chain-specific previous-hash and missing-sequence tests;
-- a hash-chain negative control;
-- explicit notary/signing outage behavior;
-- explicit unsigned-attestation buffer-limit safe mode.
-
-The evidence-chain additions are materially informed by external DEV review from **Hamid Ahmadian**. His feedback is attributed separately rather than presented as an SSI-originated requirement.
-
-### Current continuation boundary
-
-```text
-S19 execution = complete
-S19 consolidation = not yet claimed COMMITTED
-S20 = not yet claimed started
-WEB01-WEB24 = READY package, not yet claimed live-complete
-```
-
-Target sequence:
-
-```text
-pre-S20 hardening PASS
--> S19 consolidation COMMITTED
--> S20 ... S40
--> S40 consolidation COMMITTED
--> WEB01 ... WEB24
--> final diagnostic report
-```
-
-Current primary records:
-
-- [S19 incident / current stop point](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)
-- [Pre-S20 hardening preregistration](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)
-- [External review attribution](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)
-- [Machine-readable pre-S20 summary](RESULTS/SSI_V5_PRE_S20_HARDENING_PUBLIC_SUMMARY_20260929.json)
-- [S13-S18 routing evidence](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
+The frozen hardening requirements and Hamid Ahmadian's attributed feedback remain linked above. Publishing a startup PASS banner does not establish an independent audit of every requirement. WEB remains configured after S40 execution completion plus committed consolidation; V6 is gated separately by CZARA completion.
 
 ## Preserved V4 baseline — 2026-09-17
 
@@ -151,7 +118,7 @@ POST-S10 HUMANOID SOFTWARE LAB = PASS / 15 scenarios
 POST-S10 TOTAL = 21 scenarios
 ```
 
-## Current milestone — 2026-09-18 — SSI Dual Mother Cross Lab V1
+## Preserved milestone — 2026-09-18 — SSI Dual Mother Cross Lab V1
 
 Two independent domain-side controllers were exercised together:
 

@@ -10,6 +10,8 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 
 | Purpose | Document |
 |---|---|
+| Latest synchronized public status | **[LATEST_PUBLIC_STATUS_20260930.md](LATEST_PUBLIC_STATUS_20260930.md)** |
+| Current grant-reviewer summary | **[GRANT_REVIEWER_CURRENT_STATUS_20260930.md](GRANT_REVIEWER_CURRENT_STATUS_20260930.md)** |
 | Dynamic Mission V6 — installation and post-CZARA gate | **[DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md](DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md)** |
 | Supplied S20 runtime log | **[S20 live training excerpt](evidence/S20_20260929/S20_LIVE_EXCERPT_RUN_20260929T212837Z_92e516e1.log)** |
 | First technical review | **[REVIEWER_INDEX.md](REVIEWER_INDEX.md)** |
@@ -33,13 +35,32 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 
 **Current public state:** 2026-09-30
 
-## Ongoing training — operator update, 2026-09-30
+## Current training snapshot — 2026-09-30
 
-The project operator reports that the main SSI training is still running alongside CZARA training. The [supplied S20 runtime log](evidence/S20_20260929/S20_LIVE_EXCERPT_RUN_20260929T212837Z_92e516e1.log) is a partial capture of the ongoing run, not its final result.
+The operator reports that core SSI training continues alongside CZARA. The public S20 log is a partial capture of `RUN_20260929T212837Z_92e516e1`, not a final stage report.
 
-The [Dynamic Mission V6 installation note](DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md) describes a separate training track: at the recorded snapshot its scheduler is active, waiting for CZARA completion, with 0/72 dynamic missions completed.
+| Track | Latest published state | Evidence scope |
+|---|---|---|
+| Core S20-S40 | S20 started; core training reported ongoing | S20 excerpt: 116 unique completed cases, 79 PASS, 37 INCONCLUSIVE, 0 FAIL; full-stage completion not established |
+| S19 recovery / pre-S20 hardening | Startup banner reports hardening PASS and S19 COMMITTED | Operator-supplied log; transaction journal and detailed gate reports are not included in this excerpt |
+| CZARA Live Training | Running alongside core training | Internal integration snapshot; 160-item curriculum = 120 training + 24 frozen validation + 16 frozen Champion benchmark; final completion not published |
+| Dynamic Mission V6 | Installed; scheduler active; waiting for CZARA completion | 0/72 live missions at the recorded snapshot; 48 training + 12 frozen validation + 12 frozen blind Champion |
+| WEB01-WEB24 | Installed / READY; gated after S40 | Requires S40 execution completion and COMMITTED consolidation; live completion not published |
+| Mexico external benchmark | Planned | Internal simulations do not establish Mexico-side execution or independent validation |
 
-The earlier S19/pre-S20 snapshot below is preserved as historical context.
+The S20 excerpt covers BODY_FROZEN, ISKRA1, ISKRA2 and part of ISKRA3. It declares seven actors and 210 assignments, but does not include results for the entire stage. All captured verdicts remain visible, including the 37 INCONCLUSIVE rows. The excerpt contains no FAIL rows; the final stage outcome is not established.
+
+V6 adds complete evolving experiments with a simulated professor and four experts, DIRECTOR-managed MAIN/SHADOW branches and explicit formal promotion. Installer self-tests are recorded separately from live mission results. The planned 48-stage Mexico robotics curriculum, the 160-item CZARA curriculum and the 72-mission V6 curriculum are distinct programmes.
+
+Current sources:
+
+- [Latest public status and source map](LATEST_PUBLIC_STATUS_20260930.md)
+- [Machine-readable current snapshot](RESULTS/SSI_V5_CURRENT_PUBLIC_STATUS_20260930.json)
+- [Supplied S20 runtime log](evidence/S20_20260929/S20_LIVE_EXCERPT_RUN_20260929T212837Z_92e516e1.log)
+- [Parallel core/CZARA integration simulation](MEXICO_PARALLEL_INTEGRATION_SIMULATION_20260929.md)
+- [V6 installation, self-tests and post-CZARA gate](DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md)
+
+The earlier S19 incident and pre-S20 preregistration remain historical evidence. S20 startup is now recorded; the excerpt does not independently audit all prerequisite gates or the S19 commit.
 
 ## Historical pre-S20 snapshot — S19 incident and consolidation hardening
 
@@ -57,18 +78,18 @@ The pre-S20 snapshot below includes completed software/runtime evidence for **S1
 
 S19 full execution was completed in `RUN_20260929T005550Z_a356e86c` with `execution_complete=true`. Its verified subset contains **182 cases**; 28 FAIL/INCONCLUSIVE cases remain preserved and excluded from the verified consolidation subset.
 
-The post-stage consolidation transaction `CC_09eae1705906e8acaa653eb28123fc84` then stopped on the runtime SNAPSHOT path. Current root-cause classification is **OBSERVABILITY-INDUCED INTEGRATION REGRESSION**: the regression appeared while integrating new routing observability intended to distinguish actual Champion execution, exact reuse and Full Flow escalation from catalog labels or ambiguous log markers.
+The post-stage consolidation transaction `CC_09eae1705906e8acaa653eb28123fc84` then stopped on the runtime SNAPSHOT path. The incident's recorded root-cause classification was **OBSERVABILITY-INDUCED INTEGRATION REGRESSION**: the regression appeared while integrating new routing observability intended to distinguish actual Champion execution, exact reuse and Full Flow escalation from catalog labels or ambiguous log markers.
 
 This is intentionally separated from the S19 capability result:
 
 ```text
 S19 CASE EXECUTION = COMPLETE
 S19 VERDICTS = 182 PASS / 24 INCONCLUSIVE / 4 FAIL
-S19 CONSOLIDATION = NOT YET CLAIMED COMMITTED
-S20 START = NOT YET CLAIMED
+S19 CONSOLIDATION AT THAT SNAPSHOT = NOT YET COMMITTED
+S20 START AT THAT SNAPSHOT = NOT YET CLAIMED
 ```
 
-The new pre-S20 hardening is being preregistered **before** continuation. It includes:
+The pre-S20 hardening requirements were preregistered **before** continuation. They include:
 
 - passive routing telemetry with an observability non-interference A/B gate;
 - explicit Champion available/selected/executed/result evidence;
@@ -80,7 +101,7 @@ The new pre-S20 hardening is being preregistered **before** continuation. It inc
 
 External reviewer **Hamid Ahmadian** is credited for feedback that materially shaped the evidence-hardening requirements, including executor/verifier separation, append-only signed hash chains, mutation/deletion/forged-PASS tests, previous-hash/missing-sequence causal controls, the negative control, and the notary buffer-limit question. Attribution is feedback provenance, not an endorsement or independent audit.
 
-Current records:
+Historical incident and requirement records:
 
 - [S19 observability incident and pre-S20 status](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)
 - [Pre-S20 hardening preregistration](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)
@@ -88,7 +109,7 @@ Current records:
 - [Machine-readable pre-S20 hardening summary](RESULTS/SSI_V5_PRE_S20_HARDENING_PUBLIC_SUMMARY_20260929.json)
 - [S13-S18 routing and recovery report](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
 
-The intended continuation remains:
+The continuation sequence recorded at that earlier snapshot was:
 
 ```text
 pre-S20 hardening gates
@@ -99,7 +120,7 @@ pre-S20 hardening gates
 -> final routing / Champion / Full-Flow / model / cross-actor diagnostic report
 ```
 
-## Current verified state
+## Preserved verified software results
 
 ```text
 V4 S1-S10 = COMPLETE / PASS
@@ -145,7 +166,7 @@ A separate private **WEB BLOCKS** training extension is now installed and report
 
 - [2026-09-26 S11 consolidation + WEB BLOCKS update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
 - [S12 live training + committed consolidation](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
-- [Current machine-readable training progress](RESULTS/SSI_V5_CURRENT_TRAINING_PROGRESS_20260926.json)
+- [Preserved 26 September machine-readable training progress](RESULTS/SSI_V5_CURRENT_TRAINING_PROGRESS_20260926.json)
 - [Preserved S11-named machine-readable update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json)
 - [Preserved previous S11 report: 197 PASS / 12 INCONCLUSIVE / 1 FAIL](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
 
@@ -289,6 +310,9 @@ BODY / ISKRA foundations
 -> S19 fully executed: 182 PASS / 24 INCONCLUSIVE / 4 FAIL
 -> S19 post-stage consolidation blocked during routing-observability integration
 -> pre-S20 observability/evidence hardening preregistered
+-> S20 startup reports hardening PASS and S19 COMMITTED
+-> partial S20 evidence published; core + CZARA training reported ongoing
+-> V6 installed; scheduler waiting for CZARA completion; 0/72 live missions
 -> configured next training phase after S40: automatic gated transition to WEB01-WEB24
 ```
 
@@ -325,7 +349,8 @@ The public evidence supports bounded software-laboratory claims about persistent
 It does **not** establish:
 
 - all-PASS S11 acceptance; the latest complete traversal contains 14 unresolved cases;
-- committed S19 cross-consolidation or completed S20-S40 training;
+- independently audited S19 recovery or completed S20-S40 training;
+- completed CZARA qualification, V6 live missions or frozen/blind validation;
 - successful WEB01-WEB24 live training;
 - physical drone validation;
 - physical rescue-robot validation;

@@ -1,0 +1,104 @@
+{
+  "snapshot_date": "2026-09-30",
+  "snapshot_timezone": "Europe/Warsaw",
+  "source_repository_commit": "9562bcd3e61031a2621ef303b24e17cbba26cbcd",
+  "scope": "PUBLIC_INTERNAL_SOFTWARE_SNAPSHOT_NOT_LIVE_MONITOR",
+  "sources": {
+    "s20_log": "evidence/S20_20260929/S20_LIVE_EXCERPT_RUN_20260929T212837Z_92e516e1.log",
+    "parallel_core_czara": "MEXICO_PARALLEL_INTEGRATION_SIMULATION_20260929.md",
+    "v6_installation": "DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md",
+    "operator_ongoing_update": "README.md at source_repository_commit",
+    "mexico_protocol": "MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md"
+  },
+  "core": {
+    "latest_captured_stage": "S20",
+    "training_ongoing": "OPERATOR_REPORTED",
+    "run_id": "RUN_20260929T212837Z_92e516e1",
+    "declared_assignments": 210,
+    "declared_actors": 7,
+    "excerpt": {
+      "unique_completed_cases": 116,
+      "pass": 79,
+      "inconclusive": 37,
+      "fail": 0,
+      "by_actor": {
+        "BODY_FROZEN": {
+          "completed": 30,
+          "pass": 21,
+          "inconclusive": 9,
+          "fail": 0
+        },
+        "ISKRA1": {
+          "completed": 30,
+          "pass": 19,
+          "inconclusive": 11,
+          "fail": 0
+        },
+        "ISKRA2": {
+          "completed": 30,
+          "pass": 20,
+          "inconclusive": 10,
+          "fail": 0
+        },
+        "ISKRA3": {
+          "completed": 26,
+          "pass": 19,
+          "inconclusive": 7,
+          "fail": 0
+        }
+      },
+      "last_request": "ssi-s20-iskra3-s20-05-03-a1",
+      "sha256": "33777eaab647fb52af17164b57d78af545561e1053c15d74015bb16614b8ecf8",
+      "final_stage_result": false
+    },
+    "s19_consolidation": "COMMITTED_REPORTED_BY_STARTUP_BANNER",
+    "pre_s20_hardening": "PASS_REPORTED_BY_STARTUP_BANNER",
+    "independent_transaction_and_gate_audit_established": false,
+    "evidence_chain_mode": "LOCAL_DEVELOPMENT",
+    "external_pilot_ready": false
+  },
+  "czara": {
+    "state": "RUNNING_AT_RECORDED_SNAPSHOT",
+    "curriculum": 160,
+    "training": 120,
+    "validation_frozen": 24,
+    "champion_benchmark_frozen": 16,
+    "participants": 20,
+    "skill_candidates": 520,
+    "completion_established": false
+  },
+  "dynamic_mission_v6": {
+    "state": "INSTALLED_SCHEDULER_ACTIVE_WAITING_FOR_CZARA_COMPLETE",
+    "live_missions_completed_at_snapshot": 0,
+    "total_missions": 72,
+    "training": 48,
+    "validation_frozen": 12,
+    "blind_champion_frozen": 12,
+    "auto_start_gate": "AFTER_CZARA_COMPLETE",
+    "installer_selftests": "REPORTED_PASS",
+    "installer_paid_or_remote_calls": 0,
+    "live_main_shadow_success_established": false
+  },
+  "web": {
+    "state": "INSTALLED_READY",
+    "stages": 24,
+    "cases": 192,
+    "actors": 7,
+    "start_gate": [
+      "S40_EXECUTION_COMPLETE",
+      "S40_CONSOLIDATION_COMMITTED"
+    ],
+    "live_completion_established": false
+  },
+  "mexico_robotics": {
+    "state": "PLANNED_EXTERNAL_TRACK",
+    "stages": 48,
+    "training": 38,
+    "validation": 4,
+    "capstone": 6,
+    "external_execution_established": false
+  },
+  "physical_validation_established": false,
+  "independent_external_replication_established": false,
+  "historical_records_preserved": true
+}

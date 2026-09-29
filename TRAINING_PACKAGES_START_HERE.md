@@ -19,13 +19,16 @@ However, this file is no longer the latest training front door.
 
 For current training status use:
 
-[`TRAINING_CURRENT_STATUS_20260914.md`](TRAINING_CURRENT_STATUS_20260914.md)
+1. [Latest public status](LATEST_PUBLIC_STATUS_20260930.md)
+2. [Current truth index](CURRENT_TRUTH_INDEX.md)
+3. [V6 installation and post-CZARA gate](DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md)
+4. [Parallel core/CZARA training](MEXICO_PARALLEL_INTEGRATION_SIMULATION_20260929.md)
 
-The latest comparison-control methodology is:
+The preserved V1/V2 comparison-control methodology is:
 
 [`S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md`](S1_S10_SHARED_TRAINING_PROTOCOL_FOR_S10_V1_V2_20260913.md)
 
-Current distinction:
+Historical distinction at the original snapshot:
 
 ```text
 S1-S5 V2 = preserved historical predeclaration
@@ -33,6 +36,6 @@ S1-S10 = latest shared V1/V2 training-control protocol
 complete S1-S10 execution = NOT CLAIMED
 ```
 
-The drone and humanoid software laboratories are already implemented, but their existence does not mean the 21 controlled cross-domain experiments have completed.
+The later V4 S1-S10 closure and post-S10 software-domain results are recorded separately. The old NOT CLAIMED line above describes the original 12 September snapshot, not current execution status. The current core, WEB, CZARA, V6 and Mexico tracks are mapped in the latest status; package readiness is not a completion claim.
 
 Historical package hashes, stage contracts and audit details remain available in the original Git history and dated predeclaration files.
