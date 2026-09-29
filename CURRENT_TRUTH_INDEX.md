@@ -1,12 +1,14 @@
 # SSI V5 — CURRENT TRUTH INDEX
 
-**Status:** `CURRENT POINTER / 2026-09-26`  
+**Status:** `CURRENT POINTER / 2026-09-29`  
 **Repository role:** public evidence mirror with a published research portal; proprietary implementation remains private.  
 **Evidence boundary:** software-only unless a document explicitly states otherwise.  
 **History rule:** earlier dated truth/status files remain preserved and are not retroactively rewritten.
 
 ## Use these current documents first
 
+- [Latest S13-S18 routing and crash-recovery evidence](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
+- [Machine-readable S13-S18 public summary](RESULTS/SSI_V5_S13_S18_ROUTING_PUBLIC_SUMMARY_20260929.json)
 - [Latest S12 live training + committed consolidation](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
 - [S11 -> S12 quality and efficiency signal](RESULTS/SSI_V5_S11_S12_QUALITY_EFFICIENCY_SIGNAL_20260926.md)
 - [S11 consolidation + WEB LEGO update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
@@ -33,92 +35,68 @@ Earlier milestones and historical evidence:
 9. [`VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md`](VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md)
 10. [`docs/index.html`](docs/index.html) — source of the published public research portal.
 
-## Current training front — S12 consolidated, S13 next
+## Current training front — S13-S18 completed, S19 interrupted/recovery prepared
 
-Current core-training progression:
+Current published core-training progression:
 
-| Stage | Executed | Verified PASS | Unresolved | FAIL | Consolidation |
+| Stage | Executed | PASS | INCONCLUSIVE | FAIL | Consolidation |
 |---|---:|---:|---:|---:|---|
-| S11 | 210/210 | 196 | 14 | 1 | COMMITTED |
+| S11 | 210/210 | 196 | 13 | 1 | COMMITTED |
 | S12 | 210/210 | 203 | 7 | 0 | COMMITTED |
-| S13 | not run | — | — | — | NEXT |
+| S13 | 210/210 | 203 | 6 | 1 | COMMITTED |
+| S14 | 210/210 | 208 | 1 | 1 | COMMITTED |
+| S15 | 210/210 | 175 | 31 | 4 | COMMITTED |
+| S16 | 210/210 | 209 | 1 | 0 | COMMITTED |
+| S17 | 210/210 | 206 | 2 | 2 | COMMITTED |
+| S18 | 210/210 | 196 | 12 | 2 | COMMITTED |
+
+For S13-S18 together:
 
 ```text
-S11 -> S12 observed delta
-verified:   196 -> 203
-unresolved:  14 -> 7
-FAIL:         1 -> 0
+unique cases = 1,260
+PASS = 1,197 (95.00%)
+INCONCLUSIVE = 53
+FAIL = 10
 ```
 
-Latest observed S11 training run:
+The unique-case audit counts each `(stage_id, actor, case_id)` once. For all completed S13-S18 cases, `micronetwork_used=true`, `v10_used=true` and `collective_used=true`. Automatic Champion execution is not claimed: `automatic_champion=false` and `no_automatic_champion=true` were recorded across all 1,260 completed cases, while no explicit Champion route execution was found.
+
+The older receipts do not expose a canonical final per-case routing decision that cleanly separates exact reuse from full-flow escalation. Therefore the current bounded routing classification is `MICRONETWORK_V10_USED_ROUTE_UNRESOLVED`, not a claimed reuse/full-flow percentage.
+
+S19 was interrupted after BODY_FROZEN produced 30 cases: **14 PASS, 16 INCONCLUSIVE, 0 FAIL**. Fifteen already-existing S19/BODY_FROZEN case files lacked CASE attestations after the host interruption; only those missing attestations were restored, their original outcomes were preserved, evidence coverage was rechecked, and the source run was sealed as interrupted.
+
+Recovery/readiness checks subsequently reported:
 
 ```text
-RUN = RUN_20260925T163311Z_820718d5
-execution_complete = true
-PASS = 196
-INCONCLUSIVE = 13
-FAIL = 1
-retry_scope_count = 14
+7 BODY/ISKRA runtime sockets = present
+Pocket Micro = READY
+Doctor = READY_FOR_BOOT
+WEB LEGO = READY
+WEB LEGO items = 126
+WEB templates = 15
+WEB stages = 24
+WEB cases = 192
+WEB runtimes = 7/7
+WEB data_policy = SYNTHETIC_ONLY
 ```
 
-The revised learning-mode runner continued through all 210 cases rather than terminating the stage on FAIL/INCONCLUSIVE outcomes. S11 remains **INCONCLUSIVE** as an acceptance status; it is not relabeled PASS.
+New routing telemetry for future cases is installed to record the effective path more explicitly. Successful post-recovery S19 execution has not yet been published, so no new ISKRA1 result is claimed here.
 
-Only the 196 verified PASS cases were admitted to the subsequent consolidation. Transaction `CC_82dd0b3af825cd8543dcd59835023a5a` completed PASS for BODY_FROZEN and DIRECTOR with the declared identity split preserved: no BODY identity transfer, no Director import of the BODY core, and no weight retraining.
-
-The private WEB LEGO extension is installed and reports:
+The configured post-S40 sequence remains:
 
 ```text
-status = READY
-lego_items = 126
-templates = 15
-stages = 24
-cases = 192
-actors = 7
-data_policy = SYNTHETIC_ONLY
+S19 restart from ISKRA1
+-> S20 ... S40
+-> S40 execution_complete = true
+-> S40 consolidation = COMMITTED
+-> WEB01 ... WEB24
 ```
 
-This is an installation/readiness claim only. Live WEB01-WEB24 completion is not yet claimed.
+The actual S40 -> WEB01 live transition remains pending runtime evidence.
 
-The cross-run prerequisite repair for learning-mode stage continuation is now validated by live execution. S12 run `RUN_20260925T223720Z_6e1b1fc8` completed all 210 assignments with **203 PASS, 7 INCONCLUSIVE and 0 FAIL**. The verified subset contained 203 cases; 7 remained excluded. Consolidation transaction `CC_db09484eefd9db783742336b69296eb5` is **COMMITTED** and its request explicitly binds `stage_id=S12` and `training_run_id=RUN_20260925T223720Z_6e1b1fc8`.
-
-### Live S12 result
-
-```text
-RUN = RUN_20260925T223720Z_6e1b1fc8
-execution_complete = true
-PASS = 203
-INCONCLUSIVE = 7
-FAIL = 0
-verified_subset = 203
-excluded = 7
-
-CONSOLIDATION = CC_db09484eefd9db783742336b69296eb5
-journal.status = COMMITTED
-request.stage_id = S12
-request.training_run_id = RUN_20260925T223720Z_6e1b1fc8
-```
-
-This confirms real cross-run progression from the earlier S11 state into live S12 training and a committed S12 consolidation. S12 remains non-all-PASS because seven cases were unresolved.
-
-- [Detailed S12 live report](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
-
-### Configured post-S40 training progression
-
-WEB01-WEB24 is now configured as the next SSI training phase after completion of the core S11-S40 sequence. The installed gate requires:
-
-```text
-S40 execution_complete = true
-AND S40 consolidation = COMMITTED
-AND WEB LEGO = READY
--> start WEB01-WEB24
-```
-
-This records installed/configured sequencing, not an observed S40 -> WEB01 transition. That transition remains pending future runtime evidence.
-
-- [Detailed 2026-09-26 update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
-- [Current machine-readable training progress](RESULTS/SSI_V5_CURRENT_TRAINING_PROGRESS_20260926.json)
-- [Preserved S11-named machine-readable update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json)
-- [Preserved 2026-09-23 S11 report](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
+- [Detailed S13-S18 routing and recovery report](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
+- [Machine-readable S13-S18 public summary](RESULTS/SSI_V5_S13_S18_ROUTING_PUBLIC_SUMMARY_20260929.json)
+- [Previous S12 live report](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
 
 ## Preserved V4 baseline — 2026-09-17
 
