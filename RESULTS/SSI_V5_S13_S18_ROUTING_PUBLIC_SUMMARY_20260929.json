@@ -1,0 +1,144 @@
+{
+  "schema": "ssi.v5.s13-s18-routing-public-summary.v1",
+  "published_date": "2026-09-29",
+  "run_id": "RUN_20260926T064644Z_793783ad",
+  "evidence_boundary": "SOFTWARE_RUNTIME_ONLY",
+  "completed_stages": [
+    "S13",
+    "S14",
+    "S15",
+    "S16",
+    "S17",
+    "S18"
+  ],
+  "totals": {
+    "unique_cases": 1260,
+    "pass": 1197,
+    "inconclusive": 53,
+    "fail": 10,
+    "pass_rate_percent": 95
+  },
+  "stages": {
+    "S13": {
+      "executed": 210,
+      "pass": 203,
+      "inconclusive": 6,
+      "fail": 1,
+      "pass_rate_percent": 96.67,
+      "consolidation": "COMMITTED",
+      "transaction": "CC_51716af604ada40b0883bb97e17f2b11"
+    },
+    "S14": {
+      "executed": 210,
+      "pass": 208,
+      "inconclusive": 1,
+      "fail": 1,
+      "pass_rate_percent": 99.05,
+      "consolidation": "COMMITTED",
+      "transaction": "CC_e96219d84ce62b3be3a1291f886c13f4"
+    },
+    "S15": {
+      "executed": 210,
+      "pass": 175,
+      "inconclusive": 31,
+      "fail": 4,
+      "pass_rate_percent": 83.33,
+      "consolidation": "COMMITTED",
+      "transaction": "CC_0463d78c35fd7205c5698a158c4749ac"
+    },
+    "S16": {
+      "executed": 210,
+      "pass": 209,
+      "inconclusive": 1,
+      "fail": 0,
+      "pass_rate_percent": 99.52,
+      "consolidation": "COMMITTED",
+      "transaction": "CC_da1b0d45ab78211bd2a495a2a4bbf671"
+    },
+    "S17": {
+      "executed": 210,
+      "pass": 206,
+      "inconclusive": 2,
+      "fail": 2,
+      "pass_rate_percent": 98.1,
+      "consolidation": "COMMITTED",
+      "transaction": "CC_bdf546a680d35897ea45de4117544afe"
+    },
+    "S18": {
+      "executed": 210,
+      "pass": 196,
+      "inconclusive": 12,
+      "fail": 2,
+      "pass_rate_percent": 93.33,
+      "consolidation": "COMMITTED",
+      "transaction": "CC_10ec6aed61774b7a060c9e8a0674abd0"
+    }
+  },
+  "unique_case_routing": {
+    "unit": "unique(stage_id,actor,case_id)",
+    "duplicate_mentions_counted": false,
+    "routing_from_pass_fail_inferred": false,
+    "routing_provenance_present": 1260,
+    "micronetwork_used": 1260,
+    "v10_used": 1260,
+    "collective_used": 1260,
+    "provider_gateway_used": 1199,
+    "provider_gateway_percent": 95.16,
+    "route_class": "MICRONETWORK_V10_USED_ROUTE_UNRESOLVED",
+    "route_class_count": 1260,
+    "reuse_explicit": 0,
+    "full_flow_explicit": 0,
+    "champion_route_used": 0,
+    "automatic_champion_true": 0,
+    "automatic_champion_false": 1260,
+    "no_automatic_champion_true": 1260
+  },
+  "interrupted_s19": {
+    "execution_complete": false,
+    "actor": "BODY_FROZEN",
+    "cases": 30,
+    "pass": 14,
+    "inconclusive": 16,
+    "fail": 0,
+    "recovered_missing_case_attestations": 15,
+    "source_run_sealed_as_interrupted": true,
+    "post_recovery_iskra1_execution_claimed": false
+  },
+  "recovery_and_readiness": {
+    "pocket_micro": "READY",
+    "doctor": "READY_FOR_BOOT",
+    "actor_sockets": "7/7",
+    "web_lego": {
+      "status": "READY",
+      "lego_items": 126,
+      "templates": 15,
+      "stages": 24,
+      "cases": 192,
+      "runtimes": "7/7",
+      "data_policy": "SYNTHETIC_ONLY"
+    },
+    "routing_execution_telemetry": "INSTALLED_PENDING_POST_RECOVERY_CASE_VALIDATION"
+  },
+  "roadmap": {
+    "next_core_resume": "S19 / ISKRA1 / S19-01-01",
+    "core_target": "S40",
+    "post_s40_gate": [
+      "S40 execution_complete=true",
+      "S40 consolidation=COMMITTED",
+      "WEB LEGO READY"
+    ],
+    "next_track": "WEB01-WEB24",
+    "live_s40_to_web01_transition_claimed": false
+  },
+  "source_unique_case_audit": {
+    "filename": "SSI_ROUTING_UNIQUE_CASES_RUN_20260926T064644Z_793783ad_20260929T000415Z.json",
+    "size_bytes": 2300390,
+    "sha256": "d34bab75ae416af4c896c1beffe4be9d237b38d4f0385402c86d6b1f15edd6c1"
+  },
+  "claim_boundary": {
+    "physical_validation": false,
+    "independent_external_replication": false,
+    "automatic_champion_execution": false,
+    "exact_reuse_vs_full_flow_percentage_measured": false
+  }
+}
