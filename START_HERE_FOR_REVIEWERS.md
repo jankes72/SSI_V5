@@ -1,6 +1,6 @@
 # SSI V5 — Start Here for Grant and Technical Reviewers
 
-**Updated:** `2026-09-26`  
+**Updated:** `2026-09-29`  
 **Development model:** independent solo R&D. SSI V5 is designed and integrated by one author outside regular working hours. AI coding/reasoning tools support implementation, analysis and review; they do not represent a development team. External collaborators are introduced for domain expertise, challenge design and independent validation.  
 **Author context:** [AUTHOR_CONTEXT.md](AUTHOR_CONTEXT.md)  
 **Repository role:** `PUBLIC EVIDENCE / REVIEW MIRROR + PUBLISHED RESEARCH PORTAL`  
@@ -8,54 +8,49 @@
 
 ## Current live training progression
 
-| Stage | Executed | Verified PASS | Unresolved | FAIL | Consolidation |
+| Stage | Executed | PASS | INCONCLUSIVE | FAIL | Consolidation |
 |---|---:|---:|---:|---:|---|
-| S11 | 210/210 | 196 | 14 | 1 | COMMITTED |
+| S11 | 210/210 | 196 | 13 | 1 | COMMITTED |
 | S12 | 210/210 | 203 | 7 | 0 | COMMITTED |
-| S13 | not run | — | — | — | NEXT |
+| S13 | 210/210 | 203 | 6 | 1 | COMMITTED |
+| S14 | 210/210 | 208 | 1 | 1 | COMMITTED |
+| S15 | 210/210 | 175 | 31 | 4 | COMMITTED |
+| S16 | 210/210 | 209 | 1 | 0 | COMMITTED |
+| S17 | 210/210 | 206 | 2 | 2 | COMMITTED |
+| S18 | 210/210 | 196 | 12 | 2 | COMMITTED |
+| **S19** | **210/210** | **182** | **24** | **4** | **NOT YET COMMITTED** |
 
-Latest live progression:
+S19 full execution is recorded under `RUN_20260929T005550Z_a356e86c` with `execution_complete=true`. The post-stage consolidation transaction `CC_09eae1705906e8acaa653eb28123fc84` remains uncommitted.
 
-```text
-S11
-RUN_20260925T163311Z_820718d5
-210/210 executed
-196 verified PASS
-13 INCONCLUSIVE
-1 FAIL
--> verified-subset consolidation COMMITTED
+The stop occurred after a new routing-observability layer was integrated to answer a reviewer-relevant question that the older receipts could not resolve: are Champion/Top-1 reuse and Full Flow actually executed, or are they only represented by catalog state or ambiguous markers?
 
-S12
-RUN_20260925T223720Z_6e1b1fc8
-210/210 executed
-203 verified PASS
-7 INCONCLUSIVE
-0 FAIL
--> verified-subset consolidation COMMITTED
-
-S13 = NEXT
-```
-
-Observed S11 -> S12 delta:
+The current engineering classification is:
 
 ```text
-verified:   196 -> 203
-unresolved:  14 -> 7
-FAIL:         1 -> 0
+OBSERVABILITY_INDUCED_INTEGRATION_REGRESSION
 ```
 
-The operator additionally reports approximately 3x lower wall-clock time and approximately 3x lower token use in S12 relative to comparable S11 work. Those efficiency observations are explicitly separated from repository-backed outcome counts because a complete public provider usage ledger is not yet available. They are treated as an efficiency signal consistent with competence reuse, not as causal proof of Champion-first routing.
+This is a post-stage instrumentation/integration failure. It does not erase or relabel the 210 S19 case outcomes.
+
+Before S20, SSI has preregistered an observability non-interference gate, explicit Champion execution evidence, explicit Full Flow evidence, cross-actor/model correlation, stricter 7/7 consolidation checks, and expanded evidence-chain/notary controls.
+
+External DEV reviewer **Hamid Ahmadian** is explicitly credited for feedback that materially shaped the evidence-hardening requirements: executor/verifier separation, append-only signed chaining, adversarial mutation/deletion/forgery, previous-hash/missing-sequence causal controls, a negative control, and the notary/buffer-limit edge case. This credit is feedback provenance; it is not an endorsement or independent validation.
 
 Current primary evidence:
 
-- [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
-- [S12 live training + committed consolidation](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
-- [S11 -> S12 quality and efficiency signal](RESULTS/SSI_V5_S11_S12_QUALITY_EFFICIENCY_SIGNAL_20260926.md)
-- [Current machine-readable training progress](RESULTS/SSI_V5_CURRENT_TRAINING_PROGRESS_20260926.json)
-- [S11 consolidation + WEB LEGO update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
-- [DEV safeguards and adversarial tests](RESULTS/SSI_V5_DEV_SAFEGUARDS_20260923.md)
+- [S19 incident and current stop point](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)
+- [Pre-S20 hardening preregistration](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)
+- [External review feedback and attribution](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)
+- [S13-S18 routing evidence](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
 
-S12 remains non-all-PASS because seven cases are unresolved. S13-S40 completion, physical validation, production readiness and independent external replication are not claimed.
+Current continuation boundary:
+
+```text
+S19 execution = COMPLETE
+S19 consolidation = NOT YET CLAIMED COMMITTED
+S20 = NOT YET CLAIMED STARTED
+WEB01-WEB24 = READY PACKAGE; LIVE COMPLETION NOT CLAIMED
+```
 
 ## Preserved software evidence in one view
 
@@ -262,7 +257,10 @@ Do not infer:
 
 1. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
 2. [`AUTHOR_CONTEXT.md`](AUTHOR_CONTEXT.md)
-3. [`RESULTS/SSI_V5_S11_S12_QUALITY_EFFICIENCY_SIGNAL_20260926.md`](RESULTS/SSI_V5_S11_S12_QUALITY_EFFICIENCY_SIGNAL_20260926.md)
+3. [`RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md`](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)
+4. [`SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md`](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)
+5. [`EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md`](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)
+6. [`RESULTS/SSI_V5_S11_S12_QUALITY_EFFICIENCY_SIGNAL_20260926.md`](RESULTS/SSI_V5_S11_S12_QUALITY_EFFICIENCY_SIGNAL_20260926.md)
 4. [`CURRENT_TRUTH_INDEX_20260918.md`](CURRENT_TRUTH_INDEX_20260918.md)
 5. [`RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md`](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md)
 6. [`RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json`](RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json)
