@@ -1,0 +1,65 @@
+{
+  "schema": "ssi.v5.pre-s20-hardening-public-summary.v1",
+  "recorded_date": "2026-09-29",
+  "status": "PREREGISTERED_NOT_YET_PASSED",
+  "s19": {
+    "first_interrupted_run": "RUN_20260926T064644Z_793783ad",
+    "first_body_frozen": {
+      "cases": 30,
+      "pass": 14,
+      "inconclusive": 16,
+      "fail": 0
+    },
+    "recovered_missing_case_attestations": 15,
+    "full_execution_run": "RUN_20260929T005550Z_a356e86c",
+    "execution_complete": true,
+    "totals": {
+      "pass": 182,
+      "inconclusive": 24,
+      "fail": 4,
+      "blocked": 0
+    },
+    "verified_subset": 182,
+    "excluded": 28,
+    "consolidation_transaction": "CC_09eae1705906e8acaa653eb28123fc84",
+    "consolidation_committed_claimed": false,
+    "s20_started_claimed": false,
+    "incident_class": "OBSERVABILITY_INDUCED_INTEGRATION_REGRESSION"
+  },
+  "preregistered_gates": [
+    "OBSERVABILITY_NON_INTERFERENCE_AB",
+    "ROUTING_EXECUTION_V2",
+    "CHAMPION_SELECTION_EXECUTION_EVIDENCE",
+    "FULL_FLOW_EXECUTION_EVIDENCE",
+    "MODEL_PROVIDER_ROUTE_CORRELATION",
+    "CROSS_ACTOR_FAILURE_MATRIX",
+    "HASH_CHAIN_CAUSAL_POSITIVE_CONTROLS",
+    "HASH_CHAIN_NEGATIVE_CONTROL",
+    "NOTARY_OUTAGE_POLICY",
+    "NOTARY_BUFFER_LIMIT_SAFE_MODE",
+    "CONSOLIDATION_7_OF_7_TRANSACTION_BOUND_SNAPSHOT"
+  ],
+  "planned_sequence": [
+    "S19_CONSOLIDATION",
+    "S20-S40",
+    "S40_COMMITTED",
+    "WEB01-WEB24",
+    "FINAL_DIAGNOSTIC_REPORT"
+  ],
+  "external_review_attribution": {
+    "reviewer": "Hamid Ahmadian",
+    "source": "DEV Community discussion",
+    "source_url": "https://dev.to/jankes72/building-an-evidence-first-multi-agent-system-720-paired-missions-rollback-and-strict-claim-3n5h",
+    "influenced_requirements": [
+      "executor_verifier_separation",
+      "append_only_signed_hash_chain",
+      "mutation_deletion_forged_pass_tests",
+      "previous_hash_only_and_missing_sequence_causal_controls",
+      "negative_control",
+      "notary_outage_behavior",
+      "buffer_limit_policy"
+    ],
+    "endorsement_claimed": false,
+    "independent_validation_claimed": false
+  }
+}
