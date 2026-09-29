@@ -1,6 +1,6 @@
 # SSI V5 — Reviewer Index
 
-**Current public state:** `2026-09-26`  
+**Current public state:** `2026-09-29`  
 **Repository role:** public evidence and review mirror for a private SSI implementation.  
 **Audience:** grant reviewers, research collaborators, technical reviewers and validation partners.
 
@@ -9,9 +9,9 @@ This file is the shortest route through the repository. Historical files remain 
 ## 5-minute review
 
 1. [README.md](README.md) — concise project front door and current state.
-2. [Latest S12 live training + committed consolidation](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md) — 210/210 live S12 traversal, 203 verified cases, 7 unresolved and committed consolidation.
+2. [Latest S13-S18 routing and recovery evidence](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md) — 210/210 live S12 traversal, 203 verified cases, 7 unresolved and committed consolidation.
 3. [S11 consolidation + WEB LEGO update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md).
-4. [Current machine-readable training progress](RESULTS/SSI_V5_CURRENT_TRAINING_PROGRESS_20260926.json) — neutral current-state summary with S11→S12 delta and S13 marked NEXT.
+4. [Machine-readable S13-S18 routing summary](RESULTS/SSI_V5_S13_S18_ROUTING_PUBLIC_SUMMARY_20260929.json) — current unique-case training/routing state and claim boundaries.
 5. [Preserved previous S11 results](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md) — earlier 210-case traversal retained for provenance.
 6. [LEGO Pocket, META-LEGO and Director-connected laboratories](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md) — component roles and implementation/validation boundaries.
 7. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md) — canonical pointer to the latest evidence-backed state.
@@ -54,36 +54,39 @@ SEPARATE SOFTWARE-LAB RESULTS FROM PHYSICAL VALIDATION
 DO NOT CLAIM UNPUBLISHED OR IN-PROGRESS WORK AS VERIFIED
 ```
 
-## Current training progress — S12 consolidated, S13 next
+## Current training progress — S13-S18 completed
 
-A reviewer can see the current progression without reconstructing it from separate reports:
+The current public training front is:
 
 ```text
-S11: 210/210 | 196 verified | 14 unresolved | 1 FAIL | consolidation COMMITTED
-S12: 210/210 | 203 verified |  7 unresolved | 0 FAIL | consolidation COMMITTED
-S13: NEXT
+S13: 210/210 | 203 PASS |  6 INCONCLUSIVE | 1 FAIL | consolidation COMMITTED
+S14: 210/210 | 208 PASS |  1 INCONCLUSIVE | 1 FAIL | consolidation COMMITTED
+S15: 210/210 | 175 PASS | 31 INCONCLUSIVE | 4 FAIL | consolidation COMMITTED
+S16: 210/210 | 209 PASS |  1 INCONCLUSIVE | 0 FAIL | consolidation COMMITTED
+S17: 210/210 | 206 PASS |  2 INCONCLUSIVE | 2 FAIL | consolidation COMMITTED
+S18: 210/210 | 196 PASS | 12 INCONCLUSIVE | 2 FAIL | consolidation COMMITTED
 
-delta S11 -> S12:
-+7 verified cases
--7 unresolved cases (50% reduction)
-1 -> 0 FAIL
+S13-S18 total:
+1,260 unique cases
+1,197 PASS
+53 INCONCLUSIVE
+10 FAIL
+95.00% PASS
 ```
 
-The latest private S11 training run `RUN_20260925T163311Z_820718d5` executed **all 210 cases** across the seven actors under the revised continuation policy: **196 PASS, 13 INCONCLUSIVE and 1 FAIL**. The stage remains **INCONCLUSIVE**, while `execution_complete=true`.
+The unique-case routing audit reports Micronetwork/V10 participation in **1,260/1,260 completed cases**. It does not infer routing from PASS/FAIL and does not count repeated nested markers as separate executions.
 
-Only the **196 verified PASS** cases were admitted to the recorded downstream consolidation. The 14 unresolved cases remained excluded. Transaction `CC_82dd0b3af825cd8543dcd59835023a5a` then completed PASS for BODY_FROZEN and the independent DIRECTOR view while preserving the stated identity split.
+The same evidence records automatic Champion disabled for all completed S13-S18 cases; no explicit Champion execution is claimed. Exact reuse vs full-flow percentages are also not claimed because the older case receipts do not contain a canonical final routing-decision field.
 
-The private WEB LEGO extension is installed and reports **READY** with **126 LEGO items, 15 templates, 24 stages, 192 cases, 7 actors** and a **SYNTHETIC_ONLY** data policy. No successful WEB01-WEB24 live completion is claimed yet.
+S19 was interrupted after BODY_FROZEN produced 30 cases (**14 PASS, 16 INCONCLUSIVE**). Recovery was restricted to 15 missing CASE attestations for already-existing S19/BODY_FROZEN files. Original statuses were preserved and the source run was sealed as interrupted.
 
-WEB01-WEB24 is configured as the **next gated SSI training phase after S40**. The installed hook requires S40 `execution_complete=true`, a committed S40 consolidation and WEB LEGO `READY` before the web-training track may start. The live S40 -> WEB01 transition has not yet occurred.
+After recovery, Pocket Micro returned `READY`, Doctor returned `READY_FOR_BOOT`, all seven BODY/ISKRA sockets were present, and WEB LEGO remained `READY` (126 LEGO items, 15 templates, 24 stages, 192 cases, 7/7 runtimes, `SYNTHETIC_ONLY`).
 
-The learning-mode cross-run prerequisite repair is now validated by live S12 execution. Run `RUN_20260925T223720Z_6e1b1fc8` completed **210/210 cases: 203 PASS, 7 INCONCLUSIVE, 0 FAIL**. Consolidation transaction `CC_db09484eefd9db783742336b69296eb5` is **COMMITTED** and explicitly linked to this S12 training run; seven cases remained excluded.
+No successful post-recovery ISKRA1 S19 execution is claimed in the current public state.
 
-- [S12 live training + committed consolidation](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
-- [S11 / WEB LEGO 2026-09-26 update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
-- [Current machine-readable training progress](RESULTS/SSI_V5_CURRENT_TRAINING_PROGRESS_20260926.json)
-- [Preserved S11-named machine-readable update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json)
-- [Preserved previous S11 results](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md)
+- [S13-S18 routing and recovery report](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
+- [Machine-readable S13-S18 public summary](RESULTS/SSI_V5_S13_S18_ROUTING_PUBLIC_SUMMARY_20260929.json)
+- [Previous S12 live report](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
 
 ## Preserved verified milestone
 
