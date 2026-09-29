@@ -24,7 +24,8 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 
 - **Architecture:** independent DIRECTOR core, BODY_FROZEN and six ISKRA agents with separate runtimes, memory and lifecycle.
 - **Research controls:** versioned evidence, provenance, checkpoints, rollback and bounded claims.
-- **Capability layers:** Router V10/S10, Micronetworks, LEGO Pocket, Pocket Micro, META-LEGO, laboratories and domain/world layers.
+- **Capability layers:** Router V10/S10, Micronetworks, BLOCKS Pocket, Pocket Micro, META-BLOCKS, laboratories and domain/world layers.
+- **Public terminology:** `BLOCKS` is the public name for SSI's reusable modular competence layer. Current public names include **BLOCKS Pocket, BLOCKS Space, BLOCKS Navigator, BLOCKS Content, META-BLOCKS and WEB BLOCKS**. Legacy private/runtime paths, schema fields and historical filenames containing `lego` remain unchanged for backward compatibility; they are implementation identifiers, not public branding. SSI is not affiliated with the LEGO Group.
 - **Demonstrated scope:** software laboratory results for drone, humanoid and cross-domain rescue scenarios.
 - **Current boundary:** software evidence is published; physical validation, safety certification and independent external replication are not claimed.
 
@@ -130,9 +131,9 @@ The latest private S11 training run `RUN_20260925T163311Z_820718d5` completed al
 
 Only the **196 verified PASS** cases were exported for downstream consolidation. The remaining **14 cases** stayed excluded as unresolved/retry material. Cross-consolidation transaction `CC_82dd0b3af825cd8543dcd59835023a5a` subsequently completed **PASS** for both BODY_FROZEN and the independent DIRECTOR view, with `identity_transfer=false`, `BODY_FROZEN.identity_changed=false`, `DIRECTOR.body_core_imported=false` and `weights_retrained=false`.
 
-A separate private **WEB LEGO** training extension is now installed and reports `READY`: **126 LEGO items, 15 templates, 24 WEB stages, 192 cases, 7 actors**, with `data_policy=SYNTHETIC_ONLY`. This records installation/readiness only; successful WEB01-WEB24 live training is not yet claimed.
+A separate private **WEB BLOCKS** training extension is now installed and reports `READY`: **126 BLOCKS items, 15 templates, 24 WEB stages, 192 cases, 7 actors**, with `data_policy=SYNTHETIC_ONLY`. This records installation/readiness only; successful WEB01-WEB24 live training is not yet claimed.
 
-- [2026-09-26 S11 consolidation + WEB LEGO update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
+- [2026-09-26 S11 consolidation + WEB BLOCKS update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md)
 - [S12 live training + committed consolidation](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
 - [Current machine-readable training progress](RESULTS/SSI_V5_CURRENT_TRAINING_PROGRESS_20260926.json)
 - [Preserved S11-named machine-readable update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_PUBLIC_SUMMARY_20260926.json)
@@ -150,7 +151,7 @@ S11 -> S12 -> ... -> S40
                     v
           execution_complete = true
           S40 consolidation = COMMITTED
-          WEB LEGO = READY
+          WEB BLOCKS = READY
                     |
                     v
           WEB01 -> WEB02 -> ... -> WEB24
@@ -183,7 +184,7 @@ The planned robotics curriculum contains **48 stages**:
   12 DRONES
   12 HUMANOIDS
    6 MOTHER / CROSS-DOMAIN
-   8 OFFLINE DIRECTOR / LEGO OFFLINE
+   8 OFFLINE DIRECTOR / BLOCKS OFFLINE
 
 4 VALIDATION
 6 FINAL CAPSTONE
@@ -191,7 +192,7 @@ The planned robotics curriculum contains **48 stages**:
 
 The intended policy is **Champion-first**: SSI should reuse validated competence before escalating to Challenger/deeper collective reasoning. Final validation/capstone runs are intended to freeze pre-result competence so the hidden case is not silently learned during scoring.
 
-Planned end-of-training scenarios include no-network underground mapping with `SPACE_LEGO`, multi-robot map merge, optical/acoustic offline relay, lost-unit recovery, dynamic map revision and an unseen partner-defined scenario. These are **planned benchmark designs**, not completed physical validations.
+Planned end-of-training scenarios include no-network underground mapping with `SPACE_BLOCKS`, multi-robot map merge, optical/acoustic offline relay, lost-unit recovery, dynamic map revision and an unseen partner-defined scenario. These are **planned benchmark designs**, not completed physical validations.
 
 - [CZARA — Mexico Research Context, Translation and Learning Layer](SYSTEM/CZARA_MEXICO_RESEARCH_LAYER_20260926.md)
 - [Mexico Robotics Training and External Benchmark Plan](MEXICO_ROBOTICS_TRAINING_AND_BENCHMARK_PLAN_20260926.md)
@@ -223,7 +224,7 @@ DIRECTOR
 + ROUTER V10
 + ROUTER S10
 + TECHNOLOGY RADAR
-+ MICRONETWORKS / LEGO / POCKET / POCKET MICRO / META-LEGO
++ MICRONETWORKS / BLOCKS / POCKET / POCKET MICRO / META-BLOCKS
 + COST/QUALITY MODEL CASCADE
 + CONTRACT BINDING
 + WORLD / DOMAIN LAYERS
@@ -238,7 +239,7 @@ DIRECTOR
 1. [REVIEWER_INDEX.md](REVIEWER_INDEX.md)
 2. [Latest S13-S18 routing and recovery evidence](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
 3. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
-4. [LEGO Pocket, META-LEGO, laboratories and Football World](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md)
+4. [BLOCKS Pocket, META-BLOCKS, laboratories and Football World](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md)
 5. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)
 6. [RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md)
 7. [SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
@@ -259,7 +260,7 @@ BODY / ISKRA foundations
 -> Technology Radar
 -> Contract Binding
 -> Pocket Micro
--> META-LEGO
+-> META-BLOCKS
 -> ŚWIAT PIŁKI — HIPNOZA implemented / operator-observed
 -> S11 smoke PASS
 -> preserved earlier S11 stops and repairs
@@ -273,7 +274,7 @@ BODY / ISKRA foundations
 -> S12 traversal: 210/210 executed; 203 PASS / 7 INCONCLUSIVE / 0 FAIL
 -> S12 verified subset: 203 admitted / 7 excluded
 -> S12 consolidation COMMITTED: CC_db09484eefd9db783742336b69296eb5
--> WEB LEGO extension installed READY: 126 LEGO items / 15 templates / 24 stages / 192 cases / SYNTHETIC_ONLY
+-> WEB BLOCKS extension installed READY: 126 BLOCKS items / 15 templates / 24 stages / 192 cases / SYNTHETIC_ONLY
 -> S13-S18 completed with committed consolidations
 -> S19 fully executed: 182 PASS / 24 INCONCLUSIVE / 4 FAIL
 -> S19 post-stage consolidation blocked during routing-observability integration
