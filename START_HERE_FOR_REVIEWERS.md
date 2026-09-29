@@ -1,56 +1,37 @@
 # SSI V5 — Start Here for Grant and Technical Reviewers
 
-**Updated:** `2026-09-29`  
+**Updated:** `2026-09-30`  
 **Development model:** independent solo R&D. SSI V5 is designed and integrated by one author outside regular working hours. AI coding/reasoning tools support implementation, analysis and review; they do not represent a development team. External collaborators are introduced for domain expertise, challenge design and independent validation.  
 **Author context:** [AUTHOR_CONTEXT.md](AUTHOR_CONTEXT.md)  
 **Repository role:** `PUBLIC EVIDENCE / REVIEW MIRROR + PUBLISHED RESEARCH PORTAL`  
 **Proprietary implementation:** private by design.
 
-## Current live training progression
+## Current training snapshot — 2026-09-30
 
-| Stage | Executed | PASS | INCONCLUSIVE | FAIL | Consolidation |
-|---|---:|---:|---:|---:|---|
-| S11 | 210/210 | 196 | 13 | 1 | COMMITTED |
-| S12 | 210/210 | 203 | 7 | 0 | COMMITTED |
-| S13 | 210/210 | 203 | 6 | 1 | COMMITTED |
-| S14 | 210/210 | 208 | 1 | 1 | COMMITTED |
-| S15 | 210/210 | 175 | 31 | 4 | COMMITTED |
-| S16 | 210/210 | 209 | 1 | 0 | COMMITTED |
-| S17 | 210/210 | 206 | 2 | 2 | COMMITTED |
-| S18 | 210/210 | 196 | 12 | 2 | COMMITTED |
-| **S19** | **210/210** | **182** | **24** | **4** | **NOT YET COMMITTED** |
+The operator reports that core SSI training continues alongside CZARA. The public S20 log is a partial capture of `RUN_20260929T212837Z_92e516e1`, not a final stage report.
 
-S19 full execution is recorded under `RUN_20260929T005550Z_a356e86c` with `execution_complete=true`. The post-stage consolidation transaction `CC_09eae1705906e8acaa653eb28123fc84` remains uncommitted.
+| Track | Latest published state | Evidence scope |
+|---|---|---|
+| Core S20-S40 | S20 started; core training reported ongoing | S20 excerpt: 116 unique completed cases, 79 PASS, 37 INCONCLUSIVE, 0 FAIL; full-stage completion not established |
+| S19 recovery / pre-S20 hardening | Startup banner reports hardening PASS and S19 COMMITTED | Operator-supplied log; transaction journal and detailed gate reports are not included in this excerpt |
+| CZARA Live Training | Running alongside core training | Internal integration snapshot; 160-item curriculum = 120 training + 24 frozen validation + 16 frozen Champion benchmark; final completion not published |
+| Dynamic Mission V6 | Installed; scheduler active; waiting for CZARA completion | 0/72 live missions at the recorded snapshot; 48 training + 12 frozen validation + 12 frozen blind Champion |
+| WEB01-WEB24 | Installed / READY; gated after S40 | Requires S40 execution completion and COMMITTED consolidation; live completion not published |
+| Mexico external benchmark | Planned | Internal simulations do not establish Mexico-side execution or independent validation |
 
-The stop occurred after a new routing-observability layer was integrated to answer a reviewer-relevant question that the older receipts could not resolve: are Champion/Top-1 reuse and Full Flow actually executed, or are they only represented by catalog state or ambiguous markers?
+The S20 excerpt covers BODY_FROZEN, ISKRA1, ISKRA2 and part of ISKRA3. It declares seven actors and 210 assignments, but does not include results for the entire stage. All captured verdicts remain visible, including the 37 INCONCLUSIVE rows. The excerpt contains no FAIL rows; the final stage outcome is not established.
 
-The current engineering classification is:
+V6 adds complete evolving experiments with a simulated professor and four experts, DIRECTOR-managed MAIN/SHADOW branches and explicit formal promotion. Installer self-tests are recorded separately from live mission results. The planned 48-stage Mexico robotics curriculum, the 160-item CZARA curriculum and the 72-mission V6 curriculum are distinct programmes.
 
-```text
-OBSERVABILITY_INDUCED_INTEGRATION_REGRESSION
-```
+Current sources:
 
-This is a post-stage instrumentation/integration failure. It does not erase or relabel the 210 S19 case outcomes.
+- [Latest public status and source map](LATEST_PUBLIC_STATUS_20260930.md)
+- [Machine-readable current snapshot](RESULTS/SSI_V5_CURRENT_PUBLIC_STATUS_20260930.json)
+- [Supplied S20 runtime log](evidence/S20_20260929/S20_LIVE_EXCERPT_RUN_20260929T212837Z_92e516e1.log)
+- [Parallel core/CZARA integration simulation](MEXICO_PARALLEL_INTEGRATION_SIMULATION_20260929.md)
+- [V6 installation, self-tests and post-CZARA gate](DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md)
 
-Before S20, SSI has preregistered an observability non-interference gate, explicit Champion execution evidence, explicit Full Flow evidence, cross-actor/model correlation, stricter 7/7 consolidation checks, and expanded evidence-chain/notary controls.
-
-External DEV reviewer **Hamid Ahmadian** is explicitly credited for feedback that materially shaped the evidence-hardening requirements: executor/verifier separation, append-only signed chaining, adversarial mutation/deletion/forgery, previous-hash/missing-sequence causal controls, a negative control, and the notary/buffer-limit edge case. This credit is feedback provenance; it is not an endorsement or independent validation.
-
-Current primary evidence:
-
-- [S19 incident and current stop point](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)
-- [Pre-S20 hardening preregistration](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)
-- [External review feedback and attribution](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)
-- [S13-S18 routing evidence](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
-
-Current continuation boundary:
-
-```text
-S19 execution = COMPLETE
-S19 consolidation = NOT YET CLAIMED COMMITTED
-S20 = NOT YET CLAIMED STARTED
-WEB01-WEB24 = READY PACKAGE; LIVE COMPLETION NOT CLAIMED
-```
+The earlier S19 incident and pre-S20 preregistration remain historical evidence. S20 startup is now recorded; the excerpt does not independently audit all prerequisite gates or the S19 commit.
 
 ## Preserved software evidence in one view
 
@@ -188,6 +169,8 @@ SSI is a persistent multi-agent software ecosystem containing:
 DIRECTOR
 + BODY_FROZEN
 + ISKRA1..ISKRA6
++ CZARA (research context / translation)
++ DYNAMIC MISSION V6 (installed / post-CZARA gate)
 + HERMES
 + CONTINUUM
 + ROUTER V10
@@ -255,20 +238,21 @@ Do not infer:
 
 ## Recommended reading order
 
-1. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
-2. [`AUTHOR_CONTEXT.md`](AUTHOR_CONTEXT.md)
-3. [`RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md`](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)
-4. [`SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md`](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)
-5. [`EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md`](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)
-6. [`RESULTS/SSI_V5_S11_S12_QUALITY_EFFICIENCY_SIGNAL_20260926.md`](RESULTS/SSI_V5_S11_S12_QUALITY_EFFICIENCY_SIGNAL_20260926.md)
-4. [`CURRENT_TRUTH_INDEX_20260918.md`](CURRENT_TRUTH_INDEX_20260918.md)
-5. [`RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md`](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md)
-6. [`RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json`](RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json)
-7. [`SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md`](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
-8. [`RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md`](RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md)
-9. [`VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md`](VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md)
-10. [`COLLABORATION_AND_PARTNER_ENTRY.md`](COLLABORATION_AND_PARTNER_ENTRY.md)
-11. [`EXTERNAL_CHALLENGE_ENTRY_20260914.md`](EXTERNAL_CHALLENGE_ENTRY_20260914.md)
+1. [Latest public status](LATEST_PUBLIC_STATUS_20260930.md)
+2. [S20 runtime source excerpt](evidence/S20_20260929/S20_LIVE_EXCERPT_RUN_20260929T212837Z_92e516e1.log)
+3. [V6 installation and post-CZARA gate](DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md)
+4. [Parallel core/CZARA integration simulation](MEXICO_PARALLEL_INTEGRATION_SIMULATION_20260929.md)
+5. [Current grant-reviewer summary](GRANT_REVIEWER_CURRENT_STATUS_20260930.md)
+6. [Mexico pre-benchmark R&D protocol](MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md)
+7. [Mexico team interface and CZARA controls](MEXICO_TEAM_INTERFACE_AND_CZARA_CONTROLS_20260928.md)
+8. [External review attribution](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)
+9. [S13-S18 routing and recovery results](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
+10. [Preserved Dual Mother results](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md)
+11. [Author context](AUTHOR_CONTEXT.md)
+12. [Collaboration and IP boundary](COLLABORATION_AND_PARTNER_ENTRY.md)
+
+Older dated records retain their original results and scope. Current pointers summarize the latest published sources; they do not monitor the private runtime.
+
 
 Older dated files remain preserved as historical evidence. Use the current-state documents above for the latest implementation and continuation status; measured domain results retain their original dates and scope.
 

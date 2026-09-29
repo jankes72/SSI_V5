@@ -1,5 +1,7 @@
 # DIRECTOR Training — Start Here
 
+> **Historical stage record:** the results, next-step labels and dates below describe this stage's original snapshot. For current core/CZARA/V6 progress use [latest public status](LATEST_PUBLIC_STATUS_20260930.md) and [REVIEWER_INDEX.md](REVIEWER_INDEX.md).
+
 **Updated:** 2026-09-09  
 **Baseline:** `DIRECTOR_FROZEN_C0 / VALIDATED ENGINEERING BASELINE`  
 **Training packages:** `2`  

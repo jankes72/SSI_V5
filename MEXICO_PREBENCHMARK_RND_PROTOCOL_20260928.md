@@ -1,5 +1,7 @@
 # SSI V5 — Pre-Benchmark R&D Protocol: Core Training, WEB Engineering and Mexico Robotics
 
+> **Current-state navigation — 2026-09-30:** [latest public status](LATEST_PUBLIC_STATUS_20260930.md) records S20 execution, runtime-reported S19 recovery, concurrent CZARA training and the installed post-CZARA V6 scheduler. Section 3 below preserves the earlier pre-S20 snapshot; its NOT YET STARTED statement is historical. Protocol requirements and original results are retained.
+
 **Recorded:** `2026-09-28`  
 **Status:** `PRE-BENCHMARK PROTOCOL / ACTIVE DEVELOPMENT / RESULTS NOT PRECLAIMED`  
 **Scope:** public, sanitized description of the intended research sequence, integration boundary and measurements. Proprietary implementation, credentials, prompts, private runtime state and reconstructive internals remain private.
@@ -94,7 +96,7 @@ The existing Mexico curriculum remains a planned 48-stage programme: 38 training
 
 Physical validation, independent external replication and benchmark success are not claimed before corresponding evidence exists.
 
-## 3. Current training status boundary — updated 2026-09-29
+## 3. Preserved pre-S20 training snapshot — recorded 2026-09-29
 
 The public core-training front now extends through full S19 execution.
 

@@ -1,6 +1,6 @@
 # SSI V5 — Reviewer Index
 
-**Current public state:** `2026-09-29`  
+**Current public state:** `2026-09-30`  
 **Repository role:** public evidence and review mirror for a private SSI implementation.  
 **Audience:** grant reviewers, research collaborators, technical reviewers and validation partners.
 
@@ -8,29 +8,21 @@ This file is the shortest route through the repository. Historical files remain 
 
 ## 5-minute review
 
-1. [README.md](README.md) — concise project front door and current state.
-2. [S19 observability incident and pre-S20 status](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md) — S19 executed 210/210; post-stage consolidation blocked by an observability-induced integration regression.
-3. [Pre-S20 hardening preregistration](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md) — frozen controls before S20.
-4. [External review attribution](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md) — maps Hamid Ahmadian's DEV feedback to concrete SSI requirements.
-5. [Latest S13-S18 routing and recovery evidence](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md) — 1,260 unique completed cases, 1,197 PASS (95.00%), six committed consolidations and bounded routing claims.
-6. [S11 consolidation + WEB BLOCKS update](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md).
-7. [Machine-readable S13-S18 routing summary](RESULTS/SSI_V5_S13_S18_ROUTING_PUBLIC_SUMMARY_20260929.json) — current unique-case training/routing state and claim boundaries.
-8. [Preserved previous S11 results](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md) — earlier 210-case traversal retained for provenance.
-9. [BLOCKS Pocket, META-BLOCKS and Director-connected laboratories](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md) — component roles and implementation/validation boundaries.
-10. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md) — canonical pointer to the latest evidence-backed state.
-11. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md) — reviewer-oriented project summary.
-12. [RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md) — latest measured cross-domain laboratory report.
-13. [RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json](RESULTS/DUAL_MOTHER_PUBLIC_SUMMARY_20260918.json) — machine-readable public summary.
+1. [Latest public status](LATEST_PUBLIC_STATUS_20260930.md) — separates ongoing core/CZARA training, source-excerpt counts, runtime-reported S19 recovery and the waiting V6 scheduler.
+2. [Current grant and technical reviewer summary](GRANT_REVIEWER_CURRENT_STATUS_20260930.md) — demonstrated software scope and remaining evidence.
+3. [S20 runtime source excerpt](evidence/S20_20260929/S20_LIVE_EXCERPT_RUN_20260929T212837Z_92e516e1.log) — startup reports hardening PASS + S19 COMMITTED; contains 116 completed cases, not a final stage result.
+4. [Dynamic Mission V6](DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md) — installation/self-tests, MAIN/SHADOW rules and 0/72 live missions pending CZARA completion.
+5. [Machine-readable latest snapshot](RESULTS/SSI_V5_CURRENT_PUBLIC_STATUS_20260930.json) — source identity, captured counts, track gates and claim boundaries.
 
+## Mexico / CZARA / dynamic experiment review
 
-## Planned Mexico robotics training / CZARA review path
+1. [Parallel core/CZARA integration simulation](MEXICO_PARALLEL_INTEGRATION_SIMULATION_20260929.md) — internal under-load preparation, not external validation.
+2. [Mexico pre-benchmark R&D protocol](MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md) — collaborative revisions, baseline participants, controlled comparisons and official benchmark separation.
+3. [Mexico team interface and CZARA controls](MEXICO_TEAM_INTERFACE_AND_CZARA_CONTROLS_20260928.md).
+4. [CZARA architecture](SYSTEM/CZARA_MEXICO_RESEARCH_LAYER_20260926.md).
+5. [Planned 48-stage Mexico robotics programme](MEXICO_ROBOTICS_TRAINING_AND_BENCHMARK_PLAN_20260926.md).
 
-For reviewers interested in the next planned robotics collaboration track:
-
-1. [CZARA — Mexico Research Context, Translation and Learning Layer](SYSTEM/CZARA_MEXICO_RESEARCH_LAYER_20260926.md)
-2. [Mexico Robotics Training and External Benchmark Plan](MEXICO_ROBOTICS_TRAINING_AND_BENCHMARK_PLAN_20260926.md)
-
-These documents are **architecture and benchmark-plan records**, not completed external evidence. They describe the intended multilingual collaboration layer, Champion-first training policy, 48-stage curriculum, offline/underground capstones and the separation between training, validation and final external benchmark.
+The planned 48-stage robotics programme, active 160-item CZARA curriculum and installed 72-mission V6 curriculum are distinct tracks. The public records do not establish Mexico-side execution or independent external validation.
 
 ## Technical architecture review
 
@@ -57,55 +49,42 @@ SEPARATE SOFTWARE-LAB RESULTS FROM PHYSICAL VALIDATION
 DO NOT CLAIM UNPUBLISHED OR IN-PROGRESS WORK AS VERIFIED
 ```
 
-## Current training progress — S19 executed; consolidation blocked before S20
+## Current training snapshot — 2026-09-30
 
-```text
-S13: 210/210 | 203 PASS |  6 INCONCLUSIVE | 1 FAIL | COMMITTED
-S14: 210/210 | 208 PASS |  1 INCONCLUSIVE | 1 FAIL | COMMITTED
-S15: 210/210 | 175 PASS | 31 INCONCLUSIVE | 4 FAIL | COMMITTED
-S16: 210/210 | 209 PASS |  1 INCONCLUSIVE | 0 FAIL | COMMITTED
-S17: 210/210 | 206 PASS |  2 INCONCLUSIVE | 2 FAIL | COMMITTED
-S18: 210/210 | 196 PASS | 12 INCONCLUSIVE | 2 FAIL | COMMITTED
-S19: 210/210 | 182 PASS | 24 INCONCLUSIVE | 4 FAIL | CONSOLIDATION NOT YET COMMITTED
-```
+The operator reports that core SSI training continues alongside CZARA. The public S20 log is a partial capture of `RUN_20260929T212837Z_92e516e1`, not a final stage report.
 
-S19 full execution is recorded under `RUN_20260929T005550Z_a356e86c` with `execution_complete=true`. The verified subset contains 182 cases and preserves 28 non-PASS cases outside that subset.
+| Track | Latest published state | Evidence scope |
+|---|---|---|
+| Core S20-S40 | S20 started; core training reported ongoing | S20 excerpt: 116 unique completed cases, 79 PASS, 37 INCONCLUSIVE, 0 FAIL; full-stage completion not established |
+| S19 recovery / pre-S20 hardening | Startup banner reports hardening PASS and S19 COMMITTED | Operator-supplied log; transaction journal and detailed gate reports are not included in this excerpt |
+| CZARA Live Training | Running alongside core training | Internal integration snapshot; 160-item curriculum = 120 training + 24 frozen validation + 16 frozen Champion benchmark; final completion not published |
+| Dynamic Mission V6 | Installed; scheduler active; waiting for CZARA completion | 0/72 live missions at the recorded snapshot; 48 training + 12 frozen validation + 12 frozen blind Champion |
+| WEB01-WEB24 | Installed / READY; gated after S40 | Requires S40 execution completion and COMMITTED consolidation; live completion not published |
+| Mexico external benchmark | Planned | Internal simulations do not establish Mexico-side execution or independent validation |
 
-The subsequent consolidation transaction `CC_09eae1705906e8acaa653eb28123fc84` stopped after the project integrated new routing observability intended to answer a previously unresolved question: whether Champion/Top-1 reuse and Full Flow are actually executed, rather than inferred from catalog state or repeated log markers.
+The S20 excerpt covers BODY_FROZEN, ISKRA1, ISKRA2 and part of ISKRA3. It declares seven actors and 210 assignments, but does not include results for the entire stage. All captured verdicts remain visible, including the 37 INCONCLUSIVE rows. The excerpt contains no FAIL rows; the final stage outcome is not established.
 
-Current engineering classification:
+V6 adds complete evolving experiments with a simulated professor and four experts, DIRECTOR-managed MAIN/SHADOW branches and explicit formal promotion. Installer self-tests are recorded separately from live mission results. The planned 48-stage Mexico robotics curriculum, the 160-item CZARA curriculum and the 72-mission V6 curriculum are distinct programmes.
 
-```text
-OBSERVABILITY_INDUCED_INTEGRATION_REGRESSION
-```
+Current sources:
 
-This is a post-stage infrastructure/instrumentation failure, not a relabeling of the S19 case outcomes.
+- [Latest public status and source map](LATEST_PUBLIC_STATUS_20260930.md)
+- [Machine-readable current snapshot](RESULTS/SSI_V5_CURRENT_PUBLIC_STATUS_20260930.json)
+- [Supplied S20 runtime log](evidence/S20_20260929/S20_LIVE_EXCERPT_RUN_20260929T212837Z_92e516e1.log)
+- [Parallel core/CZARA integration simulation](MEXICO_PARALLEL_INTEGRATION_SIMULATION_20260929.md)
+- [V6 installation, self-tests and post-CZARA gate](DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md)
 
-Before S20, SSI has preregistered:
+The earlier S19 incident and pre-S20 preregistration remain historical evidence. S20 startup is now recorded; the excerpt does not independently audit all prerequisite gates or the S19 commit.
 
-- observability non-interference A/B testing;
-- explicit Champion selected/executed/result evidence;
-- explicit exact-reuse and Full-Flow evidence;
-- provider/model correlation and cross-actor failure matrices;
-- 7/7 transaction-bound consolidation SNAPSHOT checks;
-- previous-hash-only, missing-sequence and negative-control evidence tests;
-- explicit notary outage and buffer-limit safe-mode behavior.
+## Earlier training and hardening records
 
-The evidence hardening explicitly credits **Hamid Ahmadian** for DEV review feedback that materially shaped these requirements. This is feedback provenance, not an endorsement or independent audit.
-
-Current boundary:
-
-```text
-S19 execution = COMPLETE
-S19 consolidation = NOT YET CLAIMED COMMITTED
-S20 = NOT YET CLAIMED STARTED
-WEB01-WEB24 = READY PACKAGE / LIVE COMPLETION NOT CLAIMED
-```
-
-- [S19 incident and current stop point](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)
-- [Pre-S20 hardening preregistration](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)
-- [External review attribution](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)
-- [Machine-readable pre-S20 summary](RESULTS/SSI_V5_PRE_S20_HARDENING_PUBLIC_SUMMARY_20260929.json)
+- [S13-S18 routing and recovery](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md) — 1,260 unique cases; 1,197 PASS, 53 INCONCLUSIVE, 10 FAIL; six committed consolidations.
+- [S11/S12 quality and efficiency signal](RESULTS/SSI_V5_S11_S12_QUALITY_EFFICIENCY_SIGNAL_20260926.md).
+- [S11 consolidation and WEB installation](RESULTS/SSI_V5_S11_CONSOLIDATION_AND_WEB_LEGO_UPDATE_20260926.md).
+- [Preserved 23 September S11 results](RESULTS/SSI_V5_S11_FULL_RESULTS_20260923.md) — earlier run, not the later S11 traversal.
+- [Historical S19 incident](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md).
+- [Pre-S20 hardening preregistration](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md).
+- [Hamid Ahmadian feedback attribution](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md) — requirements provenance, not endorsement or independent audit.
 
 ## Preserved verified milestone
 
@@ -133,6 +112,7 @@ These are software-laboratory results. Physical validation and independent exter
 
 ## Collaboration / grant review
 
+- [Current grant-reviewer summary](GRANT_REVIEWER_CURRENT_STATUS_20260930.md)
 - [COLLABORATION_AND_PARTNER_ENTRY.md](COLLABORATION_AND_PARTNER_ENTRY.md)
 - [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)
 
@@ -179,7 +159,7 @@ The repository intentionally keeps dated files and older status records. They ar
 When a historical file conflicts with a newer current-state document:
 
 ```text
-USE THE NEWEST DATED CURRENT-STATE DOCUMENT
+FOLLOW CURRENT_TRUTH_INDEX.md TO THE LATEST SOURCE-BACKED SNAPSHOT
 KEEP THE OLDER FILE AS HISTORICAL EVIDENCE
 ```
 

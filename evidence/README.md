@@ -1,15 +1,27 @@
 # SSI V5 — Public Evidence Index
 
-**Current index sync:** `2026-09-29`  
-**Latest update:** S19 full execution, observability-induced consolidation regression, pre-S20 hardening preregistration and external review attribution, `2026-09-29`; historical measurements retain their original dates.
+**Current index sync:** `2026-09-30`  
+**Latest update:** supplied S20 runtime excerpt, runtime-reported S19 recovery, concurrent core/CZARA training and installed V6 post-CZARA gate. Historical measurements retain their original dates.
 
 This directory preserves sanitized evidence, lineage, failure/repair history, integrity references and claim boundaries. Historical files are intentionally retained.
 
 > For the shortest reviewer path, start with [../REVIEWER_INDEX.md](../REVIEWER_INDEX.md).
 
-## Current S19 / pre-S20 evidence — 2026-09-29
+## Latest runtime and installation records — 2026-09-30
 
-Current public boundary:
+- [Latest source-backed status](../LATEST_PUBLIC_STATUS_20260930.md)
+- [Current machine-readable snapshot](../RESULTS/SSI_V5_CURRENT_PUBLIC_STATUS_20260930.json)
+- [Raw S20 excerpt](S20_20260929/S20_LIVE_EXCERPT_RUN_20260929T212837Z_92e516e1.log)
+- [Parallel core/CZARA simulation](../MEXICO_PARALLEL_INTEGRATION_SIMULATION_20260929.md)
+- [V6 installation and post-CZARA gate](../DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md)
+
+The S20 excerpt contains 116 distinct completed cases: 79 PASS, 37 INCONCLUSIVE, 0 FAIL. It ends before full-stage completion. Its startup banner reports pre-S20 hardening PASS and S19 COMMITTED; the journal and detailed gate reports are not in the excerpt. Evidence-chain mode remains LOCAL_DEVELOPMENT with external pilot readiness false.
+
+Core and CZARA training are reported ongoing. V6's active scheduler waits for CZARA completion; 0/72 live missions are recorded at the installation snapshot. These are internal records, not independent Mexico validation.
+
+## Historical S19 / pre-S20 evidence — earlier 2026-09-29 snapshot
+
+Public boundary recorded at that earlier snapshot:
 
 ```text
 S19 execution = 210/210 complete
@@ -21,11 +33,11 @@ S19 consolidation = NOT YET CLAIMED COMMITTED
 S20 = NOT YET CLAIMED STARTED
 ```
 
-The S19 post-stage stop is currently classified as an **observability-induced integration regression** introduced while routing telemetry was being expanded to distinguish real Champion execution and Full Flow from catalog state or ambiguous log markers.
+The S19 post-stage stop was classified as an **observability-induced integration regression** introduced while routing telemetry was being expanded to distinguish real Champion execution and Full Flow from catalog state or ambiguous log markers.
 
-Primary current records:
+Original incident and requirement records:
 
-- [S19 observability incident and current stop point](../RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)
+- [Historical S19 observability incident](../RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)
 - [Pre-S20 hardening preregistration](../SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)
 - [External review feedback and attribution](../EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)
 - [Machine-readable pre-S20 hardening summary](../RESULTS/SSI_V5_PRE_S20_HARDENING_PUBLIC_SUMMARY_20260929.json)
@@ -45,7 +57,7 @@ The preregistered evidence additions include chain-specific tamper controls, a n
 ## Earlier continuation and LAB evidence — 2026-09-22
 
 - [Operator-supplied S11 continuation excerpt](SSI_V5_S11_CONTINUATION_20260922_OPERATOR_EXCERPT.md): 27 checked inherited cases and three new BODY_FROZEN native/CI passes; no stage summary supplied.
-- [Current report](../RESULTS/SSI_V5_LAB_AND_S11_CONTINUATION_20260922.md): implementation changes and evidence boundaries.
+- [Earlier 22 September report](../RESULTS/SSI_V5_LAB_AND_S11_CONTINUATION_20260922.md): implementation changes and evidence boundaries.
 - [Offline release summary](../RESULTS/SSI_V5_LAB_FIX_OFFLINE_TEST_SUMMARY_20260922.json): 165 tests across 14 suites, zero paid model calls in that suite.
 - [Component overview](../SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md): LEGO Pocket, META-LEGO and Director-connected laboratories.
 - [Football World boundary](../RESULTS/FOOTBALL_WORLD_IMPLEMENTATION_BOUNDARY_20260922.md): implementation retained; full data-path validation pending.

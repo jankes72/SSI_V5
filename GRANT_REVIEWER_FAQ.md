@@ -1,37 +1,39 @@
-# SSI V5 — Grant / Technical Reviewer FAQ — historical snapshot
+# SSI V5 — Grant and Technical Reviewer FAQ
 
-**Status:** `HISTORICAL REVIEWER FAQ / SUPERSEDED FOR CURRENT-STATE READING`  
-**Original update:** `2026-09-07`
+**Updated:** 2026-09-30  
+**Current summary:** [GRANT_REVIEWER_CURRENT_STATUS_20260930.md](GRANT_REVIEWER_CURRENT_STATUS_20260930.md)  
+**Source-backed status:** [LATEST_PUBLIC_STATUS_20260930.md](LATEST_PUBLIC_STATUS_20260930.md)
 
-This file is preserved as evidence of the project state and reviewer questions recorded on 2026-09-07.
+## What is SSI V5?
 
-It should not be used alone as the current SSI V5 status after the later S10 V1/V2 work, S1–S10 training-control predeclaration and implemented drone/humanoid software-domain transfer.
+An independently developed persistent multi-agent software research platform with DIRECTOR, BODY_FROZEN, six ISKRA lines, reusable BLOCKS/Micronetwork competence, adaptive routing, laboratory verification and evidence/provenance controls. CZARA provides multilingual research context.
 
-For the current reviewer summary use:
+## What is running now?
 
-[`GRANT_REVIEWER_CURRENT_STATUS_20260914.md`](GRANT_REVIEWER_CURRENT_STATUS_20260914.md)
+The operator reports core training continuing alongside CZARA. The public S20 excerpt captures 116 completed cases (79 PASS, 37 INCONCLUSIVE, 0 FAIL), not the final stage. V6 is installed with an active scheduler waiting for CZARA completion; the published snapshot records 0/72 live missions.
 
-For canonical current truth use:
+## Was the S19 consolidation problem resolved?
 
-[`CURRENT_TRUTH_INDEX_20260914.md`](CURRENT_TRUTH_INDEX_20260914.md)
+The later S20 startup banner reports pre-S20 hardening PASS and S19 COMMITTED. The [source log](evidence/S20_20260929/S20_LIVE_EXCERPT_RUN_20260929T212837Z_92e516e1.log) establishes that this was reported at startup. It does not include the transaction journal or individual gate reports needed for a fuller audit. The earlier incident and all S19 verdicts remain preserved.
 
-Key changes since this FAQ was recorded:
+## Is V6 already a successful dynamic benchmark?
 
-```text
-S1-S10 = latest shared V1/V2 training-control protocol
-S10 V1/V2 = explicit comparison lines
-DRONE / SWARM = implemented software-level research laboratory
-HUMANOID MOTION / STABILITY = implemented software-level research laboratory
-21 experiment outcomes = still NOT claimed complete
-physical validation = still NOT claimed
-```
+Its installer/self-tests report curriculum and MAIN/SHADOW guard checks. No completed live V6 mission, live promotion benefit or frozen/blind result is published at this snapshot.
 
-Historical questions, hardware context, 21-experiment predeclaration and earlier reviewer guidance remain available through Git history.
+## Has the Mexico team independently validated SSI?
 
-The current distinction is:
+Independent Mexico-side execution is not established. Current parallel training uses simulated participants. The [pre-benchmark protocol](MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md) describes later collaborative R&D and partner-defined scoring.
 
-```text
-DOMAIN IMPLEMENTED != EXPERIMENT PASSED
-CONSULTATION / CONSOLIDATION OPTION != BENEFIT PROVEN
-SOFTWARE DEMONSTRATOR != PHYSICAL VALIDATION
-```
+## Do software results prove physical robot performance?
+
+They establish outcomes in their declared software harnesses. Physical drone, humanoid and rescue-robot validation require separate evidence. Timing measurements retain their original software scope.
+
+## Can reviewers inspect or control the private runtime?
+
+Public review provides sanitized evidence and an observer portal. Private research access is separately scoped. ROOT authority and proprietary implementation are not granted by reading this repository.
+
+## Does this repository establish grant eligibility or funding selection?
+
+It supplies technical evidence and collaboration context. It does not determine programme eligibility, consortium commitments, an award or certified technology readiness. See the [collaboration entry](COLLABORATION_AND_PARTNER_ENTRY.md) for the proposed research model.
+
+The previous FAQ is retained in Git history; dated evidence files keep their original scope.
