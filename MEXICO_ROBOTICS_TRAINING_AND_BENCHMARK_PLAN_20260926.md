@@ -34,7 +34,7 @@ DIRECTOR
 
 BODY_FROZEN
   -> technical execution
-  -> LEGO / micronetwork / laboratory use
+  -> BLOCKS / micronetwork / laboratory use
 
 LABORATORIES
   -> measured verification
@@ -66,7 +66,7 @@ Preferred decision flow:
 NEW TASK
   |
   v
-MATCH EXISTING CHAMPION / LEGO / MICRONETWORK
+MATCH EXISTING CHAMPION / BLOCKS / MICRONETWORK
   |
   +--> strong match -> REUSE
   |
@@ -94,7 +94,7 @@ The current training design contains **48 planned stages**:
   12 DRONES
   12 HUMANOIDS
    6 MOTHER / CROSS-DOMAIN
-   8 OFFLINE DIRECTOR / LEGO OFFLINE
+   8 OFFLINE DIRECTOR / BLOCKS OFFLINE
 
 4 VALIDATION
 
@@ -150,7 +150,7 @@ The cross-domain block is intended to test whether SSI can reuse competence acro
 - cross-domain evidence comparison;
 - revision of a shared mission after a partner change request.
 
-### 4.4 OFFLINE DIRECTOR / LEGO OFFLINE — 8 training stages
+### 4.4 OFFLINE DIRECTOR / BLOCKS OFFLINE — 8 training stages
 
 A dedicated offline track is planned for environments where normal network access is unavailable.
 
@@ -165,10 +165,10 @@ Its intended responsibilities are:
 - store information until a relay becomes available;
 - synchronize with the central SSI after reconnection.
 
-The associated LEGO_OFFLINE research themes include:
+The associated BLOCKS_OFFLINE research themes include:
 
 - local map fragments;
-- `SPACE_LEGO` representation;
+- `SPACE_BLOCKS` representation;
 - map-delta exchange;
 - landmark-based map merge;
 - store-carry-forward;
@@ -179,14 +179,14 @@ The associated LEGO_OFFLINE research themes include:
 
 Optical/acoustic links are research data links for controlled environments, not a claim of replacing certified communication systems.
 
-## 5. SPACE_LEGO and no-network mapping
+## 5. SPACE_BLOCKS and no-network mapping
 
 One planned end-of-training capability is collaborative map construction in a mine, cave, damaged building or similar environment where GPS and normal network coverage may be unavailable.
 
 Each unit may create a local spatial fragment:
 
 ```text
-SPACE_LEGO
+SPACE_BLOCKS
 = local geometry
 + traversed segment
 + branch / junction
@@ -203,7 +203,7 @@ The intended pattern is:
 
 ```text
 LOCAL MAP
--> MAP DELTA / SPACE_LEGO
+-> MAP DELTA / SPACE_BLOCKS
 -> optical / acoustic / physical-carry relay
 -> another robot
 -> local merge
@@ -321,7 +321,7 @@ The final training block is intended to combine multiple competencies in long-fo
 
 ### CAPSTONE 1 — Offline underground mapping
 
-No normal network/GPS path. Multiple units create and exchange `SPACE_LEGO` fragments, then reconstruct a combined map.
+No normal network/GPS path. Multiple units create and exchange `SPACE_BLOCKS` fragments, then reconstruct a combined map.
 
 ### CAPSTONE 2 — Lost unit + partial map recovery
 
