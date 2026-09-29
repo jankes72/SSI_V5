@@ -94,23 +94,61 @@ The existing Mexico curriculum remains a planned 48-stage programme: 38 training
 
 Physical validation, independent external replication and benchmark success are not claimed before corresponding evidence exists.
 
-## 3. Current training status boundary
+## 3. Current training status boundary — updated 2026-09-29
 
-The last currently published detailed evidence package in the public front door covers S12.
-
-The owner/operator reports that:
+The public core-training front now extends through full S19 execution.
 
 ```text
-S11-S16 consolidations = COMMITTED
-S13-S16 run = RUN_20260926T064644Z_793783ad
-core training has progressed into the later S-stage sequence, including S19 activity
+S13-S18 = completed with committed consolidations
+S19 run = RUN_20260929T005550Z_a356e86c
+S19 execution_complete = true
+S19 PASS = 182
+S19 INCONCLUSIVE = 24
+S19 FAIL = 4
+S19 verified subset = 182
+S19 consolidation = NOT YET CLAIMED COMMITTED
+S20 = NOT YET CLAIMED STARTED
 ```
 
-These later-stage statements are recorded here as active-runtime status supplied by the owner. They do not replace the future sanitized result package containing stage totals, run identifiers, verified subsets, exclusions, consolidation journals and integrity evidence.
+The S19 case workload completed. The post-stage consolidation then stopped after the project integrated new routing observability intended to resolve whether Champion/Top-1 reuse and Full Flow were actually executing rather than being inferred from catalog state or ambiguous markers.
 
-The active S-stage sequence is intended to continue without interruption. Intermediate public publication is not required unless execution stops, an error requires disclosure, or the sequence closes. A final evidence package is intended after completion or termination.
+The current engineering classification is:
 
-No A1-A12 training sequence is declared in this protocol.
+```text
+OBSERVABILITY_INDUCED_INTEGRATION_REGRESSION
+```
+
+This incident is being used as a pre-benchmark hardening input. Before S20 continuation, the routing observer must pass a non-interference A/B gate and the consolidation path must demonstrate 7/7 actor+transaction SNAPSHOT correctness.
+
+The intended core sequence remains continuous after the gates pass:
+
+```text
+S19 consolidation COMMITTED
+-> S20 ... S40
+-> S40 consolidation COMMITTED
+-> WEB01 ... WEB24
+```
+
+The exact S19 incident and planned hardening are recorded separately:
+
+- [S19 observability incident and pre-S20 status](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)
+- [Pre-S20 observability/evidence hardening preregistration](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)
+
+### Evidence-chain and notary addendum informed by external review
+
+External DEV feedback from **Hamid Ahmadian** materially influenced the evidence requirements carried into the Mexico phase. The current preregistered additions include:
+
+- previous-hash-only mutation and missing-sequence causal controls;
+- a negative-control field explicitly outside the signed/hash-dependent payload;
+- append-only signed local chaining with monotonic sequence;
+- separation of executor/verifier/signing authority where independent attestation is claimed;
+- explicit notary outage behavior;
+- a bounded unsigned-attestation queue;
+- a defined buffer-limit transition to safer/degraded operation rather than silent evidence loss or unbounded local-only continuation.
+
+These are requirements to implement and test. They are not presented as already independently validated.
+
+Attribution and source chronology are preserved in [External review feedback and attribution](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md).
 
 ## 4. Champion-Challenger and accumulated competence
 
