@@ -35,7 +35,7 @@ ROUTER V10
 +
 ROUTER S10
 +
-MICRONETWORKS / LEGO / POCKET
+MICRONETWORKS / BLOCKS / POCKET
 +
 WORLD / DOMAIN LAYERS
 +
@@ -143,7 +143,7 @@ Its scope includes:
 
 In the completed V4 post-S10 provenance snapshot, the promoted BODY_FROZEN CONTINUUM state was hash-identified together with micronetwork candidates and artifacts.
 
-## 7. Micronetworks, LEGO and Pocket
+## 7. Micronetworks, BLOCKS and Pocket
 
 SSI does not treat every problem as one monolithic model invocation.
 
@@ -154,11 +154,11 @@ EXPERIENCE
 -> MICRONETWORK CANDIDATE
 -> VALIDATION
 -> REUSABLE COMPETENCE
--> LEGO COMPOSITION / ROUTING
+-> BLOCKS COMPOSITION / ROUTING
 -> CHALLENGER / CHAMPION / SPECIALIST / HOLD
 ```
 
-Pocket / LEGO Box acts as a catalog/composition layer for reusable competence packages.
+Pocket / BLOCKS Box acts as a catalog/composition layer for reusable competence packages.
 
 This allows later tasks to select, combine, verify or reject earlier competence instead of blindly recomputing everything.
 
@@ -201,7 +201,7 @@ The S1-S10 programme is a controlled curriculum used to develop and compare the 
 
 ```text
 S1  Foundation
-S2  LEGO + Micronetwork + Routing Practicum
+S2  BLOCKS + Micronetwork + Routing Practicum
 S3  Applied Autonomy
 S4  Robustness / Transfer Preparation
 S5  Pre-Experiment Maturity Gate
@@ -335,7 +335,7 @@ Shared ecosystem elements include:
 - CONTINUUM;
 - V10 competence routing;
 - S10 cross-line comparison;
-- Micronetwork/LEGO competence lifecycle;
+- Micronetwork/BLOCKS competence lifecycle;
 - world/domain execution;
 - evidence/provenance;
 - local ROOT / observer separation;
@@ -415,4 +415,4 @@ It does not by itself establish:
 
 The strongest accurate description is therefore:
 
-> **SSI is a persistent, evidence-oriented multi-agent software ecosystem in which DIRECTOR, BODY_FROZEN, six independent ISKRA lines, Hermes, CONTINUUM, Router V10, Router S10, Micronetwork/LEGO competence and world/domain layers form one closed competence-development and operational loop. S1-S10 is one controlled training programme inside that ecosystem, not the whole system.**
+> **SSI is a persistent, evidence-oriented multi-agent software ecosystem in which DIRECTOR, BODY_FROZEN, six independent ISKRA lines, Hermes, CONTINUUM, Router V10, Router S10, Micronetwork/BLOCKS competence and world/domain layers form one closed competence-development and operational loop. S1-S10 is one controlled training programme inside that ecosystem, not the whole system.**
