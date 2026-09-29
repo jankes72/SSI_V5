@@ -53,7 +53,7 @@ ROOT / OWNER SIDE
 = BODY_FROZEN chat
 = training controls
 = provider/model controls
-= LEGO / micronetwork / laboratory controls
+= BLOCKS / micronetwork / laboratory controls
 = private runtime and evidence administration
 ```
 
@@ -245,7 +245,7 @@ It should not expose:
 ```text
 owner filesystem
 /home/... paths
-LEGO Pocket internals
+BLOCKS Pocket internals
 private DIRECTOR chat
 private BODY_FROZEN chat
 LLM credentials
