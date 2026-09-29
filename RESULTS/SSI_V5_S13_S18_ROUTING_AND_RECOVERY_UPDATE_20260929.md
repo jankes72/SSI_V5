@@ -124,10 +124,10 @@ The recovery work also added or verified the following internal controls:
 - new runtime telemetry field for future cases, intended to record the effective routing path (`routing_execution`);
 - continuation support prepared for resuming S19 from `ISKRA1 / S19-01-01` while preserving the prior BODY_FROZEN evidence;
 - application hash synchronization after the controlled training-code patch;
-- Pocket Micro integrity pins resynchronized without modifying raw LEGO Pocket data, native model weights, Champion state or qualification state;
+- Pocket Micro integrity pins resynchronized without modifying raw BLOCKS Pocket data, native model weights, Champion state or qualification state;
 - Pocket Micro checker returned `READY`;
 - SSI Doctor returned `READY_FOR_BOOT` with all seven BODY/ISKRA actor sockets present;
-- WEB LEGO preflight remained `READY`.
+- WEB BLOCKS preflight remained `READY`.
 
 Observed WEB preflight state:
 
