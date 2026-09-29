@@ -12,6 +12,7 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 |---|---|
 | First technical review | **[REVIEWER_INDEX.md](REVIEWER_INDEX.md)** |
 | Current verified claims | **[CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)** |
+| Latest S13-S18 training/routing evidence | **[RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)** |
 | Reviewer orientation | **[START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)** |
 | Collaboration and external challenges | **[COLLABORATION_AND_PARTNER_ENTRY.md](COLLABORATION_AND_PARTNER_ENTRY.md)** |
 | Mexico pre-benchmark R&D protocol | **[MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md](MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md)** |
@@ -24,32 +25,45 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 - **Demonstrated scope:** software laboratory results for drone, humanoid and cross-domain rescue scenarios.
 - **Current boundary:** software evidence is published; physical validation, safety certification and independent external replication are not claimed.
 
-**Current public state:** 2026-09-28
+**Current public state:** 2026-09-29
 
-## Current published training evidence — S12 consolidated
+## Current published training evidence — S13-S18 completed
 
-| Stage | Execution | PASS | INCONCLUSIVE | FAIL | Verified subset | Consolidation |
+The current public training front now includes completed software/runtime evidence for **S13 through S18** from run `RUN_20260926T064644Z_793783ad`.
+
+| Stage | Execution | PASS | INCONCLUSIVE | FAIL | PASS rate | Consolidation |
 |---|---:|---:|---:|---:|---:|---|
-| S11 | 210/210 | 196 (93.3%) | 13 | 1 | 196 | COMMITTED |
-| S12 | 210/210 | 203 (96.7%) | 7 | 0 | 203 | COMMITTED |
-| S13-S40 | active internal sequence; detailed package not yet published | — | — | — | — | PENDING PUBLIC EVIDENCE |
+| S11 | 210/210 | 196 | 13 | 1 | 93.3% | COMMITTED |
+| S12 | 210/210 | 203 | 7 | 0 | 96.7% | COMMITTED |
+| S13 | 210/210 | 203 | 6 | 1 | 96.67% | COMMITTED |
+| S14 | 210/210 | 208 | 1 | 1 | 99.05% | COMMITTED |
+| S15 | 210/210 | 175 | 31 | 4 | 83.33% | COMMITTED |
+| S16 | 210/210 | 209 | 1 | 0 | 99.52% | COMMITTED |
+| S17 | 210/210 | 206 | 2 | 2 | 98.10% | COMMITTED |
+| S18 | 210/210 | 196 | 12 | 2 | 93.33% | COMMITTED |
+| **S13-S18 total** | **1,260/1,260** | **1,197** | **53** | **10** | **95.00%** | **6 committed consolidations** |
 
-Observed S11 -> S12 progression:
+Unique-case routing audit for completed S13-S18:
 
 ```text
-verified cases     196 -> 203   (+7)
-unresolved cases    14 -> 7     (-50%)
-FAIL                 1 -> 0
-live evidenced core stages = 2 / 30 in S11-S40
-next public evidence package = after the active sequence closes or stops
+routing provenance present = 1,260 / 1,260
+micronetwork_used          = 1,260 / 1,260
+v10_used                   = 1,260 / 1,260
+collective_used            = 1,260 / 1,260
+provider_gateway_used      = 1,199 / 1,260 (95.16%)
+
+automatic_champion=true    = 0 / 1,260
+champion_route_used        = 0 / 1,260
+no_automatic_champion=true = 1,260 / 1,260
 ```
 
-This is measured training progress, not a claim that S11 or S12 achieved all-PASS acceptance. Unresolved cases remain preserved rather than being promoted as verified knowledge.
+This supports Micronetwork/V10 participation in the recorded runtime path. It does **not** yet establish a measured percentage of exact reuse vs full-flow escalation because the older receipts lack a canonical final per-case route decision.
 
-The owner reports six committed consolidations through S16 and continued internal execution into the later S-stage sequence, including S19 activity. Those later stages are intentionally not promoted here to verified public results until the uninterrupted sequence closes or stops and its sanitized evidence package is published. See the [pre-benchmark R&D protocol](MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md).
+S19 was interrupted after BODY_FROZEN produced 30 cases: **14 PASS, 16 INCONCLUSIVE, 0 FAIL**. After the host interruption, 15 already-existing BODY_FROZEN case files were missing CASE attestations; the recovery procedure restored only those attestations, preserved their original results, rechecked coverage and sealed the source run as interrupted. No successful post-recovery ISKRA1 S19 execution is claimed yet.
 
-- [Latest S12 live report](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
-- [Current machine-readable training progress](RESULTS/SSI_V5_CURRENT_TRAINING_PROGRESS_20260926.json)
+- [Detailed S13-S18 routing and recovery report](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
+- [Machine-readable S13-S18 public summary](RESULTS/SSI_V5_S13_S18_ROUTING_PUBLIC_SUMMARY_20260929.json)
+- [Previous S12 live report](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
 
 ## Current verified state
 
@@ -199,7 +213,7 @@ DIRECTOR
 ## Read this repository in this order
 
 1. [REVIEWER_INDEX.md](REVIEWER_INDEX.md)
-2. [Latest S12 live training + committed consolidation](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
+2. [Latest S13-S18 routing and recovery evidence](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
 3. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
 4. [LEGO Pocket, META-LEGO, laboratories and Football World](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md)
 5. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)
