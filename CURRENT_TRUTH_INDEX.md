@@ -7,6 +7,9 @@
 
 ## Use these current documents first
 
+- [S19 observability incident and pre-S20 status](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)
+- [Pre-S20 observability/evidence hardening preregistration](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)
+- [External review feedback and attribution](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)
 - [Latest S13-S18 routing and crash-recovery evidence](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
 - [Machine-readable S13-S18 public summary](RESULTS/SSI_V5_S13_S18_ROUTING_PUBLIC_SUMMARY_20260929.json)
 - [Latest S12 live training + committed consolidation](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
@@ -35,9 +38,9 @@ Earlier milestones and historical evidence:
 9. [`VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md`](VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md)
 10. [`docs/index.html`](docs/index.html) — source of the published public research portal.
 
-## Current training front — S13-S18 completed, S19 interrupted/recovery prepared
+## Current training front — S19 fully executed; consolidation hardening before S20
 
-Current published core-training progression:
+Current evidenced progression:
 
 | Stage | Executed | PASS | INCONCLUSIVE | FAIL | Consolidation |
 |---|---:|---:|---:|---:|---|
@@ -49,54 +52,78 @@ Current published core-training progression:
 | S16 | 210/210 | 209 | 1 | 0 | COMMITTED |
 | S17 | 210/210 | 206 | 2 | 2 | COMMITTED |
 | S18 | 210/210 | 196 | 12 | 2 | COMMITTED |
+| **S19** | **210/210** | **182** | **24** | **4** | **NOT YET COMMITTED** |
 
-For S13-S18 together:
+S19 full execution run:
 
 ```text
-unique cases = 1,260
-PASS = 1,197 (95.00%)
-INCONCLUSIVE = 53
-FAIL = 10
+RUN = RUN_20260929T005550Z_a356e86c
+execution_complete = true
+PASS = 182
+INCONCLUSIVE = 24
+FAIL = 4
+verified subset = 182
+excluded = 28
 ```
 
-The unique-case audit counts each `(stage_id, actor, case_id)` once. For all completed S13-S18 cases, `micronetwork_used=true`, `v10_used=true` and `collective_used=true`. Automatic Champion execution is not claimed: `automatic_champion=false` and `no_automatic_champion=true` were recorded across all 1,260 completed cases, while no explicit Champion route execution was found.
+The S19 case workload completed. The subsequent cross-consolidation transaction `CC_09eae1705906e8acaa653eb28123fc84` did not commit.
 
-The older receipts do not expose a canonical final per-case routing decision that cleanly separates exact reuse from full-flow escalation. Therefore the current bounded routing classification is `MICRONETWORK_V10_USED_ROUTE_UNRESOLVED`, not a claimed reuse/full-flow percentage.
+### Why consolidation stopped
 
-S19 was interrupted after BODY_FROZEN produced 30 cases: **14 PASS, 16 INCONCLUSIVE, 0 FAIL**. Fifteen already-existing S19/BODY_FROZEN case files lacked CASE attestations after the host interruption; only those missing attestations were restored, their original outcomes were preserved, evidence coverage was rechecked, and the source run was sealed as interrupted.
+The stop is not classified as a case-level capability failure. It occurred after routing observability was expanded to resolve an earlier evidence gap: S13-S18 receipts showed Micronetwork/V10 participation but could not prove whether a Champion was actually selected/executed or when Full Flow actually ran.
 
-Recovery/readiness checks subsequently reported:
+The current root-cause classification is:
 
 ```text
-7 BODY/ISKRA runtime sockets = present
-Pocket Micro = READY
-Doctor = READY_FOR_BOOT
-WEB LEGO = READY
-WEB LEGO items = 126
-WEB templates = 15
-WEB stages = 24
-WEB cases = 192
-WEB runtimes = 7/7
-WEB data_policy = SYNTHETIC_ONLY
+OBSERVABILITY_INDUCED_INTEGRATION_REGRESSION
 ```
 
-New routing telemetry for future cases is installed to record the effective path more explicitly. Successful post-recovery S19 execution has not yet been published, so no new ISKRA1 result is claimed here.
+The observability/continuation integration altered the runtime/bootstrap path used by post-stage consolidation. Recovery also exposed a stale pending-mission condition in BODY_FROZEN. The stage results remain preserved; S19 is not being relabeled.
 
-The configured post-S40 sequence remains:
+### Pre-S20 hardening is now preregistered
+
+Before continuation, SSI will gate:
+
+- observer non-interference using matched A/B execution;
+- explicit Champion available/selected/executed/result evidence;
+- explicit exact-reuse / Full-Flow / provider-fallback evidence;
+- model/provider correlation;
+- seven-actor failure overlap;
+- 7/7 actor+transaction SNAPSHOT validation;
+- chain-specific previous-hash and missing-sequence tests;
+- a hash-chain negative control;
+- explicit notary/signing outage behavior;
+- explicit unsigned-attestation buffer-limit safe mode.
+
+The evidence-chain additions are materially informed by external DEV review from **Hamid Ahmadian**. His feedback is attributed separately rather than presented as an SSI-originated requirement.
+
+### Current continuation boundary
 
 ```text
-S19 restart from ISKRA1
+S19 execution = complete
+S19 consolidation = not yet claimed COMMITTED
+S20 = not yet claimed started
+WEB01-WEB24 = READY package, not yet claimed live-complete
+```
+
+Target sequence:
+
+```text
+pre-S20 hardening PASS
+-> S19 consolidation COMMITTED
 -> S20 ... S40
--> S40 execution_complete = true
--> S40 consolidation = COMMITTED
+-> S40 consolidation COMMITTED
 -> WEB01 ... WEB24
+-> final diagnostic report
 ```
 
-The actual S40 -> WEB01 live transition remains pending runtime evidence.
+Current primary records:
 
-- [Detailed S13-S18 routing and recovery report](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
-- [Machine-readable S13-S18 public summary](RESULTS/SSI_V5_S13_S18_ROUTING_PUBLIC_SUMMARY_20260929.json)
-- [Previous S12 live report](RESULTS/SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md)
+- [S19 incident / current stop point](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)
+- [Pre-S20 hardening preregistration](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)
+- [External review attribution](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)
+- [Machine-readable pre-S20 summary](RESULTS/SSI_V5_PRE_S20_HARDENING_PUBLIC_SUMMARY_20260929.json)
+- [S13-S18 routing evidence](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
 
 ## Preserved V4 baseline — 2026-09-17
 
