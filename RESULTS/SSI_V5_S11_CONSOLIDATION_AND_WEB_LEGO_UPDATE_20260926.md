@@ -1,4 +1,4 @@
-# SSI V5 — S11 training completion, verified-subset consolidation and WEB LEGO update
+# SSI V5 — S11 training completion, verified-subset consolidation and WEB BLOCKS update
 
 **Date:** 2026-09-26  
 **Repository role:** public evidence/review mirror; proprietary implementation remains private.  
@@ -100,7 +100,7 @@ Several safeguards stopped execution before successful completion and were repai
 
 **Follow-up:** the cross-run prerequisite patch is now validated by live S12 execution. Run `RUN_20260925T223720Z_6e1b1fc8` executed 210/210 cases with 203 PASS, 7 INCONCLUSIVE and 0 FAIL. Transaction `CC_db09484eefd9db783742336b69296eb5` subsequently reached `journal.status=COMMITTED` and its request explicitly references `stage_id=S12`, the same training run ID, and `excluded_case_count=7`. See [the dedicated S12 report](SSI_V5_S12_LIVE_TRAINING_AND_CONSOLIDATION_20260926.md).
 
-## 5. WEB LEGO / web-programming training extension
+## 5. WEB BLOCKS / web-programming training extension
 
 A separate private extension has been installed for web-engineering training. Its status command reported:
 
@@ -142,7 +142,7 @@ core training: S11 -> ... -> S40
                          +
               S40 consolidation COMMITTED
                          +
-                  WEB LEGO READY
+                  WEB BLOCKS READY
                          |
                          v
                 WEB01 -> ... -> WEB24
@@ -160,7 +160,7 @@ The current evidence supports these bounded statements:
 - 196 cases were verified PASS; 14 remained unresolved.
 - Only the 196 verified cases were admitted to the recorded S11 consolidation.
 - BODY_FROZEN and DIRECTOR both reported successful loading while preserving the declared identity split.
-- The WEB LEGO extension is installed and reports READY with 126 LEGO items, 15 templates, 24 stages and 192 cases under a SYNTHETIC_ONLY policy.
+- The WEB BLOCKS extension is installed and reports READY with 126 BLOCKS items, 15 templates, 24 stages and 192 cases under a SYNTHETIC_ONLY policy.
 - S12 live execution completed with 203 verified PASS and 7 unresolved cases; its linked consolidation transaction is COMMITTED.
 
 It does **not** establish:
