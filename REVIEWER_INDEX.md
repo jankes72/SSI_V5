@@ -19,12 +19,31 @@ This file is the shortest route through the repository. Historical files remain 
 9. [S13-S18 routing and recovery evidence](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md) — historical unique-case routing evidence.
 10. [Dual Mother measured laboratory report](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md) — preserved cross-domain software-lab evidence.
 
+## CZARA active internal training — 2026-09-30
+
+`CZARA-RND-1.0.0` has reached its 120-case TRAINING checkpoint:
+
+```text
+22 PASS / 98 INCONCLUSIVE / 0 FAIL
+120 / 120 training cases reached
+24 validation cases = not yet claimed
+16 Champion Benchmark cases = not yet claimed
+```
+
+The track exercises multilingual research-context handling, role/authority separation, benchmark freeze/revision control, evidence provenance and controlled professor-role -> CZARA -> DIRECTOR routing.
+
+This is internal simulated training for the planned Mexico collaboration, not a completed live external benchmark.
+
+- [CZARA S120 training checkpoint](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md)
+- [Machine-readable CZARA checkpoint](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.json)
+
 ## Planned Mexico robotics training / CZARA review path
 
-For reviewers interested in the next planned robotics collaboration track:
+For reviewers interested in the Mexico collaboration track, start with the active internal CZARA checkpoint, then the architecture and benchmark-plan records:
 
-1. [CZARA — Mexico Research Context, Translation and Learning Layer](SYSTEM/CZARA_MEXICO_RESEARCH_LAYER_20260926.md)
-2. [Mexico Robotics Training and External Benchmark Plan](MEXICO_ROBOTICS_TRAINING_AND_BENCHMARK_PLAN_20260926.md)
+1. [CZARA S120 internal training checkpoint](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md)
+2. [CZARA — Mexico Research Context, Translation and Learning Layer](SYSTEM/CZARA_MEXICO_RESEARCH_LAYER_20260926.md)
+3. [Mexico Robotics Training and External Benchmark Plan](MEXICO_ROBOTICS_TRAINING_AND_BENCHMARK_PLAN_20260926.md)
 
 These documents are **architecture and benchmark-plan records**, not completed external evidence. They describe the intended multilingual collaboration layer, Champion-first training policy, 48-stage curriculum, offline/underground capstones and the separation between training, validation and final external benchmark.
 
