@@ -1,23 +1,24 @@
 # SSI V5 — Reviewer Index
 
 **Current public state:** `2026-09-30`  
-**Repository role:** public evidence and review mirror for a private SSI implementation.  
+**Repository role:** public R&D, evidence and external-validation hub for a private SSI implementation.  
 **Audience:** grant reviewers, research collaborators, technical reviewers and validation partners.
 
 This file is the shortest route through the repository. Historical files remain preserved for provenance, but they are not the recommended starting point.
 
 ## 5-minute review
 
-1. [S20-S26 operator stop and LAB repair incident](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md) — current training boundary, diagnosis, repair status and claim limits.
-2. [Machine-readable S20-S26 stop/repair summary](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_PUBLIC_SUMMARY_20260930.json) — compact current state for audit tooling.
-3. [README.md](README.md) — concise project front door and current state.
-4. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md) — canonical pointer to the latest evidence-backed state.
-5. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md) — reviewer-oriented project summary.
-6. [Historical S19 observability incident](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md) — preserved pre-S20 incident chronology.
-7. [Pre-S20 hardening preregistration](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md) — frozen controls used before continuation.
-8. [External review attribution](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md) — maps external DEV feedback to concrete requirements.
-9. [S13-S18 routing and recovery evidence](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md) — historical unique-case routing evidence.
-10. [Dual Mother measured laboratory report](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md) — preserved cross-domain software-lab evidence.
+1. [Current research roadmap — 2026-09-30](CURRENT_RESEARCH_ROADMAP_20260930.md) — programme-level path from current reliability work through CZARA, Dynamic Mission V6, WEB engineering, Mexico and external validation.
+2. [S20-S26 operator stop and LAB repair incident](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md) — current training boundary, diagnosis, repair status and claim limits.
+3. [Machine-readable S20-S26 stop/repair summary](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_PUBLIC_SUMMARY_20260930.json) — compact current state for audit tooling.
+4. [README.md](README.md) — concise project front door and current state.
+5. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md) — canonical pointer to the latest evidence-backed state.
+6. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md) — reviewer-oriented project summary.
+7. [Historical S19 observability incident](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md) — preserved pre-S20 incident chronology.
+8. [Pre-S20 hardening preregistration](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md) — frozen controls used before continuation.
+9. [External review attribution](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md) — maps external DEV feedback to concrete requirements.
+10. [S13-S18 routing and recovery evidence](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md) — historical unique-case routing evidence.
+11. [Dual Mother measured laboratory report](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md) — preserved cross-domain software-lab evidence.
 
 ## CZARA active internal training — 2026-09-30
 
@@ -91,7 +92,7 @@ A targeted diagnostic sample of **18 cases** showed that the apparent `unparseab
 
 The diagnosis also identified two additional reliability gaps: required task outputs were not always propagated correctly to the reviewer path, and dedicated R&D execution scenarios remain incomplete for parts of S20-S26.
 
-A repair package (`SSI_LAB_REPAIR_20260930.zip`) was prepared and reported **17/17 offline tests PASS**. The public mirror does **not** yet claim that the live private runtime has been repaired/restarted successfully. Historical verdicts remain preserved.
+A repair package (`SSI_LAB_REPAIR_20260930.zip`) was prepared and reported **17/17 offline tests PASS**. The public hub does **not** yet claim that the live private runtime has been repaired/restarted successfully. Historical verdicts remain preserved.
 
 - [S20-S26 operator stop and LAB repair incident](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md)
 - [Machine-readable S20-S26 stop/repair summary](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_PUBLIC_SUMMARY_20260930.json)
