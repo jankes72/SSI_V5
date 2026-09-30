@@ -5,7 +5,23 @@
 **Status:** `OPEN TO CONTROLLED RESEARCH / TECHNOLOGY / CONSORTIUM COLLABORATION`  
 **Public boundary:** proprietary implementation remains private unless separately licensed or explicitly disclosed.
 
-> Grant and technical reviewers should start with [REVIEWER_INDEX.md](REVIEWER_INDEX.md).
+> Grant and technical reviewers should start with [CURRENT_RESEARCH_ROADMAP_20260930.md](CURRENT_RESEARCH_ROADMAP_20260930.md) and [REVIEWER_INDEX.md](REVIEWER_INDEX.md).
+
+## External validation path
+
+SSI's preferred collaboration sequence is deliberately staged:
+
+```text
+partner-defined bounded R&D problem
+-> acceptance criteria frozen before the session
+-> CZARA / DIRECTOR session benchmark without production write access
+-> PASS / FAIL / INCONCLUSIVE preserved
+-> optional simulation / digital-twin phase
+-> optional controlled physical pilot
+-> independent replication where feasible
+```
+
+A company, laboratory or university is not described as a partner or validator until it explicitly agrees to participate. Outreach alone is not treated as collaboration evidence.
 
 ## Current reliability / training boundary — 2026-09-30
 
