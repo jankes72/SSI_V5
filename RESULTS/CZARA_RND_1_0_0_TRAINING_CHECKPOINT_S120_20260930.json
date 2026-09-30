@@ -1,0 +1,109 @@
+{
+  "schema": "ssi.v5.czara-rnd-1.0.0-training-checkpoint.v1",
+  "recorded_date": "2026-09-30",
+  "track": "CZARA-RND-1.0.0",
+  "status": "INTERNAL_TRAINING_CHECKPOINT",
+  "external_mexico_benchmark_claimed": false,
+  "curriculum": {
+    "total": 160,
+    "training": 120,
+    "validation": 24,
+    "champion_benchmark": 16
+  },
+  "checkpoint_s099": {
+    "total": 99,
+    "pass": 19,
+    "inconclusive": 80,
+    "fail": 0,
+    "current_case": "CZARA_S099",
+    "current_case_verdict": "PASS"
+  },
+  "checkpoint_s120": {
+    "total": 120,
+    "pass": 22,
+    "inconclusive": 98,
+    "fail": 0,
+    "training_phase_reached": true,
+    "validation_claimed": 0,
+    "champion_benchmark_claimed": 0
+  },
+  "ranges_to_s099": [
+    {
+      "range": "S001-S020",
+      "pass": 5,
+      "inconclusive": 15,
+      "fail": 0
+    },
+    {
+      "range": "S021-S040",
+      "pass": 3,
+      "inconclusive": 17,
+      "fail": 0
+    },
+    {
+      "range": "S041-S060",
+      "pass": 3,
+      "inconclusive": 17,
+      "fail": 0
+    },
+    {
+      "range": "S061-S080",
+      "pass": 7,
+      "inconclusive": 13,
+      "fail": 0
+    },
+    {
+      "range": "S081-S099",
+      "pass": 1,
+      "inconclusive": 18,
+      "fail": 0
+    }
+  ],
+  "post_s099_pass_cases": [
+    "S108",
+    "S109",
+    "S116"
+  ],
+  "skill_catalog": {
+    "total_candidates": 520,
+    "qualified": 9,
+    "candidate": 511,
+    "hold": 0
+  },
+  "simulated_population": {
+    "students": 15,
+    "experts": 4,
+    "professor": 1,
+    "total": 20
+  },
+  "observed_training_capabilities": [
+    "multilingual_translation",
+    "technical_token_preservation",
+    "speaker_role_separation",
+    "authorization_guard",
+    "director_routing",
+    "benchmark_freeze",
+    "versioned_revision",
+    "evidence_provenance",
+    "multi_speaker_context"
+  ],
+  "representative_case_s089": {
+    "verdict": "INCONCLUSIVE",
+    "professor_role_messages_delivered": 2,
+    "director_responses": 2,
+    "authorization_errors": 0,
+    "learning_applied": true,
+    "skill_coverage": 0,
+    "required_skills_missing": 20,
+    "translations_ok": false
+  },
+  "direct_to_director_observed": true,
+  "claim_boundary": {
+    "all_inconclusive_same_failure_mode": false,
+    "live_external_professor_session": false,
+    "validation_complete": false,
+    "champion_benchmark_complete": false,
+    "independent_external_validation": false,
+    "physical_robotics_validation": false
+  }
+}
