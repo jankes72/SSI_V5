@@ -7,6 +7,9 @@
 
 ## Use these current documents first
 
+- [CZARA S120 internal training checkpoint](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md)
+- [Machine-readable CZARA checkpoint](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.json)
+
 - [S20-S26 operator stop and LAB repair incident](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md)
 - [Machine-readable S20-S26 stop/repair summary](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_PUBLIC_SUMMARY_20260930.json)
 
@@ -67,6 +70,42 @@ A repair package (`SSI_LAB_REPAIR_20260930.zip`) was prepared and reported **17/
 
 **Continuation boundary:** do not treat the old S20-S40 launcher as authorized for restart. The next continuation must preserve a new post-repair runtime/provenance boundary and support frozen-case replay.
 
+
+## Parallel CZARA training checkpoint — 2026-09-30
+
+CZARA has moved beyond architecture-only planning into an **active internal training track** for the planned Poland-Mexico research workflow.
+
+Current `CZARA-RND-1.0.0` checkpoint:
+
+```text
+CURRICULUM = 160 cases
+TRAINING = 120
+VALIDATION = 24
+CHAMPION BENCHMARK = 16
+
+S001-S120 reached
+PASS = 22
+INCONCLUSIVE = 98
+FAIL = 0
+```
+
+The training exercises multilingual translation/context preservation, speaker and role separation, professor-level authority, benchmark freeze/revision handling, evidence provenance and controlled routing of research context to DIRECTOR.
+
+A representative training path already exercises:
+
+```text
+PROFESSOR-ROLE MESSAGE (es-MX)
+-> CZARA translation/context
+-> DIRECTOR
+-> policy-consistent response
+```
+
+The high `INCONCLUSIVE` rate is preserved as a real limitation. A representative case can successfully deliver professor-role instructions and DIRECTOR responses while still remaining INCONCLUSIVE because the full skill/translation acceptance contract was not demonstrated.
+
+This is **internal simulated training**, not a completed live external Mexico benchmark. Validation 0/24 and Champion Benchmark 0/16 are claimed at this checkpoint.
+
+- [CZARA S120 training checkpoint](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md)
+- [Machine-readable CZARA checkpoint](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.json)
 
 ## Preserved V4 baseline — 2026-09-17
 
