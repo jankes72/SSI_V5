@@ -1,12 +1,15 @@
 # SSI V5 — Reviewer Index
 
-**Current public state:** `2026-09-29`  
+**Current public state:** `2026-09-30`  
 **Repository role:** public evidence and review mirror for a private SSI implementation.  
 **Audience:** grant reviewers, research collaborators, technical reviewers and validation partners.
 
 This file is the shortest route through the repository. Historical files remain preserved for provenance, but they are not the recommended starting point.
 
 ## 5-minute review
+
+1. [S20-S26 operator stop and LAB repair incident](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md) — current training boundary, diagnosis, repair status and claim limits.
+2. [Machine-readable S20-S26 stop/repair summary](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_PUBLIC_SUMMARY_20260930.json) — compact current state for audit tooling.
 
 1. [README.md](README.md) — concise project front door and current state.
 2. [S19 observability incident and pre-S20 status](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md) — S19 executed 210/210; post-stage consolidation blocked by an observability-induced integration regression.
@@ -57,55 +60,32 @@ SEPARATE SOFTWARE-LAB RESULTS FROM PHYSICAL VALIDATION
 DO NOT CLAIM UNPUBLISHED OR IN-PROGRESS WORK AS VERIFIED
 ```
 
-## Current training progress — S19 executed; consolidation blocked before S20
+## Current training status — operator stop and LAB repair boundary — 2026-09-30
+
+Core training progressed through completed S20-S25 stages and into S26. The operator then **manually stopped the run with Ctrl-C** because the number of `INCONCLUSIVE` outcomes and pending cases was increasing and no longer represented a trustworthy training signal.
+
+Latest preserved diagnostic snapshot:
 
 ```text
-S13: 210/210 | 203 PASS |  6 INCONCLUSIVE | 1 FAIL | COMMITTED
-S14: 210/210 | 208 PASS |  1 INCONCLUSIVE | 1 FAIL | COMMITTED
-S15: 210/210 | 175 PASS | 31 INCONCLUSIVE | 4 FAIL | COMMITTED
-S16: 210/210 | 209 PASS |  1 INCONCLUSIVE | 0 FAIL | COMMITTED
-S17: 210/210 | 206 PASS |  2 INCONCLUSIVE | 2 FAIL | COMMITTED
-S18: 210/210 | 196 PASS | 12 INCONCLUSIVE | 2 FAIL | COMMITTED
-S19: 210/210 | 182 PASS | 24 INCONCLUSIVE | 4 FAIL | CONSOLIDATION NOT YET COMMITTED
+TOTAL = 1,326
+PASS = 848
+INCONCLUSIVE = 470
+FAIL = 8
+S20-S25 verified-subset consolidations = PASS for BODY_FROZEN + DIRECTOR
+S26 = interrupted / not claimed complete
 ```
 
-S19 full execution is recorded under `RUN_20260929T005550Z_a356e86c` with `execution_complete=true`. The verified subset contains 182 cases and preserves 28 non-PASS cases outside that subset.
+A targeted diagnostic sample of **18 cases** showed that the apparent `unparseable_json` symptom was an **empty response after `INFLIGHT_LIMIT`**. This finding is limited to the inspected sample and is **not** generalized to every unresolved case.
 
-The subsequent consolidation transaction `CC_09eae1705906e8acaa653eb28123fc84` stopped after the project integrated new routing observability intended to answer a previously unresolved question: whether Champion/Top-1 reuse and Full Flow are actually executed, rather than inferred from catalog state or repeated log markers.
+The diagnosis also identified two additional reliability gaps: required task outputs were not always propagated correctly to the reviewer path, and dedicated R&D execution scenarios remain incomplete for parts of S20-S26.
 
-Current engineering classification:
+A repair package (`SSI_LAB_REPAIR_20260930.zip`) was prepared and reported **17/17 offline tests PASS**. The public mirror does **not** yet claim that the live private runtime has been repaired/restarted successfully. Historical verdicts remain preserved.
 
-```text
-OBSERVABILITY_INDUCED_INTEGRATION_REGRESSION
-```
+- [S20-S26 operator stop and LAB repair incident](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md)
+- [Machine-readable S20-S26 stop/repair summary](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_PUBLIC_SUMMARY_20260930.json)
 
-This is a post-stage infrastructure/instrumentation failure, not a relabeling of the S19 case outcomes.
+**Continuation boundary:** do not treat the old S20-S40 launcher as authorized for restart. The next continuation must preserve a new post-repair runtime/provenance boundary and support frozen-case replay.
 
-Before S20, SSI has preregistered:
-
-- observability non-interference A/B testing;
-- explicit Champion selected/executed/result evidence;
-- explicit exact-reuse and Full-Flow evidence;
-- provider/model correlation and cross-actor failure matrices;
-- 7/7 transaction-bound consolidation SNAPSHOT checks;
-- previous-hash-only, missing-sequence and negative-control evidence tests;
-- explicit notary outage and buffer-limit safe-mode behavior.
-
-The evidence hardening explicitly credits **Hamid Ahmadian** for DEV review feedback that materially shaped these requirements. This is feedback provenance, not an endorsement or independent audit.
-
-Current boundary:
-
-```text
-S19 execution = COMPLETE
-S19 consolidation = NOT YET CLAIMED COMMITTED
-S20 = NOT YET CLAIMED STARTED
-WEB01-WEB24 = READY PACKAGE / LIVE COMPLETION NOT CLAIMED
-```
-
-- [S19 incident and current stop point](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)
-- [Pre-S20 hardening preregistration](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)
-- [External review attribution](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)
-- [Machine-readable pre-S20 summary](RESULTS/SSI_V5_PRE_S20_HARDENING_PUBLIC_SUMMARY_20260929.json)
 
 ## Preserved verified milestone
 
