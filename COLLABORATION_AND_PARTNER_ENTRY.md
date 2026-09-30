@@ -19,6 +19,24 @@ This is relevant to external partners because SSI's collaboration model requires
 
 - [S20-S26 operator stop and LAB repair incident](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md)
 - [Machine-readable stop/repair summary](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_PUBLIC_SUMMARY_20260930.json)
+## CZARA active internal training — 2026-09-30
+
+`CZARA-RND-1.0.0` has reached its 120-case TRAINING checkpoint:
+
+```text
+22 PASS / 98 INCONCLUSIVE / 0 FAIL
+120 / 120 training cases reached
+24 validation cases = not yet claimed
+16 Champion Benchmark cases = not yet claimed
+```
+
+The track exercises multilingual research-context handling, role/authority separation, benchmark freeze/revision control, evidence provenance and controlled professor-role -> CZARA -> DIRECTOR routing.
+
+This is internal simulated training for the planned Mexico collaboration, not a completed live external benchmark.
+
+- [CZARA S120 training checkpoint](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md)
+- [Machine-readable CZARA checkpoint](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.json)
+
 ## What SSI can offer a partner now
 
 SSI V5 can already be evaluated through a bounded evidence contract without requiring a partner to accept broad claims about the system.
@@ -83,7 +101,7 @@ See:
 - [CZARA — Mexico Research Context, Translation and Learning Layer](SYSTEM/CZARA_MEXICO_RESEARCH_LAYER_20260926.md)
 - [Mexico Robotics Training and External Benchmark Plan](MEXICO_ROBOTICS_TRAINING_AND_BENCHMARK_PLAN_20260926.md)
 
-This remains a **planned collaboration track**. Successful Mexico execution, physical validation and independent replication are not claimed yet.
+The external Mexico collaboration and benchmark remain **planned**, but CZARA is no longer architecture-only: its internal `CZARA-RND-1.0.0` training has reached 120/120 training cases with 22 PASS / 98 INCONCLUSIVE / 0 FAIL. External Mexico execution, the 24 validation cases, the 16 Champion Benchmark cases, physical validation and independent replication are not claimed yet.
 
 ## Relevant collaboration areas
 
