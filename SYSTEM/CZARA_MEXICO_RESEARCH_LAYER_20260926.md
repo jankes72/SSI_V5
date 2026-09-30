@@ -1,10 +1,16 @@
 # CZARA — Mexico Research Context, Translation and Learning Layer
 
 **Date:** `2026-09-26`  
-**Status:** `ARCHITECTURE / PLANNED RESEARCH WORKFLOW`  
+**Status:** `ARCHITECTURE + ACTIVE INTERNAL TRAINING / EXTERNAL MEXICO BENCHMARK STILL PLANNED`  
 **Scope:** public, sanitized architectural description. Proprietary implementation, credentials, private prompts and reconstructive internals remain private.
 
 > This document describes the intended role of **CZARA** in the planned SSI robotics collaboration with a research team in Mexico. It is a design and benchmark-plan document, not evidence that the external benchmark has already been executed.
+
+### Training update — 2026-09-30
+
+The architecture now has an active internal training track. `CZARA-RND-1.0.0` has reached the end of its 120-case TRAINING phase with **22 PASS / 98 INCONCLUSIVE / 0 FAIL**. The remaining **24 validation + 16 Champion Benchmark** cases are not claimed completed. This remains internal simulated training, not a live external Mexico benchmark.
+
+See [CZARA S120 training checkpoint](../RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md).
 
 ## 1. Why CZARA exists
 
