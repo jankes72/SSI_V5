@@ -1,12 +1,24 @@
 # SSI V5 — Collaboration and Partner Entry
 
-**Updated:** `2026-09-22`  
+**Updated:** `2026-09-30`  
 **Preserved cross-domain evidence:** `2026-09-18`; current LAB/continuation update: `2026-09-22`  
 **Status:** `OPEN TO CONTROLLED RESEARCH / TECHNOLOGY / CONSORTIUM COLLABORATION`  
 **Public boundary:** proprietary implementation remains private unless separately licensed or explicitly disclosed.
 
 > Grant and technical reviewers should start with [REVIEWER_INDEX.md](REVIEWER_INDEX.md).
 
+## Current reliability / training boundary — 2026-09-30
+
+Core training progressed through completed S20-S25 stages and into S26, then was **manually stopped by the operator** after abnormal growth of `INCONCLUSIVE` and pending cases.
+
+The current public incident record preserves **1,326 verdicts: 848 PASS, 470 INCONCLUSIVE and 8 FAIL**. These values are not presented as a universal capability score.
+
+A targeted sample of 18 apparent JSON failures traced the symptom to empty responses after `INFLIGHT_LIMIT`; reviewer-input propagation defects were also identified. A repair package passed 17/17 offline tests, but a successful live restart is not yet claimed.
+
+This is relevant to external partners because SSI's collaboration model requires the measurement pipeline to be trustworthy before an official frozen benchmark is accepted.
+
+- [S20-S26 operator stop and LAB repair incident](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md)
+- [Machine-readable stop/repair summary](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_PUBLIC_SUMMARY_20260930.json)
 ## What SSI can offer a partner now
 
 SSI V5 can already be evaluated through a bounded evidence contract without requiring a partner to accept broad claims about the system.
