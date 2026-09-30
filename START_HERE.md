@@ -5,66 +5,35 @@
 **Architecture author:** Paweł Jankiewicz (`jankes72`, `PROGRAMMER_ROOT`)  
 **Development model:** independent solo R&D; designed and integrated by one author outside regular working hours. AI coding/reasoning tools support implementation, analysis and review; they do not constitute a development team. External collaborators are introduced for domain expertise, challenge design and independent validation.  
 **Author context:** [AUTHOR_CONTEXT.md](AUTHOR_CONTEXT.md)  
-**Updated:** `2026-09-29`  
+**Updated:** `2026-09-30`  
 **Repository role:** public research/evidence mirror with a published observer portal; proprietary implementation remains private.
 
-## Current training front — S19 executed; pre-S20 hardening active — 2026-09-29
+## Current training status — operator stop and LAB repair boundary — 2026-09-30
 
-The current evidenced core progression is:
+Core training progressed through completed S20-S25 stages and into S26. The operator then **manually stopped the run with Ctrl-C** because the number of `INCONCLUSIVE` outcomes and pending cases was increasing and no longer represented a trustworthy training signal.
 
-| Stage | Executed | PASS | INCONCLUSIVE | FAIL | Consolidation |
-|---|---:|---:|---:|---:|---|
-| S11 | 210/210 | 196 | 13 | 1 | COMMITTED |
-| S12 | 210/210 | 203 | 7 | 0 | COMMITTED |
-| S13 | 210/210 | 203 | 6 | 1 | COMMITTED |
-| S14 | 210/210 | 208 | 1 | 1 | COMMITTED |
-| S15 | 210/210 | 175 | 31 | 4 | COMMITTED |
-| S16 | 210/210 | 209 | 1 | 0 | COMMITTED |
-| S17 | 210/210 | 206 | 2 | 2 | COMMITTED |
-| S18 | 210/210 | 196 | 12 | 2 | COMMITTED |
-| **S19** | **210/210** | **182** | **24** | **4** | **NOT YET COMMITTED** |
-
-S19 completed execution under `RUN_20260929T005550Z_a356e86c`. The stage then stopped at cross-consolidation transaction `CC_09eae1705906e8acaa653eb28123fc84`.
-
-The stop followed integration of new routing observability designed to make previously ambiguous routing claims directly measurable: actual Champion selection/execution, exact reuse, Full Flow entry and provider/model fallback. The current classification is **OBSERVABILITY-INDUCED INTEGRATION REGRESSION**. The completed S19 case verdicts remain valid as recorded; the post-stage consolidation is not yet claimed successful.
-
-Before S20, SSI has frozen a hardening plan covering:
+Latest preserved diagnostic snapshot:
 
 ```text
-PASSIVE ROUTING OBSERVER
-+ OBSERVABILITY NON-INTERFERENCE A/B GATE
-+ CHAMPION SELECTED / EXECUTED / RESULT EVIDENCE
-+ EXACT REUSE / FULL FLOW / PROVIDER FALLBACK EVIDENCE
-+ MODEL/PROVIDER CORRELATION
-+ CROSS-ACTOR FAILURE MATRIX
-+ 7/7 TRANSACTION-BOUND CONSOLIDATION SNAPSHOT
-+ HASH-CHAIN CAUSAL CONTROLS
-+ HASH-CHAIN NEGATIVE CONTROL
-+ NOTARY OUTAGE + BUFFER-LIMIT SAFE MODE
+TOTAL = 1,326
+PASS = 848
+INCONCLUSIVE = 470
+FAIL = 8
+S20-S25 verified-subset consolidations = PASS for BODY_FROZEN + DIRECTOR
+S26 = interrupted / not claimed complete
 ```
 
-The evidence-chain requirements were materially strengthened by external DEV feedback from **Hamid Ahmadian**. His contributions are explicitly attributed in the public review record.
+A targeted diagnostic sample of **18 cases** showed that the apparent `unparseable_json` symptom was an **empty response after `INFLIGHT_LIMIT`**. This finding is limited to the inspected sample and is **not** generalized to every unresolved case.
 
-Current continuation target:
+The diagnosis also identified two additional reliability gaps: required task outputs were not always propagated correctly to the reviewer path, and dedicated R&D execution scenarios remain incomplete for parts of S20-S26.
 
-```text
-pre-S20 hardening PASS
--> S19 consolidation COMMITTED
--> S20 ... S40
--> S40 consolidation COMMITTED
--> WEB01 ... WEB24
--> final routing / Champion / Full-Flow / model diagnostic report
-```
+A repair package (`SSI_LAB_REPAIR_20260930.zip`) was prepared and reported **17/17 offline tests PASS**. The public mirror does **not** yet claim that the live private runtime has been repaired/restarted successfully. Historical verdicts remain preserved.
 
-Current evidence links:
+- [S20-S26 operator stop and LAB repair incident](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md)
+- [Machine-readable S20-S26 stop/repair summary](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_PUBLIC_SUMMARY_20260930.json)
 
-- [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
-- [S19 observability incident and current stop point](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md)
-- [Pre-S20 hardening preregistration](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)
-- [External review feedback and attribution](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)
-- [S13-S18 routing evidence](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
+**Continuation boundary:** do not treat the old S20-S40 launcher as authorized for restart. The next continuation must preserve a new post-repair runtime/provenance boundary and support frozen-case replay.
 
-S20-S40 completion, successful S19 consolidation, live WEB01-WEB24 completion, physical validation and independent external replication are not claimed.
 
 ## Preserved earlier software results
 
