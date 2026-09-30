@@ -350,7 +350,7 @@ The public evidence supports bounded software-laboratory claims about persistent
 It does **not** establish:
 
 - all-PASS S11 acceptance; the latest complete traversal contains 14 unresolved cases;
-- committed S19 cross-consolidation or completed S20-S40 training;
+- completed S20-S40 training; S19 consolidation is preserved as having subsequently passed before S20 continuation;
 - successful WEB01-WEB24 live training;
 - physical drone validation;
 - physical rescue-robot validation;
