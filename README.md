@@ -4,12 +4,13 @@
 
 SSI V5 is an independently developed R&D project focused on persistent competence, continual learning, cross-agent consolidation, adaptive routing, rollback/recovery and cross-domain transfer.
 
-> **Repository status:** public evidence and review mirror. Proprietary implementation, credentials, private runtime state and reconstructive internals remain private.
+> **Repository status:** public R&D, evidence and external-validation hub for SSI V5. This repository publishes architecture, research protocols, training checkpoints, failures, benchmark plans, evidence and claim boundaries. Proprietary implementation, credentials, private runtime state and reconstructive internals remain private.
 
 ## Start here
 
 | Purpose | Document |
 |---|---|
+| Current research roadmap | **[CURRENT_RESEARCH_ROADMAP_20260930.md](CURRENT_RESEARCH_ROADMAP_20260930.md)** |
 | CZARA internal training checkpoint S120 | **[RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md)** |
 | S20-S26 operator stop / LAB repair | **[RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md)** |
 | Dynamic Mission V6 — installation and post-CZARA gate | **[DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md](DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md)** |
@@ -23,6 +24,12 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 | Reviewer orientation | **[START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)** |
 | Collaboration and external challenges | **[COLLABORATION_AND_PARTNER_ENTRY.md](COLLABORATION_AND_PARTNER_ENTRY.md)** |
 | Mexico pre-benchmark R&D protocol | **[MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md](MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md)** |
+
+## Programme at a glance
+
+**Research maturity path:** internal training -> frozen validation -> blind / held-out benchmarks -> partner-defined external benchmarks -> simulation / digital-twin validation -> controlled physical pilots -> independent multi-partner replication.
+
+The current programme combines core SSI reliability work, CZARA Human-AI research collaboration, Dynamic Mission V6, post-S40 WEB engineering, Mexico robotics/offline-resilience research and a developing external benchmark network. Planned work is kept separate from completed evidence.
 
 ## Project at a glance
 
@@ -54,7 +61,7 @@ A targeted diagnostic sample of **18 cases** showed that the apparent `unparseab
 
 The diagnosis also identified two additional reliability gaps: required task outputs were not always propagated correctly to the reviewer path, and dedicated R&D execution scenarios remain incomplete for parts of S20-S26.
 
-A repair package (`SSI_LAB_REPAIR_20260930.zip`) was prepared and reported **17/17 offline tests PASS**. The public mirror does **not** yet claim that the live private runtime has been repaired/restarted successfully. Historical verdicts remain preserved.
+A repair package (`SSI_LAB_REPAIR_20260930.zip`) was prepared and reported **17/17 offline tests PASS**. The public hub does **not** yet claim that the live private runtime has been repaired/restarted successfully. Historical verdicts remain preserved.
 
 - [S20-S26 operator stop and LAB repair incident](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md)
 - [Machine-readable S20-S26 stop/repair summary](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_PUBLIC_SUMMARY_20260930.json)
@@ -303,15 +310,16 @@ DIRECTOR
 
 ## Read this repository in this order
 
-1. [REVIEWER_INDEX.md](REVIEWER_INDEX.md)
-2. [Latest S13-S18 routing and recovery evidence](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
-3. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
-4. [BLOCKS Pocket, META-BLOCKS, laboratories and Football World](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md)
-5. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)
-6. [RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md)
-7. [SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
-8. [Mexico pre-benchmark R&D protocol](MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md)
-9. [COLLABORATION_AND_PARTNER_ENTRY.md](COLLABORATION_AND_PARTNER_ENTRY.md)
+1. [CURRENT_RESEARCH_ROADMAP_20260930.md](CURRENT_RESEARCH_ROADMAP_20260930.md)
+2. [REVIEWER_INDEX.md](REVIEWER_INDEX.md)
+3. [Latest S13-S18 routing and recovery evidence](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
+4. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
+5. [BLOCKS Pocket, META-BLOCKS, laboratories and Football World](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md)
+6. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)
+7. [RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md)
+8. [SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
+9. [Mexico pre-benchmark R&D protocol](MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md)
+10. [COLLABORATION_AND_PARTNER_ENTRY.md](COLLABORATION_AND_PARTNER_ENTRY.md)
 
 ## Current milestone lineage
 
