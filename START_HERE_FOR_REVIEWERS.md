@@ -33,6 +33,24 @@ A repair package (`SSI_LAB_REPAIR_20260930.zip`) was prepared and reported **17/
 **Continuation boundary:** do not treat the old S20-S40 launcher as authorized for restart. The next continuation must preserve a new post-repair runtime/provenance boundary and support frozen-case replay.
 
 
+## CZARA active internal training — 2026-09-30
+
+`CZARA-RND-1.0.0` has reached its 120-case TRAINING checkpoint:
+
+```text
+22 PASS / 98 INCONCLUSIVE / 0 FAIL
+120 / 120 training cases reached
+24 validation cases = not yet claimed
+16 Champion Benchmark cases = not yet claimed
+```
+
+The track exercises multilingual research-context handling, role/authority separation, benchmark freeze/revision control, evidence provenance and controlled professor-role -> CZARA -> DIRECTOR routing.
+
+This is internal simulated training for the planned Mexico collaboration, not a completed live external benchmark.
+
+- [CZARA S120 training checkpoint](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md)
+- [Machine-readable CZARA checkpoint](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.json)
+
 ## Preserved software evidence in one view
 
 ```text
