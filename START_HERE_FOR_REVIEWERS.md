@@ -3,8 +3,12 @@
 **Updated:** `2026-09-30`  
 **Development model:** independent solo R&D. SSI V5 is designed and integrated by one author outside regular working hours. AI coding/reasoning tools support implementation, analysis and review; they do not represent a development team. External collaborators are introduced for domain expertise, challenge design and independent validation.  
 **Author context:** [AUTHOR_CONTEXT.md](AUTHOR_CONTEXT.md)  
-**Repository role:** `PUBLIC EVIDENCE / REVIEW MIRROR + PUBLISHED RESEARCH PORTAL`  
+**Repository role:** `PUBLIC R&D / EVIDENCE / EXTERNAL-VALIDATION HUB + PUBLISHED RESEARCH PORTAL`  
 **Proprietary implementation:** private by design.
+
+## Current programme roadmap
+
+Use [CURRENT_RESEARCH_ROADMAP_20260930.md](CURRENT_RESEARCH_ROADMAP_20260930.md) for the current programme-level sequence across core SSI training, CZARA, Dynamic Mission V6, WEB engineering, Mexico robotics/offline-resilience research and external partner-defined validation.
 
 ## Current training status — operator stop and LAB repair boundary — 2026-09-30
 
@@ -25,7 +29,7 @@ A targeted diagnostic sample of **18 cases** showed that the apparent `unparseab
 
 The diagnosis also identified two additional reliability gaps: required task outputs were not always propagated correctly to the reviewer path, and dedicated R&D execution scenarios remain incomplete for parts of S20-S26.
 
-A repair package (`SSI_LAB_REPAIR_20260930.zip`) was prepared and reported **17/17 offline tests PASS**. The public mirror does **not** yet claim that the live private runtime has been repaired/restarted successfully. Historical verdicts remain preserved.
+A repair package (`SSI_LAB_REPAIR_20260930.zip`) was prepared and reported **17/17 offline tests PASS**. The public hub does **not** yet claim that the live private runtime has been repaired/restarted successfully. Historical verdicts remain preserved.
 
 - [S20-S26 operator stop and LAB repair incident](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md)
 - [Machine-readable S20-S26 stop/repair summary](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_PUBLIC_SUMMARY_20260930.json)
