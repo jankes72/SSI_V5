@@ -1,6 +1,8 @@
 # SSI V5 — Current Research Roadmap — 2026-09-16
 
-**Role:** canonical living roadmap. Earlier dated roadmaps remain historical state.
+> **SUPERSEDED CURRENT-STATE NOTICE — 2026-09-30:** This roadmap is preserved as historical provenance. It is no longer the canonical living roadmap. Use [CURRENT_RESEARCH_ROADMAP_20260930.md](CURRENT_RESEARCH_ROADMAP_20260930.md) for the current programme state, including S20-S26 reliability work, CZARA, Dynamic Mission V6, WEB engineering, Mexico and external partner-defined benchmark strategy.
+
+**Role:** historical roadmap snapshot. Superseded by the 2026-09-30 canonical roadmap.
 
 ## Current position
 
