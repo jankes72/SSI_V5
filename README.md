@@ -10,6 +10,7 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 
 | Purpose | Document |
 |---|---|
+| S20-S26 operator stop / LAB repair | **[RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md)** |
 | Dynamic Mission V6 — installation and post-CZARA gate | **[DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md](DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md)** |
 | Supplied S20 runtime log | **[S20 live training excerpt](evidence/S20_20260929/S20_LIVE_EXCERPT_RUN_20260929T212837Z_92e516e1.log)** |
 | First technical review | **[REVIEWER_INDEX.md](REVIEWER_INDEX.md)** |
@@ -33,13 +34,32 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 
 **Current public state:** 2026-09-30
 
-## Ongoing training — operator update, 2026-09-30
+## Current training status — operator stop and LAB repair boundary — 2026-09-30
 
-The project operator reports that the main SSI training is still running alongside CZARA training. The [supplied S20 runtime log](evidence/S20_20260929/S20_LIVE_EXCERPT_RUN_20260929T212837Z_92e516e1.log) is a partial capture of the ongoing run, not its final result.
+Core training progressed through completed S20-S25 stages and into S26. The operator then **manually stopped the run with Ctrl-C** because the number of `INCONCLUSIVE` outcomes and pending cases was increasing and no longer represented a trustworthy training signal.
 
-The [Dynamic Mission V6 installation note](DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md) describes a separate training track: at the recorded snapshot its scheduler is active, waiting for CZARA completion, with 0/72 dynamic missions completed.
+Latest preserved diagnostic snapshot:
 
-The earlier S19/pre-S20 snapshot below is preserved as historical context.
+```text
+TOTAL = 1,326
+PASS = 848
+INCONCLUSIVE = 470
+FAIL = 8
+S20-S25 verified-subset consolidations = PASS for BODY_FROZEN + DIRECTOR
+S26 = interrupted / not claimed complete
+```
+
+A targeted diagnostic sample of **18 cases** showed that the apparent `unparseable_json` symptom was an **empty response after `INFLIGHT_LIMIT`**. This finding is limited to the inspected sample and is **not** generalized to every unresolved case.
+
+The diagnosis also identified two additional reliability gaps: required task outputs were not always propagated correctly to the reviewer path, and dedicated R&D execution scenarios remain incomplete for parts of S20-S26.
+
+A repair package (`SSI_LAB_REPAIR_20260930.zip`) was prepared and reported **17/17 offline tests PASS**. The public mirror does **not** yet claim that the live private runtime has been repaired/restarted successfully. Historical verdicts remain preserved.
+
+- [S20-S26 operator stop and LAB repair incident](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md)
+- [Machine-readable S20-S26 stop/repair summary](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_PUBLIC_SUMMARY_20260930.json)
+
+**Continuation boundary:** do not treat the old S20-S40 launcher as authorized for restart. The next continuation must preserve a new post-repair runtime/provenance boundary and support frozen-case replay.
+
 
 ## Historical pre-S20 snapshot — S19 incident and consolidation hardening
 
@@ -289,6 +309,11 @@ BODY / ISKRA foundations
 -> S19 fully executed: 182 PASS / 24 INCONCLUSIVE / 4 FAIL
 -> S19 post-stage consolidation blocked during routing-observability integration
 -> pre-S20 observability/evidence hardening preregistered
+-> pre-S20 hardening passed and S19 consolidation subsequently reported committed
+-> S20-S25 completed with verified-subset consolidations reported PASS
+-> S26 entered, then manually stopped by operator after abnormal INCONCLUSIVE/pending growth
+-> LAB/reviewer diagnosis completed; 18 sampled parse failures mapped to empty responses after INFLIGHT_LIMIT
+-> repair package prepared; 17/17 offline tests PASS; live restart not yet claimed
 -> configured next training phase after S40: automatic gated transition to WEB01-WEB24
 ```
 
