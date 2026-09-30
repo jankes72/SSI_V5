@@ -1,0 +1,55 @@
+{
+  "schema": "ssi.v5.s20-s26-operator-stop-lab-repair-public-summary.v1",
+  "recorded_date": "2026-09-30",
+  "status": "TRAINING_STOPPED_REPAIR_PREPARED_LIVE_APPLY_NOT_YET_CLAIMED",
+  "evidence_boundary": "software_runtime_only",
+  "preserved_diagnostic_snapshot": {
+    "total_verdicts": 1326,
+    "pass": 848,
+    "inconclusive": 470,
+    "fail": 8,
+    "universal_capability_score_claimed": false
+  },
+  "operator_stop": {
+    "manual_ctrl_c": true,
+    "reason": "high_inconclusive_and_pending_accumulation_required_diagnosis",
+    "s26_complete_claimed": false,
+    "s40_complete_claimed": false
+  },
+  "completed_stage_consolidation_observation": {
+    "stages": "S20-S25",
+    "body_frozen": "PASS_REPORTED_ON_VERIFIED_SUBSET",
+    "director": "PASS_REPORTED_ON_VERIFIED_SUBSET",
+    "unresolved_cases_relabelled_pass": false
+  },
+  "diagnosis": {
+    "inspected_unparseable_json_cases": 18,
+    "sampled_observation": "EMPTY_RESPONSE_AFTER_INFLIGHT_LIMIT",
+    "all_unparseable_same_root_cause_claimed": false,
+    "all_inconclusive_same_root_cause_claimed": false,
+    "traversal_continued_while_blockage_persisted": true,
+    "reviewer_required_output_propagation_problem_identified": true,
+    "dedicated_rnd_execution_scenarios_s20_s26_missing": true
+  },
+  "repair": {
+    "local_package": "SSI_LAB_REPAIR_20260930.zip",
+    "installer": "SSI_LAB_REPAIR_20260930/NAPRAW.py",
+    "offline_tests_pass": 17,
+    "offline_tests_total": 17,
+    "creates_backup": true,
+    "preserves_historical_verdicts": true,
+    "preserves_limits": true,
+    "cancelled_closure_requires_evidence_check": true,
+    "leaves_training_stopped": true,
+    "live_application_claimed": false,
+    "cancelled_report_closed_claimed": false
+  },
+  "continuation_policy": {
+    "old_s20_s40_launcher_restart_authorized": false,
+    "new_runtime_boundary_required": true,
+    "preserve_pre_repair_run_identity": true,
+    "preserve_post_repair_run_identity": true,
+    "frozen_case_replay_recommended": true,
+    "silent_relabelling_forbidden": true
+  }
+}
