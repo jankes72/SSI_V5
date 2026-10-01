@@ -1,11 +1,11 @@
 # SSI V5 — Collaboration and Partner Entry
 
-**Updated:** `2026-09-30`  
+**Updated:** `2026-10-01`  
 **Preserved cross-domain evidence:** `2026-09-18`; current LAB/continuation update: `2026-09-22`  
 **Status:** `OPEN TO CONTROLLED RESEARCH / TECHNOLOGY / CONSORTIUM COLLABORATION`  
 **Public boundary:** proprietary implementation remains private unless separately licensed or explicitly disclosed.
 
-> Grant and technical reviewers should start with [CURRENT_RESEARCH_ROADMAP_20260930.md](CURRENT_RESEARCH_ROADMAP_20260930.md) and [REVIEWER_INDEX.md](REVIEWER_INDEX.md).
+> Grant and technical reviewers should start with [CURRENT_RESEARCH_ROADMAP_20261001.md](CURRENT_RESEARCH_ROADMAP_20261001.md) and [REVIEWER_INDEX.md](REVIEWER_INDEX.md).
 
 ## External validation path
 
@@ -35,23 +35,47 @@ This is relevant to external partners because SSI's collaboration model requires
 
 - [S20-S26 operator stop and LAB repair incident](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md)
 - [Machine-readable stop/repair summary](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_PUBLIC_SUMMARY_20260930.json)
-## CZARA active internal training — 2026-09-30
+## CZARA first internal training cycle complete — 2026-10-01
 
-`CZARA-RND-1.0.0` has reached its 120-case TRAINING checkpoint:
+`CZARA-RND-1.0.0` completed its first internal training, frozen validation and frozen Champion benchmark cycle.
 
 ```text
-22 PASS / 98 INCONCLUSIVE / 0 FAIL
-120 / 120 training cases reached
-24 validation cases = not yet claimed
-16 Champion Benchmark cases = not yet claimed
+UNIQUE STAGES = 160
+FINAL CHECKPOINT = 160 / 160 PASS
+FINAL QUALIFIED SKILLS = 520 / 520
+
+TRAINING
+  120 unique stages
+  497 attempts
+  120 PASS attempts
+  377 intermediate INCONCLUSIVE attempts
+  0 FAIL
+  learning_applied = true
+
+FROZEN VALIDATION
+  24 / 24 PASS
+  24 / 24 REUSE
+  skill coverage = 1.0
+  learning_applied = false
+
+FROZEN CHAMPION BENCHMARK
+  16 / 16 PASS
+  16 / 16 REUSE
+  skill coverage = 1.0
+  learning_applied = false
+
+AUTHORITY ERRORS = 0
 ```
 
-The track exercises multilingual research-context handling, role/authority separation, benchmark freeze/revision control, evidence provenance and controlled professor-role -> CZARA -> DIRECTOR routing.
+The **377 INCONCLUSIVE records are preserved intermediate training/retry attempts**, not unresolved final curriculum stages. The final checkpoint records all 160 unique stages as PASS.
 
-This is internal simulated training for the planned Mexico collaboration, not a completed live external benchmark.
+This is internal SSI evidence for the planned Poland-Mexico research workflow. It is **not** an independent Mexico benchmark, physical robotics validation, safety certification or external replication.
 
-- [CZARA S120 training checkpoint](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md)
-- [Machine-readable CZARA checkpoint](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.json)
+- [CZARA first training cycle — final results](CZARA_FIRST_TRAINING_CYCLE_RESULTS_20261001.md)
+- [Machine-readable public summary](evidence/CZARA_FIRST_TRAINING_CYCLE_PUBLIC_SUMMARY_20261001.json)
+- [Sanitized run-level evidence](evidence/CZARA_FIRST_TRAINING_20261001/README.md)
+- [Historical S120 checkpoint — preserved](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md)
+- [ZERO-LAB / LAB_ARCHITECT next module](CZARA_ZERO_LAB_LAB_ARCHITECT_MODULE_20261001.md)
 
 ## What SSI can offer a partner now
 
@@ -117,7 +141,7 @@ See:
 - [CZARA — Mexico Research Context, Translation and Learning Layer](SYSTEM/CZARA_MEXICO_RESEARCH_LAYER_20260926.md)
 - [Mexico Robotics Training and External Benchmark Plan](MEXICO_ROBOTICS_TRAINING_AND_BENCHMARK_PLAN_20260926.md)
 
-The external Mexico collaboration and benchmark remain **planned**, but CZARA is no longer architecture-only: its internal `CZARA-RND-1.0.0` training has reached 120/120 training cases with 22 PASS / 98 INCONCLUSIVE / 0 FAIL. External Mexico execution, the 24 validation cases, the 16 Champion Benchmark cases, physical validation and independent replication are not claimed yet.
+The external Mexico collaboration and benchmark remain **planned**. CZARA's first internal cycle is now complete: final checkpoint 160/160 PASS, 520/520 skills QUALIFIED, frozen validation 24/24 PASS and frozen Champion Benchmark 16/16 PASS, all 40 frozen evaluations using REUSE with `learning_applied=false`. External Mexico execution, physical validation and independent replication remain unclaimed.
 
 ## Relevant collaboration areas
 
