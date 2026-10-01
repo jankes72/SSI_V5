@@ -5,12 +5,12 @@
 **Architecture author:** Paweł Jankiewicz (`jankes72`, `PROGRAMMER_ROOT`)  
 **Development model:** independent solo R&D; designed and integrated by one author outside regular working hours. AI coding/reasoning tools support implementation, analysis and review; they do not constitute a development team. External collaborators are introduced for domain expertise, challenge design and independent validation.  
 **Author context:** [AUTHOR_CONTEXT.md](AUTHOR_CONTEXT.md)  
-**Updated:** `2026-09-30`  
+**Updated:** `2026-10-01`  
 **Repository role:** public R&D, evidence and external-validation hub with a published observer portal; proprietary implementation remains private.
 
 ## Current programme map
 
-The canonical current roadmap is [CURRENT_RESEARCH_ROADMAP_20260930.md](CURRENT_RESEARCH_ROADMAP_20260930.md). It connects core SSI reliability/training, CZARA, Dynamic Mission V6, WEB engineering, Mexico robotics/offline-resilience research and the external partner-defined benchmark strategy while keeping planned work separate from completed evidence.
+The canonical current roadmap is [CURRENT_RESEARCH_ROADMAP_20261001.md](CURRENT_RESEARCH_ROADMAP_20261001.md). It connects core SSI reliability/training, CZARA, Dynamic Mission V6, WEB engineering, Mexico robotics/offline-resilience research and the external partner-defined benchmark strategy while keeping planned work separate from completed evidence.
 
 ## Current training status — operator stop and LAB repair boundary — 2026-09-30
 
@@ -38,6 +38,48 @@ A repair package (`SSI_LAB_REPAIR_20260930.zip`) was prepared and reported **17/
 
 **Continuation boundary:** do not treat the old S20-S40 launcher as authorized for restart. The next continuation must preserve a new post-repair runtime/provenance boundary and support frozen-case replay.
 
+
+## CZARA first internal training cycle complete — 2026-10-01
+
+`CZARA-RND-1.0.0` completed its first internal training, frozen validation and frozen Champion benchmark cycle.
+
+```text
+UNIQUE STAGES = 160
+FINAL CHECKPOINT = 160 / 160 PASS
+FINAL QUALIFIED SKILLS = 520 / 520
+
+TRAINING
+  120 unique stages
+  497 attempts
+  120 PASS attempts
+  377 intermediate INCONCLUSIVE attempts
+  0 FAIL
+  learning_applied = true
+
+FROZEN VALIDATION
+  24 / 24 PASS
+  24 / 24 REUSE
+  skill coverage = 1.0
+  learning_applied = false
+
+FROZEN CHAMPION BENCHMARK
+  16 / 16 PASS
+  16 / 16 REUSE
+  skill coverage = 1.0
+  learning_applied = false
+
+AUTHORITY ERRORS = 0
+```
+
+The **377 INCONCLUSIVE records are preserved intermediate training/retry attempts**, not unresolved final curriculum stages. The final checkpoint records all 160 unique stages as PASS.
+
+This is internal SSI evidence for the planned Poland-Mexico research workflow. It is **not** an independent Mexico benchmark, physical robotics validation, safety certification or external replication.
+
+- [CZARA first training cycle — final results](CZARA_FIRST_TRAINING_CYCLE_RESULTS_20261001.md)
+- [Machine-readable public summary](evidence/CZARA_FIRST_TRAINING_CYCLE_PUBLIC_SUMMARY_20261001.json)
+- [Sanitized run-level evidence](evidence/CZARA_FIRST_TRAINING_20261001/README.md)
+- [Historical S120 checkpoint — preserved](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md)
+- [ZERO-LAB / LAB_ARCHITECT next module](CZARA_ZERO_LAB_LAB_ARCHITECT_MODULE_20261001.md)
 
 ## Preserved earlier software results
 
