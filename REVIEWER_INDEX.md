@@ -8,6 +8,8 @@ This file is the shortest route through the repository. Historical files remain 
 
 ## 5-minute review
 
+For a grant, consortium or partner-entry review, start with [GRANT_AND_CONSORTIUM_ENTRY_20261001.md](GRANT_AND_CONSORTIUM_ENTRY_20261001.md) and the [grant/consortium package](GRANT_CONSORTIUM/README.md).
+
 1. [Current research roadmap — 2026-10-01](CURRENT_RESEARCH_ROADMAP_20261001.md) — canonical current programme state and claim boundaries.
 2. [CZARA first training cycle — final results](CZARA_FIRST_TRAINING_CYCLE_RESULTS_20261001.md) — 160/160 final checkpoint PASS, 520/520 skills QUALIFIED, frozen validation and Champion results.
 3. [CZARA sanitized run-level evidence](evidence/CZARA_FIRST_TRAINING_20261001/README.md) — reviewer-accessible 537-run evidence index and CSV.
@@ -153,8 +155,12 @@ These are software-laboratory results. Physical validation and independent exter
 
 ## Collaboration / grant review
 
+- [Grant and Consortium Entry](GRANT_AND_CONSORTIUM_ENTRY_20261001.md)
+- [Grant / Consortium Package Index](GRANT_CONSORTIUM/README.md)
 - [COLLABORATION_AND_PARTNER_ENTRY.md](COLLABORATION_AND_PARTNER_ENTRY.md)
 - [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)
+
+The grant package includes an IP/background-foreground boundary, conservative TRL/validation roadmap, candidate WPs/deliverables/milestones, impact/exploitation/dissemination framework, risk/safety/security/ethics controls, resourcing/budget template and data/reproducibility framework. These are proposal-planning artefacts and do not claim a signed consortium or grant award.
 
 Preferred external model:
 
