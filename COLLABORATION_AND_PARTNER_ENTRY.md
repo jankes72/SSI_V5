@@ -5,7 +5,18 @@
 **Status:** `OPEN TO CONTROLLED RESEARCH / TECHNOLOGY / CONSORTIUM COLLABORATION`  
 **Public boundary:** proprietary implementation remains private unless separately licensed or explicitly disclosed.
 
-> Grant and technical reviewers should start with [CURRENT_RESEARCH_ROADMAP_20261001.md](CURRENT_RESEARCH_ROADMAP_20261001.md) and [REVIEWER_INDEX.md](REVIEWER_INDEX.md).
+> Grant and technical reviewers should start with [GRANT_AND_CONSORTIUM_ENTRY_20261001.md](GRANT_AND_CONSORTIUM_ENTRY_20261001.md), [GRANT_CONSORTIUM/README.md](GRANT_CONSORTIUM/README.md), [CURRENT_RESEARCH_ROADMAP_20261001.md](CURRENT_RESEARCH_ROADMAP_20261001.md) and [REVIEWER_INDEX.md](REVIEWER_INDEX.md).
+
+## Grant / consortium package — 2026-10-01
+
+The repository now includes a proposal-building layer covering contribution scope, IP, provisional TRL progression, candidate WPs/deliverables/milestones, impact/exploitation, risk/safety/security/ethics, budget/resource planning and data/reproducibility.
+
+This package is designed so that a prospective partner can answer two separate questions quickly:
+
+1. **What can SSI contribute now?**
+2. **What must still be supplied or validated by a consortium?**
+
+It does not label contacted organizations as partners and does not claim a grant award, fixed consortium, certified TRL or physical validation.
 
 ## External validation path
 
