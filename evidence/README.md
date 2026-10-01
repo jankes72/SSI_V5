@@ -1,15 +1,40 @@
 # SSI V5 — Public Evidence Index
 
-**Current index sync:** `2026-09-29`  
-**Latest update:** S19 full execution, observability-induced consolidation regression, pre-S20 hardening preregistration and external review attribution, `2026-09-29`; historical measurements retain their original dates.
+**Current index sync:** `2026-10-01`  
+**Latest update:** CZARA first internal training cycle completed and public run-level evidence published, `2026-10-01`; core S20-S26 stop/repair boundary remains separately preserved from `2026-09-30`.
 
 This directory preserves sanitized evidence, lineage, failure/repair history, integrity references and claim boundaries. Historical files are intentionally retained.
 
 > For the shortest reviewer path, start with [../REVIEWER_INDEX.md](../REVIEWER_INDEX.md).
 
-## Current S19 / pre-S20 evidence — 2026-09-29
+## Current CZARA first-cycle evidence — 2026-10-01
 
-Current public boundary:
+The first internal `CZARA-RND-1.0.0` cycle is complete.
+
+```text
+FINAL CHECKPOINT = 160 / 160 PASS
+SKILLS = 520 / 520 QUALIFIED
+TRAINING = 120 unique stages / 497 attempts
+INTERMEDIATE INCONCLUSIVE = 377
+FAIL = 0
+VALIDATION = 24 / 24 PASS / REUSE
+CHAMPION_BENCHMARK = 16 / 16 PASS / REUSE
+FROZEN TOTAL = 40 / 40 PASS
+AUTHORITY ERRORS = 0
+```
+
+The 377 INCONCLUSIVE results remain visible as intermediate training/retry records. Frozen validation and Champion runs report `learning_applied=false`.
+
+Primary records:
+
+- [Final result](../CZARA_FIRST_TRAINING_CYCLE_RESULTS_20261001.md)
+- [Machine-readable aggregate](CZARA_FIRST_TRAINING_CYCLE_PUBLIC_SUMMARY_20261001.json)
+- [Sanitized run-level evidence pack](CZARA_FIRST_TRAINING_20261001/README.md)
+- [Historical S120 checkpoint](../RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md)
+
+## Preserved S19 / pre-S20 evidence — 2026-09-29
+
+Preserved boundary at that date:
 
 ```text
 S19 execution = 210/210 complete
