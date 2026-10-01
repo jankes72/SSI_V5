@@ -1,4 +1,6 @@
 # SSI V5 — Parallel Mexico Integration Simulation Under Load
+
+> **HISTORICAL INTEGRATION SNAPSHOT:** this file records the parallel-load state observed on 2026-09-29. CZARA's first internal cycle later completed on 2026-10-01. See [CZARA_FIRST_TRAINING_CYCLE_RESULTS_20261001.md](CZARA_FIRST_TRAINING_CYCLE_RESULTS_20261001.md). The external Mexico benchmark and real Mexico-Poland network path remain unclaimed.
 **Date:** 2026-09-29  
 **Status:** INTERNAL INTEGRATION SIMULATION / LIVE TRAINING / NOT EXTERNAL VALIDATION
 
