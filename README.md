@@ -10,8 +10,11 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 
 | Purpose | Document |
 |---|---|
-| Current research roadmap | **[CURRENT_RESEARCH_ROADMAP_20260930.md](CURRENT_RESEARCH_ROADMAP_20260930.md)** |
-| CZARA internal training checkpoint S120 | **[RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md)** |
+| Current research roadmap | **[CURRENT_RESEARCH_ROADMAP_20261001.md](CURRENT_RESEARCH_ROADMAP_20261001.md)** |
+| CZARA first training cycle — final result | **[CZARA_FIRST_TRAINING_CYCLE_RESULTS_20261001.md](CZARA_FIRST_TRAINING_CYCLE_RESULTS_20261001.md)** |
+| CZARA sanitized run-level evidence | **[evidence/CZARA_FIRST_TRAINING_20261001/README.md](evidence/CZARA_FIRST_TRAINING_20261001/README.md)** |
+| CZARA ZERO-LAB / LAB_ARCHITECT | **[CZARA_ZERO_LAB_LAB_ARCHITECT_MODULE_20261001.md](CZARA_ZERO_LAB_LAB_ARCHITECT_MODULE_20261001.md)** |
+| Historical CZARA S120 checkpoint | **[RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md)** |
 | S20-S26 operator stop / LAB repair | **[RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md)** |
 | Dynamic Mission V6 — installation and post-CZARA gate | **[DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md](DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md)** |
 | Supplied S20 runtime log | **[S20 live training excerpt](evidence/S20_20260929/S20_LIVE_EXCERPT_RUN_20260929T212837Z_92e516e1.log)** |
@@ -40,7 +43,7 @@ The current programme combines core SSI reliability work, CZARA Human-AI researc
 - **Demonstrated scope:** software laboratory results for drone, humanoid and cross-domain rescue scenarios.
 - **Current boundary:** software evidence is published; physical validation, safety certification and independent external replication are not claimed.
 
-**Current public state:** 2026-09-30
+**Current public state:** 2026-10-01
 
 ## Current training status — operator stop and LAB repair boundary — 2026-09-30
 
@@ -69,41 +72,47 @@ A repair package (`SSI_LAB_REPAIR_20260930.zip`) was prepared and reported **17/
 **Continuation boundary:** do not treat the old S20-S40 launcher as authorized for restart. The next continuation must preserve a new post-repair runtime/provenance boundary and support frozen-case replay.
 
 
-## Parallel CZARA training checkpoint — 2026-09-30
+## CZARA first internal training cycle complete — 2026-10-01
 
-CZARA has moved beyond architecture-only planning into an **active internal training track** for the planned Poland-Mexico research workflow.
-
-Current `CZARA-RND-1.0.0` checkpoint:
+`CZARA-RND-1.0.0` completed its first internal training, frozen validation and frozen Champion benchmark cycle.
 
 ```text
-CURRICULUM = 160 cases
-TRAINING = 120
-VALIDATION = 24
-CHAMPION BENCHMARK = 16
+UNIQUE STAGES = 160
+FINAL CHECKPOINT = 160 / 160 PASS
+FINAL QUALIFIED SKILLS = 520 / 520
 
-S001-S120 reached
-PASS = 22
-INCONCLUSIVE = 98
-FAIL = 0
+TRAINING
+  120 unique stages
+  497 attempts
+  120 PASS attempts
+  377 intermediate INCONCLUSIVE attempts
+  0 FAIL
+  learning_applied = true
+
+FROZEN VALIDATION
+  24 / 24 PASS
+  24 / 24 REUSE
+  skill coverage = 1.0
+  learning_applied = false
+
+FROZEN CHAMPION BENCHMARK
+  16 / 16 PASS
+  16 / 16 REUSE
+  skill coverage = 1.0
+  learning_applied = false
+
+AUTHORITY ERRORS = 0
 ```
 
-The training exercises multilingual translation/context preservation, speaker and role separation, professor-level authority, benchmark freeze/revision handling, evidence provenance and controlled routing of research context to DIRECTOR.
+The **377 INCONCLUSIVE records are preserved intermediate training/retry attempts**, not unresolved final curriculum stages. The final checkpoint records all 160 unique stages as PASS.
 
-A representative training path already exercises:
+This is internal SSI evidence for the planned Poland-Mexico research workflow. It is **not** an independent Mexico benchmark, physical robotics validation, safety certification or external replication.
 
-```text
-PROFESSOR-ROLE MESSAGE (es-MX)
--> CZARA translation/context
--> DIRECTOR
--> policy-consistent response
-```
-
-The high `INCONCLUSIVE` rate is preserved as a real limitation. A representative case can successfully deliver professor-role instructions and DIRECTOR responses while still remaining INCONCLUSIVE because the full skill/translation acceptance contract was not demonstrated.
-
-This is **internal simulated training**, not a completed live external Mexico benchmark. Validation 0/24 and Champion Benchmark 0/16 are claimed at this checkpoint.
-
-- [CZARA S120 training checkpoint](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md)
-- [Machine-readable CZARA checkpoint](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.json)
+- [CZARA first training cycle — final results](CZARA_FIRST_TRAINING_CYCLE_RESULTS_20261001.md)
+- [Machine-readable public summary](evidence/CZARA_FIRST_TRAINING_CYCLE_PUBLIC_SUMMARY_20261001.json)
+- [Sanitized run-level evidence](evidence/CZARA_FIRST_TRAINING_20261001/README.md)
+- [Historical S120 checkpoint — preserved](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md)
+- [ZERO-LAB / LAB_ARCHITECT next module](CZARA_ZERO_LAB_LAB_ARCHITECT_MODULE_20261001.md)
 
 ## Historical pre-S20 snapshot — S19 incident and consolidation hardening
 
@@ -310,7 +319,7 @@ DIRECTOR
 
 ## Read this repository in this order
 
-1. [CURRENT_RESEARCH_ROADMAP_20260930.md](CURRENT_RESEARCH_ROADMAP_20260930.md)
+1. [CURRENT_RESEARCH_ROADMAP_20261001.md](CURRENT_RESEARCH_ROADMAP_20261001.md)
 2. [REVIEWER_INDEX.md](REVIEWER_INDEX.md)
 3. [Latest S13-S18 routing and recovery evidence](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
 4. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
