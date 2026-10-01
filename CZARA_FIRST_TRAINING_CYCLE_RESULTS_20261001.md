@@ -207,6 +207,14 @@ These statements describe the recorded internal run only. They do not establish 
 
 ## Evidence integrity references
 
+Reviewer-accessible sanitized evidence:
+
+- [Run-level evidence index](evidence/CZARA_FIRST_TRAINING_20261001/README.md)
+- [537 sanitized run records](evidence/CZARA_FIRST_TRAINING_20261001/CZARA_FIRST_TRAINING_RUNS_PUBLIC_20261001.csv)
+  - SHA-256: `3de525337e24bd6b66d652b05ad4c3142e60a0871f4a24d2509f16c2c0948cac`
+- [Mirrored aggregate summary](evidence/CZARA_FIRST_TRAINING_20261001/summary.json)
+- [Hash reference file](evidence/CZARA_FIRST_TRAINING_20261001/hashes.txt)
+
 Source collection prepared after completion:
 
 - `CZARA_FIRST_TRAINING_FINAL_20261001_081511.zip`
