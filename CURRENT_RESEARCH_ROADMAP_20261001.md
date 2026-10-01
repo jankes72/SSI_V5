@@ -16,7 +16,8 @@ Current tracks:
 4. WEB engineering training;
 5. Mexico robotics / offline-resilience research;
 6. external partner-defined benchmark and later replication work;
-7. ZERO-LAB / LAB_ARCHITECT laboratory-design research.
+7. ZERO-LAB / LAB_ARCHITECT laboratory-design research;
+8. grant / consortium preparation and external validation packaging.
 
 ## Current programme path
 
@@ -220,6 +221,23 @@ INTERNAL TRAINING
 
 A result at one level does not establish the next.
 
+## Grant / consortium preparation layer
+
+A dedicated proposal-building package is now published at [GRANT_AND_CONSORTIUM_ENTRY_20261001.md](GRANT_AND_CONSORTIUM_ENTRY_20261001.md) and [GRANT_CONSORTIUM/README.md](GRANT_CONSORTIUM/README.md).
+
+It translates the technical evidence into partner-facing planning for:
+
+- SSI consortium contribution and partner roles;
+- background / foreground IP and access boundaries;
+- conservative asset-specific TRL planning;
+- candidate work packages, deliverables, milestones and KPI families;
+- impact, exploitation and dissemination;
+- risk, safety, cybersecurity and ethics;
+- person-month / budget construction;
+- data management and reproducibility.
+
+These documents are planning artefacts. They do not establish a signed consortium, certified TRL, fixed budget, eligibility under a specific call or external validation.
+
 ## Current collaboration position
 
 SSI is open to controlled collaboration with research laboratories, robotics groups, industrial R&D teams, Human-AI collaboration researchers, independent benchmark designers, replication/validation partners and Horizon Europe consortium partners where programme rules and roles fit.
@@ -267,6 +285,8 @@ Not currently claimed:
 10. [Mexico pre-benchmark R&D protocol](MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md)
 11. [Mexico robotics training and external benchmark plan](MEXICO_ROBOTICS_TRAINING_AND_BENCHMARK_PLAN_20260926.md)
 12. [Collaboration and partner entry](COLLABORATION_AND_PARTNER_ENTRY.md)
+13. [Grant and consortium entry](GRANT_AND_CONSORTIUM_ENTRY_20261001.md)
+14. [Grant / consortium package](GRANT_CONSORTIUM/README.md)
 
 ---
 
