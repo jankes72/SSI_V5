@@ -7,7 +7,7 @@
 
 ## Use these current documents first
 
-- [Canonical current research roadmap — 2026-09-30](CURRENT_RESEARCH_ROADMAP_20261001.md)
+- [Canonical current research roadmap — 2026-10-01](CURRENT_RESEARCH_ROADMAP_20261001.md)
 
 - [CZARA first training cycle — final results](CZARA_FIRST_TRAINING_CYCLE_RESULTS_20261001.md)
 - [Machine-readable CZARA final public summary](evidence/CZARA_FIRST_TRAINING_CYCLE_PUBLIC_SUMMARY_20261001.json)
