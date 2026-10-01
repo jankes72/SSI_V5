@@ -1,5 +1,7 @@
 # SSI V5 — CZARA-RND-1.0.0 training checkpoint through S120 — 2026-09-30
 
+> **HISTORICAL CHECKPOINT:** this S120 record captures the intermediate state on 2026-09-30. The first cycle later completed on 2026-10-01. See [CZARA_FIRST_TRAINING_CYCLE_RESULTS_20261001.md](../CZARA_FIRST_TRAINING_CYCLE_RESULTS_20261001.md) and the [sanitized run-level evidence](../evidence/CZARA_FIRST_TRAINING_20261001/README.md).
+
 **Status:** `INTERNAL TRAINING CHECKPOINT / TRAINING PHASE 120/120 REACHED / VALIDATION AND CHAMPION BENCHMARK NOT YET CLAIMED`  
 **Track:** CZARA multilingual research-collaboration layer for the planned Poland-Mexico research workflow.  
 **Boundary:** this is an internal simulated training curriculum, not a completed live external Mexico benchmark.
