@@ -1,5 +1,7 @@
 # SSI V5 — Dynamic Mission Orchestrator V6
 
+> **CURRENT STATUS UPDATE — 2026-10-01:** this document preserves the installation/gate state from 2026-09-30. The CZARA completion prerequisite has since been satisfied by the completed first cycle (160/160 final checkpoint PASS; 24/24 frozen validation PASS; 16/16 frozen Champion Benchmark PASS). Dynamic Mission V6 live curriculum completion is still not claimed. See [CURRENT_RESEARCH_ROADMAP_20261001.md](CURRENT_RESEARCH_ROADMAP_20261001.md).
+
 **Date:** 2026-09-30  
 **Status:** INSTALLED / SCHEDULER ACTIVE / WAITING FOR CZARA COMPLETION  
 **Live Dynamic Missions completed:** 0 / 72
