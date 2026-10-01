@@ -1,0 +1,32 @@
+name: Evidence Verification
+
+on:
+  push:
+    paths:
+      - "evidence/**"
+      - "tools/verify_czara_public_evidence.py"
+      - ".github/workflows/evidence-verification.yml"
+  pull_request:
+    paths:
+      - "evidence/**"
+      - "tools/verify_czara_public_evidence.py"
+      - ".github/workflows/evidence-verification.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-czara-public-evidence:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify CZARA public evidence aggregate
+        run: python tools/verify_czara_public_evidence.py
