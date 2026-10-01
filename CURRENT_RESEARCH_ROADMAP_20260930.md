@@ -1,6 +1,8 @@
-# SSI V5 — Current Research Roadmap — 2026-09-30
+# SSI V5 — Research Roadmap Snapshot — 2026-09-30
 
-**Role:** canonical current roadmap for the public SSI V5 R&D, evidence and external-validation hub.  
+> **SUPERSEDED CURRENT-STATE POINTER:** this file preserves the programme state as recorded on 2026-09-30. The current roadmap is [CURRENT_RESEARCH_ROADMAP_20261001.md](CURRENT_RESEARCH_ROADMAP_20261001.md). Historical statements below are retained for provenance and are not silently rewritten.
+
+**Role:** historical roadmap snapshot retained for provenance.  
 **Project type:** independent / solo R&D programme.  
 **Public boundary:** architecture, research protocols, training checkpoints, failures, repair records, benchmark plans, evidence and claim boundaries are public; proprietary implementation, credentials and reconstructive private runtime internals remain private.
 
