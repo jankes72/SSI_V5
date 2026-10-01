@@ -25,8 +25,18 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 | External review attribution | **[EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)** |
 | S13-S18 routing evidence | **[RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)** |
 | Reviewer orientation | **[START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md)** |
+| Grant / consortium entry | **[GRANT_AND_CONSORTIUM_ENTRY_20261001.md](GRANT_AND_CONSORTIUM_ENTRY_20261001.md)** |
+| Grant / consortium package | **[GRANT_CONSORTIUM/README.md](GRANT_CONSORTIUM/README.md)** |
 | Collaboration and external challenges | **[COLLABORATION_AND_PARTNER_ENTRY.md](COLLABORATION_AND_PARTNER_ENTRY.md)** |
 | Mexico pre-benchmark R&D protocol | **[MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md](MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md)** |
+
+## Grant and consortium readiness
+
+A dedicated proposal-building layer is now published for future grant reviewers and consortium partners. It covers proposed SSI contribution, background/foreground IP boundaries, provisional asset-specific TRL planning, candidate work packages/deliverables/milestones, impact/exploitation/dissemination, risk/safety/security/ethics, resources/budget and data/reproducibility.
+
+Start with [GRANT_AND_CONSORTIUM_ENTRY_20261001.md](GRANT_AND_CONSORTIUM_ENTRY_20261001.md). These are planning documents, not a claim of a signed consortium, certified TRL, fixed grant budget or confirmed eligibility for a specific call.
+
+Public CZARA run-level evidence is also checked by the repository's `Evidence Verification` GitHub Actions workflow, which recounts the machine-readable CSV against the published aggregate summary.
 
 ## Programme at a glance
 
