@@ -1,5 +1,9 @@
 # SSI V5 — Mexico Robotics Training and External Benchmark Plan
 
+**Evidence update — 2026-10-02:** This robotics curriculum remains a plan for external validation. The first internal CZARA cycle and the later local ZeroLab pilot are separate evidence families; neither establishes completed physical or external Mexico benchmarks.
+
+[Current CZARA status](CZARA_CURRENT_STATUS.md) · [ZeroLab results](ZERO_LAB_V2_FIRST_RESULTS_20261002.md) · [Evidence and provenance](evidence/ZERO_LAB_V2_20261002/README.md)
+
 **Date:** `2026-09-26`  
 **Status:** `PLANNED CURRICULUM / EXTERNAL BENCHMARK DESIGN`  
 **External collaboration target:** research professor/team in Mexico  
@@ -466,3 +470,4 @@ It does **not** claim:
 - production readiness.
 
 Future public updates should promote individual claims only after corresponding evidence is captured and reviewed.
+

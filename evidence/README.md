@@ -7,13 +7,19 @@ This directory preserves sanitized evidence, lineage, failure/repair history, in
 
 > For the shortest reviewer path, start with [../REVIEWER_INDEX.md](../REVIEWER_INDEX.md).
 
+## Latest Final continuation evidence — 2026-10-02
+
+[Stopped continuation pack](SSI_FINAL_RECOVERY_20261002T181736Z/README.md): seven closed cases, 4 PASS / 3 INCONCLUSIVE / 0 FAIL, ending in STOPPED_INFRASTRUCTURE. The raw-output cause is not established; all case events and the final stop are retained. This follows the earlier completed batch below.
+
 ## ZeroLab V2 / SSI Final recovery evidence — 2026-10-02
+
+For actor roles and separation from the completed first curriculum, see [CZARA current status](../CZARA_CURRENT_STATUS.md).
 
 [Evidence pack](ZERO_LAB_V2_20261002/README.md): 9/9 services READY, an 8/8 local-data pilot (no models; not training qualification), and a separate seven-case Final recovery batch with 5 PASS / 2 INCONCLUSIVE / 0 FAIL. The 19 resume tests used synthetic transport. These totals remain separate.
 
 The pack provides a sanitized operator transcript, a case CSV, transcribed pilot receipt references, a public summary and an integrity manifest. Public checks verify consistency of this export, not original runtime signatures or independent replication.
 
-## Current CZARA first-cycle evidence — 2026-10-01
+## Preserved completed CZARA first-cycle evidence — 2026-10-01
 
 The first internal `CZARA-RND-1.0.0` cycle is complete.
 
@@ -204,5 +210,6 @@ operational control endpoints
 ```
 
 The repository is an evidence mirror, not a source-code distribution.
+
 
 

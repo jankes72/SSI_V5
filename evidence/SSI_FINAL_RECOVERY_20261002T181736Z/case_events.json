@@ -1,0 +1,176 @@
+[
+  {
+    "request_id": "ssi-s21-iskra2-s21-01-02-a1",
+    "candidate_events": [
+      {
+        "candidate": 1,
+        "evaluation": "PASS",
+        "ci": "INCONCLUSIVE"
+      }
+    ],
+    "training_events": [
+      {
+        "event": "RND_LAB_REJECTED",
+        "action": "REVISE_CANDIDATE_WITHIN_EXISTING_LIMITS",
+        "decision": "STOP_TIER_LIMIT",
+        "reasons": [
+          "LAB_EXPRESSION_SHAPE"
+        ]
+      }
+    ],
+    "actor": "ISKRA2",
+    "case_id": "S21-01-02",
+    "status": "INCONCLUSIVE",
+    "reported_flags": "['rnd_lab_comparison_not_verified']"
+  },
+  {
+    "request_id": "ssi-s22-iskra3-s22-01-03-a1",
+    "candidate_events": [
+      {
+        "candidate": 1,
+        "evaluation": "PASS",
+        "ci": "PASS"
+      }
+    ],
+    "training_events": [
+      {
+        "event": "VERIFIED",
+        "action": "COMPLETE",
+        "decision": "CASE_VERIFIED",
+        "reasons": []
+      }
+    ],
+    "actor": "ISKRA3",
+    "case_id": "S22-01-03",
+    "status": "PASS",
+    "reported_flags": "[]"
+  },
+  {
+    "request_id": "ssi-s23-iskra3-s23-01-01-a1",
+    "candidate_events": [
+      {
+        "candidate": 1,
+        "evaluation": "PASS",
+        "ci": "INCONCLUSIVE"
+      }
+    ],
+    "training_events": [
+      {
+        "event": "RND_LAB_REJECTED",
+        "action": "REVISE_CANDIDATE_WITHIN_EXISTING_LIMITS",
+        "decision": "STOP_TIER_LIMIT",
+        "reasons": [
+          "LAB_OPERATION_FIELDS:merge:missing=[]:extra=[\"input_blocks\"]"
+        ]
+      }
+    ],
+    "actor": "ISKRA3",
+    "case_id": "S23-01-01",
+    "status": "INCONCLUSIVE",
+    "reported_flags": "['rnd_lab_comparison_not_verified']"
+  },
+  {
+    "request_id": "ssi-s24-iskra5-s24-01-01-a1",
+    "candidate_events": [
+      {
+        "candidate": 1,
+        "evaluation": "PASS",
+        "ci": "PASS"
+      }
+    ],
+    "training_events": [
+      {
+        "event": "VERIFIED",
+        "action": "COMPLETE",
+        "decision": "CASE_VERIFIED",
+        "reasons": []
+      }
+    ],
+    "actor": "ISKRA5",
+    "case_id": "S24-01-01",
+    "status": "PASS",
+    "reported_flags": "[]"
+  },
+  {
+    "request_id": "ssi-s25-iskra3-s25-01-01-a1",
+    "candidate_events": [
+      {
+        "candidate": 1,
+        "evaluation": "PASS",
+        "ci": "PASS"
+      }
+    ],
+    "training_events": [
+      {
+        "event": "VERIFIED",
+        "action": "COMPLETE",
+        "decision": "CASE_VERIFIED",
+        "reasons": []
+      }
+    ],
+    "actor": "ISKRA3",
+    "case_id": "S25-01-01",
+    "status": "PASS",
+    "reported_flags": "[]"
+  },
+  {
+    "request_id": "ssi-s26-iskra2-s26-01-01-a1",
+    "candidate_events": [
+      {
+        "candidate": 1,
+        "evaluation": "PASS",
+        "ci": "PASS"
+      }
+    ],
+    "training_events": [
+      {
+        "event": "VERIFIED",
+        "action": "COMPLETE",
+        "decision": "CASE_VERIFIED",
+        "reasons": []
+      }
+    ],
+    "actor": "ISKRA2",
+    "case_id": "S26-01-01",
+    "status": "PASS",
+    "reported_flags": "[]"
+  },
+  {
+    "request_id": "ssi-s20-iskra6-s20-01-01-a1",
+    "candidate_events": [
+      {
+        "candidate": 1,
+        "evaluation": "PASS",
+        "ci": "INCONCLUSIVE"
+      },
+      {
+        "candidate": 2,
+        "evaluation": "INCONCLUSIVE",
+        "ci": "INCONCLUSIVE"
+      }
+    ],
+    "training_events": [
+      {
+        "event": "RND_LAB_REJECTED",
+        "action": "REVISE_CANDIDATE_WITHIN_EXISTING_LIMITS",
+        "decision": "REFINE_CANDIDATE",
+        "reasons": [
+          "LAB_OUTPUT_MISMATCH"
+        ]
+      },
+      {
+        "event": "VERIFIER_OR_TRANSPORT_UNAVAILABLE",
+        "action": "PAUSE_KEEP_CANDIDATE",
+        "decision": "STOP_VERIFIER_OR_TRANSPORT_UNAVAILABLE",
+        "reasons": [
+          "NO_CANDIDATE_GENERATED",
+          "INVALID_WORKER_JSON"
+        ]
+      }
+    ],
+    "actor": "ISKRA6",
+    "case_id": "S20-01-01",
+    "status": "INCONCLUSIVE",
+    "reported_flags": "['unparseable_json', 'contract_binding:NO_CANDIDATE_TO_VALIDATE:$', 'rnd_lab_comparison_not_verified']"
+  }
+]

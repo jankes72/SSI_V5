@@ -12,12 +12,21 @@
 
 The canonical current roadmap is [CURRENT_RESEARCH_ROADMAP_20261002.md](CURRENT_RESEARCH_ROADMAP_20261002.md). It connects core SSI reliability/training, CZARA, Dynamic Mission V6, WEB engineering, Mexico robotics/offline-resilience research and the external partner-defined benchmark strategy while keeping planned work separate from completed evidence.
 
+## Latest SSI Final continuation — infrastructure stop — 2026-10-02
+
+The next operator-provided log records **4 PASS / 3 INCONCLUSIVE / 0 FAIL** across seven closed cases, ending with `STOPPED_INFRASTRUCTURE` in `RUN_DOMAIN_20261002T181736Z_f600e74c`. The last case first reported a LAB output mismatch, then `NO_CANDIDATE_GENERATED` / `INVALID_WORKER_JSON`; the runner preserved INCONCLUSIVE and stopped. The terminal log does not establish the underlying root cause.
+
+Together with the earlier seven-case batch, the two published transcripts contain **14 distinct actor/case outcomes: 9 PASS / 5 INCONCLUSIVE / 0 FAIL**. This is not a whole-stage or whole-queue result, and it does not alter the separate ZeroLab pilot or CZARA curriculum totals.
+
+- [Latest stop, all seven cases and evidence](RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md)
+
 ## ZeroLab V2 and first post-repair SSI batch — 2026-10-02
 
 Operator-provided terminal evidence reports **9/9 ZeroLab services READY**, followed by an **8/8 PASS local-data pilot** (`training_pass=false`, `models_called=0`). A separate SSI Final recovery batch completed **7 cases: 5 PASS, 2 INCONCLUSIVE, 0 FAIL**. Both unresolved cases retain `LAB_OUTPUT_MISMATCH`; one passing case succeeded after a candidate revision.
 
 The resumed Final batch is a selected S20-S26 recovery measurement after ZeroLab installation, not proof that those seven cases ran through ZeroLab. It does not establish full-stage acceptance or global per-case consolidation. The public export contains terminal evidence and reported receipt hashes; original pilot receipts and the signed Final run bundle have not been independently reverified for this publication.
 
+- [CZARA current status: Director_Czary, BODY 1.0 and ZeroLab](CZARA_CURRENT_STATUS.md)
 - [ZeroLab V2 results and provenance](ZERO_LAB_V2_FIRST_RESULTS_20261002.md)
 - [Architecture, roles and consolidation boundaries](SYSTEM/ZERO_LAB_V2_ARCHITECTURE_AND_AUTHORITY_20261002.md)
 - [Public evidence and machine-readable results](evidence/ZERO_LAB_V2_20261002/README.md)
@@ -291,5 +300,6 @@ PRIVATE = proprietary source code, ROOT internals, private state, reconstructive
 ```
 
 Older dated files remain historical evidence and are not rewritten to imitate the newest state.
+
 
 

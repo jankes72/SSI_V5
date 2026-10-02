@@ -1,11 +1,11 @@
 # SSI V5 — Collaboration and Partner Entry
 
-**Updated:** `2026-10-01`  
-**Preserved cross-domain evidence:** `2026-09-18`; current LAB/continuation update: `2026-09-22`  
+**Updated:** `2026-10-02`  
+**Preserved cross-domain evidence:** `2026-09-18`; latest ZeroLab / selected recovery update: `2026-10-02`  
 **Status:** `OPEN TO CONTROLLED RESEARCH / TECHNOLOGY / CONSORTIUM COLLABORATION`  
 **Public boundary:** proprietary implementation remains private unless separately licensed or explicitly disclosed.
 
-> Grant and technical reviewers should start with [GRANT_AND_CONSORTIUM_ENTRY_20261001.md](GRANT_AND_CONSORTIUM_ENTRY_20261001.md), [GRANT_CONSORTIUM/README.md](GRANT_CONSORTIUM/README.md), [CURRENT_RESEARCH_ROADMAP_20261001.md](CURRENT_RESEARCH_ROADMAP_20261001.md) and [REVIEWER_INDEX.md](REVIEWER_INDEX.md).
+> Grant and technical reviewers should start with [GRANT_AND_CONSORTIUM_ENTRY_20261001.md](GRANT_AND_CONSORTIUM_ENTRY_20261001.md), [GRANT_CONSORTIUM/README.md](GRANT_CONSORTIUM/README.md), [CURRENT_RESEARCH_ROADMAP_20261002.md](CURRENT_RESEARCH_ROADMAP_20261002.md) and [REVIEWER_INDEX.md](REVIEWER_INDEX.md).
 
 ## Grant / consortium package — 2026-10-01
 
@@ -34,13 +34,31 @@ partner-defined bounded R&D problem
 
 A company, laboratory or university is not described as a partner or validator until it explicitly agrees to participate. Outreach alone is not treated as collaboration evidence.
 
-## Current reliability / training boundary — 2026-09-30
+## Latest SSI Final continuation — infrastructure stop — 2026-10-02
+
+The next operator-provided log records **4 PASS / 3 INCONCLUSIVE / 0 FAIL** across seven closed cases, ending with `STOPPED_INFRASTRUCTURE` in `RUN_DOMAIN_20261002T181736Z_f600e74c`. The last case first reported a LAB output mismatch, then `NO_CANDIDATE_GENERATED` / `INVALID_WORKER_JSON`; the runner preserved INCONCLUSIVE and stopped. The terminal log does not establish the underlying root cause.
+
+Together with the earlier seven-case batch, the two published transcripts contain **14 distinct actor/case outcomes: 9 PASS / 5 INCONCLUSIVE / 0 FAIL**. This is not a whole-stage or whole-queue result, and it does not alter the separate ZeroLab pilot or CZARA curriculum totals.
+
+- [Latest stop, all seven cases and evidence](RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md)
+
+## ZeroLab and earlier bounded evidence — 2026-10-02
+
+ZeroLab V2 reports 9/9 checked services READY and an 8/8 local-data pilot PASS, including BODY_FROZEN_1_0. A separate Final recovery batch completed with 5 PASS, 2 INCONCLUSIVE and 0 FAIL. The pilot uses no models and is not training qualification; the live batch's total paid usage is not established by its transcript.
+
+For a partner session, the professor brings the question and criteria to Director_Czary; BODY_FROZEN_1_0 checks inputs and executes a supported laboratory method. Czara preserves translated context and may develop authorized shadow alternatives. The professor/operator decides whether to change the main direction, followed by a new execution. The complete conversational workflow still needs an end-to-end test.
+
+- [CZARA current status and roles](CZARA_CURRENT_STATUS.md)
+- [ZeroLab first results](ZERO_LAB_V2_FIRST_RESULTS_20261002.md)
+- [Public evidence and provenance](evidence/ZERO_LAB_V2_20261002/README.md)
+
+## Preserved reliability / training boundary — 2026-09-30
 
 Core training progressed through completed S20-S25 stages and into S26, then was **manually stopped by the operator** after abnormal growth of `INCONCLUSIVE` and pending cases.
 
 The current public incident record preserves **1,326 verdicts: 848 PASS, 470 INCONCLUSIVE and 8 FAIL**. These values are not presented as a universal capability score.
 
-A targeted sample of 18 apparent JSON failures traced the symptom to empty responses after `INFLIGHT_LIMIT`; reviewer-input propagation defects were also identified. A repair package passed 17/17 offline tests, but a successful live restart is not yet claimed.
+A targeted sample of 18 apparent JSON failures traced the symptom to empty responses after `INFLIGHT_LIMIT`; reviewer-input propagation defects were also identified. A repair package passed 17/17 offline tests, with a live restart unclaimed at that date. The separate seven-case result above is the later retest; it does not certify full S20-S40 completion.
 
 This is relevant to external partners because SSI's collaboration model requires the measurement pipeline to be trustworthy before an official frozen benchmark is accepted.
 
@@ -86,7 +104,7 @@ This is internal SSI evidence for the planned Poland-Mexico research workflow. I
 - [Machine-readable public summary](evidence/CZARA_FIRST_TRAINING_CYCLE_PUBLIC_SUMMARY_20261001.json)
 - [Sanitized run-level evidence](evidence/CZARA_FIRST_TRAINING_20261001/README.md)
 - [Historical S120 checkpoint — preserved](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md)
-- [ZERO-LAB / LAB_ARCHITECT next module](CZARA_ZERO_LAB_LAB_ARCHITECT_MODULE_20261001.md)
+- [CZARA current status and ZeroLab](CZARA_CURRENT_STATUS.md)
 
 ## What SSI can offer a partner now
 
@@ -283,3 +301,4 @@ Current evidence does **not** establish:
 5. [SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
 
 Older dated collaboration/status documents remain historical records.
+

@@ -1,5 +1,11 @@
 # SSI V5 — Candidate Work Packages, Deliverables and Milestones — 2026-10-01
 
+**Latest Final follow-up:** [4 PASS / 3 INCONCLUSIVE, followed by an infrastructure stop](../RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md). This later run supersedes the first batch as the latest core-runtime observation; the earlier result remains preserved.
+
+**Evidence update — 2026-10-02:** The ZeroLab pilot is available as a starting artifact for WP2/WP3. A partner-defined end-to-end benchmark must still test the professor request, BODY input checks, shadow evidence and approved direction change as a complete workflow.
+
+[Current CZARA status](../CZARA_CURRENT_STATUS.md) · [ZeroLab results](../ZERO_LAB_V2_FIRST_RESULTS_20261002.md) · [Evidence and provenance](../evidence/ZERO_LAB_V2_20261002/README.md)
+
 **Status:** reusable proposal skeleton.  
 **Rule:** exact WP numbering, leaders, dates, person-months and deliverable types must be adapted to the selected call.
 
@@ -47,7 +53,7 @@
 ### WP3 — Human-AI collaboration and continual learning
 
 **Objectives**
-- validate CZARA / DIRECTOR / BODY_FROZEN research workflow;
+- validate CZARA / Director_Czary / BODY_FROZEN_1_0 / ZeroLab research workflow;
 - measure training-to-reuse transition;
 - test frozen evaluation and revision lineage.
 
@@ -55,7 +61,8 @@
 - T3.1 multilingual expert interaction;
 - T3.2 controlled competence acquisition;
 - T3.3 frozen validation;
-- T3.4 expert corrections and provenance.
+- T3.4 expert corrections and provenance;
+- T3.5 ZeroLab completeness, authority and shadow-to-main execution tests.
 
 **Deliverables**
 - D3.1 Human-AI collaboration demonstrator;
@@ -161,3 +168,4 @@ Use call-specific targets, but candidate KPI families include:
 ## Anti-inflation rule
 
 A deliverable should not be marked achieved solely because code exists. Each technical milestone should define the evidence required to close it.
+

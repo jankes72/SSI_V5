@@ -1,5 +1,11 @@
 # SSI V5 — Resourcing and Budget Template — 2026-10-01
 
+**Latest Final follow-up:** [4 PASS / 3 INCONCLUSIVE, followed by an infrastructure stop](../RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md). This later run supersedes the first batch as the latest core-runtime observation; the earlier result remains preserved.
+
+**Evidence update — 2026-10-02:** The first ZeroLab pilot reports zero model calls. This is a property of that local demonstration, not a cost estimate for partner benchmarks; total paid usage of the separately published live Final batch is unknown from its transcript.
+
+[Current CZARA status](../CZARA_CURRENT_STATUS.md) · [ZeroLab results](../ZERO_LAB_V2_FIRST_RESULTS_20261002.md) · [Evidence and provenance](../evidence/ZERO_LAB_V2_20261002/README.md)
+
 **Purpose:** convert the technical programme into a consortium budgeting discussion.  
 **Status:** no funding amount or person-month commitment is claimed here. Values must be agreed for a specific call.
 
@@ -136,3 +142,4 @@ Before proposal submission, confirm:
 - who signs the grant and consortium agreements.
 
 This document does not assume that the individual author personally qualifies as a beneficiary under a particular call.
+

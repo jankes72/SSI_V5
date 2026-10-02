@@ -1,5 +1,9 @@
 # CZARA First Training Cycle — Public Run-Level Evidence — 2026-10-01
 
+**Evidence update — 2026-10-02:** This 537-record first-cycle evidence pack remains unchanged in scope. The later ZeroLab pilot and seven-case Final recovery batch have a separate evidence pack and are not added to these curriculum totals.
+
+[Current CZARA status](../../CZARA_CURRENT_STATUS.md) · [ZeroLab results](../../ZERO_LAB_V2_FIRST_RESULTS_20261002.md) · [Evidence and provenance](../ZERO_LAB_V2_20261002/README.md)
+
 **Curriculum:** `CZARA-RND-1.0.0`  
 **Status:** COMPLETE  
 **Scope:** sanitized internal run-level evidence for the first CZARA training cycle.
@@ -83,3 +87,4 @@ evidence_id
 ## Claim boundary
 
 This evidence supports the recorded internal CZARA curriculum only. It does not establish an independent Mexico benchmark, external replication, physical robotics validation, safety certification or production readiness.
+

@@ -1,5 +1,9 @@
 # SSI V5 — Funding Strategy — historical pre-T0 snapshot
 
+**Evidence update — 2026-10-02:** Use the current research and partner entry points for the technical evidence. The historical funding discussion below is preserved; ZeroLab's local pilot does not establish funding eligibility or certified maturity.
+
+[Current CZARA status](CZARA_CURRENT_STATUS.md) · [ZeroLab results](ZERO_LAB_V2_FIRST_RESULTS_20261002.md) · [Evidence and provenance](evidence/ZERO_LAB_V2_20261002/README.md)
+
 **Status:** `HISTORICAL FUNDING POSITION / SUPERSEDED FOR CURRENT-STATE READING`  
 **Original update:** `2026-09-04`
 
@@ -9,9 +13,9 @@ It should **not** be read as the current technical status after later milestones
 
 For current project status use:
 
-1. [`CURRENT_TRUTH_INDEX_20260914.md`](CURRENT_TRUTH_INDEX_20260914.md)
-2. [`CURRENT_RESEARCH_ROADMAP_20260914.md`](CURRENT_RESEARCH_ROADMAP_20260914.md)
-3. [`GRANT_REVIEWER_CURRENT_STATUS_20260914.md`](GRANT_REVIEWER_CURRENT_STATUS_20260914.md)
+1. [`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
+2. [`CURRENT_RESEARCH_ROADMAP_20261002.md`](CURRENT_RESEARCH_ROADMAP_20261002.md)
+3. [`GRANT_AND_CONSORTIUM_ENTRY_20261001.md`](GRANT_AND_CONSORTIUM_ENTRY_20261001.md)
 4. [`CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md`](CROSS_DOMAIN_TRANSFER_STATUS_DRONES_HUMANOID_20260914.md)
 
 The current funding position is now stronger than this historical snapshot because:

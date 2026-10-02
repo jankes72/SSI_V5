@@ -1,5 +1,9 @@
 # SSI V5 — Mexico Team Interface and CZARA Controls
 
+**Evidence update — 2026-10-02:** This remains the preserved interface proposal. Current ZeroLab roles use Director_Czary and BODY_FROZEN_1_0 for CZARA; Final has its own Director and executors. The local pilot does not establish a deployed external Mexico interface or complete professor/shadow workflow.
+
+[Current CZARA status](CZARA_CURRENT_STATUS.md) · [ZeroLab results](ZERO_LAB_V2_FIRST_RESULTS_20261002.md) · [Evidence and provenance](evidence/ZERO_LAB_V2_20261002/README.md)
+
 Recorded: `2026-09-28`  
 Status: `PLANNED INTERFACE / ACTIVE DESIGN / NOT YET CLAIMED AS DEPLOYED`
 
@@ -102,3 +106,4 @@ This document records what is being built. It does not establish:
 - independent external validation.
 
 The implementation must preserve the SSI rule: observation, context and suggestion do not equal execution authority.
+

@@ -1,5 +1,11 @@
 # SSI V5 — Grant / Consortium Package
 
+**Latest Final follow-up:** [4 PASS / 3 INCONCLUSIVE, followed by an infrastructure stop](../RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md). This later run supersedes the first batch as the latest core-runtime observation; the earlier result remains preserved.
+
+**Evidence update — 2026-10-02:** The ZeroLab extension and first recovery results are now linked from the current technical evidence. Keep the completed first CZARA curriculum, the local ZeroLab pilot and the selected Final batch as separate measurements.
+
+[Current CZARA status](../CZARA_CURRENT_STATUS.md) · [ZeroLab results](../ZERO_LAB_V2_FIRST_RESULTS_20261002.md) · [Evidence and provenance](../evidence/ZERO_LAB_V2_20261002/README.md)
+
 This directory converts the technical SSI V5 evidence base into a reusable proposal and partner-discussion layer.
 
 Start with:
@@ -19,3 +25,4 @@ Start with:
 These files are planning artefacts. They do not claim a signed consortium, certified TRL, fixed budget, grant eligibility for a specific call, independent validation, physical validation or safety certification.
 
 Technical truth remains governed by the current roadmap, truth index and evidence records.
+

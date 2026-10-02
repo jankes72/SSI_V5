@@ -1,5 +1,11 @@
 # SSI V5 — Grant and Consortium Entry — 2026-10-01
 
+**Latest Final follow-up:** [4 PASS / 3 INCONCLUSIVE, followed by an infrastructure stop](RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md). This later run supersedes the first batch as the latest core-runtime observation; the earlier result remains preserved.
+
+**Evidence update — 2026-10-02:** The latest bounded addition is ZeroLab V2: 9/9 checked services READY and 8/8 local executor pilot PASS, followed by a separate Final recovery batch of 5 PASS / 2 INCONCLUSIVE / 0 FAIL. These are operator-terminal observations, not external validation or a TRL reassessment.
+
+[Current CZARA status](CZARA_CURRENT_STATUS.md) · [ZeroLab results](ZERO_LAB_V2_FIRST_RESULTS_20261002.md) · [Evidence and provenance](evidence/ZERO_LAB_V2_20261002/README.md)
+
 **Purpose:** shortest entry point for a grant reviewer, research partner, laboratory or future consortium member.  
 **Project model:** independent solo R&D with proprietary implementation and public evidence/review layer.  
 **Current boundary:** software-laboratory evidence is public; physical validation, safety certification and independent external replication are not claimed.
@@ -54,10 +60,10 @@ INCONCLUSIVE = 470
 FAIL = 8
 S26 = interrupted
 repair package = 17/17 offline tests PASS
-live post-repair continuation = NOT YET CLAIMED
+live post-repair continuation at the 2026-09-30 snapshot = NOT YET CLAIMED
 ```
 
-This stop is treated as an R&D reliability event, not hidden or rewritten.
+This stop is retained as a historical R&D reliability event. The later seven-case retest above preserves those historical grades and does not establish full-stage acceptance.
 
 ## What SSI can contribute to a consortium
 
@@ -133,7 +139,7 @@ Before submission to a specific call, the consortium must freeze:
 
 For technical due diligence continue with:
 
-1. [CURRENT_RESEARCH_ROADMAP_20261001.md](CURRENT_RESEARCH_ROADMAP_20261001.md)
+1. [CURRENT_RESEARCH_ROADMAP_20261002.md](CURRENT_RESEARCH_ROADMAP_20261002.md)
 2. [REVIEWER_INDEX.md](REVIEWER_INDEX.md)
 3. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
 4. [CZARA first training cycle results](CZARA_FIRST_TRAINING_CYCLE_RESULTS_20261001.md)
@@ -154,3 +160,4 @@ This package is a proposal/collaboration planning layer. It does not claim:
 - guaranteed funding or deployment.
 
 The official conditions of the selected funding call and the final consortium agreement take precedence over this planning package.
+

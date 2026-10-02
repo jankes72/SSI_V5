@@ -23,19 +23,22 @@ Current tracks:
 
 ### Core SSI reliability
 
-The 2026-09-30 stopped run remains preserved: 1,326 cases with 848 PASS, 470 INCONCLUSIVE and 8 FAIL. Subsequent repairs now have an operator-observed live retest under a new plan and run identity.
+The 2026-09-30 stopped run remains preserved: 1,326 cases with 848 PASS, 470 INCONCLUSIVE and 8 FAIL. The post-repair path now has two separately published runtime transcripts under plan `DUP_01fe5854e782f647a46351d1`.
 
-- Resume IPC R2: 19/19 offline synthetic tests PASS.
-- Selected S20-S26 recovery batch: 7 cases, 5 PASS / 2 INCONCLUSIVE / 0 FAIL.
-- Run: `RUN_DOMAIN_20261002T070948Z_d8652beb`.
-- Queue before the batch: 621; arithmetic remainder after seven closed attempts: 614.
-- No automatic stage consolidation in this recovery runner; no full-stage acceptance.
+| Run | Closed cases | PASS | INCONCLUSIVE | FAIL | Final runner status |
+|---|---:|---:|---:|---:|---|
+| `RUN_DOMAIN_20261002T070948Z_d8652beb` | 7 | 5 | 2 | 0 | DOMAIN_BATCH_COMPLETE |
+| `RUN_DOMAIN_20261002T181736Z_f600e74c` | 7 | 4 | 3 | 0 | STOPPED_INFRASTRUCTURE |
 
-The two unresolved cases retain `LAB_OUTPUT_MISMATCH`. Completion of the remaining queue, S27-S40 and WEB01-WEB24 is not observed in the supplied evidence. The batch does not replace historical grades or remeasure all historical passes.
+The latest log reports `NO_CANDIDATE_GENERATED` and `INVALID_WORKER_JSON` on the final candidate. It does not establish whether the cause is model output, parsing, transport or another dependency. No live installation repair or restart was performed as part of this publication.
 
-See [first results](ZERO_LAB_V2_FIRST_RESULTS_20261002.md) and [public evidence](evidence/ZERO_LAB_V2_20261002/README.md). This selected recovery result is separate from the completed first CZARA curriculum.
+Across these two distinct case sets there are 14 closed outcomes: 9 PASS, 5 INCONCLUSIVE and 0 FAIL. The later log confirms a starting queue of 614; subtracting seven closed cases gives 607 at that boundary, derived rather than observed in a later status query. Full queue completion, full-stage acceptance and automatic stage consolidation are not claimed.
+
+The 19/19 IPC R2 offline synthetic tests, 8/8 ZeroLab local pilot and completed CZARA curriculum remain separate measurements. See the [latest stop](RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md), [earlier batch and pilot](ZERO_LAB_V2_FIRST_RESULTS_20261002.md) and their evidence packs.
 
 ### CZARA — first internal training cycle complete
+
+The current [CZARA overview](CZARA_CURRENT_STATUS.md) separates this completed curriculum from the later ZeroLab extension, Director_Czary/BODY 1.0 roles and the pending external benchmark.
 
 `CZARA-RND-1.0.0` completed its first internal cycle.
 
@@ -151,8 +154,8 @@ The external path is intended to use the same controlled collaboration chain:
 ```text
 Professor / Experts / Students
 -> CZARA
--> DIRECTOR
--> BODY_FROZEN / LAB
+-> Director_Czary
+-> BODY_FROZEN_1_0 / ZeroLab
 -> evidence
 -> shared reviewer interface
 ```
@@ -248,4 +251,5 @@ Not currently claimed:
 ---
 
 **Canonical roadmap rule:** this 2026-10-02 file supersedes the 2026-10-01 roadmap as the current programme pointer. Earlier dated roadmaps remain preserved as historical state and provenance.
+
 

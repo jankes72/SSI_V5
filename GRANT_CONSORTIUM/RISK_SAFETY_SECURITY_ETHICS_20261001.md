@@ -1,5 +1,11 @@
 # SSI V5 — Risk, Safety, Security and Ethics — 2026-10-01
 
+**Latest Final follow-up:** [4 PASS / 3 INCONCLUSIVE, followed by an infrastructure stop](../RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md). This later run supersedes the first batch as the latest core-runtime observation; the earlier result remains preserved.
+
+**Evidence update — 2026-10-02:** A selected post-repair Final batch has now completed, with 5 PASS and 2 unresolved LAB output mismatches. ZeroLab has a local pilot; full conversational authorization, shadow promotion and partner-level replication remain separate validation gates.
+
+[Current CZARA status](../CZARA_CURRENT_STATUS.md) · [ZeroLab results](../ZERO_LAB_V2_FIRST_RESULTS_20261002.md) · [Evidence and provenance](../evidence/ZERO_LAB_V2_20261002/README.md)
+
 **Purpose:** proposal-level risk and assurance framework.  
 **Status:** planning baseline; each physical or domain-specific pilot requires its own detailed assessment.
 
@@ -134,7 +140,7 @@ EVIDENCE
 
 ## Current critical risks before external benchmark
 
-1. live post-repair core continuation must be re-established under a new provenance boundary;
+1. the latest continuation stopped on an invalid/unavailable candidate after seven cases; root cause and subsequent recovery are unverified;
 2. partner-defined benchmark independence must be protected;
 3. physical validation still requires external hardware/facility and safety ownership;
 4. proposal-specific legal/IP/data responsibilities are not yet frozen.
@@ -142,3 +148,4 @@ EVIDENCE
 ## Claim boundary
 
 This document is a planning control layer, not a formal safety case, ethics approval, cybersecurity certification or regulatory compliance statement.
+

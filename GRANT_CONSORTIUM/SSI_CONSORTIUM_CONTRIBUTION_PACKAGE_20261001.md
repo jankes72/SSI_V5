@@ -1,5 +1,11 @@
 # SSI V5 — Consortium Contribution Package — 2026-10-01
 
+**Latest Final follow-up:** [4 PASS / 3 INCONCLUSIVE, followed by an infrastructure stop](../RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md). This later run supersedes the first batch as the latest core-runtime observation; the earlier result remains preserved.
+
+**Evidence update — 2026-10-02:** ZeroLab adds a bounded local experiment workflow to the proposed contribution: versioned protocols, input checks, local execution records and authorized shadow alternatives. The first pilot establishes a narrower command/execution path, not the complete partner workflow.
+
+[Current CZARA status](../CZARA_CURRENT_STATUS.md) · [ZeroLab results](../ZERO_LAB_V2_FIRST_RESULTS_20261002.md) · [Evidence and provenance](../evidence/ZERO_LAB_V2_20261002/README.md)
+
 **Role:** proposal-building document for future partners.  
 **Status:** planning package; partner roles, budgets and legal commitments remain to be agreed for a specific call.
 
@@ -151,3 +157,4 @@ Before this package is inserted into a grant application, replace planning assum
 ## Current evidence boundaries
 
 Internal software evidence is available in the repository. External Mexico execution, independent replication, physical validation, safety certification and production readiness remain unclaimed.
+

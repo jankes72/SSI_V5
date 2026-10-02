@@ -1,5 +1,11 @@
 # SSI V5 — IP and Collaboration Boundary — 2026-10-01
 
+**Latest Final follow-up:** [4 PASS / 3 INCONCLUSIVE, followed by an infrastructure stop](../RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md). This later run supersedes the first batch as the latest core-runtime observation; the earlier result remains preserved.
+
+**Evidence update — 2026-10-02:** The ZeroLab public release contains architecture, sanitized terminal evidence and an export-consistency checker. It does not publish the private runtime implementation or change the background-IP/access boundary described below.
+
+[Current CZARA status](../CZARA_CURRENT_STATUS.md) · [ZeroLab results](../ZERO_LAB_V2_FIRST_RESULTS_20261002.md) · [Evidence and provenance](../evidence/ZERO_LAB_V2_20261002/README.md)
+
 **Purpose:** make the public/private and background/foreground boundary understandable before consortium negotiations.  
 **Status:** planning statement, not a substitute for a consortium agreement, NDA, licence or legal advice.
 
@@ -118,3 +124,4 @@ None is automatically granted by participation in a research benchmark.
 ## Claim boundary
 
 This file documents the intended negotiation position. The final grant agreement, consortium agreement and signed partner contracts control the legal relationship.
+

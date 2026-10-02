@@ -8,10 +8,12 @@ This file is the shortest route through the repository. Historical files remain 
 
 ## 5-minute review
 
+**Latest runtime evidence:** [Final continuation stop](RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md), followed by the [ZeroLab pilot](ZERO_LAB_V2_FIRST_RESULTS_20261002.md) and [CZARA status](CZARA_CURRENT_STATUS.md).
+
 For a grant, consortium or partner-entry review, start with [GRANT_AND_CONSORTIUM_ENTRY_20261001.md](GRANT_AND_CONSORTIUM_ENTRY_20261001.md) and the [grant/consortium package](GRANT_CONSORTIUM/README.md).
 
 1. [Current research roadmap — 2026-10-02](CURRENT_RESEARCH_ROADMAP_20261002.md) — canonical current programme state and claim boundaries.
-2. [CZARA first training cycle — final results](CZARA_FIRST_TRAINING_CYCLE_RESULTS_20261001.md) — 160/160 final checkpoint PASS, 520/520 skills QUALIFIED, frozen validation and Champion results.
+2. [CZARA current status](CZARA_CURRENT_STATUS.md) and [first training cycle — final results](CZARA_FIRST_TRAINING_CYCLE_RESULTS_20261001.md) — 160/160 final checkpoint PASS, 520/520 skills QUALIFIED, frozen validation and Champion results.
 3. [CZARA sanitized run-level evidence](evidence/CZARA_FIRST_TRAINING_20261001/README.md) — reviewer-accessible 537-run evidence index and CSV.
 4. [S20-S26 operator stop and LAB repair incident](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md) — separate current core-training reliability boundary.
 5. [Machine-readable S20-S26 stop/repair summary](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_PUBLIC_SUMMARY_20260930.json) — compact audit state.
@@ -102,12 +104,21 @@ SEPARATE SOFTWARE-LAB RESULTS FROM PHYSICAL VALIDATION
 DO NOT CLAIM UNPUBLISHED OR IN-PROGRESS WORK AS VERIFIED
 ```
 
+## Latest SSI Final continuation — infrastructure stop — 2026-10-02
+
+The next operator-provided log records **4 PASS / 3 INCONCLUSIVE / 0 FAIL** across seven closed cases, ending with `STOPPED_INFRASTRUCTURE` in `RUN_DOMAIN_20261002T181736Z_f600e74c`. The last case first reported a LAB output mismatch, then `NO_CANDIDATE_GENERATED` / `INVALID_WORKER_JSON`; the runner preserved INCONCLUSIVE and stopped. The terminal log does not establish the underlying root cause.
+
+Together with the earlier seven-case batch, the two published transcripts contain **14 distinct actor/case outcomes: 9 PASS / 5 INCONCLUSIVE / 0 FAIL**. This is not a whole-stage or whole-queue result, and it does not alter the separate ZeroLab pilot or CZARA curriculum totals.
+
+- [Latest stop, all seven cases and evidence](RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md)
+
 ## ZeroLab V2 and first post-repair SSI batch — 2026-10-02
 
 Operator-provided terminal evidence reports **9/9 ZeroLab services READY**, followed by an **8/8 PASS local-data pilot** (`training_pass=false`, `models_called=0`). A separate SSI Final recovery batch completed **7 cases: 5 PASS, 2 INCONCLUSIVE, 0 FAIL**. Both unresolved cases retain `LAB_OUTPUT_MISMATCH`; one passing case succeeded after a candidate revision.
 
 The resumed Final batch is a selected S20-S26 recovery measurement after ZeroLab installation, not proof that those seven cases ran through ZeroLab. It does not establish full-stage acceptance or global per-case consolidation. The public export contains terminal evidence and reported receipt hashes; original pilot receipts and the signed Final run bundle have not been independently reverified for this publication.
 
+- [CZARA current status: Director_Czary, BODY 1.0 and ZeroLab](CZARA_CURRENT_STATUS.md)
 - [ZeroLab V2 results and provenance](ZERO_LAB_V2_FIRST_RESULTS_20261002.md)
 - [Architecture, roles and consolidation boundaries](SYSTEM/ZERO_LAB_V2_ARCHITECTURE_AND_AUTHORITY_20261002.md)
 - [Public evidence and machine-readable results](evidence/ZERO_LAB_V2_20261002/README.md)
@@ -222,5 +233,6 @@ KEEP THE OLDER FILE AS HISTORICAL EVIDENCE
 ```
 
 No historical file needs to be deleted to keep the reviewer path concise.
+
 
 

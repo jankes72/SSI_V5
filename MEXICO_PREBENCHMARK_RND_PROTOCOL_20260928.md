@@ -1,5 +1,9 @@
 # SSI V5 — Pre-Benchmark R&D Protocol: Core Training, WEB Engineering and Mexico Robotics
 
+**Evidence update — 2026-10-02:** The protocol below remains a preregistered research plan. The first CZARA curriculum is complete; ZeroLab V2 has a bounded local pilot. The selected Final recovery batch is not a full stage and performs no automatic stage consolidation.
+
+[Current CZARA status](CZARA_CURRENT_STATUS.md) · [ZeroLab results](ZERO_LAB_V2_FIRST_RESULTS_20261002.md) · [Evidence and provenance](evidence/ZERO_LAB_V2_20261002/README.md)
+
 **Recorded:** `2026-09-28`  
 **Status:** `PRE-BENCHMARK PROTOCOL / ACTIVE DEVELOPMENT / RESULTS NOT PRECLAIMED`  
 **Scope:** public, sanitized description of the intended research sequence, integration boundary and measurements. Proprietary implementation, credentials, prompts, private runtime state and reconstructive internals remain private.
@@ -501,3 +505,4 @@ This protocol does not establish:
 - superiority over external R&D teams.
 
 It establishes that the intended sequence, controls, measurements and later comparative questions were recorded before the first official Mexico benchmark.
+

@@ -1,0 +1,55 @@
+{
+  "schema": "ssi.public.final_recovery_stop.v1",
+  "evidence_date": "2026-10-02",
+  "provenance": {
+    "type": "OPERATOR_UPLOADED_TERMINAL_TRANSCRIPT",
+    "original_sha256": "74f3a0edd0afa641cc62a22b0ad93b97d0c79c8902b09e847766e005247a849c",
+    "sanitized_sha256": "74f6f0cfaec2a17f04125b1631a16ce95ebef8e77da9679894c44189d11bd121",
+    "raw_run_json_available": false,
+    "original_signatures_verified": false
+  },
+  "run_id": "RUN_DOMAIN_20261002T181736Z_f600e74c",
+  "plan_id": "DUP_01fe5854e782f647a46351d1",
+  "status": "STOPPED_INFRASTRUCTURE",
+  "command_limit": 622,
+  "queue_before_observed": 614,
+  "closed_cases": 7,
+  "counts": {
+    "PASS": 4,
+    "INCONCLUSIVE": 3,
+    "FAIL": 0
+  },
+  "queue_after_derived": 607,
+  "queue_after_basis": "614 minus 7 closed attempts; no later queue query supplied",
+  "final_case": {
+    "actor": "ISKRA6",
+    "case_id": "S20-01-01",
+    "status": "INCONCLUSIVE",
+    "first_candidate_reason": "LAB_OUTPUT_MISMATCH",
+    "second_candidate_reasons": [
+      "NO_CANDIDATE_GENERATED",
+      "INVALID_WORKER_JSON"
+    ],
+    "event": "VERIFIER_OR_TRANSPORT_UNAVAILABLE",
+    "flow": "STOP_RUN"
+  },
+  "cumulative_published_recovery": {
+    "scope": "TWO_TRANSCRIPTS_UNDER_SAME_PLAN_DISTINCT_ACTOR_CASE_PAIRS",
+    "previous_run_id": "RUN_DOMAIN_20261002T070948Z_d8652beb",
+    "closed_cases": 14,
+    "counts": {
+      "PASS": 9,
+      "INCONCLUSIVE": 5,
+      "FAIL": 0
+    }
+  },
+  "model_calls": null,
+  "paid_cost_usd": null,
+  "full_stage_acceptance": false,
+  "automatic_stage_consolidation": false,
+  "zero_lab_execution_for_these_cases_proven": false,
+  "whole_queue_complete": false,
+  "physical_validation": false,
+  "root_cause": "NOT_ESTABLISHED_FROM_TERMINAL_LOG",
+  "current_process_state": "NOT_QUERIED_AFTER_LOG"
+}

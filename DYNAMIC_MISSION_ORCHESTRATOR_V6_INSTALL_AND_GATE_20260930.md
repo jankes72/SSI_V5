@@ -1,5 +1,9 @@
 # SSI V5 — Dynamic Mission Orchestrator V6
 
+**Evidence update — 2026-10-02:** This installation snapshot is historical. The first CZARA curriculum later completed. ZeroLab now has a local pilot, but the supplied evidence does not establish completion of the 72 Dynamic Mission tasks or a full professor/shadow/promotion run.
+
+[Current CZARA status](CZARA_CURRENT_STATUS.md) · [ZeroLab results](ZERO_LAB_V2_FIRST_RESULTS_20261002.md) · [Evidence and provenance](evidence/ZERO_LAB_V2_20261002/README.md)
+
 > **CURRENT STATUS UPDATE — 2026-10-01:** this document preserves the installation/gate state from 2026-09-30. The CZARA completion prerequisite has since been satisfied by the completed first cycle (160/160 final checkpoint PASS; 24/24 frozen validation PASS; 16/16 frozen Champion Benchmark PASS). Dynamic Mission V6 live curriculum completion is still not claimed. See [CURRENT_RESEARCH_ROADMAP_20261001.md](CURRENT_RESEARCH_ROADMAP_20261001.md).
 
 **Date:** 2026-09-30  
@@ -887,3 +891,4 @@ Dynamic Mission TRAINING starts automatically
 ->
 first full Professor / CZARA / DIRECTOR / BODY_FROZEN / Router / LAB mission
 ```
+

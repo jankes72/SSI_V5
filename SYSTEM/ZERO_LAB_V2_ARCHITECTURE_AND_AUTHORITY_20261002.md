@@ -1,5 +1,7 @@
 # ZeroLab V2 — architecture, authority and consolidation boundaries
 
+**Current reading path:** [CZARA roles and status](../CZARA_CURRENT_STATUS.md) · [latest separate SSI Final continuation](../RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md). Runtime-result updates do not change the authority design below.
+
 **Date:** 2026-10-02  
 **Version:** `SSI_ZERO_LAB_V2_20261002`  
 **Basis:** reviewed private V2 implementation and operator runtime output. This document publishes architecture at a safe level; proprietary source and private runtime state remain private.

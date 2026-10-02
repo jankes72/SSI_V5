@@ -1,5 +1,9 @@
 # SSI V5 — Grant / Technical Reviewer FAQ — historical snapshot
 
+**Evidence update — 2026-10-02:** For current ZeroLab questions, use the linked results and CZARA overview. The FAQ body below is a preserved earlier snapshot; its old status numbers are not current.
+
+[Current CZARA status](CZARA_CURRENT_STATUS.md) · [ZeroLab results](ZERO_LAB_V2_FIRST_RESULTS_20261002.md) · [Evidence and provenance](evidence/ZERO_LAB_V2_20261002/README.md)
+
 **Status:** `HISTORICAL REVIEWER FAQ / SUPERSEDED FOR CURRENT-STATE READING`  
 **Original update:** `2026-09-07`
 
@@ -9,11 +13,11 @@ It should not be used alone as the current SSI V5 status after the later S10 V1/
 
 For the current reviewer summary use:
 
-[`GRANT_REVIEWER_CURRENT_STATUS_20260914.md`](GRANT_REVIEWER_CURRENT_STATUS_20260914.md)
+[`START_HERE_FOR_REVIEWERS.md`](START_HERE_FOR_REVIEWERS.md)
 
 For canonical current truth use:
 
-[`CURRENT_TRUTH_INDEX_20260914.md`](CURRENT_TRUTH_INDEX_20260914.md)
+[`CURRENT_TRUTH_INDEX.md`](CURRENT_TRUTH_INDEX.md)
 
 Key changes since this FAQ was recorded:
 

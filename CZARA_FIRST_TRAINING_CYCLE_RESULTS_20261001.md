@@ -1,5 +1,9 @@
 # CZARA — First Training Cycle: Final Results and Evidence
 
+**Evidence update — 2026-10-02:** The first-cycle results below remain frozen. The later ZeroLab V2 extension now has a local executor pilot, including BODY_FROZEN_1_0. That pilot grants no additional trained skills and is separate from this curriculum.
+
+[Current CZARA status](CZARA_CURRENT_STATUS.md) · [ZeroLab results](ZERO_LAB_V2_FIRST_RESULTS_20261002.md) · [Evidence and provenance](evidence/ZERO_LAB_V2_20261002/README.md)
+
 **Date:** 2026-10-01  
 **Curriculum:** `CZARA-RND-1.0.0`  
 **Status:** **COMPLETED**  
@@ -237,3 +241,4 @@ The scheduler ended in:
 The next CZARA development step is **ZERO-LAB / LAB_ARCHITECT**: given a new experiment and assuming no laboratory already exists, CZARA will help derive a laboratory blueprint before BODY_FROZEN builds or modifies the execution environment.
 
 That next module is deliberately separated from this result so the first training cycle remains a frozen evidence point.
+

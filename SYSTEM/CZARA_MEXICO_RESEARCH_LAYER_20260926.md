@@ -1,12 +1,16 @@
 # CZARA — Mexico Research Context, Translation and Learning Layer
 
+**Evidence update — 2026-10-02:** The first internal CZARA cycle is now complete: final checkpoint 160/160 PASS, 520/520 qualified skills and 40/40 frozen evaluation PASS. ZeroLab V2 subsequently adds a separate local experiment path using Director_Czary and BODY_FROZEN_1_0. The 2026-09-30 numbers below are an earlier preserved checkpoint.
+
+[Current CZARA status](../CZARA_CURRENT_STATUS.md) · [ZeroLab results](../ZERO_LAB_V2_FIRST_RESULTS_20261002.md) · [Evidence and provenance](../evidence/ZERO_LAB_V2_20261002/README.md)
+
 **Date:** `2026-09-26`  
 **Status:** `ARCHITECTURE + ACTIVE INTERNAL TRAINING / EXTERNAL MEXICO BENCHMARK STILL PLANNED`  
 **Scope:** public, sanitized architectural description. Proprietary implementation, credentials, private prompts and reconstructive internals remain private.
 
 > This document describes the intended role of **CZARA** in the planned SSI robotics collaboration with a research team in Mexico. It is a design and benchmark-plan document, not evidence that the external benchmark has already been executed.
 
-### Training update — 2026-09-30
+### Preserved training checkpoint — 2026-09-30
 
 The architecture now has an active internal training track. `CZARA-RND-1.0.0` has reached the end of its 120-case TRAINING phase with **22 PASS / 98 INCONCLUSIVE / 0 FAIL**. The remaining **24 validation + 16 Champion Benchmark** cases are not claimed completed. This remains internal simulated training, not a live external Mexico benchmark.
 
@@ -340,3 +344,4 @@ It does **not** establish:
 - that automatic translation is error-free.
 
 The external benchmark must remain evidence-driven: **PASS / FAIL / INCONCLUSIVE are preserved, and negative results remain part of the research record.**
+

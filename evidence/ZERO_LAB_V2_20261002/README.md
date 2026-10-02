@@ -1,5 +1,7 @@
 # ZeroLab V2 — public evidence pack — 2026-10-02
 
+> **Subsequent Final continuation:** [4 PASS / 3 INCONCLUSIVE, then STOPPED_INFRASTRUCTURE](../../RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md). This first-pilot/first-batch pack retains its original measurement scope.
+
 This pack publishes **operator-provided terminal evidence**, with derived structured summaries. It contains no proprietary SSI implementation, private prompts, credentials or private runtime state.
 
 | File | Origin and purpose |

@@ -1,5 +1,11 @@
 # SSI V5 — TRL and Validation Roadmap — 2026-10-01
 
+**Latest Final follow-up:** [4 PASS / 3 INCONCLUSIVE, followed by an infrastructure stop](../RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md). This later run supersedes the first batch as the latest core-runtime observation; the earlier result remains preserved.
+
+**Evidence update — 2026-10-02:** The local ZeroLab demonstration is an additional internal software evidence point. It does not automatically advance the existing planning bands or inherit the first CZARA curriculum's qualification.
+
+[Current CZARA status](../CZARA_CURRENT_STATUS.md) · [ZeroLab results](../ZERO_LAB_V2_FIRST_RESULTS_20261002.md) · [Evidence and provenance](../evidence/ZERO_LAB_V2_20261002/README.md)
+
 **Purpose:** translate SSI's evidence history into a conservative maturity path for proposal planning.  
 **Important:** the bands below are internal planning hypotheses, not an external TRL certification. The selected funding call and consortium must agree the formal TRL interpretation.
 
@@ -25,6 +31,7 @@ A single project-wide TRL would hide these differences.
 | Core SSI multi-agent/evidence runtime | repeated internal software-lab operation and regression evidence | TRL 3-4 | TRL 5-6 where call permits |
 | LAB / evidence / provenance workflow | operational internally; failures/replay preserved | TRL 4 | TRL 5-6 |
 | CZARA RND layer | completed internal training + frozen validation/Champion cycle | TRL 3-4 | TRL 5 in partner workflow |
+| ZeroLab V2 extension | operator-reported 8/8 local-data executor pilot; no training qualification | not assigned from pilot alone | partner-defined end-to-end experiment validation |
 | Drone / humanoid / rescue domain logic | software-lab scenarios only | TRL 3-4 | TRL 5 with relevant simulator/physical environment |
 | Offline / degraded-connectivity research | architecture and planned experiments | TRL 2-3 | TRL 4-5 after controlled validation |
 | Physical robot deployment | not established | below claimed physical validation level | call-specific controlled pilot |
@@ -115,3 +122,4 @@ CLAIM
 ## Current non-claims
 
 The roadmap does not establish physical drone/humanoid/rescue validation, safety certification, independent replication or production readiness.
+

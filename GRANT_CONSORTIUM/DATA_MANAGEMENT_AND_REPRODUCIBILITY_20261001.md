@@ -1,5 +1,11 @@
 # SSI V5 — Data Management and Reproducibility Framework — 2026-10-01
 
+**Latest Final follow-up:** [4 PASS / 3 INCONCLUSIVE, followed by an infrastructure stop](../RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md). This later run supersedes the first batch as the latest core-runtime observation; the earlier result remains preserved.
+
+**Evidence update — 2026-10-02:** The new ZeroLab pack includes sanitized terminal evidence, a case CSV, transcribed pilot receipt references and export hashes. Public CI checks consistency of those exports; original runtime receipts and the signed Final run bundle were not independently reverified for this publication.
+
+[Current CZARA status](../CZARA_CURRENT_STATUS.md) · [ZeroLab results](../ZERO_LAB_V2_FIRST_RESULTS_20261002.md) · [Evidence and provenance](../evidence/ZERO_LAB_V2_20261002/README.md)
+
 **Purpose:** proposal-ready baseline for research data, evidence and reproducibility.
 
 ## Data classes
@@ -138,3 +144,4 @@ The repository adds CI-based aggregate verification as a next reproducibility co
 - retention period;
 - costs of storage/curation;
 - post-project stewardship.
+

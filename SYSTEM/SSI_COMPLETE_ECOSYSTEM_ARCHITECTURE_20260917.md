@@ -1,5 +1,9 @@
 # SSI V5 — Complete Ecosystem Architecture
 
+**Evidence update — 2026-10-02:** This is the preserved ecosystem snapshot. The later ZeroLab architecture distinguishes CZARA/Director_Czary/BODY 1.0 from Director_Final/Final BODY/Iskras. Shared infrastructure does not establish global memory consolidation.
+
+[Current CZARA status](../CZARA_CURRENT_STATUS.md) · [ZeroLab results](../ZERO_LAB_V2_FIRST_RESULTS_20261002.md) · [Evidence and provenance](../evidence/ZERO_LAB_V2_20261002/README.md)
+
 **Current architecture statement:** 2026-09-17  
 **Role:** system-level description of SSI as a complete closed software ecosystem  
 **Public boundary:** architecture, evidence and verified behavior only; proprietary implementation remains private.
@@ -416,3 +420,4 @@ It does not by itself establish:
 The strongest accurate description is therefore:
 
 > **SSI is a persistent, evidence-oriented multi-agent software ecosystem in which DIRECTOR, BODY_FROZEN, six independent ISKRA lines, Hermes, CONTINUUM, Router V10, Router S10, Micronetwork/BLOCKS competence and world/domain layers form one closed competence-development and operational loop. S1-S10 is one controlled training programme inside that ecosystem, not the whole system.**
+

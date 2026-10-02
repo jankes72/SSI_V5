@@ -1,5 +1,9 @@
 # CZARA ZERO-LAB / LAB_ARCHITECT — Module Definition
 
+**Evidence update — 2026-10-02:** This is the preserved V1 design. ZeroLab V2 now has an installed local software runtime and an 8/8 executor pilot. Its bounded adapters cover part of this broader research design; they do not establish a general physical laboratory builder.
+
+[Current CZARA status](CZARA_CURRENT_STATUS.md) · [ZeroLab results](ZERO_LAB_V2_FIRST_RESULTS_20261002.md) · [Evidence and provenance](evidence/ZERO_LAB_V2_20261002/README.md)
+
 **Date:** 2026-10-01  
 **Status:** design frozen for implementation  
 **Purpose:** allow CZARA to help design the laboratory required by a new experiment instead of assuming that a suitable laboratory already exists.
@@ -186,3 +190,4 @@ A local deployment should prove:
 The first CZARA training cycle is now a frozen evidence point.
 
 ZERO-LAB / LAB_ARCHITECT is the next module and should be evaluated separately. Its future results must not be retroactively mixed into the first-cycle evidence.
+

@@ -1,5 +1,9 @@
 # SSI V5 — Current Research Roadmap — 2026-10-01
 
+**Evidence update — 2026-10-02:** This dated roadmap is superseded for current-status reading by the [2026-10-02 roadmap](CURRENT_RESEARCH_ROADMAP_20261002.md). Its earlier stop and planned-ZeroLab statements describe the state at its publication date.
+
+[Current CZARA status](CZARA_CURRENT_STATUS.md) · [ZeroLab results](ZERO_LAB_V2_FIRST_RESULTS_20261002.md) · [Evidence and provenance](evidence/ZERO_LAB_V2_20261002/README.md)
+
 **Role:** canonical current roadmap for the public SSI V5 R&D, evidence and external-validation hub.  
 **Project type:** independent / solo R&D programme.  
 **Public boundary:** architecture, research protocols, training checkpoints, failures, repair records, benchmark plans, sanitized evidence and claim boundaries are public; proprietary implementation, credentials and reconstructive private runtime internals remain private.
@@ -291,3 +295,4 @@ Not currently claimed:
 ---
 
 **Canonical roadmap rule:** this 2026-10-01 file supersedes the 2026-09-30 roadmap as the current programme pointer. Earlier dated roadmaps remain preserved as historical state and provenance.
+

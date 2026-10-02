@@ -1,0 +1,10 @@
+{
+  "schema": "ssi.public.export_manifest.v1",
+  "scope": "EXPORTED_BYTES_ONLY_NOT_RUNTIME_AUTHENTICITY",
+  "files": {
+    "operator.log": "74f6f0cfaec2a17f04125b1631a16ce95ebef8e77da9679894c44189d11bd121",
+    "cases.csv": "4590494988013fe38027dd5b53acec031b4ff9415d1d740e4bb1238cb95df396",
+    "case_events.json": "a079b268549086c2b33074186e49a727604a156f0a2ec50b2db4f3288def17f4",
+    "summary.json": "2882ac2f4fa35aef11abc4be875d354bd99e84e76342a1a1adbd9a4be2bb0e75"
+  }
+}

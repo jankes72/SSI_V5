@@ -1,5 +1,7 @@
 # ZeroLab V2 — first runtime results and SSI Final recovery batch
 
+> **Later observation — 2026-10-02:** the next Final continuation closed seven cases with 4 PASS / 3 INCONCLUSIVE and stopped on infrastructure. See [the later run and evidence](RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md). The first-batch snapshot below is preserved, including what was not yet observed at its publication.
+
 **Date:** 2026-10-02  
 **Version:** `SSI_ZERO_LAB_V2_20261002`  
 **Evidence:** operator-provided terminal output; public export consistency can be checked locally. Original runtime receipts and the signed Final run bundle have not been independently reverified for this publication.
