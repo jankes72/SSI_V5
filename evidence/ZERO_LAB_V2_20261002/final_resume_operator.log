@@ -1,0 +1,146 @@
+operator@host:~$ unzip -o "<LOCAL_LAUNCHER_OR_PACKAGE>" -d "<LOCAL_LAUNCHER_OR_PACKAGE>" &&
+python3 "<LOCAL_LAUNCHER_OR_PACKAGE>" --apply &&
+python3 "<LOCAL_LAUNCHER_OR_PACKAGE>" --run --live --limit 7
+Archive: <LOCAL_INSTALL_PACKAGE>
+  inflating: <LOCAL_PACKAGE_FILE>
+  inflating: <LOCAL_PACKAGE_FILE>
+  inflating: <LOCAL_PACKAGE_FILE>
+  inflating: <LOCAL_PACKAGE_FILE>
+  inflating: <LOCAL_PACKAGE_FILE>
+  inflating: <LOCAL_PACKAGE_FILE>
+  inflating: <LOCAL_PACKAGE_FILE>
+  inflating: <LOCAL_PACKAGE_FILE>
+  inflating: <LOCAL_PACKAGE_FILE>
+  inflating: <LOCAL_PACKAGE_FILE>
+  inflating: <LOCAL_PACKAGE_FILE>
+  inflating: <LOCAL_PACKAGE_FILE>
+  inflating: <LOCAL_PACKAGE_FILE>
+  inflating: <LOCAL_PACKAGE_FILE>
+test_budget_task_calls_stages_and_unknown_code_change_are_rejected (__main__.ResumeTests.test_budget_task_calls_stages_and_unknown_code_change_are_rejected) ... ok
+test_changed_hook_is_not_a_generic_fingerprint_waiver (__main__.ResumeTests.test_changed_hook_is_not_a_generic_fingerprint_waiver) ... ok
+test_cold_full_status_over_three_seconds_is_accepted_by_runner_readiness (__main__.ResumeTests.test_cold_full_status_over_three_seconds_is_accepted_by_runner_readiness) ... ok
+test_completed_requires_sealed_report_and_refuses_unknown_active_case (__main__.ResumeTests.test_completed_requires_sealed_report_and_refuses_unknown_active_case) ... ok
+test_existing_capacity_campaign_can_continue_without_reset (__main__.ResumeTests.test_existing_capacity_campaign_can_continue_without_reset) ... ok
+test_existing_plan_with_no_work_does_not_invoke_runner (__main__.ResumeTests.test_existing_plan_with_no_work_does_not_invoke_runner) ... ok
+test_explicit_live_required_before_any_dispatch_or_read (__main__.ResumeTests.test_explicit_live_required_before_any_dispatch_or_read) ... ok
+test_expression_to_zero_lab_preserves_all_grades_and_unchanged_queue_items (__main__.ResumeTests.test_expression_to_zero_lab_preserves_all_grades_and_unchanged_queue_items) ... ok
+test_idempotent_prepare_keeps_current_plan_and_history (__main__.ResumeTests.test_idempotent_prepare_keeps_current_plan_and_history) ... ok
+test_installer_idempotent_preserves_results_ledger_and_plan (__main__.ResumeTests.test_installer_idempotent_preserves_results_ledger_and_plan) ... ok
+test_installer_rolls_back_write_failure_without_touching_history (__main__.ResumeTests.test_installer_rolls_back_write_failure_without_touching_history) ... ok
+test_invalid_status_and_foreign_profile_cannot_become_ready (__main__.ResumeTests.test_invalid_status_and_foreign_profile_cannot_become_ready) ... ok
+test_launcher_and_runner_share_bounded_full_status_wait (__main__.ResumeTests.test_launcher_and_runner_share_bounded_full_status_wait) ... ok
+test_process_only_probe_still_makes_no_status_request (__main__.ResumeTests.test_process_only_probe_still_makes_no_status_request) ... ok
+test_resume_dispatches_once_through_existing_runner_with_explicit_limit (__main__.ResumeTests.test_resume_dispatches_once_through_existing_runner_with_explicit_limit) ... ok
+test_running_trainer_blocks_installer_before_code_changes (__main__.ResumeTests.test_running_trainer_blocks_installer_before_code_changes) ... ok
+test_tampered_successor_rejected_and_old_marker_not_rewritten (__main__.ResumeTests.test_tampered_successor_rejected_and_old_marker_not_rewritten) ... ok
+test_timeout_does_not_retry_or_claim_readiness (__main__.ResumeTests.test_timeout_does_not_retry_or_claim_readiness) ... ok
+test_unrelated_predecessor_and_ambiguous_inflight_are_not_replayed (__main__.ResumeTests.test_unrelated_predecessor_and_ambiguous_inflight_are_not_replayed) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 7.523s
+
+OK
+[TESTY] transport syntetyczny; modele=0; rzeczywiste SSI bez zmian.
+[KOPIA] <LOCAL_BACKUP>
+[GOTOWE] Zainstalowano IPC R2: status do 30 s. Modele=0; uslug nie restartowano.
+[DANE] Budzet, ledger, wyniki, plany historyczne i checkpointy bez zmian.
+[ETAP] WERYFIKACJA_KODU_I_USLUG
+[ETAP] KONFIGURACJA_USLUG
+[ETAP] STATUS_BODY_FROZEN
+[USLUGA] BODY_FROZEN RUNNING pid=<PID> sekundy=0.59
+[ETAP] STATUS_ISKRA1
+[USLUGA] ISKRA1 RUNNING pid=<PID> sekundy=0.55
+[ETAP] STATUS_ISKRA2
+[USLUGA] ISKRA2 RUNNING pid=<PID> sekundy=7.87
+[ETAP] STATUS_ISKRA3
+[USLUGA] ISKRA3 RUNNING pid=<PID> sekundy=6.79
+[ETAP] STATUS_ISKRA4
+[DZIALA] etap=STATUS_ISKRA4 sekundy=4 funkcje=<INTERNAL_STACK>
+[USLUGA] ISKRA4 RUNNING pid=<PID> sekundy=6.96
+[ETAP] STATUS_ISKRA5
+[USLUGA] ISKRA5 RUNNING pid=<PID> sekundy=4.41
+[ETAP] STATUS_ISKRA6
+[USLUGA] ISKRA6 RUNNING pid=<PID> sekundy=3.88
+[ETAP] STATUS_GATEWAY
+[USLUGA] GATEWAY uwierzytelniony status OK
+[ETAP] STATUS_DIRECTOR
+[USLUGA] DIRECTOR RUNNING pid=<PID>
+[SLOTY] Final/Director_Final/BODY_FINAL/Iskry=1; Czara/Director_Czary/BODY1=1; wspolny budzet=6.0 USD/dzien.
+[ZERO_LAB] Final: 7 wykonawcow i Director READY; modele=0.
+[ETAP] PODPISY_I_KOLEJKA_S20_S26
+[KOLEJKA] pozostalo=621; historia zachowana; bez automatycznych powtorek.
+[PLAN] DUP_01fe5854e782f647a46351d1 limit=7
+[ETAP] SZKOLENIE_SSI_FINAL
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=6 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=26 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=46 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=66 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=86 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=106 funkcje=<INTERNAL_STACK>
+[POCKET_READY] qualified=1 actors=7 paid_calls=0
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=126 funkcje=<INTERNAL_STACK>
+[CASE_REQUEST] ssi-s21-iskra2-s21-01-01-a1
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=146 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=166 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=186 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=206 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=226 funkcje=<INTERNAL_STACK>
+[NATIVE_CANDIDATE] 1 evaluation=PASS ci=INCONCLUSIVE
+[TRAINING_EVENT] RND_LAB_REJECTED action=REVISE_CANDIDATE_WITHIN_EXISTING_LIMITS decision=STOP_TIER_LIMIT reasons=["LAB_OUTPUT_MISMATCH"]
+[CASE_DONE] ISKRA2 S21-01-01 INCONCLUSIVE ['rnd_lab_comparison_not_verified']
+[LAB_FLOW] ISKRA2 S21-01-01 CONTINUE_NEXT_CASE pending=1
+[CASE_REQUEST] ssi-s22-iskra1-s22-01-03-a1
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=246 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=266 funkcje=<INTERNAL_STACK>
+[NATIVE_CANDIDATE] 1 evaluation=PASS ci=PASS
+[TRAINING_EVENT] VERIFIED action=COMPLETE decision=CASE_VERIFIED reasons=[]
+[CASE_DONE] ISKRA1 S22-01-03 PASS []
+[LAB_FLOW] ISKRA1 S22-01-03 COMPLETE pending=1
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=286 funkcje=<INTERNAL_STACK>
+[CASE_REQUEST] ssi-s23-iskra1-s23-01-01-a1
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=306 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=326 funkcje=<INTERNAL_STACK>
+[NATIVE_CANDIDATE] 1 evaluation=PASS ci=INCONCLUSIVE
+[TRAINING_EVENT] RND_LAB_REJECTED action=REVISE_CANDIDATE_WITHIN_EXISTING_LIMITS decision=REFINE_CANDIDATE reasons=["LAB_OUTPUT_MISMATCH"]
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=346 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=366 funkcje=<INTERNAL_STACK>
+[NATIVE_CANDIDATE] 2 evaluation=PASS ci=PASS
+[TRAINING_EVENT] VERIFIED action=COMPLETE decision=CASE_VERIFIED reasons=[]
+[CASE_DONE] ISKRA1 S23-01-01 PASS []
+[LAB_FLOW] ISKRA1 S23-01-01 COMPLETE pending=1
+[CASE_REQUEST] ssi-s24-iskra4-s24-01-01-a1
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=386 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=406 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=426 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=446 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=466 funkcje=<INTERNAL_STACK>
+[NATIVE_CANDIDATE] 1 evaluation=PASS ci=PASS
+[TRAINING_EVENT] VERIFIED action=COMPLETE decision=CASE_VERIFIED reasons=[]
+[CASE_DONE] ISKRA4 S24-01-01 PASS []
+[LAB_FLOW] ISKRA4 S24-01-01 COMPLETE pending=1
+[CASE_REQUEST] ssi-s25-body_frozen-s25-01-01-a1
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=486 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=506 funkcje=<INTERNAL_STACK>
+[NATIVE_CANDIDATE] 1 evaluation=PASS ci=PASS
+[TRAINING_EVENT] VERIFIED action=COMPLETE decision=CASE_VERIFIED reasons=[]
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=526 funkcje=<INTERNAL_STACK>
+[CASE_DONE] BODY_FROZEN S25-01-01 PASS []
+[LAB_FLOW] BODY_FROZEN S25-01-01 COMPLETE pending=1
+[CASE_REQUEST] ssi-s26-iskra1-s26-01-01-a1
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=546 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=566 funkcje=<INTERNAL_STACK>
+[NATIVE_CANDIDATE] 1 evaluation=PASS ci=PASS
+[TRAINING_EVENT] VERIFIED action=COMPLETE decision=CASE_VERIFIED reasons=[]
+[CASE_DONE] ISKRA1 S26-01-01 PASS []
+[LAB_FLOW] ISKRA1 S26-01-01 COMPLETE pending=1
+[CASE_REQUEST] ssi-s20-iskra5-s20-01-01-a1
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=586 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=606 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=626 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=646 funkcje=<INTERNAL_STACK>
+[DZIALA] etap=SZKOLENIE_SSI_FINAL sekundy=666 funkcje=<INTERNAL_STACK>
+[NATIVE_CANDIDATE] 1 evaluation=PASS ci=INCONCLUSIVE
+[TRAINING_EVENT] RND_LAB_REJECTED action=REVISE_CANDIDATE_WITHIN_EXISTING_LIMITS decision=STOP_TIER_LIMIT reasons=["LAB_OUTPUT_MISMATCH"]
+[CASE_DONE] ISKRA5 S20-01-01 INCONCLUSIVE ['rnd_lab_comparison_not_verified']
+[LAB_FLOW] ISKRA5 S20-01-01 CONTINUE_NEXT_CASE pending=2
+[DOMAIN_BATCH_RESULT] DOMAIN_BATCH_COMPLETE {'INCONCLUSIVE': 2, 'PASS': 5} report=<LOCAL_RUN_REPORT>/RUN_DOMAIN_20261002T070948Z_d8652beb/run.json

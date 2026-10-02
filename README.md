@@ -10,10 +10,12 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 
 | Purpose | Document |
 |---|---|
-| Current research roadmap | **[CURRENT_RESEARCH_ROADMAP_20261001.md](CURRENT_RESEARCH_ROADMAP_20261001.md)** |
+| Current research roadmap | **[CURRENT_RESEARCH_ROADMAP_20261002.md](CURRENT_RESEARCH_ROADMAP_20261002.md)** |
 | CZARA first training cycle — final result | **[CZARA_FIRST_TRAINING_CYCLE_RESULTS_20261001.md](CZARA_FIRST_TRAINING_CYCLE_RESULTS_20261001.md)** |
 | CZARA sanitized run-level evidence | **[evidence/CZARA_FIRST_TRAINING_20261001/README.md](evidence/CZARA_FIRST_TRAINING_20261001/README.md)** |
-| CZARA ZERO-LAB / LAB_ARCHITECT | **[CZARA_ZERO_LAB_LAB_ARCHITECT_MODULE_20261001.md](CZARA_ZERO_LAB_LAB_ARCHITECT_MODULE_20261001.md)** |
+| ZeroLab V2 — first runtime results | **[ZERO_LAB_V2_FIRST_RESULTS_20261002.md](ZERO_LAB_V2_FIRST_RESULTS_20261002.md)** |
+| ZeroLab public evidence | **[evidence/ZERO_LAB_V2_20261002/README.md](evidence/ZERO_LAB_V2_20261002/README.md)** |
+| Historical ZeroLab design | [CZARA_ZERO_LAB_LAB_ARCHITECT_MODULE_20261001.md](CZARA_ZERO_LAB_LAB_ARCHITECT_MODULE_20261001.md) |
 | Historical CZARA S120 checkpoint | **[RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md)** |
 | S20-S26 operator stop / LAB repair | **[RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md)** |
 | Dynamic Mission V6 — installation and post-CZARA gate | **[DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md](DYNAMIC_MISSION_ORCHESTRATOR_V6_INSTALL_AND_GATE_20260930.md)** |
@@ -53,9 +55,21 @@ The current programme combines core SSI reliability work, CZARA Human-AI researc
 - **Demonstrated scope:** software laboratory results for drone, humanoid and cross-domain rescue scenarios.
 - **Current boundary:** software evidence is published; physical validation, safety certification and independent external replication are not claimed.
 
-**Current public state:** 2026-10-01
+**Current public state:** 2026-10-02
 
-## Current training status — operator stop and LAB repair boundary — 2026-09-30
+## ZeroLab V2 and first post-repair SSI batch — 2026-10-02
+
+Operator-provided terminal evidence reports **9/9 ZeroLab services READY**, followed by an **8/8 PASS local-data pilot** (`training_pass=false`, `models_called=0`). A separate SSI Final recovery batch completed **7 cases: 5 PASS, 2 INCONCLUSIVE, 0 FAIL**. Both unresolved cases retain `LAB_OUTPUT_MISMATCH`; one passing case succeeded after a candidate revision.
+
+The resumed Final batch is a selected S20-S26 recovery measurement after ZeroLab installation, not proof that those seven cases ran through ZeroLab. It does not establish full-stage acceptance or global per-case consolidation. The public export contains terminal evidence and reported receipt hashes; original pilot receipts and the signed Final run bundle have not been independently reverified for this publication.
+
+- [ZeroLab V2 results and provenance](ZERO_LAB_V2_FIRST_RESULTS_20261002.md)
+- [Architecture, roles and consolidation boundaries](SYSTEM/ZERO_LAB_V2_ARCHITECTURE_AND_AUTHORITY_20261002.md)
+- [Public evidence and machine-readable results](evidence/ZERO_LAB_V2_20261002/README.md)
+
+## Preserved operator-stop snapshot — 2026-09-30
+
+The following records the earlier stop. The 2026-10-02 result above documents the subsequent limited live restart; historical grades remain unchanged.
 
 Core training progressed through completed S20-S25 stages and into S26. The operator then **manually stopped the run with Ctrl-C** because the number of `INCONCLUSIVE` outcomes and pending cases was increasing and no longer represented a trustworthy training signal.
 
@@ -74,12 +88,12 @@ A targeted diagnostic sample of **18 cases** showed that the apparent `unparseab
 
 The diagnosis also identified two additional reliability gaps: required task outputs were not always propagated correctly to the reviewer path, and dedicated R&D execution scenarios remain incomplete for parts of S20-S26.
 
-A repair package (`SSI_LAB_REPAIR_20260930.zip`) was prepared and reported **17/17 offline tests PASS**. The public hub does **not** yet claim that the live private runtime has been repaired/restarted successfully. Historical verdicts remain preserved.
+A repair package (`SSI_LAB_REPAIR_20260930.zip`) was prepared and reported **17/17 offline tests PASS**. At that date, a successful live restart was not yet claimed; the separate 2026-10-02 batch above is the later retest. Historical verdicts remain preserved.
 
 - [S20-S26 operator stop and LAB repair incident](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md)
 - [Machine-readable S20-S26 stop/repair summary](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_PUBLIC_SUMMARY_20260930.json)
 
-**Continuation boundary:** do not treat the old S20-S40 launcher as authorized for restart. The next continuation must preserve a new post-repair runtime/provenance boundary and support frozen-case replay.
+**Preserved continuation requirement:** a new post-repair provenance boundary was required. The later recovery batch uses a separate plan/run and preserves earlier verdicts; it does not certify completion through S40.
 
 
 ## CZARA first internal training cycle complete — 2026-10-01
@@ -122,7 +136,7 @@ This is internal SSI evidence for the planned Poland-Mexico research workflow. I
 - [Machine-readable public summary](evidence/CZARA_FIRST_TRAINING_CYCLE_PUBLIC_SUMMARY_20261001.json)
 - [Sanitized run-level evidence](evidence/CZARA_FIRST_TRAINING_20261001/README.md)
 - [Historical S120 checkpoint — preserved](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md)
-- [ZERO-LAB / LAB_ARCHITECT next module](CZARA_ZERO_LAB_LAB_ARCHITECT_MODULE_20261001.md)
+- [ZeroLab V2 — first runtime results](ZERO_LAB_V2_FIRST_RESULTS_20261002.md)
 
 ## Historical pre-S20 snapshot — S19 incident and consolidation hardening
 
@@ -329,7 +343,7 @@ DIRECTOR
 
 ## Read this repository in this order
 
-1. [CURRENT_RESEARCH_ROADMAP_20261001.md](CURRENT_RESEARCH_ROADMAP_20261001.md)
+1. [CURRENT_RESEARCH_ROADMAP_20261002.md](CURRENT_RESEARCH_ROADMAP_20261002.md)
 2. [REVIEWER_INDEX.md](REVIEWER_INDEX.md)
 3. [Latest S13-S18 routing and recovery evidence](RESULTS/SSI_V5_S13_S18_ROUTING_AND_RECOVERY_UPDATE_20260929.md)
 4. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md)
@@ -377,7 +391,9 @@ BODY / ISKRA foundations
 -> S20-S25 completed with verified-subset consolidations reported PASS
 -> S26 entered, then manually stopped by operator after abnormal INCONCLUSIVE/pending growth
 -> LAB/reviewer diagnosis completed; 18 sampled parse failures mapped to empty responses after INFLIGHT_LIMIT
--> repair package prepared; 17/17 offline tests PASS; live restart not yet claimed
+-> initial repair package: 17/17 offline tests PASS; live restart unclaimed at that earlier date
+-> ZeroLab V2 runtime readiness: 9/9; local pilot 8/8 PASS, not training qualification
+-> IPC R2 resume: 19/19 offline tests; selected Final batch 5 PASS / 2 INCONCLUSIVE / 0 FAIL
 -> configured next training phase after S40: automatic gated transition to WEB01-WEB24
 ```
 
@@ -442,4 +458,5 @@ EXTERNAL PARTNER DEFINES UNSEEN PROBLEM
 ```
 
 See [COLLABORATION_AND_PARTNER_ENTRY.md](COLLABORATION_AND_PARTNER_ENTRY.md).
+
 

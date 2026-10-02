@@ -1,0 +1,80 @@
+{
+  "schema": "ssi.public.zero_lab.first_results.v1",
+  "published_date": "2026-10-02",
+  "provenance": {
+    "runtime_evidence": "OPERATOR_PROVIDED_TERMINAL_OUTPUT",
+    "architecture_evidence": "REVIEWED_PRIVATE_V2_AND_RESUME_R2_SOURCE_SNAPSHOT",
+    "independently_reverified_signed_run": false,
+    "raw_run_json_available": false,
+    "original_final_transcript_sha256": "b7cd40617d6b1431948d6034351dd08e66fc725b317e0c281a474d9aaee157b4",
+    "sanitized_final_transcript_sha256": "1b07e0f023fe9841ec3f34788984814c6b676a61cb629193158f1bd5b388576c",
+    "pilot_receipt_hashes": "TRANSCRIBED_NOT_RECOMPUTED"
+  },
+  "zero_lab": {
+    "version": "SSI_ZERO_LAB_V2_20261002",
+    "readiness": {
+      "ready": 9,
+      "checked": 9,
+      "models_called": 0
+    },
+    "pilot": {
+      "total": 8,
+      "counts": {
+        "PASS": 8,
+        "INCONCLUSIVE": 0,
+        "FAIL": 0
+      },
+      "scope": "DEMONSTRATION_LOCAL_DATA_ONLY",
+      "training_pass": false,
+      "models_called": 0,
+      "adapter_from_reviewed_source": "record_transform_v1",
+      "director_czara_readiness_included": false
+    }
+  },
+  "resume_offline_tests": {
+    "package": "SSI_WZNOW_SSI_IPC_R2_20261002",
+    "passed": 19,
+    "total": 19,
+    "elapsed_seconds_operator_reported": 7.523,
+    "transport": "SYNTHETIC",
+    "models_called": 0
+  },
+  "final_training_batch": {
+    "run_id": "RUN_DOMAIN_20261002T070948Z_d8652beb",
+    "plan_id": "DUP_01fe5854e782f647a46351d1",
+    "status": "DOMAIN_BATCH_COMPLETE",
+    "scope": "SELECTED_S20_S26_RECOVERY_CASES_AFTER_ZERO_LAB_INSTALLATION",
+    "case_count": 7,
+    "counts": {
+      "PASS": 5,
+      "INCONCLUSIVE": 2,
+      "FAIL": 0
+    },
+    "queue_before": 621,
+    "queue_after_derived": 614,
+    "queue_after_basis": "621 minus 7 closed attempts; not an additional observed queue line",
+    "paid_cost_usd": null,
+    "model_calls": null,
+    "full_stage_acceptance": false,
+    "automatic_stage_consolidation": false,
+    "zero_lab_execution_for_these_cases_proven": false,
+    "later_continuation_result": "NOT_OBSERVED"
+  },
+  "capacity_configuration_reported": {
+    "czara_group_slots": 1,
+    "final_group_slots": 1,
+    "shared_daily_budget_usd": 6.0
+  },
+  "claim_boundaries": {
+    "all_core_training_complete": false,
+    "global_per_case_consolidation_proven": false,
+    "physical_validation": false,
+    "external_replication": false,
+    "complete_professor_chat_shadow_promotion_flow_proven": false
+  },
+  "artifacts": {
+    "pilot": "pilot_terminal_report.json",
+    "final_cases": "final_case_results.csv",
+    "final_transcript": "final_resume_operator.log"
+  }
+}

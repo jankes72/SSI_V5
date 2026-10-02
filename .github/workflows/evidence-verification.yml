@@ -5,11 +5,13 @@ on:
     paths:
       - "evidence/**"
       - "tools/verify_czara_public_evidence.py"
+      - "tools/verify_zero_lab_public_evidence.py"
       - ".github/workflows/evidence-verification.yml"
   pull_request:
     paths:
       - "evidence/**"
       - "tools/verify_czara_public_evidence.py"
+      - "tools/verify_zero_lab_public_evidence.py"
       - ".github/workflows/evidence-verification.yml"
   workflow_dispatch:
 
@@ -30,3 +32,6 @@ jobs:
 
       - name: Verify CZARA public evidence aggregate
         run: python tools/verify_czara_public_evidence.py
+
+      - name: Verify ZeroLab public export consistency
+        run: python tools/verify_zero_lab_public_evidence.py

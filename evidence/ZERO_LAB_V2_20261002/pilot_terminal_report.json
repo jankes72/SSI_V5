@@ -1,0 +1,116 @@
+{
+  "schema": "ssi.public.zero_lab.operator_pilot.v1",
+  "provenance": {
+    "source_type": "OPERATOR_PASTED_TERMINAL_JSON",
+    "normalized_for_publication": true,
+    "raw_receipt_files_available": false,
+    "receipt_hashes_independently_recomputed": false
+  },
+  "readiness": {
+    "status": "READY",
+    "models_called": 0,
+    "runtimes": [
+      {
+        "actor": "BODY_FROZEN_1_0",
+        "status": "READY",
+        "version": "SSI_ZERO_LAB_V2_20261002"
+      },
+      {
+        "actor": "BODY_FROZEN",
+        "status": "READY",
+        "version": "SSI_ZERO_LAB_V2_20261002"
+      },
+      {
+        "actor": "ISKRA1",
+        "status": "READY",
+        "version": "SSI_ZERO_LAB_V2_20261002"
+      },
+      {
+        "actor": "ISKRA2",
+        "status": "READY",
+        "version": "SSI_ZERO_LAB_V2_20261002"
+      },
+      {
+        "actor": "ISKRA3",
+        "status": "READY",
+        "version": "SSI_ZERO_LAB_V2_20261002"
+      },
+      {
+        "actor": "ISKRA4",
+        "status": "READY",
+        "version": "SSI_ZERO_LAB_V2_20261002"
+      },
+      {
+        "actor": "ISKRA5",
+        "status": "READY",
+        "version": "SSI_ZERO_LAB_V2_20261002"
+      },
+      {
+        "actor": "ISKRA6",
+        "status": "READY",
+        "version": "SSI_ZERO_LAB_V2_20261002"
+      },
+      {
+        "actor": "DIRECTOR_FINAL",
+        "status": "READY",
+        "version": "SSI_ZERO_LAB_V2_20261002"
+      }
+    ]
+  },
+  "pilot": {
+    "status": "PASS",
+    "scope": "DEMONSTRATION_LOCAL_DATA_ONLY",
+    "training_pass": false,
+    "models_called": 0,
+    "results": [
+      {
+        "actor": "BODY_FROZEN_1_0",
+        "experiment_id": "ZL_5207fd8c30614df3b0c54d49696b3118",
+        "status": "PASS",
+        "receipt_sha256": "f3a3edb7330b780b901a10347403d00ef5d97a9760f907e6032807ec945a9086"
+      },
+      {
+        "actor": "BODY_FROZEN",
+        "experiment_id": "ZL_c975ad408b6f4c6bb67baa428b95fa71",
+        "status": "PASS",
+        "receipt_sha256": "97cf33772519bd68cb22428b837354cf254786ee76436916f0e5633a43dc942b"
+      },
+      {
+        "actor": "ISKRA1",
+        "experiment_id": "ZL_3382b221f8c44958ba8a97e79dad9fae",
+        "status": "PASS",
+        "receipt_sha256": "1d9b2ec65c8ae4ef2afde92a9cd768cb35f90a04477451176ee5b91113937bb0"
+      },
+      {
+        "actor": "ISKRA2",
+        "experiment_id": "ZL_073473e64e8c42debb4ec44cb1b99039",
+        "status": "PASS",
+        "receipt_sha256": "1797818f19b61182e0963fc3da7add8ade4f2a5c9f6689f1cd79e82729ccf11a"
+      },
+      {
+        "actor": "ISKRA3",
+        "experiment_id": "ZL_30dcd921dac440889f32077e33c34ef0",
+        "status": "PASS",
+        "receipt_sha256": "676483070c994931564ec3cb9ccd114546ad429166db379beda59f22d9ed6b82"
+      },
+      {
+        "actor": "ISKRA4",
+        "experiment_id": "ZL_b3d00df413d8465cb896646e89e28b33",
+        "status": "PASS",
+        "receipt_sha256": "b08626c118f1aec69e5fcf55109cafd5be7e42d50080ba8016f7555fd0d8080f"
+      },
+      {
+        "actor": "ISKRA5",
+        "experiment_id": "ZL_6643c792020a4ec9b91a812932e9c83d",
+        "status": "PASS",
+        "receipt_sha256": "968091b78944a1150cb074c6f9d340561c5ca5fa53facb24e869c360415cd220"
+      },
+      {
+        "actor": "ISKRA6",
+        "experiment_id": "ZL_b538d3bcf1f54b0588b3b3ab10160e40",
+        "status": "PASS",
+        "receipt_sha256": "a168871fb20b0cde36f67883174fd1f082c94f64ee8b36880d8388fc8580ba5b"
+      }
+    ]
+  }
+}

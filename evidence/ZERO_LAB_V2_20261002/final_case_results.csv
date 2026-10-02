@@ -1,0 +1,8 @@
+run_id,request_id,actor,case_id,status,candidates_observed,lab_mismatch_observed,final_reason
+RUN_DOMAIN_20261002T070948Z_d8652beb,ssi-s21-iskra2-s21-01-01-a1,ISKRA2,S21-01-01,INCONCLUSIVE,1,true,rnd_lab_comparison_not_verified
+RUN_DOMAIN_20261002T070948Z_d8652beb,ssi-s22-iskra1-s22-01-03-a1,ISKRA1,S22-01-03,PASS,1,false,
+RUN_DOMAIN_20261002T070948Z_d8652beb,ssi-s23-iskra1-s23-01-01-a1,ISKRA1,S23-01-01,PASS,2,true,
+RUN_DOMAIN_20261002T070948Z_d8652beb,ssi-s24-iskra4-s24-01-01-a1,ISKRA4,S24-01-01,PASS,1,false,
+RUN_DOMAIN_20261002T070948Z_d8652beb,ssi-s25-body_frozen-s25-01-01-a1,BODY_FROZEN,S25-01-01,PASS,1,false,
+RUN_DOMAIN_20261002T070948Z_d8652beb,ssi-s26-iskra1-s26-01-01-a1,ISKRA1,S26-01-01,PASS,1,false,
+RUN_DOMAIN_20261002T070948Z_d8652beb,ssi-s20-iskra5-s20-01-01-a1,ISKRA5,S20-01-01,INCONCLUSIVE,1,true,rnd_lab_comparison_not_verified

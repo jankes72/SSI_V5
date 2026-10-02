@@ -1,6 +1,6 @@
 # SSI V5 — Reviewer Index
 
-**Current public state:** `2026-10-01`  
+**Current public state:** `2026-10-02`  
 **Repository role:** public R&D, evidence and external-validation hub for a private SSI implementation.  
 **Audience:** grant reviewers, research collaborators, technical reviewers and validation partners.
 
@@ -10,14 +10,14 @@ This file is the shortest route through the repository. Historical files remain 
 
 For a grant, consortium or partner-entry review, start with [GRANT_AND_CONSORTIUM_ENTRY_20261001.md](GRANT_AND_CONSORTIUM_ENTRY_20261001.md) and the [grant/consortium package](GRANT_CONSORTIUM/README.md).
 
-1. [Current research roadmap — 2026-10-01](CURRENT_RESEARCH_ROADMAP_20261001.md) — canonical current programme state and claim boundaries.
+1. [Current research roadmap — 2026-10-02](CURRENT_RESEARCH_ROADMAP_20261002.md) — canonical current programme state and claim boundaries.
 2. [CZARA first training cycle — final results](CZARA_FIRST_TRAINING_CYCLE_RESULTS_20261001.md) — 160/160 final checkpoint PASS, 520/520 skills QUALIFIED, frozen validation and Champion results.
 3. [CZARA sanitized run-level evidence](evidence/CZARA_FIRST_TRAINING_20261001/README.md) — reviewer-accessible 537-run evidence index and CSV.
 4. [S20-S26 operator stop and LAB repair incident](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md) — separate current core-training reliability boundary.
 5. [Machine-readable S20-S26 stop/repair summary](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_PUBLIC_SUMMARY_20260930.json) — compact audit state.
 6. [CURRENT_TRUTH_INDEX.md](CURRENT_TRUTH_INDEX.md) — canonical pointer to the latest evidence-backed state.
 7. [START_HERE_FOR_REVIEWERS.md](START_HERE_FOR_REVIEWERS.md) — reviewer-oriented project summary.
-8. [ZERO-LAB / LAB_ARCHITECT](CZARA_ZERO_LAB_LAB_ARCHITECT_MODULE_20261001.md) — next CZARA research module; local integration not yet claimed.
+8. [ZeroLab V2 — first results](ZERO_LAB_V2_FIRST_RESULTS_20261002.md) — local pilot and separate SSI recovery evidence.
 9. [Historical S19 observability incident](RESULTS/SSI_V5_S19_OBSERVABILITY_INCIDENT_AND_PRE_S20_STATUS_20260929.md) — preserved pre-S20 incident chronology.
 10. [Pre-S20 hardening preregistration](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md) — frozen controls used before continuation.
 11. [External review attribution](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md) — external DEV feedback provenance.
@@ -63,7 +63,7 @@ This is internal SSI evidence for the planned Poland-Mexico research workflow. I
 - [Machine-readable public summary](evidence/CZARA_FIRST_TRAINING_CYCLE_PUBLIC_SUMMARY_20261001.json)
 - [Sanitized run-level evidence](evidence/CZARA_FIRST_TRAINING_20261001/README.md)
 - [Historical S120 checkpoint — preserved](RESULTS/CZARA_RND_1_0_0_TRAINING_CHECKPOINT_S120_20260930.md)
-- [ZERO-LAB / LAB_ARCHITECT next module](CZARA_ZERO_LAB_LAB_ARCHITECT_MODULE_20261001.md)
+- [ZeroLab V2 — first runtime results](ZERO_LAB_V2_FIRST_RESULTS_20261002.md)
 
 ## Planned Mexico robotics training / CZARA review path
 
@@ -102,7 +102,19 @@ SEPARATE SOFTWARE-LAB RESULTS FROM PHYSICAL VALIDATION
 DO NOT CLAIM UNPUBLISHED OR IN-PROGRESS WORK AS VERIFIED
 ```
 
-## Current training status — operator stop and LAB repair boundary — 2026-09-30
+## ZeroLab V2 and first post-repair SSI batch — 2026-10-02
+
+Operator-provided terminal evidence reports **9/9 ZeroLab services READY**, followed by an **8/8 PASS local-data pilot** (`training_pass=false`, `models_called=0`). A separate SSI Final recovery batch completed **7 cases: 5 PASS, 2 INCONCLUSIVE, 0 FAIL**. Both unresolved cases retain `LAB_OUTPUT_MISMATCH`; one passing case succeeded after a candidate revision.
+
+The resumed Final batch is a selected S20-S26 recovery measurement after ZeroLab installation, not proof that those seven cases ran through ZeroLab. It does not establish full-stage acceptance or global per-case consolidation. The public export contains terminal evidence and reported receipt hashes; original pilot receipts and the signed Final run bundle have not been independently reverified for this publication.
+
+- [ZeroLab V2 results and provenance](ZERO_LAB_V2_FIRST_RESULTS_20261002.md)
+- [Architecture, roles and consolidation boundaries](SYSTEM/ZERO_LAB_V2_ARCHITECTURE_AND_AUTHORITY_20261002.md)
+- [Public evidence and machine-readable results](evidence/ZERO_LAB_V2_20261002/README.md)
+
+## Preserved operator-stop snapshot — 2026-09-30
+
+The following records the earlier stop. The 2026-10-02 result above documents the subsequent limited live restart; historical grades remain unchanged.
 
 Core training progressed through completed S20-S25 stages and into S26. The operator then **manually stopped the run with Ctrl-C** because the number of `INCONCLUSIVE` outcomes and pending cases was increasing and no longer represented a trustworthy training signal.
 
@@ -121,12 +133,12 @@ A targeted diagnostic sample of **18 cases** showed that the apparent `unparseab
 
 The diagnosis also identified two additional reliability gaps: required task outputs were not always propagated correctly to the reviewer path, and dedicated R&D execution scenarios remain incomplete for parts of S20-S26.
 
-A repair package (`SSI_LAB_REPAIR_20260930.zip`) was prepared and reported **17/17 offline tests PASS**. The public hub does **not** yet claim that the live private runtime has been repaired/restarted successfully. Historical verdicts remain preserved.
+A repair package (`SSI_LAB_REPAIR_20260930.zip`) was prepared and reported **17/17 offline tests PASS**. At that date, a successful live restart was not yet claimed; the separate 2026-10-02 batch above is the later retest. Historical verdicts remain preserved.
 
 - [S20-S26 operator stop and LAB repair incident](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_AND_LAB_REPAIR_20260930.md)
 - [Machine-readable S20-S26 stop/repair summary](RESULTS/SSI_V5_S20_S26_OPERATOR_STOP_PUBLIC_SUMMARY_20260930.json)
 
-**Continuation boundary:** do not treat the old S20-S40 launcher as authorized for restart. The next continuation must preserve a new post-repair runtime/provenance boundary and support frozen-case replay.
+**Preserved continuation requirement:** a new post-repair provenance boundary was required. The later recovery batch uses a separate plan/run and preserves earlier verdicts; it does not certify completion through S40.
 
 
 ## Preserved verified milestone
@@ -210,4 +222,5 @@ KEEP THE OLDER FILE AS HISTORICAL EVIDENCE
 ```
 
 No historical file needs to be deleted to keep the reviewer path concise.
+
 
