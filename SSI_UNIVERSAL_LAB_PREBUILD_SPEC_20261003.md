@@ -2,7 +2,7 @@
 
 **Author:** Paweł Jankiewicz  
 **Recorded:** 2026-10-03  
-**Specification version:** 1.0  
+**Specification version:** 1.1 — natural voices, European languages and BODY-owned LLM translation added  
 **Status:** PRE-BUILD INTEGRATION PLAN / RESULTS NOT PRECLAIMED  
 **Base:** existing Lab Mexyk / Mexico research module  
 **Target roles:** CZARA, Director_Czary, BODY_FROZEN_1_0 and ZeroLab in the CZARA scope
@@ -19,9 +19,9 @@ Integration should reuse the existing engines, routing, supported adapters, BLOC
 
 | Component | Target responsibility |
 |---|---|
-| CZARA | Preserve original and translated conversation context from both sides; identify roles, questions, hypotheses and revisions; initiate permitted shadow work. |
+| CZARA | Preserve conversation context from both sides and link originals to BODY-generated translations; identify roles, questions, hypotheses and revisions; initiate permitted shadow work. |
 | Director_Czary | Interpret the benchmark request, prepare the protocol, coordinate resources and execution, and explain the evidence. |
-| BODY_FROZEN_1_0 | Check input completeness and execution resources, run supported methods through adapters, and return execution evidence. |
+| BODY_FROZEN_1_0 | Own the LLM-based translation path; check input completeness and execution resources; run supported methods through adapters and return execution evidence. |
 | ZeroLab — CZARA scope | Retain versioned protocols and methods, measurements, comparisons, execution records and separate main/shadow results. |
 
 Director_Czary and BODY_FROZEN_1_0 retain their distinct runtime identities. Director_Final, Final BODY_FROZEN and ISKRA1–ISKRA6 remain the separate SSI Final scope. Sharing infrastructure or transferring compatible competence does not merge these identities.
@@ -32,7 +32,7 @@ The universal interface is extensible through adapters. Each benchmark domain re
 
 Participants join a browser session through a meeting link. The room contains video, audio, translated chat and a shared laboratory panel. Each session has a topic, participants, roles, language settings and a declared scope of permitted actions.
 
-Polish is the author's working language. A partner may use another supported language, initially including English or Spanish as target examples. Translation works in both directions: Polish to the partner's selected language and the partner's language to Polish.
+Polish is the author's working language. Each research partner should be able to speak and receive translated content in their own selected language, without being required to switch to English. The target scope includes German, Portuguese and all European languages needed for the project's contacts, alongside Spanish for the Mexico collaboration. Translation works in both directions: Polish to the partner's selected language and the partner's language to Polish. Each partner's language must be qualified before a meeting is presented as ready for native-language participation.
 
 Each participant independently selects:
 
@@ -46,7 +46,88 @@ Each conversation segment records its author, language, timestamp and session co
 
 Translation alone does not start laboratory jobs. Conversation retention, material sharing and session access settings are visible to participants. Reconnection should restore the same session and its retained history.
 
-Speech recognition, translation and synthesis services will be selected after quality, latency and cost measurements. This specification does not preclaim a particular latency or error-free technical translation.
+Speech recognition and synthesis engines, and the LLM used by BODY_FROZEN_1_0 for translation, will be selected after quality, latency and cost measurements. This specification does not preclaim a particular latency or error-free technical translation.
+
+### BODY_FROZEN_1_0 owns LLM translation
+
+Translation is performed through BODY_FROZEN_1_0 using a selected LLM. The LLaMA family or another LLM may be evaluated; the exact model is chosen from measured quality for the required language pair and technical context, rather than from its brand. Better translation than a conventional translator is a hypothesis to test, not a preclaimed result.
+
+The communication path is:
+
+1. Speech recognition produces a speaker-attributed source-text segment, or the participant supplies a chat message.
+2. CZARA preserves the original, speaker identity, chronology and relevant session context.
+3. BODY_FROZEN_1_0 translates the segment with the configured LLM, target language/variety and technical glossary.
+4. CZARA links the returned translation to its source and retains corrections, uncertainty and version information.
+5. The participant receives translated text and/or the qualified TTS voice reading that target-language text.
+
+The same ownership applies to benchmark descriptions and laboratory explanations. Director_Czary receives the original request and its BODY-generated translation for interpretation and protocol preparation. TTS performs speech rendering; CZARA performs context management and provenance.
+
+The LLM must preserve meaning, numbers, units, named entities and technical identifiers, while producing natural target-language phrasing. Uncertain or ambiguous content remains visible for correction. Translation output does not acquire authority to alter a frozen benchmark by itself.
+
+Model, version, configuration and input/output associations are recorded for evaluation. Private prompt contents remain within the existing private implementation boundary. Translation requests use isolated session context and a declared resource/queue policy so that benchmark or shadow workloads do not silently starve live conversation or change its translation configuration.
+
+Evaluate LLM translation in both directions against human-reviewed references and a conventional translation baseline on the same research utterances. Compare meaning preservation, technical terminology, omissions/additions, numerical correctness, latency and cost. A strong result in one language pair does not establish equivalent quality in every European language.
+
+### 2.1. Natural voice, diction and regional pronunciation
+
+Natural spoken output is a primary acceptance requirement. The target is a clear, consistent conversational voice with appropriate stress, pauses, rhythm and regional pronunciation. Merely producing an audio file does not qualify a voice for research meetings.
+
+The voice layer must use openly available, self-hostable TTS models with code and model-weight licenses compatible with the intended deployment. Exact model revisions, dependencies and voice assets must be recorded. Preference is for permissively licensed options; a free download alone does not establish an open-source or unrestricted deployment license.
+
+Speech recognition, translation and speech synthesis are evaluated separately. TTS reads the accepted target-language text; it must preserve that text's meaning. Translation correctness requires its own evaluation and cannot be inferred from how pleasant the voice sounds.
+
+Language and regional variety are separate profile fields. Polish, English and Mexican/Latin American Spanish form an initial pilot group, not a limit on the module's intended coverage. German and Portuguese are explicit requirements; European and Brazilian Portuguese require distinct profiles where requested. British/American English, European Spanish and other requested varieties require their own tests. A model's general language support must not be presented as verified support for every dialect.
+
+Each participant can preview a voice using an ordinary sentence and a technical sentence, then select an available qualified voice profile, language variety and speaking rate. The interface distinguishes tested profiles from experimental ones. Different languages may use different qualified TTS engines behind the same interface. Coverage gaps require additional compatible models or language-specific adaptation and validation.
+
+### European partner-language coverage
+
+The target coverage register starts with the EU's [24 official languages](https://european-union.europa.eu/principles-countries-history/languages_en): Bulgarian, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Greek, Hungarian, Irish, Italian, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish and Swedish.
+
+It also includes other European languages required by actual research contacts, such as Norwegian for Norwegian partners, Icelandic, Ukrainian, Serbian, Bosnian, Montenegrin, Macedonian, Albanian and Turkish. Other national or regional languages are added when a partner requests them. This is a target register, not a claim that the shortlisted engines already support or qualify every listed language.
+
+For each language/variety, the register records:
+
+- partner-facing language and regional profile;
+- recognition, translation and TTS engines with exact versions;
+- supported voice assets and deployment-license compatibility;
+- bidirectional translation checks and technical-glossary coverage;
+- native-listener and runtime test results;
+- readiness state: requested, under evaluation or qualified.
+
+The meeting workflow collects the partner's language and voice/caption preference before the session. Language preparation is part of meeting readiness. The module must not silently replace the requested language with English or label an unsupported voice as ready. The target is one shared research environment in which each participant speaks naturally in their own language.
+
+A pronunciation glossary should cover SSI names, technical terms, abbreviations, formulas, dates, decimals and units. Speech-specific pronunciation or text-normalization instructions remain separate from the original transcript and benchmark protocol. They must not silently change numerical values, units or technical identifiers.
+
+### 2.2. Candidate engines to evaluate
+
+The following is a research shortlist reviewed on 2026-10-03, not an installed configuration or a quality result for SSI:
+
+| Candidate | Reason to evaluate | Selection boundary |
+|---|---|---|
+| Chatterbox Multilingual V3 | The producer describes an MIT-licensed multilingual release supporting Polish, English and German, with dedicated Spanish Mexico/LATAM, Spanish Spain, Portuguese Portugal and Portuguese Brazil language-pack variants. | First candidate for supported-language comparisons. The producer reports uneven quality across languages; each enabled language and regional voice must pass SSI's own listening tests. The shortlist does not cover the complete European target register. |
+| Qwen3-TTS, including the official 0.6B CustomVoice checkpoint | The official Apache-2.0 checkpoint supports English, Spanish, German and Portuguese, predefined voices and speech-style control. | Additional candidate for supported languages. Polish is absent from the official ten-language list; Polish support must not be assumed from the model name or an untested community adaptation. |
+
+Producer documentation and model cards:
+
+- [Chatterbox source repository](https://github.com/resemble-ai/chatterbox)
+- [Chatterbox Multilingual V3 release, language varieties and limitations](https://www.resemble.ai/resources/chatterbox-multilingual-v3-tts-with-embedded-watermarking-for-25-languages)
+- [Qwen3-TTS source repository](https://github.com/QwenLM/Qwen3-TTS)
+- [Official Qwen3-TTS 0.6B CustomVoice model card](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice)
+
+### 2.3. Voice qualification and meeting performance
+
+Before selection, candidate voices should be compared blindly on the same language-specific text pack. If available, the installed Hermes voice is retained as a baseline with its actual engine, version and settings recorded. Its prior use does not qualify it as the meeting default.
+
+The proposed initial screening pack contains at least 20 utterances per voice/language-variety profile, covering everyday speech, research discussion, names, numbers, units, abbreviations, questions, corrections and longer explanations. Generate three repetitions to expose unstable pronunciation, omissions, additions and voice drift. Retain the input text, synthesized audio, configuration and failure annotations.
+
+Native listeners familiar with the requested regional variety assess naturalness, intelligibility/diction and pronunciation fit separately. The proposed screening target is a mean of at least 4/5 in each dimension, using at least three listeners per profile. Report the number of listeners, score distribution and test-pack coverage. Freeze the evaluation procedure before comparing candidates. Passing this pack is bounded evidence, not a guarantee of perfect speech on unseen text.
+
+Critical numeric, unit and identifier utterances in the acceptance pack must retain their spoken meaning. Omissions, invented words, unwanted repetitions, clipping and disruptive voice changes are recorded as failures. Automated transcription-based error rates can support evaluation but do not establish naturalness or dialect accuracy on their own. Translation quality is assessed independently against the original statement.
+
+Runtime tests must measure time to first audible output, full speech/translation delay, sustained generation speed, RAM/VRAM use and interruptions on the actual deployment hardware. Include two-way traffic while SSI benchmark and shadow workloads are active. Published results on high-end accelerators do not establish performance on the existing SSI computers.
+
+A meeting voice profile is enabled only after its language-quality and runtime checks pass. If no profile meets the required quality, that profile remains unavailable for spoken translation while the existing caption mode remains usable. Lower-quality substitutions must not occur silently.
 
 ## 3. Benchmark initiation from either side
 
@@ -109,7 +190,7 @@ Each reported value must identify whether it is **measured, simulated, estimated
 
 Uncertainty estimates, intervals and statistics are shown where the repetitions and calculation method justify them. Missing data remain visible. Negative and inconclusive outcomes remain available alongside positive outcomes.
 
-Both sides see the same numerical data and identifiers. CZARA translates descriptions. Any optional unit conversion retains the original value and an explicit conversion rule.
+Both sides see the same numerical data and identifiers. BODY_FROZEN_1_0 translates descriptions through the configured LLM, with CZARA retaining context and source associations. Any optional unit conversion retains the original value and an explicit conversion rule.
 
 Partner-visible reports expose selected sanitized evidence and state which checks can be reproduced from the export. Proprietary source, agent memory, credentials and administrative configuration remain private. Evidence-integrity claims must match the controls actually performed; a local hash chain alone is not an independent audit.
 
@@ -121,7 +202,7 @@ The module is intended to use accumulated SSI V5 competence and verified CZARA t
 |---|---|
 | Verified SSI V5 Director competence | Director_Czary: compatible planning, coordination and research interpretation competence. |
 | Verified SSI V5 BODY_FROZEN competence | BODY_FROZEN_1_0: compatible execution methods, BLOCKS, micronetworks and Champion packages. |
-| Verified CZARA checkpoint | CZARA in the meeting module: its qualified context, translation, role and revision capabilities. |
+| Verified CZARA checkpoint | CZARA in the meeting module: its qualified context, original/translation provenance, role and revision capabilities, with runtime translation delegated to BODY_FROZEN_1_0. |
 | Newly verified laboratory findings | Role-appropriate competence packages for CZARA, Director_Czary and BODY_FROZEN_1_0. |
 
 The target consolidation process is:
@@ -168,7 +249,9 @@ Acceptance requires a recorded full session using real compatible components. Tr
 
 | Acceptance check | Required evidence |
 |---|---|
-| Bidirectional communication | Polish and the selected partner language work in voice and chat; voice/caption choices are independent; quality and latency are measured. |
+| Bidirectional communication | BODY_FROZEN_1_0 provides LLM translation between Polish and each enabled partner language in both directions; voice/caption choices are independent; quality and latency are measured. |
+| European language readiness | German, Portuguese and other required partner languages are tracked individually; a meeting's requested languages are qualified before native-language participation is declared ready. |
+| Natural voice and language variety | Each enabled voice profile has retained audio, native-listener diction/naturalness/variety scores, critical-term checks and runtime measurements on the deployment hardware. |
 | Meaning preservation | Technical terms, numbers and units are preserved; uncertainty and corrections remain visible in history. |
 | Benchmark controls on both sides | Either authorized participant can request a trial; repeated clicks and reconnects do not duplicate execution. |
 | Protocol and authority | Missing inputs block execution with an explanation; criteria changes create revisions; session permissions are respected. |
