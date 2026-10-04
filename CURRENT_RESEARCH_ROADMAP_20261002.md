@@ -8,7 +8,7 @@
 
 A separate longitudinal protocol is now preregistered in [LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md](LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md). After evidence-valid completion through S40, BODY_FROZEN and ISKRA1..ISKRA6 are intended to receive frozen pre-WEB snapshots binding their skill, memory/lifecycle, routing and affect-like state baselines. They will then be compared under the same declared WEB curriculum.
 
-The primary comparison is actor-isolated: no cross-agent knowledge promotion during the first measurement phase. A later secondary phase may enable consultation/consolidation to measure transfer. Results will compare learning trajectories, not only final verdicts.
+The primary comparison is actor-isolated: no cross-agent knowledge promotion during the first measurement phase. A later secondary phase may enable consultation/consolidation to measure transfer. Results will compare learning trajectories, not only final verdicts. Because WEB work produces rendered pages and graphics, the same study will also compare visual artifacts: layout structure, spacing, density, typography hierarchy, palette/contrast, responsive stability and repeatable actor-specific style signatures.
 
 The "feelings" terminology is retained only as an informal project label for measurable affect-like state proxies. No claim of biological emotion, subjective experience, sentience or consciousness is made.
 
