@@ -1,10 +1,33 @@
 # SSI V5 — Start Here for Grant and Technical Reviewers
 
-**Updated:** `2026-10-02`  
+**Updated:** `2026-10-04`  
 **Development model:** independent solo R&D. SSI V5 is designed and integrated by one author outside regular working hours. AI coding/reasoning tools support implementation, analysis and review; they do not represent a development team. External collaborators are introduced for domain expertise, challenge design and independent validation.  
 **Author context:** [AUTHOR_CONTEXT.md](AUTHOR_CONTEXT.md)  
 **Repository role:** `PUBLIC R&D / EVIDENCE / EXTERNAL-VALIDATION HUB + PUBLISHED RESEARCH PORTAL`  
 **Proprietary implementation:** private by design.
+
+## Two current research pillars — 2026-10-04
+
+SSI V5 now has two explicit, connected research fronts:
+
+1. **Evidence / safe knowledge promotion:** [AKTUALNA_NAPRAWA.md](AKTUALNA_NAPRAWA.md) studies whether a persistent agent can be prevented from turning an unverified, unreproduced or incorrectly reviewed outcome into reusable knowledge.
+2. **Longitudinal persistent-agent change:** [LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md](LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md) preregisters the comparison of BODY_FROZEN and ISKRA1..6 from preserved baselines through S40 and then through the same declared WEB training programme.
+
+The longitudinal study is designed to compare not only final PASS counts, but **how each actor learns**: REUSE / ADAPT / FULL_FLOW, new-skill creation, qualification transitions, regressions, rollback/recovery, memory/lifecycle changes, cost and unseen transfer. It also preserves pre/post measurements of the project's informal "feelings" variables as **affect-like state proxies**. These are operational/self-report measurements only; they are not claims of biological emotion, sentience or consciousness.
+
+Primary sequence:
+
+~~~text
+EARLY ISKRA BASELINE
+-> CORE TRAINING TO S40
+-> FROZEN S40 SNAPSHOT
+-> BODY_FROZEN vs ISKRA1..6 UNDER THE SAME WEB CURRICULUM
+-> FROZEN POST-WEB SNAPSHOTS
+-> SKILL / MEMORY / RECOVERY / AFFECT-LIKE STATE DELTAS
+-> OPTIONAL LATER CROSS-AGENT CONSOLIDATION STUDY
+~~~
+
+S40 completion and WEB results are not claimed yet; this is a preregistered future measurement layer.
 
 ## Current programme roadmap
 
