@@ -1,11 +1,17 @@
 # SSI V5 — Collaboration and Partner Entry
 
-**Updated:** `2026-10-02`  
+**Updated:** `2026-10-04`  
 **Preserved cross-domain evidence:** `2026-09-18`; latest ZeroLab / selected recovery update: `2026-10-02`  
 **Status:** `OPEN TO CONTROLLED RESEARCH / TECHNOLOGY / CONSORTIUM COLLABORATION`  
 **Public boundary:** proprietary implementation remains private unless separately licensed or explicitly disclosed.
 
 > Grant and technical reviewers should start with [GRANT_AND_CONSORTIUM_ENTRY_20261001.md](GRANT_AND_CONSORTIUM_ENTRY_20261001.md), [GRANT_CONSORTIUM/README.md](GRANT_CONSORTIUM/README.md), [CURRENT_RESEARCH_ROADMAP_20261002.md](CURRENT_RESEARCH_ROADMAP_20261002.md) and [REVIEWER_INDEX.md](REVIEWER_INDEX.md).
+
+## Longitudinal comparative research
+
+SSI also preregisters a post-S40 comparison in [LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md](LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md). External researchers can later contribute unseen WEB cases, frozen acceptance criteria, independent evaluation or replication for a comparison of BODY_FROZEN and six persistent ISKRAs starting from bound S40 snapshots.
+
+The study includes skills, learning mode, regression/recovery, memory/lifecycle and affect-like state proxies. The affect-like measurements are not presented as evidence of biological emotion or consciousness.
 
 ## Grant / consortium package — 2026-10-01
 
