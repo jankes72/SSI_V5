@@ -10,6 +10,12 @@
 **Project model:** independent solo R&D with proprietary implementation and public evidence/review layer.  
 **Current boundary:** software-laboratory evidence is public; physical validation, safety certification and independent external replication are not claimed.
 
+## Longitudinal persistent-agent study
+
+Beyond the active evidence-repair work, SSI now has a preregistered post-S40 study: [LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md](LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md). The planned experiment freezes BODY_FROZEN and ISKRA1..ISKRA6 at the S40 boundary, then compares how each actor acquires the same new WEB competence family.
+
+Grant-relevant outputs are intended to include per-actor learning efficiency, REUSE/ADAPT/FULL_FLOW balance, new-skill formation, regressions, rollback/recovery, unseen transfer, memory/lifecycle changes and pre/post affect-like state proxies. This creates a controlled way to study how persistent agents diverge under training and whether evidence gates and frozen baselines detect undesirable change.
+
 ## One-minute project view
 
 SSI V5 is a persistent multi-agent R&D programme built around:
