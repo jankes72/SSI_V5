@@ -1,11 +1,17 @@
 # SSI V5 — Public Evidence Index
 
-**Current index sync:** `2026-10-01`  
+**Current index sync:** `2026-10-04`  
 **Latest update:** CZARA first internal training cycle completed and public run-level evidence published, `2026-10-01`; core S20-S26 stop/repair boundary remains separately preserved from `2026-09-30`.
 
 This directory preserves sanitized evidence, lineage, failure/repair history, integrity references and claim boundaries. Historical files are intentionally retained.
 
 > For the shortest reviewer path, start with [../REVIEWER_INDEX.md](../REVIEWER_INDEX.md).
+
+## Preregistered longitudinal study — S40 -> WEB
+
+[Protocol](../LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md): after a valid S40 freeze, BODY_FROZEN and ISKRA1..ISKRA6 are intended to be compared under the same declared WEB curriculum, with actor-specific pre/post skill, memory/lifecycle, routing, recovery and affect-like state measurements.
+
+This section is a protocol pointer only. No S40 completion, WEB result or emotion/consciousness claim is established by preregistration.
 
 ## Latest Final continuation evidence — 2026-10-02
 
