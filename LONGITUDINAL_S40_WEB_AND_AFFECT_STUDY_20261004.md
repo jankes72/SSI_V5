@@ -110,6 +110,48 @@ Measure per actor:
 13. post-training memory / lifecycle delta;
 14. post-training affect-like state delta.
 
+## Visual artifact phenotype — measurable WEB output
+
+WEB training adds a third observable layer beyond task verdicts and internal state: the actors will produce visible artifacts such as page layouts, graphics and interface compositions. These outputs can be frozen, rendered and compared across BODY_FROZEN and ISKRA1..ISKRA6.
+
+For every visual artifact preserve, where possible:
+
+- actor identity and parent S40 snapshot;
+- task / brief identity;
+- curriculum stage and attempt number;
+- source artifact hash and rendered-image hash;
+- viewport / renderer version and output dimensions;
+- template or BLOCKS reuse identity;
+- REUSE / ADAPT / FULL_FLOW route;
+- evaluator verdict and frozen acceptance criteria.
+
+Compare two families separately:
+
+~~~text
+OBJECTIVE / TASK METRICS
+= correctness
++ accessibility
++ responsive behavior
++ required-content coverage
++ structural consistency
+
+STYLE / ARTIFACT METRICS
+= layout structure
++ spacing tendency
++ information density
++ typography hierarchy
++ palette / contrast choices
++ image-to-text ratio
++ visual complexity
++ cross-task consistency
+~~~
+
+Additional measurable questions include whether the same actor develops a repeatable visual signature across unseen tasks, whether different actors converge or diverge under the same WEB curriculum, and whether visual changes correlate with skill acquisition, routing mode, recovery history or affect-like state proxies.
+
+To make comparisons meaningful, official visual comparisons should use a declared renderer and viewport where possible, preserve both source and rendered output, keep task-success scoring separate from style-characterization scoring, and record shared-template reuse so a common template is not mistaken for an actor-specific pattern.
+
+This layer measures repeatable differences in generated artifacts. It does not by itself establish intention, personality or subjective preference.
+
 ## Isolation and contamination control
 
 A fair actor comparison requires recording whether an actor learned independently or had access to knowledge produced by another actor.
