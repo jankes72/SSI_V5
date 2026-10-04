@@ -16,6 +16,14 @@ Beyond the active evidence-repair work, SSI now has a preregistered post-S40 stu
 
 Grant-relevant outputs are intended to include per-actor learning efficiency, REUSE/ADAPT/FULL_FLOW balance, new-skill formation, regressions, rollback/recovery, unseen transfer, memory/lifecycle changes and pre/post affect-like state proxies. This creates a controlled way to study how persistent agents diverge under training and whether evidence gates and frozen baselines detect undesirable change.
 
+## Programme continuity before the current grant
+
+SSI is not a grant-specific prototype. The public repository preserves an earlier technical lineage from Micronetworks and persistent competence through Router V10, Router S10, a completed controlled S1-S10 training/consolidation baseline, post-S10 software-domain transfer and the continuing S11-S40 R&D programme.
+
+The current Evidence/ZeroLab work is the measurement-trust layer needed to make the later longitudinal comparisons credible. See **[Research Programme Lineage and Post-S40 Plan](RESEARCH_PROGRAM_LINEAGE_AND_POST_S40_PLAN_20261004.md)**.
+
+The grant request should therefore be read as an attempt to increase evaluation scale, reviewer diversity and reproducibility inside a running programme, not as seed funding to invent SSI after the fact.
+
 ## One-minute project view
 
 SSI V5 is a persistent multi-agent R&D programme built around:
