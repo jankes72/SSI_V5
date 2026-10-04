@@ -1,11 +1,37 @@
 # SSI V5 — CURRENT TRUTH INDEX
 
-**Status:** `CURRENT POINTER / 2026-10-02`  
+**Status:** `CURRENT POINTER / 2026-10-04`  
 **Repository role:** public R&D, evidence and external-validation hub with a published research portal; proprietary implementation remains private.  
 **Evidence boundary:** software-only unless a document explicitly states otherwise.  
 **History rule:** earlier dated truth/status files remain preserved and are not retroactively rewritten.
 
+## Two current research pillars — 2026-10-04
+
+SSI V5 now has two explicit, connected research fronts:
+
+1. **Evidence / safe knowledge promotion:** [AKTUALNA_NAPRAWA.md](AKTUALNA_NAPRAWA.md) studies whether a persistent agent can be prevented from turning an unverified, unreproduced or incorrectly reviewed outcome into reusable knowledge.
+2. **Longitudinal persistent-agent change:** [LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md](LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md) preregisters the comparison of BODY_FROZEN and ISKRA1..6 from preserved baselines through S40 and then through the same declared WEB training programme.
+
+The longitudinal study is designed to compare not only final PASS counts, but **how each actor learns**: REUSE / ADAPT / FULL_FLOW, new-skill creation, qualification transitions, regressions, rollback/recovery, memory/lifecycle changes, cost and unseen transfer. It also preserves pre/post measurements of the project's informal "feelings" variables as **affect-like state proxies**. These are operational/self-report measurements only; they are not claims of biological emotion, sentience or consciousness.
+
+Primary sequence:
+
+~~~text
+EARLY ISKRA BASELINE
+-> CORE TRAINING TO S40
+-> FROZEN S40 SNAPSHOT
+-> BODY_FROZEN vs ISKRA1..6 UNDER THE SAME WEB CURRICULUM
+-> FROZEN POST-WEB SNAPSHOTS
+-> SKILL / MEMORY / RECOVERY / AFFECT-LIKE STATE DELTAS
+-> OPTIONAL LATER CROSS-AGENT CONSOLIDATION STUDY
+~~~
+
+S40 completion and WEB results are not claimed yet; this is a preregistered future measurement layer.
+
 ## Use these current documents first
+
+- **[Active repair / evidence-safety record — 2026-10-04](AKTUALNA_NAPRAWA.md)**
+- **[S40 / WEB longitudinal learning and affect-like state study — 2026-10-04](LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md)**
 
 - [Latest Final continuation: 4 PASS / 3 INCONCLUSIVE, then infrastructure stop](RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md)
 
