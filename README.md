@@ -6,10 +6,35 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 
 > **Repository status:** public R&D, evidence and external-validation hub for SSI V5. This repository publishes architecture, research protocols, training checkpoints, failures, benchmark plans, evidence and claim boundaries. Proprietary implementation, credentials, private runtime state and reconstructive internals remain private.
 
+## Two current research pillars — 2026-10-04
+
+SSI V5 now has two explicit, connected research fronts:
+
+1. **Evidence / safe knowledge promotion:** [AKTUALNA_NAPRAWA.md](AKTUALNA_NAPRAWA.md) studies whether a persistent agent can be prevented from turning an unverified, unreproduced or incorrectly reviewed outcome into reusable knowledge.
+2. **Longitudinal persistent-agent change:** [LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md](LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md) preregisters the comparison of BODY_FROZEN and ISKRA1..6 from preserved baselines through S40 and then through the same declared WEB training programme.
+
+The longitudinal study is designed to compare not only final PASS counts, but **how each actor learns**: REUSE / ADAPT / FULL_FLOW, new-skill creation, qualification transitions, regressions, rollback/recovery, memory/lifecycle changes, cost and unseen transfer. It also preserves pre/post measurements of the project's informal "feelings" variables as **affect-like state proxies**. These are operational/self-report measurements only; they are not claims of biological emotion, sentience or consciousness.
+
+Primary sequence:
+
+~~~text
+EARLY ISKRA BASELINE
+-> CORE TRAINING TO S40
+-> FROZEN S40 SNAPSHOT
+-> BODY_FROZEN vs ISKRA1..6 UNDER THE SAME WEB CURRICULUM
+-> FROZEN POST-WEB SNAPSHOTS
+-> SKILL / MEMORY / RECOVERY / AFFECT-LIKE STATE DELTAS
+-> OPTIONAL LATER CROSS-AGENT CONSOLIDATION STUDY
+~~~
+
+S40 completion and WEB results are not claimed yet; this is a preregistered future measurement layer.
+
 ## Start here
 
 | Purpose | Document |
 |---|---|
+| **Active evidence / repair** | **[AKTUALNA_NAPRAWA.md](AKTUALNA_NAPRAWA.md)** |
+| **S40 → WEB longitudinal agent study** | **[LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md](LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md)** |
 | Latest SSI Final continuation — stopped | **[RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md](RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md)** |
 | Current research roadmap | **[CURRENT_RESEARCH_ROADMAP_20261002.md](CURRENT_RESEARCH_ROADMAP_20261002.md)** |
 | CZARA current status and ZeroLab workflow | **[CZARA_CURRENT_STATUS.md](CZARA_CURRENT_STATUS.md)** |
@@ -57,7 +82,7 @@ The current programme combines core SSI reliability work, CZARA Human-AI researc
 - **Demonstrated scope:** software laboratory results for drone, humanoid and cross-domain rescue scenarios.
 - **Current boundary:** software evidence is published; physical validation, safety certification and independent external replication are not claimed.
 
-**Current public state:** 2026-10-02
+**Current public state:** 2026-10-04
 
 ## Latest SSI Final continuation — infrastructure stop — 2026-10-02
 
