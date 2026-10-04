@@ -29,6 +29,12 @@ EARLY ISKRA BASELINE
 
 S40 completion and WEB results are not claimed yet; this is a preregistered future measurement layer.
 
+## Research continuity
+
+Before reading the current grant/evidence work, see **[SSI Research Programme Lineage and Post-S40 Plan](RESEARCH_PROGRAM_LINEAGE_AND_POST_S40_PLAN_20261004.md)**. It documents the sequence from persistent Micronetwork competence through Router V10, Router S10, the completed S1-S10 baseline, post-S10 transfer, the current S11-S40 R&D path, Evidence/ZeroLab hardening and the preregistered post-S40 WEB comparison.
+
+The current funding/evidence track is therefore a bounded extension of an existing research programme, not a project created for the application.
+
 ## Current programme roadmap
 
 Use [CURRENT_RESEARCH_ROADMAP_20261002.md](CURRENT_RESEARCH_ROADMAP_20261002.md) for the current programme-level sequence across core SSI training, CZARA, Dynamic Mission V6, WEB engineering, Mexico robotics/offline-resilience research and external partner-defined validation.
