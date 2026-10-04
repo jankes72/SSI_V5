@@ -7,7 +7,7 @@
 **Owner:** Paweł Jankiewicz.  
 **Closure:** not established by the evidence available for this update.
 
-> **Po polsku — aktualizacja 2026-10-04:** Potwierdzono nowe natywne wyniki PASS dla naprawianych przypadków ISKRA3 / S23-01-01 i ISKRA2 / S20-01-02, z różnym zakresem odtworzenia recenzowanej poprawki opisanym w sekcji 9. Najnowsza poprawka operatorów dla ISKRA5 / S21-01-03 przeszła 24/24 lokalne testy i uzupełniającą recenzję Qwen R16: `READY_FOR_RETEST`. Wyniku tego najnowszego natywnego retestu jeszcze nie otrzymano. Naprawa pozostaje otwarta; nie ogłaszamy zakończenia szkolenia ani rozwiązania wszystkich problemów ZeroLab. Aktualne ustalenia są w sekcji 9; wcześniejszy zapis pozostaje historią.
+> **Po polsku — aktualizacja 2026-10-04:** Potwierdzono nowe natywne wyniki PASS dla naprawianych przypadków ISKRA3 / S23-01-01 i ISKRA2 / S20-01-02, z różnym zakresem odtworzenia recenzowanej poprawki opisanym w sekcji 9. Najnowsza poprawka operatorów dla ISKRA5 / S21-01-03 przeszła 24/24 lokalne testy, uzupełniającą recenzję Qwen R16 i nowy natywny retest PASS. Retest odtworzył dokładnie recenzowaną poprawkę i ustawił `knowledge_eligible=true`; automatycznej konsolidacji nie wykonano. Naprawa pozostaje otwarta; nie ogłaszamy zakończenia szkolenia ani rozwiązania wszystkich problemów ZeroLab. Aktualne ustalenia są w sekcjach 9–10; wcześniejszy zapis pozostaje historią.
 
 This file is the continuing repair record for this incident. New observations belong here, including unsuccessful attempts. Earlier dated reports remain snapshots of what was known at their publication dates. This record supplements them with subsequent repair evidence; it does not overwrite their verdicts or declare the training complete.
 
@@ -183,7 +183,8 @@ When every closure gate is supported, change the top status to **CLOSED — NAPR
 | Date | Entry | Evidence state |
 |---|---|---|
 | 2026-10-03 | Record opened; prior stop, Evidence V3 / R3 / R4 results, subsequent reviewer FAIL, pending reassessment and native retest collected | OPEN; no completed repair or new training qualification claimed |
-| 2026-10-04 | Added subsequent native retests, bounded Challenger qualification, preserved batch failures and R16 supplemental review in section 9 | OPEN; latest ISKRA5 fix READY_FOR_RETEST; no latest native retest result supplied |
+| 2026-10-04 | Added subsequent native retests, bounded Challenger qualification, preserved batch failures and R16 supplemental review in section 9 | OPEN; latest ISKRA5 fix READY_FOR_RETEST; no latest native retest result supplied at that update |
+| 2026-10-04, follow-up | Added ISKRA5 / S21-01-03 native PASS with exact reviewed-fix reproduction in section 10 | Case retest PASS; knowledge eligible; no automatic consolidation or general OR/NE activation |
 
 ### Closure entry
 
@@ -194,12 +195,12 @@ accepted_repair_version = NOT_ESTABLISHED
 new_review_id = NOT_ESTABLISHED
 native_retest_run_id = NOT_ESTABLISHED
 closure_evidence = NOT_ESTABLISHED
-residual_limitations = latest ISKRA5 native retest outcome, remaining incident follow-ups and sustained training stability remain unconfirmed; see section 9
+residual_limitations = remaining incident follow-ups, general OR/NE rule qualification and activation, and sustained training stability remain open; see sections 9–10
 ```
 
 ## 9. Update 2026-10-04 — native retests, qualification and R16 review
 
-**Evidence status: CONFIRMED IN OPERATOR-SUPPLIED RESULTS; incident remains OPEN.** This update records results supplied after the 2026-10-03 assessment. The public entry is a transcription and assessment of those results, not an independent authentication of the private evidence store or an external replication.
+**Evidence status: CONFIRMED IN OPERATOR-SUPPLIED RESULTS; incident remains OPEN.** This section preserves the update at the R16 review boundary; the later native retest result is in section 10. This update records results supplied after the 2026-10-03 assessment. The public entry is a transcription and assessment of those results, not an independent authentication of the private evidence store or an external replication.
 
 ### Completed steps and their exact scope
 
@@ -270,3 +271,38 @@ The latest installation, restart and live-review observations come from operator
 The next gate is the native retest bound to `QSUP_5b7e4627e74c131adacdbd27`, followed by verification of its actual verdict, evidence and candidate-reproduction scope. A supplied command is not a completed run. Any knowledge qualification or general-rule activation requires its own recorded checks.
 
 Current work remains focused on training reliability and ZeroLab repairs. Universal Lab interface work and a repository-wide status refresh are deferred. This publication updates **only this continuing repair record**.
+
+## 10. Follow-up 2026-10-04 — ISKRA5 native retest PASS
+
+**CONFIRMED IN OPERATOR-SUPPLIED RESULTS.** The operator subsequently executed the native retest bound to the R16 supplemental review. This supplies the outcome that was still pending when section 9 was published.
+
+| Field | Recorded value |
+|---|---|
+| Actor / case | ISKRA5 / S21-01-03 |
+| Ticket | `DLAB_b0ab5cec6f3ec31fd9d8d882a7775863` |
+| Fix | `FIX_8098d99dbf00edf8209874fc` |
+| Review selected in the command | `QSUP_5b7e4627e74c131adacdbd27` |
+| New run | `RUN_DLAB_RETEST_20261004T163448Z_15836c5a` |
+| Preserved parent run | `RUN_DOMAIN_20261004T153618Z_0ee16590` |
+| Original / new verdict | INCONCLUSIVE / PASS |
+| Native candidate evaluation / CI | PASS / PASS |
+| Training event | VERIFIED / CASE_VERIFIED; no reported reasons |
+| Exact reviewed fix reproduced | true |
+| Knowledge eligible | true |
+| Historical grade changed | false |
+| Automatic consolidation | false |
+
+The protocol and criteria hashes match the reviewed case recorded in section 9:
+
+```text
+protocol_sha256 = a612fab830c1430dbdf89c4e349957a58108e3340a7ae3d90550d220c0c4b31b
+criteria_sha256 = e01b4b9015099b2c743be624a73a499eebbd0d976ae9ef8bfebabcb08d827a9d
+new_evidence_head_sha256 = 3d3a08b1034ab33884d9c6480185e877a259e913d519120b852cbb493a2e6a97
+new_case_sha256 = 4c34f0167eb6cb7f1dc6c99fe244fe23f7676e67534d55a1297d1ebfd1b21634
+```
+
+This establishes a new native PASS for the exact reviewed correction within this case's declared scope. The earlier INCONCLUSIVE and rejected review remain part of the history. Knowledge eligibility permits the next qualification step; it does not itself register, promote or activate a general repair skill.
+
+**Training continuation boundary:** the installed R15 launcher and campaign enforce a cumulative maximum of seven measured trial cases. Remaining trial slots may be used through the existing checks; publishing this result does not expand that policy. Full-queue continuation requires an explicit subsequent campaign transition. The general OR/NE repair has not been activated by this retest.
+
+Source: the operator's 2026-10-04 terminal output for the run identified above. This one-file publication does not independently authenticate the private signed artifacts, establish completion of the remaining training queue or close every ZeroLab issue.
