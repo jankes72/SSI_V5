@@ -30,6 +30,7 @@ S40 completion and WEB results are not claimed yet; this is a preregistered futu
 
 ## Use these current documents first
 
+- **[SSI research programme lineage + post-S40 plan — 2026-10-04](RESEARCH_PROGRAM_LINEAGE_AND_POST_S40_PLAN_20261004.md)** — historical continuity from Micronetworks / V10 / S10 / S1-S10 into S11-S40 and the planned WEB longitudinal study.
 - **[Active repair / evidence-safety record — 2026-10-04](AKTUALNA_NAPRAWA.md)**
 - **[S40 / WEB longitudinal learning and affect-like state study — 2026-10-04](LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md)**
 
