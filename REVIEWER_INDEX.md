@@ -31,6 +31,7 @@ S40 completion and WEB results are not claimed yet; this is a preregistered futu
 
 ## 5-minute review
 
+0. **[Research programme lineage + post-S40 plan](RESEARCH_PROGRAM_LINEAGE_AND_POST_S40_PLAN_20261004.md)** — shows that the current Evidence grant work sits inside a longer SSI programme that predates the application.
 1. **[Active evidence / repair record](AKTUALNA_NAPRAWA.md)** — current evidence-safety lifecycle.
 2. **[Longitudinal S40 / WEB study](LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md)** — frozen actor comparison, learning trajectories and affect-like state deltas.
 
