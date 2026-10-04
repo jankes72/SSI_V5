@@ -1,12 +1,38 @@
 # SSI V5 — Reviewer Index
 
-**Current public state:** `2026-10-02`  
+**Current public state:** `2026-10-04`  
 **Repository role:** public R&D, evidence and external-validation hub for a private SSI implementation.  
 **Audience:** grant reviewers, research collaborators, technical reviewers and validation partners.
 
 This file is the shortest route through the repository. Historical files remain preserved for provenance, but they are not the recommended starting point.
 
+## Two current research pillars — 2026-10-04
+
+SSI V5 now has two explicit, connected research fronts:
+
+1. **Evidence / safe knowledge promotion:** [AKTUALNA_NAPRAWA.md](AKTUALNA_NAPRAWA.md) studies whether a persistent agent can be prevented from turning an unverified, unreproduced or incorrectly reviewed outcome into reusable knowledge.
+2. **Longitudinal persistent-agent change:** [LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md](LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md) preregisters the comparison of BODY_FROZEN and ISKRA1..6 from preserved baselines through S40 and then through the same declared WEB training programme.
+
+The longitudinal study is designed to compare not only final PASS counts, but **how each actor learns**: REUSE / ADAPT / FULL_FLOW, new-skill creation, qualification transitions, regressions, rollback/recovery, memory/lifecycle changes, cost and unseen transfer. It also preserves pre/post measurements of the project's informal "feelings" variables as **affect-like state proxies**. These are operational/self-report measurements only; they are not claims of biological emotion, sentience or consciousness.
+
+Primary sequence:
+
+~~~text
+EARLY ISKRA BASELINE
+-> CORE TRAINING TO S40
+-> FROZEN S40 SNAPSHOT
+-> BODY_FROZEN vs ISKRA1..6 UNDER THE SAME WEB CURRICULUM
+-> FROZEN POST-WEB SNAPSHOTS
+-> SKILL / MEMORY / RECOVERY / AFFECT-LIKE STATE DELTAS
+-> OPTIONAL LATER CROSS-AGENT CONSOLIDATION STUDY
+~~~
+
+S40 completion and WEB results are not claimed yet; this is a preregistered future measurement layer.
+
 ## 5-minute review
+
+1. **[Active evidence / repair record](AKTUALNA_NAPRAWA.md)** — current evidence-safety lifecycle.
+2. **[Longitudinal S40 / WEB study](LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md)** — frozen actor comparison, learning trajectories and affect-like state deltas.
 
 **Latest runtime evidence:** [Final continuation stop](RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md), followed by the [ZeroLab pilot](ZERO_LAB_V2_FIRST_RESULTS_20261002.md) and [CZARA status](CZARA_CURRENT_STATUS.md).
 
