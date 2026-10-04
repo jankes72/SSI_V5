@@ -4,6 +4,14 @@
 **Project type:** independent / solo R&D programme.  
 **Public boundary:** architecture, research protocols, training checkpoints, failures, repair records, benchmark plans, sanitized evidence and claim boundaries are public; proprietary implementation, credentials and reconstructive private runtime internals remain private.
 
+## Longitudinal S40 / WEB comparative study — preregistered 2026-10-04
+
+A separate longitudinal protocol is now preregistered in [LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md](LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md). After evidence-valid completion through S40, BODY_FROZEN and ISKRA1..ISKRA6 are intended to receive frozen pre-WEB snapshots binding their skill, memory/lifecycle, routing and affect-like state baselines. They will then be compared under the same declared WEB curriculum.
+
+The primary comparison is actor-isolated: no cross-agent knowledge promotion during the first measurement phase. A later secondary phase may enable consultation/consolidation to measure transfer. Results will compare learning trajectories, not only final verdicts.
+
+The "feelings" terminology is retained only as an informal project label for measurable affect-like state proxies. No claim of biological emotion, subjective experience, sentience or consciousness is made.
+
 ## Current position
 
 SSI V5 is being developed as a persistent multi-agent research programme with several separately evidenced tracks. Results from one track are not automatically treated as evidence for another.
