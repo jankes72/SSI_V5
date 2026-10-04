@@ -8,7 +8,9 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 
 ## Two current research pillars — 2026-10-04
 
-SSI V5 now has two explicit, connected research fronts:
+SSI V5 is a continuing research programme whose public history predates the current funding application. The lineage from Micronetworks through Router V10, Router S10, S1-S10 and the current S11-S40 path is summarized in [RESEARCH_PROGRAM_LINEAGE_AND_POST_S40_PLAN_20261004.md](RESEARCH_PROGRAM_LINEAGE_AND_POST_S40_PLAN_20261004.md).
+
+SSI V5 now has two explicit, connected current research fronts:
 
 1. **Evidence / safe knowledge promotion:** [AKTUALNA_NAPRAWA.md](AKTUALNA_NAPRAWA.md) studies whether a persistent agent can be prevented from turning an unverified, unreproduced or incorrectly reviewed outcome into reusable knowledge.
 2. **Longitudinal persistent-agent change:** [LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md](LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md) preregisters the comparison of BODY_FROZEN and ISKRA1..6 from preserved baselines through S40 and then through the same declared WEB training programme.
@@ -34,6 +36,7 @@ S40 completion and WEB results are not claimed yet; this is a preregistered futu
 | Purpose | Document |
 |---|---|
 | **Active evidence / repair** | **[AKTUALNA_NAPRAWA.md](AKTUALNA_NAPRAWA.md)** |
+| **SSI research lineage + post-S40 plan** | **[RESEARCH_PROGRAM_LINEAGE_AND_POST_S40_PLAN_20261004.md](RESEARCH_PROGRAM_LINEAGE_AND_POST_S40_PLAN_20261004.md)** |
 | **S40 → WEB longitudinal agent study** | **[LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md](LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md)** |
 | Latest SSI Final continuation — stopped | **[RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md](RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md)** |
 | Current research roadmap | **[CURRENT_RESEARCH_ROADMAP_20261002.md](CURRENT_RESEARCH_ROADMAP_20261002.md)** |
