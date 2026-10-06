@@ -1,5 +1,8 @@
 # SSI V5 — Start Here for Grant and Technical Reviewers
 
+> **Canonical architecture:** [SSI V5 — C4 Architecture](SSI_V5_C4_ARCHITECTURE.md) — single source of truth for the current public system structure. Update the C4 there instead of duplicating architecture diagrams across documents.
+
+
 **Updated:** `2026-10-04`  
 **Development model:** independent solo R&D. SSI V5 is designed and integrated by one author outside regular working hours. AI coding/reasoning tools support implementation, analysis and review; they do not represent a development team. External collaborators are introduced for domain expertise, challenge design and independent validation.  
 **Author context:** [AUTHOR_CONTEXT.md](AUTHOR_CONTEXT.md)  
