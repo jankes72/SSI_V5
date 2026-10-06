@@ -1,5 +1,8 @@
 # SSI V5 — CURRENT TRUTH INDEX
 
+> **Canonical architecture:** [SSI V5 — C4 Architecture](SSI_V5_C4_ARCHITECTURE.md) — single source of truth for the current public system structure. Update the C4 there instead of duplicating architecture diagrams across documents.
+
+
 **Status:** `CURRENT POINTER / 2026-10-04`  
 **Repository role:** public R&D, evidence and external-validation hub with a published research portal; proprietary implementation remains private.  
 **Evidence boundary:** software-only unless a document explicitly states otherwise.  
