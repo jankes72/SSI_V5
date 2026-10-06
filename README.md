@@ -1,5 +1,8 @@
 # SSI V5
 
+> **Canonical architecture:** [SSI V5 — C4 Architecture](SSI_V5_C4_ARCHITECTURE.md) — single source of truth for the current public system structure. Update the C4 there instead of duplicating architecture diagrams across documents.
+
+
 **Evidence-first research platform for persistent, adaptive multi-agent AI systems.**
 
 SSI V5 is an independently developed R&D project focused on persistent competence, continual learning, cross-agent consolidation, adaptive routing, rollback/recovery and cross-domain transfer.
