@@ -8,6 +8,30 @@
 
 The long-form continuity from Micronetworks, Router V10 and Router S10 through the completed S1-S10 baseline, current S11-S40 R&D training and post-S40 comparative plan is documented in [RESEARCH_PROGRAM_LINEAGE_AND_POST_S40_PLAN_20261004.md](RESEARCH_PROGRAM_LINEAGE_AND_POST_S40_PLAN_20261004.md). This establishes that the current evidence/grant work is one bounded research track inside a longer programme.
 
+## Universal Lab partner-meeting workstream — updated 2026-10-07
+
+Universal Lab is now a separate current programme track, not only a future concept.
+
+Current installed/prepared boundary:
+
+- Universal Lab Live Gate R3 / 1.1.1 installed;
+- persistent authenticated web/session layer;
+- ZeroLab V2 available as a bounded laboratory/runtime layer;
+- CZARA / Director_Czary knowledge path **INDEX_READY / NOT QUALIFIED**;
+- **345,961 indexed documents** and **1,432 prepared curriculum cases**;
+- **48 selected SSI Director source artifacts** prepared for the Director_Czary route;
+- local Ollama translation bridge configured;
+- recent operator-side local translation observation of roughly **2 seconds** on the MSI GV62-8RE development host.
+
+The meeting stack is intentionally engineered for the actual modest host — i7, 16 GB RAM, GTX 1060 6 GB VRAM, Ubuntu and local qwen3:4b — rather than assuming a large GPU server.
+
+R5 is the next integration/verification stage for Conference, one shared meeting timeline, DIRECTOR interaction, CZARA/Shadow, Router V10/Micronetwork telemetry and timings, BODY_FROZEN execution visibility, ZeroLab live validation, and partner-safe session evidence.
+
+The current bridge boundary remains conservative: translation is configured, while not every native Director/CZARA/Router/BODY/ZeroLab path is yet claimed live-bound through R3.
+
+- [Universal Lab — Partner Meeting Start Here](UNIVERSAL_LAB_MEETING_START_HERE_20261007.md)
+- [Detailed Universal Lab status](SYSTEM/SSI_UNIVERSAL_LAB_STATUS_20261007.md)
+
 ## Longitudinal S40 / WEB comparative study — preregistered 2026-10-04
 
 A separate longitudinal protocol is now preregistered in [LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md](LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md). After evidence-valid completion through S40, BODY_FROZEN and ISKRA1..ISKRA6 are intended to receive frozen pre-WEB snapshots binding their skill, memory/lifecycle, routing and affect-like state baselines. They will then be compared under the same declared WEB curriculum.
@@ -29,7 +53,8 @@ Current tracks:
 5. Mexico robotics / offline-resilience research;
 6. external partner-defined benchmark and later replication work;
 7. ZERO-LAB / LAB_ARCHITECT laboratory-design research;
-8. grant / consortium preparation and external validation packaging.
+8. grant / consortium preparation and external validation packaging;
+9. Universal Lab partner-facing research meeting integration.
 
 ## Current programme path
 
