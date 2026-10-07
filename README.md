@@ -5,6 +5,19 @@
 
 **Evidence-first research platform for persistent, adaptive multi-agent AI systems.**
 
+## Universal Lab — current partner-facing workstream
+
+**Universal Lab is now an installed SSI meeting baseline, not only a concept.** The current operator baseline is **Live Gate R3 / 1.1.1** with authenticated web access, persistent accounts and a local-first deployment path. **ZeroLab V2 already exists** as a bounded laboratory/runtime layer, and the current SSI knowledge-preparation path for CZARA / Director_Czary is **INDEX_READY** with **345,961 indexed documents** and **1,432 prepared curriculum cases**.
+
+The current meeting work is being prepared around **Paweł, Sara and Leire** as an interactive research session rather than a slide-only call. The R5 integration target combines Conference, one shared meeting timeline, DIRECTOR interaction, CZARA/Shadow, Router V10/Micronetwork telemetry, BODY_FROZEN execution visibility, ZeroLab validation and partner-safe evidence generated from the same session.
+
+The installed R3 configuration already contains the **local Ollama translation bridge**. On the actual development host — **MSI GV62-8RE, i7, 16 GB RAM, GTX 1060 6 GB VRAM** — a recent operator-side test reported roughly **2 seconds for the local translation step**. This is a host-specific observation, not a general benchmark. The system is intentionally being adapted to modest local hardware with a local-first, resource-bounded design rather than assuming a datacenter GPU.
+
+**Current claim boundary:** the translation path is configured and the knowledge/laboratory layers exist, but not every Director/CZARA/Router/BODY/ZeroLab native path is yet claimed live-bound through the R3 gate. R5 is the integration/verification step for those remaining live paths.
+
+➡️ **[Universal Lab — Partner Meeting Start Here](UNIVERSAL_LAB_MEETING_START_HERE_20261007.md)**  
+➡️ **[Detailed installed state and R5 boundary](SYSTEM/SSI_UNIVERSAL_LAB_STATUS_20261007.md)**
+
 SSI V5 is an independently developed R&D project focused on persistent competence, continual learning, cross-agent consolidation, adaptive routing, rollback/recovery and cross-domain transfer.
 
 > **Repository status:** public R&D, evidence and external-validation hub for SSI V5. This repository publishes architecture, research protocols, training checkpoints, failures, benchmark plans, evidence and claim boundaries. Proprietary implementation, credentials, private runtime state and reconstructive internals remain private.
@@ -88,7 +101,7 @@ The current programme combines core SSI reliability work, CZARA Human-AI researc
 - **Demonstrated scope:** software laboratory results for drone, humanoid and cross-domain rescue scenarios.
 - **Current boundary:** software evidence is published; physical validation, safety certification and independent external replication are not claimed.
 
-**Current public state:** 2026-10-04
+**Current public state:** 2026-10-07
 
 ## Latest SSI Final continuation — infrastructure stop — 2026-10-02
 
