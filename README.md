@@ -22,6 +22,13 @@ SSI V5 is an independently developed, proprietary-core R&D programme for **persi
 > **Claim boundary:** SSI does not claim completed S40/WEB training, biological emotion, consciousness, physical robotics validation, safety certification or independent external replication where those milestones have not been evidenced.
 
 
+### Universal Lab evidence / notary target
+
+Universal Lab is intended to inherit SSI's stricter evidence-hardening path: append-only hash-linked records, digital signatures, executor/verifier separation, and an independent signing/notary authority **when external attestation is claimed**. The outage path is preregistered as local commit -> pending external attestation -> bounded queue -> DEGRADED_SAFE_MODE at the buffer limit. The design also carries forward mutation/deletion/forged-PASS tests, chain-specific rejection reasons and a negative control.
+
+This is an **R5+ target contract, not a claim that an independent notary is already live**. See [Universal Lab Evidence, Digital Signature and Independent Notary/Attestation Contract](UNIVERSAL_LAB_EVIDENCE_NOTARY_AND_ATTESTATION_CONTRACT_20261008.md).
+
+
 ## Universal Lab — current partner-facing workstream
 
 **Universal Lab is now an installed SSI meeting baseline, not only a concept.** The current operator baseline is **Live Gate R3 / 1.1.1** with authenticated web access, persistent accounts and a local-first deployment path. **ZeroLab V2 already exists** as a bounded laboratory/runtime layer, and the current SSI knowledge-preparation path for CZARA / Director_Czary is **INDEX_READY** with **345,961 indexed documents** and **1,432 prepared curriculum cases**.
