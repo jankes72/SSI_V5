@@ -128,6 +128,7 @@ flowchart TB
     end
 
     subgraph EVIDENCE["Persistence / Evidence / Recovery"]
+        notary["Independent signing / notary authority<br/>R5+ TARGET / externally attested only when live"]
         evidence["Evidence + provenance<br/>PASS / INCONCLUSIVE / FAIL preserved"]
         continuum["CONTINUUM<br/>missions / checkpoints / evidence continuity"]
         state["Persistent state / memory / checkpoints"]
