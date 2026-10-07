@@ -1,10 +1,32 @@
 # CZARA — current status, ZeroLab and the research workflow
 
-**Updated:** 2026-10-02  
+**Updated:** 2026-10-07  
 **Role:** current entry point for CZARA, Director_Czary and BODY_FROZEN_1_0.  
 **Public scope:** architecture and bounded software evidence; private implementation remains private.
 
 CZARA's first internal curriculum is complete. The later ZeroLab V2 extension now provides a bounded local experiment path for BODY_FROZEN_1_0, alongside the separate SSI Final scope. These are distinct evidence families: the original curriculum's qualification does not automatically qualify the new ZeroLab procedures.
+
+## Universal Lab / Director_Czary preparation update — 2026-10-07
+
+The current Universal Lab workstream adds an installed authenticated meeting gate and a prepared SSI knowledge path for CZARA / Director_Czary.
+
+Current preparation records:
+
+- **345,961 indexed SSI documents**;
+- **1,432 prepared curriculum cases**;
+- **48 selected `DIRECTOR_SSI_V5_TO_DIRECTOR_CZARA` artifacts**;
+- **48 selected `BODY_FROZEN_SSI_V5_TO_BODY_FROZEN_CZARA` artifacts**;
+- knowledge state **INDEX_READY**;
+- qualification **NOT_RUN**.
+
+This is a prepared redirection/knowledge-routing path from the existing SSI material into the CZARA research scope. It does **not** mean that every private skill has already been live-qualified or that all native Universal Lab bridges are already active.
+
+The installed R3 Universal Lab configuration contains a local Ollama translation bridge. A recent operator-side test reported roughly **2 seconds** for the local translation step on the MSI GV62-8RE host. The integration is intentionally resource-bounded for i7 / 16 GB RAM / GTX 1060 6 GB VRAM with local qwen3:4b.
+
+R5 is the next step for live binding/verification of DIRECTOR, CZARA/Shadow, Router V10/Micronetwork telemetry, BODY_FROZEN execution, ZeroLab validation and the shared partner meeting timeline.
+
+- [Universal Lab — Partner Meeting Start Here](UNIVERSAL_LAB_MEETING_START_HERE_20261007.md)
+- [Detailed Universal Lab status](SYSTEM/SSI_UNIVERSAL_LAB_STATUS_20261007.md)
 
 ## Status at a glance
 
