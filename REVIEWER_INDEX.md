@@ -1,10 +1,22 @@
 # SSI V5 — Reviewer Index
 
-**Current public state:** `2026-10-04`  
+**Current public state:** `2026-10-07`  
 **Repository role:** public R&D, evidence and external-validation hub for a private SSI implementation.  
 **Audience:** grant reviewers, research collaborators, technical reviewers and validation partners.
 
 This file is the shortest route through the repository. Historical files remain preserved for provenance, but they are not the recommended starting point.
+
+## Universal Lab — fastest partner/research entry — 2026-10-07
+
+For researchers evaluating the current partner-facing direction, start with **[Universal Lab — Partner Meeting Start Here](UNIVERSAL_LAB_MEETING_START_HERE_20261007.md)**.
+
+Universal Lab has an **installed R3 / 1.1.1 baseline** with persistent authenticated access. ZeroLab V2 already exists as a bounded laboratory/runtime layer. The CZARA / Director_Czary knowledge-preparation path is **INDEX_READY / NOT QUALIFIED**, with **345,961 indexed documents**, **1,432 prepared curriculum cases** and **48 selected SSI Director source artifacts** in the prepared Director_Czary route.
+
+The R3 configuration includes a local Ollama translation bridge. A recent operator-side test on the MSI GV62-8RE host reported roughly **2 seconds** for the local translation step. The current integration is intentionally designed around modest hardware: i7, 16 GB RAM, GTX 1060 6 GB VRAM and local qwen3:4b.
+
+R5 is the next live integration/verification layer for Conference, one shared session timeline, DIRECTOR, CZARA/Shadow, Router V10/Micronetwork telemetry and timings, BODY_FROZEN execution visibility, ZeroLab validation and partner-safe session evidence.
+
+**Boundary:** translation is configured; not every native SSI bridge is yet claimed live-bound through R3.
 
 ## Two current research pillars — 2026-10-04
 
