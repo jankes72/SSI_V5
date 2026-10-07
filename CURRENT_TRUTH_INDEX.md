@@ -3,10 +3,31 @@
 > **Canonical architecture:** [SSI V5 — C4 Architecture](SSI_V5_C4_ARCHITECTURE.md) — single source of truth for the current public system structure. Update the C4 there instead of duplicating architecture diagrams across documents.
 
 
-**Status:** `CURRENT POINTER / 2026-10-04`  
+**Status:** `CURRENT POINTER / 2026-10-07`  
 **Repository role:** public R&D, evidence and external-validation hub with a published research portal; proprietary implementation remains private.  
 **Evidence boundary:** software-only unless a document explicitly states otherwise.  
 **History rule:** earlier dated truth/status files remain preserved and are not retroactively rewritten.
+
+## Universal Lab current state — 2026-10-07
+
+Universal Lab now has an **installed R3 / 1.1.1 web/auth/session baseline** and is being advanced into a partner-facing live research meeting environment.
+
+Verified/prepared state:
+
+- persistent authenticated Universal Lab accounts;
+- ZeroLab V2 exists as a bounded laboratory/runtime layer with separate published evidence;
+- CZARA / Director_Czary knowledge preparation: **345,961 indexed documents**, **1,432 prepared curriculum cases**, **INDEX_READY / NOT QUALIFIED**;
+- **48** selected SSI Director source artifacts in the prepared `DIRECTOR_SSI_V5_TO_DIRECTOR_CZARA` route;
+- local Ollama translation bridge configured in R3;
+- recent operator-side translation observation: roughly **2 seconds** on the MSI GV62-8RE host;
+- target hardware remains modest: i7, 16 GB RAM, GTX 1060 6 GB VRAM, local qwen3:4b.
+
+R5 is the current next integration step for one shared Conference timeline, DIRECTOR, CZARA/Shadow, Router V10/Micronetwork telemetry and timing, BODY_FROZEN execution visibility, ZeroLab live validation and partner-safe meeting evidence.
+
+**Boundary:** not every native SSI bridge is yet claimed live-bound through R3. The repository separates configured/prepared paths from completed live integration.
+
+- [Partner Meeting Start Here](UNIVERSAL_LAB_MEETING_START_HERE_20261007.md)
+- [Detailed Universal Lab status](SYSTEM/SSI_UNIVERSAL_LAB_STATUS_20261007.md)
 
 ## Two current research pillars — 2026-10-04
 
