@@ -46,6 +46,8 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 
 > **Repository status:** public R&D, evidence and external-validation hub for SSI V5. This repository publishes architecture, research protocols, training checkpoints, failures, benchmark plans, evidence and claim boundaries. Proprietary implementation, credentials, private runtime state and reconstructive internals remain private.
 
+**Early CZARA contribution:** the SSI author credits **Amnezja** as an early CZARA co-creator / seed contributor who introduced the initial direction and made the first CZARA connection step; Paweł Jankiewicz subsequently developed and expanded CZARA into its current SSI V5 role. See [attribution record](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md).
+
 ## Two current research pillars — 2026-10-04
 
 SSI V5 is a continuing research programme whose public history predates the current funding application. The lineage from Micronetworks through Router V10, Router S10, S1-S10 and the current S11-S40 path is summarized in [RESEARCH_PROGRAM_LINEAGE_AND_POST_S40_PLAN_20261004.md](RESEARCH_PROGRAM_LINEAGE_AND_POST_S40_PLAN_20261004.md).
