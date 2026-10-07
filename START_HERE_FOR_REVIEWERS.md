@@ -3,11 +3,31 @@
 > **Canonical architecture:** [SSI V5 — C4 Architecture](SSI_V5_C4_ARCHITECTURE.md) — single source of truth for the current public system structure. Update the C4 there instead of duplicating architecture diagrams across documents.
 
 
-**Updated:** `2026-10-04`  
+**Updated:** `2026-10-07`  
 **Development model:** independent solo R&D. SSI V5 is designed and integrated by one author outside regular working hours. AI coding/reasoning tools support implementation, analysis and review; they do not represent a development team. External collaborators are introduced for domain expertise, challenge design and independent validation.  
 **Author context:** [AUTHOR_CONTEXT.md](AUTHOR_CONTEXT.md)  
 **Repository role:** `PUBLIC R&D / EVIDENCE / EXTERNAL-VALIDATION HUB + PUBLISHED RESEARCH PORTAL`  
 **Proprietary implementation:** private by design.
+
+## Universal Lab — partner meeting environment — 2026-10-07
+
+Universal Lab is now an **installed R3 baseline** with authenticated web/session infrastructure and persistent named accounts. The current partner-facing meeting specification is built around **Paweł, Sara and Leire** and is intended as an interactive SSI research session rather than a conventional presentation.
+
+The installed/prepared stack currently includes:
+
+- Universal Lab Live Gate R3 / 1.1.1;
+- ZeroLab V2 as an existing bounded laboratory/runtime layer;
+- SSI knowledge preparation for CZARA / Director_Czary: **345,961 indexed documents**, **1,432 prepared curriculum cases**, status **INDEX_READY / NOT QUALIFIED**;
+- local Ollama translation bridge in the R3 configuration;
+- a host-specific recent translation observation of roughly **2 seconds** on the MSI GV62-8RE development machine;
+- a resource-bounded local-first design targeted at **i7 / 16 GB RAM / GTX 1060 6 GB VRAM**, rather than a large server GPU.
+
+The next R5 integration step is intended to bind and verify the shared Conference timeline, DIRECTOR interaction, CZARA/Shadow, Router V10/Micronetwork telemetry and timings, BODY_FROZEN execution view, ZeroLab live validation and partner-safe meeting evidence.
+
+**Claim boundary:** this repository does not claim that every native SSI bridge is already live-bound through R3. Translation is configured; the remaining Director/CZARA/Router/BODY/ZeroLab live paths require R5 binding/verification before being presented as complete.
+
+- [Universal Lab — Partner Meeting Start Here](UNIVERSAL_LAB_MEETING_START_HERE_20261007.md)
+- [Universal Lab installed state and R5 boundary](SYSTEM/SSI_UNIVERSAL_LAB_STATUS_20261007.md)
 
 ## Two current research pillars — 2026-10-04
 
