@@ -10,6 +10,21 @@
 **Project model:** independent solo R&D with proprietary implementation and public evidence/review layer.  
 **Current boundary:** software-laboratory evidence is public; physical validation, safety certification and independent external replication are not claimed.
 
+## Universal Lab — partner-facing research environment — 2026-10-07
+
+SSI now has an installed **Universal Lab R3 / 1.1.1** baseline for authenticated research meetings and partner demonstrations. The purpose is not a conventional video call: the meeting environment is being integrated so participants can interact with DIRECTOR, observe bounded CZARA/Shadow activity, inspect Router V10/Micronetwork routing, see BODY_FROZEN execution state, follow ZeroLab validation and receive a partner-safe evidence package from the session.
+
+The current SSI knowledge-preparation path for CZARA / Director_Czary is **INDEX_READY / NOT QUALIFIED**, with **345,961 indexed documents** and **1,432 prepared curriculum cases**. The prepared routing set includes **48 SSI Director source artifacts** for the Director_Czary path.
+
+The current R3 configuration also includes a local Ollama translation bridge. On the actual development host — MSI GV62-8RE, i7, 16 GB RAM, GTX 1060 6 GB VRAM — a recent operator-side test reported roughly **2 seconds** for the local translation step. This is a host-specific observation, not a general benchmark.
+
+The Universal Lab architecture is deliberately local-first and resource-bounded so partner demonstrations do not assume a datacenter GPU. R5 is the next integration/verification layer for the unified meeting timeline and the remaining native SSI live paths.
+
+**Claim boundary:** configured/prepared components are separated from completed live integration; not every Director/CZARA/Router/BODY/ZeroLab bridge is yet claimed live-bound through R3.
+
+- [Universal Lab — Partner Meeting Start Here](UNIVERSAL_LAB_MEETING_START_HERE_20261007.md)
+- [Detailed Universal Lab installed state and R5 boundary](SYSTEM/SSI_UNIVERSAL_LAB_STATUS_20261007.md)
+
 ## Longitudinal persistent-agent study
 
 Beyond the active evidence-repair work, SSI now has a preregistered post-S40 study: [LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md](LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md). The planned experiment freezes BODY_FROZEN and ISKRA1..ISKRA6 at the S40 boundary, then compares how each actor acquires the same new WEB competence family.
