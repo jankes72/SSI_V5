@@ -5,6 +5,23 @@
 
 **Evidence-first research platform for persistent, adaptive multi-agent AI systems.**
 
+## 60-second reviewer snapshot
+
+SSI V5 is an independently developed, proprietary-core R&D programme for **persistent multi-agent AI, continual learning, AI-safety-oriented evaluation and evidence-preserving knowledge promotion**. The public repository is the review/evidence layer: it exposes architecture, frozen baselines, protocols, negative results, repairs, benchmark plans and sanitized evidence while keeping reconstructive implementation details private.
+
+**What already exists:** a frozen BODY_FROZEN baseline; six separately persistent ISKRA lines with recorded T0 belief and affect-like control-state baselines; Router V10/S10 and persistent Micronetwork/BLOCKS competence; preserved PASS / FAIL / INCONCLUSIVE histories; ZeroLab V2; CZARA; and a preregistered longitudinal comparison from early ISKRA state through S40 and the later WEB curriculum.
+
+**Why this is an AI-safety research problem:** SSI explicitly tests whether persistent agents can avoid promoting unverified or unreproduced outcomes into reusable knowledge, whether different long-running agents diverge under a shared curriculum, and whether frozen checkpoints, evidence gates, rollback and independent review expose unsafe or unstable learning trajectories.
+
+**Why additional compute matters:** the next comparative layer is not a greenfield build. It requires repeated, isolated runs across BODY_FROZEN and ISKRA1..ISKRA6, frozen checkpoints, held-out/retest workloads and post-training WEB comparisons. More local compute increases experimental independence, repeatability and the number of controlled runs that can be completed without changing the research protocol to fit a single constrained development host.
+
+**Research areas:** AI safety · persistent agents · multi-agent systems · continual/lifelong learning · agent evaluation · provenance · rollback/recovery · adaptive routing · Human–AI research collaboration.
+
+**Fast review path:** [Start Here for Reviewers](START_HERE_FOR_REVIEWERS.md) → [Current Truth Index](CURRENT_TRUTH_INDEX.md) → [Longitudinal S40/WEB study](LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md) → [ZeroLab V2 results](ZERO_LAB_V2_FIRST_RESULTS_20261002.md).
+
+> **Claim boundary:** SSI does not claim completed S40/WEB training, biological emotion, consciousness, physical robotics validation, safety certification or independent external replication where those milestones have not been evidenced.
+
+
 ## Universal Lab — current partner-facing workstream
 
 **Universal Lab is now an installed SSI meeting baseline, not only a concept.** The current operator baseline is **Live Gate R3 / 1.1.1** with authenticated web access, persistent accounts and a local-first deployment path. **ZeroLab V2 already exists** as a bounded laboratory/runtime layer, and the current SSI knowledge-preparation path for CZARA / Director_Czary is **INDEX_READY** with **345,961 indexed documents** and **1,432 prepared curriculum cases**.
