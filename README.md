@@ -46,7 +46,7 @@ SSI V5 is an independently developed R&D project focused on persistent competenc
 
 > **Repository status:** public R&D, evidence and external-validation hub for SSI V5. This repository publishes architecture, research protocols, training checkpoints, failures, benchmark plans, evidence and claim boundaries. Proprietary implementation, credentials, private runtime state and reconstructive internals remain private.
 
-**Early CZARA contribution:** the SSI author credits **Amnezja** as an early CZARA co-creator / seed contributor who introduced the initial direction and made the first CZARA connection step; Paweł Jankiewicz subsequently developed and expanded CZARA into its current SSI V5 role. See [attribution record](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md).
+**Early CZARA contribution:** the SSI author credits **Amnezja / [@amnezja3](https://github.com/amnezja3) (Mikael)** as an early CZARA co-creator / seed contributor who introduced the initial direction and made the first CZARA connection step; Paweł Jankiewicz subsequently developed and expanded CZARA into its current SSI V5 role. See [attribution record](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md).
 
 ## Two current research pillars — 2026-10-04
 
