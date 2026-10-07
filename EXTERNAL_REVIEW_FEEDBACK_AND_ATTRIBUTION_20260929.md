@@ -4,17 +4,17 @@ This record identifies external review comments that materially changed SSI V5 r
 
 **Important boundary:** feedback attribution is not authorship of SSI V5, endorsement of SSI V5, independent validation, or a claim that the reviewer audited the private implementation.
 
-## Amnezja — early CZARA co-creator / seed contributor
+## Amnezja / @amnezja3 (Mikael) — early CZARA co-creator / seed contributor
 
 **Author/operator attribution — added 2026-10-08.**
 
-Paweł Jankiewicz identifies **Amnezja** as an early co-creator of the CZARA direction. According to the author/operator chronology, Amnezja **seeded the initial idea and performed the first connection/integration step that brought CZARA into the SSI work**, after which Paweł developed, expanded and integrated CZARA into the broader SSI V5 research programme, including its later training, Director_Czary, ZeroLab and Universal Lab paths.
+Paweł Jankiewicz identifies **Amnezja / [@amnezja3](https://github.com/amnezja3) (Mikael)** as an early co-creator of the CZARA direction. According to the author/operator chronology, Amnezja **seeded the initial idea and performed the first connection/integration step that brought CZARA into the SSI work**, after which Paweł developed, expanded and integrated CZARA into the broader SSI V5 research programme, including its later training, Director_Czary, ZeroLab and Universal Lab paths.
 
 Attribution boundary:
 
 - this credit concerns the **origin / early connection of CZARA**, not authorship of the whole SSI V5 system;
 - Paweł remains the author/operator responsible for the later architecture, implementation, training programme, integration and published claims;
-- this repository update does not independently verify Amnezja's exact GitHub handle/profile, so no profile URL is invented here;
+- this repository update does not independently verify Amnezja / [@amnezja3](https://github.com/amnezja3) (Mikael)'s exact GitHub handle/profile, so no profile URL is invented here;
 - the author identifies Amnezja as his GitHub follower and early collaborator; that follower relationship is recorded here as author-supplied provenance, not as a GitHub-API verification claim.
 
 A more exact profile link or dated technical artifact can be added later without changing this historical attribution.
