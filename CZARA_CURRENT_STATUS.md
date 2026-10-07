@@ -6,6 +6,12 @@
 
 CZARA's first internal curriculum is complete. The later ZeroLab V2 extension now provides a bounded local experiment path for BODY_FROZEN_1_0, alongside the separate SSI Final scope. These are distinct evidence families: the original curriculum's qualification does not automatically qualify the new ZeroLab procedures.
 
+## Origin and early contributor attribution
+
+The current CZARA line was not developed in complete isolation from outside input. **Amnezja** is credited by the SSI author/operator as an **early CZARA co-creator / seed contributor**: he introduced the initial direction and performed the first connection step that brought CZARA into the SSI work. Paweł Jankiewicz subsequently developed and expanded CZARA into its present SSI V5 role, training path, Director_Czary/ZeroLab workflow and Universal Lab integration.
+
+This is a scoped historical credit. It does not assign Amnezja authorship of SSI V5 as a whole, and the repository does not invent an unverified GitHub profile URL. See [External review feedback and attribution](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md).
+
 ## Universal Lab / Director_Czary preparation update — 2026-10-07
 
 The current Universal Lab workstream adds an installed authenticated meeting gate and a prepared SSI knowledge path for CZARA / Director_Czary.
