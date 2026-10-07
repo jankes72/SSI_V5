@@ -43,6 +43,28 @@ The planned meeting-access model uses **persistent named accounts**, not expirin
 
 Passwords are not intended to be stored in retrievable plaintext; the administration flow should support password reset rather than password recovery.
 
+### Host adaptation and translation observation
+
+Universal Lab is being integrated against the actual development host rather than an assumed high-end server:
+
+- MSI GV62-8RE;
+- Intel i7;
+- 16 GB RAM;
+- GTX 1060 6 GB VRAM;
+- Ubuntu;
+- Ollama;
+- local qwen3:4b.
+
+The design is intentionally local-first and resource-bounded. The integration avoids assuming that several large models can remain resident simultaneously, keeps lighter event/retrieval/session work away from scarce GPU memory where practical, and preserves text fallback when voice/video components degrade.
+
+The installed R3 configuration includes a local Ollama translation command bridge. A recent operator-side test reported roughly **2 seconds for the local translation step on this host**. This is a host-specific observed value, not a general benchmark or latency guarantee.
+
+### Bridge and Director_Czary preparation boundary
+
+The prepared routing set includes **48 selected `DIRECTOR_SSI_V5_TO_DIRECTOR_CZARA` source artifacts** and **48 selected `BODY_FROZEN_SSI_V5_TO_BODY_FROZEN_CZARA` artifacts**. This establishes a prepared knowledge-routing path into the CZARA research scope, but it is not equivalent to claiming that every private SSI skill has already been live-qualified through Universal Lab.
+
+The latest R3 configuration has the translation bridge configured. Other native meeting bridges must still be treated according to their actual configuration and runtime tests; the repository does not claim that every Director/CZARA/Router/BODY/ZeroLab path is already live-bound through the R3 gate.
+
 ---
 
 ## 2. SSI knowledge preparation installed for CZARA / Universal Lab
