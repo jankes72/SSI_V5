@@ -189,6 +189,7 @@ flowchart TB
 
     evidence <--> continuum
     evidence <--> state
+    evidence -.->|"external attestation when enabled"| notary
     recovery <--> state
     recovery --> v10
     recovery --> s10
@@ -212,6 +213,7 @@ flowchart TB
     class director_final,body_final,iskras,czara,director_czary,body10,zerolab_c,zerolab_f,reviewer,operator_ui current;
     class v10,s10,micro,champs,blocks competence;
     class evidence,continuum,state,recovery evidenceClass;
+    class notary prebuild;
     class dynamic,web,mexico,robots planned;
     class universal prebuild;
 ```
