@@ -95,7 +95,7 @@ flowchart TB
     subgraph UI["Human / Partner Interface"]
         reviewer["Public research portal / reviewer view<br/>CURRENT — observer / evidence boundary"]
         operator_ui["Operator control / monitoring<br/>CURRENT"]
-        universal["Universal Lab<br/>PRE-BUILD<br/>multilingual meeting + benchmark environment"]
+        universal["Universal Lab<br/>R3 INSTALLED / R5 INTEGRATION<br/>partner meeting + benchmark environment"]
     end
 
     subgraph FINAL["SSI Final Runtime Scope"]
@@ -224,6 +224,16 @@ The SSI Final scope contains the primary Director, BODY_FROZEN and six ISKRA act
 ### CZARA scope
 
 CZARA, Director_Czary and BODY_FROZEN_1.0 form a separate research-collaboration path. This scope is used to develop controlled Human-AI research interaction, laboratory protocol preparation, contextual assistance and the planned multilingual Universal Lab.
+
+### Universal Lab integration boundary
+
+Universal Lab has moved beyond architecture-only planning: **Live Gate R3 / 1.1.1 is installed** as the authenticated web/session baseline. ZeroLab V2 already exists as a bounded laboratory/runtime layer, while the SSI knowledge-preparation path for CZARA / Director_Czary is **INDEX_READY / NOT QUALIFIED** with **345,961 indexed documents** and **1,432 prepared curriculum cases**.
+
+The R3 configuration includes a local Ollama translation bridge. A recent operator-side host test reported roughly **2 seconds** for the local translation step on the development machine. The target machine is deliberately modest — MSI GV62-8RE, i7, 16 GB RAM, GTX 1060 6 GB VRAM — so the meeting stack is being designed local-first and resource-bounded rather than assuming a datacenter GPU.
+
+R5 is the next integration/verification layer for the shared Conference timeline, DIRECTOR interaction, CZARA/Shadow, Router V10/Micronetwork telemetry and timings, BODY_FROZEN execution visibility, ZeroLab live validation and meeting evidence. Not every native SSI bridge is yet claimed live-bound through the R3 gate.
+
+See [Universal Lab — Partner Meeting Start Here](UNIVERSAL_LAB_MEETING_START_HERE_20261007.md) and [detailed Universal Lab status](SYSTEM/SSI_UNIVERSAL_LAB_STATUS_20261007.md).
 
 ### Shared infrastructure does not imply shared identity
 
@@ -376,7 +386,7 @@ This table is a **pointer**, not a replacement for the evidence documents.
 | ZeroLab V2 bounded local runtime | **CURRENT / bounded pilot evidence published** |
 | Dynamic Mission V6 | **INSTALLED / curriculum completion not claimed** |
 | WEB engineering curriculum | **READY / live completion not claimed** |
-| Universal Lab | **PRE-BUILD integration specification** |
+| Universal Lab | **R3 INSTALLED baseline / R5 live integration in progress** |
 | External Mexico benchmark | **PLANNED / not yet claimed executed** |
 | Physical drone / humanoid / rescue-robot validation | **PLANNED / not claimed** |
 | Independent multi-partner replication | **PLANNED / not claimed** |
