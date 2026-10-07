@@ -28,6 +28,9 @@ R5 is the current next integration step for one shared Conference timeline, DIRE
 
 - [Partner Meeting Start Here](UNIVERSAL_LAB_MEETING_START_HERE_20261007.md)
 - [Detailed Universal Lab status](SYSTEM/SSI_UNIVERSAL_LAB_STATUS_20261007.md)
+- [Universal Lab evidence / signature / independent-notary contract](UNIVERSAL_LAB_EVIDENCE_NOTARY_AND_ATTESTATION_CONTRACT_20261008.md)
+
+**Evidence-hardening target:** Universal Lab R5+ is intended to bind its live session evidence to the existing SSI append-only/signature/notary design: monotonic sequence, previous-record hash, digital signature, executor/verifier separation, external attestation state, bounded outage buffer and DEGRADED_SAFE_MODE at the configured limit. This is preregistered architecture; a live independent notary is not yet claimed.
 
 ## Two current research pillars — 2026-10-04
 
