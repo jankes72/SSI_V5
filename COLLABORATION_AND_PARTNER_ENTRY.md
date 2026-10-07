@@ -1,11 +1,35 @@
 # SSI V5 — Collaboration and Partner Entry
 
-**Updated:** `2026-10-04`  
+**Updated:** `2026-10-07`  
 **Preserved cross-domain evidence:** `2026-09-18`; latest ZeroLab / selected recovery update: `2026-10-02`  
 **Status:** `OPEN TO CONTROLLED RESEARCH / TECHNOLOGY / CONSORTIUM COLLABORATION`  
 **Public boundary:** proprietary implementation remains private unless separately licensed or explicitly disclosed.
 
 > Grant and technical reviewers should start with [GRANT_AND_CONSORTIUM_ENTRY_20261001.md](GRANT_AND_CONSORTIUM_ENTRY_20261001.md), [GRANT_CONSORTIUM/README.md](GRANT_CONSORTIUM/README.md), [CURRENT_RESEARCH_ROADMAP_20261002.md](CURRENT_RESEARCH_ROADMAP_20261002.md) and [REVIEWER_INDEX.md](REVIEWER_INDEX.md).
+
+## Universal Lab — live partner meeting path — 2026-10-07
+
+Universal Lab is the current partner-facing meeting workstream. It is intended to turn a research meeting into an inspectable SSI session rather than a conventional presentation.
+
+Current installed/prepared boundary:
+
+- Universal Lab Live Gate R3 / 1.1.1 installed;
+- persistent authenticated meeting accounts;
+- ZeroLab V2 available as a bounded laboratory/runtime layer;
+- CZARA / Director_Czary knowledge path **INDEX_READY / NOT QUALIFIED** with **345,961 indexed documents** and **1,432 prepared curriculum cases**;
+- **48** selected SSI Director source artifacts prepared for the Director_Czary routing path;
+- local Ollama translation bridge configured;
+- recent operator-side local translation observation of roughly **2 seconds** on the MSI GV62-8RE host;
+- target host: i7, 16 GB RAM, GTX 1060 6 GB VRAM, local qwen3:4b.
+
+The next R5 integration step combines Conference, one shared meeting timeline, DIRECTOR, CZARA/Shadow, Router V10/Micronetwork telemetry and timings, BODY_FROZEN execution visibility, ZeroLab live validation and partner-safe evidence generated from the same session.
+
+The design is deliberately resource-bounded for a modest local computer. Cloud inference is treated as fallback/escalation rather than a requirement for the basic meeting flow.
+
+**Claim boundary:** translation is configured, but not every native SSI bridge is yet claimed live-bound through the R3 gate. Remaining live paths require R5 binding and verification.
+
+- [Universal Lab — Partner Meeting Start Here](UNIVERSAL_LAB_MEETING_START_HERE_20261007.md)
+- [Detailed Universal Lab status](SYSTEM/SSI_UNIVERSAL_LAB_STATUS_20261007.md)
 
 ## Longitudinal comparative research
 
