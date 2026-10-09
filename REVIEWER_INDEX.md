@@ -1,22 +1,48 @@
 # SSI V5 — Reviewer Index
 
-**Current public state:** `2026-10-07`  
+**Current public state:** `2026-10-09`  
 **Repository role:** public R&D, evidence and external-validation hub for a private SSI implementation.  
 **Audience:** grant reviewers, research collaborators, technical reviewers and validation partners.
 
 This file is the shortest route through the repository. Historical files remain preserved for provenance, but they are not the recommended starting point.
 
-## Universal Lab — fastest partner/research entry — 2026-10-07
+## Universal Lab — fastest partner/research entry — 2026-10-09
 
-For researchers evaluating the current partner-facing direction, start with **[Universal Lab — Partner Meeting Start Here](UNIVERSAL_LAB_MEETING_START_HERE_20261007.md)**.
+Start with **[Latest Universal Lab / Research Memory progress](RESULTS/UNIVERSAL_LAB_RESEARCH_MEMORY_PROGRESS_20261009.md)** and its [machine-readable summary](RESULTS/UNIVERSAL_LAB_RESEARCH_MEMORY_PUBLIC_SUMMARY_20261009.json). Use the **[canonical C4 architecture](SSI_V5_C4_ARCHITECTURE.md)** for current component relationships. The [2026-10-07 meeting entry](UNIVERSAL_LAB_MEETING_START_HERE_20261007.md) and [installed-state record](SYSTEM/SSI_UNIVERSAL_LAB_STATUS_20261007.md) are preserved baseline/plan documents.
 
-Universal Lab has an **installed R3 / 1.1.1 baseline** with persistent authenticated access. ZeroLab V2 already exists as a bounded laboratory/runtime layer. The CZARA / Director_Czary knowledge-preparation path is **INDEX_READY / NOT QUALIFIED**, with **345,961 indexed documents**, **1,432 prepared curriculum cases** and **48 selected SSI Director source artifacts** in the prepared Director_Czary route.
+The latest publication summarizes **operator-reported local results on the MSI development host**. It does not include the original private signed bundles or independently reproduce their cryptographic verification.
 
-The R3 configuration includes a local Ollama translation bridge. A recent operator-side test on the MSI GV62-8RE host reported roughly **2 seconds** for the local translation step. The current integration is intentionally designed around modest hardware: i7, 16 GB RAM, GTX 1060 6 GB VRAM and local qwen3:4b.
+| Area | Reported state on 2026-10-09 | Remaining boundary |
+|---|---|---|
+| Universal Lab / Caption Chat | R3 authenticated baseline plus installed Caption Chat R4; translation confirmed by the operator; 40-utterance display with versioned corrections | Caption Chat R4 is distinct from the earlier broader R4 package; full UI acceptance and R5 live integration are not established |
+| Research Memory / Meeting Link | P1 present; three locally verified project chains; 1,122 observations in the P3A snapshot | Meeting observations are not automatically verified skill trials |
+| P2B local signing | Fixed native session target verified through 4,603 records; 335 anchors cover 861 memory observations; target backlog 0 | Bounded provenance result; independent attestation and semantic PASS remain unproven |
+| Native qualification P3A | Separate module installed; seven actors and 16 native artifact files inspected; local eligibility reader bound during the check | Trial verifier and named-feature semantics remain unbound; 0 ranked native cases |
+| Research Memory / Router V10 | Automatic Research Memory selection is not enabled | Version-bound trial evidence must precede passive comparison and any live Router integration |
 
-R5 is the next live integration/verification layer for Conference, one shared session timeline, DIRECTOR, CZARA/Shadow, Router V10/Micronetwork telemetry and timings, BODY_FROZEN execution visibility, ZeroLab validation and partner-safe session evidence.
+The **0 skill references / 0 skill trials** reported here concern the inspected Research Memory projects, not the entire SSI competence inventory or the earlier CZARA curriculum. ZeroLab V2 remains a separate bounded laboratory/runtime layer. The preserved SSI knowledge-preparation record remains **INDEX_READY / NOT QUALIFIED**; the new installation reports do not establish completion of its 1,432-case curriculum.
 
-**Boundary:** translation is configured; not every native SSI bridge is yet claimed live-bound through R3.
+R5 remains the integration/verification target for the shared Conference timeline, DIRECTOR, CZARA/Shadow, Router telemetry and timings, BODY_FROZEN execution visibility, ZeroLab validation and partner-safe session export. The development host remains local-first and resource-bounded: MSI GV62-8RE, i7, 16 GB RAM, GTX 1060 6 GB VRAM and local qwen3:4b.
+
+### Next rehearsal and evidence publication — planned, not completed
+
+The next training/rehearsal session will use **real Paweł as the participant and simulated Sara/Leire utterances**. The simulated participants will have **no video**. Their participant-facing content will be **Polish translations only**, and Paweł will respond to those displayed translations. Original simulated utterances and their translations should remain linked in the session record without exposing the original utterance as a second participant-facing cue during the measured response.
+
+The intended measurements distinguish:
+
+| Measurement | Start / end boundary |
+|---|---|
+| Translation latency | Simulated source utterance available -> Polish translation ready |
+| Display latency | Translation ready -> translation actually visible in Paweł's interface |
+| Human reaction time | Translation actually visible -> first observable real response input from Paweł |
+| Response completion time | Translation actually visible -> final human response submitted/captured |
+| SSI decision / answer latency | Actual task/context input -> Router decision / answer-ready event, where emitted |
+
+The response channel and measurement basis must be recorded, including the clock basis and any synchronization uncertainty between server and display events. If only a submitted message is observable, it supports response completion time rather than an inferred first-reaction time. Missing timestamps remain unmeasured; human response time must not be conflated with translation, queue or model latency.
+
+**The rehearsal evidence package and its measured report are deferred until this actual run has occurred.** The plan is to publish a sanitized rehearsal result before the real partner meeting, explicitly labeling Sara/Leire as simulated and Paweł as real, preserving failures and unresolved outcomes, and stating the available local signature/attestation level. Simulated statements are not statements or endorsements by the actual researchers.
+
+The real meeting should reuse the same event schema, timing boundaries and evidence method with actual participants. These are planned measurements; neither the rehearsal result, its export nor the subsequent real meeting is claimed complete here. See the [evidence/notary contract](UNIVERSAL_LAB_EVIDENCE_NOTARY_AND_ATTESTATION_CONTRACT_20261008.md) for integrity and attestation boundaries.
 
 ## Two current research pillars — 2026-10-04
 
@@ -47,7 +73,7 @@ S40 completion and WEB results are not claimed yet; this is a preregistered futu
 1. **[Active evidence / repair record](AKTUALNA_NAPRAWA.md)** — current evidence-safety lifecycle.
 2. **[Longitudinal S40 / WEB study](LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md)** — frozen actor comparison, learning trajectories and affect-like state deltas.
 
-**Latest runtime evidence:** [Final continuation stop](RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md), followed by the [ZeroLab pilot](ZERO_LAB_V2_FIRST_RESULTS_20261002.md) and [CZARA status](CZARA_CURRENT_STATUS.md).
+**Latest Universal Lab progress:** [2026-10-09 local installation, signing and qualification-reader report](RESULTS/UNIVERSAL_LAB_RESEARCH_MEMORY_PROGRESS_20261009.md). **Preserved SSI Final / ZeroLab evidence:** [Final continuation stop](RESULTS/SSI_FINAL_RECOVERY_STOP_20261002.md), the [ZeroLab pilot](ZERO_LAB_V2_FIRST_RESULTS_20261002.md) and [CZARA status](CZARA_CURRENT_STATUS.md).
 
 For a grant, consortium or partner-entry review, start with [GRANT_AND_CONSORTIUM_ENTRY_20261001.md](GRANT_AND_CONSORTIUM_ENTRY_20261001.md) and the [grant/consortium package](GRANT_CONSORTIUM/README.md).
 
@@ -120,10 +146,11 @@ These documents are **architecture and benchmark-plan records**, not completed e
 
 ## Technical architecture review
 
-1. [SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md)
-2. [VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md](VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md)
-3. [RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md](RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md)
-4. [Current Football World implementation boundary](RESULTS/FOOTBALL_WORLD_IMPLEMENTATION_BOUNDARY_20260922.md)
+1. [SSI V5 — canonical C4 Architecture](SSI_V5_C4_ARCHITECTURE.md) — current structural map, including Universal Lab and Research Memory boundaries.
+2. [SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md](SYSTEM/SSI_COMPLETE_ECOSYSTEM_ARCHITECTURE_20260917.md) — preserved historical ecosystem snapshot.
+3. [VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md](VERSIONS/V1_V2_V3_V4_COMPARISON_INDEX_20260917.md)
+4. [RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md](RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md)
+5. [Current Football World implementation boundary](RESULTS/FOOTBALL_WORLD_IMPLEMENTATION_BOUNDARY_20260922.md)
 
 ## Evidence / falsification review
 
@@ -272,6 +299,7 @@ KEEP THE OLDER FILE AS HISTORICAL EVIDENCE
 ```
 
 No historical file needs to be deleted to keep the reviewer path concise.
+
 
 
 

@@ -3,6 +3,7 @@
 **Role:** canonical public architecture map / single source of truth  
 **C4 scope:** Level 1 — System Context, Level 2 — Containers, Level 3 — Components  
 **Created:** 2026-10-07  
+**Last architectural review:** 2026-10-09  
 **Implementation boundary:** proprietary code, credentials, reconstructive runtime internals and private prompts are intentionally excluded.  
 **Evidence boundary:** architecture and status labels do not create new experimental claims. Completed, current, ready, installed, pre-build and planned states must remain distinct.
 
@@ -95,7 +96,7 @@ flowchart TB
     subgraph UI["Human / Partner Interface"]
         reviewer["Public research portal / reviewer view<br/>CURRENT — observer / evidence boundary"]
         operator_ui["Operator control / monitoring<br/>CURRENT"]
-        universal["Universal Lab<br/>R3 INSTALLED / R5 INTEGRATION<br/>partner meeting + benchmark environment"]
+        universal["Universal Lab: R3 + Caption R4 installed; R5 pending"]
     end
 
     subgraph FINAL["SSI Final Runtime Scope"]
@@ -127,7 +128,15 @@ flowchart TB
         mexico["Mexico / external partner benchmark path<br/>PLANNED external execution"]
     end
 
+    subgraph RESEARCH_MEMORY["Research Memory / Meeting History"]
+        direction TB
+        meeting_link["Meeting Link V1: installed observation bridge"]
+        research_memory["Research Memory P1: installed project history"]
+        qualification_p3a["P3A reader: installed; trial gates pending"]
+    end
+
     subgraph EVIDENCE["Persistence / Evidence / Recovery"]
+        local_signer["Local Notary SSI: bounded P2B signing reported"]
         notary["Independent signing / notary authority<br/>R5+ TARGET / externally attested only when live"]
         evidence["Evidence + provenance<br/>PASS / INCONCLUSIVE / FAIL preserved"]
         continuum["CONTINUUM<br/>missions / checkpoints / evidence continuity"]
@@ -147,6 +156,12 @@ flowchart TB
     universal -.-> czara
     universal -.-> director_czary
     universal -.-> body10
+    universal -->|"meeting observations: partially connected"| meeting_link
+    meeting_link -->|"project observation history"| research_memory
+    meeting_link -->|"matched observation anchors"| evidence
+    FINAL -.->|"native artifact inventory checked locally"| qualification_p3a
+    research_memory -.->|"version-bound trial evidence pending"| qualification_p3a
+    qualification_p3a -.->|"future verified recommendations; not Router-bound"| v10
 
     director_final --> v10
     director_final --> s10
@@ -189,7 +204,8 @@ flowchart TB
 
     evidence <--> continuum
     evidence <--> state
-    evidence -.->|"external attestation when enabled"| notary
+    evidence -->|"bounded local signing checkpoints"| local_signer
+    local_signer -.->|"independent attestation not established"| notary
     recovery <--> state
     recovery --> v10
     recovery --> s10
@@ -212,7 +228,8 @@ flowchart TB
 
     class director_final,body_final,iskras,czara,director_czary,body10,zerolab_c,zerolab_f,reviewer,operator_ui current;
     class v10,s10,micro,champs,blocks competence;
-    class evidence,continuum,state,recovery evidenceClass;
+    class meeting_link,research_memory,qualification_p3a current;
+    class evidence,continuum,state,recovery,local_signer evidenceClass;
     class notary prebuild;
     class dynamic,web,mexico,robots planned;
     class universal prebuild;
@@ -230,13 +247,29 @@ CZARA, Director_Czary and BODY_FROZEN_1.0 form a separate research-collaboration
 
 ### Universal Lab integration boundary
 
-Universal Lab has moved beyond architecture-only planning: **Live Gate R3 / 1.1.1 is installed** as the authenticated web/session baseline. ZeroLab V2 already exists as a bounded laboratory/runtime layer, while the SSI knowledge-preparation path for CZARA / Director_Czary is **INDEX_READY / NOT QUALIFIED** with **345,961 indexed documents** and **1,432 prepared curriculum cases**.
+**Live Gate R3 / 1.1.1 remains the installed authenticated web/session baseline.** The 2026-10-09 operator report adds an installed **Caption Chat R4** patch and confirms working translation on the MSI development host. Caption Chat provides original/translated captions, bounded visible history and revision-based corrections that preserve prior records. This targeted patch is distinct from the broader R4 package recorded as uninstalled in the earlier baseline.
 
-The R3 configuration includes a local Ollama translation bridge. A recent operator-side host test reported roughly **2 seconds** for the local translation step on the development machine. The target machine is deliberately modest — MSI GV62-8RE, i7, 16 GB RAM, GTX 1060 6 GB VRAM — so the meeting stack is being designed local-first and resource-bounded rather than assuming a datacenter GPU.
+ZeroLab V2 remains a separate bounded laboratory/runtime layer. The preserved knowledge-preparation state for CZARA / Director_Czary remains **INDEX_READY / NOT QUALIFIED**; the new installation reports do not establish completion of that prepared curriculum. The local-first, resource-bounded deployment remains tailored to the MSI GV62-8RE, i7, 16 GB RAM, GTX 1060 6 GB VRAM and local Ollama/qwen3:4b.
 
-R5 is the next integration/verification layer for the shared Conference timeline, DIRECTOR interaction, CZARA/Shadow, Router V10/Micronetwork telemetry and timings, BODY_FROZEN execution visibility, ZeroLab live validation and meeting evidence. Not every native SSI bridge is yet claimed live-bound through the R3 gate.
+R5 remains the integration/verification target for the shared Conference timeline, DIRECTOR interaction, CZARA/Shadow, Router V10/Micronetwork telemetry and timings, BODY_FROZEN execution visibility, ZeroLab live validation and partner-safe session export. The caption, memory and signing updates do not establish all native bridges as live-bound or certify a completed partner meeting.
 
-See [Universal Lab — Partner Meeting Start Here](UNIVERSAL_LAB_MEETING_START_HERE_20261007.md) and [detailed Universal Lab status](SYSTEM/SSI_UNIVERSAL_LAB_STATUS_20261007.md).
+Current counts and installation reports belong in the [2026-10-09 progress report](RESULTS/UNIVERSAL_LAB_RESEARCH_MEMORY_PROGRESS_20261009.md) and [machine-readable summary](RESULTS/UNIVERSAL_LAB_RESEARCH_MEMORY_PUBLIC_SUMMARY_20261009.json). The [2026-10-07 meeting entry](UNIVERSAL_LAB_MEETING_START_HERE_20261007.md) and [installed-state record](SYSTEM/SSI_UNIVERSAL_LAB_STATUS_20261007.md) remain historical baseline/plan references.
+
+### Research Memory and evidence authority boundary
+
+Research Memory P1 stores project-scoped experience history. Meeting Link V1 partially connects Universal Lab meeting observations to that history and anchors the checked observation prefix in native session evidence. Meeting observations, transcripts and Shadow proposals do not automatically become verified skill trials or qualified competence.
+
+P3A is an installed, separate native qualification-reader module. It inspected BODY_FROZEN and ISKRA1..6 artifacts and bound local eligibility reading during its check. The trial-evidence verifier and authoritative named-feature semantics remain unbound. The inspected memory has no ranked native cases, and **automatic Research Memory selection through Router V10 is not enabled**. The dashed recommendation connection represents future integration after exact-version trial verification and passive comparison, not current live routing authority.
+
+P2B reports completion of local signing/backfill and verification through a fixed native session target. The local Notary/signing path is separate from the **independent attestation authority**, whose deployment is not established. This is operator-reported provenance within a bounded scope, not independent re-verification of the original private bundles or proof of semantic correctness. See the [evidence/notary contract](UNIVERSAL_LAB_EVIDENCE_NOTARY_AND_ATTESTATION_CONTRACT_20261008.md).
+
+### Planned human-in-the-loop rehearsal and real meeting measurement
+
+The next rehearsal uses **real Paweł responding to simulated Sara/Leire utterances**. Simulated participants have **no video**; their measured participant-facing content consists only of **Polish translations**. Source utterance, translation and real human response remain linked in the event history, with simulated versus real actors explicitly identified.
+
+The measurement design separates source-to-translation latency, translation-to-visible-display latency, visible-display-to-first-observable-human-response time, human response completion time and backend decision/answer latency where actual events exist. A backend save timestamp alone does not establish when Paweł saw the translation. Missing first-response observations cannot be reconstructed from a final submitted message.
+
+The rehearsal evidence package and measured report will be prepared **after that actual run**, with a sanitized publication planned **before the real partner meeting**. The real meeting should reuse the same event schema, timing boundaries and evidence method with actual participants. Neither the rehearsal export nor its results are claimed complete; simulated Sara/Leire output is not external partner participation, endorsement or independent validation. The [Reviewer Index](REVIEWER_INDEX.md) records the planned measurement boundaries.
 
 ### Shared infrastructure does not imply shared identity
 
@@ -389,7 +422,14 @@ This table is a **pointer**, not a replacement for the evidence documents.
 | ZeroLab V2 bounded local runtime | **CURRENT / bounded pilot evidence published** |
 | Dynamic Mission V6 | **INSTALLED / curriculum completion not claimed** |
 | WEB engineering curriculum | **READY / live completion not claimed** |
-| Universal Lab | **R3 INSTALLED baseline / R5 live integration in progress** |
+| Universal Lab | **R3 INSTALLED baseline / R5 integrations pending verification** |
+| Caption Chat R4 | **INSTALLED / translation operator-confirmed; full UI acceptance not established** |
+| Research Memory P1 / Meeting Link V1 | **INSTALLED / partially connected meeting-observation history** |
+| Native qualification P3A | **INSTALLED / local eligibility reader checked; trial verifier and named-feature semantics unbound** |
+| Research Memory contextual selection / Router V10 binding | **NOT ENABLED / version-bound trials and passive comparison pending** |
+| Universal Lab local signing / Notary SSI | **BOUNDED P2B RESULT REPORTED / provenance, not semantic PASS** |
+| Independent Universal Lab attestation authority | **PRE-BUILD TARGET / independent attestation not established** |
+| Real-Paweł / simulated-Sara-Leire rehearsal | **PLANNED / evidence publication after the actual run, before the real meeting** |
 | External Mexico benchmark | **PLANNED / not yet claimed executed** |
 | Physical drone / humanoid / rescue-robot validation | **PLANNED / not claimed** |
 | Independent multi-partner replication | **PLANNED / not claimed** |
@@ -430,3 +470,4 @@ Dated architecture documents in the repository remain valuable because they show
 **Historical snapshots:** preserved, not retroactively synchronized.
 
 That distinction prevents a change in SSI V5 from requiring edits across dozens of old research records.
+
