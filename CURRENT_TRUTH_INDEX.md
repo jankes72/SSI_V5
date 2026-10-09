@@ -3,34 +3,37 @@
 > **Canonical architecture:** [SSI V5 — C4 Architecture](SSI_V5_C4_ARCHITECTURE.md) — single source of truth for the current public system structure. Update the C4 there instead of duplicating architecture diagrams across documents.
 
 
-**Status:** `CURRENT POINTER / 2026-10-07`  
+**Status:** `CURRENT POINTER / 2026-10-09`  
 **Repository role:** public R&D, evidence and external-validation hub with a published research portal; proprietary implementation remains private.  
 **Evidence boundary:** software-only unless a document explicitly states otherwise.  
 **History rule:** earlier dated truth/status files remain preserved and are not retroactively rewritten.
 
-## Universal Lab current state — 2026-10-07
+## Universal Lab and Research Memory — 2026-10-09
 
-Universal Lab now has an **installed R3 / 1.1.1 web/auth/session baseline** and is being advanced into a partner-facing live research meeting environment.
+The latest operator reports establish the following bounded progress on the MSI development host:
 
-Verified/prepared state:
+| Area | Reported state | Remaining boundary |
+|---|---|---|
+| Caption Chat R4 | Installed, file-checked and reloaded; translation confirmed by the operator | Full UI acceptance and partner-meeting validation are not established by the follow-up |
+| Research Memory P1 | Baseline code matched; three accessible projects with verified local chains | Local consistency is not independent attestation |
+| Meeting Link / P2B | Native session signed and verified through 4,603 records; 335 anchors cover 861 memory observations; pending target backlog 0 | Meeting-observation provenance, not skill-trial success |
+| Native qualification P3A | Separate module installed; seven actors and 16 native artifact files inspected | Local eligibility reader bound in the check, not production Router binding |
+| Trial evidence and contextual ranking | 0 skill references, 0 skill trials, 0 ranked cases in the inspected memory | Trial verifier unbound; named-feature contracts absent |
+| Automatic Research Memory selection through Router V10 | Not enabled | Passive comparison follows version-bound trial evidence |
 
-- persistent authenticated Universal Lab accounts;
-- ZeroLab V2 exists as a bounded laboratory/runtime layer with separate published evidence;
-- CZARA / Director_Czary knowledge preparation: **345,961 indexed documents**, **1,432 prepared curriculum cases**, **INDEX_READY / NOT QUALIFIED**;
-- **48** selected SSI Director source artifacts in the prepared `DIRECTOR_SSI_V5_TO_DIRECTOR_CZARA` route;
-- local Ollama translation bridge configured in R3;
-- recent operator-side translation observation: roughly **2 seconds** on the MSI GV62-8RE host;
-- target hardware remains modest: i7, 16 GB RAM, GTX 1060 6 GB VRAM, local qwen3:4b.
+The three-project P3A snapshot contains **1,122 observation records**. The P3A gate remains closed with `NATIVE_VERIFIERS_NOT_BOUND`; successful installation must not be described as successful Champion selection. Stored Champion labels are not verified experimental outcomes.
 
-R5 is the current next integration step for one shared Conference timeline, DIRECTOR, CZARA/Shadow, Router V10/Micronetwork telemetry and timing, BODY_FROZEN execution visibility, ZeroLab live validation and partner-safe meeting evidence.
+P2B reported admission returning from `EVIDENCE_DEGRADED_SAFE_MODE` to `OPEN` at completion and a successful notary-head check. **Independent attestation and semantic PASS remain unproven.** The publication summarizes operator reports; the original private signed bundles are not independently reverified here.
 
-**Boundary:** not every native SSI bridge is yet claimed live-bound through R3. The repository separates configured/prepared paths from completed live integration.
+The Research Memory checks/backfill/install reported no model calls or training. P2B added checkpoints; P3A added five module files without overwriting native files or reloading the runtime.
 
-- [Partner Meeting Start Here](UNIVERSAL_LAB_MEETING_START_HERE_20261007.md)
-- [Detailed Universal Lab status](SYSTEM/SSI_UNIVERSAL_LAB_STATUS_20261007.md)
-- [Universal Lab evidence / signature / independent-notary contract](UNIVERSAL_LAB_EVIDENCE_NOTARY_AND_ATTESTATION_CONTRACT_20261008.md)
+- **[Latest progress, measured counts and next steps](RESULTS/UNIVERSAL_LAB_RESEARCH_MEMORY_PROGRESS_20261009.md)**
+- [Machine-readable public summary](RESULTS/UNIVERSAL_LAB_RESEARCH_MEMORY_PUBLIC_SUMMARY_20261009.json)
+- [Preserved Universal Lab status — 2026-10-07](SYSTEM/SSI_UNIVERSAL_LAB_STATUS_20261007.md)
+- [Preserved meeting entry and plan — 2026-10-07](UNIVERSAL_LAB_MEETING_START_HERE_20261007.md)
+- [Evidence / signature / independent-attestation contract](UNIVERSAL_LAB_EVIDENCE_NOTARY_AND_ATTESTATION_CONTRACT_20261008.md)
 
-**Evidence-hardening target:** Universal Lab R5+ is intended to bind its live session evidence to the existing SSI append-only/signature/notary design: monotonic sequence, previous-record hash, digital signature, executor/verifier separation, external attestation state, bounded outage buffer and DEGRADED_SAFE_MODE at the configured limit. This is preregistered architecture; a live independent notary is not yet claimed.
+Caption Chat R4 is distinct from the wider R4 development package in the earlier record. The new results advance specific caption, memory and evidence paths without certifying all R5 integrations, a completed knowledge curriculum or an external partner benchmark.
 
 ## Two current research pillars — 2026-10-04
 

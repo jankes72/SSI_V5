@@ -26,21 +26,23 @@ SSI V5 is an independently developed, proprietary-core R&D programme for **persi
 
 Universal Lab is intended to inherit SSI's stricter evidence-hardening path: append-only hash-linked records, digital signatures, executor/verifier separation, and an independent signing/notary authority **when external attestation is claimed**. The outage path is preregistered as local commit -> pending external attestation -> bounded queue -> DEGRADED_SAFE_MODE at the buffer limit. The design also carries forward mutation/deletion/forged-PASS tests, chain-specific rejection reasons and a negative control.
 
-This is an **R5+ target contract, not a claim that an independent notary is already live**. See [Universal Lab Evidence, Digital Signature and Independent Notary/Attestation Contract](UNIVERSAL_LAB_EVIDENCE_NOTARY_AND_ATTESTATION_CONTRACT_20261008.md).
+The **2026-10-09 P2B operator report now records a native signed session prefix verified through record 4,603**, with matched Research Memory anchors. This bounded result does not establish independent external attestation; the broader contract remains the reference for the remaining work. See the [latest progress report](RESULTS/UNIVERSAL_LAB_RESEARCH_MEMORY_PROGRESS_20261009.md) and [Universal Lab Evidence, Digital Signature and Independent Notary/Attestation Contract](UNIVERSAL_LAB_EVIDENCE_NOTARY_AND_ATTESTATION_CONTRACT_20261008.md).
 
 
-## Universal Lab — current partner-facing workstream
+## Universal Lab — latest progress, 2026-10-09
 
-**Universal Lab is now an installed SSI meeting baseline, not only a concept.** The current operator baseline is **Live Gate R3 / 1.1.1** with authenticated web access, persistent accounts and a local-first deployment path. **ZeroLab V2 already exists** as a bounded laboratory/runtime layer, and the current SSI knowledge-preparation path for CZARA / Director_Czary is **INDEX_READY** with **345,961 indexed documents** and **1,432 prepared curriculum cases**.
+**Caption Chat R4 is installed on the MSI development host, and the operator has confirmed working translation.** The caption update provides the latest bilingual utterance over the camera and a scrollable 40-utterance history with timestamps and revision-based corrections.
 
-The current meeting work is being prepared around **Paweł, Sara and Leire** as an interactive research session rather than a slide-only call. The R5 integration target combines Conference, one shared meeting timeline, DIRECTOR interaction, CZARA/Shadow, Router V10/Micronetwork telemetry, BODY_FROZEN execution visibility, ZeroLab validation and partner-safe evidence generated from the same session.
+**Research Memory has advanced through P1 audit, P2B native signing backfill and P3A installation.** Operator reports record three projects with verified local chains; a native session signed and verified through all **4,603** records at the fixed target; **335** matched anchors covering **861** meeting-memory observations; and a P3A qualification-reader check across **7 actors / 16 native artifact files**.
 
-The installed R3 configuration already contains the **local Ollama translation bridge**. On the actual development host — **MSI GV62-8RE, i7, 16 GB RAM, GTX 1060 6 GB VRAM** — a recent operator-side test reported roughly **2 seconds for the local translation step**. This is a host-specific observation, not a general benchmark. The system is intentionally being adapted to modest local hardware with a local-first, resource-bounded design rather than assuming a datacenter GPU.
+**The next integration gate is still closed:** the inspected memory has **0 skill trials**, the artifacts have **0 named-feature contracts**, and **0 native cases have been ranked**. P3A reads local native eligibility during its check; the trial-evidence verifier and production Router binding remain unconnected. The signature result supports bounded provenance claims, with **independent attestation still false**.
 
-**Current claim boundary:** the translation path is configured and the knowledge/laboratory layers exist, but not every Director/CZARA/Router/BODY/ZeroLab native path is yet claimed live-bound through the R3 gate. R5 is the integration/verification step for those remaining live paths.
+Caption Chat R4 is a targeted update, distinct from the broader R4 development package recorded as uninstalled on 2026-10-07. These results do not establish completion of all R5 meeting integrations or a partner benchmark.
 
-➡️ **[Universal Lab — Partner Meeting Start Here](UNIVERSAL_LAB_MEETING_START_HERE_20261007.md)**  
-➡️ **[Detailed installed state and R5 boundary](SYSTEM/SSI_UNIVERSAL_LAB_STATUS_20261007.md)**
+- **[Latest Universal Lab / Research Memory progress and next gates](RESULTS/UNIVERSAL_LAB_RESEARCH_MEMORY_PROGRESS_20261009.md)**
+- [Machine-readable public summary](RESULTS/UNIVERSAL_LAB_RESEARCH_MEMORY_PUBLIC_SUMMARY_20261009.json)
+- [Earlier partner meeting baseline and plan — 2026-10-07](UNIVERSAL_LAB_MEETING_START_HERE_20261007.md)
+- [Earlier installed state and R5 integration scope — 2026-10-07](SYSTEM/SSI_UNIVERSAL_LAB_STATUS_20261007.md)
 
 SSI V5 is an independently developed R&D project focused on persistent competence, continual learning, cross-agent consolidation, adaptive routing, rollback/recovery and cross-domain transfer.
 
@@ -127,7 +129,7 @@ The current programme combines core SSI reliability work, CZARA Human-AI researc
 - **Demonstrated scope:** software laboratory results for drone, humanoid and cross-domain rescue scenarios.
 - **Current boundary:** software evidence is published; physical validation, safety certification and independent external replication are not claimed.
 
-**Current public state:** 2026-10-07
+**Current public state:** 2026-10-09
 
 ## Latest SSI Final continuation — infrastructure stop — 2026-10-02
 

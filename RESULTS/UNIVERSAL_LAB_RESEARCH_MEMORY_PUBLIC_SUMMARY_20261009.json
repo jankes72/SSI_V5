@@ -1,0 +1,214 @@
+{
+  "schema": "ssi.universal-lab.research-memory.public-progress.v1",
+  "date": "2026-10-09",
+  "evidence_basis": {
+    "type": "OPERATOR_REPORTED_LOCAL_RESULTS",
+    "host": "MSI GV62-8RE",
+    "source": "Operator-supplied terminal reports and translation confirmation",
+    "public_artifact": "SANITIZED_SUMMARY_NOT_ORIGINAL_SIGNED_BUNDLE",
+    "independently_reverified_for_publication": false,
+    "private_source_weights_databases_and_conversations_included": false
+  },
+  "caption_chat_r4": {
+    "install_status": "CAPTION_CHAT_R4_INSTALLED_ON_DISK",
+    "file_check_status": "CAPTION_CHAT_R4_FILES_READY",
+    "reload_status": "CAPTION_CHAT_R4_RELOADED_HTTP_OK",
+    "translation_confirmed_by_operator": true,
+    "implemented_display_limit": 40,
+    "older_records_preserved": true,
+    "timestamp_basis": "TRANSCRIPTION_SAVE_TIME",
+    "all_ui_acceptance_tests_individually_confirmed_on_host": false,
+    "full_r5_integration_proven": false
+  },
+  "research_memory": {
+    "p1_version": "1.0.0-p1",
+    "baseline_code_match": true,
+    "projects_accessible_to_local_operator": 3,
+    "projects_with_verified_local_chains": 3,
+    "meeting_link_health_http_status": 200,
+    "meeting_link_version": "SSI_UL_MEETING_LINK_V1_20261009",
+    "p3a_snapshot": {
+      "projects": [
+        {
+          "category": "NATIVE_OPERATIONS",
+          "records": 259,
+          "skill_references": 0,
+          "skill_trials": 0
+        },
+        {
+          "category": "INTERNAL_REHEARSALS",
+          "records": 2,
+          "skill_references": 0,
+          "skill_trials": 0
+        },
+        {
+          "category": "MEETING_ROOM",
+          "records": 861,
+          "skill_references": 0,
+          "skill_trials": 0
+        }
+      ],
+      "total_records": 1122,
+      "skill_references": 0,
+      "skill_trials": 0
+    }
+  },
+  "p2b_backfill": {
+    "status": "RM_P2B_TARGET_SIGNED_AND_VERIFIED",
+    "scope": "EXISTING_MEETING_OBSERVATIONS_NOT_SKILL_TRIALS",
+    "signed_before": 203,
+    "through": 4603,
+    "signed_upto": 4603,
+    "native_records_at_completion": 4603,
+    "pending_before": 4400,
+    "pending_after_target": 0,
+    "new_checkpoints": 18,
+    "notary_head_checked": true,
+    "admission_before": "EVIDENCE_DEGRADED_SAFE_MODE",
+    "admission_after": "OPEN",
+    "signed_anchor_count": 335,
+    "unsigned_anchor_count": 0,
+    "signed_memory_prefix_seq": 864,
+    "records_in_signed_memory_prefix": 861,
+    "coverage": "MATCHED_MEETING_LINK_ANCHORS_COVER_MEMORY_PREFIX_NOT_SEPARATELY_SIGNED_OBSERVATIONS",
+    "independent_attestation": false,
+    "semantic_pass_proven": false,
+    "models_called": 0,
+    "training_started": false,
+    "skill_trials_created": 0,
+    "router_changed": false
+  },
+  "p3a": {
+    "adapter_version": "1.0.0-p3a",
+    "check_status": "RM_P3A_NATIVE_ADAPTER_CHECK_COMPLETED",
+    "installation_status": "RM_P3A_MODULE_INSTALLED",
+    "package_sha256": "009732ca99c5c3f2e016bd07087a2e1a30163819b614f0d3b38e09924a45ac1c",
+    "actors_checked": 7,
+    "actors": [
+      {
+        "actor": "BODY_FROZEN",
+        "native_artifact_files": 4,
+        "native_parse_accepted": 4,
+        "invalid_artifacts": 0,
+        "native_enabled": 2,
+        "named_feature_contracts": 0,
+        "eligibility_gates": {
+          "NATIVE_DISABLED": 2,
+          "NAMED_FEATURE_SEMANTICS_UNBOUND": 1,
+          "TEST_DOMAIN_EXCLUDED": 1
+        }
+      },
+      {
+        "actor": "ISKRA1",
+        "native_artifact_files": 2,
+        "native_parse_accepted": 2,
+        "invalid_artifacts": 0,
+        "native_enabled": 2,
+        "named_feature_contracts": 0,
+        "eligibility_gates": {
+          "TEST_DOMAIN_EXCLUDED": 1,
+          "NAMED_FEATURE_SEMANTICS_UNBOUND": 1
+        }
+      },
+      {
+        "actor": "ISKRA2",
+        "native_artifact_files": 2,
+        "native_parse_accepted": 2,
+        "invalid_artifacts": 0,
+        "native_enabled": 2,
+        "named_feature_contracts": 0,
+        "eligibility_gates": {
+          "TEST_DOMAIN_EXCLUDED": 1,
+          "NAMED_FEATURE_SEMANTICS_UNBOUND": 1
+        }
+      },
+      {
+        "actor": "ISKRA3",
+        "native_artifact_files": 2,
+        "native_parse_accepted": 2,
+        "invalid_artifacts": 0,
+        "native_enabled": 2,
+        "named_feature_contracts": 0,
+        "eligibility_gates": {
+          "TEST_DOMAIN_EXCLUDED": 1,
+          "NAMED_FEATURE_SEMANTICS_UNBOUND": 1
+        }
+      },
+      {
+        "actor": "ISKRA4",
+        "native_artifact_files": 2,
+        "native_parse_accepted": 2,
+        "invalid_artifacts": 0,
+        "native_enabled": 2,
+        "named_feature_contracts": 0,
+        "eligibility_gates": {
+          "TEST_DOMAIN_EXCLUDED": 1,
+          "NAMED_FEATURE_SEMANTICS_UNBOUND": 1
+        }
+      },
+      {
+        "actor": "ISKRA5",
+        "native_artifact_files": 2,
+        "native_parse_accepted": 2,
+        "invalid_artifacts": 0,
+        "native_enabled": 2,
+        "named_feature_contracts": 0,
+        "eligibility_gates": {
+          "TEST_DOMAIN_EXCLUDED": 1,
+          "NAMED_FEATURE_SEMANTICS_UNBOUND": 1
+        }
+      },
+      {
+        "actor": "ISKRA6",
+        "native_artifact_files": 2,
+        "native_parse_accepted": 2,
+        "invalid_artifacts": 0,
+        "native_enabled": 2,
+        "named_feature_contracts": 0,
+        "eligibility_gates": {
+          "TEST_DOMAIN_EXCLUDED": 1,
+          "NAMED_FEATURE_SEMANTICS_UNBOUND": 1
+        }
+      }
+    ],
+    "native_artifact_files": 16,
+    "native_parse_accepted": 16,
+    "invalid_artifacts": 0,
+    "native_enabled": 14,
+    "named_feature_contracts": 0,
+    "qualification_reader_implemented": true,
+    "qualification_reader_bound_in_check": true,
+    "qualification_scope": "LOCAL_NATIVE_ELIGIBILITY_ONLY",
+    "native_metric_evidence_verified": false,
+    "p1_gate_checks": {
+      "NATIVE_VERIFIERS_NOT_BOUND": 21
+    },
+    "trial_evidence_verifier_bound": false,
+    "ranked_cases": 0,
+    "live_router_binding": false,
+    "module_files_written": 5,
+    "native_files_overwritten": 0,
+    "ssi_data_written": false,
+    "runtime_reloaded": false,
+    "models_called": 0,
+    "training_started": false,
+    "inference_performed": false,
+    "new_signatures": 0,
+    "independent_attestation": false,
+    "semantic_pass_proven": false,
+    "source_snapshot_scope": "ORDERED_LOCAL_SNAPSHOTS_NOT_GLOBAL_ATOMIC",
+    "prior_offline_validation": {
+      "tests_passed": 16,
+      "scope": "EXPORTED_NATIVE_ENGINE_WITH_SYNTHETIC_TEMPORARY_ARTIFACTS_AND_DATABASES",
+      "production_trials": false
+    }
+  },
+  "next_step": "BIND_NAMED_FEATURE_SEMANTICS_AND_EXACT_VERSIONED_NATIVE_TRIAL_EVIDENCE_BEFORE_PASSIVE_ROUTER_COMPARISON",
+  "claim_limits": [
+    "NO_NATIVE_RANKING_IMPROVEMENT_MEASURED",
+    "NO_AUTOMATIC_RESEARCH_MEMORY_ROUTER_BINDING",
+    "NO_INDEPENDENT_ATTESTATION",
+    "NO_SEMANTIC_PASS_PROVEN_BY_SIGNATURES",
+    "NO_FULL_R5_OR_PARTNER_MEETING_ACCEPTANCE_PROVEN"
+  ]
+}
