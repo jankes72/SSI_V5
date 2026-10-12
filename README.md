@@ -9,12 +9,21 @@
 
 **A16 is installed on MSI and Universal Lab HTTP is ready, according to the operator's installation report.** The Director knowledge baseline now covers **48 topics in Polish and English**, with short, extended and technical answers: SSI, Router V10, Research Memory, six ISKRA actors, drones and Mother systems, humanoids, rescue research, BLOCKS, Hermes, Football World and future programmes.
 
-**Planujemy stronę, na której po przejściu z GitHuba i zalogowaniu będzie można porozmawiać z Dyrektorem o SSI. Deklaracja: 12 października 2026. Termin uruchomienia: do ustalenia.** The future web service is planned; no live conversation URL is announced here. A16's HTTP readiness does not establish live narration or public-service availability.
+**Planujemy stronę pierwszego kontaktu, na której po przejściu z GitHuba będzie można porozmawiać z Dyrektorem o SSI bez logowania, również z telefonu. Prywatna współpraca i centrum konferencyjne zachowają własny dostęp. Deklaracja: 12 października 2026. Termin uruchomienia: do ustalenia.** The future guest conversation service is planned; no live conversation URL is announced here. A16's HTTP readiness does not establish live narration or public-service availability.
 
 - **[A16 installation, implemented scope and recorded tests](RESULTS/UNIVERSAL_LAB_DIRECTOR_A16_PROGRESS_20261012.md)**
 - **[Full 48-topic Director knowledge — PL/EN, three depths](KNOWLEDGE/SSI_DIRECTOR_A16_PL_EN_20261012.md)**
 - **[Dated web Director declaration and delivery gates](SSI_V5_C4_ARCHITECTURE.md#web-director-declaration-20261012)**
 - [Long-term programme: core, ISKRA, robotics, worlds and external validation](SSI_V5_C4_ARCHITECTURE.md#long-term-programme-map-and-director-knowledge-coverage--2026-10-12)
+
+## Robert and ISKRA worlds — 2026-10-12
+
+Two complementary records describe the continuing Robert engineering line and the independent ISKRA research programme. They distinguish completed observations, implementation readiness, the operator's current bridge declaration and future acceptance gates.
+
+- **[Robert: desktop missions, Technology Radar, repair learning and operational applications](ROBERT/README.md)** — includes the drone-to-desktop mission methodology, planned ChatGPT/social-account tests, archive-based repair training, collective skill flow and the 50/40/10 economic policy.
+- **[ISKRA: worlds, Hermes generations, S1–S40, WEB and long-term learning](ROBERT/ISKRA_WORLDS_AND_LONG_TERM_RESEARCH.md)** — includes individual memory, Football World laboratories, own code, group/coupon evaluation, prospective outcomes, collaboration and affect-like research boundaries.
+
+The full records are in Polish with English reader summaries. Private code, teacher datasets, credentials and operational endpoints are not published.
 
 ## 60-second reviewer snapshot
 
@@ -552,7 +561,3 @@ EXTERNAL PARTNER DEFINES UNSEEN PROBLEM
 ```
 
 See [COLLABORATION_AND_PARTNER_ENTRY.md](COLLABORATION_AND_PARTNER_ENTRY.md).
-
-
-
-

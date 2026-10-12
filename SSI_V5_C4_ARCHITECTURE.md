@@ -259,7 +259,13 @@ Current counts and installation reports belong in the [2026-10-09 progress repor
 
 The MSI operator reports A16 installed and Universal Lab HTTP ready on 2026-10-12. Prepared bilingual knowledge is available through the existing narration/conversation layer; topic selection and the bounded session conversation path do not establish native skill execution. The gateway is required for generated answers where applicable, while browser speech reading is local to the participant's browser.
 
-This installation does not bind every Research Memory/Router/Notary connection or deploy NODE-01. Live narration, two-host interaction and the future authenticated web service remain separate acceptance scopes. See the [dated A16 report](RESULTS/UNIVERSAL_LAB_DIRECTOR_A16_PROGRESS_20261012.md), [prepared knowledge](KNOWLEDGE/SSI_DIRECTOR_A16_PL_EN_20261012.md) and [web service declaration](#web-director-declaration-20261012). The roles of Director_Final and Director_Czary remain distinct; this UI layer is not a new actor identity.
+This installation does not bind every Research Memory/Router/Notary connection or deploy NODE-01. Live narration, two-host interaction and the future guest conversation service remain separate acceptance scopes. See the [dated A16 report](RESULTS/UNIVERSAL_LAB_DIRECTOR_A16_PROGRESS_20261012.md), [prepared knowledge](KNOWLEDGE/SSI_DIRECTOR_A16_PL_EN_20261012.md) and [web service declaration](#web-director-declaration-20261012). The roles of Director_Final and Director_Czary remain distinct; this UI layer is not a new actor identity.
+
+### Robert and independent ISKRA development — 2026-10-12
+
+The [Robert record](ROBERT/README.md) distinguishes implemented desktop-mission mechanisms, Technology Radar's partial deployment, bounded operator observations and future repair/operational work. On 12 October the operator reports connected bridges and collective consolidation of Robert's validated competence. This is a current operator declaration, not a new exhaustive public transport or native-execution verification.
+
+The [complementary ISKRA/worlds record](ROBERT/ISKRA_WORLDS_AND_LONG_TERM_RESEARCH.md) preserves separate actor histories across S1–S40, WEB, Hermes generations, Football World and future repair curricula. Collective resource access does not silently merge experimental ISKRA memory. Independent comparisons and subsequent collaboration/consolidation remain distinct phases. This C4 document remains the canonical architecture map.
 
 ### Research Memory and evidence authority boundary
 
@@ -508,11 +514,11 @@ The map below keeps three different tracks visible: existing software mechanisms
 
 **State: PLANNED. Declaration date: 12 October 2026. Launch date: not yet set. Live service URL: not yet published.**
 
-**Deklaracja projektu.** Planujemy uruchomić stronę internetową połączoną z serwerem Dyrektora SSI. Użytkownik przejdzie do niej z odnośnika w tym repozytorium GitHub, zaloguje się i będzie mógł rozmawiać z Dyrektorem o SSI: jego architekturze, Iskrach, dronach, humanoidach, pamięci, kompetencjach, wynikach badań i dalszych planach. Dyrektor ma utrzymywać kontekst rozmówcy, wyjaśniać temat na wybranym poziomie szczegółowości, wskazywać źródła oraz rozróżniać działające funkcje, udokumentowane wyniki i plany. Punktem wyjścia jest 48 tematów A16, rozwijanych wraz z projektem. Zakładamy obsługę tekstu oraz głosu i tłumaczenia PL/EN po sprawdzeniu całej ścieżki rozmowy.
+**Deklaracja projektu.** Planujemy uruchomić stronę pierwszego kontaktu połączoną z serwerem Dyrektora SSI. Użytkownik przejdzie do niej z odnośnika w tym repozytorium GitHub lub polecenia i bez logowania, również na telefonie, będzie mógł rozmawiać z Dyrektorem o SSI: jego architekturze, Iskrach, dronach, humanoidach, pamięci, kompetencjach, wynikach badań i dalszych planach. Prywatna współpraca i istniejące centrum konferencyjne zachowają odrębny, uprawniony dostęp. Dyrektor ma utrzymywać kontekst rozmówcy, wyjaśniać temat na wybranym poziomie szczegółowości, wskazywać źródła oraz rozróżniać działające funkcje, udokumentowane wyniki i plany. Punktem wyjścia jest 48 tematów A16, rozwijanych wraz z projektem. Zakładamy obsługę tekstu oraz głosu i tłumaczenia PL/EN po sprawdzeniu całej ścieżki rozmowy.
 
 **To deklaracja wykonania kolejnego etapu, złożona 12 października 2026. Termin premiery zostanie opublikowany po potwierdzeniu gotowości usługi.** Obecny raport A16 potwierdza instalację na MSI i gotowość HTTP; nie jest ogłoszeniem dostępności publicznego serwera.
 
-**Project declaration.** We plan a web application connected to the SSI Director service, reached through a link from this GitHub repository. Authenticated users will be able to discuss SSI's architecture, ISKRA actors, robotics domains, memory, competences, research evidence and future work. Answers should retain the authorized conversation context, offer the requested depth, cite versioned sources and distinguish implemented functions, bounded evidence and plans. The initial knowledge baseline is A16's 48 topics, expanded as the programme evolves. Text interaction, speech and Polish/English translation are in scope, with each live path verified before its availability is announced.
+**Project declaration.** We plan a first-contact web application connected to the SSI Director service, reached through this repository or a referral. Guests will be able to discuss SSI without logging in, including on a phone. Private collaboration and the existing conference centre retain separate authorized access. Answers should retain the permitted conversation context, offer the requested depth, cite versioned sources and distinguish implemented functions, bounded evidence and plans. The initial knowledge baseline is A16's 48 topics, expanded as the programme evolves. Text interaction, speech and Polish/English translation are in scope, with each live path verified before its availability is announced.
 
 ### Relationship to the existing system
 
@@ -520,16 +526,16 @@ GitHub remains the public documentation, evidence and navigation entry point. Th
 
 The web interface will connect through existing SSI boundaries and preserve the distinct Director_Final and Director_Czary responsibilities. This declaration creates no duplicate actor, resource registry, Router or memory system. Authorized context and source retrieval should use existing mechanisms where actually bound; qualified native execution requires its existing gates and explicit evidence. The current prepared knowledge path remains valid for sourced explanations.
 
-Participant-specific context stays separated from shared meeting context. Long-term memory use and retention require an explicit scope and the existing permissions. Public answers use approved project knowledge and public evidence; logging into the conversation interface does not grant unrestricted mission or host-control authority.
+Participant-specific context stays separated from shared meeting context. Long-term memory use and retention require an explicit scope and the existing permissions. Public guest answers use approved project knowledge and public evidence; guest conversation or later private login does not grant unrestricted mission or host-control authority.
 
 ### Delivery sequence and acceptance evidence
 
 | Step | Planned output | Evidence before advancing |
 |---|---|---|
 | 1. Knowledge and service contract | Versioned 48-topic baseline, source refresh rules, existing actor/gateway interfaces and conversation permissions | Coverage review and identified integration contracts; no invented endpoint |
-| 2. Restricted web pilot | Authenticated text conversation through the chosen application service | Real gateway/response checks, user/session isolation, source attribution, failure states and resource limits |
+| 2. Bounded guest web pilot | Public first-contact text conversation without login through the chosen application service | Real gateway/response checks, guest-session isolation, approved source access, failure states and resource limits |
 | 3. Bilingual conversation | PL/EN translation, context continuity and optional voice through declared supported paths | Real-browser/audio tests, proper-name preservation, interruption/duplicate handling and measured latency |
-| 4. Repository entry point | Clearly labeled link from the GitHub README to the verified service | Reachable authenticated service, operator readiness decision and published test scope |
+| 4. Repository entry point | Clearly labeled link from the GitHub README to the verified service | Reachable guest service, separate private-access boundary, operator readiness decision and published test scope |
 | 5. Ongoing operation | Versioned knowledge growth and reviewed capabilities as SSI develops | Dated evidence for updates, preserved failure history and no unsupported skill promotion |
 
 The declaration fixes the intent and acceptance sequence, not a calendar launch promise. Hosting, the public URL and an availability date will be recorded once chosen and verified. The GitHub publication performs no host deployment, service exposure, DNS change or model call. See the [A16 installation report](RESULTS/UNIVERSAL_LAB_DIRECTOR_A16_PROGRESS_20261012.md) for what is already reported installed and the [knowledge catalog](KNOWLEDGE/SSI_DIRECTOR_A16_PL_EN_20261012.md) for the prepared baseline.
@@ -592,4 +598,3 @@ Partnership, funding and consortium documents can plan roles, resources, deliver
 - Give Director users source-backed explanations at the requested depth; distinguish historical result, current verified state and next planned work.
 - Do not use meeting narration, translated text or a generated roadmap as proof of native skill execution, training completion or a new laboratory result.
 - Keep unresolved questions visible. A later correction becomes a new version and preserves the earlier record.
-
