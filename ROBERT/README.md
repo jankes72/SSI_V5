@@ -1,149 +1,171 @@
-# Robert — obsługa komputera, Radar Technologii i uczenie napraw
+# Robert — Desktop Operation, Technology Radar and Repair Learning
 
-**Data:** 12 października 2026.  
-**Autor i właściciel projektu:** Paweł Jankiewicz (`jankes72`).  
-**Zakres:** ciągła linia inżynieryjna Roberta, przeniesienie schematu misji do pulpitu, integracja z SSI oraz rozwijany program napraw.  
-**Publikacja:** opis architektury, statusów i badań; prywatny kod, dane, pamięć, poświadczenia i dostęp wykonawczy pozostają poza repozytorium.
+**Date:** 12 October 2026.  
+**Project author and owner:** Paweł Jankiewicz (`jankes72`).  
+**Scope:** Robert's continuing engineering programme, the transfer of mission structure to desktop operation, SSI integration and the developing repair curriculum.  
+**Public scope:** architecture, implementation status and research. Proprietary code, datasets, agent memory, credentials and execution access remain outside this repository.
 
-Robert jest wykonawczą i inżynieryjną częścią SSI. Jego obecnym zadaniem rozwojowym jest opanowanie obserwacji ekranu, myszy, klawiatury i pracy w aplikacjach. Kolejne zastosowania obejmują obsługę zadań SSI, badania nowych technologii, diagnozowanie usterek, przygotowanie napraw i użycie zweryfikowanych kompetencji w praktycznych projektach.
+## Executive summary
 
-**English reader summary:** Robert is SSI's continuing engineering and execution line. This record separates implemented desktop-mission mechanisms, bounded observations, the operator's current integration declaration, and planned repair training and operational applications. It does not announce a completed general-purpose computer operator or a profitable financial system.
+### 1. Robert's role and development
 
-Uzupełnienie: [Iskry, światy i długoterminowy program uczenia](ISKRA_WORLDS_AND_LONG_TERM_RESEARCH.md). Główną mapą systemu pozostaje [kanoniczna architektura C4](../SSI_V5_C4_ARCHITECTURE.md); ten opis rozwija zakres Roberta bez tworzenia drugiej mapy architektury.
+Robert is SSI's continuing engineering and execution agent. His immediate development goal is to observe the screen, use the mouse and keyboard, and complete tasks in applications. His existing history is preserved; experimental resets of BODY_FROZEN or ISKRA agents do not reset canonical Robert. The desktop programme transfers the mission structure used in drone laboratories—observation, decision, action, verification and recording—to a new interface.
 
-## 1. Ciągłość Roberta i zakres obecnych twierdzeń
+### 2. Desktop capabilities and acceptance tests
 
-Robert zachowuje własną historię inżynieryjną. Przygotowanie kontrolowanych, oczyszczonych lub zamrożonych gałęzi BODY_FROZEN i Iskier nie oznacza wyzerowania kanonicznego Roberta. [Zapis ciągłości](../ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md) zachowuje tę granicę oraz wcześniejsze wyniki TEST 1–5.
+Desktop MicroSpace, Vision, Mission Navigator and the input adapter provide the components for screen interpretation and controlled interaction. A local research mission completed 10/10 waypoints and recorded 24 signed events, without GUI actions, network access or model calls. That result does not establish successful desktop control. The latest inspected GUI diagnostic stopped before taking any GUI action. Planned acceptance tests progress from a ChatGPT greeting to creating a project, logging into Robert's own social accounts and publishing specified content.
 
-Statusy używane w tym opisie:
+### 3. Technology research and repair training
 
-| Status | Znaczenie |
+Technology Radar is partially deployed. It has retrieved real technical sources and recorded local observations; promoting this material into a qualified skill requires further experiments and review. A developing repair curriculum will use the author's archive of development, repair and laboratory packages. Archive extraction, LEGO Decomposer, exercise construction, diagnosis, repair, regression testing and qualification are separate steps.
+
+### 4. Collective learning and individual histories
+
+On 12 October, the operator reported that the bridges were connected and Robert's validated competencies were being consolidated into the SSI collective. This is an operator declaration about the private installation, rather than a complete public audit of every bridge. ISKRA agents retain their own research histories. Shared tools, exchanged artifacts and incorporation into an agent's personal competence state are recorded separately.
+
+### 5. Practical applications and external contact
+
+Planned operational applications include e-commerce, software projects and SEO portals. The author's proposed allocation of profit after operating costs is 50% to the author, 40% to SSI operating and investment capital, and 10% to infrastructure. Financial execution remains a planned application, with separate capital and risk limits. A public Director interface is also planned for initial enquiries without login; it does not provide access to Robert's controls.
+
+[Continue to the full documentation](#full-documentation).  
+Related research: [ISKRA Agents, Worlds and Long-Term Learning](ISKRA_WORLDS_AND_LONG_TERM_RESEARCH.md).  
+System map: [canonical C4 architecture](../SSI_V5_C4_ARCHITECTURE.md). This document expands Robert's scope without creating a second architecture map.
+
+## Full documentation
+
+### 1. Continuity and evidence status
+
+Robert retains his engineering history. Preparing controlled, cleaned or frozen experimental branches of BODY_FROZEN and the ISKRA agents does not reset canonical Robert. The [continuity record](../ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md) preserves this distinction and the earlier TEST 1–5 results.
+
+The following status vocabulary applies throughout this document:
+
+| Status | Meaning |
 | --- | --- |
-| Udokumentowane / wykonane w określonym zakresie | Istnieje wskazany wynik lub obserwacja; jego zakres pozostaje ograniczony do danego testu |
-| Zaimplementowane / odbiór w toku | Kod lub komponent istnieje, ale pełny rezultat na docelowym środowisku wymaga własnego sprawdzenia |
-| Zgłoszone przez operatora | Aktualna deklaracja autora o prywatnej instalacji; nie zastępuje osobnego eksportu dowodów |
-| Planowane | Uzgodniony kierunek lub następny test, bez przypisywania mu ukończenia |
+| Documented / completed within a defined scope | A referenced result or observation exists. Its claim remains limited to the particular test. |
+| Implemented / acceptance pending | Code or a component exists, but the complete result requires verification in the target environment. |
+| Operator-reported | The author reports the current state of the private installation. This does not replace a separate evidence export. |
+| Planned | An agreed direction or next test, without a claim of completion. |
 
-### Stan Roberta zebrany 12 października
+#### Status reviewed on 12 October
 
-| Obszar | Udokumentowany stan i zakres |
+| Area | Recorded status and scope |
 | --- | --- |
-| Kanoniczna linia Roberta | Zachowana ciągłość pamięci, kompetencji i wcześniejszych testów; nie jest nową pustą kopią eksperymentalną |
-| Desktop MicroSpace R3 | Zaimplementowane rozpoznawanie pulpitu, ograniczone misje GUI, próby uczenia i eksport kandydatów; samo istnienie kodu nie poświadcza udanej misji na komputerze |
-| Vision V5 | Raport operatora z 11 października: 35,5461% zmiany obrazu oraz śledzenie regionów; region obrazu nie jest automatycznie potwierdzoną rolą kontrolki |
-| Memory / lokalny Notariusz V6 | W odczytanym raporcie: jedna lokalnie podpisana obserwacja; brak nowej zatwierdzonej kompetencji pulpitu w tym wyniku |
-| Mission Navigator V9 | Rzeczywista misja badawcza na lokalnej pamięci: 10/10 etapów, 24 podpisane zdarzenia, bez GUI, sieci i wywołań modeli; utworzony materiał kandydacki nie jest zatwierdzonym skillem |
-| Misja GUI V9R1 | Kod przygotowany; ostatnia przejrzana diagnostyka z 11 października zatrzymała się na `STOP_NOT_DELL_ONLY`, przy dwóch wykrytych monitorach i zerowej liczbie działań GUI |
-| Mission Control R10 | Przygotowana obsługa odczytu, weryfikacji dowodów, lokalnych misji badawczych i podglądu w istniejącym Control Center; udany test panelu nie ustanawia sukcesu sterowania GUI |
-| Radar Technologii | Częściowo wdrożony; potwierdzone pozyskiwanie materiałów i lokalne obserwacje, pełny cykl do nowej kwalifikowanej kompetencji wymaga własnych wyników |
-| Mosty i konsolidacja | Operator 12 października zgłasza połączenie mostów i przepływ zweryfikowanych kompetencji Roberta do kolektywu; indywidualny stan badawczy Iskier pozostaje odrębny |
-| Szkolenie z archiwum napraw | Nowy program do powiązania z istniejącymi Blocks, Decomposerem, laboratoriami i kwalifikacją; pełnego ukończenia nie ogłoszono |
+| Canonical Robert | Continuity of memory, competencies and earlier tests is preserved. This is not a new, empty experimental copy. |
+| Desktop MicroSpace R3 | Desktop recognition, bounded GUI missions, learning attempts and candidate export are implemented. The existence of code alone does not establish a successful mission on the computer. |
+| Vision V5 | The operator's 11 October report records a 35.5461% image change and region tracking. An image region is not automatically a verified UI control with a known semantic role. |
+| Memory / local Notary V6 | The inspected report records one locally signed observation, with no newly approved desktop competence in that result. |
+| Mission Navigator V9 | An executed research mission using local memory completed 10/10 waypoints and recorded 24 signed events, without GUI actions, network access or model calls. Its candidate material is not an approved skill. |
+| GUI mission V9R1 | Code is prepared. The latest inspected diagnostic, dated 11 October, stopped at `STOP_NOT_DELL_ONLY`, with two monitors detected and zero GUI actions. |
+| Mission Control R10 | Reading, evidence verification, local research missions and previews in the existing Control Center are prepared. A successful panel test does not establish successful GUI control. |
+| Technology Radar | Partially deployed. Source acquisition and local observations are documented; the complete path to a newly qualified competence requires its own results. |
+| Bridges and consolidation | On 12 October, the operator reported connected bridges and the flow of Robert's validated competencies into the collective. Individual ISKRA research states remain separate. |
+| Archive-based repair training | A new programme to connect the archive with existing Blocks, Decomposer, laboratories and qualification mechanisms. Full completion has not been announced. |
 
-Wyniki V5/V6/V9 są streszczeniem materiałów i raportów operatora z prywatnych paczek, a nie niezależnym odtworzeniem ich podpisanych artefaktów. Późniejsza deklaracja połączenia mostów nie usuwa wcześniejszych STOP ani nie dopisuje brakującego wyniku GUI. Bieżący sukces pulpitu wymaga nowego, datowanego raportu wykonania.
+The V5/V6/V9 entries summarise materials and operator reports from private packages. They are not an independent reproduction of the signed artifacts. A later declaration that the bridges are connected does not erase earlier STOP outcomes or supply a missing GUI result. A current desktop success requires a new, dated execution report.
 
-## 2. Pierwszy test przeniesienia schematu misji z dronów
+### 2. The initial drone-to-desktop mission transfer
 
-Pierwszym głównym testem tego kierunku jest przeniesienie organizacji misji znanej z laboratoriów dronowych do nowej domeny: pulpitu komputera. Zaimplementowano prowadzenie misji przez kolejne etapy obserwacji, decyzji, działania, kontroli i zapisu.
+The first principal test in this engineering direction transfers the mission organisation used in drone laboratories to a new domain: the computer desktop. The implemented structure advances through observation, decision, action, verification and recording.
 
-| Funkcja w domenie dronowej | Odpowiednik w domenie pulpitu |
+| Function in the drone domain | Desktop counterpart |
 | --- | --- |
-| Obserwacje i telemetria | Ekran, geometria okien i informacje o kontrolkach |
-| Mapa otoczenia | Desktop MicroSpace |
-| Plan i punkty misji | Etapy Mission Navigatora |
-| Adapter wykonawczy | Mysz i klawiatura przez systemowy mechanizm dostępu |
-| Kontrola skutku | Fokus, zawartość pola i obserwowana zmiana stanu |
-| Historia misji | Podpisane etapy, pamięć i raport |
+| Observation and telemetry | Screen state, window geometry and UI control information |
+| Environment map | Desktop MicroSpace |
+| Mission plan and waypoints | Mission Navigator stages |
+| Execution adapter | Mouse and keyboard through the operating system's access mechanism |
+| Outcome verification | Focus, field content and observed state changes |
+| Mission history | Signed stages, memory and a report |
 
-To wykonane przeniesienie struktury sterowania i przygotowanie adaptera domeny. Nie ustanawia jeszcze ponownego użycia wyuczonych mikrosieci dronowych, pełnej autonomii pulpitu ani fizycznej walidacji drona. Wyniki domenowe zachowują własne kryteria. [Wcześniejsze wyniki dronów i humanoidów](../RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md) oraz [Dual Mother](../RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md) pozostają odrębnymi pomiarami software-lab.
+This represents an implemented transfer of the control structure and preparation of the domain adapter. It does not yet establish reuse of learned drone micronetworks, general desktop autonomy or physical drone validation. Domain results retain their own acceptance criteria. The [earlier drone and humanoid results](../RESULTS/V4_S1_S10_AND_POST_S10_RESULTS_20260917.md) and [Dual Mother](../RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md) remain separate software-laboratory measurements.
 
-## 3. Oczy, orientacja, Navigator i ręce
+### 3. Perception, orientation, navigation and input
 
-Desktop MicroSpace opisuje ekrany, okna, aplikacje i elementy interfejsu. Vision wnosi obserwację obrazową; mechanizmy dostępności dostarczają ról i geometrii kontrolek. Navigator prowadzi misję, a adapter wejścia wykonuje konkretny ruch myszy lub klawiatury.
+Desktop MicroSpace describes screens, windows, applications and interface elements. Vision contributes image observations; accessibility mechanisms provide control roles and geometry. Navigator manages the mission, while the input adapter executes a particular mouse or keyboard action.
 
-W przygotowanej misji ChatGPT Navigator odnajduje właściwe okno, identyfikuje jednoznaczny edytor, ponownie sprawdza cel po przyznaniu dostępu, klika i weryfikuje fokus. Następnie wpisuje tekst, sprawdza szkic i wykonuje jednorazowe wysłanie. Plus i mikrofon służą jako punkty orientacyjne; nie są celem kliknięcia tej misji. Niepewny etap zatrzymuje przebieg, a zapis intencji przed działaniem ogranicza powtórzenie skutku po przerwaniu procesu.
+In the prepared ChatGPT mission, Navigator locates the correct window, identifies an unambiguous editor, rechecks the target after access is granted, clicks and verifies focus. It then enters text, checks the draft and attempts a single send. The plus and microphone controls serve as landmarks; they are not click targets for this mission. An uncertain stage stops execution. Recording an intent before acting helps prevent duplicate effects after an interruption.
 
-Kod V9 prowadzi 11 etapów od sprawdzenia środowiska do zamknięcia misji. Rewizja V9R1 ma ograniczenie do jednego Della; starsze warianty R3/V8 obejmowały dwa monitory. Są to wersjonowane warunki konkretnych testów, a nie dowód obsługi dowolnego układu ekranów.
+V9 code defines 11 stages from the environment check to mission closure. V9R1 is restricted to one Dell monitor; earlier R3/V8 variants covered two monitors. These are versioned conditions for particular tests, rather than evidence of support for arbitrary screen configurations.
 
-Docelowa kompetencja obejmuje rozpoznawanie zmienionego układu interfejsu i wykonanie zadania z kontrolą rezultatu. Powtórzenie znanych współrzędnych samo nie potwierdza generalizacji.
+The target competence includes recognising a changed interface layout and completing a task with outcome verification. Replaying known coordinates alone does not establish generalisation.
 
-## 4. Kolejne testy obsługi komputera
+### 4. Desktop acceptance tests
 
-| Test | Cel | Dowód wymagany do zaliczenia |
+| Test | Objective | Evidence required for acceptance |
 | --- | --- | --- |
-| 1. Powitanie w ChatGPT | W istniejącej rozmowie napisać „Cześć, jestem Robert.” | Jednoznaczny cel, działanie myszy/klawiatury, poprawny tekst i potwierdzona obecność wiadomości |
-| 2. Nowy projekt w ChatGPT | Przejść przez interfejs tworzenia projektu | Powstały projekt i jego tożsamość; samo kliknięcie przycisku jest etapem pośrednim |
-| 3. Facebook Roberta | Zalogować się do własnego konta Roberta | Potwierdzona tożsamość konta i stan sesji, z zachowaniem prywatności poświadczeń |
-| 4. Instagram Roberta | Zalogować się do własnego konta Roberta | Analogiczne sprawdzenie konta oraz sesji |
-| 5. Własne komentarze i publikacje | Przygotować i opublikować własną treść w określonym zakresie zadania | Treść, docelowe miejsce, potwierdzenie publikacji i historia wykonania |
+| 1. ChatGPT greeting | Enter “Cześć, jestem Robert.” (“Hi, I'm Robert.”) in an existing conversation. | An unambiguous target, mouse/keyboard execution, correct text and confirmation that the message is present. |
+| 2. New ChatGPT project | Complete the project-creation interface. | The resulting project and its identity. A button click is only an intermediate step. |
+| 3. Robert's Facebook account | Log into Robert's own account. | Verified account identity and session state, while keeping credentials private. |
+| 4. Robert's Instagram account | Log into Robert's own account. | Equivalent verification of account identity and session state. |
+| 5. Original comments and posts | Prepare and publish original content within a specified task scope. | The content, destination, publication confirmation and execution history. |
 
-Testy 2–5 są planowane. Pełnego zaliczenia testu 1 nie potwierdza ostatni odczytany raport. Stan `SEND_KEYS_SENT_UNVERIFIED` oznacza wysłanie polecenia klawiatury; dostarczenie wiadomości wymaga dodatkowego potwierdzenia. Hasła, tokeny, prywatne rozmowy i surowe obrazy nie należą do publicznego raportu.
+Tests 2–5 are planned. The latest inspected report does not confirm full acceptance of test 1. `SEND_KEYS_SENT_UNVERIFIED` means that a keyboard command was sent; delivery of the message requires additional confirmation. Passwords, tokens, private conversations and raw images are excluded from the public report.
 
-## 5. Radar Technologii i nowe moduły
+### 5. Technology Radar and new modules
 
-Radar jest częściowo wdrożonym źródłem materiałów do dalszych badań. Raport z 10 października potwierdzał 13/13 testów adaptera, odczyt źródeł MAVSDK, Nav2 i asyncua, pobranie rzeczywistych plików oraz zapis trzech lokalnych obserwacji. Lokalny eksport miał status proponowanego materiału, nie nowej dopuszczonej kompetencji.
+Technology Radar is a partially deployed source of material for further research. The 10 October report records 13/13 adapter tests, access to MAVSDK, Nav2 and asyncua sources, retrieval of real files, and three local observations. The local export was proposed material, rather than a newly admitted competence.
 
-Docelowy cykl obejmuje wykrycie potrzeby, pozyskanie źródła z wersją, ocenę zależności i zgodności, przygotowanie eksperymentu, wykonanie, recenzję, regresję oraz kwalifikację. Robert ma wspierać także łączenie kilku technologii w rozwiązanie konkretnego problemu. Znaleziony moduł wchodzi najpierw jako kandydat; wynik eksperymentu określa dalsze użycie.
+The intended cycle comprises identifying a need, acquiring a versioned source, assessing dependencies and compatibility, preparing and executing an experiment, review, regression testing and qualification. Robert is also intended to support combining several technologies to solve a particular problem. A discovered module enters as a candidate; experimental results determine its subsequent use.
 
-Ten kierunek rozwija istniejące [Eyes/Hands i pamięć inżynieryjną CEPA](../evidence/DIRECTOR_AUTONOMOUS_EVOLUTION_AND_ROBERT_EYES_HANDS.md), zamiast ustanawiać drugą organizację rozwoju SSI.
+This direction extends the existing [Eyes/Hands and CEPA engineering memory](../evidence/DIRECTOR_AUTONOMOUS_EVOLUTION_AND_ROBERT_EYES_HANDS.md). It does not create a separate SSI development organisation.
 
-## 6. Archiwum napraw i potrzebne połączenia
+### 6. Repair archives and required connections
 
-Autor deklaruje zgromadzenie archiwum rzędu kilkudziesięciu tysięcy paczek rozwoju, napraw i laboratoriów. Dokładny inwentarz, duplikaty, wersje i liczba niezależnych problemów wymagają osobnego spisu. Liczba plików lub paczek nie jest liczbą kwalifikowanych umiejętności.
+The author reports an archive on the order of tens of thousands of development, repair and laboratory packages. The exact inventory, duplicate count, versions and number of independent problems require a separate catalogue. A count of files or packages is not a count of qualified skills.
 
-Istniejący LEGO Decomposer, nazywany roboczo dekompresorem, rozkłada materiał na opisane elementy i zależności. Rozpakowanie ZIP/7z oraz analiza zawartości są osobnymi etapami. Archiwalna poprawka musi zachować informację o wersji i problemie, dla których powstała.
+The existing LEGO Decomposer, informally referred to as the decompressor, breaks material into described elements and dependencies. ZIP/7z extraction and content analysis are separate stages. An archived fix must retain the version and problem for which it was created.
 
-| Połączenie | Rola w rozwijanym programie |
+| Connection | Role in the developing programme |
 | --- | --- |
-| Katalog i rozpakowanie paczek | Tożsamość materiału, wersja, pochodzenie i powiązania między poprawkami |
-| Decomposer / Blocks | Kontrakty, zależności, wejścia, wyjścia i kandydaci do ponownego użycia |
-| Przygotowanie ćwiczeń | Odtworzenie usterki, warunków początkowych i kryteriów naprawy |
-| Robert i Iskry | Hipotezy, diagnoza, kod i porównywalne próby rozwiązania |
-| Rejestr laboratoriów i adaptery | Dobór rzeczywistego środowiska oraz odebranie jego rezultatu |
-| Research Memory / CEPA | Pamięć objawów, przyczyn, skutecznych i nieskutecznych napraw |
-| Recenzja, testy i regresja | Ocena poprawki w docelowym zakresie i kontrola wpływu na pozostałe funkcje |
-| Konsolidacja i odtwarzanie | Dopuszczenie nowej kompetencji oraz zachowanie możliwości cofnięcia zmiany |
+| Package catalogue and extraction | Material identity, version, provenance and relationships between fixes |
+| Decomposer / Blocks | Contracts, dependencies, inputs, outputs and reuse candidates |
+| Exercise preparation | Reproduction of the defect, initial conditions and repair criteria |
+| Robert and ISKRA agents | Hypotheses, diagnosis, code and comparable solution attempts |
+| Laboratory registry and adapters | Selection of the actual environment and collection of its result |
+| Research Memory / CEPA | Memory of symptoms, causes, successful repairs and unsuccessful repairs |
+| Review, testing and regression | Evaluation within the target scope and checks for effects on other functions |
+| Consolidation and recovery | Admission of a new competence while preserving rollback capability |
 
-Szkolenie ma odtwarzać problem, a następnie sprawdzać samodzielną diagnozę i naprawę na nowych wariantach. Sam odczyt gotowej odpowiedzi z archiwum nie ustanawia umiejętności naprawy. Wynik lokalnego porównania, natywny retest, kwalifikacja i aktywacja są oddzielnymi zdarzeniami, co pokazuje [istniejący zapis napraw](../AKTUALNA_NAPRAWA.md).
+Training should first reproduce a problem, then evaluate independent diagnosis and repair on new variants. Reading a ready-made answer from the archive alone does not establish repair competence. A local comparison result, a retest in the native environment, qualification and activation are separate events, as illustrated by the [existing repair record](../AKTUALNA_NAPRAWA.md).
 
-## 7. Laboratoria, Iskry i przepływ kompetencji
+### 7. Laboratories, ISKRA agents and competence flow
 
-Robert ma korzystać z całego dostępnego zaplecza laboratoriów SSI przez ich rejestr i właściwe adaptery. Dostęp obejmuje znajomość celu laboratorium, jego danych, obsługiwanych operacji, wersji i sposobu oceny. Laboratorium może działać na innym węźle; dostęp nie wymaga skopiowania wszystkich środowisk do Roberta.
+Robert is intended to use the available SSI laboratory infrastructure through its registry and the appropriate adapters. Access includes the laboratory's purpose, data, supported operations, version and evaluation method. A laboratory may run on another node; access does not require copying every environment into Robert.
 
-Podstawą są [Blocks, META-BLOCKS i laboratoria Dyrektora](../SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md), [ZeroLab](../SYSTEM/ZERO_LAB_V2_ARCHITECTURE_AND_AUTHORITY_20261002.md), laboratoria domenowe oraz Świat Piłki. Każde rzeczywiste połączenie i wykonanie zachowuje własny status.
+The foundations are [Blocks, META-BLOCKS and Director laboratories](../SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md), [ZeroLab](../SYSTEM/ZERO_LAB_V2_ARCHITECTURE_AND_AUTHORITY_20261002.md), domain laboratories and Football World. Each actual connection and execution retains its own status.
 
-**Deklaracja operatora z 12 października:** mosty są połączone, Robert ma możliwość współpracy z Iskrami, a jego zweryfikowane kompetencje są konsolidowane do kolektywu. Poszczególne publiczne twierdzenia o transferze powinny wskazywać źródłowy skill, wersję, odbiorcę, decyzję konsolidacji i test docelowy. Deklaracja nie zastępuje pełnego inwentarza wszystkich mostów.
+**Operator declaration, 12 October:** the bridges are connected, Robert can collaborate with the ISKRA agents, and his validated competencies are being consolidated into the collective. Each public transfer claim should identify the source skill, version, recipient, consolidation decision and target test. This declaration does not replace a complete inventory of all bridges.
 
-Iskry zachowują własny stan rozwoju. Dostęp do wspólnego narzędzia, udostępnienie artefaktu i włączenie kompetencji do osobistego stanu są różnymi zdarzeniami. Podstawowa obserwacyjna kohorta nie otrzymuje po cichu każdej naprawy Roberta. Wspólne szkolenie naprawcze lub konsolidacja mogą stanowić jawny, osobny etap; nie nadpisują zamrożonych stanów ani wcześniejszych historii.
+ISKRA agents retain their own development states. Access to a shared tool, exchange of an artifact and incorporation of a competence into an individual's state are different events. The primary observational cohort does not silently receive every Robert repair. Joint repair training or consolidation may form an explicit, separate stage; neither overwrites frozen baselines or earlier histories.
 
-DIRECTOR Final, Dyrektor Czary, Czara, Robert, asystentka Charlie oraz dyrektor R&D Charlie zachowują odrębne role. Podobna nazwa nie ustanawia wspólnej tożsamości wykonawczej.
+DIRECTOR Final, Director Czara, Czara, Robert, assistant Charlie and R&D Director Charlie retain distinct roles. Similar names do not establish a shared execution identity.
 
-## 8. Zastosowania operacyjne i finansowanie
+### 8. Operational applications and funding
 
-Planowane działy zarobkowe obejmują e-commerce/dropshipping, projekty programistyczne i portale SEO. Robert ma rozwijać obsługę potrzebnych aplikacji i procesów oraz utrzymanie ich modułów.
+Planned revenue-generating activities include e-commerce/dropshipping, software projects and SEO portals. Robert is intended to develop operation of the required applications and processes, together with maintenance of their modules.
 
-Autor przyjmuje politykę podziału wypracowanego zysku po kosztach wykonania pracy:
+The author proposes the following allocation of profit after the costs of carrying out the work:
 
-| Udział | Przeznaczenie |
+| Share | Allocation |
 | --- | --- |
-| 50% | Dochód autora |
-| 40% | Kapitał operacyjny i inwestycyjny SSI |
-| 10% | Rozwój infrastruktury: modele/LLM, komputery, serwery, pamięć i zasoby obliczeniowe |
+| 50% | Income for the author |
+| 40% | SSI operating and investment capital |
+| 10% | Infrastructure development: models/LLMs, computers, servers, storage and computing resources |
 
-Docelowy dział kapitałowy obejmuje giełdę, Forex oraz osobno ewidencjonowane zakłady piłkarskie, z określonymi limitami środków i ryzyka. To deklarowany kierunek, nie aktualna prognoza dochodu, dowód rentowności lub ukończonego wykonawcy finansowego. Badawcze Iskry nie otrzymują automatycznej władzy nad rzeczywistym kapitałem przez wynik w świecie eksperymentalnym.
+The planned capital-management activity includes equities, Forex and separately accounted football betting, with defined capital and risk limits. This is a stated direction, rather than a current income forecast, profitability result or completed financial executor. Research ISKRA agents do not automatically gain authority over real capital through an experimental-world result.
 
-Program Świata Piłki obejmuje własny kod, modele, grupy, kombinacje, stawki i rozliczenie rezultatów; opisuje go [drugi dokument](ISKRA_WORLDS_AND_LONG_TERM_RESEARCH.md#5-świat-piłki-i-hermes).
+Football World covers original code, models, groups, combinations, stakes and outcome settlement. It is described in the [companion document](ISKRA_WORLDS_AND_LONG_TERM_RESEARCH.md#5-football-world-and-hermes).
 
-## 9. Kontakt zewnętrzny i kolejne dowody
+### 9. External contact and subsequent evidence
 
-Planowana publiczna strona z Dyrektorem ma umożliwiać pierwszy kontakt również z telefonu, bez logowania. Prywatny projekt i centrum konferencyjne Universal Lab zachowują własny dostęp. Rozmowa informacyjna nie udostępnia sterowania Robertem.
+A planned public Director interface will support initial contact from a phone or other device without login. The private project and Universal Lab conference centre retain their own access controls. An informational conversation does not expose Robert's controls.
 
-Kolejne raporty Roberta powinny wiązać zadanie, wersję wykonawcy, obserwacje, działania, rezultat, przyczynę STOP, źródła kompetencji i zakres transferu. Osobno należy publikować odbiór GUI, nowe naprawy, kwalifikację skilli oraz wykorzystanie technologii z Radaru. Pozytywny wynik w jednym z tych zakresów nie zamyka pozostałych.
+Subsequent Robert reports should connect the task, executor version, observations, actions, outcome, STOP reason, competence sources and transfer scope. GUI acceptance, new repairs, skill qualification and use of Radar-sourced technologies should be reported separately. A positive result in one area does not complete the others.
 
-### Podstawa tego opisu
+#### Basis of this record
 
-- [Ciągłość kanonicznego Roberta](../ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md).
-- [Eyes/Hands, Radar i pamięć inżynieryjna](../evidence/DIRECTOR_AUTONOMOUS_EVOLUTION_AND_ROBERT_EYES_HANDS.md).
-- [Blocks i laboratoria](../SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md).
-- [Aktualny indeks twierdzeń](../CURRENT_TRUTH_INDEX.md) i [przykłady napraw](../AKTUALNA_NAPRAWA.md).
-- Materiały prywatne przejrzane do tego zapisu: Desktop MicroSpace R3, Vision/Memory V5/V6, Mission Navigator V9/V9R1, Mission Control R10, przekazanie Radar/Vision/Desktop z 10 października oraz raporty operatora z 11 października. Paczki i surowe dane nie są publikowane.
-- Deklaracje autora z 12 października: bieżące połączenie mostów, polityka konsolidacji, zakres archiwum napraw, kolejne testy pulpitu i plan ekonomiczny.
+- [Canonical Robert continuity](../ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md).
+- [Eyes/Hands, Radar and engineering memory](../evidence/DIRECTOR_AUTONOMOUS_EVOLUTION_AND_ROBERT_EYES_HANDS.md).
+- [Blocks and laboratories](../SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md).
+- [Current claim index](../CURRENT_TRUTH_INDEX.md) and [repair examples](../AKTUALNA_NAPRAWA.md).
+- Private materials reviewed for this record: Desktop MicroSpace R3, Vision/Memory V5/V6, Mission Navigator V9/V9R1, Mission Control R10, the Radar/Vision/Desktop handoff of 10 October and operator reports of 11 October. Packages and raw data are not published.
+- Author declarations of 12 October: current bridge connectivity, consolidation policy, repair-archive scope, subsequent desktop tests and the economic plan.

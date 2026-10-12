@@ -23,7 +23,7 @@ Two complementary records describe the continuing Robert engineering line and th
 - **[Robert: desktop missions, Technology Radar, repair learning and operational applications](ROBERT/README.md)** — includes the drone-to-desktop mission methodology, planned ChatGPT/social-account tests, archive-based repair training, collective skill flow and the 50/40/10 economic policy.
 - **[ISKRA: worlds, Hermes generations, S1–S40, WEB and long-term learning](ROBERT/ISKRA_WORLDS_AND_LONG_TERM_RESEARCH.md)** — includes individual memory, Football World laboratories, own code, group/coupon evaluation, prospective outcomes, collaboration and affect-like research boundaries.
 
-The full records are in Polish with English reader summaries. Private code, teacher datasets, credentials and operational endpoints are not published.
+Both records begin with a five-part executive summary, followed by the full English documentation. Private code, teacher datasets, credentials and operational endpoints are not published.
 
 ## 60-second reviewer snapshot
 
