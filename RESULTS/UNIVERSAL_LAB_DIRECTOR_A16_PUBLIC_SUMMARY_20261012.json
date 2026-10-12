@@ -1,0 +1,129 @@
+{
+  "publication_date": "2026-10-12",
+  "scope": "UNIVERSAL_LAB_DIRECTOR_A16_ON_MSI",
+  "evidence_basis": {
+    "installation": "OPERATOR_SUPPLIED_TERMINAL_OUTPUT",
+    "package_verification": "RECORDED_OFFLINE_BUILD_TESTS",
+    "independent_live_host_verification": false,
+    "raw_private_logs_published": false
+  },
+  "package": {
+    "filename": "SSI_DYREKTOR_A16_WIEDZA_I_PLANY_20261012.zip",
+    "sha256": "82dce7eda4d2a4dd89bf924cffdb1a5dbfd229e091c19e1fc03fb31a47495ead",
+    "operator_checksum_result": "OK"
+  },
+  "installation": {
+    "status": "A16_INSTALLED",
+    "apply": true,
+    "models_called": 0,
+    "hosts_tested": false,
+    "prepared_topics": 48,
+    "trained_micronetworks_created": 0,
+    "node01_files_changed": false,
+    "gateway_policy_changed": false,
+    "reload_required_at_install_step": true
+  },
+  "activation": {
+    "status": "A16_HTTP_READY",
+    "http_process_reloaded": true,
+    "models_called": 0,
+    "script_updates_call_states": false,
+    "node01_restarted": false,
+    "session_restarted": false,
+    "live_narration_test": "NOT_RUN"
+  },
+  "knowledge": {
+    "topics": 48,
+    "previous_topics": 24,
+    "languages": [
+      "pl",
+      "en"
+    ],
+    "levels": [
+      "brief",
+      "expanded",
+      "technical"
+    ],
+    "answer_variants": 288,
+    "status": "PREPARED_NARRATION_NOT_TRAINED",
+    "source_main_commit": "3fb422e4988ecb753af96d3bc5394b6a545ca709",
+    "source_files_hash_checked_at_build": 199,
+    "selected_source_documents_in_private_archive": 27,
+    "roadmap_source_commit_at_build": "9c3a760f3d59a58a5723f465de9d3b310d8b1464",
+    "public_text_catalog": "../KNOWLEDGE/SSI_DIRECTOR_A16_PL_EN_20261012.md"
+  },
+  "recorded_build_tests": {
+    "version": "A16R1-20261012",
+    "python_tests": {
+      "run": 41,
+      "failures": 0,
+      "errors": 0,
+      "seconds": 12.722,
+      "result": "PASS"
+    },
+    "bilingual_answer_matrix": {
+      "topics": 48,
+      "languages": [
+        "pl",
+        "en"
+      ],
+      "levels": [
+        "brief",
+        "expanded",
+        "technical"
+      ],
+      "combinations": 288,
+      "paired_translations": "PASS",
+      "model_calls": 0
+    },
+    "ui": {
+      "result": "PASS",
+      "declared_assertions": 18,
+      "runtime": "v24.19.0",
+      "real_browser": false,
+      "real_audio": false
+    },
+    "syntax": {
+      "python_files": 16,
+      "ast": "PASS",
+      "javascript": "PASS",
+      "shell": "PASS"
+    },
+    "source_verification": {
+      "github_files_checked": 199,
+      "mismatches": 0,
+      "included_source_documents": 27,
+      "roadmap_document_links": 18,
+      "github_roadmap_readback": "EXACT_MATCH"
+    },
+    "integration_scope": "Actual provided Operations R1 hooks plus synthetic unrelated edit markers; not actual R11 runtime",
+    "test_doubles": [
+      "LLM gateway",
+      "translation bridge",
+      "Notary callback",
+      "DOM",
+      "SpeechSynthesis"
+    ],
+    "msi_installation": "NOT_RUN",
+    "node01_tests": "NOT_RUN",
+    "live_gateway": "NOT_RUN",
+    "native_micronetwork_training": false
+  },
+  "public_web_director": {
+    "declaration_date": "2026-10-12",
+    "status": "PLANNED",
+    "release_date": null,
+    "live_url": null,
+    "public_server_deployed_by_this_publication": false,
+    "entry_point": "LINK_FROM_GITHUB_TO_FUTURE_AUTHENTICATED_WEB_APPLICATION",
+    "declaration": "../SSI_V5_C4_ARCHITECTURE.md#web-director-declaration-20261012"
+  },
+  "claim_boundaries": [
+    "HTTP readiness is not live narration, translation, audio or model-gateway verification.",
+    "The installation evidence supersedes the build-time NOT_RUN for MSI installation only; the build report remains unchanged.",
+    "Zero trained micronetworks created applies to this update, not the entire SSI competence inventory.",
+    "No NODE-01 deployment or bidirectional Operations/Robert synchronization is established by this log.",
+    "Knowledge text is a dated authored explanation, not native execution evidence.",
+    "No independent attestation, physical robotics validation or completed S40/WEB study is asserted."
+  ]
+}

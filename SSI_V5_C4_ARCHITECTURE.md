@@ -3,7 +3,7 @@
 **Role:** canonical public architecture map / single source of truth  
 **C4 scope:** Level 1 — System Context, Level 2 — Containers, Level 3 — Components  
 **Created:** 2026-10-07  
-**Last architectural review:** 2026-10-09  
+**Last architectural review:** 2026-10-12  
 **Implementation boundary:** proprietary code, credentials, reconstructive runtime internals and private prompts are intentionally excluded.  
 **Evidence boundary:** architecture and status labels do not create new experimental claims. Completed, current, ready, installed, pre-build and planned states must remain distinct.
 
@@ -255,6 +255,12 @@ R5 remains the integration/verification target for the shared Conference timelin
 
 Current counts and installation reports belong in the [2026-10-09 progress report](RESULTS/UNIVERSAL_LAB_RESEARCH_MEMORY_PROGRESS_20261009.md) and [machine-readable summary](RESULTS/UNIVERSAL_LAB_RESEARCH_MEMORY_PUBLIC_SUMMARY_20261009.json). The [2026-10-07 meeting entry](UNIVERSAL_LAB_MEETING_START_HERE_20261007.md) and [installed-state record](SYSTEM/SSI_UNIVERSAL_LAB_STATUS_20261007.md) remain historical baseline/plan references.
 
+### Director conversation and knowledge — A15/A16
+
+The MSI operator reports A16 installed and Universal Lab HTTP ready on 2026-10-12. Prepared bilingual knowledge is available through the existing narration/conversation layer; topic selection and the bounded session conversation path do not establish native skill execution. The gateway is required for generated answers where applicable, while browser speech reading is local to the participant's browser.
+
+This installation does not bind every Research Memory/Router/Notary connection or deploy NODE-01. Live narration, two-host interaction and the future authenticated web service remain separate acceptance scopes. See the [dated A16 report](RESULTS/UNIVERSAL_LAB_DIRECTOR_A16_PROGRESS_20261012.md), [prepared knowledge](KNOWLEDGE/SSI_DIRECTOR_A16_PL_EN_20261012.md) and [web service declaration](#web-director-declaration-20261012). The roles of Director_Final and Director_Czary remain distinct; this UI layer is not a new actor identity.
+
 ### Research Memory and evidence authority boundary
 
 Research Memory P1 stores project-scoped experience history. Meeting Link V1 partially connects Universal Lab meeting observations to that history and anchors the checked observation prefix in native session evidence. Meeting observations, transcripts and Shadow proposals do not automatically become verified skill trials or qualified competence.
@@ -422,7 +428,9 @@ This table is a **pointer**, not a replacement for the evidence documents.
 | ZeroLab V2 bounded local runtime | **CURRENT / bounded pilot evidence published** |
 | Dynamic Mission V6 | **INSTALLED / curriculum completion not claimed** |
 | WEB engineering curriculum | **READY / live completion not claimed** |
-| Universal Lab | **R3 INSTALLED baseline / R5 integrations pending verification** |
+| Universal Lab | **R3 baseline with later targeted updates / wider integrations still require scoped verification** |
+| Director A15/A16 narration | **A16 INSTALLED / HTTP READY, operator-reported; live narration test NOT_RUN** |
+| Web Director reached from GitHub | **PLANNED / declared 2026-10-12; launch date and live URL unset** |
 | Caption Chat R4 | **INSTALLED / translation operator-confirmed; full UI acceptance not established** |
 | Research Memory P1 / Meeting Link V1 | **INSTALLED / partially connected meeting-observation history** |
 | Native qualification P3A | **INSTALLED / local eligibility reader checked; trial verifier and named-feature semantics unbound** |
@@ -470,4 +478,118 @@ Dated architecture documents in the repository remain valuable because they show
 **Historical snapshots:** preserved, not retroactively synchronized.
 
 That distinction prevents a change in SSI V5 from requiring edits across dozens of old research records.
+
+
+---
+
+# Long-term programme map and Director knowledge coverage — 2026-10-12
+
+**Status: PLANNING SYNTHESIS / proposed acceptance gates.** This section organizes already documented directions into a long-term programme. It introduces no completed experiment, deployment, hardware capability, autonomous authority or promised completion date. The dated evidence documents remain authoritative for their own measurements. Planning horizons below are dependency stages, not calendar commitments.
+
+## Purpose and scope
+
+SSI combines persistent competence, independent actor histories, software engineering, domain research and evidence. A meeting explanation must therefore cover the programme beyond routing or the current chat interface. Director knowledge should explain each domain's purpose, actors, workflow, example, published evidence, unresolved question and next acceptance gate.
+
+The map below keeps three different tracks visible: existing software mechanisms and bounded results; research programmes still awaiting completion; and future physical or commercial applications. No domain inherits another domain's PASS.
+
+## Horizon 1 — trustworthy access to the existing programme
+
+1. **Complete the meeting knowledge coverage.** Provide independently addressable explanations for drones, Drone Mother, rescue robots, humanoids, cross-domain cooperation, offline operation, spatial BLOCKS, six ISKRA identities, Football World, Hermes, research methodology and future architecture. Provide short, extended and technical forms with aligned Polish/English content. Each factual explanation must point to a versioned source. Authored knowledge remains distinct from qualified native competence.
+2. **Verify the actual conversation path.** Measure original speech/caption, final revision, translated display and Director response separately. Preserve speaker/session identity and distinguish private context from shared meeting context. Test names such as SSI, CZARA, ISKRA and BLOCKS, interrupted speech, translation failures, offline dependencies and duplicate events. No latency target is claimed achieved by this plan.
+3. **Connect evidence-backed competence only through existing gates.** Research Memory observations must first acquire exact-version trial evidence and target eligibility. Compare recommendations passively before enabling Router selection. A knowledge card, catalog entry, signature or opened connection is insufficient evidence of native execution.
+
+**Progress on 2026-10-12:** A16 supplies 48 prepared bilingual topics and the operator reports installation/HTTP readiness. The [A16 report](RESULTS/UNIVERSAL_LAB_DIRECTOR_A16_PROGRESS_20261012.md) preserves the remaining live-test boundary.
+
+**Exit evidence:** source coverage matrix; bilingual interaction results; traceable response/translation events; explicit native execution versus prepared narration; preserved failure records. See [Universal Lab progress](RESULTS/UNIVERSAL_LAB_RESEARCH_MEMORY_PROGRESS_20261009.md) and [the evidence/notary contract](UNIVERSAL_LAB_EVIDENCE_NOTARY_AND_ATTESTATION_CONTRACT_20261008.md).
+
+<a id="web-director-declaration-20261012"></a>
+
+## Declaration — web access to the SSI Director — 2026-10-12
+
+**State: PLANNED. Declaration date: 12 October 2026. Launch date: not yet set. Live service URL: not yet published.**
+
+**Deklaracja projektu.** Planujemy uruchomić stronę internetową połączoną z serwerem Dyrektora SSI. Użytkownik przejdzie do niej z odnośnika w tym repozytorium GitHub, zaloguje się i będzie mógł rozmawiać z Dyrektorem o SSI: jego architekturze, Iskrach, dronach, humanoidach, pamięci, kompetencjach, wynikach badań i dalszych planach. Dyrektor ma utrzymywać kontekst rozmówcy, wyjaśniać temat na wybranym poziomie szczegółowości, wskazywać źródła oraz rozróżniać działające funkcje, udokumentowane wyniki i plany. Punktem wyjścia jest 48 tematów A16, rozwijanych wraz z projektem. Zakładamy obsługę tekstu oraz głosu i tłumaczenia PL/EN po sprawdzeniu całej ścieżki rozmowy.
+
+**To deklaracja wykonania kolejnego etapu, złożona 12 października 2026. Termin premiery zostanie opublikowany po potwierdzeniu gotowości usługi.** Obecny raport A16 potwierdza instalację na MSI i gotowość HTTP; nie jest ogłoszeniem dostępności publicznego serwera.
+
+**Project declaration.** We plan a web application connected to the SSI Director service, reached through a link from this GitHub repository. Authenticated users will be able to discuss SSI's architecture, ISKRA actors, robotics domains, memory, competences, research evidence and future work. Answers should retain the authorized conversation context, offer the requested depth, cite versioned sources and distinguish implemented functions, bounded evidence and plans. The initial knowledge baseline is A16's 48 topics, expanded as the programme evolves. Text interaction, speech and Polish/English translation are in scope, with each live path verified before its availability is announced.
+
+### Relationship to the existing system
+
+GitHub remains the public documentation, evidence and navigation entry point. The future conversation service runs in an application/backend environment chosen during implementation. A static repository page is not evidence that the Director service is running. The existing research portal, if reachable, does not by itself establish this new conversation feature.
+
+The web interface will connect through existing SSI boundaries and preserve the distinct Director_Final and Director_Czary responsibilities. This declaration creates no duplicate actor, resource registry, Router or memory system. Authorized context and source retrieval should use existing mechanisms where actually bound; qualified native execution requires its existing gates and explicit evidence. The current prepared knowledge path remains valid for sourced explanations.
+
+Participant-specific context stays separated from shared meeting context. Long-term memory use and retention require an explicit scope and the existing permissions. Public answers use approved project knowledge and public evidence; logging into the conversation interface does not grant unrestricted mission or host-control authority.
+
+### Delivery sequence and acceptance evidence
+
+| Step | Planned output | Evidence before advancing |
+|---|---|---|
+| 1. Knowledge and service contract | Versioned 48-topic baseline, source refresh rules, existing actor/gateway interfaces and conversation permissions | Coverage review and identified integration contracts; no invented endpoint |
+| 2. Restricted web pilot | Authenticated text conversation through the chosen application service | Real gateway/response checks, user/session isolation, source attribution, failure states and resource limits |
+| 3. Bilingual conversation | PL/EN translation, context continuity and optional voice through declared supported paths | Real-browser/audio tests, proper-name preservation, interruption/duplicate handling and measured latency |
+| 4. Repository entry point | Clearly labeled link from the GitHub README to the verified service | Reachable authenticated service, operator readiness decision and published test scope |
+| 5. Ongoing operation | Versioned knowledge growth and reviewed capabilities as SSI develops | Dated evidence for updates, preserved failure history and no unsupported skill promotion |
+
+The declaration fixes the intent and acceptance sequence, not a calendar launch promise. Hosting, the public URL and an availability date will be recorded once chosen and verified. The GitHub publication performs no host deployment, service exposure, DNS change or model call. See the [A16 installation report](RESULTS/UNIVERSAL_LAB_DIRECTOR_A16_PROGRESS_20261012.md) for what is already reported installed and the [knowledge catalog](KNOWLEDGE/SSI_DIRECTOR_A16_PL_EN_20261012.md) for the prepared baseline.
+
+## Horizon 2 — core reliability and longitudinal actor comparison
+
+1. Resolve the open evidence/review/transport failure paths with versioned repairs and regressions; preserve the earlier FAIL and INCONCLUSIVE records. Continue eligible core stages only when their declared prerequisites are met.
+2. Complete the declared S11–S40 programme before claiming an S40 freeze. Bind each actor's identity, competence inventory, memory/checkpoint, routing history, evidence head and measured resource use to its own snapshot.
+3. Preserve **BODY_FROZEN and ISKRA1–ISKRA6 as seven separate comparison lines**. The initial orientations are NICE, GUARDIAN, JUSTICE, EXPLORER, PRAGMATIST and SKEPTIC. They are initial experimental conditions, not guarantees of later behaviour.
+4. Run WEB01–WEB24 as the planned post-S40 comparative phase. Keep the first comparison actor-isolated; assess learning curves and preserved rendered artifacts before a separately declared consultation/consolidation phase.
+5. Study changes in affect-like software state, strategies, cooperation and artifact characteristics without treating self-report as subjective experience or correlation as causation.
+
+**Exit evidence:** frozen per-actor baselines; task-level histories; held-out comparisons; quality, accessibility and responsive-behaviour results; routing/reuse/error/cost trajectories; evidence of any claimed difference. No S40 or WEB completion is added here. See [programme lineage](RESEARCH_PROGRAM_LINEAGE_AND_POST_S40_PLAN_20261004.md), [longitudinal protocol](LONGITUDINAL_S40_WEB_AND_AFFECT_STUDY_20261004.md) and [ISKRA starting conditions](BODY_ISKRA_6X_T0.md).
+
+## Horizon 3 — domain programmes and bounded autonomy
+
+| Domain | Established documentary starting point | Next planned work and acceptance evidence |
+|---|---|---|
+| Drones / swarm | Executed software-domain scenarios; preserved consolidation regression; separate post-S10 transfer results | Compare known/similar/novel tasks, sensor and communication degradation, route revision and unit loss. Retain scenario identity, baseline, reuse/verification decisions and regressions. |
+| Drone Mother | Published software coordination and Dual Mother evidence | Bound mission allocation, information aggregation, relay and reassignment; measure coordination benefit and failure propagation under declared software scenarios. |
+| Rescue robots | Dual Mother specialist classes include crawler, snake, quadruped, drilling, amphibious and heat-shielded concepts in software tests | Evaluate reconnaissance and access in mine, damaged-building, fire and flooded-tunnel scenarios. Tie every specialist claim to its tested adapter and environment. |
+| Humanoids | Published software motion/stability and retained-experience results | Study balance recovery, obstacles, interrupted manipulation and modified task constraints; keep simulator time separate from execution wall time and physical motion. |
+| Cross-domain / Dual Mother | Published deterministic consultation, consolidation and rollback experiments | Test incompatible observations and changed mission assumptions; preserve checkpoints, revised plans and target-specific retests after transfer. |
+| OFFLINE_DIRECTOR | Planned bounded onboard role in the Mexico curriculum | Execute a previously authorized mission using qualified offline competence, record evidence locally and reconcile after reconnection. Missing outcomes must not trigger blind re-execution. |
+| BLOCKS Space / Navigator / Offline | Planned spatial fragments, map deltas and no-network exchange | Evaluate local geometry, landmarks, uncertainty, map merging, store-carry-forward and bounded optical/acoustic relay in controlled environments. Do not infer a working physical adapter from a map representation. |
+| Robert | Continuous engineering/execution lineage, separate from cleaned experimental BODY branches | Integrate only reviewed, versioned competence after target-specific regression. Keep observation, proposed action, authorized execution and observed outcome distinct. |
+
+The Mexico robotics curriculum remains **48 planned stages: 38 training, 4 validation and 6 capstones**. The 38 training stages comprise 12 drone, 12 humanoid, 6 Mother/cross-domain and 8 offline stages. This plan does not claim those external stages are complete. It does not replace the earlier Drone Lab or mix the separate ISKRA longitudinal programme into the first robotics benchmark.
+
+Primary references: [robotics/offline curriculum](MEXICO_ROBOTICS_TRAINING_AND_BENCHMARK_PLAN_20260926.md), [pre-benchmark protocol](MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md), [drone measurements](DRONE_MEASURED_RESULTS_20260914.md), [humanoid measurements](HUMANOID_MEASURED_RESULTS_20260914.md), [Dual Mother results](RESULTS/DUAL_MOTHER_CROSS_LAB_V1_20260918.md) and [Robert continuity](ROBERT_CANONICAL_CONTINUITY_VS_EXPERIMENTAL_RESET_20260906.md).
+
+## Horizon 4 — persistent worlds, knowledge generations and R&D
+
+**Football World / HIPNOZA.** Close the documented source-ingress, match-identity and independent-outcome path. Preserve a prediction/decision before its outcome and retain T17/Hermes generation and agent Pocket identity. Compare model and strategy histories against outcomes rather than using one attractive prediction as proof. Existing implementation does not establish profitability or a complete automatic data path.
+
+**Hermes and agent knowledge biographies.** Preserve which generation of a knowledge source an actor encountered, when it encountered it and what verified outcomes followed. Study whether different histories lead to reproducible changes in source trust, cooperation or strategy. Broader reputation-based and social-environment mechanisms remain research questions.
+
+**Emerging worlds.** Additional economic/market domains begin with identified data and adequate history. Require declared collection, learning, held-out evaluation and independent outcomes before domain claims. A world description is not authorization for real-money execution or evidence of investment performance.
+
+**Technology Radar.** Relate an identified external tool, model or method to an actual SSI need; compare it with an existing baseline in a bounded lab. Preserve source/version and the adopt/reject outcome. A promising discovery becomes a candidate, not an automatic core update. The older private-operational report and the deeper planned R&D integration have separate evidence boundaries.
+
+**BODY_FROZEN 2.0.** Preserve its status as a proposed future R&D descendant. External problems in robotics, automation and industrial systems should move from available competence to identified gaps, prototype, test and versioned delivery. Internal SSI upgrades should move through candidate, sandbox, evidence, regression and explicit promotion; the running Champion must not be silently rewritten.
+
+**Software and commercial applications.** WEB/software engineering and controlled training-package delivery can supply practical applications while the research programme continues. The published TRAIN08A commercial declaration concerns a specific reference package and target; it does not establish validated deployment in every customer environment. Client-specific requirements, data access, delivery acceptance and maintenance need their own records.
+
+Primary references: [long-term origin and architecture](SSI_V5_ORIGIN_RESEARCH_METHODOLOGY_AND_LONG_TERM_ARCHITECTURE.md), [Football implementation boundary](RESULTS/FOOTBALL_WORLD_IMPLEMENTATION_BOUNDARY_20260922.md), [BLOCKS and Director laboratories](SYSTEM/LEGO_POCKET_META_LEGO_AND_DIRECTOR_LABS_20260922.md) and [commercial reference](COMMERCIAL_TRAIN08A_FOUNDATION_20260910.md).
+
+## Horizon 5 — external validation and physical pilots
+
+Maturity is earned for a named capability and environment through internal training, frozen validation, held-out tests, partner-defined unseen tasks, suitable simulation/digital-twin evaluation, controlled physical pilots and independent replication. These are evidence gates rather than a universal fixed timetable.
+
+A physical pilot requires an identified device/adapter, domain-expert acceptance criteria, bounded operating conditions, appropriate human authority, stop/recovery behaviour and recorded observations. Software timing or simulated motion must not be presented as measured physical performance. Independent attestation concerns its explicitly verified evidence scope; it does not automatically certify every experiment or authorize deployment.
+
+Partnership, funding and consortium documents can plan roles, resources, deliverables and validation capacity. They do not establish a signed partnership, an awarded grant, certified maturity or completed independent replication. See [current research roadmap](CURRENT_RESEARCH_ROADMAP_20261002.md), [partner entry](COLLABORATION_AND_PARTNER_ENTRY.md) and [TRL/validation planning](GRANT_CONSORTIUM/TRL_AND_VALIDATION_ROADMAP_20261001.md).
+
+## Maintenance and reporting contract
+
+- Keep this map in the canonical architecture document; link to dated protocols instead of duplicating their results.
+- When a milestone changes state, attach the specific run/version, scope and evidence before changing its status.
+- Give Director users source-backed explanations at the requested depth; distinguish historical result, current verified state and next planned work.
+- Do not use meeting narration, translated text or a generated roadmap as proof of native skill execution, training completion or a new laboratory result.
+- Keep unresolved questions visible. A later correction becomes a new version and preserves the earlier record.
 
