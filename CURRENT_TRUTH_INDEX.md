@@ -3,14 +3,26 @@
 > **Canonical architecture:** [SSI V5 — C4 Architecture](SSI_V5_C4_ARCHITECTURE.md) — single source of truth for the current public system structure. Update the C4 there instead of duplicating architecture diagrams across documents.
 
 
-**Status:** `CURRENT POINTER / 2026-10-09`  
+**Status:** `CURRENT POINTER / 2026-10-12`  
 **Repository role:** public R&D, evidence and external-validation hub with a published research portal; proprietary implementation remains private.  
 **Evidence boundary:** software-only unless a document explicitly states otherwise.  
 **History rule:** earlier dated truth/status files remain preserved and are not retroactively rewritten.
 
+## Director A16 and web-service plan — 2026-10-12
+
+| Area | Evidence/status | Boundary |
+|---|---|---|
+| A16 on MSI | Operator transcript: checksum OK, `A16_INSTALLED`, then `A16_HTTP_READY` | Installation and HTTP activation; independent host test not performed |
+| Director knowledge | 48 topics, PL/EN, three levels; 288 prepared variants | Authored sourced narration; 0 trained micronetworks created by A16 |
+| Offline build checks | 41 Python tests, 288 answer combinations, 18 declared UI assertions passed | Test doubles include gateway, translation, Notary, DOM and speech; not live acceptance |
+| Live narration / NODE-01 | `NOT_RUN` for narration; no NODE-01 files changed or restart | This log does not prove conversation, translation/audio, gateway health or two-host synchronization |
+| Web Director linked from GitHub | Declaration dated 2026-10-12; `PLANNED` | Launch date and live URL unset; no public server deployment in this publication |
+
+Use the [A16 report](RESULTS/UNIVERSAL_LAB_DIRECTOR_A16_PROGRESS_20261012.md), [machine-readable summary](RESULTS/UNIVERSAL_LAB_DIRECTOR_A16_PUBLIC_SUMMARY_20261012.json), [48-topic knowledge catalog](KNOWLEDGE/SSI_DIRECTOR_A16_PL_EN_20261012.md) and [dated declaration in the canonical architecture](SSI_V5_C4_ARCHITECTURE.md#web-director-declaration-20261012). The new evidence changes installation/readiness status only; the earlier Research Memory/native qualification and independent-attestation boundaries below remain scoped to their original checks.
+
 ## Universal Lab and Research Memory — 2026-10-09
 
-The latest operator reports establish the following bounded progress on the MSI development host:
+The 2026-10-09 operator reports establish the following bounded progress on the MSI development host:
 
 | Area | Reported state | Remaining boundary |
 |---|---|---|
@@ -321,6 +333,7 @@ The 2026-09-18 evidence supports a software-laboratory claim that the paired Dro
 It does **not** establish physical drone performance, physical rescue-robot performance, physical humanoid performance, safety certification, production readiness, independent external replication, universal superiority, AGI or consciousness.
 
 Older dated snapshots remain valid historical evidence of what was known, planned or measured at their commit dates.
+
 
 
 

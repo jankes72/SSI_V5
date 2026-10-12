@@ -1,16 +1,24 @@
 # SSI V5 — Reviewer Index
 
-**Current public state:** `2026-10-09`  
+**Current public state:** `2026-10-12`  
 **Repository role:** public R&D, evidence and external-validation hub for a private SSI implementation.  
 **Audience:** grant reviewers, research collaborators, technical reviewers and validation partners.
 
 This file is the shortest route through the repository. Historical files remain preserved for provenance, but they are not the recommended starting point.
 
-## Universal Lab — fastest partner/research entry — 2026-10-09
+## Director A16 — current entry — 2026-10-12
+
+Start with the **[A16 installation and knowledge report](RESULTS/UNIVERSAL_LAB_DIRECTOR_A16_PROGRESS_20261012.md)**, its [machine-readable summary](RESULTS/UNIVERSAL_LAB_DIRECTOR_A16_PUBLIC_SUMMARY_20261012.json), and the [full 48-topic PL/EN catalog](KNOWLEDGE/SSI_DIRECTOR_A16_PL_EN_20261012.md). The MSI operator reports successful installation and HTTP readiness; the preserved package tests cover offline behaviour. Live narration, real audio/translation and NODE-01 operation are not established by this installation transcript.
+
+The [12 October declaration](SSI_V5_C4_ARCHITECTURE.md#web-director-declaration-20261012) plans an authenticated Director conversation service reached through a GitHub link. It has no announced launch date or live URL. Its delivery gates and the expanded long-term domain programme live in the canonical architecture file. This documentation publication is not a public-service deployment.
+
+The 9 October Research Memory results below remain separate historical evidence, with their qualification and attestation boundaries preserved.
+
+## Universal Lab / Research Memory — preserved entry — 2026-10-09
 
 Start with **[Latest Universal Lab / Research Memory progress](RESULTS/UNIVERSAL_LAB_RESEARCH_MEMORY_PROGRESS_20261009.md)** and its [machine-readable summary](RESULTS/UNIVERSAL_LAB_RESEARCH_MEMORY_PUBLIC_SUMMARY_20261009.json). Use the **[canonical C4 architecture](SSI_V5_C4_ARCHITECTURE.md)** for current component relationships. The [2026-10-07 meeting entry](UNIVERSAL_LAB_MEETING_START_HERE_20261007.md) and [installed-state record](SYSTEM/SSI_UNIVERSAL_LAB_STATUS_20261007.md) are preserved baseline/plan documents.
 
-The latest publication summarizes **operator-reported local results on the MSI development host**. It does not include the original private signed bundles or independently reproduce their cryptographic verification.
+The 2026-10-09 publication summarizes **operator-reported local results on the MSI development host**. It does not include the original private signed bundles or independently reproduce their cryptographic verification.
 
 | Area | Reported state on 2026-10-09 | Remaining boundary |
 |---|---|---|
@@ -299,6 +307,7 @@ KEEP THE OLDER FILE AS HISTORICAL EVIDENCE
 ```
 
 No historical file needs to be deleted to keep the reviewer path concise.
+
 
 
 

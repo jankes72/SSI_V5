@@ -3,7 +3,7 @@
 **Role:** canonical public architecture map / single source of truth  
 **C4 scope:** Level 1 — System Context, Level 2 — Containers, Level 3 — Components  
 **Created:** 2026-10-07  
-**Last architectural review:** 2026-10-09  
+**Last architectural review:** 2026-10-12  
 **Implementation boundary:** proprietary code, credentials, reconstructive runtime internals and private prompts are intentionally excluded.  
 **Evidence boundary:** architecture and status labels do not create new experimental claims. Completed, current, ready, installed, pre-build and planned states must remain distinct.
 
@@ -255,6 +255,12 @@ R5 remains the integration/verification target for the shared Conference timelin
 
 Current counts and installation reports belong in the [2026-10-09 progress report](RESULTS/UNIVERSAL_LAB_RESEARCH_MEMORY_PROGRESS_20261009.md) and [machine-readable summary](RESULTS/UNIVERSAL_LAB_RESEARCH_MEMORY_PUBLIC_SUMMARY_20261009.json). The [2026-10-07 meeting entry](UNIVERSAL_LAB_MEETING_START_HERE_20261007.md) and [installed-state record](SYSTEM/SSI_UNIVERSAL_LAB_STATUS_20261007.md) remain historical baseline/plan references.
 
+### Director conversation and knowledge — A15/A16
+
+The MSI operator reports A16 installed and Universal Lab HTTP ready on 2026-10-12. Prepared bilingual knowledge is available through the existing narration/conversation layer; topic selection and the bounded session conversation path do not establish native skill execution. The gateway is required for generated answers where applicable, while browser speech reading is local to the participant's browser.
+
+This installation does not bind every Research Memory/Router/Notary connection or deploy NODE-01. Live narration, two-host interaction and the future authenticated web service remain separate acceptance scopes. See the [dated A16 report](RESULTS/UNIVERSAL_LAB_DIRECTOR_A16_PROGRESS_20261012.md), [prepared knowledge](KNOWLEDGE/SSI_DIRECTOR_A16_PL_EN_20261012.md) and [web service declaration](#web-director-declaration-20261012). The roles of Director_Final and Director_Czary remain distinct; this UI layer is not a new actor identity.
+
 ### Research Memory and evidence authority boundary
 
 Research Memory P1 stores project-scoped experience history. Meeting Link V1 partially connects Universal Lab meeting observations to that history and anchors the checked observation prefix in native session evidence. Meeting observations, transcripts and Shadow proposals do not automatically become verified skill trials or qualified competence.
@@ -422,7 +428,9 @@ This table is a **pointer**, not a replacement for the evidence documents.
 | ZeroLab V2 bounded local runtime | **CURRENT / bounded pilot evidence published** |
 | Dynamic Mission V6 | **INSTALLED / curriculum completion not claimed** |
 | WEB engineering curriculum | **READY / live completion not claimed** |
-| Universal Lab | **R3 INSTALLED baseline / R5 integrations pending verification** |
+| Universal Lab | **R3 baseline with later targeted updates / wider integrations still require scoped verification** |
+| Director A15/A16 narration | **A16 INSTALLED / HTTP READY, operator-reported; live narration test NOT_RUN** |
+| Web Director reached from GitHub | **PLANNED / declared 2026-10-12; launch date and live URL unset** |
 | Caption Chat R4 | **INSTALLED / translation operator-confirmed; full UI acceptance not established** |
 | Research Memory P1 / Meeting Link V1 | **INSTALLED / partially connected meeting-observation history** |
 | Native qualification P3A | **INSTALLED / local eligibility reader checked; trial verifier and named-feature semantics unbound** |
@@ -490,7 +498,41 @@ The map below keeps three different tracks visible: existing software mechanisms
 2. **Verify the actual conversation path.** Measure original speech/caption, final revision, translated display and Director response separately. Preserve speaker/session identity and distinguish private context from shared meeting context. Test names such as SSI, CZARA, ISKRA and BLOCKS, interrupted speech, translation failures, offline dependencies and duplicate events. No latency target is claimed achieved by this plan.
 3. **Connect evidence-backed competence only through existing gates.** Research Memory observations must first acquire exact-version trial evidence and target eligibility. Compare recommendations passively before enabling Router selection. A knowledge card, catalog entry, signature or opened connection is insufficient evidence of native execution.
 
+**Progress on 2026-10-12:** A16 supplies 48 prepared bilingual topics and the operator reports installation/HTTP readiness. The [A16 report](RESULTS/UNIVERSAL_LAB_DIRECTOR_A16_PROGRESS_20261012.md) preserves the remaining live-test boundary.
+
 **Exit evidence:** source coverage matrix; bilingual interaction results; traceable response/translation events; explicit native execution versus prepared narration; preserved failure records. See [Universal Lab progress](RESULTS/UNIVERSAL_LAB_RESEARCH_MEMORY_PROGRESS_20261009.md) and [the evidence/notary contract](UNIVERSAL_LAB_EVIDENCE_NOTARY_AND_ATTESTATION_CONTRACT_20261008.md).
+
+<a id="web-director-declaration-20261012"></a>
+
+## Declaration — web access to the SSI Director — 2026-10-12
+
+**State: PLANNED. Declaration date: 12 October 2026. Launch date: not yet set. Live service URL: not yet published.**
+
+**Deklaracja projektu.** Planujemy uruchomić stronę internetową połączoną z serwerem Dyrektora SSI. Użytkownik przejdzie do niej z odnośnika w tym repozytorium GitHub, zaloguje się i będzie mógł rozmawiać z Dyrektorem o SSI: jego architekturze, Iskrach, dronach, humanoidach, pamięci, kompetencjach, wynikach badań i dalszych planach. Dyrektor ma utrzymywać kontekst rozmówcy, wyjaśniać temat na wybranym poziomie szczegółowości, wskazywać źródła oraz rozróżniać działające funkcje, udokumentowane wyniki i plany. Punktem wyjścia jest 48 tematów A16, rozwijanych wraz z projektem. Zakładamy obsługę tekstu oraz głosu i tłumaczenia PL/EN po sprawdzeniu całej ścieżki rozmowy.
+
+**To deklaracja wykonania kolejnego etapu, złożona 12 października 2026. Termin premiery zostanie opublikowany po potwierdzeniu gotowości usługi.** Obecny raport A16 potwierdza instalację na MSI i gotowość HTTP; nie jest ogłoszeniem dostępności publicznego serwera.
+
+**Project declaration.** We plan a web application connected to the SSI Director service, reached through a link from this GitHub repository. Authenticated users will be able to discuss SSI's architecture, ISKRA actors, robotics domains, memory, competences, research evidence and future work. Answers should retain the authorized conversation context, offer the requested depth, cite versioned sources and distinguish implemented functions, bounded evidence and plans. The initial knowledge baseline is A16's 48 topics, expanded as the programme evolves. Text interaction, speech and Polish/English translation are in scope, with each live path verified before its availability is announced.
+
+### Relationship to the existing system
+
+GitHub remains the public documentation, evidence and navigation entry point. The future conversation service runs in an application/backend environment chosen during implementation. A static repository page is not evidence that the Director service is running. The existing research portal, if reachable, does not by itself establish this new conversation feature.
+
+The web interface will connect through existing SSI boundaries and preserve the distinct Director_Final and Director_Czary responsibilities. This declaration creates no duplicate actor, resource registry, Router or memory system. Authorized context and source retrieval should use existing mechanisms where actually bound; qualified native execution requires its existing gates and explicit evidence. The current prepared knowledge path remains valid for sourced explanations.
+
+Participant-specific context stays separated from shared meeting context. Long-term memory use and retention require an explicit scope and the existing permissions. Public answers use approved project knowledge and public evidence; logging into the conversation interface does not grant unrestricted mission or host-control authority.
+
+### Delivery sequence and acceptance evidence
+
+| Step | Planned output | Evidence before advancing |
+|---|---|---|
+| 1. Knowledge and service contract | Versioned 48-topic baseline, source refresh rules, existing actor/gateway interfaces and conversation permissions | Coverage review and identified integration contracts; no invented endpoint |
+| 2. Restricted web pilot | Authenticated text conversation through the chosen application service | Real gateway/response checks, user/session isolation, source attribution, failure states and resource limits |
+| 3. Bilingual conversation | PL/EN translation, context continuity and optional voice through declared supported paths | Real-browser/audio tests, proper-name preservation, interruption/duplicate handling and measured latency |
+| 4. Repository entry point | Clearly labeled link from the GitHub README to the verified service | Reachable authenticated service, operator readiness decision and published test scope |
+| 5. Ongoing operation | Versioned knowledge growth and reviewed capabilities as SSI develops | Dated evidence for updates, preserved failure history and no unsupported skill promotion |
+
+The declaration fixes the intent and acceptance sequence, not a calendar launch promise. Hosting, the public URL and an availability date will be recorded once chosen and verified. The GitHub publication performs no host deployment, service exposure, DNS change or model call. See the [A16 installation report](RESULTS/UNIVERSAL_LAB_DIRECTOR_A16_PROGRESS_20261012.md) for what is already reported installed and the [knowledge catalog](KNOWLEDGE/SSI_DIRECTOR_A16_PL_EN_20261012.md) for the prepared baseline.
 
 ## Horizon 2 — core reliability and longitudinal actor comparison
 
@@ -550,3 +592,4 @@ Partnership, funding and consortium documents can plan roles, resources, deliver
 - Give Director users source-backed explanations at the requested depth; distinguish historical result, current verified state and next planned work.
 - Do not use meeting narration, translated text or a generated roadmap as proof of native skill execution, training completion or a new laboratory result.
 - Keep unresolved questions visible. A later correction becomes a new version and preserves the earlier record.
+

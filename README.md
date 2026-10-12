@@ -5,6 +5,17 @@
 
 **Evidence-first research platform for persistent, adaptive multi-agent AI systems.**
 
+## Director A16 and web access declaration — 2026-10-12
+
+**A16 is installed on MSI and Universal Lab HTTP is ready, according to the operator's installation report.** The Director knowledge baseline now covers **48 topics in Polish and English**, with short, extended and technical answers: SSI, Router V10, Research Memory, six ISKRA actors, drones and Mother systems, humanoids, rescue research, BLOCKS, Hermes, Football World and future programmes.
+
+**Planujemy stronę, na której po przejściu z GitHuba i zalogowaniu będzie można porozmawiać z Dyrektorem o SSI. Deklaracja: 12 października 2026. Termin uruchomienia: do ustalenia.** The future web service is planned; no live conversation URL is announced here. A16's HTTP readiness does not establish live narration or public-service availability.
+
+- **[A16 installation, implemented scope and recorded tests](RESULTS/UNIVERSAL_LAB_DIRECTOR_A16_PROGRESS_20261012.md)**
+- **[Full 48-topic Director knowledge — PL/EN, three depths](KNOWLEDGE/SSI_DIRECTOR_A16_PL_EN_20261012.md)**
+- **[Dated web Director declaration and delivery gates](SSI_V5_C4_ARCHITECTURE.md#web-director-declaration-20261012)**
+- [Long-term programme: core, ISKRA, robotics, worlds and external validation](SSI_V5_C4_ARCHITECTURE.md#long-term-programme-map-and-director-knowledge-coverage--2026-10-12)
+
 ## 60-second reviewer snapshot
 
 SSI V5 is an independently developed, proprietary-core R&D programme for **persistent multi-agent AI, continual learning, AI-safety-oriented evaluation and evidence-preserving knowledge promotion**. The public repository is the review/evidence layer: it exposes architecture, frozen baselines, protocols, negative results, repairs, benchmark plans and sanitized evidence while keeping reconstructive implementation details private.
@@ -29,7 +40,7 @@ Universal Lab is intended to inherit SSI's stricter evidence-hardening path: app
 The **2026-10-09 P2B operator report now records a native signed session prefix verified through record 4,603**, with matched Research Memory anchors. This bounded result does not establish independent external attestation; the broader contract remains the reference for the remaining work. See the [latest progress report](RESULTS/UNIVERSAL_LAB_RESEARCH_MEMORY_PROGRESS_20261009.md) and [Universal Lab Evidence, Digital Signature and Independent Notary/Attestation Contract](UNIVERSAL_LAB_EVIDENCE_NOTARY_AND_ATTESTATION_CONTRACT_20261008.md).
 
 
-## Universal Lab — latest progress, 2026-10-09
+## Universal Lab / Research Memory — preserved progress, 2026-10-09
 
 **Caption Chat R4 is installed on the MSI development host, and the operator has confirmed working translation.** The caption update provides the latest bilingual utterance over the camera and a scrollable 40-utterance history with timestamps and revision-based corrections.
 
@@ -129,7 +140,7 @@ The current programme combines core SSI reliability work, CZARA Human-AI researc
 - **Demonstrated scope:** software laboratory results for drone, humanoid and cross-domain rescue scenarios.
 - **Current boundary:** software evidence is published; physical validation, safety certification and independent external replication are not claimed.
 
-**Current public state:** 2026-10-09
+**Current public state:** 2026-10-12 (Director A16 update; earlier measurements retain their original dates)
 
 ## Latest SSI Final continuation — infrastructure stop — 2026-10-02
 
@@ -541,6 +552,7 @@ EXTERNAL PARTNER DEFINES UNSEEN PROBLEM
 ```
 
 See [COLLABORATION_AND_PARTNER_ENTRY.md](COLLABORATION_AND_PARTNER_ENTRY.md).
+
 
 
 
