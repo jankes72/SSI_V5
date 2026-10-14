@@ -11,6 +11,14 @@
 
 **[Read the full future scope and acceptance gates](PLANNED_SCC_LUNA_NAVIGATOR_RADAR_UPGRADE_20261015.md).** The 12 October baseline and earlier mission results below remain historical observations; they do not include this upgrade.
 
+### Po polsku — co Robert ma docelowo wykonywać
+
+**To jest zakres przyszłego wdrożenia.** Robert ma wykonywać misje Dyrektora Charlie konsultowane z Dyrektorem SSI; prowadzić długie rozmowy, pobierać i instalować moduły; tworzyć projekty, strony i własne narzędzia z Work; integrować laboratoria i technologie przez wspólny język SSI/SCC oraz sprawdzone adaptery.
+
+Dodatkowa Luna wspiera nawigację, Radar i prompty. Research Memory porządkuje skille i dopasowania championów w istniejącej hierarchii, bez nowego progu liczby wywołań. Testy, Evidence, Notariusz i CONTINUUM zapewniają sprawdzenia, podpisy, historię i ciągłość; odpowiedź ma wynikać ze zweryfikowanych rezultatów.
+
+**[Pełna polska lista uzgodnionych wymagań](PLANNED_SCC_LUNA_NAVIGATOR_RADAR_UPGRADE_20261015.md#zakres-wdrozenia-roberta-pl).**
+
 ## Executive summary
 
 ### 1. Robert's role and development

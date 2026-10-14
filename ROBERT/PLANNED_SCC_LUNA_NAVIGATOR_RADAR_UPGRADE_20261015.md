@@ -1,7 +1,7 @@
 # Robert — planned SCC, Luna Navigator and Technology Radar upgrade
 
 **Decision recorded:** 15 October 2026, Europe/Warsaw.  
-**Plan revision:** 2 — guided engineering missions, Director roles, Work and evidence/response integration.  
+**Plan revision:** 3 — explicit Polish implementation scope; existing qualification rules unchanged.  
 **Status:** `PLANNED / NOT IMPLEMENTED / NOT DEPLOYED`.  
 **Runtime acceptance of this upgrade:** `NOT RUN`.  
 **Scope:** future extension of Robert's existing desktop missions and Technology Radar within the SSI research project.
@@ -15,6 +15,32 @@ Dodatkowa Luna ma być odrębna od instancji używanej przy mikrosieciach, Flow 
 Szkolenie obejmie długą rozmowę, oczekiwanie, kopiowanie odpowiedzi, pobieranie paczek, instalację w terminalu oraz przekazanie sprawdzonego wyniku. Robert ma też zakładać projekty, wiązać je z istniejącą organizacją i budować własne narzędzia pod naszym prowadzeniem. Hierarchia Champion–Challenger oraz zasady kwalifikacji i awansu pozostają takie, jakie obowiązują w istniejącym SSI; plan nie wprowadza nowego progu liczby wywołań. Każda misja uwzględni testy, Evidence, Notariusza, Research Memory, checkpointy CONTINUUM oraz odpowiedź opartą na dowodach. Podpis zapisu nie zastępuje potwierdzenia poprawności zadania.
 
 Ten plan rozwija [ostatnio opisane misje Roberta](README.md#2-the-initial-drone-to-desktop-mission-transfer) oraz [publikację modułu SCC](../SCC_BLOCKS_MISSION_LANGUAGE_AND_AMNEZJA3_ATTRIBUTION_20261014.md). Nie zmienia wyników wcześniejszych misji.
+
+<a id="zakres-wdrozenia-roberta-pl"></a>
+
+## Polski — uzgodniony zakres wdrożenia
+
+**Poniższe punkty określają, co Robert ma docelowo wykonywać. Są zakresem planowanego upgrade'u; ich wdrożenie i odbiór pozostają do wykonania.**
+
+1. **Misje Dyrektorów.** Robert wykonuje przydzielone misje Dyrektora Charlie, konsultującego kierunek z Dyrektorem SSI. BODY_FROZEN pozostaje osobnym wykonawcą z własnym stanem. Misja określa cel, zakres zmian, środowisko i kryteria odbioru.
+
+2. **Własny kokpit i rzeczywiste sterowanie.** Robert obserwuje ekran, prowadzi kursor i używa klawiatury przez własny zintegrowany moduł. Pokazuje stan misji, cel i rezultat, obsługuje pauzę oraz oddanie kontroli. Dla obecnej misji zachowuje Dell-only i aktualnie wykrywaną geometrię.
+
+3. **Dodatkowa Luna.** Oddzielona od Luny używanej w Flow/Full Flow, pomaga w obrazie i nawigacji, analizie Radaru oraz przygotowywaniu promptów dla konkretnych misji. Jej opinia nie zastępuje dowodu wykonania.
+
+4. **Długa rozmowa i instalacja modułów.** Robert odnajduje pole tekstowe między plusikiem i mikrofonem, wpisuje wiadomość, wysyła ją raz, czeka na zakończenie odpowiedzi, kopiuje tekst, odbiera właściwy plik z Pobranych, otwiera terminal, wykonuje sprawdzoną instrukcję i weryfikuje działanie modułu. Wynik wraca do rozmowy; poprawki i ponowne sprawdzenia pozostają częścią tej samej misji.
+
+5. **Projekty, Work i własne narzędzia.** Robert zakłada projekt, przypisuje go do istniejącej organizacji w Operations, udostępnia potrzebne materiały we właściwym środowisku i współpracuje z Work/ChatGPT. Pierwszy proponowany projekt to użyteczny panel laboratoryjny z rzeczywistym adapterem myszy. Robert ocenia wygląd, funkcje i zgodność z wymaganiami, a następnie zgłasza poprawki.
+
+6. **Technologie dla SSI i klientów.** Zakres obejmuje aplikacje, strony, laboratoria dronów i robotów, inteligentne domy, PLC, CNC, firmware oraz integracje samochodowe. Język SSI/SCC opisuje misje wspólnie, a wersjonowane adaptery obsługują konkretne języki, narzędzia i urządzenia. Obsługa nowej platformy wymaga własnego sprawdzenia; większe obliczenia otrzymują jawnie wskazane środowisko i zasoby.
+
+7. **Radar, Decomposer i kwalifikacja.** Robert i Luna analizują pochodzenie oraz zakres kodu. Niepotwierdzony lub niedokończony materiał pozostaje kandydatem. Dopiero zakwalifikowany zakres może zostać zaadaptowany do bloków i ponownie sprawdzony po podłączeniu.
+
+8. **Research Memory i championowie.** Research Memory porządkuje skille i dostarcza dopasowania przez istniejący mechanizm wyboru. Champion jest przypisany do określonego zadania lub przejścia, warunków i wersji. Hierarchia Champion–Challenger i zasady awansu pozostają bez zmian; nie dodajemy progu liczby wywołań. Luna nie tworzy konkurencyjnej hierarchii.
+
+9. **Notariusz, potwierdzenia i odpowiedzi.** Testy oraz weryfikator oceniają rezultat, Evidence zachowuje chronologię, Notariusz podpisuje zapis, CONTINUUM utrzymuje checkpointy, a Research Memory zachowuje właściwy zakres doświadczenia. Odpowiedź wskazuje wykonane czynności, sprawdzenia, dowody i pozostałe braki. Podpis potwierdza pochodzenie i integralność zapisu; działanie modułu wymaga osobnej weryfikacji.
+
+10. **Nauka pod prowadzeniem i późniejsza samodzielność.** Początkowo prowadzimy Roberta przez cały proces. Kolejne zakwalifikowane narzędzia i kompetencje wspierają następne zadania. Nowe wersje zachowują możliwość powrotu, a pokaz samodzielności rozdziela model będący rozmówcą/nauczycielem od modeli pomagających Robertowi sterować i postrzegać.
 
 ## Existing baseline and future scope
 
