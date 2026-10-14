@@ -3,10 +3,17 @@
 > **Canonical architecture:** [SSI V5 — C4 Architecture](SSI_V5_C4_ARCHITECTURE.md) — single source of truth for the current public system structure. Update the C4 there instead of duplicating architecture diagrams across documents.
 
 
-**Status:** `CURRENT POINTER / 2026-10-14`  
+**Status:** `CURRENT POINTER / 2026-10-15`  
 **Repository role:** public R&D, evidence and external-validation hub with a published research portal; proprietary implementation remains private.  
 **Evidence boundary:** software-only unless a document explicitly states otherwise.  
 **History rule:** earlier dated truth/status files remain preserved and are not retroactively rewritten.
+
+## Robert: planned SCC, Luna Navigator and Radar upgrade — 2026-10-15
+
+**PLANNED / NOT IMPLEMENTED / NOT DEPLOYED.** The next Robert upgrade is agreed as a development direction: integrated native desktop control with its own GUI cockpit; an additional Luna instance, separate from Flow/Full Flow, with Navigator and Technology Radar profiles; qualification of source code before active Decomposer/BLOCKS adaptation; and common SSI mission contracts under SCC. This is not an installation or a new result from Robert's earlier missions.
+
+- **[Full planned scope, pending acceptance and preserved mission baseline](ROBERT/PLANNED_SCC_LUNA_NAVIGATOR_RADAR_UPGRADE_20261015.md)**
+- [Robert's existing desktop missions and Technology Radar](ROBERT/README.md)
 
 ## SCC BLOCKS mission language — 2026-10-14
 

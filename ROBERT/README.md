@@ -5,6 +5,12 @@
 **Scope:** Robert's continuing engineering programme, the transfer of mission structure to desktop operation, SSI integration and the developing repair curriculum.  
 **Public scope:** architecture, implementation status and research. Proprietary code, datasets, agent memory, credentials and execution access remain outside this repository.
 
+## Planned next upgrade — 15 October 2026
+
+**Status: PLANNED / NOT IMPLEMENTED / NOT DEPLOYED.** Robert's next development direction adds his own GUI cockpit and integrated native desktop-control loop, an additional Luna instance for visual navigation and Technology Radar analysis, qualification before active source-to-BLOCKS adaptation, and common SSI mission contracts under SCC. The additional Luna is separate from the instance used for micronetwork Flow/Full Flow. Runtime acceptance of this extension has not been run.
+
+**[Read the full future scope and acceptance gates](PLANNED_SCC_LUNA_NAVIGATOR_RADAR_UPGRADE_20261015.md).** The 12 October baseline and earlier mission results below remain historical observations; they do not include this upgrade.
+
 ## Executive summary
 
 ### 1. Robert's role and development
@@ -88,6 +94,8 @@ V9 code defines 11 stages from the environment check to mission closure. V9R1 is
 
 The target competence includes recognising a changed interface layout and completing a task with outcome verification. Replaying known coordinates alone does not establish generalisation.
 
+The [planned 15 October upgrade](PLANNED_SCC_LUNA_NAVIGATOR_RADAR_UPGRADE_20261015.md#1-robert-owns-the-desktop-control-loop) extends this mission line with an integrated controller/cockpit and dedicated visual Luna assistance. It is not yet implemented or deployed and was not part of V9/V9R1's recorded results.
+
 ### 4. Desktop acceptance tests
 
 | Test | Objective | Evidence required for acceptance |
@@ -107,6 +115,8 @@ Technology Radar is a partially deployed source of material for further research
 The intended cycle comprises identifying a need, acquiring a versioned source, assessing dependencies and compatibility, preparing and executing an experiment, review, regression testing and qualification. Robert is also intended to support combining several technologies to solve a particular problem. A discovered module enters as a candidate; experimental results determine its subsequent use.
 
 This direction extends the existing [Eyes/Hands and CEPA engineering memory](../evidence/DIRECTOR_AUTONOMOUS_EVOLUTION_AND_ROBERT_EYES_HANDS.md). It does not create a separate SSI development organisation.
+
+The [planned Radar profile and source-qualification gate](PLANNED_SCC_LUNA_NAVIGATOR_RADAR_UPGRADE_20261015.md#3-qualify-radar-material-before-active-blocks-adaptation), agreed on 15 October, are future work. Existing source retrieval does not establish this additional Luna analysis, code-completeness assessment or SCC adaptation path as deployed.
 
 ### 6. Repair archives and required connections
 

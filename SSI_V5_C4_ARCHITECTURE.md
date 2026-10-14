@@ -4,6 +4,7 @@
 **C4 scope:** Level 1 — System Context, Level 2 — Containers, Level 3 — Components  
 **Created:** 2026-10-07  
 **Last architectural review:** 2026-10-12  
+**Planned Robert extension recorded:** 2026-10-15; not implemented or deployed.  
 **Implementation boundary:** proprietary code, credentials, reconstructive runtime internals and private prompts are intentionally excluded.  
 **Evidence boundary:** architecture and status labels do not create new experimental claims. Completed, current, ready, installed, pre-build and planned states must remain distinct.
 
@@ -267,6 +268,16 @@ The [Robert record](ROBERT/README.md) distinguishes implemented desktop-mission 
 
 The [complementary ISKRA/worlds record](ROBERT/ISKRA_WORLDS_AND_LONG_TERM_RESEARCH.md) preserves separate actor histories across S1–S40, WEB, Hermes generations, Football World and future repair curricula. Collective resource access does not silently merge experimental ISKRA memory. Independent comparisons and subsequent collaboration/consolidation remain distinct phases. This C4 document remains the canonical architecture map.
 
+### Planned Robert SCC, Luna Navigator and Radar upgrade — 2026-10-15
+
+**Status: PLANNED / NOT IMPLEMENTED / NOT DEPLOYED.** Robert is planned to own an integrated perception-navigation-native-input-verification loop, with his own GUI as the cockpit. An additional Luna instance is separate from Flow/Full Flow and has two fixed contexts: Navigator for visual orientation and bounded next-step proposals; Radar for analysis of retrieved technical sources and implementation gaps. Direct image support in the selected model/gateway remains to be verified.
+
+The planned source path is Radar acquisition, Luna assessment, native scope qualification, Decomposer/BLOCKS adaptation, adapter validation and existing controlled activation. Unqualified code remains research material. Common SSI mission contracts use SCC without assuming that A27 already implements this general runtime. Existing actors, versioned Champions, Research Memory, gateway, queue, budget accounting and evidence authority remain the integration points.
+
+The local controller executes cursor/keyboard operations and checks effects. The current Dell-only mission constraint and dynamic targeting remain applicable. Radar work has lower scheduling priority than active navigation, with separate task contexts and bounded mission-wide consultation. Earlier V9/V9R1 outcomes and the partial Radar deployment do not include this extension.
+
+The [dated Robert plan](ROBERT/PLANNED_SCC_LUNA_NAVIGATOR_RADAR_UPGRADE_20261015.md) records pending acceptance; the [SCC publication](SCC_BLOCKS_MISSION_LANGUAGE_AND_AMNEZJA3_ATTRIBUTION_20261014.md) retains A27's implemented scope. No deployment or new runtime success is claimed.
+
 ### Research Memory and evidence authority boundary
 
 Research Memory P1 stores project-scoped experience history. Meeting Link V1 partially connects Universal Lab meeting observations to that history and anchors the checked observation prefix in native session evidence. Meeting observations, transcripts and Shadow proposals do not automatically become verified skill trials or qualified competence.
@@ -436,6 +447,7 @@ This table is a **pointer**, not a replacement for the evidence documents.
 | WEB engineering curriculum | **READY / live completion not claimed** |
 | Universal Lab | **R3 baseline with later targeted updates / wider integrations still require scoped verification** |
 | Director A15/A16 narration | **A16 INSTALLED / HTTP READY, operator-reported; live narration test NOT_RUN** |
+| Robert SCC / additional Luna Navigator-Radar upgrade | **PLANNED / NOT IMPLEMENTED / NOT DEPLOYED; runtime acceptance NOT RUN** |
 | Web Director reached from GitHub | **PLANNED / declared 2026-10-12; launch date and live URL unset** |
 | Caption Chat R4 | **INSTALLED / translation operator-confirmed; full UI acceptance not established** |
 | Research Memory P1 / Meeting Link V1 | **INSTALLED / partially connected meeting-observation history** |

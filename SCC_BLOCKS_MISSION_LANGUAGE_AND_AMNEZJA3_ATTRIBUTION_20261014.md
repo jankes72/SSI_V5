@@ -103,6 +103,12 @@ Reducing repeated planning and unnecessary model calls is an engineering objecti
 
 An accepted goal declaration is a planning input. Native feature contracts, actual capability bindings, approvals and semantic Evidence determine execution readiness. The reviewed module preserves separate states for proposal, qualification, execution and verified result. The author's deployment statement concerns the implemented declarative module, not completion of every planned SCC feature.
 
+## Planned Robert integration — 2026-10-15
+
+**PLANNED / NOT IMPLEMENTED / NOT DEPLOYED.** The next extension connects the common SSI mission language to Robert's own desktop-control loop and GUI cockpit, an additional Luna instance with visual Navigator and Technology Radar profiles, and source qualification before active Decomposer/BLOCKS adaptation. The additional Luna is separate from Flow/Full Flow assistance. A27's deployed declarative scope and reproduced checks above do not establish this future runtime.
+
+See the [dated Robert upgrade plan](ROBERT/PLANNED_SCC_LUNA_NAVIGATOR_RADAR_UPGRADE_20261015.md) and [Robert's preserved mission history](ROBERT/README.md). No new imperative syntax, live visual-model capability or desktop acceptance result is announced here.
+
 ## Attribution and continuing contribution
 
 **Author-supplied attribution, 2026-10-14:** Paweł Jankiewicz identifies [amnezja3](https://github.com/amnezja3) as his brother and credits him for several formative contributions:

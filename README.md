@@ -5,6 +5,13 @@
 
 **Evidence-first research platform for persistent, adaptive multi-agent AI systems.**
 
+## Robert: planned SCC, Luna Navigator and Radar upgrade — 2026-10-15
+
+**PLANNED / NOT IMPLEMENTED / NOT DEPLOYED.** The next Robert upgrade is agreed as a development direction: integrated native desktop control with its own GUI cockpit; an additional Luna instance, separate from Flow/Full Flow, with Navigator and Technology Radar profiles; qualification of source code before active Decomposer/BLOCKS adaptation; and common SSI mission contracts under SCC. This is not an installation or a new result from Robert's earlier missions.
+
+- **[Full planned scope, pending acceptance and preserved mission baseline](ROBERT/PLANNED_SCC_LUNA_NAVIGATOR_RADAR_UPGRADE_20261015.md)**
+- [Robert's existing desktop missions and Technology Radar](ROBERT/README.md)
+
 ## SCC BLOCKS mission language — 2026-10-14
 
 **The author/operator reports the first SCC mission-language module deployed and working in SSI.** A27 implements declarative goal notation, deterministic validation, the existing R1 planning contract and the Universal Lab construction view. This publication reproduced **22 Python tests and 10 JavaScript contract assertions, with zero provider calls**. The current scope is goal declaration and linear planning; Champion execution, a general imperative runtime, branches and parallel programs remain separate integration work.
