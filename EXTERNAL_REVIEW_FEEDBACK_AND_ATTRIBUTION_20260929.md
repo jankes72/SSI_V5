@@ -15,7 +15,7 @@ Attribution boundary:
 - this credit concerns the **origin / early connection of CZARA**, not authorship of the whole SSI V5 system;
 - Paweł remains the author/operator responsible for the later architecture, implementation, training programme, integration and published claims;
 - this repository update does not independently verify Amnezja / [@amnezja3](https://github.com/amnezja3) (Mikael)'s exact GitHub handle/profile, so no profile URL is invented here;
-- the author identifies Amnezja as his GitHub follower and early collaborator; that follower relationship is recorded here as author-supplied provenance, not as a GitHub-API verification claim.
+- the author identifies Amnezja as an early collaborator; this attribution follows the author's chronology.
 
 A more exact profile link or dated technical artifact can be added later without changing this historical attribution.
 
@@ -89,6 +89,6 @@ Those contributions remain separately attributed and are not reassigned to Hamid
 
 The author also reiterates the earlier source ideas behind Moralna SI/ISKRA, the recursion idea/mechanisms used in Football World, and CZARA's initial direction and first connection step. This dated entry adds the Awareness/SCC credit while preserving the earlier records and their distinction between source ideas and later SSI implementations.
 
-As of this date, Paweł describes amnezja3 as the only follower of his GitHub account. This is the author's dated relationship/context declaration. The amnezja3 profile and Awareness repository references were resolved directly through GitHub for this publication.
+The amnezja3 profile and Awareness repository references were resolved directly through GitHub for this publication. The module article now includes a Polish description promoting Awareness in its own right and identifies the exact upstream modules adapted into SSI. Paweł also expresses his personal appreciation of his brother's greater technical skills.
 
 See [SCC module scope, supported notation, reproduced checks and continuing attribution](SCC_BLOCKS_MISSION_LANGUAGE_AND_AMNEZJA3_ATTRIBUTION_20261014.md).

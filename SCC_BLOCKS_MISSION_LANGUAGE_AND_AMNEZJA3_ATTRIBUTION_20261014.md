@@ -13,9 +13,34 @@
 
 To kolejny wkład mojego brata w idee rozwijane w SSI. Przypisuję mu również **źródłowe idee Moralnej SI/Iskier, pomysł rekursji wykorzystany w świecie piłki nożnej oraz początkowy pomysł i pierwszy krok połączenia Czary**. Późniejsze rozwinięcia i implementacje tych elementów w SSI mają swoją odrębną historię. Ta wzmianka uzupełnia istniejące zapisy pochodzenia i podkreśla ciągłość jego inspiracji.
 
-Według mojej deklaracji z **14 października 2026 r.**, amnezja3 jest moim bratem i jedynym obserwującym moje konto GitHub. To osobisty kontekst tego podziękowania. **Dziękuję za pomysły i Awareness, które pomogły mi rozwinąć język SCC do moich Blocks.**
+Chcę szczególnie wyróżnić pracę mojego brata i zachęcić do poznania jego biblioteki. **W mojej ocenie jego umiejętności są większe od moich; wiele zawdzięczam jego pomysłom. Dziękuję za Awareness i inspiracje, które pomogły mi rozwinąć język SCC do Blocks.**
 
 Obecny etap jest **deklaracją celu i planowaniem liniowych konstrukcji**. Pełne polecenia operacyjne, warunki i równoległe programy stanowią dalszy zakres języka. Publikacja rozróżnia poniżej działającą notację od dostępności wykonania championów i od przyszłych rozszerzeń.
+
+## Awareness — poznaj oryginalną bibliotekę do języka polskiego
+
+[**Awareness autorstwa amnezja3**](https://github.com/amnezja3/awareness) to biblioteka Pythona poświęcona analizie i budowaniu konstrukcji w języku polskim. Warto poznać ją jako samodzielny projekt autora.
+
+Według dokumentacji projektu oferuje między innymi:
+
+- **analizę budowy zdania** przez moduł Action: rozpoznawanie podmiotu, orzeczenia i innych elementów oraz zapis analizowanych konstrukcji w bazie;
+- **tworzenie bardziej złożonych konstrukcji** przez Advanced Action, z powiązaniem elementów i kategoriami;
+- **obsługę odmiany rzeczowników i przymiotników** przez przypadki oraz pracę z formami czasowników w `verb_flex`;
+- **narzędzia do analizy tekstu, generowania konstrukcji i badań lingwistycznych** nad językiem polskim.
+
+Dokumentacja źródłowa zawiera opis instalacji i przykłady użycia po polsku i angielsku. **[Zobacz Awareness i przykłady autora](https://github.com/amnezja3/awareness/blob/main/README.md).** Biblioteka jest udostępniona na licencji MIT.
+
+### Dokładne pochodzenie mechanizmów wykorzystanych w SSI
+
+Historia adaptacji i manifest przypiętych zasobów wskazują repozytorium `amnezja3/awareness`, commit `2767692de842fb1184f17d3249fc17b72c7527d1`. Z niego wykorzystano wybrane funkcje trzech modułów:
+
+| Moduł autora | Funkcje wykorzystane w adaptacji | Rola w konstrukcjach misji |
+|---|---|---|
+| [baseTools.py](https://github.com/amnezja3/awareness/blob/2767692de842fb1184f17d3249fc17b72c7527d1/baseTools.py) | `take_word`, `take_LID`, `take_se`, `take_links`, `take_sentens` | Odczyt kanonicznych elementów, identyfikatorów, konstrukcji i połączeń |
+| [checkerBaseOperators.py](https://github.com/amnezja3/awareness/blob/2767692de842fb1184f17d3249fc17b72c7527d1/checkerBaseOperators.py) | `fix_cat_list`, `neuralSentensPrepare`, `part_split_IN_OUT`, `part_most_popular` | Porządkowanie struktur, przygotowanie trajektorii oraz analiza wejść, wyjść i częstości |
+| [addionalisAwe.py](https://github.com/amnezja3/awareness/blob/2767692de842fb1184f17d3249fc17b72c7527d1/addionalisAwe.py) | `stats_part`, `generator_AI_most_popular` | Statystyki elementów i generator konstrukcji |
+
+W SSI identyfikatory elementów reprezentują bloki i mikrosieci, konstrukcje opisują trajektorie misji, a powiązania opisują przejścia. Adaptacja zawiera również poprawkę statystyki `stats_part`, odnotowaną w manifeście zasobów. Oryginalny projekt Awareness zachowuje autorstwo amnezja3 i własny zakres językowy; dostosowanie wybranych mechanizmów do misji oraz parser i integracja SCC należą do prac Pawła Jankiewicza nad SSI.
 
 ## What the implemented module does
 
@@ -88,7 +113,7 @@ An accepted goal declaration is a planning input. Native feature contracts, actu
 | Moralna SI / early ISKRA ideas | Earlier source ideas informed later moral/value and ISKRA work; SSI's later implementations and integration have their own authorship history |
 | Football World recursion | The source recursion idea/mechanisms influenced later Football World work; the Football World project and its SSI implementation remain Paweł's project line |
 | CZARA origin | Initial direction and first connection step, as already recorded in the early-CZARA attribution |
-| Personal support | Paweł states that amnezja3 was the only follower of his GitHub account as of this date |
+| Appreciation | Paweł expresses his personal view that his brother has greater technical skills and acknowledges the influence of his ideas |
 
 Existing chronology is preserved:
 
@@ -96,6 +121,10 @@ Existing chronology is preserved:
 - [Moralna SI / ISKRA source attribution](evidence/ISKRA_MORAL_AI_ORIGIN_AND_ATTRIBUTION.md)
 - [Earlier source archives and later SSI adaptation](MICHAL_JANKIEWICZ_SOURCE_PROJECTS_AND_SSI_ADAPTATION_20260916.md)
 - [Football World mechanism-level influences](FOOTBALL_WORLD_CURRENT_STATUS_20260916.md)
+
+### Awareness as a standalone Polish-language project
+
+Awareness deserves recognition for its own documented Polish-language sentence analysis, construction generation and inflection tools. The Polish introduction above links to the author's original project and names the exact three source modules and eleven functions used in the SSI construction adaptation. The recognition of amnezja3's work is independent of the later SCC implementation.
 
 ### Upstream provenance
 
