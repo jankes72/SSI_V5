@@ -82,3 +82,13 @@ Those contributions remain separately attributed and are not reassigned to Hamid
 - [Pre-S20 observability and evidence hardening preregistration](SYSTEM/SSI_V5_PRE_S20_OBSERVABILITY_AND_EVIDENCE_HARDENING_PREREGISTRATION_20260929.md)
 - [DEV safeguards record](RESULTS/SSI_V5_DEV_SAFEGUARDS_20260923.md)
 - [Mexico pre-benchmark R&D protocol](MEXICO_PREBENCHMARK_RND_PROTOCOL_20260928.md)
+
+## 2026-10-14 — continuing amnezja3 contribution and SCC mission language
+
+**New author-supplied attribution:** Paweł identifies [amnezja3](https://github.com/amnezja3) as his brother and credits [Awareness](https://github.com/amnezja3/awareness) as the source/inspiration for selected construction mechanisms adapted into the SCC BLOCKS mission language. Paweł performed the mission-language adaptation and SSI integration; Awareness retains its upstream authorship and MIT licence.
+
+The author also reiterates the earlier source ideas behind Moralna SI/ISKRA, the recursion idea/mechanisms used in Football World, and CZARA's initial direction and first connection step. This dated entry adds the Awareness/SCC credit while preserving the earlier records and their distinction between source ideas and later SSI implementations.
+
+As of this date, Paweł describes amnezja3 as the only follower of his GitHub account. This is the author's dated relationship/context declaration. The amnezja3 profile and Awareness repository references were resolved directly through GitHub for this publication.
+
+See [SCC module scope, supported notation, reproduced checks and continuing attribution](SCC_BLOCKS_MISSION_LANGUAGE_AND_AMNEZJA3_ATTRIBUTION_20261014.md).

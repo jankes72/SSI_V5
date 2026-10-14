@@ -5,6 +5,15 @@
 
 **Evidence-first research platform for persistent, adaptive multi-agent AI systems.**
 
+## SCC BLOCKS mission language — 2026-10-14
+
+**The author/operator reports the first SCC mission-language module deployed and working in SSI.** A27 implements declarative goal notation, deterministic validation, the existing R1 planning contract and the Universal Lab construction view. This publication reproduced **22 Python tests and 10 JavaScript contract assertions, with zero provider calls**. The current scope is goal declaration and linear planning; Champion execution, a general imperative runtime, branches and parallel programs remain separate integration work.
+
+**Inspiracja i źródło adaptowanych mechanizmów: mój brat [amnezja3](https://github.com/amnezja3) i jego [Awareness](https://github.com/amnezja3/awareness).** This continuing credit also records earlier source ideas behind Moralna SI/ISKRA, Football World recursion and the origin/first connection of CZARA. Paweł identifies amnezja3 as his only GitHub follower as of 2026-10-14; that relationship is recorded as the author's dated declaration.
+
+- **[SCC module, supported syntax, validation and full attribution](SCC_BLOCKS_MISSION_LANGUAGE_AND_AMNEZJA3_ATTRIBUTION_20261014.md)**
+- [Earlier CZARA and source attribution](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)
+
 ## Director A16 and web access declaration — 2026-10-12
 
 **A16 is installed on MSI and Universal Lab HTTP is ready, according to the operator's installation report.** The Director knowledge baseline now covers **48 topics in Polish and English**, with short, extended and technical answers: SSI, Router V10, Research Memory, six ISKRA actors, drones and Mother systems, humanoids, rescue research, BLOCKS, Hermes, Football World and future programmes.

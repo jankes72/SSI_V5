@@ -3,10 +3,19 @@
 > **Canonical architecture:** [SSI V5 — C4 Architecture](SSI_V5_C4_ARCHITECTURE.md) — single source of truth for the current public system structure. Update the C4 there instead of duplicating architecture diagrams across documents.
 
 
-**Status:** `CURRENT POINTER / 2026-10-12`  
+**Status:** `CURRENT POINTER / 2026-10-14`  
 **Repository role:** public R&D, evidence and external-validation hub with a published research portal; proprietary implementation remains private.  
 **Evidence boundary:** software-only unless a document explicitly states otherwise.  
 **History rule:** earlier dated truth/status files remain preserved and are not retroactively rewritten.
+
+## SCC BLOCKS mission language — 2026-10-14
+
+**The author/operator reports the first SCC mission-language module deployed and working in SSI.** A27 implements declarative goal notation, deterministic validation, the existing R1 planning contract and the Universal Lab construction view. This publication reproduced **22 Python tests and 10 JavaScript contract assertions, with zero provider calls**. The current scope is goal declaration and linear planning; Champion execution, a general imperative runtime, branches and parallel programs remain separate integration work.
+
+**Inspiracja i źródło adaptowanych mechanizmów: mój brat [amnezja3](https://github.com/amnezja3) i jego [Awareness](https://github.com/amnezja3/awareness).** This continuing credit also records earlier source ideas behind Moralna SI/ISKRA, Football World recursion and the origin/first connection of CZARA. Paweł identifies amnezja3 as his only GitHub follower as of 2026-10-14; that relationship is recorded as the author's dated declaration.
+
+- **[SCC module, supported syntax, validation and full attribution](SCC_BLOCKS_MISSION_LANGUAGE_AND_AMNEZJA3_ATTRIBUTION_20261014.md)**
+- [Earlier CZARA and source attribution](EXTERNAL_REVIEW_FEEDBACK_AND_ATTRIBUTION_20260929.md)
 
 ## Director A16 and web-service plan — 2026-10-12
 
