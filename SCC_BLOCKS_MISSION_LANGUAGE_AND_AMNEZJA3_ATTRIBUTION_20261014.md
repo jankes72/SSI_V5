@@ -105,7 +105,7 @@ An accepted goal declaration is a planning input. Native feature contracts, actu
 
 ## Planned Robert integration — 2026-10-15
 
-**PLANNED / NOT IMPLEMENTED / NOT DEPLOYED.** The next extension connects the common SSI mission language to Robert's own desktop-control loop and GUI cockpit, an additional Luna instance with visual Navigator and Technology Radar profiles, and source qualification before active Decomposer/BLOCKS adaptation. The additional Luna is separate from Flow/Full Flow assistance. A27's deployed declarative scope and reproduced checks above do not establish this future runtime.
+**PLANNED / NOT IMPLEMENTED / NOT DEPLOYED.** The next extension connects the common SSI mission language to Robert's desktop-control loop/cockpit, a separate Luna with Navigator, Radar and mission-prompt profiles, source qualification before active Decomposer/BLOCKS adaptation, and Director-led engineering missions through Work. Verification, Evidence, Notary, checkpoint/memory and response modules remain explicit integration responsibilities. The additional Luna is separate from Flow/Full Flow; the existing Champion/Challenger hierarchy and promotion rules are unchanged. A27's deployed declarative scope and reproduced checks above do not establish this future runtime.
 
 See the [dated Robert upgrade plan](ROBERT/PLANNED_SCC_LUNA_NAVIGATOR_RADAR_UPGRADE_20261015.md) and [Robert's preserved mission history](ROBERT/README.md). No new imperative syntax, live visual-model capability or desktop acceptance result is announced here.
 

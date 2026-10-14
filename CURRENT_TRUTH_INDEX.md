@@ -10,7 +10,7 @@
 
 ## Robert: planned SCC, Luna Navigator and Radar upgrade — 2026-10-15
 
-**PLANNED / NOT IMPLEMENTED / NOT DEPLOYED.** The next Robert upgrade is agreed as a development direction: integrated native desktop control with its own GUI cockpit; an additional Luna instance, separate from Flow/Full Flow, with Navigator and Technology Radar profiles; qualification of source code before active Decomposer/BLOCKS adaptation; and common SSI mission contracts under SCC. This is not an installation or a new result from Robert's earlier missions.
+**PLANNED / NOT IMPLEMENTED / NOT DEPLOYED.** Robert's next upgrade covers integrated desktop control and its own GUI cockpit; a separate Luna instance for navigation, Radar analysis and mission prompts; Director SSI/Director Charlie task delegation; guided conversation/download/install/report training; Work and extensible domain adapters; and verification, Evidence, Notary, memory and evidence-backed replies. The existing Champion/Challenger hierarchy and promotion rules remain unchanged, with skill organization and task-scoped Champion matching through native Research Memory/Router contracts. This is a development plan, not an installation or a new result from Robert's earlier missions.
 
 - **[Full planned scope, pending acceptance and preserved mission baseline](ROBERT/PLANNED_SCC_LUNA_NAVIGATOR_RADAR_UPGRADE_20261015.md)**
 - [Robert's existing desktop missions and Technology Radar](ROBERT/README.md)

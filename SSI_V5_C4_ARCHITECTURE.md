@@ -270,13 +270,19 @@ The [complementary ISKRA/worlds record](ROBERT/ISKRA_WORLDS_AND_LONG_TERM_RESEAR
 
 ### Planned Robert SCC, Luna Navigator and Radar upgrade — 2026-10-15
 
-**Status: PLANNED / NOT IMPLEMENTED / NOT DEPLOYED.** Robert is planned to own an integrated perception-navigation-native-input-verification loop, with his own GUI as the cockpit. An additional Luna instance is separate from Flow/Full Flow and has two fixed contexts: Navigator for visual orientation and bounded next-step proposals; Radar for analysis of retrieved technical sources and implementation gaps. Direct image support in the selected model/gateway remains to be verified.
+**Status: PLANNED / NOT IMPLEMENTED / NOT DEPLOYED.** Robert is planned to own perception, navigation, native input and outcome verification, with his own GUI as the cockpit. The separate additional Luna has fixed Navigator, Radar and mission-prompt contexts, distinct from Flow/Full Flow assistance. Direct image support in the selected model/gateway remains to be verified.
 
-The planned source path is Radar acquisition, Luna assessment, native scope qualification, Decomposer/BLOCKS adaptation, adapter validation and existing controlled activation. Unqualified code remains research material. Common SSI mission contracts use SCC without assuming that A27 already implements this general runtime. Existing actors, versioned Champions, Research Memory, gateway, queue, budget accounting and evidence authority remain the integration points.
+Director SSI retains strategic authority. R&D Director Charlie consults that authority, defines the mission and assigns work to Robert or the distinct BODY_FROZEN runtime. Assistant Charlie and Director_Czary remain separate identities. Luna turns assigned context and acceptance criteria into prompts; Work/ChatGPT can provide coding/research collaboration.
 
-The local controller executes cursor/keyboard operations and checks effects. The current Dell-only mission constraint and dynamic targeting remain applicable. Radar work has lower scheduling priority than active navigation, with separate task contexts and bounded mission-wide consultation. Earlier V9/V9R1 outcomes and the partial Radar deployment do not include this extension.
+The guided curriculum covers conversation readiness, exact text/artifact receipt, download, terminal installation, functional verification and evidence-backed reporting. It also includes Robert creating an organization-linked project and a useful laboratory/control panel connected to a real bounded input adapter. Checkpoints reconcile uncertain sends and installations before repetition. The current Dell-only mission constraint and dynamic targeting remain applicable.
 
-The [dated Robert plan](ROBERT/PLANNED_SCC_LUNA_NAVIGATOR_RADAR_UPGRADE_20261015.md) records pending acceptance; the [SCC publication](SCC_BLOCKS_MISSION_LANGUAGE_AND_AMNEZJA3_ATTRIBUTION_20261014.md) retains A27's implemented scope. No deployment or new runtime success is claimed.
+The source path is Radar acquisition, Luna assessment, native scope qualification, Decomposer/BLOCKS adaptation, adapter validation and existing controlled activation. Common SSI mission contracts use SCC; extensible language/toolchain/device adapters retain scoped qualification. Work, local files and external compute require actual environment bindings. A27's existing declaration parser does not establish this general runtime.
+
+Verification, Evidence, local Notary signing, CONTINUUM, Research Memory/CEPA and the applicable existing conversation/Navigator or Hermes channel form the result/reporting path. Tests and review establish the declared outcome; a signature establishes provenance/integrity. Independent external attestation remains separate and unestablished for this new path; the [existing evidence/notary contract](UNIVERSAL_LAB_EVIDENCE_NOTARY_AND_ATTESTATION_CONTRACT_20261008.md) governs the relevant states and outage handling. CZARA/Shadow proposals remain distinct from native verdicts.
+
+The existing Champion/Challenger hierarchy, qualification and promotion criteria remain unchanged. There is no new call-count threshold. Research Memory organizes task-scoped skills and supplies eligible Champion matches through the existing selection/Router integration. Each Champion remains bounded to its task/transition, conditions, version and acceptance criterion; it is not a universal executor. Luna does not own a replacement selection hierarchy. Missing native bindings retain their explicit status. Any demonstration distinguishes model calls by the conversation teacher, navigation assistance and perception; a fully model-free claim requires the corresponding evidence.
+
+Existing actors, versioned Champions, Research Memory, Operations, gateway, queue, budgets and evidence authority remain the integration points. Radar work has lower scheduling priority than active navigation. Earlier V9/V9R1 outcomes and partial Radar deployment do not include this extension. The [dated plan, revision 2](ROBERT/PLANNED_SCC_LUNA_NAVIGATOR_RADAR_UPGRADE_20261015.md) records pending acceptance; the [SCC publication](SCC_BLOCKS_MISSION_LANGUAGE_AND_AMNEZJA3_ATTRIBUTION_20261014.md) retains A27's implemented scope.
 
 ### Research Memory and evidence authority boundary
 
@@ -447,7 +453,7 @@ This table is a **pointer**, not a replacement for the evidence documents.
 | WEB engineering curriculum | **READY / live completion not claimed** |
 | Universal Lab | **R3 baseline with later targeted updates / wider integrations still require scoped verification** |
 | Director A15/A16 narration | **A16 INSTALLED / HTTP READY, operator-reported; live narration test NOT_RUN** |
-| Robert SCC / additional Luna Navigator-Radar upgrade | **PLANNED / NOT IMPLEMENTED / NOT DEPLOYED; runtime acceptance NOT RUN** |
+| Robert SCC / additional Luna, guided engineering and Notary-response integration | **PLANNED / NOT IMPLEMENTED / NOT DEPLOYED; runtime acceptance NOT RUN** |
 | Web Director reached from GitHub | **PLANNED / declared 2026-10-12; launch date and live URL unset** |
 | Caption Chat R4 | **INSTALLED / translation operator-confirmed; full UI acceptance not established** |
 | Research Memory P1 / Meeting Link V1 | **INSTALLED / partially connected meeting-observation history** |

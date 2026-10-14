@@ -7,7 +7,7 @@
 
 ## Planned next upgrade — 15 October 2026
 
-**Status: PLANNED / NOT IMPLEMENTED / NOT DEPLOYED.** Robert's next development direction adds his own GUI cockpit and integrated native desktop-control loop, an additional Luna instance for visual navigation and Technology Radar analysis, qualification before active source-to-BLOCKS adaptation, and common SSI mission contracts under SCC. The additional Luna is separate from the instance used for micronetwork Flow/Full Flow. Runtime acceptance of this extension has not been run.
+**Status: PLANNED / NOT IMPLEMENTED / NOT DEPLOYED.** Robert's next development direction adds his own GUI/native desktop-control loop, a separate Luna for visual navigation, Technology Radar and mission prompts, Director-led guided engineering/installation training, Work and domain adapters, plus verification, Evidence, Notary, memory and evidence-backed replies. The existing Champion/Challenger hierarchy and promotion criteria remain unchanged. Runtime acceptance of this extension has not been run.
 
 **[Read the full future scope and acceptance gates](PLANNED_SCC_LUNA_NAVIGATOR_RADAR_UPGRADE_20261015.md).** The 12 October baseline and earlier mission results below remain historical observations; they do not include this upgrade.
 
@@ -94,7 +94,7 @@ V9 code defines 11 stages from the environment check to mission closure. V9R1 is
 
 The target competence includes recognising a changed interface layout and completing a task with outcome verification. Replaying known coordinates alone does not establish generalisation.
 
-The [planned 15 October upgrade](PLANNED_SCC_LUNA_NAVIGATOR_RADAR_UPGRADE_20261015.md#1-robert-owns-the-desktop-control-loop) extends this mission line with an integrated controller/cockpit and dedicated visual Luna assistance. It is not yet implemented or deployed and was not part of V9/V9R1's recorded results.
+The [planned 15 October upgrade](PLANNED_SCC_LUNA_NAVIGATOR_RADAR_UPGRADE_20261015.md#6-guided-engineering-curriculum-conversation-to-installation) extends this line with guided long missions: conversation, waiting, artifact receipt, installation, functional verification and a reported result. The separate Luna supports navigation, Radar and mission prompts under Director Charlie's assignment. Native Champion/Challenger rules remain unchanged. This future extension was not part of V9/V9R1's recorded results.
 
 ### 4. Desktop acceptance tests
 
