@@ -5,6 +5,13 @@
 
 **Evidence-first research platform for persistent, adaptive multi-agent AI systems.**
 
+## Latest verified public progress — 2026-10-18
+
+**Operator-reported bounded evidence, not an independent replication:** one CPU-built and locally smoke-tested SSI MultiQuant 1.5B candidate (1/7 built, 0/7 production promoted; 7.16 tok/s in a one-thread sample), plus an **incomplete** SCC/Awareness/Research Memory inventory (25,001 entries scanned, limit reached, no migration or training run). Proprietary SSI code and know-how remain private.
+
+- **[17–18 October public progress report — CPU-7 and SCC/Awareness](RESULTS/SSI_V5_PUBLIC_PROGRESS_CPU7_SCC_AWARENESS_20261018.md)**
+
+
 ## Robert: planned SCC, Luna Navigator and Radar upgrade — 2026-10-15
 
 **PLANNED / NOT IMPLEMENTED / NOT DEPLOYED.** Robert's next upgrade covers integrated desktop control and its own GUI cockpit; a separate Luna instance for navigation, Radar analysis and mission prompts; Director SSI/Director Charlie task delegation; guided conversation/download/install/report training; Work and extensible domain adapters; and verification, Evidence, Notary, memory and evidence-backed replies. The existing Champion/Challenger hierarchy and promotion rules remain unchanged, with skill organization and task-scoped Champion matching through native Research Memory/Router contracts. This is a development plan, not an installation or a new result from Robert's earlier missions.
