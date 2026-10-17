@@ -1,3 +1,5 @@
+> **CPU decision micro-model clarification:** The new specialized JEV-style student must run on the **4 vCPU / 16 GB RAM CORE24 VPS, CPU only**. See [R4 CPU micro-model design](SSI_CORE24_CPU_DECISION_MICRO_R4.md). The RunPod 24 GB GPU proposal remains a distinct serial two-model storage/queue design; **do not place the CPU micro-model there by mistake**.
+
 # SSI V5 — RunPod 24 GB Dual-Model Queue + CORE24 Quantization R2
 
 **Date:** 2026-10-17  
