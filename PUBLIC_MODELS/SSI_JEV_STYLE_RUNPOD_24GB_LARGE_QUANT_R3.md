@@ -1,3 +1,5 @@
+> **TARGET CLARIFICATION (2026-10-17):** The **new small JEV-style quantized decision model** is intended for the **existing CPU-only SSI CORE24 VPS (4 vCPU, 16 GB RAM, no GPU)**, NOT for this 24 GB VRAM RunPod. See the [current CPU micro-model design R4](SSI_CORE24_CPU_DECISION_MICRO_R4.md). This R3 file is retained **only as a separate, optional exploration of a second large model on the existing on-demand RunPod GPU**. No deployment is approved by this document.
+
 # SSI V5 — JEV-Style Decision Engine on the Existing 24 GB GPU (R3)
 
 **Date:** 2026-10-17  
