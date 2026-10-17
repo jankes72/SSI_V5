@@ -1,3 +1,5 @@
+> **HOST ASSIGNMENT SUPERSEDED — 2026-10-17:** The owner subsequently clarified that **the first 13 SSI MultiQuant decision-aware variants should be built on the existing 24/7 MODEL VPS**, with strict low-resource, one-at-a-time, non-disruptive controls and a STOP when high-precision weights exceed actual headroom. Robert receives metadata and model-comparison evidence; the **five Robert model slots are future plans only**. Do not execute the Robert-only instructions further down as the current plan. **[Current SSI MultiQuant R7](SSI_MICRO13_DECISION_AWARE_MULTIQ_R7_20261017.md)**. No models were deployed by this correction.
+
 # SSI V5 — Director Offline Micro R5: Robert builds, Model VPS executes
 
 **Decision date:** 2026-10-17  
