@@ -34,3 +34,8 @@ The ROBERT VPS has only ~16 GB **total** system RAM and 4 vCPU and also runs ess
 The private **SSI_DIRECTOR_OFFLINE_MICRO_R3_ROBERT_BUILD_20261017** toolkit supersedes R2. It separates read-only source inventory from Robert-only build actions, requires explicit operator pinning of the Robert build host, produces disabled jobs by default, and leaves the production model server unchanged. The private ZIP/source must not be uploaded to this public repository.
 
 **One-sentence rule:** **SSI ROBERT prepares; SSI MODEL VPS runs; SSI DIRECTOR decides; evidence calibrates; GitHub reports anonymized findings.**
+
+
+## First cohort decision (2026-10-17): MICRO-13
+
+The first planned cohort is **one smaller quantization candidate per existing reported MODEL VPS Ollama baseline** (13 proposed additions, **zero completed/installed** at this publication). The prioritized list, System One limitations for D1/Tev1, source-checkpoint requirements, admission policy, and real-mission calibration contract are documented in **[SSI MICRO-13 — paired baseline and candidate selection](SSI_MICRO13_BASELINE_TO_CANDIDATES_R6_20261017.md)**. The corresponding **private** R4 staging toolkit is not published to this repository. A disabled gateway manifest is not proof of model compilation or a live routing integration.
