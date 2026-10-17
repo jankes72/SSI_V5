@@ -95,3 +95,22 @@ The follow-up **single constrained local CPU inference** of the already-built Qw
 The result is **3/4**, not a pass of the full QA gate. This tiny fixed-input sample does **not** establish general decision accuracy or provide evidence that quantization caused the error. **No comparison against the pre-existing original Q4_K_M** has yet been performed. A private, controlled and single-threaded baseline comparison has been prepared; it is **not yet executed on the VPS**.
 
 **Status unchanged:** 1/7 candidates built, 1/7 smoke-tested, **0/7 production-approved**, no Router change, no native SCC execution. All raw prompts, response files, proprietary scripts, host paths and implementation details remain private.
+
+
+## Update 18 October 2026: CPU-7 R13 bounded candidate vs original comparison
+
+**Completed on the existing VPS using operator-provided logs; private raw evidence retained locally.** A preflight verified the pre-existing original Q4_K_M model artifact through its Ollama manifest, GGUF header, size and full SHA-256 digest. All 13 original Ollama tags were present and Ollama remained active/idle at the checks. The existing candidate R12R2 evidence was reevaluated without modification; exactly four isolated CPU-only inferences were then run against the original model using the same fixed test prompts and the same static evaluator.
+
+| Synthetic format / typed-response task | New SSI MultiQuant candidate | Pre-existing original Q4_K_M |
+|---|---|---|
+| simple Python function A | PASS | PASS |
+| simple Python function B | PASS | PASS |
+| typed software-task routing choice | PASS | PASS |
+| typed physical-GUI routing choice | FAIL | FAIL |
+| **Total** | **3/4** | **3/4** |
+
+**Interpretation:** The new candidate **did not score lower than the pre-existing original in these four selected checks**. The GUI-task check failed for both. Their exact output values or failure mechanisms may still differ; the aggregated report alone does not establish identical failures. These small AST/format and typed-label tests are **not** a general capability, safety or reasoning benchmark.
+
+**Unresolved controls:** the original Ollama artifact's exact upstream checkpoint/tokenizer equivalence to the candidate's Hugging Face source has not been established. Therefore **the isolated impact of the new quantization is unknown**. The candidate evidence was reused from R12R2 rather than freshly re-run in a paired timing experiment, so these runs do not support a performance-speedup claim.
+
+**Production state unchanged:** one CPU-7 candidate built and smoke-tested, **zero qualified/promoted**; original blobs and tags intact, no Router changes, no SCC runtime execution, no extra paid GPU/model calls. A follow-up should inspect the two GUI failure reasons *from existing private evidence without rerunning inference*, then preregister a broader balanced evaluation with checkpoint-source parity checks.
