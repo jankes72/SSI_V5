@@ -1,3 +1,5 @@
+> **AKTUALIZACJA R8 (17.10.2026):** Pierwszą serię 13 SSI MultiQuant planujemy **przygotowywać na uruchamianym na żądanie RunPod GPU 24 GB VRAM** w ramach kontrolowanej kolejki i ustalonego budżetu. **Serwer MODELS 24/7 nie kwantyzuje**, tylko obsługuje 13 oryginałów i później, po zatwierdzeniu, gotowe warianty. 24 GB VRAM **nie zastępuje systemowego RAM** wymaganego przez konwersję CPU; GPU przyspiesza szczególnie `llama-imatrix`. Pięć przyszłych modeli Roberta pozostaje wyłącznie planem. [Obowiązujący plan R8](SSI_MULTIQUANT_GPU24_OFFLINE_BUILD_R8_20261017.md). Poniższe starsze instrukcje R7 o konwersji na MODELS VPS są nieaktualne.
+
 # SSI MultiQuant — MICRO-13 zorientowane na decyzje (R7)
 
 **Data ustalenia:** 2026-10-17  
