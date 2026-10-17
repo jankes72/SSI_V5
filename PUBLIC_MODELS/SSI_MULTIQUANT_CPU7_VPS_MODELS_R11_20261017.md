@@ -79,3 +79,14 @@ Wykonać gdy działa już system DIRECTOR/ROBERT/SSI CODEX/Charlie/Iskry/szkolen
 - **Kontrola skryptu**: statyczna skladnia Bash OK. `llama.cpp` w wskazanym commicie deklaruje `torch==2.11.0` w wymaganiach konwertera; pakiet `python3-venv` moze wymagać jednorazowej instalacji na minimalnym Debianie. Pojedynczy pilot ma cgroup `CPUQuota=150%`, `MemoryMax=9G`, `MemorySwapMax=0`; to **ogranicza**, ale nie gwarantuje zerowego wplywu na produkcyjny dysk i siec. Podczas prac konieczne monitorowanie `ollama` i zasobow.
 
 Wniosek: **bezpiecznie przechodzimy do przygotowania jednego pilota** dopiero po potwierdzeniu zaleznosci i sprawdzeniu biezacego obciazenia. Nie uruchamiać pozostałych 6 skryptem 1.5B; ich przygotowanie jest oddzielnym etapem.
+
+## Pilot Qwen 1.5B — R11 FIX R2
+
+**Raport operatora, 17.10.2026:** przygotowanie `python3-venv` na SSI MODELS zakończone powodzeniem (Python 3.11.2, `ionice` obecny, Ollama aktywna). Skrypt pierwszego pilota uruchomił cgroup (`CPUQuota=150%`, `MemoryMax=9G`, `MemorySwapMax=0`) i potwierdził wolne zasoby. **Nie zbudował jednak modelu**. Dwa potwierdzone problemy:
+1. `ollama ps` zgłosiło `panic: $HOME is not defined` po uruchomieniu przez `systemd-run`. Poprzedni skrypt mógł błędnie przepuszczać nieudaną kontrolę aktywnych modeli.
+2. `pip` w izolowanym venv (Debian pip 23.0) próbował instalować `torch==2.11.0` wyłącznie z indeksu PyTorch CPU; metadane `typing-extensions` były odrzucone, a zależność `flit_core` nie była dostępna w tym indeksie. Instalacja zależności zakończyła się kodem błędu, zanim pobrano checkpoint HF.
+
+**Poprawka lokalnej paczki `SSI_MULTIQ_CPU7_R11_FIX_R2_20261017.zip`:** nie jest publikowana w repo zawierającym tylko dowody i plany. Zapewnia `HOME=/root` w cgroup, sprawdza aktywne modele poprzez `/api/ps` i w razie problemu kończy się stanem `WAITING_FOR_RESOURCES` (fail-closed). Podnosi `pip` wyłącznie w dedykowanym venv, rozdziela oficjalne CPU-only wheel PyTorch od normalnych zależności PyPI, kontroluje `torch.version.cuda` i `pip check`, używa pośrednich plików `.partial` i blokady nadpisania przy przerwaniu. **Nie dotyka oryginalnych 13 tagów, nie używa RunPod i nie uruchamia zmian Routera.**
+
+**Testy wykonane przed wydaniem:** `bash -n` skryptu OK; kontrola fail-closed z mockami: Ollama idle → kontynuuj, 1 model załadowany → STOP, błąd statusu Ollama → STOP. **Nie wykonano end-to-end na zdalnym VPS.** Po ponownym uruchomieniu konieczne sprawdzenie pełnego logu i rzeczywistego manifestu, nie wnioskować o stanie PASS z samej obecności pliku.
+
