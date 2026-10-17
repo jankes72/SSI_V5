@@ -120,3 +120,14 @@ SWAP **nie łączy pamięci trzech VPS**, nie gwarantuje ukończenia treningu i 
 - Host: **15 GiB RAM (ok. 15 GiB available)**, istniejący **12 GiB SWAP**, zajęte ok. 63 GB, wolne **51 GB**; nie zwalniać plików źródłowych bez potwierdzenia backupu i kolejnej fazy.
 - **R11 aktualny stan:** zbudowanych **1/7** kandydatów, zweryfikowanych statycznie **1/7**, zatwierdzonych inferencyjnie **0/7**, produkcyjnych **0/7**.
 - **Kolejny konieczny test:** oddzielne narzędzie `llama-completion` na CPU w kontrolowanej transient cgroup; repo `llama.cpp` ma `LLAMA_BUILD_SERVER=OFF`, dlatego **`llama-cli` nie występuje w bieżącej konfiguracji**, podczas gdy `llama-completion` jest wspierane przy `LLAMA_BUILD_TOOLS=ON`. Budowa jednego narzędzia `-j1`, `nice/ionice`; 1 lokalna odpowiedź testowa bez rejestrowania GGUF w Ollamie, bez routingu ani płatnych API. Nie promować automatycznie po jednym smoke teście.
+
+## Qwen 1.5B — niezalezny smoke inference PASS (operator)
+
+**17.10.2026 — raport terminalowy dostarczony przez operatora:** 
+- Po sprawdzeniu SHA256 kandydata (zgodny z `c8e7a1d6ad88656b24c378e98cb469324c2b9a55c7fd180080c1743ff65672cb`) zbudowano narzędzie **`llama-completion`** z istniejącego, przypiętego kodu `llama.cpp`, bez zmian usług Ollama.
+- Zrealizowano **jedną lokalną inferencję** Qwen2.5-Coder 1.5B SSI MultiQuant `Q4KM-mix-v1`, w `systemd-run` CPU<=1 vCPU, RAM<=4 GiB, swap procesu=0, kontekst 1024, limit generacji 96 tokenów, temperatura 0.
+- Model wygenerował syntaktycznie poprawny przykład `def add(a, b): return a + b` w bloku Python; zarejestrowano **prompt processing 19.28 tokena/s** (49 tok), **generation 7.16 tokena/s** (16 tok). **Pojedynczy pomiar**; brak testów statystycznych, odpowiedzi benchmarkowych czy porównania z poprzednim kwantem.
+- Ostrzeżenia: `control-looking token: 128247 '</s>' was not control-type` oraz `User-specified prompt will pre-start conversation`. Wyjście wygląda poprawnie, lecz oba zjawiska należy zachować jako evidence i zbadać przy przyszłej walidacji.
+- `systemctl is-active ollama` nadal `active`. Skrypt nie utworzył żadnego modelu w Ollamie ani nie zmienił Routera. **Brak dodatkowych kosztów GPU / API.**
+- **Status przejściowy:** `LOCAL_INFERENCE_SMOKE_PASS`, `CANDIDATE_DISABLED_UNQUALIFIED`. **Licznik R11: 1/7 zbudowany, 1/7 smoke PASS, 0/7 promowanych**. Nie mylić sukcesu pojedynczego kodu Python z lepszą jakością decyzyjną czy równoważnością dużym modelom.
+- Następna brama: mały lokalny zestaw testów formatowania, podstaw programowania i decyzji agentów na tym samym pliku GGUF z ograniczeniami cgroup, następnie porównanie z oryginałem na identycznych danych **w kontrolowanym oknie** przed promocją. Bez sztucznej deklaracji gotowości w produkcji.
