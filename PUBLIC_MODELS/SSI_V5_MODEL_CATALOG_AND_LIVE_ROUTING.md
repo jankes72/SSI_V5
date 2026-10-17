@@ -135,3 +135,8 @@ Latest evidence UTC: pending
 To complete each row from existing manifests and operator reports, collect **metadata only**: installed model ID, pinned digest, quantization as returned by `ollama show` or build metadata, original Dockerfile/source manifest link, trusted artifact hash, and (for APIs) registered provider model slug. This is read-only inventory, **not an additional model benchmark**.
 
 **Next milestone:** reconcile all operator-reported models against installed manifests; only then replace `PENDING` with exact downloaded revisions and attach real-mission performance evidence.
+
+
+## Planned compact decision students
+
+A separate R1 architecture plan covers two **not-yet-trained** models: **SSI-DECISION-B27-MICRO** and **SSI-DECISION-200B-LITE**, both driven by verified outcomes from real SSI missions. The latter is intended for a spare logical slot on a **24 GB VRAM** GPU without disturbing the three models on the other server; the exact “200B” teacher identity and measured GPU headroom remain unverified. **[Read the deployment and distillation plan](SSI_DECISION_STUDENTS_24GB_R1_PLAN.md).**
