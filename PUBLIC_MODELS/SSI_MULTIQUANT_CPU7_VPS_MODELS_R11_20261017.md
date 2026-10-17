@@ -109,3 +109,14 @@ Wniosek: **bezpiecznie przechodzimy do przygotowania jednego pilota** dopiero po
 Użytkownik przekazał osobną koncepcję `SSI_3VPS_SWAP_MULTIQ_R1_20261017.zip`. Sama nazwa/opis paczki **nie jest dowodem jej zawartości ani wykonania**. **MODELS ma już 12 GiB SWAP**, więc nie należy go dublować. Propozycje na **ROBERT do 8 GiB**, **DIRECTOR do 4 GiB** to wartości niezatwierdzone, zależne od audytu ilości RAM, aktualnego SWAP, filesystem, obciążeń i dysku. Najpierw wyłącznie odczyt `swapon --show`, `free -h`, `df -h`, `systemctl`; bez `--apply`, bez instalacji na ślepo i bez modyfikowania istniejących plików wymiany.
 
 SWAP **nie łączy pamięci trzech VPS**, nie gwarantuje ukończenia treningu i nie zwiększa przepustowości CPU. Director/Robert mogą wykonywać osobne pomocnicze zadania przy zachowaniu SLA misji, a MODELS zostaje inferencyjny. Rozbudowa o pozostałe 6 wariantów i 5 przyszłych modeli Roberta jest nadal odłożona.
+
+## Potwierdzenie integralności operatora — GGUF v3 SHA256 PASS
+
+**17.10.2026, audyt operatora bez zmian na produkcyjnym SSI MODELS VPS:**
+
+- `/opt/ssi-multiquant/jobs/qwen25-coder-15b/ssi-multiq-qwen25-coder-15b-Q4KM-mix-v1.gguf` istnieje, SHA256 po ponownym odczycie **ZGODNY** z manifestem: `c8e7a1d6ad88656b24c378e98cb469324c2b9a55c7fd180080c1743ff65672cb`.
+- Nagłówek GGUF = **GGUF v3**, rozmiar pliku **955.05 MB**, manifest podaje `CANDIDATE_DISABLED_UNTESTED`; to potwierdzenie integralności pliku, nie zdolności inferencyjnych ani trafności decyzji.
+- `ollama` nadal **active**, lista zawiera komplet **13 pierwotnych tagów**, `ollama ps` nie wskazywał modelu załadowanego w chwili testu.
+- Host: **15 GiB RAM (ok. 15 GiB available)**, istniejący **12 GiB SWAP**, zajęte ok. 63 GB, wolne **51 GB**; nie zwalniać plików źródłowych bez potwierdzenia backupu i kolejnej fazy.
+- **R11 aktualny stan:** zbudowanych **1/7** kandydatów, zweryfikowanych statycznie **1/7**, zatwierdzonych inferencyjnie **0/7**, produkcyjnych **0/7**.
+- **Kolejny konieczny test:** oddzielne narzędzie `llama-completion` na CPU w kontrolowanej transient cgroup; repo `llama.cpp` ma `LLAMA_BUILD_SERVER=OFF`, dlatego **`llama-cli` nie występuje w bieżącej konfiguracji**, podczas gdy `llama-completion` jest wspierane przy `LLAMA_BUILD_TOOLS=ON`. Budowa jednego narzędzia `-j1`, `nice/ionice`; 1 lokalna odpowiedź testowa bez rejestrowania GGUF w Ollamie, bez routingu ani płatnych API. Nie promować automatycznie po jednym smoke teście.
