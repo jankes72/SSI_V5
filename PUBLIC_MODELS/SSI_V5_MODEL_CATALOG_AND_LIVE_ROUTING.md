@@ -1,3 +1,5 @@
+> **2026-10-17 CPU target update:** The SSI JEV-style **small distilled/quantized decision specialist** targets the **always-on CORE24 VPS (16 GB RAM, 4 vCPU, CPU-only)**. See [CPU Decision Micro R4](SSI_CORE24_CPU_DECISION_MICRO_R4.md). Separate optional large-model plans for RunPod's **24 GB VRAM GPU** must not be confused with this CPU-only deployment.
+
 # SSI V5 — Public Model Sources, Exact Variants & Real-Mission Calibration
 
 **Status:** Living public index · **First edition:** 2026-10-17  
