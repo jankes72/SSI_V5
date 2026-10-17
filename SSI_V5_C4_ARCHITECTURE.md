@@ -642,3 +642,16 @@ Partnership, funding and consortium documents can plan roles, resources, deliver
 - **Validation:** acceptance per vendor/device model and demonstrated real user workflows; use evidence, functional regression, rollback and fail-closed policy. An external standard or planned adapter is **not evidence of device compatibility**.
 
 **Detailed user-facing product workflow and proposed adapter contracts:** [SSI Universal App — Commercial Smart Home / Robotics Platform R1](COMMERCIAL/SSI_UNIVERSAL_APP_SMART_HOME_MULTIQ_R1_20261017.md). This architecture section is the canonical SSI context/containers boundary; the linked product document gives implementation contracts without duplicating architecture diagrams.
+
+
+## Model-preparation and production-inference VPS boundaries — 2026-10-17
+
+**Status: ACCEPTED DEPLOYMENT PLAN, not a claim of independently verified production migration.** For the SSI Director Offline MICRO/NANO quantization project, the owner specified three distinct 24/7 VPS responsibilities:
+
+1. **SSI DIRECTOR VPS:** owns mission orchestration and model-selection decisions; does not perform quantization or training.
+2. **SSI ROBERT VPS (~4 vCPU / 16 GB RAM, CPU-only target):** **exclusive preparation/build location** for small offline variants. Reads a privately transferred inventory, performs authorized source/license/format verification and one-at-a-time CPU quantization only if available memory/disk and normal Robert missions permit it. It does **not** build on RunPod.
+3. **SSI MODEL VPS:** operates the existing **13 operator-reported Ollama model variants**. Its role in this project is read-only inventory export and **actual SSI mission inference on separately approved finished model candidates**. No model-conversion/training process runs here; original Ollama models and tags stay unchanged, with a rollback mechanism for trials.
+
+**Evidence:** real Director/CODEX/Robert mission outcomes supply an anonymized, version-specific comparison (quantization, actual cost/latency, success/errors, micro-network coupling). This is not a synthetic benchmarking program and creates no automatic Router V10 promotion. Model abilities and decisions remain separate from persistent SSI micro-networks, SCC, Research Memory and Notary. Avoid publishing private Router/micronetwork implementation, secret state or infrastructure identifiers.
+
+**Current R5 operational statement:** [ROBERT builder / MODEL VPS inference / DIRECTOR coordinator](PUBLIC_MODELS/SSI_V5_ROBERT_BUILDER_MODEL_VPS_PRODUCTION_R5_20261017.md). Earlier published proposals that place conversion on the CORE24 inference VPS are explicitly superseded.
