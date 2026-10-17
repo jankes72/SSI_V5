@@ -133,3 +133,48 @@ Do not publish API keys, private IPs, credentials, proprietary code, private pro
 ## Relationship to SSI V5
 
 The Docker image is an optional external inference engine candidate for SSI's model router. Publication of this package does **not** disclose or release private SSI V5 modules or project data. Successful integration with SSI's router is a separate acceptance task.
+
+
+## SSI V5 — multi-model real-world evaluation programme (planned)
+
+**Scope expansion — 2026-10-17.** SSI will benchmark not only this Bonsai release but the model collection actually available to the project, using **real SSI CODEX, Director and Robert tasks** as well as controlled tests. The operator estimates roughly 20 or more model variants, but the **exact inventory is not yet verified**.
+
+This is a **documentation and comparison programme**, not a plan to upload every third-party model to GHCR. For models sourced elsewhere, we will link to their **official upstream model pages**, preserving authorship, licenses, versions and original download locations after verification. No model weight redistribution is implied.
+
+### Hardware and quantization comparison
+
+Record actual hardware rather than assuming that “16 / 24 / 48” always refers to GPU VRAM. Planned comparison classes include **16 GB, 24 GB and 48 GB** environments where available; measure whether each is RAM, VRAM or both. Distinguish full-precision and quantized variants (e.g., Q2/PQ2, Q3, Q4, Q8 and larger precision formats **only when actually present**). Never infer a precision, fit, memory footprint, or speed from a filename alone.
+
+For every verified variant, log:
+- Canonical model name, parameter count, upstream author, official link, license and model revision/digest;
+- Quantization type / file format / execution engine and whether the model weights are local, on an existing VPS, external API, or RunPod;
+- Actual download source and verified file hash (exclude private mirror tokens);
+- CPU, system RAM, GPU model, VRAM, environment and runtime versions;
+- On-disk bytes, runtime RAM/VRAM peak, cold-start time, tokens/sec, input/output latency, failures, estimated or metered costs;
+- Reasoning, coding, multilingual (including Polish), instruction-following, long-context and structured-output behavior;
+- Real SSI mission outcomes, passed tests, regressions, task suitability and observed weaknesses;
+- Evidence ID, repeat count, confounding factors, limitations and **PASS / FAIL / INCONCLUSIVE / NOT TESTED**.
+
+### Real SSI work as benchmark evidence
+
+The primary application benchmark will use anonymized/reproducible real workflows: SSI CODEX repository analysis, code generation, patch validation and tests; Director task planning, routing and recovery; Robert browser automation and evidence creation. Results must separate **model ability** from orchestration, tools, retrieval and hardware effects. Private SSI code, repositories, user data, memories and credentials must never be published.
+
+### Living comparison register
+
+| Variant / family | Source link | Precision / runtime | Tested on 16 GB | Tested on 24 GB | Tested on 48 GB | SSI mission result | Strengths | Weaknesses |
+|---|---|---|---|---|---|---|---|---|
+| Bonsai 2 27B (SSI Docker R2) | Verify upstream | PQ2_0 (project-reported) | NOT TESTED | NOT TESTED | NOT TESTED | NOT TESTED | TBD | TBD |
+| Qwen family (exact variants pending inventory) | Pending | Pending | NOT TESTED | NOT TESTED | NOT TESTED | NOT TESTED | TBD | TBD |
+| Llama family (exact variants pending inventory) | Pending | Pending | NOT TESTED | NOT TESTED | NOT TESTED | NOT TESTED | TBD | TBD |
+| Other installed or downloaded variants | Pending inventory | Pending | NOT TESTED | NOT TESTED | NOT TESTED | NOT TESTED | TBD | TBD |
+
+Additional models will be added **only after** an inventory provides evidence they are actually present and identifies a legitimate source. Different quantizations of one base model will be tracked as separate **variants**, while the parent family is counted only once when summarizing distinct models.
+
+### Evaluation publication rules
+
+1. No fabricated scores, undocumented “best model” claims, or extrapolation between GPU configurations.
+2. Publish both useful results and failed tests, including OOMs, unsupported runtimes, inaccurate answers, and unstable performance.
+3. Separate measured observations, operator reports, and forecasts.
+4. Link external models instead of republishing their weights unless licensing and publication have been reviewed.
+5. Publish only redacted evidence and benchmarks safe to disclose.
+6. Update this register whenever a real test finishes; a model without tests remains **NOT TESTED**.
