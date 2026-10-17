@@ -87,3 +87,11 @@ The follow-up **single constrained local CPU inference** of the already-built Qw
 **Production controls remained intact:** original **13/13** Ollama model tags, active/idle Ollama checks, and memory/disk headroom reported PASS. **No** model registration, Router modification, production promotion, native SCC validation, autonomous grammar-learning claim, or weight training occurred. The candidate remains **disabled/unqualified**; CPU-7 totals **1/7 candidates built and smoke-tested, 0/7 production-approved**.
 
 **Next gate:** repeatable functional and comparative quality evaluation against the existing base-model variant on equivalent tasks, with preserved test evidence and explicit authorization before any production routing. Private prompts, module code, detailed grammar, raw logs, machine endpoints and reconstructive implementation remain excluded from the public record.
+
+## Update 18 October 2026: Qwen 1.5B R12R2 synthetic QA = 3/4
+
+**Operator-provided CPU-only local inference report:** the existing, unpromoted SSI MultiQuant Qwen2.5-Coder 1.5B candidate was evaluated on **four small static synthetic tasks**, retaining the production Ollama original tags and without running model-generated code. **Three checks passed** (two simple Python-function AST/format tests and one basic typed-agent-selection task). **One check failed:** the candidate returned an incorrect agent label for a hypothetical physical GUI interaction.
+
+The result is **3/4**, not a pass of the full QA gate. This tiny fixed-input sample does **not** establish general decision accuracy or provide evidence that quantization caused the error. **No comparison against the pre-existing original Q4_K_M** has yet been performed. A private, controlled and single-threaded baseline comparison has been prepared; it is **not yet executed on the VPS**.
+
+**Status unchanged:** 1/7 candidates built, 1/7 smoke-tested, **0/7 production-approved**, no Router change, no native SCC execution. All raw prompts, response files, proprietary scripts, host paths and implementation details remain private.
