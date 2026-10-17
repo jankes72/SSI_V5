@@ -28,3 +28,26 @@
 5. Zero ujawniania API keys, haseł, wewnętrznych adresów, surowych danych misji, prywatnego kodu czy niepublicznych mikrosieci.
 
 **Źródła publiczne:** https://www.nvidia.com/en-us/data-center/a40/ ; https://docs.runpod.io/pods/storage/types ; https://docs.runpod.io/pods/pricing .
+
+## Pelna konfiguracja potwierdzona przez operatora — audyt GraphQL
+
+**17.10.2026 (kolejny odczyt lokalnego API RunPod; nadal 0 mutacji):**
+
+| Parametr | Potwierdzony wynik |
+|---|---|
+| GPU | 1 × NVIDIA A40, 48 GB VRAM wg specyfikacji producenta |
+| RAM hosta Poda | 55 GB (wedlug pola `memoryInGb`) |
+| vCPU | 10 |
+| Container disk | 30 GB |
+| Volume disk | 0 GB |
+| Network volume | nie |
+| Status | EXITED |
+| `costPerHr`, `adjustedCostPerHr` | 0.59 USD/h każda wartość; dodatkowe opłaty sprawdzać osobno |
+
+**Wniosek:** GPU i host RAM są wystarczającym punktem wyjścia dla etapowego eksperymentu 1.5B i obliczeń kwantyzacji, lecz 30 GB dysku to ograniczenie dla 7–8B i kompletu wag pośrednich. Kontener nie ma wolumenu zachowującego wyniki po stop/restart, wiec wynik **eksportować na zewnątrz po każdej ukończonej pracy**. Dokumentacja RunPod (zaktualizowana 15.10.2026) potwierdza utratę danych `container disk` po stop/restart, oddzielną trwałość `volume disk`, i pozwala edytować dysk kontenera: https://docs.runpod.io/pods/storage/types.
+
+**Najbliższy etap**: (1) nie uruchamiać GPU bez świadomej decyzji i limitu kosztowego; (2) pierwszy pilot Qwen2.5-Coder 1.5B może zmieścić się na 30 GB, po kontroli zajętości obrazu, brakującej pojemności, wersji CUDA i dostępności dopasowanego źródła; (3) przed 7–8B zapewnić ok. 80 GB roboczego kontenera **lub** inaczej wykazane wystarczające miejsce; (4) 55 GB RAM hosta nie jest 55 GB wolnego RAM, monitorować `free -h` i `df -h`; (5) przed każdym stopem eksportować wszystkie niezbędne wyniki, manifesty i dane.
+
+**Budżet orientacyjny samego GPU przy 0.59 USD/h:** 2 h = 1.18 USD, 4 h = 2.36 USD, 8 h = 4.72 USD, 12 h = 7.08 USD; nie gwarantuje to wykonania pełnych 13 wariantów i nie obejmuje innych kosztów.
+
+**Rozróżnienie możliwości:** ten Pod A40 48 GB VRAM jest warsztatem, a nie gwarancją odtworzenia przez modele 1–8B na 16 GB CPU zachowania większego modelu. Aby przenieść umiejętności, potrzebna jest osobna destylacja/finetuning i niezależne metryki jakości na zadaniach docelowych.
