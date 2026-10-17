@@ -91,3 +91,16 @@ Operator uruchomil audyt tylko do odczytu na VPS MODELS (Debian 12, Ollama 0.40.
 **Potwierdzone tagi decyzyjne:** `tev1:0.8b-q8_0` (Q8_0, ~0.776 GiB) i `d1:3b` (Q8_0, ~3.474 GiB). D1 uzywa modelu wizyjnego z projektorem, wiec kwantyzacja samego LLM nie moze byc podawana jako pelne zachowanie modelu. Naturalne pary Q3/Q4 to `qwen2.5-coder:7b-instruct` i `hermes3:8b-llama3.1`. Audyt potwierdza rzeczywiste tagi i kwantyzacje raportowane przez operatora, lecz nie ustala jeszcze autentycznych zrodel BF16/FP16 ani kompatybilnosci konwertera. **0 nowych wag SSI MultiQuant potwierdzonych.** Piec przyszlych modeli Roberta pozostaje wyłącznie planem.
 
 Nastepny krok to tylko do-odczytowy audyt dostepnosci narzedzi kwantyzacji i wysokoprecyzyjnych zrodel. Pierwszy maly pilot: Qwen2.5-Coder 1.5B, jezeli pasujaca rewizja i zasoby to umozliwia. Kwantyzacje decyzjne Tev1/D1 rozpatrywac po sprawdzeniu interfejsu System One. **Nie rekwantyzowac slepo obecnych Q3/Q4.**
+
+
+## Potwierdzenie: SWAP 12 GiB na MODELS VPS (17.10.2026)
+
+**Zrodlo dowodu:** wynik komendy SSH przekazany przez operatora po wykonaniu instalacji, nie niezalezny odczyt asystenta.
+
+- System plikow root: `ext4`.
+- Utworzony i aktywny: `/swapfile_ssi_models` (~12 GiB, `swapon --show`: size `12G`, used ~268 KiB, priority `-2`).
+- Dodano wpis do `/etc/fstab` i `/etc/sysctl.d/99-ssi-swap.conf`; wykonano `sysctl -w vm.swappiness=10`. Trwalosc po faktycznym restarcie nie jest jeszcze zweryfikowana.
+- Odczyt po instalacji: **15 GiB RAM**, **~15 GiB available** (cache reclaimable), **~12 GiB SWAP**, **60 GiB wolnego dysku** (118 GiB total, 54 GiB used). `free` pokazal ~305 MiB free, lecz `available` jest odpowiednia wskazowka do oceny zapasu przy cache. Parametry sa migawka, nie gwarantowanym budzetem konwersji.
+- Istniejace 13 modeli nie zostalo zmienionych w tej operacji. Brak twierdzen o skwantyzowanych modelach SSI MultiQuant.
+
+**Wazny limit:** swap jest buforem awaryjnym SSD, nie dodatkowym fizycznym RAM, a 60 GiB dysku musi pomiescic ewentualne zrodla F16/BF16 + wynik + dane tymczasowe i zapas dla uslug. Duze modele 7B/8B moga nadal byc **BLOCKED_RESOURCE**. Swapping moze znacznie pogorszyc latency produkcyjnych misji; kwantyzacja tylko jedna na raz i dopiero po audycie rzeczywistego wolnego RAM/dysku, narzedzi i zgodnosci. **Nastepny krok: audyt read-only toolchain i zrodel**, a nie natychmiastowe tworzenie 13 modeli.
