@@ -66,3 +66,16 @@ Wykonać gdy działa już system DIRECTOR/ROBERT/SSI CODEX/Charlie/Iskry/szkolen
 - Repo publiczne: tylko plan i bezpiecznie agregowane statystyki, **bez wag, kodu prywatnego, kluczy API, adresów wewnętrznych i danych misji**.
 
 **Decyzja:** R11 jest obowiązującą wersją w zakresie kolejności i zasobów produkcji SSI MultiQuant.
+
+## Potwierdzony audyt operatora CPU-7 — READ_ONLY_PREFLIGHT PASS
+
+**17.10.2026, raport uruchomienia `01_AUDYT_READ_ONLY.sh` na VPS MODELS:**
+
+- **Host / zasoby**: jądro Linux Debian 6.1.0-43-amd64, **4 CPU**, **15 GiB RAM** (ok. 15 GiB available w chwili odczytu), **12 GiB swapfile**; **59 GB wolnego miejsca** w systemie plikow.
+- **Produkcja**: `ollama` aktywna, wersja 0.40.5, **13/13 oczekiwanych oryginalnych tagów istnieje**, `ollama ps` nie wskazało modeli zaladowanych **w momencie audytu**.
+- **Narzędzia**: `git`, `cmake`, `gcc`, `g++`, `python3`, `flock`, `systemd-run`, `llama-quantize`, `llama-imatrix` — obecne. Commit `llama.cpp`: `9d1878a4354e743529fbe09e7350a957f5e39e9a`. 
+- **Warianty** (parametry z API Ollama): 1.5B coder `qwen2`, 1.7B qwen3 `qwen3`, Hermes 3B `llama`, coder 3B `qwen2`, Qwen3.5 4B `qwen35`, **Tev1 0.8B `qwen35`**, **D1 3B `lfm2`**. Dokladne pochodzenie i pelna zgodnosc multimodalna Tev1 / D1 wciaz niepotwierdzone; `multimodal_fields=0` w uproszczonym audycie nie przesadza o braku osobnego projektora lub komponentow.
+- **Status `PILOT_QWEN15B`**: `NOT_STARTED` — istnieje skrypt, ale operator **nie uruchomil jeszcze `02_PILOT_QWEN15B_CPU.sh`**. Brak nowych kwantów lub danych potwierdzajacych ich jakosc.
+- **Kontrola skryptu**: statyczna skladnia Bash OK. `llama.cpp` w wskazanym commicie deklaruje `torch==2.11.0` w wymaganiach konwertera; pakiet `python3-venv` moze wymagać jednorazowej instalacji na minimalnym Debianie. Pojedynczy pilot ma cgroup `CPUQuota=150%`, `MemoryMax=9G`, `MemorySwapMax=0`; to **ogranicza**, ale nie gwarantuje zerowego wplywu na produkcyjny dysk i siec. Podczas prac konieczne monitorowanie `ollama` i zasobow.
+
+Wniosek: **bezpiecznie przechodzimy do przygotowania jednego pilota** dopiero po potwierdzeniu zaleznosci i sprawdzeniu biezacego obciazenia. Nie uruchamiać pozostałych 6 skryptem 1.5B; ich przygotowanie jest oddzielnym etapem.
