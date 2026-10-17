@@ -178,3 +178,33 @@ Additional models will be added **only after** an inventory provides evidence th
 4. Link external models instead of republishing their weights unless licensing and publication have been reviewed.
 5. Publish only redacted evidence and benchmarks safe to disclose.
 6. Update this register whenever a real test finishes; a model without tests remains **NOT TESTED**.
+
+
+## SSI V5 — decision-making models: local 24/7 vs paid API vs on-demand GPUs
+
+**Expanded scope (2026-10-17):** The evaluation also compares **all models actually connected to SSI's decision-making pathways**. This explicitly includes the always-on SSI CORE24 Ollama models, on-demand RunPod models, and paid external LLM services including **Luna**, **Together AI**, **OpenRouter**, **Groq**, **OpenAI API**, and any other provider found in the verified SSI provider registry. Provider/model lists and credit balances must be checked before testing; do not assume that a named model remains available. The comparison covers both single-model decisions and decisions made via the SSI Router V10 and orchestration.
+
+### Decision evaluation protocol
+
+Use the same sanitized tasks and fixed evaluation criteria across providers where technically possible. Record the precise model/version/quantization, prompt, temperature, tools, context, latency, result and cost. For each model evaluate:
+
+1. **Correctness and evidence:** did it reach a correct, supported decision?
+2. **Planning and prioritization:** did it choose reasonable steps and priorities?
+3. **Uncertainty and calibration:** did it request missing information or properly abstain?
+4. **Rule/constraint compliance:** did it obey authorization, budget and mission boundaries?
+5. **Robustness:** consistency across repeated runs; response to noisy/ambiguous inputs.
+6. **Recovery:** handling failed steps, tool errors, and rerouting decisions.
+7. **Speed and expenses:** p50/p95 latency, tokens, USD per decision and per successful mission.
+8. **Operational suitability:** availability, concurrency, context limits and uptime dependencies.
+
+### Fair comparison and privacy
+
+Report local model inference overhead separately from external paid tokens, RunPod GPU billing and fixed 24/7 VPS costs. Do not equate a low marginal cost per local decision with zero operating cost. Include an end-to-end SSI mission score separately from a direct model-only score to avoid attributing Router, memory, tools or agent behavior to the underlying model. Real SSI mission evidence must be anonymized before publication. Luna is included as an independent provider/model entry where its exact identity and access can be verified, not presumed equivalent to OpenAI or any other service.
+
+| Evaluation cohort | Examples (verify exact model IDs before tests) | Evidence status |
+|---|---|---|
+| SSI CORE24 — always on | Installed Hermes, Qwen, DeepSeek, Liquid, D1, Tev1 variants | Pending inventory and head-to-head tests |
+| RunPod — on demand | Prepared Qwen, Llama, Bonsai endpoints | Pending runtime verification |
+| Paid APIs — shared SSI pool | Luna, Together AI, OpenRouter, Groq, OpenAI and other configured providers | Pending provider/model inventory and tests |
+
+**No comparative performance claim is made until controlled, repeatable results have been recorded.** Both strengths and failure cases will be reported. No credentials, balances, IP addresses, private code, raw memory or private mission payloads are published.
