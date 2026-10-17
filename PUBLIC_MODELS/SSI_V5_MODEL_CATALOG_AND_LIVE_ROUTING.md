@@ -140,3 +140,8 @@ To complete each row from existing manifests and operator reports, collect **met
 ## Planned compact decision students
 
 A separate R1 architecture plan covers two **not-yet-trained** models: **SSI-DECISION-B27-MICRO** and **SSI-DECISION-200B-LITE**, both driven by verified outcomes from real SSI missions. The latter is intended for a spare logical slot on a **24 GB VRAM** GPU without disturbing the three models on the other server; the exact “200B” teacher identity and measured GPU headroom remain unverified. **[Read the deployment and distillation plan](SSI_DECISION_STUDENTS_24GB_R1_PLAN.md).**
+
+
+## Current infrastructure clarification (2026-10-17)
+
+The current accepted operational design is **[RunPod 24 GB Dual-Model Serial Queue + CORE24 Quantization R2](SSI_RUNPOD_DUAL_MODEL_CORE24_QUANTIZATION_R2.md)**. It replaces the speculative two-student hardware placement: Bonsai 27B and a second compact model are to share the **same** on-demand 24 GB VRAM GPU/disk via a task queue and alternating model load. Separately, the 13 already-installed Q3/Q4 and specialized small models on the always-on 4vCPU/16GB CORE24 VPS enter a per-variant quantization audit. No new weights, runtime changes or inference runs are claimed by this documentation update.
