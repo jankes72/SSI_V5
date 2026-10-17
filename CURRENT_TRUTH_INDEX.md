@@ -3,10 +3,16 @@
 > **Canonical architecture:** [SSI V5 — C4 Architecture](SSI_V5_C4_ARCHITECTURE.md) — single source of truth for the current public system structure. Update the C4 there instead of duplicating architecture diagrams across documents.
 
 
-**Status:** `CURRENT POINTER / 2026-10-15`  
+**Status:** `CURRENT POINTER / 2026-10-18`  
 **Repository role:** public R&D, evidence and external-validation hub with a published research portal; proprietary implementation remains private.  
 **Evidence boundary:** software-only unless a document explicitly states otherwise.  
 **History rule:** earlier dated truth/status files remain preserved and are not retroactively rewritten.
+
+## Latest bounded operator evidence — 2026-10-18
+
+**Published:** a sanitized CPU-7 / SCC-Awareness progress report. One GGUF candidate built and run in a single local CPU smoke inference; 13 original models remain listed, **no production promotion** and no independent quality comparison. A separate **read-only, incomplete** inventory scanned 25,001 items and reached its cap; it does not confirm complete integration or training. Private code, data and operational know-how are excluded.
+
+- **[Evidence and explicit claim boundaries](RESULTS/SSI_V5_PUBLIC_PROGRESS_CPU7_SCC_AWARENESS_20261018.md)**
 
 ## Robert: planned SCC, Luna Navigator and Radar upgrade — 2026-10-15
 
