@@ -1,3 +1,5 @@
+> **SUPERSEDED HOST ALLOCATION (2026-10-17).** Do NOT quantize or train on the MODEL VPS hosting 13 Ollama variants. New accepted design: **[R5: ROBERT VPS builds, MODEL VPS runs, DIRECTOR VPS orchestrates](SSI_V5_ROBERT_BUILDER_MODEL_VPS_PRODUCTION_R5_20261017.md)**. R4's CPU memory estimates remain conceptual only. Private R2 CORE24 builder is withdrawn; only the R3 Robert builder package should be used for preparation.
+
 # SSI V5 — JEV-Style CPU Decision Micro on CORE24 (R4)
 
 **Date:** 2026-10-17  
