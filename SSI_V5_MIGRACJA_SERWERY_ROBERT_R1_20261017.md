@@ -24,6 +24,7 @@ Robert jest odrębnym agentem technicznym i wykonawczym SSI V5, a **nie drugim D
 | Jedno logowanie Universal Lab / delegacja do RCC | Kod i testy offline zostały przygotowane; **nie jest to jeszcze potwierdzone produkcyjne SSO**. |
 | Playwright uruchamiany serwerowo, trwała kolejka, recovery po awarii | Wymagane na docelowym VPS; aktualny status i komplet zależności muszą zostać ustalone audytem. |
 | Lokalne GUI oparte na Wayland/PipeWire i urządzeniach wejściowych | Zdolność lokalnego rozszerzenia, a nie zależność krytyczna VPS. |
+| Rodzina lekkich modeli MICRO/NANO przygotowywana przez Roberta | Zatwierdzony zakres prac: odniesienie do 13 zgłoszonych wariantów na serwerze modeli; 13 propozycji lekkich rodzin i maksymalnie 26 zadań kandydackich MICRO/NANO. **Brak potwierdzenia, że modele zostały już zbudowane lub wdrożone.** |
 
 **Zasada dowodowa:** `CODE_READY`, `OFFLINE_TESTED`, `INSTALLED` i `LIVE_VERIFIED` to różne stany. Brak dowodu oznacza `UNKNOWN`, a nie `PASS`.
 
@@ -53,6 +54,34 @@ Jeśli misja wymaga niedostępnego lokalnego pulpitu, **tylko ona** przechodzi d
 ### 1.5. Co pozostaje lokalnie
 
 Fizyczna obsługa GNOME/Wayland, PipeWire, monitorów i urządzeń wejściowych, lokalne aplikacje, pełne archiwa, historyczne paczki, nieaktywne benchmarki, dodatkowe skille i duże dane. Nie wolno pozostawić ukrytej zależności krytycznego procesu VPS od dostępności tych zasobów. Audyt ma wykrywać odwołania do Waylanda, PipeWire, monitora, wejścia i lokalnych profili przeglądarki.
+
+### 1.6. DODATKOWE ZADANIE — SSI ROBERT jako budowniczy 13 lekkich modeli
+
+**Decyzja z 17 października 2026 r. — zatwierdzony kierunek rozwoju, nie wynik wdrożenia.** Obok własnych misji Robert otrzymuje rolę **SSI Micro/Nano Model Builder**: przygotowuje lekkie modele do pracy offline i CPU oraz może udostępniać już zakwalifikowane warianty innym agentom SSI, ale wyłącznie gdy ma wolne zasoby.
+
+- **Punkt wyjścia:** na osobnym serwerze inferencyjnym zgłoszono 13 wariantów modeli. Należy potwierdzić ich rzeczywiste identyfikatory, architekturę, licencje, źródła wag, sumy i dostępność bez zmiany działającej usługi.
+- **Zakres planu:** przygotować **13 odpowiadających im lekkich wariantów bazowych / rodzin specjalistów**, z możliwością rozpatrzenia wersji `MICRO` i `NANO` dla każdej — **maksymalnie 26 kandydackich zadań**, nie 26 zagwarantowanych plików modeli. Część modeli źródłowych może nie nadawać się do lokalnej konwersji.
+- **Dwie odrębne techniki:** kwantyzacja zmniejsza reprezentację wag, **nie liczbę parametrów**; zbudowanie nowego mniejszego specjalisty wymaga doboru małego modelu bazowego i ewentualnej odrębnej, dozwolonej adaptacji lub destylacji. Nie przedstawiamy kwantyzacji dużego modelu jako stworzenia nowego 1B–3B.
+- **Miejsce budowania:** prace przygotowawcze i możliwe operacje CPU wykonuje **VPS ROBERT**, nie serwer obsługujący 13 modeli i nie serwer Dyrektora. Ciężkie checkpointy, brak RAM, brak zgodności formatu lub licencji oznaczają `BLOCKED_ON_ROBERT_RESOURCES`, a nie niejawne przekierowanie do płatnego GPU.
+- **Produkcja:** istniejące 13 modeli na serwerze modeli pozostaje nietknięte. Tylko ukończone, sprawdzone i osobno zatwierdzone warianty mogą trafić do puli produkcyjnej; nie ma automatycznego awansu ani nadpisywania oryginałów.
+- **Powiązanie ze skillami:** prywatna wiedza SSI nadal pozostaje w Research Memory, mikrosieciach, SCC i rejestrach kompetencji. Publiczny kontener z modelem nie jest nośnikiem prywatnej pamięci SSI.
+
+Nie należy wnioskować z przygotowania narzędzi, że 13 nowych małych modeli już działa. Każdy wariant przechodzi etapy `PROPOSED` → `RESOURCE_CHECKED` → `BUILT` → `VALIDATED` → `APPROVED` → `DEPLOYED` → `LIVE_VERIFIED`, z dowodami dla każdego przejścia. Stan początkowy do potwierdzenia prywatnym audytem: `PROPOSED`.
+
+### 1.7. SSI Adaptive Model Pool — wolne zasoby Roberta pracują dla całego SSI
+
+**Priorytet zawsze mają misje Roberta i jego usługi krytyczne.** Udostępnianie lekkich modeli i przygotowywanie kolejnych wariantów to praca pomocnicza, dopuszczana wyłącznie przy zmierzonym zapasie CPU, RAM i dysku.
+
+1. Router SSI z Dyrektorem sprawdza uprawnienia, klasę zadania, obciążenie i dostępność zakwalifikowanych modeli — lokalnych u Roberta, na serwerze modeli lub u innych zatwierdzonych dostawców.
+2. Robert może uruchomić zabezpieczony, izolowany kontener/API małego modelu dla siebie lub Dyrektora tylko przy odpowiednim zapasie zasobów. Kontenery mają limity pamięci i CPU; pierwszeństwo misji Roberta może ograniczyć usługę pomocniczą lub przekierować ruch do innego zatwierdzonego modelu.
+3. Nowe konwersje odbywają się **pojedynczo**, z kontrolą pamięci szczytowej, miejsca na dysku, licencji, kolejki i bez kosztownych wywołań modeli. Dla prac przekraczających dostępne zasoby obowiązuje bezpieczna blokada.
+4. **Badanie odbywa się podczas rzeczywistej pracy SSI:** nie duplikujemy misji i nie generujemy osobnych płatnych zapytań dla benchmarku. Notariusz IT i Evidence zapisują identyfikator wersji/kwantyzacji, rodzaj zadania, udział mikrosieci, czas, koszty, wykorzystanie zasobów i zweryfikowany wynik.
+5. **Notariusz zapisuje i weryfikuje fakty; Dyrektor i Router decydują** o zmianie modelu, eskalacji, fallbacku i późniejszej kalibracji. Niepewny wynik nie staje się automatycznie nową regułą routingu.
+6. Utrata dostępności lekkiego modelu Roberta nie może zatrzymać misji innych agentów: Router stosuje dostępny zatwierdzony model lub jawny stan oczekiwania zgodny z uprawnieniami, bez powtarzania skutkowych operacji.
+
+**Wymóg izolacji:** pakiet modeli pomocniczych jest zdegradowalny; usługi krytyczne VPS Roberta muszą działać bez niego. Raport pojemności zawiera osobno przestrzeń na źródła, wagowe artefakty próbne, pliki tymczasowe, kontenery, cache, rezerwy i pamięć operacyjną. Wielkości niezmierzone pozostają `UNKNOWN`.
+
+Szczegóły uzgodnionego rozdziału obowiązków i granic testów opisano już publicznie w [Robert Builder / Model VPS R5](PUBLIC_MODELS/SSI_V5_ROBERT_BUILDER_MODEL_VPS_PRODUCTION_R5_20261017.md); nie przenosimy do GitHuba prywatnych narzędzi i konfiguracji.
 
 ## 2. Pozostałe role SSI na osobnych VPS
 
@@ -86,6 +115,8 @@ Przed kopiowaniem czegokolwiek mierzymy faktyczne rozmiary aktywnego kodu, bibli
 
 Bilans VPS rozdziela: produkcyjny rdzeń po deduplikacji, środowisko wykonawcze, przestrzeń roboczą, rezerwę na nowe skille, przyrost pamięci, aktualizacje, backup i realnie dostępną pojemność po systemie plików. **Wartości niezmierzone pozostają `UNKNOWN`.**
 
+Zadanie budowy lekkich modeli na VPS ROBERT dodaje osobne wymagania na dysk (źródła, pliki tymczasowe, warianty próbne, rollback) i chwilowe obciążenie CPU/RAM. Limitów nie wyznacza się na podstawie samej pamięci całkowitej VPS; punktem odniesienia jest wolny zapas **podczas zwykłych misji**. Plan nie rezerwuje z góry miejsca na wszystkie 26 kandydatów.
+
 Szczegółowe pomiary hostów, manifesty pakietów i mapowanie ścieżek nie są publikowane w tym repozytorium; trafiają wyłącznie do prywatnego SHARE. Publiczny dokument przedstawia zakres i granice twierdzeń, nie prywatną infrastrukturę.
 
 ## 6. Kolejność prac i bramki odbiorowe
@@ -99,6 +130,7 @@ Szczegółowe pomiary hostów, manifesty pakietów i mapowanie ścieżek nie są
 | R5 — Agent bridges | Test komunikacji i zwrotu wyników między trzema VPS. | Autoryzowana misja, zgodne identyfikatory, Evidence i brak duplikacji. |
 | R6 — Failure tests | Odłączenie opcjonalnych lokalnych zasobów w kontrolowanym teście. | Serwery nadal wykonują misje; lokalna misja przechodzi w `WAITING_FOR_NODE01`. |
 | R7 — Cutover | Przełączenie dopiero po akceptacji wszystkich wcześniejszych bramek. | `LIVE_VERIFIED`, uzgodniona procedura rollback i podpisany wynik odbioru. |
+| R8 — Micro/Nano builder (zadanie dodatkowe) | Rozpoznanie 13 źródeł, dobór maks. 26 kandydatów, pojedyncze budowanie na wolnych zasobach ROBERT i stopniowe wdrażanie zaakceptowanych wariantów. | Pomiar realnego zapasu, zgodność licencji, test jakości, brak wpływu na rdzeń, odrębna zgoda na instalację i `LIVE_VERIFIED` dla każdej wersji. |
 
 ### Minimalny scenariusz akceptacyjny
 
