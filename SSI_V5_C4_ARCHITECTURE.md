@@ -3,7 +3,7 @@
 **Role:** canonical public architecture map / single source of truth  
 **C4 scope:** Level 1 — System Context, Level 2 — Containers, Level 3 — Components  
 **Created:** 2026-10-07  
-**Last architectural review:** 2026-10-12  
+**Last architectural review:** 2026-10-17 (planned commercial product extension; pre-existing installation claims unchanged)  
 **Planned Robert extension recorded:** 2026-10-15; not implemented or deployed.  
 **Implementation boundary:** proprietary code, credentials, reconstructive runtime internals and private prompts are intentionally excluded.  
 **Evidence boundary:** architecture and status labels do not create new experimental claims. Completed, current, ready, installed, pre-build and planned states must remain distinct.
@@ -43,6 +43,8 @@ flowchart LR
     models["External / local model providers<br/>LLM inference and teacher/reviewer roles"]
     compute["Compute / storage infrastructure<br/>local machines, runtime services,<br/>persistent data and checkpoints"]
     physical["Physical devices / robots<br/>drones, humanoids, rescue robots<br/>PLANNED validation boundary"]
+    homeowners["Commercial customers / household owners<br/>device pairing, permissions, acceptance"]
+    home_product["SSI Universal App + Home Edge Hub<br/>PLANNED commercial product / isolated tenants"]
 
     ssi["SSI V5<br/>persistent adaptive multi-agent R&D system<br/><br/>training • routing • competence reuse<br/>consolidation • evidence • recovery"]
 
@@ -59,6 +61,8 @@ flowchart LR
     ssi <-->|"state / checkpoints / evidence / resources"| compute
 
     physical -.->|"future sensor / command adapters"| ssi
+    homeowners -->|"household devices, consent, control"| home_product
+    home_product -.->|"future versioned capabilities; no private research data"| ssi
 
     classDef core fill:#0b3d66,stroke:#55c2ff,color:#fff,stroke-width:2px;
     classDef human fill:#3b2b63,stroke:#b994ff,color:#fff;
@@ -66,9 +70,9 @@ flowchart LR
     classDef planned fill:#4a3b16,stroke:#f0c04f,color:#fff,stroke-dasharray: 5 5;
 
     class ssi core;
-    class operator,partners human;
+    class operator,partners,homeowners human;
     class world,models,compute ext;
-    class physical planned;
+    class physical,home_product planned;
 ```
 
 ## Context boundary
@@ -98,6 +102,7 @@ flowchart TB
         reviewer["Public research portal / reviewer view<br/>CURRENT — observer / evidence boundary"]
         operator_ui["Operator control / monitoring<br/>CURRENT"]
         universal["Universal Lab: R3 + Caption R4 installed; R5 pending"]
+        universal_app["SSI Universal App — customer product<br/>PLANNED, not Universal Lab"]
     end
 
     subgraph FINAL["SSI Final Runtime Scope"]
@@ -149,12 +154,17 @@ flowchart TB
         llms["Local + external LLM providers"]
         infra["Compute / storage / IPC / runtime services"]
         robots["Physical robots / devices<br/>PLANNED validation"]
+        home_edge["Commercial Home Edge Hub<br/>local device adapters / voice / offline rules<br/>PLANNED"]
+        home_api["Commercial tenant-isolated API<br/>PLANNED"]
     end
 
     operator_ui --> director_final
     operator_ui --> director_czary
     reviewer --> evidence
     universal -.-> czara
+    universal_app -.->|"customer identity/permissions"| home_api
+    home_api -.->|"customer-authorized actions"| home_edge
+    home_api -.->|"future isolated routing interface, no private memory"| v10
     universal -.-> director_czary
     universal -.-> body10
     universal -->|"meeting observations: partially connected"| meeting_link
@@ -232,7 +242,7 @@ flowchart TB
     class meeting_link,research_memory,qualification_p3a current;
     class evidence,continuum,state,recovery,local_signer evidenceClass;
     class notary prebuild;
-    class dynamic,web,mexico,robots planned;
+    class dynamic,web,mexico,robots,universal_app,home_api,home_edge planned;
     class universal prebuild;
 ```
 
@@ -616,3 +626,18 @@ Partnership, funding and consortium documents can plan roles, resources, deliver
 - Give Director users source-backed explanations at the requested depth; distinguish historical result, current verified state and next planned work.
 - Do not use meeting narration, translated text or a generated roadmap as proof of native skill execution, training completion or a new laboratory result.
 - Keep unresolved questions visible. A later correction becomes a new version and preserves the earlier record.
+
+
+## Planned commercial Universal App boundary (2026-10-17)
+
+**Status: PLANNED / PRE-BUILD; no customer hardware onboarding, live house control, voice operation or commercial readiness is claimed.** This product extends SSI research into a separately isolated customer deployment rather than renaming the existing **Universal Lab** research / conference application.
+
+- **Commercial user entry:** SSI Universal App; homeowner identifies appliance brands/models, rooms and wanted behaviors via chat, form or speech; explicit consent and approved pairing are required.
+- **Commercial local execution:** SSI Home Edge Hub runs a tenant-specific device adapter registry, deterministic automation rules, offline-capable speech and state verification, while permitted central services offer updates and optional remote assistance.
+- **Interoperability:** capability-based adapters for supported Matter/Thread, Zigbee, Z-Wave, MQTT, vendor APIs, ONVIF/RTSP camera feeds and optional Home Assistant bridging; **no** assumption of universal brand compatibility or guaranteed offline operation of cloud-only devices.
+- **AI/model layer:** SSI MultiQuant profiles models for available local CPU/RAM/NPU/GPU, can orchestrate compatible quantizers/adapters and recommends distillation when model weights cannot fit. A model is a replaceable inference engine, not a security controller or durable memory source.
+- **Control and safety:** commercial customer authentication is separate from internal SSI operator access; homeowner scope, device-level rights, multi-user policies, secure local secrets and confirmations for gate/lock/mower actions are mandatory. LLMs do not directly command safety-critical actuators, and voice alone is not adequate authentication.
+- **Data privacy:** audio/video/local device data remain on site by default; external AI use requires explicit consent and appropriate redaction. Per-household memories and physical controls must be isolated from SSI R&D and other customers.
+- **Validation:** acceptance per vendor/device model and demonstrated real user workflows; use evidence, functional regression, rollback and fail-closed policy. An external standard or planned adapter is **not evidence of device compatibility**.
+
+**Detailed user-facing product workflow and proposed adapter contracts:** [SSI Universal App — Commercial Smart Home / Robotics Platform R1](COMMERCIAL/SSI_UNIVERSAL_APP_SMART_HOME_MULTIQ_R1_20261017.md). This architecture section is the canonical SSI context/containers boundary; the linked product document gives implementation contracts without duplicating architecture diagrams.
