@@ -1,3 +1,5 @@
+> **UPDATE: CORE24 QUANTIZATION SECTION SUPERSEDED (2026-10-17).** Do NOT prepare/convert models on CORE24 (the 13-model inference VPS). Model MICRO/NANO conversion belongs **exclusively on ROBERT VPS**, with read-only inventory from MODEL VPS and separately approved finished-model installation there. See **[R5 host allocation](SSI_V5_ROBERT_BUILDER_MODEL_VPS_PRODUCTION_R5_20261017.md)**. The RunPod two-model on-demand queue remains a **different project**; it is not the builder for the CPU MICRO project.
+
 > **CPU decision micro-model clarification:** The new specialized JEV-style student must run on the **4 vCPU / 16 GB RAM CORE24 VPS, CPU only**. See [R4 CPU micro-model design](SSI_CORE24_CPU_DECISION_MICRO_R4.md). The RunPod 24 GB GPU proposal remains a distinct serial two-model storage/queue design; **do not place the CPU micro-model there by mistake**.
 
 # SSI V5 — RunPod 24 GB Dual-Model Queue + CORE24 Quantization R2
