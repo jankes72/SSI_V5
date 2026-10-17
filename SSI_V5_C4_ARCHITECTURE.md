@@ -1,3 +1,5 @@
+> **AUDYT AKTUALNY R9 (17.10.2026):** RunPod API wskazało jeden zatrzymany Pod z GPU **NVIDIA A40 (48 GB VRAM)** oraz **30 GB dysku kontenera** (a nie wcześniej zakładane 24 GB VRAM i 40 GB dysku). Status trwałego wolumenu, RAM, vCPU i jednostka opłaty nadal wymagają potwierdzenia. Pod nie został uruchomiony, modele nie zostały przebudowane. **Najnowsza decyzja i blokery: [SSI MultiQuant A40 R9](PUBLIC_MODELS/SSI_MULTIQUANT_RUNPOD_A40_48GB_R9_20261017.md).**
+
 # SSI V5 — C4 Architecture
 
 **Role:** canonical public architecture map / single source of truth  
