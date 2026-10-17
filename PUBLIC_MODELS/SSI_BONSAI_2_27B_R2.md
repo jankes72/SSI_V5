@@ -239,3 +239,8 @@ The inventory must also cover **JEV** and two additional model/provider integrat
 A zero in this **public documentation** means no supporting observations have been published here; it does **not** imply that SSI has completed zero missions.
 
 **Operating principle:** *Real missions → verified evidence → incremental model calibration → informed routing.* SSI's accumulated knowledge stays in its own microsegments, Research Memory, SCC and other persistent modules, while external and local LLMs remain interchangeable sources of reasoning and information.
+
+
+## Linked public model catalog
+
+For upstream model links, exact quantization/provenance verification, API model identities, and evidence-based **works well / works poorly / avoid** recommendations across the SSI model collection, see **[SSI V5 Public Model Catalog & Live Calibration](SSI_V5_MODEL_CATALOG_AND_LIVE_ROUTING.md)**. This source-first catalog intentionally distinguishes actual installed variants from similar upstream models and does not publish synthetic test results.
