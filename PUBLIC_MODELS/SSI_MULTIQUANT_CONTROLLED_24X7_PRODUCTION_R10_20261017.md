@@ -1,3 +1,5 @@
+> **AKTUALNY ZAKRES R11 — 17.10.2026:** pierwsza seria **7 modeli <= 4B** na istniejacym SSI MODELS VPS (4 vCPU, ~15 GiB RAM), **bez RunPod i bez kolejnych platnych GPU**. Produkcja etapami i tylko wtedy, gdy nie koliduje z Ollama; **6 modeli 6.7–8B odlozonych** do czasu integracji Director, Robert, SSI CODEX, Charlie, Iskier i szkolen. Tev1/D1: wymagaja ustalenia pochodzenia/formatu i zgodnosci vision; Qwen2.5 Coder 3B: licencja badawcza, brak wykorzystania komercyjnego bez osobnej licencji. 13 oryginalow zachowane. **Nie potwierdzono wykonania nowych wag.** [Dokumentacja R11](SSI_MULTIQUANT_CPU7_VPS_MODELS_R11_20261017.md).
+
 # SSI MultiQuant R10 — kontrolowana produkcja na infrastrukturze 24/7 (NOWY PLAN GŁÓWNY)
 
 **Data:** 2026-10-17  
