@@ -42,3 +42,16 @@ Oficjalne zrodla:
 - Publiczne repo zawiera tylko plan, listy i pozniej anonimowe statystyki; nie zawiera wagi, kodu prywatnego, sekretow ani danych misji.
 
 **Najwazniejsze:** *RunPod 24 GB przygotowuje wagowe warianty; SSI MODELS 24/7 stale pracuje; Director i Robert kwalifikuja modele podczas faktycznych misji, a Notariusz zapisuje rezultaty.*
+
+
+## Usciślenie celu: 24 GB GPU do budowy, 16 GB CPU do wykonania, 48 GB GPU jako punkt odniesienia
+
+**Dyspozycja operatora z 17.10.2026:** Wykorzystać istniejący kontener RunPod **24 GB VRAM / zgłoszone 40 GB dysku** do przygotowania **13 nowych wariantów SSI MultiQuant**, a następnie dostarczyć ukończone modele na niezależny, całodobowy serwer SSI MODELS z ~15 GiB fizycznego RAM i 12 GiB SWAP. Istniejące 13 tagów Ollama pozostaje nienaruszone. Model lub modele uruchamiane na odrębnym Podzie **48 GB VRAM** są **jakościowym wzorcem dla konkretnych decyzji**, a nie gwarancją równoważnych zdolności po kompresji.
+
+**Dwa różne procesy**: (1) Kwantyzacja z właściwego, licencjonowanego checkpointu wysokiej precyzji, z kalibracją `imatrix` na reprezentatywnych, autoryzowanych danych z rzeczywistych misji, jeśli format to obsługuje; zachowuje liczbę parametrów, optymalizuje precyzję tensorów. (2) Destylacja/specjalizacja: jeśli chcemy przenosić wybrane umiejętności większego modelu, musimy mieć legalnie dostępne, zweryfikowane przykłady poprawnych decyzji i odrębnie dostroić mniejszy model. **Kwantyzacja sama nie zmienia 27B/80B w 1B/3B i nie gwarantuje jakości odpowiedzi z 48 GB GPU.** Wykorzystanie płatnego 48 GB Poda do tworzenia danych nauczyciela wymaga oddzielnej zgody i budżetu.
+
+**40 GB dysku kontenera to nie 40 GB RAM systemowego ani trwały wolumen.** Proces dużego modelu może wymagać jednocześnie oryginalnych wag BF16/F16 (~14-16+ GB dla 7-8B), roboczego GGUF, docelowego kwantu, miejsca na biblioteki i cache, co może przekroczyć 40 GB. Należy przetwarzać po jednym modelu, zweryfikować RAM hosta, wolny dysk, trwałość `/workspace`, koszt GPU i pozostałe zadania na tym samym Podzie. Gdy brakuje zasobów, nadać status `BLOCKED_RESOURCE`, bez automatycznego zwiększania kosztów.
+
+**VPS MODELS** otrzymuje tylko gotowe, podpisane manifestem i osobno zweryfikowane kwantyzacje. Nowy model wchodzi do bramki jako `CANDIDATE_DISABLED`; wymagane niezależne zatwierdzenie przed prawdziwymi misjami. Notariusz zbiera rzeczywiste wyniki bez sztucznego dublowania obliczeń. **12 GiB SWAP nie zamienia 15 GiB RAM w 27 GiB szybkiego RAM; nie wolno opierać rutynowej inferencji na swapie.** 13 oryginałów + do 13 nowych mogą być przechowywane na dysku, ale nie oznacza to jednoczesnego załadowania do pamięci.
+
+**5 przyszłych modeli Roberta** pozostaje wyłącznie planem, bez nowych wag lub dystrybucji. Żadna konwersja, dostrajanie, instalacja ani uruchomienie płatnego GPU nie nastąpiły w wyniku niniejszej aktualizacji.
