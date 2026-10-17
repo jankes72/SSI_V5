@@ -77,3 +77,13 @@ A **private, non-executing, CPU-only SCC/MultiQuant observation adapter prototyp
 **Integration boundary:** this work is a private compatibility prototype only. Native SCC bridge / NODE-01 validation contracts were **not** independently verified or connected; no mission execution, autonomous grammar qualification, Router promotion, model retraining, LLM calls, paid GPU start, production configuration changes or new model builds occurred as part of these adapter tests. Full implementation, grammar rules, source code, prompts, private data and proprietary engineering details are not public.
 
 **Public claim:** a deterministic, no-extra-GPU-cost structure-memory approach is **technically demonstrated offline** for one bounded MultiQuant process. Production integration and verified improvement from learned mission compositions remain future validation gates.
+
+## Update 18 October 2026: Qwen1.5B SCC R3 local shadow response passed
+
+**Operator-provided VPS log, 18 October 2026 (Poland local date):** Following **23/23 PASS** for the private offline SCC observation adapter on MSI, a separate SCC prompt/context validator recorded **21/21 local PASS**. Its re-evaluation of an earlier model output correctly failed due to one noncanonical status value; the evaluator did **not** silently repair or approve it.
+
+The follow-up **single constrained local CPU inference** of the already-built Qwen2.5-Coder 1.5B GGUF produced a bounded **three-step SCC mission proposal**. The R3 validator reported **`format_and_boundary_pass=true`**, **`envelope_json_pass=true`**, and **`semantic_contract_pass=true`**. The output required normalization of a Markdown JSON wrapper and model terminal marker; raw output was **not strict bare JSON**. This was an **input-context/instruction-following smoke test**, not native SCC execution or new training.
+
+**Production controls remained intact:** original **13/13** Ollama model tags, active/idle Ollama checks, and memory/disk headroom reported PASS. **No** model registration, Router modification, production promotion, native SCC validation, autonomous grammar-learning claim, or weight training occurred. The candidate remains **disabled/unqualified**; CPU-7 totals **1/7 candidates built and smoke-tested, 0/7 production-approved**.
+
+**Next gate:** repeatable functional and comparative quality evaluation against the existing base-model variant on equivalent tasks, with preserved test evidence and explicit authorization before any production routing. Private prompts, module code, detailed grammar, raw logs, machine endpoints and reconstructive implementation remain excluded from the public record.
