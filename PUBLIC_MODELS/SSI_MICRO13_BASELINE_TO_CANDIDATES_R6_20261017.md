@@ -1,3 +1,5 @@
+> **2026-10-17 correction — separate future five:** In addition to the 13 MICRO candidates, **five further Director/Robert-oriented model candidates are only PLANNED**. The user explicitly confirmed that these five **do not yet exist**, have **not been qualified by Robert's research**, and **are not distributed**. Do NOT label them as tested/approved, do NOT activate gateway entries, and do NOT invent names, hashes or claims about them. The planning total is **13 proposed MICRO + 5 proposed future Director/Robert = 18 candidates**, alongside **13 operator-reported existing Ollama baseline variants** (runtime metadata verification pending). See the independent five-candidate acceptance criteria at the end of this page.
+
 # SSI MICRO-13 — baseline and first small-model cohort
 
 **Date:** 2026-10-17  
@@ -48,3 +50,12 @@ The choices are **targets to assess**, not claims that the quantizers or availab
 The first-series output is **one comparison slot per existing model baseline**. A future published list will count **actually built candidates** separately from proposed targets. The original 13 remain operational no matter how many experimental variants are successfully created.
 
 **Related:** [ROBERT builds / MODEL VPS executes / DIRECTOR orchestrates](SSI_V5_ROBERT_BUILDER_MODEL_VPS_PRODUCTION_R5_20261017.md) · [public model provenance catalog](SSI_V5_MODEL_CATALOG_AND_LIVE_ROUTING.md).
+
+
+## Planned Director/Robert extensions — 5 additional candidates (NOT BUILT)
+
+The operator clarified that a further **five** smaller or role-specialized candidates for SSI Director and Robert will be designed **later**. These do not have verified exact model identities, licenses, source revisions, quantization choices, checkpoint hashes, or results, and **no artifact has been generated or deployed**. The five slots are reserved only as IDs `DIRECTOR_ROBERT_FUTURE_01`–`_05`, **not names of actual models**, and are not part of the first MICRO-13 build queue.
+
+Each planned slot remains `PLANNED_UNSELECTED` until a specific original model, permissioned source and quantization strategy are selected; then `BUILD_CANDIDATE` after resource preflight; then `BUILT_UNVALIDATED` after a reproducible artifact exists; then `SHADOW_ELIGIBLE` only after interface/security qualification; then `MISSION_EVIDENCE_COLLECTING` when it runs as part of authorized real work; finally `APPROVED_FOR_DISTRIBUTION` only if there is sufficient reviewed real-mission evidence and explicit operational approval. No synthetic benchmark missions and no extra provider calls solely to grade models. Keep Robert's primary missions prioritized.
+
+**Count discipline:** 13 reported originals + **up to** 13 planned new MICRO variants + **up to** 5 planned additional Director/Robert variants. The 18 new entries are **planned, not available**. No count of candidate slots is proof of delivered/verified models. Existing GUI, Router, micronetwork and source implementation stays private.
