@@ -1,3 +1,5 @@
+> **AKTUALNA DECYZJA R10 — 2026-10-17:** Produkcja 13 wariantow SSI MultiQuant ma byc **kontrolowana i oparta przede wszystkim na stale oplacanych VPS 24/7 (Director, Robert, Models), plus opcjonalnie lokalne komputery**, a nie domyslnie na RunPod. Mocniejsze LLM (Luna, Together, OpenRouter itd.) sa tylko dostawcami selektywnych konsultacji w granicach budzetu, nie masowym generatorem platnych probek. **A40 48 GB pozostaje zatrzymana rezerwa: uzycie tylko po osobnej zgodzie i rachunku kosztow.** 13 oryginalnych modeli produkcyjnych bez zmian. Wczesniejszy plan RunPod-first (R8/R9) zostal zastapiony. [Pelna polityka R10](SSI_MULTIQUANT_CONTROLLED_24X7_PRODUCTION_R10_20261017.md). Zmiana jest dokumentacyjna, a nie wdrozeniem.
+
 # SSI MultiQuant R9 — A40 48 GB: warsztat 13 kandydatów dla VPS MODELS 16 GB RAM
 
 **17.10.2026. Status: tylko audyt REST API; Pod nie został uruchomiony, żadnej kwantyzacji ani migracji jeszcze nie wykonano.**
