@@ -208,3 +208,34 @@ Report local model inference overhead separately from external paid tokens, RunP
 | Paid APIs — shared SSI pool | Luna, Together AI, OpenRouter, Groq, OpenAI and other configured providers | Pending provider/model inventory and tests |
 
 **No comparative performance claim is made until controlled, repeatable results have been recorded.** Both strengths and failure cases will be reported. No credentials, balances, IP addresses, private code, raw memory or private mission payloads are published.
+
+
+## Policy update — production-only LLM calibration (2026-10-17)
+
+**Supersedes any earlier suggestion to run separate artificial or synthetic benchmark campaigns.** SSI's model comparisons are performed **only as a by-product of actual authorized SSI missions and decisions**. A real mission must not be delayed, duplicated across paid models, or made riskier merely to obtain a score. Existing historical outcomes may be analyzed without additional model calls.
+
+The inventory must also cover **JEV** and two additional model/provider integrations mentioned by the operator (exact names/identifiers **unverified**), as well as smaller models/quantizations deployed within the available **24 GB GPU class** and other validated hardware. Do not invent provider identities or imply these have already been benchmarked.
+
+### Calibration loop
+
+1. **Mission arrives:** Director selects a suitable model based on available capabilities, restrictions, historical evidence, latency, budget and confidence. LLMs are replaceable inference resources, **not the canonical SSI knowledge store**.
+2. **Single real execution:** Mission proceeds using the selected model, normal tools and authorized fallback/retry only when required for mission completion.
+3. **Evidence captured:** SSI Notary / evidence layer records redacted task class, selected model ID and exact revision, quantization, routing reason, hardware/provider, time, tokens, actual bill, task outcome and any verified quality signal.
+4. **Knowledge preserved:** durable knowledge, microsegments, active composite skills, Research Memory, and SCC mission-language/state components remain under SSI-controlled storage rather than relying on a model's transient context.
+5. **Incremental calibration:** periodically aggregate outcomes per task category, model variant, context/precision and hardware. Track failure rates, effective success per dollar, tail latency, drift, and confidence intervals/sample sizes. Do not treat unverified successes or inconclusive attempts as passes.
+6. **Controlled router changes:** initially shadow-recommend routing changes, then promote only with human/operator approval and rollback capability. Preserve safety, authorization and spending guardrails; avoid selection based solely on lowest cost.
+7. **Public learning:** publish aggregated, anonymized metrics and methodology only where safe, permitted and sufficiently supported. Internal evidence and fine-grained user/company mission data are not public.
+
+### Production-calibration register (empty pending real evidence)
+
+| Model / provider | Typical real SSI task classes | Verified task count | Completion quality | Cost / completed mission | Latency | Routing status |
+|---|---|---:|---|---|---|---|
+| SSI CORE24 models | Director / Codex / Robert decisions | 0 documented here | PENDING | PENDING | PENDING | Uncalibrated |
+| JEV + two other integrations (IDs to inventory) | Decision support | 0 documented here | PENDING | PENDING | PENDING | Uncalibrated |
+| Together AI / Luna / other paid APIs | Assigned real tasks | 0 documented here | PENDING | PENDING | PENDING | Uncalibrated |
+| RunPod 24 GB-class quantized models | Actual GPU-required missions | 0 documented here | PENDING | PENDING | PENDING | Uncalibrated |
+| Other available GPU/quantization classes | Assigned real tasks | 0 documented here | PENDING | PENDING | PENDING | Uncalibrated |
+
+A zero in this **public documentation** means no supporting observations have been published here; it does **not** imply that SSI has completed zero missions.
+
+**Operating principle:** *Real missions → verified evidence → incremental model calibration → informed routing.* SSI's accumulated knowledge stays in its own microsegments, Research Memory, SCC and other persistent modules, while external and local LLMs remain interchangeable sources of reasoning and information.
