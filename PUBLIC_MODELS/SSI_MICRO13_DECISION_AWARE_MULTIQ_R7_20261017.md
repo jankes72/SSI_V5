@@ -82,3 +82,12 @@ Natywne **Tev1/D1** mogą dostarczyć decyzję według własnego System One; gen
 - [Poprzedni dokument o planie MICRO-13](SSI_MICRO13_BASELINE_TO_CANDIDATES_R6_20261017.md)
 
 **Zasada dowodu:** Fakt istnienia dokumentu R7 nie oznacza, że pliki wag zostały pobrane, skwantyzowane czy wdrożone. Każdy taki stan wymaga odrębnego raportu hosta i checksumy. Autorska implementacja Routera/Micronetworks/SCC pozostaje poza repozytorium.
+
+
+## Aktualizacja po audycie MODELS VPS — 17.10.2026
+
+Operator uruchomil audyt tylko do odczytu na VPS MODELS (Debian 12, Ollama 0.40.5) i przekazal rzeczywisty wynik `ollama list` oraz `/api/tags` i `/api/show`. **13 wariantow obecnych**: 9 x Q4_K_M, 2 x Q3_K_M, 2 x Q8_0, reprezentujacych 11 roznych konfiguracji bazowych. W chwili odczytu: 4 vCPU, 15 GiB RAM, ~15 GiB pamieci dostepnej z uwzglednieniem cache, 72 GiB wolnego dysku, **zero swapu**, 0 uruchomionych runnerow, CPU load 0.00. Przy braku swapu proces kwantyzacji musi miec twarde limity zasobow i moze zostac zablokowany; bezpieczne zasoby nie sa gwarantowane podczas normalnej pracy SSI.
+
+**Potwierdzone tagi decyzyjne:** `tev1:0.8b-q8_0` (Q8_0, ~0.776 GiB) i `d1:3b` (Q8_0, ~3.474 GiB). D1 uzywa modelu wizyjnego z projektorem, wiec kwantyzacja samego LLM nie moze byc podawana jako pelne zachowanie modelu. Naturalne pary Q3/Q4 to `qwen2.5-coder:7b-instruct` i `hermes3:8b-llama3.1`. Audyt potwierdza rzeczywiste tagi i kwantyzacje raportowane przez operatora, lecz nie ustala jeszcze autentycznych zrodel BF16/FP16 ani kompatybilnosci konwertera. **0 nowych wag SSI MultiQuant potwierdzonych.** Piec przyszlych modeli Roberta pozostaje wyłącznie planem.
+
+Nastepny krok to tylko do-odczytowy audyt dostepnosci narzedzi kwantyzacji i wysokoprecyzyjnych zrodel. Pierwszy maly pilot: Qwen2.5-Coder 1.5B, jezeli pasujaca rewizja i zasoby to umozliwia. Kwantyzacje decyzjne Tev1/D1 rozpatrywac po sprawdzeniu interfejsu System One. **Nie rekwantyzowac slepo obecnych Q3/Q4.**
