@@ -35,6 +35,17 @@ The application should:
 - **Local real-time action layer:** deterministic authorized routines, safety checks, device state confirmation, retries with idempotency and fail-closed behavior. An LLM supplies interpretation/planning, **not direct unlimited control of actuators**.
 - **Optional cloud SSI services:** remote access via outbound authenticated tunnel, account management, fleet software updates, optional expensive model escalation (opt-in), aggregated privacy-safe support diagnostics. Basic LAN-compatible home control should not depend on external LLM APIs.
 
+## SCC — język misji Universal App (plan integracji)
+
+**SCC (BLOCKS Mission Language)** pozwala przedstawiać klientowskie cele jako kanoniczne, wersjonowane deklaracje, niezależnie od wybranego LLM i marki urządzenia. A27 obsługuje już **deklarację celu i liniowe planowanie**, ale **nie wykonuje komend smart home**, a warunki, pętle i wykonywanie równoległe nie są częścią działającej składni. Klient mówi naturalnym językiem; system tłumaczy intencję na zatwierdzony cel SCC, a dopiero osobny lokalny plan urządzeń i autoryzowane adaptery realizują bezpieczne działania.
+
+- Przykład: „Ustaw 21°C w salonie i poinformuj mnie, czy kosiarka wróciła”. SCC przechowuje cel, kontekst, ograniczenia i kryterium; Home Edge mapuje go na **rzeczywiste, dozwolone możliwości** termostatu i kosiarki, pyta o zgodę tam, gdzie wymagana, odczytuje wynik i raportuje jedynie potwierdzony stan.
+- Zapamiętane konstrukcje/skille pozostają wersjonowane w SCC / Research Memory / mikrosieciach. Zmiana modelu MultiQuant nie usuwa tych danych.
+- Bezpośrednie sterowanie urządzeniami przez swobodne odpowiedzi LLM jest zabronione. Każdy adapter stosuje niezależne reguły i uprawnienia.
+- Harmonogramy, zdarzenia i „jeżeli” początkowo należą do deterministycznej warstwy Home Edge, a **nie** nieistniejących instrukcji SCC A27.
+
+**[Szczegółowa specyfikacja SCC HOME R1 — realna składnia A27, przykład i kontrakt HOME-ACTION](SSI_UNIVERSAL_APP_SCC_HOME_R1_20261017.md)** · [Źródło SCC A27 i pochodzenie języka](../SCC_BLOCKS_MISSION_LANGUAGE_AND_AMNEZJA3_ATTRIBUTION_20261014.md).
+
 ## Minimum connector interface (design contract)
 
 An approved adapter registers:
