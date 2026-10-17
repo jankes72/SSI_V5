@@ -1,7 +1,7 @@
 # SSI MultiQuant R11 — pierwsze 7 kandydatów na istniejącym VPS MODELS 24/7
 
 **Data decyzji operatora:** 2026-10-17.  
-**Status:** zaakceptowany zakres i przygotowanie planu; **zero potwierdzonych nowych wag**.  
+**Status na 2026-10-18:** **1/7 kandydatów zbudowany i pozytywnie uruchomiony w pojedynczym lokalnym smoke teście**, **0/7 zakwalifikowanych do produkcyjnego routingu**; pełne QA i porównanie z oryginałem nadal wymagane. [Publiczny raport postępu](../RESULTS/SSI_V5_PUBLIC_PROGRESS_CPU7_SCC_AWARENESS_20261018.md).  
 **Nadrzędna decyzja:** produkować **pojedynczo na SSI MODELS VPS (4 vCPU, ~15 GiB RAM, 12 GiB swap, ostatni audyt ~59 GB wolnego dysku)**, bez RunPoda i bez dodatkowych płatnych serwerów. Istniejące 13 modeli Ollama pozostaje produkcyjnie dostępne.
 
 > R11 doprecyzowuje R10: zamiast pełnej trzynastki teraz realizujemy **pierwszą siódemkę modeli <=4B**, a 6 większych wariantów odkładamy do czasu uruchomienia docelowej współpracy DIRECTOR / ROBERT / SSI CODEX / Charlie / Iskry / systemów szkoleń. Plan zakłada etapowe progi jakości i odłożenie wariantów technicznie/licencyjnie niewykonalnych, nie fikcyjne deklarowanie 7/7 gotowych.
