@@ -90,3 +90,22 @@ Wniosek: **bezpiecznie przechodzimy do przygotowania jednego pilota** dopiero po
 
 **Testy wykonane przed wydaniem:** `bash -n` skryptu OK; kontrola fail-closed z mockami: Ollama idle → kontynuuj, 1 model załadowany → STOP, błąd statusu Ollama → STOP. **Nie wykonano end-to-end na zdalnym VPS.** Po ponownym uruchomieniu konieczne sprawdzenie pełnego logu i rzeczywistego manifestu, nie wnioskować o stanie PASS z samej obecności pliku.
 
+
+## R11 FIX R2 — pierwszy rzeczywisty kandydat GGUF wykonany 17.10.2026
+
+**Potwierdzone w dostarczonym logu terminala operatora** (to nie jest niezależny odczyt aktualnego serwera):
+
+- Po instalacji `python3-venv` oraz naprawie skryptu `SSI_MULTIQ_CPU7_R11_FIX_R2_20261017.zip` zakończono instalację w izolowanym Python venv: `torch==2.11.0+cpu`, `transformers==4.57.6`, `huggingface_hub==0.36.2`, `gguf==0.19.0`. `pip check`: brak uszkodzonych zależności, a `CPU_ONLY_TORCH_OK` potwierdził brak CUDA wheels.
+- Źródło: `Qwen/Qwen2.5-Coder-1.5B-Instruct`; skrypt odczytał rewizję rozpoczynającą się od `2e1fd397ee46e138` i licencję `apache-2.0`. Wagi pobrano do izolowanego katalogu zadania.
+- Konwersja oficjalnych wag BF16 → GGUF F16 zakończona; wynik F16 ok. **2944.68 MiB** (tensor data).
+- Kwantyzacja zakończona w **196322.56 ms** (ok. 3 min 16 s) na **1 wątku**, z bazowym `Q4_K_M`, precyzją wybranych tensorów `Q5_K`/`Q6_K`. Wygenerowany GGUF **905.13 MiB** dla wag (na dysku raportowany ok. **0.955 GB**).
+- **Kandydat fizycznie utworzony:** `/opt/ssi-multiquant/jobs/qwen25-coder-15b/ssi-multiq-qwen25-coder-15b-Q4KM-mix-v1.gguf`.
+- **SHA256:** `c8e7a1d6ad88656b24c378e98cb469324c2b9a55c7fd180080c1743ff65672cb`.
+- Stan = `CANDIDATE_DISABLED_UNTESTED`. Końcowy log skryptu zgłasza `ollama is still active` i brak ponownej rejestracji oraz zmian istniejących 13 oryginalnych tagów; końcowa niezależna walidacja aktualnej obecności 13 tagów i wykonania inference kandydata jest **jeszcze niewykonana**.
+- **Nie twierdzimy, że wariant jest jakościowo lepszy od istniejącego Q4**. Sama kwantyzacja nie zawiera fine-tuningu ani nowego treningu. Następnym krokiem jest **read-only weryfikacja hasha, metadata i stanu usług**, a dopiero później kontrolowany test inference bez zmiany produkcyjnego Routera.
+
+### SWAP na trzech VPS — plan warunkowy
+
+Użytkownik przekazał osobną koncepcję `SSI_3VPS_SWAP_MULTIQ_R1_20261017.zip`. Sama nazwa/opis paczki **nie jest dowodem jej zawartości ani wykonania**. **MODELS ma już 12 GiB SWAP**, więc nie należy go dublować. Propozycje na **ROBERT do 8 GiB**, **DIRECTOR do 4 GiB** to wartości niezatwierdzone, zależne od audytu ilości RAM, aktualnego SWAP, filesystem, obciążeń i dysku. Najpierw wyłącznie odczyt `swapon --show`, `free -h`, `df -h`, `systemctl`; bez `--apply`, bez instalacji na ślepo i bez modyfikowania istniejących plików wymiany.
+
+SWAP **nie łączy pamięci trzech VPS**, nie gwarantuje ukończenia treningu i nie zwiększa przepustowości CPU. Director/Robert mogą wykonywać osobne pomocnicze zadania przy zachowaniu SLA misji, a MODELS zostaje inferencyjny. Rozbudowa o pozostałe 6 wariantów i 5 przyszłych modeli Roberta jest nadal odłożona.
