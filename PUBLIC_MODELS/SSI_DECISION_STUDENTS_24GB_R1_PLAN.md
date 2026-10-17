@@ -1,3 +1,5 @@
+> **SUPERSEDED RESOURCE DESIGN (2026-10-17):** The user clarified the actual infrastructure. **Do not treat the two-student R1 resource placement below as an approved deployment.** The current architecture is [RunPod 24 GB Dual-Model Serial Queue + CORE24 13-Model Quantization R2](SSI_RUNPOD_DUAL_MODEL_CORE24_QUANTIZATION_R2.md): keep Bonsai 27B and one additional model on **one** on-demand 24 GB GPU, with serial loading; independently quantize the 13 already-installed small models on the **always-on CORE24 VPS**. No new GPU or persistent paid storage. Training/quantizing two new students remains a separate future proposal, not the currently authorized resource change.
+
 # SSI V5 — Two Compact Decision Students (R1 Design)
 
 **Date:** 2026-10-17  
