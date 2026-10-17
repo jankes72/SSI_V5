@@ -646,6 +646,8 @@ Partnership, funding and consortium documents can plan roles, resources, deliver
 
 ## Model-preparation and production-inference VPS boundaries — 2026-10-17
 
+> **Latest operational clarification R7:** The first **13** decision-aware quantization candidates are to be prepared **on SSI MODEL VPS (24/7 CPU inference server)**, using exact verified high-precision sources and only when a safe CPU/RAM/disk budget is available; otherwise the task remains BLOCKED_RESOURCE. The original 13 variants stay in service. **Robert VPS is no longer the designated builder for this first cohort**; Robert will later consume/comparatively assess the qualified micro-models in ordinary missions. Five additional Robert models remain **PLANNED ONLY, NOT BUILT, NOT APPROVED, NOT DISTRIBUTED**. The text below records the now-superseded prior infrastructure proposal, not operational instructions. [Canonical current R7 decision-aware MultiQuant recipe](PUBLIC_MODELS/SSI_MICRO13_DECISION_AWARE_MULTIQ_R7_20261017.md).
+
 **Status: ACCEPTED DEPLOYMENT PLAN, not a claim of independently verified production migration.** For the SSI Director Offline MICRO/NANO quantization project, the owner specified three distinct 24/7 VPS responsibilities:
 
 1. **SSI DIRECTOR VPS:** owns mission orchestration and model-selection decisions; does not perform quantization or training.
