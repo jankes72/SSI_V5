@@ -1,3 +1,5 @@
+> **LATEST 2026-10-17 HOST CORRECTION:** For SSI Director Offline MICRO/NANO, build and quantize **only on ROBERT VPS** (~4vCPU/16GB RAM CPU). The MODEL VPS retains 13 existing Ollama variants and later receives only separately approved completed weights for actual SSI mission inference; DIRECTOR VPS orchestrates. No RunPod or cloud LLM calls to build these variants. **[Current R5 resource decision](SSI_V5_ROBERT_BUILDER_MODEL_VPS_PRODUCTION_R5_20261017.md)**. Older paragraphs about quantization on CORE24 are historical and no longer operational instructions.
+
 > **2026-10-17 CPU target update:** The SSI JEV-style **small distilled/quantized decision specialist** targets the **always-on CORE24 VPS (16 GB RAM, 4 vCPU, CPU-only)**. See [CPU Decision Micro R4](SSI_CORE24_CPU_DECISION_MICRO_R4.md). Separate optional large-model plans for RunPod's **24 GB VRAM GPU** must not be confused with this CPU-only deployment.
 
 # SSI V5 — Public Model Sources, Exact Variants & Real-Mission Calibration
