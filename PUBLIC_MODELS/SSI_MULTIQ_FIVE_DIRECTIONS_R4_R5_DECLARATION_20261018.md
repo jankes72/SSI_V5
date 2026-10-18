@@ -143,3 +143,7 @@ Published third-party GGUF examples (decimal GB file sizes, **not** measured GPU
 **Scope correction:** LEGO MultiControl is a **global SSI V5 shared control capability**, not owned by MultiQuant. MultiQuant uses a future **model-domain adapter** for compatibility, model composite proposals, quantization/distillation evidence and candidate review. The global core must remain domain-neutral and must not embed model/VRAM/GGUF internals. It is not a model-execution server or a new SCC parser.
 
 The global decision [`SSI_MULTICONTROL_GLOBAL_ARCHITECTURE_DECISION_R1`](../SYSTEM/SSI_MULTICONTROL_GLOBAL_ARCHITECTURE_DECISION_R1_20261018.md) supersedes only earlier diagrams implying MultiControl is inside MultiQuant; existing D1–D5 goals, historical evidence, `NOT_READY` gates and separate Champion registries remain unchanged. **`PLANNED / GLOBAL_SSI / SHADOW_ONLY`; no live integration is claimed.**
+
+## Current D4 infrastructure gate — R9.115 (2026-10-18)
+
+**[RunPod 24 GiB dual-inventory read-only preflight](SSI_MULTIQ_RUNPOD24_DUAL_PREFLIGHT_R9_115_20261018.md)** corrects R9.114's Pod-only inventory: the existing 24 GiB Bonsai worker may be **Serverless** rather than a Pod. The separate v2 REST `GET /pods` and `GET /serverless` collections must both be examined. A private offline tool has **17/17 synthetic tests PASS**; live account connectivity, available disk, persistent model storage and the baseline installation are **not yet verified**. No GPU started or model downloaded.
