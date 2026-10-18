@@ -62,3 +62,21 @@ The different model-hint results cannot prove that Qwen weights are missing: no 
 **Remaining blockers:** actual Qwen checkpoint, handler input/output schema, available runtime GPU memory, stored model provenance, container free disk, actual worker health and any per-second idle expense are not verified. Do not claim successful installation, model quality or 35B headroom. **Next safe step:** authenticated read-only **GET /v2/{endpoint_id}/health** for the *two* existing 24 GiB Serverless endpoints (documented by RunPod), then request separately cost-authorized minimal model inference with the actual handler contract. No /run or /runsync was called in R9.116.
 
 **Current gate:** `R9_116_ACCOUNT_IMAGE_PREFLIGHT_PASS / RUNTIME_MODEL_UNVERIFIED`; `WAITING_FOR_ENDPOINT_HEALTH_AND_HANDLER_CONTRACT`.
+
+
+## Operator-provided R9.117 health gate and existing GitHub provenance — 2026-10-18
+
+**Scope:** operator executed two authenticated, read-only `GET /health` requests on the **existing** two 24 GiB Serverless endpoints. Neither endpoint was modified; no `/run`, `/runsync`, model download or new GPU job was submitted by the audit.
+
+| Existing endpoint | Health request | Workers running | Workers idle | Jobs in progress | Jobs queued | Jobs completed | Jobs failed |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| `ssi-qwen38-27b-flex-r1` | RECEIVED | 0 | 1 | 0 | 0 | **2** | **0** |
+| `SSI-BONSAI2-27B` | RECEIVED | 0 | 0 | 0 | 0 | **0** | **0** |
+
+**Evidence interpretation:** `GET /health` proves endpoint health API availability and reports counters, **not** that either model's real weights loaded, two correct inferences occurred, the model identity is correct, or model output quality passed. The lifetime/context of the `completed` counter was not examined. The `idle` worker count does not itself prove a billed warm worker. No actual VRAM or container free disk readings were made.
+
+**GitHub provenance cross-check:** [SSI model catalog](SSI_V5_MODEL_CATALOG_AND_LIVE_ROUTING.md) already lists Qwen 27B **`SOURCE_PENDING`** and Bonsai 27B R2 with the public pinned GHCR manifest `sha256:d60d0caafcffde6aa783a351273ea43b5ee0a5e0948a036c785616ba77b90d48` from [Bonsai deployment R2](SSI_BONSAI_2_27B_R2.md). It does **not** provide a Qwen 27B exact checkpoint, quantization, model-handler contract or verified prior inference payload. The repository documents plans for an optional Qwen3.5-35B-A3B comparison, but this model was **not** installed by R9.117.
+
+**Next gate:** determine Qwen's exact source revision, container/handler build and permitted request/response schema, preferably from archived build manifests, Dockerfiles and private logs on MSI without activating GPU; preserve private details. Then request explicit cost approval if a **single** narrowly bounded real inference is still necessary. Never overwrite Bonsai, Qwen or their endpoint settings. The 48 GiB resources remain excluded.
+
+**Status:** `R9_117_HEALTH_READ_ONLY_PASS / QWEN_MODEL_RUNTIME_UNVERIFIED / WAITING_FOR_HANDLER_AND_PROVENANCE`.
