@@ -110,3 +110,15 @@ Research plan: record unquantized BF16 output/latency/mission quality first, the
 **Status:** `R9_119_DECISION_RECORDED / UNQUANTIZED_BF16_REFERENCE_SELECTED / INSTALLATION_PENDING / GPU_FIT_UNVERIFIED`.
 
 Official model: https://huggingface.co/Qwen/Qwen3.5-9B ; public GGUF BF16 size reference: https://huggingface.co/bartowski/Qwen_Qwen3.5-9B-GGUF .
+
+## R9.120 — implement original Qwen3.5-9B BF16 using existing SSI queue, keep Bonsai (2026-10-18)
+
+**Latest operator clarification:** Implement **only the official unquantized `Qwen/Qwen3.5-9B` Safetensors/BF16** as the first MultiQuant baseline. Do **not** download/deploy Qwen35B IQ4, and do **not** create a new GPU task queue or router. Keep the existing SSI queue, Router V10 and user requirement of **one VRAM-loaded model at a time per 24 GB GPU**. Preserve Bonsai 2 27B and the separate Qwen 27B Flex endpoint until actual 40 GB container-image/handler compatibility has been checked. This third logical model is **not evidence of a third physical GPU**.
+
+**R9.120 private execution package prepared:** `SSI_MULTIQ_QWEN35_9B_BF16_R9_120_20261018.zip` (provided privately to the operator, not published in this repository). Contains: (1) read-only HF official checkpoint revision + exact size inspection, (2) guarded GET-only RunPod Bonsai endpoint inventory and **private 0600 backup**, (3) file-name inventory of existing SSI queue/installers under `~/SSI_V5` and `~/Pobrane`, (4) explicitly armed ~19 GB original BF16 MSI-only download with LFS checks, and (5) Safetensors header dtype verification. Software unit tests **20/20 PASS locally**, source syntax and SHA256 manifest verified. **No RunPod endpoint changed, no GPU started, no Qwen weights downloaded by the assistant.**
+
+**Critical gate:** the 40 GB Serverless allocation is *container disk*, not free storage and not VRAM. Keeping Bonsai and Qwen9B physically in one worker image is **NOT VERIFIED**: heavyweight runtimes, CUDA layers, Docker layers and conversion staging may exceed 40 GB. Serverless scratch is ephemeral. Before any deploy, inspect the existing worker handler and Docker image, then reuse the current model-selection/queue protocol (no synthetic replacement), prepare reversible versioned image only if actual container fit and Qwen3.5 compatibility are established. Otherwise explicitly report blocked without deleting Bonsai. A 24 GiB GPU may fit the 9B BF16 short-context text model, but real inference VRAM remains unmeasured.
+
+**State:** `R9_120_PRIVATE_TOOLKIT_READY / ORIGINAL_BF16_SELECTED / MODEL_DOWNLOAD_OPERATOR_GATED / RUNPOD_DEPLOYMENT_PENDING`.
+
+Source: https://huggingface.co/Qwen/Qwen3.5-9B ; https://docs.runpod.io/serverless/endpoints/overview .
