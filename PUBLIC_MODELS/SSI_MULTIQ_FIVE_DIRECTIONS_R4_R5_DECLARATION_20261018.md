@@ -163,3 +163,16 @@ Operator-provided **read-only** account inventory confirmed two **candidate Serv
 Same-base comparison candidates for the target CPU-only **16 GiB** VPS: **IQ2_M** (~12.96 GB), **IQ2_XS** (~11.69 GB), with further MultiQuant R&D contingent on held-out quality, actual RAM/CPU and correct high-precision-source provenance. 70B+ ultra-low-bit might fit 24 GiB VRAM as a research display, but has no straightforward practical 16 GiB RAM same-checkpoint CPU comparison and is **not selected** for first controlled D4 research. The original BF16 of this 35B family (~71 GB GGUF) must be staged outside the 40 GB Serverless scratch if true SSI re-quantization is attempted.
 
 **Deployment not performed.** Private R9.118 preparation passed **26/26 synthetic software tests**; no new model is installed or running yet. See [operator decision and gates](SSI_MULTIQ_RUNPOD24_DUAL_PREFLIGHT_R9_115_20261018.md#r9118-operator-decision--replace-24-gib-bonsai-endpoints-model-with-a-pinned-qwen-35b-baseline-2026-10-18).
+
+
+## R9.119 — revised baseline: unquantized Qwen3.5-9B BF16 (operator decision) — 2026-10-18
+
+**LATEST OPERATOR DECISION; supersedes R9.118 model choice only.** Preserve historic R9.118 acceptance notes and no-production-change claims. Use the **official unquantized `Qwen/Qwen3.5-9B` BF16 checkpoint** as the **first executable same-model quantization reference** on the **existing 24 GiB Serverless GPU endpoint formerly assigned to Bonsai (40 GB container disk allocation)**; retain Bonsai's GHCR R2 image digest, endpoint rollback settings, historical logs and separate Qwen 27B 24 GiB/30 GB endpoint. The earlier Qwen3.5-35B-A3B IQ4_XS image plan is **not authorized as current first rollout**. 35B+ is a future fragment-processing direction, not the first raw BF16 GPU baseline.
+
+Published `Qwen3.5-9B` BF16 GGUF variant is ~18.4 decimal GB; official Transformers safetensors BF16 checkpoint is the source of truth for SSI quantization, not a pre-quantized GGUF. The 24 GiB-class card **may fit for short context, one concurrent request**, but GPU runtime/KV/vision allocations, model revision, effective GPU memory and real disk free are **NOT MEASURED**. The nominal 40 GB Serverless container disk may still be too small if model files are duplicated in Docker layers, downloaded again on worker start or staging data remains; no permanent network volume is configured. Use SHA-pinned staged downloads, bounded disk budgeting and a new reversible image tag, not mutation or deletion of Bonsai image.
+
+Research plan: record unquantized BF16 output/latency/mission quality first, then independently produce Q8/Q6/Q4/Q3/Q2 candidate variants from that exact source checkpoint and compare on held-out SSI mission evidence. Qualify any 16 GiB RAM CPU variant **only after measured RAM/CPU/quality**, and do not assume quantization shrinks parameter count. Global LEGO MultiControl remains planned/read-only shadow. No paid GPU start, image build/deployment, downloads, testing, Champion promotion or changes to production are documented here.
+
+**Status:** `R9_119_DECISION_RECORDED / UNQUANTIZED_BF16_REFERENCE_SELECTED / INSTALLATION_PENDING / GPU_FIT_UNVERIFIED`.
+
+Official model: https://huggingface.co/Qwen/Qwen3.5-9B ; public GGUF BF16 size reference: https://huggingface.co/bartowski/Qwen_Qwen3.5-9B-GGUF .
