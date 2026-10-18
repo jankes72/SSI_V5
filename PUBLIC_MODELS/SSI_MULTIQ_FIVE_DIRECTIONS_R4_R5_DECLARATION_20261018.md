@@ -147,3 +147,10 @@ The global decision [`SSI_MULTICONTROL_GLOBAL_ARCHITECTURE_DECISION_R1`](../SYST
 ## Current D4 infrastructure gate — R9.115 (2026-10-18)
 
 **[RunPod 24 GiB dual-inventory read-only preflight](SSI_MULTIQ_RUNPOD24_DUAL_PREFLIGHT_R9_115_20261018.md)** corrects R9.114's Pod-only inventory: the existing 24 GiB Bonsai worker may be **Serverless** rather than a Pod. The separate v2 REST `GET /pods` and `GET /serverless` collections must both be examined. A private offline tool has **17/17 synthetic tests PASS**; live account connectivity, available disk, persistent model storage and the baseline installation are **not yet verified**. No GPU started or model downloaded.
+
+
+## Latest real operator R9.115 audit — 24 GiB RunPod resource selection (2026-10-18)
+
+Operator-provided **read-only** account inventory confirmed two **candidate Serverless 24 GiB endpoints** among five: one declared **40 GB container disk, workersMax=0**; another **30 GB disk, workersMax=1**. Existing 48 GiB Pod was `EXITED` and remains excluded. **Neither endpoint has verified image contents, installed Bonsai weights or free filesystem space; no network volumes were reported**. The next private R9.116 read-only image-identity audit has **22/22 offline software tests PASS**, but requires operator execution on MSI for real endpoint data.
+
+**No 24 GiB GPU was started, no model was downloaded, and no model baseline is installed by this update.** See [bounded R9.115 evidence and R9.116 gate](SSI_MULTIQ_RUNPOD24_DUAL_PREFLIGHT_R9_115_20261018.md#operator-r9115-account-inventory-evidence-and-r9116-next-gate--2026-10-18).
