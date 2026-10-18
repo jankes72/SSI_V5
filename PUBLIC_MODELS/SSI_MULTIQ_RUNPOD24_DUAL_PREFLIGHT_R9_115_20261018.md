@@ -122,3 +122,16 @@ Official model: https://huggingface.co/Qwen/Qwen3.5-9B ; public GGUF BF16 size r
 **State:** `R9_120_PRIVATE_TOOLKIT_READY / ORIGINAL_BF16_SELECTED / MODEL_DOWNLOAD_OPERATOR_GATED / RUNPOD_DEPLOYMENT_PENDING`.
 
 Source: https://huggingface.co/Qwen/Qwen3.5-9B ; https://docs.runpod.io/serverless/endpoints/overview .
+
+
+## R9.121 — operator R9.120 failures and non-destructive source-pin repair (2026-10-18)
+
+**User-provided MSI log:** R9.120 `sha256sum -c` passed for the ten original package files; `TEST_OFFLINE.sh` was **20/20 PASS**. Read-only preflight `01_PREFLIGHT_BF16_AND_BONSAI.py` stopped with a collapsed `HTTPERROR`, so the required `~/.local/share/ssi_multiquant/r9120_qwen9b/CURRENT_PIN.json` was never written. Authorized download `02_DOWNLOAD_ORIGINAL_BF16.py`, stage check `04_VALIDATE_STAGE.py`, and Safetensors dtype check `05_VERIFY_BF16_TENSORS.py` consequently stopped with `FILENOTFOUNDERROR`. **No model weights were downloaded and neither RunPod nor SSI queue was changed.**
+
+**Independent code defect:** The original R9.120 synthetic fixture expected `model-00001-of-00002.safetensors`, but official Qwen3.5-9B actually publishes `model.safetensors-00001-of-00004.safetensors` etc. (four shards, 19,306,310,880 bytes historically observed). Its original `extract_manifest` requires `model-` prefix or singular `model.safetensors`, so it would reject real four-shard filenames even if the HTTP request succeeded. The original code also made source pinning depend unnecessarily on RunPod endpoint metadata.
+
+**R9.121 private patch (operator handoff):** `SSI_MULTIQ_QWEN9B_PIN_FIX_R9_121_20261018.zip` adds an independent, GET-only Hugging Face source pinner `06_R9121_RECOVER_PIN.py` using the real shard naming and pinned SHA, and independent GET-only Bonsai endpoint private backup `07_R9121_RUNPOD_BACKUP_READONLY.py`. The latter may fail without blocking the former. Error reports now preserve the failing **phase** and sanitized HTTP status code, without leaking credentials, private endpoint configuration or raw API responses. The patch adds **8/8 offline test PASS** and checks sha256 for its own artifacts. It does not overwrite R9.120. Existing R9.120 authorized 19 GB MSI downloader/validators are reused after the new pinned manifest exists.
+
+**Operational limits:** RunPod private backup is still required before *any actual image update*; staging on MSI is not deploying a model. Do not start GPU workers, delete Bonsai, or alter existing SSI mission queue during source recovery. `Qwen/Qwen3.5-9B` remains selected but GPU fit, dual-runtime/disk fit, and real inference quality have not yet been demonstrated.
+
+**Status:** `R9_120_FAILURE_DIAGNOSED / R9_121_OFFLINE_8_OF_8_PASS / SOURCE_PIN_RETRY_PENDING / NO_GPU_OR_RUNPOD_MUTATIONS`.
