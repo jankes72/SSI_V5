@@ -125,3 +125,21 @@ The candidate's source declaration was internally present and identified an expe
 The audit used existing GGUF metadata only, reporting **no model execution, no network, no training and no production change**. The prior four-case comparison remains **3/4 vs 3/4**, including the same incorrect label for the physical-GUI case; **0/7 CPU-7 candidates are qualified/promoted**.
 
 **Next step (planned, not performed):** a private preregistered 24-case, CPU-only, static-format/typed-response/context-following evaluation against both existing GGUF files. No claim of comprehensive benchmarking, equal source weights, or quantization quality/speed advantage is made. Private prompts, raw outputs, source code and infrastructure detail remain unpublished.
+
+
+## Update 18 October 2026: R14 bounded 24-case CPU A/B completed
+
+**Operator-provided completed VPS log:** Both the existing unpromoted SSI MultiQuant Qwen2.5-Coder 1.5B GGUF candidate and the pre-existing original Ollama Q4_K_M GGUF were each evaluated on the **same 24 preregistered synthetic cases** (48 local CPU-only inferences; model order alternated). Each invocation was constrained to a single CPU vCPU-equivalent and up to 4 GiB process RAM with process swap disabled. Neither model-generated code nor SCC instructions were executed.
+
+| Prespecified test group | SSI MultiQuant candidate | Original Q4_K_M | Cases with different pass/fail outcomes |
+|---|---:|---:|---:|
+| Static Python AST and exact output checks | **8/8** | **8/8** | 0 |
+| Typed hypothetical task-routing decisions | **5/8** | **5/8** | 0 |
+| SCC-context proposals under no-execution guard | **3/8** | **4/8** | 1 |
+| **Total** | **16/24** | **17/24** | **1** |
+
+**Interpretation:** both variants passed all eight simple Python-format checks; routing results were identical **as pass/fail scores**, not necessarily identical output text. The original passed **one more SCC-context case** than the candidate. This is a **descriptive, bounded, non-representative evaluation**, not a reliable estimate of general coding performance or SCC comprehension. The results do not prove a quality gain, general equivalence, or that quantization caused the one-case difference.
+
+**Source-weight parity remains UNVERIFIED** despite the R13A architecture/tokenizer metadata compatibility observations. No model training or registration, Router/SCC runtime modification, paid GPU/remote-model use or candidate promotion was reported; the existing **13/13 original Ollama tags** were preserved.
+
+**Next verification gate:** privately inspect the one discordant SCC case, both models' failed SCC cases and routing failures in the existing evidence directory, classify whether failures involve JSON formatting, canonical block selection or no-authority controls, and review upstream checkpoint lineage. Avoid rerunning or changing the preregistered suite solely to improve scores. Original prompts, exact responses, paths and proprietary implementation details are not published.
