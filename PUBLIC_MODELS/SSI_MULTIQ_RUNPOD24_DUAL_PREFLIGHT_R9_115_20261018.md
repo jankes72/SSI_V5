@@ -145,3 +145,22 @@ Source: https://huggingface.co/Qwen/Qwen3.5-9B ; https://docs.runpod.io/serverle
 **Next gate:** read-only **Bonsai configuration backup** using `07_R9121_RUNPOD_BACKUP_READONLY.py` (if not already recorded) and static inventory of the existing private RunPod MSI installer/source archive(s) and actual handler. Confirm runtime compatibility, disk image size and reversible rollout before any RunPod modification or billed GPU run. Do not download the ~19.3 GB source weights again; reuse the verified MSI files.
 
 **Status:** `R9_122_REAL_BF16_SOURCE_STAGED_AND_SHA_VERIFIED / GPU_DEPLOYMENT_PENDING`.
+
+
+
+## R9.123 — Bonsai endpoint backup confirmed, original SSI worker archives located (operator MSI output, 2026-10-18)
+
+**Verified actual operator log:** `07_R9121_RUNPOD_BACKUP_READONLY.py` returned `BONSAI_BACKUP_OK` for existing Bonsai `ADA_24` GPU pool, **40 GB allocated container disk**, workers min/max **0/0**, `backup_stored_private=true`, **0 GPU jobs**, **0 remote mutations**. Private backup is on the MSI and must not be published. The baseline source directory `~/SSI_MULTIQ_MODELS/Qwen3.5-9B-BF16-c20223623576` was confirmed to exist with **4 Safetensors files** (previously independently SHA-256 verified).
+
+**Existing source/installer discovery, not duplicate implementation:**
+
+- `~/Pobrane/SSI_BONSAI27_RUNPOD_SERVERLESS_R1_20261017.zip` contains existing `worker.py`, `contract.py`, `Dockerfile`, `requirements.txt`, `README_PL.md` and worker contract tests.
+- `~/Pobrane/SSI_RUNPOD_SERVERLESS_MSI_R1_20261015.zip` contains the existing MSI-side RunPod adapter `install.py`, `payload/ssi_runpod_llm/client.py`, `native.py`, `validation.py`, plus tests and historical evidence.
+- `~/Pobrane/SSI_RUNPOD_MSI_ZRODLA_20261016T063951Z_c79e74_PRIVATE.zip` and `...T064012Z_ba806f_PRIVATE.zip` contain `sources/ROOT/SSI_MODULES/SSI_UNIVERSAL_CONTROL_V1/worker.py`.
+- `~/Pobrane/SSI_GPU_QWEN38_GOTOWE_20261015.zip` includes historical model metadata. **These file-name-only discoveries do not prove that an installed runtime already supports Qwen3.5-9B or a dual-format model switch.** Nothing was modified.
+
+**R9.123 private artifact prepared:** `SSI_MULTIQ_R9_123_REUSE_RUNPOD_20261018.zip` reads only selected members of the above local archive ZIPs, uses Python AST static signatures, emits redacted metadata (file hashes/sizes, function names, Dockerfile instruction counts, boolean model/queue/runtime feature indicators) and runs **8/8 local synthetic offline tests**. No credentials, source code, raw configs, GPU job requests, installation or remote mutations are included.
+
+**Next gate:** run read-only R9.123 archive inspection on MSI; identify existing RunPod worker/queue entrypoints and actual runtime constraints. Reuse the existing SSI mission queue, **one VRAM-loaded model at a time**, and **never overwrite or delete Bonsai until a verified, reversible versioned image fits 40 GB container disk**. Preserve the separate Qwen27B endpoint.
+
+**Status:** `R9_123_BONSAI_BACKUP_OK / BF16_4_SHARDS_PRESENT / EXISTING_INSTALLER_DISCOVERED / WORKER_CONTRACT_INSPECTION_PENDING / NO_GPU_CHANGE`.
