@@ -46,3 +46,19 @@ A subsequent **operator-provided RunPod dashboard excerpt** resolves the *displa
 The screenshot labels **0/1 Running**, **0 Queued**, **1 Idle** on the 24 GiB Qwen endpoint and **0/0 Running**, **0 Queued**, **0 Idle** on Bonsai. Dashboard caption **"Running" is a counter label**, not evidence that active inference is occurring. An actually warm **idle** Flex worker may still consume billed GPU seconds until shut down; inspect real worker telemetry before making a cost assertion. Source: RunPod Serverless billing documentation, https://docs.runpod.io/serverless/pricing.
 
 **Current decision:** two existing endpoint identities are known, but the real image contents, snapshot/disk occupancy, exact Qwen 27B checkpoint, and possibility of adding a third model have **not** been verified. Preserve **both** existing endpoint configurations. Evaluate an existing 27B baseline *first*, subject to separately authorized billed requests; only then decide whether Qwen3.5-35B-A3B IQ4_XS deserves a separately versioned image deployment. R9.116 remains **read-only image-definition preflight**; status `WAITING_FOR_IMAGE_CONTENT_AND_REAL_FREE_DISK`. All 48 GiB endpoints and the stopped A40 Pod are excluded.
+
+
+## Operator-executed R9.116 image-identity audit (2026-10-18)
+
+**Operator-provided real MSI run:** archive `SHA256SUMS.txt` verification reported `DOBRZE` for 5/5 files; `bash TEST_OFFLINE.sh` gave **22/22 PASS**. The only remote operation in `01_SERVERLESS_24GB_IMAGE_PREFLIGHT.py` was **GET /v2/serverless**; no GPU start, inference, download or endpoint mutation.
+
+| Endpoint (operator dashboard display name; do not publish IDs) | GPU pool metadata | Disk allocated | Workers min/max | Image reference SHA256 prefix | Image/environment model hints | Real weights verified |
+| --- | --- | ---: | --- | --- | --- | --- |
+| `SSI-BONSAI2-27B` | `ADA_24` | 40 GB | 0/0 | `5ecfc965db3d` | `BONSAI` | **NO** |
+| `ssi-qwen38-27b-flex-r1` | `AMPERE_24` | 30 GB | 0/1 | `143fc5c9fa1d` | none found in inspected image/model env fields | **NO** |
+
+The different model-hint results cannot prove that Qwen weights are missing: no container image was inspected or inference performed. These are endpoint-template fingerprints, **not weights SHA256**. `gpu_pool_24_codes` are RunPod GPU pool class codes and cannot be interpreted as measured available CUDA VRAM.
+
+**Remaining blockers:** actual Qwen checkpoint, handler input/output schema, available runtime GPU memory, stored model provenance, container free disk, actual worker health and any per-second idle expense are not verified. Do not claim successful installation, model quality or 35B headroom. **Next safe step:** authenticated read-only **GET /v2/{endpoint_id}/health** for the *two* existing 24 GiB Serverless endpoints (documented by RunPod), then request separately cost-authorized minimal model inference with the actual handler contract. No /run or /runsync was called in R9.116.
+
+**Current gate:** `R9_116_ACCOUNT_IMAGE_PREFLIGHT_PASS / RUNTIME_MODEL_UNVERIFIED`; `WAITING_FOR_ENDPOINT_HEALTH_AND_HANDLER_CONTRACT`.
