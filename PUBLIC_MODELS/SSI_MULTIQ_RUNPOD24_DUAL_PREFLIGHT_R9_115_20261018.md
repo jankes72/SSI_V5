@@ -135,3 +135,13 @@ Source: https://huggingface.co/Qwen/Qwen3.5-9B ; https://docs.runpod.io/serverle
 **Operational limits:** RunPod private backup is still required before *any actual image update*; staging on MSI is not deploying a model. Do not start GPU workers, delete Bonsai, or alter existing SSI mission queue during source recovery. `Qwen/Qwen3.5-9B` remains selected but GPU fit, dual-runtime/disk fit, and real inference quality have not yet been demonstrated.
 
 **Status:** `R9_120_FAILURE_DIAGNOSED / R9_121_OFFLINE_8_OF_8_PASS / SOURCE_PIN_RETRY_PENDING / NO_GPU_OR_RUNPOD_MUTATIONS`.
+
+## R9.122 — verified original Qwen3.5-9B source staged on MSI (operator log, 2026-10-18)
+
+**REAL OPERATOR SUCCESS; no GPU inference claimed.** On MSI `jankes72-GV62-8RE`, operator ran R9.120 `02_DOWNLOAD_ORIGINAL_BF16.py`, `04_VALIDATE_STAGE.py`, and `05_VERIFY_BF16_TENSORS.py` after R9.121 source-pin repair. Hugging Face downloaded the official **unquantized `Qwen/Qwen3.5-9B`** at pinned commit **`c202236235762e1c871ad0ccb60c8ee5ba337b9a`**, staged under `~/SSI_MULTIQ_MODELS/Qwen3.5-9B-BF16-c20223623576`. The **4/4 Safetensors weight shards** total **19.306 decimal GB**, with **4/4 SHA-256 verified**. Header inspection counted **727 BF16 and 48 F32 tensors** (mixed unquantized tensor dtypes are not low-bit quantization). The scripts reported `ORIGINAL_MODEL_STAGED_ON_MSI`, `WEIGHT_SHARDS_PRESENT`, and `UNQUANTIZED_BF16_SOURCE_HEADERS_VERIFIED`, respectively.
+
+**Boundaries:** This is valid checkpoint/source-integrity evidence; **no actual model inference or accuracy benchmark** was performed, GPU use = 0, RunPod image built = false, endpoint modified = false. Neither a dual-model 40 GB Serverless image nor a reversible deployment was built. The separate Qwen 27B endpoint and Bonsai remain untouched; the existing SSI queue is the required integration path, not a new implementation.
+
+**Next gate:** read-only **Bonsai configuration backup** using `07_R9121_RUNPOD_BACKUP_READONLY.py` (if not already recorded) and static inventory of the existing private RunPod MSI installer/source archive(s) and actual handler. Confirm runtime compatibility, disk image size and reversible rollout before any RunPod modification or billed GPU run. Do not download the ~19.3 GB source weights again; reuse the verified MSI files.
+
+**Status:** `R9_122_REAL_BF16_SOURCE_STAGED_AND_SHA_VERIFIED / GPU_DEPLOYMENT_PENDING`.
