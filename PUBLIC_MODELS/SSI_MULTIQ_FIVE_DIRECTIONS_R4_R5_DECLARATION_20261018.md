@@ -100,3 +100,23 @@ Prefer existing 24/7 resources and local machines. Treat GPU services as **separ
 ### Short English summary
 
 On 18 October 2026, SSI V5 declared **D4 BIG → MICRO (very large teachers to selected 16 GiB-deployable small-model competencies)** and **D5 native low-bit student (joint quantization-aware training and knowledge distillation)**. D1–D3 have **offline tested non-executing control prototypes**, not operational model trainers/mergers. Qwen3-1.7B Q4 smoke inference succeeded, but routing QA failed at **1/4** in R25; no model is promoted based on these observations. Full 70B/120B compression, QAT+KD training and native SCC execution remain unverified research goals.
+
+
+## 7. D4 first pilot selection — 18 October 2026, PLAN / NO GPU START
+
+**Operator research decision:** test one intermediate-size model, verify the maximum usable compression and RAM/speed/quality on the existing 16 GiB CPU host, and **only then** scale to a larger model from the **same family**. The intended reference worker is an **existing 24 GiB-VRAM GPU Pod if currently available**; a previously audited A40 48 GiB Pod was stopped. Free container disk, true live Pod availability, memory reservations, volume persistence and hourly price **must be rechecked**. Do not create, resume or bill GPU compute automatically.
+
+**Selected family:** upstream `Qwen/Qwen3-14B` → later `Qwen/Qwen3-32B` (same Qwen3 generation, but different parameter configurations). Record exact immutable upstream revisions, tokenizer/chat-template compatibility and quantized source provenance before any paired comparison.
+
+**Stage A — reference / feasibility only:** start with a *published pre-quantized* Qwen3-14B `Q6_K` (~12.12 decimal GB) on the authorized GPU as a higher-precision **reference**, compared with the **same checkpoint lineage** in published `Q4_K_M` (~9.00 GB), `IQ3_M` (~6.88 GB) and `IQ2_XS` (~4.69 GB), one model loaded at a time. The published files are external baselines — **not** proof of an SSI-built segmentwise converter. Stage and download **only those models for which measured free disk and GPU headroom suffice**, preserving existing Bonsai models/data. Keep identical prompts, decoding settings, deterministic SCC decision constraints and holdout tasks; record output quality, task outcomes, model memory incl. KV cache, prompt and generation speed, costs and provenance.
+
+**Stage B — own fragment-worker research:** if Stage A confirms a useful 14B compression envelope, separately source compatible **BF16/FP16** weights and test **bounded-memory shard/tensor processing** with persistent manifests and stage gates. Do not pretend that requantizing `Q6 → IQ2` is equivalent to quantizing original BF16/FP16; aggressive cascaded requantization may damage quality. An actual claimed new result requires rebuilding the final GGUF and checking both whole-model inference and per-stage integrity. It is acceptable to enter `BLOCKED_RESOURCE` if true source and scratch space cannot fit.
+
+**Stage C — increase parameter count only after A and B:** `Qwen3-32B` with published `Q4_K_M` (~19.76 decimal GB) as a **candidate reference** on a verified 24 GiB GPU **if runtime allocations actually fit**; published `IQ2_M` (~11.36 GB) or `IQ2_XS` (~9.95 GB) as compressed CPU 16 GiB *candidate files*. A weight file fitting 16 GiB does **not** prove operating-system headroom, context memory, acceptable latency or usable quality. Original 32B BF16 is ~65.53 GB and needs an independent source/scratch-storage plan. No automatic move to 70B/120B.
+
+**Existing publication provenance for these specific GGUF *file sizes*:**
+- [Qwen3-14B published GGUF quant list](https://huggingface.co/bartowski/Qwen_Qwen3-14B-GGUF).
+- [Qwen3-32B published GGUF quant list](https://huggingface.co/bartowski/Qwen_Qwen3-32B-GGUF).
+- [llama.cpp quantization and tensor-specific options](https://github.com/ggml-org/llama.cpp/blob/master/tools/quantize/README.md).
+
+**Current measurable outcome of this selection:** **PLAN_ONLY**. No GPU was resumed/started, no additional model was installed, downloaded, converted, executed, benchmarked or made production available by this declaration. Production Ollama tags and the canonical SCC/Router roles are untouched. Follow-up must begin with a read-only RunPod inventory; do not publish raw pod IDs, hostnames, credentials or proprietary task texts.
