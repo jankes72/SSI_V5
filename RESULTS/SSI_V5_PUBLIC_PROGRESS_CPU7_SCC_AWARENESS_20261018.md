@@ -143,3 +143,14 @@ The audit used existing GGUF metadata only, reporting **no model execution, no n
 **Source-weight parity remains UNVERIFIED** despite the R13A architecture/tokenizer metadata compatibility observations. No model training or registration, Router/SCC runtime modification, paid GPU/remote-model use or candidate promotion was reported; the existing **13/13 original Ollama tags** were preserved.
 
 **Next verification gate:** privately inspect the one discordant SCC case, both models' failed SCC cases and routing failures in the existing evidence directory, classify whether failures involve JSON formatting, canonical block selection or no-authority controls, and review upstream checkpoint lineage. Avoid rerunning or changing the preregistered suite solely to improve scores. Original prompts, exact responses, paths and proprietary implementation details are not published.
+
+
+## Update 18 October 2026: R14 investigation — empty visible SCC output
+
+**Further operator-provided forensic read-only diagnostics of the frozen R14 evidence:** Of the eight SCC-context checks, **two cases for each model (four individual inferences)** produced **no visible model answer** despite zero process exit status. Their standard-output files contained only the tool's terminal marker, with generation/timing counters reporting one token/run and zero measured prompt processing, while a neighboring control case yielded substantial visible output and nonzero measured prompt-processing time.
+
+These observations are **not evidence that either model produced incorrect SCC logic for those cases**, nor proof of a specific inference-engine defect, EOS cause, or quantization failure. They are classified as **empty-visibility / inference-path anomalies**. Other concrete failures include three shared errors in typed software-task routing and multiple SCC block-sequence errors; the candidate alone missed one SCC sequence the original passed. In the substantive SCC responses, no tested execution-authority boundary was violated.
+
+The original preregistered **R14 totals remain candidate 16/24 versus original 17/24**. Missing visible output is not retrospectively scored as a success or silently excluded from the historical benchmark.
+
+**R15 planned only:** a private, separate, CPU-limited replay and six-call diagnostic probe against the same frozen SCC prompts and existing GGUF artifacts, varying only a model-inference batch-size setting to investigate a possible processing-boundary issue. The R15 utility passed 18/18 local offline tests, but **has not yet run on the VPS**. Any R15 result will be separately labeled and will not overwrite R14 evidence. Source-checkpoint parity and model qualification remain **UNVERIFIED** and **NOT APPROVED**, respectively. No private prompts, raw outputs, or diagnostic scripts are included in this public report.
