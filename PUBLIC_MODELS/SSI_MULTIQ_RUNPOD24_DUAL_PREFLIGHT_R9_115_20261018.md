@@ -32,3 +32,17 @@ An audit of Pods alone cannot prove that a 24 GiB serverless endpoint does not e
 - **R9.116 prepared** to read only `GET /v2/serverless` and report sanitized **image-family clues and hashed image-reference fingerprints** for the two 24 GiB entries. New R9.116 utility passed **22/22 synthetic local tests**, but **has not yet been run against the user's live account**, and no stored-model detection is claimed.
 
 **Current gate**: `WAITING_FOR_24GB_IMAGE_IDENTITY_AND_REAL_FREE_DISK`. No production changes, no RunPod GPU billing authorized by the R9.115/R9.116 read-only steps. The SSI-wide MultiControl ownership decision remains `PLANNED / GLOBAL_SSI / SHADOW_ONLY`; the audit does not imply an operational native SCC binding.
+
+
+## Dashboard identification of 24 GiB endpoints — operator screenshot text, 2026-10-18
+
+A subsequent **operator-provided RunPod dashboard excerpt** resolves the *display-name* identities of the two 24 GiB Serverless entries from the earlier account inventory. No live GPU start or endpoint API request was made by this publication:
+
+| 24 GiB endpoint | Allocated container disk (prior API inventory) | Worker settings (prior API inventory) | Evidence scope |
+| --- | --- | --- | --- |
+| `SSI-BONSAI2-27B` | 40 GB | min=0; max=0 | Endpoint **name** indicates Bonsai 27B. Does **not** prove weights exist inside the image; scaling currently disabled. |
+| `ssi-qwen38-27b-flex-r1` | 30 GB | min=0; max=1 | Endpoint **name** indicates Qwen 27B Flex. Model checkpoint/revision, quant, actual loaded weights, GPU and internal free disk remain unverified. |
+
+The screenshot labels **0/1 Running**, **0 Queued**, **1 Idle** on the 24 GiB Qwen endpoint and **0/0 Running**, **0 Queued**, **0 Idle** on Bonsai. Dashboard caption **"Running" is a counter label**, not evidence that active inference is occurring. An actually warm **idle** Flex worker may still consume billed GPU seconds until shut down; inspect real worker telemetry before making a cost assertion. Source: RunPod Serverless billing documentation, https://docs.runpod.io/serverless/pricing.
+
+**Current decision:** two existing endpoint identities are known, but the real image contents, snapshot/disk occupancy, exact Qwen 27B checkpoint, and possibility of adding a third model have **not** been verified. Preserve **both** existing endpoint configurations. Evaluate an existing 27B baseline *first*, subject to separately authorized billed requests; only then decide whether Qwen3.5-35B-A3B IQ4_XS deserves a separately versioned image deployment. R9.116 remains **read-only image-definition preflight**; status `WAITING_FOR_IMAGE_CONTENT_AND_REAL_FREE_DISK`. All 48 GiB endpoints and the stopped A40 Pod are excluded.
