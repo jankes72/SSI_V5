@@ -5,6 +5,17 @@
 
 **Evidence-first research platform for persistent, adaptive multi-agent AI systems.**
 
+## SSI MultiQuant — five directions and new BIG → MICRO / native low-bit research (18 October 2026)
+
+**Today's declaration:** [SSI MultiQuant D1–D5 — implemented offline prototypes, operator CPU evidence and proposed D4/D5 research gates](PUBLIC_MODELS/SSI_MULTIQ_FIVE_DIRECTIONS_R4_R5_DECLARATION_20261018.md).
+
+- **Offline control prototypes:** D1 hybrid competence memory (R2, 56/56 local tests), D2 fragment-stage gate/Polish observations (R1, 32/32), D3 multi-model fusion planning (R3, 64/64 with R2 integration), plus the existing inert SCC–MultiQuant adapter (23/23). **None is a trained, merged or production-deployed hybrid LLM.**
+- **Separate Qwen3-1.7B OFFLINE MICRO:** BF16 source → Q4_K_M ~1.194 GiB artifact and CPU smoke pass; routing tests **R24 FAIL** and **R25 1/4 PASS**. R26 BF16-vs-Q4 comparison deferred; quantization is not proven to cause the failure. No Router promotion.
+- **New research goals, not achievements:** **D4 BIG → MICRO** aims at carefully verified 16 GiB-deployable small students derived from selected very-large-model competencies; **D5 NATIVE LOW-BIT STUDENT** investigates distillation and quantization-aware training in the same learning loop. **Neither 70B/120B → 16 GiB production operation nor QAT+KD training has been performed.**
+- The Qwen3 OFFLINE MICRO case is **separate** from CPU-7, which remains **1/7 candidates built and 0/7 promoted**. SCC remains the sole mission language; migration/production binding remains pending.
+
+[Latest dated evidence supplement](RESULTS/SSI_V5_PUBLIC_PROGRESS_CPU7_SCC_AWARENESS_20261018.md#update-18-october-2026-director-offline-micro-r21r25-results-and-multiquant-d1d5).
+
 ## Latest verified public progress — 2026-10-18
 
 **Operator-reported bounded evidence, not an independent replication:** one CPU-built and locally smoke-tested SSI MultiQuant 1.5B candidate (1/7 built, 0/7 production promoted; 7.16 tok/s in a one-thread sample), plus an **incomplete** SCC/Awareness/Research Memory inventory (25,001 entries scanned, limit reached, no migration or training run). Proprietary SSI code and know-how remain private.

@@ -8,6 +8,14 @@
 **Evidence boundary:** software-only unless a document explicitly states otherwise.  
 **History rule:** earlier dated truth/status files remain preserved and are not retroactively rewritten.
 
+## MultiQuant D1–D5: new research declaration and latest bounded evidence — 2026-10-18
+
+**[Five directions / D4 BIG → MICRO / D5 native low-bit student](PUBLIC_MODELS/SSI_MULTIQ_FIVE_DIRECTIONS_R4_R5_DECLARATION_20261018.md).** Offline tested private control prototypes: R1 fragment/Awareness 32/32, R2 hybrid skill memory 56/56, R3 fusion planner 64/64 (R2 bridge enabled), plus the existing SCC observation adapter 23/23. **No actual fusion, distillation training or native SCC production integration was demonstrated.**
+
+Separate Qwen3-1.7B Director Offline MICRO: BF16→Q4_K_M source/toolchain checks and CPU smoke succeeded; routing QA **R24 FAIL**, **R25 1/4 PASS**. **R26 comparison deferred** and no evidence quantization caused routing mistakes. The original CPU-7 population remains **1/7 built, 0/7 production promoted**; do not combine these counts. See [dated R21–R25 update](RESULTS/SSI_V5_PUBLIC_PROGRESS_CPU7_SCC_AWARENESS_20261018.md#update-18-october-2026-director-offline-micro-r21r25-results-and-multiquant-d1d5).
+
+**D4/D5 are newly declared scientific goals, not completed 70B/120B compression or joint low-bit training.** Local and production authority remain explicitly separated; SCC R9.107 native migration verdict remains `NOT_READY`.
+
 ## Latest bounded operator evidence — 2026-10-18
 
 **Published:** a sanitized CPU-7 / SCC-Awareness progress report. One GGUF candidate built and run in a single local CPU smoke inference; 13 original models remain listed, **no production promotion** and no independent quality comparison. A separate **read-only, incomplete** inventory scanned 25,001 items and reached its cap; it does not confirm complete integration or training. Private code, data and operational know-how are excluded.

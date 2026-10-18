@@ -165,3 +165,26 @@ The previous acquisition utility initially rejected contradictory HTTP redirect-
 **R21 (prepared, not executed on the user's VPS at this update):** a separate, private CPU-only toolchain and baseline conversion workflow targets the existing verified BF16 source and a pinned llama.cpp commit. Its **25/25 offline tool tests PASS**. Follow-up steps are individually gated: preflight, explicit build-dependency installation, isolated toolchain, BF16 GGUF conversion, Q4_K_M baseline, and independent file-SHA verification. No further training, quantization, inference, deployment or activation has yet been reported.
 
 **Safety and attribution:** No changes to the existing 13 original inference-server Ollama tags, SSI Router or SCC runtime. The new source/manifest and R21 scripts remain private. No model is production-qualified or promoted. Quantization is distinct from actual weight distillation.
+
+
+---
+
+## Update 18 October 2026: Director Offline MICRO R21–R25 results and MultiQuant D1–D5
+
+**This dated entry supersedes the earlier “R21 prepared, not executed” state for the independent Qwen3-1.7B experiment.** Its original earlier snapshot remains intact to preserve chronology. These are **operator-provided VPS logs**, plus independently rerun **isolated local software-unit tests** of private packages. Neither is third-party replication.
+
+**Separate Qwen3-1.7B offline experiment:** the operator reported R21 BF16 → GGUF → Q4_K_M conversion and `R21_READ_ONLY_VERIFY_PASS`, with BF16 ~3.79 GiB and Q4 ~1.194 GiB; no production promotion. R22 generated the correct answer “4” with ~4.4 generated tokens/s on one CPU thread; R23 correctly returned `ROBERT / WAITING_FOR_NODE01 / false` for a physical GNOME action when NODE-01 was offline. **R24 FAIL:** `CODEX` was selected for server-side Python changes, but status incorrectly became `WAITING_FOR_NODE01`. **R25 FAIL:** **1/4 full cases PASS** (3/4 agent selection, 1/4 status selection; JSON and non-execution flags valid in 4/4). The invalid status would incorrectly suspend unrelated server-native missions. **R26 BF16-vs-Q4 comparison was deferred by the operator and was not executed.** There is **no causal proof** that quantization created the routing error.
+
+**Separate research control prototypes, local/offline test evidence reproduced from preserved packages:**
+- **SCC/Awareness/Fragment R1:** 32/32 tests PASS; observation and inert fragment-stage gates only; no full Polish spellchecker, native SCC parser or actual distillation.
+- **MultiQuant Hybrid Skill Memory R2:** 56/56 tests PASS; local SQLite model/teacher/skill-evidence ledger; no real teacher benchmark or trained student.
+- **MultiQuant MultiScale Fusion R3:** 64/64 tests PASS **with its four R2 bridge tests enabled**; model-family and same-base adapter compatibility checks, four non-executing modes; no actual model merging or multi-model serving.
+- **Earlier MultiQuant SCC observation adapter R1:** 23/23 offline tests PASS; preserves all 12 canonical MultiQuant step IDs; no native interpreter/execution authorization.
+
+Tests above prove only their **bounded controller/validation behavior**, not model quality, production authority or training results. No private code, model weights, prompts, datasets, operational IP addresses or API secrets are published.
+
+**New declared research directions (not implemented):** **D4 BIG → MICRO** — experiment with very-large-teacher-to-small-student, segmented weight-processing and SCC-backed skill-memory paths targeting **measured operation under 16 GiB RAM**; **D5 NATIVE LOW-BIT STUDENT** — study joint quantization-aware training (QAT) and knowledge distillation during learning, with held-out evaluation and per-stage rollback. Neither 70B/120B compression on 16 GiB nor joint QAT/KD training has been performed.
+
+**Accounting boundary:** this **Director Offline MICRO** Qwen3 experiment is **not** an additional CPU-7 candidate. The existing CPU-7 report remains **1/7 built, 0/7 production promoted**. The SCC R9.107 compatibility audit remains `NOT_READY`; no migration handoff sent and no automatic Router promotion. 
+
+Read the full [five-direction architecture, evidence table and acceptance gates](../PUBLIC_MODELS/SSI_MULTIQ_FIVE_DIRECTIONS_R4_R5_DECLARATION_20261018.md).
