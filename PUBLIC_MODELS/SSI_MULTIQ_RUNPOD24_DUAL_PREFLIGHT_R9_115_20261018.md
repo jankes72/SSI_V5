@@ -80,3 +80,20 @@ The different model-hint results cannot prove that Qwen weights are missing: no 
 **Next gate:** determine Qwen's exact source revision, container/handler build and permitted request/response schema, preferably from archived build manifests, Dockerfiles and private logs on MSI without activating GPU; preserve private details. Then request explicit cost approval if a **single** narrowly bounded real inference is still necessary. Never overwrite Bonsai, Qwen or their endpoint settings. The 48 GiB resources remain excluded.
 
 **Status:** `R9_117_HEALTH_READ_ONLY_PASS / QWEN_MODEL_RUNTIME_UNVERIFIED / WAITING_FOR_HANDLER_AND_PROVENANCE`.
+
+
+## R9.118 operator decision — replace 24 GiB Bonsai endpoint's model with a pinned Qwen 35B baseline (2026-10-18)
+
+**Approved target change, NOT execution evidence:** The operator decided to **retire Bonsai as the deployed model on the existing 24 GiB/40 GB `ADA_24` Serverless endpoint**, replacing its experimental workload with a **single, version-pinned Qwen3.5-35B-A3B IQ4_XS reference** (~19.70 GB published GGUF). Existing Qwen 27B Flex on a *different* 24 GiB/30 GB endpoint and all 48 GiB resources must remain untouched.
+
+**Model selection rationale:** A 35B MoE model is large enough for high-capacity 24 GiB GPU evaluation and also has a feasible *but quality- and CPU-performance-unverified* direct low-bit comparison on 16 GiB RAM: `IQ2_M` ~12.96 GB or `IQ2_XS` ~11.69 GB. It is **not** asserted to be the mathematically largest possible model that could fit 24 GiB at any quantization; larger 70B+ low-bit models are excluded at this gate because they do not yield a defensible direct-on-16-GiB same-model comparison with runtime and quality margin. GPU *VRAM* and container-disk capacity are separate budgets.
+
+**Safe transition:** Back up **private** endpoint configuration locally with mode 0600 and preserve `ghcr.io/jankes72/ssi-bonsai27:r2` and its historical GHCR digest. Do not delete the RunPod endpoint (deletion can discard job history). Stage a **new image/tag** containing *only* `Qwen3.5-35B-A3B-IQ4_XS.gguf` with its exact HF repo commit and LFS SHA256 verified. Verify actual GPU fit, startup and disk usage before permitting billable inference; preserve reversible configuration. The multi-quant Hugging Face repository must **not** be installed via RunPod's unfiltered model caching because it can fetch all variant files. Deployed `Bonsai` image and checkpoint are historical reference only, **not the new quantization source**.
+
+**Research integrity:** The Qwen IQ4_XS GGUF is a third-party reference, not SSI's own quantizer output. Any new SSI native quantization, fragment processing or distillation must preserve provenance to higher-precision source weights outside this 40 GB temporary container. Comparing IQ4_XS vs IQ2_M from the **same Qwen checkpoint** is an initial *published-quantization control*, not proof of SSI algorithmic advantage. The authoritative global MultiControl ownership decision still applies.
+
+**Private R9.118 tooling prepared:** read-only backup script, exact HF GGUF/revision/LFS-source pin checker, guarded build-command generator, *unbuilt* one-GGUF RunPod worker Docker draft, and a billable test requiring explicit separate arming. **26/26 synthetic offline tests passed**. Neither backup/HF scripts nor worker image were executed on MSI or RunPod by this documentation update; no model downloaded, GPU started, endpoint changed, or old image deleted.
+
+**Status:** `OPERATOR_REPLACEMENT_APPROVED / R9_118_PREPARED / NO_RUNPOD_MUTATION / WAITING_FOR_BACKUP_SOURCE_PIN_BUILD_GPU_FIT`.
+
+Sources: https://huggingface.co/Qwen/Qwen3.5-35B-A3B ; https://huggingface.co/bartowski/Qwen_Qwen3.5-35B-A3B-GGUF ; https://docs.runpod.io/serverless/endpoints/model-caching ; https://docs.runpod.io/serverless/endpoints/overview .

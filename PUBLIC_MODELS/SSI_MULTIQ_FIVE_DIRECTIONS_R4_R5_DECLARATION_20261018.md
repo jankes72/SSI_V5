@@ -154,3 +154,12 @@ The global decision [`SSI_MULTICONTROL_GLOBAL_ARCHITECTURE_DECISION_R1`](../SYST
 Operator-provided **read-only** account inventory confirmed two **candidate Serverless 24 GiB endpoints** among five: one declared **40 GB container disk, workersMax=0**; another **30 GB disk, workersMax=1**. Existing 48 GiB Pod was `EXITED` and remains excluded. **Neither endpoint has verified image contents, installed Bonsai weights or free filesystem space; no network volumes were reported**. The next private R9.116 read-only image-identity audit has **22/22 offline software tests PASS**, but requires operator execution on MSI for real endpoint data.
 
 **No 24 GiB GPU was started, no model was downloaded, and no model baseline is installed by this update.** See [bounded R9.115 evidence and R9.116 gate](SSI_MULTIQ_RUNPOD24_DUAL_PREFLIGHT_R9_115_20261018.md#operator-r9115-account-inventory-evidence-and-r9116-next-gate--2026-10-18).
+
+
+## R9.118: approved 24 GiB Bonsai-to-Qwen-35B replacement gate (2026-10-18)
+
+**New operator direction:** On the existing 24 GiB Serverless endpoint with **40 GB** temporary disk, **replace the Bonsai deployed model** with an independently versioned, SHA-pinned **Qwen3.5-35B-A3B IQ4_XS** (~19.70 GB third-party GGUF) reference. Keep original Bonsai GHCR R2 release and private endpoint history/recovery metadata. **Do not touch** the separate Qwen 27B 24 GiB/30 GB endpoint, any 48 GiB worker, SSI MODELS production weights, router aliases or Champion registries.
+
+Same-base comparison candidates for the target CPU-only **16 GiB** VPS: **IQ2_M** (~12.96 GB), **IQ2_XS** (~11.69 GB), with further MultiQuant R&D contingent on held-out quality, actual RAM/CPU and correct high-precision-source provenance. 70B+ ultra-low-bit might fit 24 GiB VRAM as a research display, but has no straightforward practical 16 GiB RAM same-checkpoint CPU comparison and is **not selected** for first controlled D4 research. The original BF16 of this 35B family (~71 GB GGUF) must be staged outside the 40 GB Serverless scratch if true SSI re-quantization is attempted.
+
+**Deployment not performed.** Private R9.118 preparation passed **26/26 synthetic software tests**; no new model is installed or running yet. See [operator decision and gates](SSI_MULTIQ_RUNPOD24_DUAL_PREFLIGHT_R9_115_20261018.md#r9118-operator-decision--replace-24-gib-bonsai-endpoints-model-with-a-pinned-qwen-35b-baseline-2026-10-18).
