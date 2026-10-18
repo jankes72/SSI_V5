@@ -73,3 +73,41 @@ R9.122: Warehouse bada statycznie definicje i importy; MultiControl waliduje pro
 **Aktualny gate:** `NOT_READY`. Należy odróżniać znaleziony kod, statyczny punkt wywołania, test offline i aktywne działanie produkcyjne. Żaden z nich nie zastępuje pozostałych.
 
 **Punkt wznowienia:** R9.135 — tylko brakujące połączenia, żadnych pełnych skanów katalogów ani przebudowy historycznych modułów.
+
+---
+
+## Doprecyzowanie migracji — Organizer, Świat piłki i Hipnoza (18.10.2026)
+
+**Podstawa:** bieżąca decyzja właściciela oraz ponownie odczytany [Football World / Świat Hipnozy 01 — status z 16.09.2026](../FOOTBALL_WORLD_CURRENT_STATUS_20260916.md), w szczególności sekcje „Existing Football organizer as source” i „Director integration”. Dokument źródłowy opisuje sąsiedni Organizer jako źródło odczytywane przez adapter; nie jest dowodem dzisiejszego odbioru VPS. Ogólne zasady ciągłości pozostają w [planie migracji serwerowej](../SSI_V5_MIGRACJA_SERWERY_ROBERT_R1_20261017.md).
+
+### Rola i położenie
+
+`Organizer_swiat_Pilki` jest wymaganym zasobem danych domenowych dla interfejsu „Świat piłki” / „Hipnoza”, historycznie opisanego jako Football World / Świat Hipnozy 01. Nie klasyfikować całego katalogu jako archiwum do pozostawienia wyłącznie na MSI, nie utożsamiać go z SCC Memory ani z dodatkowym aktorem. Zachować jego własną historię i autorstwo Pawła Jankiewicza.
+
+Docelowo katalog ma być w uzgodnionym wspólnym drzewie SSI, obok środowisk aktorów wdrażanych na danym serwerze oraz historycznego magazynu `lego_poket`. Nie wkładać go do pamięci jednego agenta ani do starej zagnieżdżonej kopii instalatora. Nie zmienia to przydziału Roberta, CODEX-a lub modeli do innych uzgodnionych serwerów i nie scala pamięci aktorów. Dokładna ścieżka wdrożeniowa oraz mapowanie ewentualnego wolumenu należą do prywatnego manifestu.
+
+### Powiązanie z interfejsem i wykonaniem
+
+W manifeście zachować relację: wejście „Świat piłki” / „Hipnoza” w interfejsie → właściwy istniejący backend/obserwator świata → adapter źródła → kanoniczny Organizer. Rzeczywiste identyfikatory tras, konfigurację i punkt montowania ustalić z działającego wydania; nie wymyślać nowych endpointów. Samo sąsiedztwo katalogów nie zastępuje konfiguracji czytnika.
+
+Zachować opisany w źródle adapter tylko do odczytu. Stan świata i prywatne historie aktorów pozostają oddzielne; współdzielenie źródła nie oznacza dowolnego prawa zapisu dla wszystkich agentów. Brak albo niedostępność wymaganego źródła ma być widoczna jako `NOT_CONNECTED` dla tej funkcji, bez pustej bazy zastępczej, cichego przełączenia na starą kopię lub udawanego sukcesu. Nie blokować z tego powodu niezależnych misji SSI.
+
+SCC ma korzystać z istniejących uprawnionych operacji świata przez zgodny adapter, a nie samodzielnie otwierać dowolne pliki Organizera. Powiązania z S10/V10, mikrosieciami i Research Memory zachowują dotychczasowe kontrakty i zasady kwalifikacji; ten dopisek nie dowodzi ich wykonania ani nie uruchamia ponownego FLOW.
+
+### Istniejąca kopia i utrzymanie
+
+Właściciel zgłosił wcześniejsze przesłanie Organizera na serwer. Zachować tę kopię i rozliczyć ją przed kolejnym transferem. **Bez ponownego wysyłania całego katalogu, nadpisywania baz, usuwania plików lub tworzenia drugiego Organizera na podstawie samego rozmiaru folderu.** Najpierw potwierdzić docelową lokalizację, zawartość, wersję i właściciela zapisów; nie ogłaszać transferu zweryfikowanego bez odpowiedniego dowodu.
+
+Objąć ten zasób monitoringiem, kopią zapasową i cotygodniowym przeglądem utrzymania. Kontrola ma rozróżniać dostępność katalogu, możliwość odczytu przez właściwą usługę i rzeczywisty odczyt danych przez interfejs. Retencja logów nie uprawnia do usuwania danych Organizera. MSI pozostaje włączonym archiwum/panelem/warsztatem; operacyjny dostęp serwerowych funkcji świata nie może opierać się wyłącznie na lokalnej kopii MSI.
+
+### Kryteria odbioru tego powiązania
+
+1. Prywatny manifest wskazuje jeden kanoniczny Organizer i jego właściwe położenie przy środowiskach SSI; wcześniej przesłana kopia została rozliczona bez utraty danych.
+2. Oba wskazane wejścia interfejsu korzystają z właściwego zasobu przez istniejącą usługę/adapter, a nie z pustego lub historycznego zamiennika.
+3. Odczyt zachowuje identyfikatory i historię; uprawnienia nie rosną wskutek wspólnego katalogu. Adapter obserwacji nie modyfikuje źródła.
+4. Test braku źródła pokazuje jawny brak połączenia; restart przywraca właściwe powiązanie. Sam HTTP 200 nie oznacza poprawnego odczytu świata.
+5. Backup i odtworzenie obejmują spójny stan wymaganych baz, plików i odniesień. Monitoring raportuje ten zasób osobno.
+
+**Stan tego dopisku:** wymaganie migracyjne zapisane; bez przenoszenia danych, zmian usług lub potwierdzenia produkcyjnej integracji. Nie są to wykonane testy.
+
+**Punkt kontynuacji:** rozliczyć istniejącą kopię Organizera i jej powiązanie z interfejsem w bieżącym wydaniu migracyjnym, zamiast traktować serwer jako pusty lub ponawiać szerokie skanowanie całego SSI.
