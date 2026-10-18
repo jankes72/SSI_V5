@@ -5,6 +5,10 @@
 
 **Evidence-first research platform for persistent, adaptive multi-agent AI systems.**
 
+## SSI-wide LEGO MultiControl — architecture decision (18 October 2026)
+
+**[Global architecture decision R1](SYSTEM/SSI_MULTICONTROL_GLOBAL_ARCHITECTURE_DECISION_R1_20261018.md):** LEGO MultiControl will be an **optional, shared validation/composite-control layer for all SSI V5**, not a MultiQuant-owned service. It may advise SCC/Director/Router, historical micronetworks, LEGO Pocket/META, CODEX, ROBERT, labs and robotics through read-only, domain-qualified adapters. **No promotion, registry write, SCC interpreter replacement or automatic execution.** Status: `PLANNED / GLOBAL_SSI / SHADOW_ONLY`, not deployed.
+
 ## SSI MultiQuant — five directions and new BIG → MICRO / native low-bit research (18 October 2026)
 
 **Today's declaration:** [SSI MultiQuant D1–D5 — implemented offline prototypes, operator CPU evidence and proposed D4/D5 research gates](PUBLIC_MODELS/SSI_MULTIQ_FIVE_DIRECTIONS_R4_R5_DECLARATION_20261018.md).

@@ -136,3 +136,10 @@ Published third-party GGUF examples (decimal GB file sizes, **not** measured GPU
 - [llama.cpp quantization and tensor-specific options](https://github.com/ggml-org/llama.cpp/blob/master/tools/quantize/README.md).
 
 **Current measurable outcome of this selection:** **PLAN_ONLY**. No GPU was resumed/started, no additional model was installed, downloaded, converted, executed, benchmarked or made production available by this declaration. Production Ollama tags and the canonical SCC/Router roles are untouched. Follow-up must begin with a read-only RunPod inventory; do not publish raw pod IDs, hostnames, credentials or proprietary task texts.
+
+
+## Updated architecture decision — LEGO MultiControl belongs to SSI V5 (2026-10-18)
+
+**Scope correction:** LEGO MultiControl is a **global SSI V5 shared control capability**, not owned by MultiQuant. MultiQuant uses a future **model-domain adapter** for compatibility, model composite proposals, quantization/distillation evidence and candidate review. The global core must remain domain-neutral and must not embed model/VRAM/GGUF internals. It is not a model-execution server or a new SCC parser.
+
+The global decision [`SSI_MULTICONTROL_GLOBAL_ARCHITECTURE_DECISION_R1`](../SYSTEM/SSI_MULTICONTROL_GLOBAL_ARCHITECTURE_DECISION_R1_20261018.md) supersedes only earlier diagrams implying MultiControl is inside MultiQuant; existing D1–D5 goals, historical evidence, `NOT_READY` gates and separate Champion registries remain unchanged. **`PLANNED / GLOBAL_SSI / SHADOW_ONLY`; no live integration is claimed.**

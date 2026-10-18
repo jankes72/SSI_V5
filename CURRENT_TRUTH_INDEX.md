@@ -8,6 +8,10 @@
 **Evidence boundary:** software-only unless a document explicitly states otherwise.  
 **History rule:** earlier dated truth/status files remain preserved and are not retroactively rewritten.
 
+## Global SSI MultiControl ownership — 2026-10-18
+
+**[Decision `SSI_MULTICONTROL_GLOBAL_ARCHITECTURE_DECISION_R1`](SYSTEM/SSI_MULTICONTROL_GLOBAL_ARCHITECTURE_DECISION_R1_20261018.md):** MultiControl is a future **SSI-wide**, optional, read-only-by-default compatibility/contract/evidence/composite control capability, coordinated with Director; MultiQuant is one consumer through a dedicated adapter. Existing micronetwork, Pocket and future model Champion registers stay independent; native SCC grammar, Router policy and Notary retain authority. **`PLANNED / GLOBAL_SSI / SHADOW_ONLY`, no deployment or automatic promotion.**
+
 ## MultiQuant D1–D5: new research declaration and latest bounded evidence — 2026-10-18
 
 **[Five directions / D4 BIG → MICRO / D5 native low-bit student](PUBLIC_MODELS/SSI_MULTIQ_FIVE_DIRECTIONS_R4_R5_DECLARATION_20261018.md).** Offline tested private control prototypes: R1 fragment/Awareness 32/32, R2 hybrid skill memory 56/56, R3 fusion planner 64/64 (R2 bridge enabled), plus the existing SCC observation adapter 23/23. **No actual fusion, distillation training or native SCC production integration was demonstrated.**
