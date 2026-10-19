@@ -1,6 +1,6 @@
 # SSI — bounded-memory experiments R1–R7: measured results and limits
 
-**Date:** 19 October 2026. **Owner:** Paweł Jankiewicz / jankes72.  
+**Date:** 19 October 2026. **Owner:** jankes72.  
 **Status:** completed local CPU experiments; experimental prototypes, **not production integration or independent replication**.  
 **Disclosure:** results and claim boundaries only. Implementation, tuning, source code, private prompts and detailed traces are retained privately.
 

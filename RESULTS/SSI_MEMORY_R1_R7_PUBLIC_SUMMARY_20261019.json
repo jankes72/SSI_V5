@@ -1,7 +1,7 @@
 {
   "schema": "ssi.public.memory-experiment-results.r1",
   "date": "2026-10-19",
-  "owner": "Paweł Jankiewicz / jankes72",
+  "owner": "jankes72",
   "status": "BOUNDED_LOCAL_CPU_EVIDENCE_NOT_PRODUCTION",
   "evidence_origin": "Local experiments executed in the assistant tool environment; no independent external replication.",
   "resource_measure": "Process peak RSS; excludes kernel file cache and is not total system memory or VRAM.",
