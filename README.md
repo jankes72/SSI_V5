@@ -5,6 +5,11 @@
 
 **Evidence-first research platform for persistent, adaptive multi-agent AI systems.**
 
+## Latest local CPU research — 19 October 2026
+
+**[Memory experiments R1–R7: results and limits](PUBLIC_MODELS/SSI_MEMORY_R1_R7_RESULTS_20261019.md)** — measured memory/time trade-offs in synthetic and real-weight-fragment tests, plus separate native 27B/32B/70B feasibility checks under an 8 GiB RAM limit. **The 70B result relies on file paging; it is not an integrated SSI compressed-runtime result, a small student, or a general-quality claim.** Public results retain negative/inconclusive outcomes and implementation remains private.
+
+
 ## SSI-wide LEGO MultiControl — architecture decision (18 October 2026)
 
 **[Global architecture decision R1](SYSTEM/SSI_MULTICONTROL_GLOBAL_ARCHITECTURE_DECISION_R1_20261018.md):** LEGO MultiControl will be an **optional, shared validation/composite-control layer for all SSI V5**, not a MultiQuant-owned service. It may advise SCC/Director/Router, historical micronetworks, LEGO Pocket/META, CODEX, ROBERT, labs and robotics through read-only, domain-qualified adapters. **No promotion, registry write, SCC interpreter replacement or automatic execution.** Status: `PLANNED / GLOBAL_SSI / SHADOW_ONLY`, not deployed.
@@ -20,7 +25,7 @@
 
 [Latest dated evidence supplement](RESULTS/SSI_V5_PUBLIC_PROGRESS_CPU7_SCC_AWARENESS_20261018.md#update-18-october-2026-director-offline-micro-r21r25-results-and-multiquant-d1d5).
 
-## Latest verified public progress — 2026-10-18
+## Earlier verified public progress — 2026-10-18
 
 **Operator-reported bounded evidence, not an independent replication:** one CPU-built and locally smoke-tested SSI MultiQuant 1.5B candidate (1/7 built, 0/7 production promoted; 7.16 tok/s in a one-thread sample), plus an **incomplete** SCC/Awareness/Research Memory inventory (25,001 entries scanned, limit reached, no migration or training run). Proprietary SSI code and know-how remain private.
 

@@ -1,0 +1,188 @@
+{
+  "schema": "ssi.public.memory-experiment-results.r1",
+  "date": "2026-10-19",
+  "owner": "Paweł Jankiewicz / jankes72",
+  "status": "BOUNDED_LOCAL_CPU_EVIDENCE_NOT_PRODUCTION",
+  "evidence_origin": "Local experiments executed in the assistant tool environment; no independent external replication.",
+  "resource_measure": "Process peak RSS; excludes kernel file cache and is not total system memory or VRAM.",
+  "efficiency_cases": [
+    {
+      "series": "R3",
+      "scope": "Synthetic BF16 matrix chain, batch 1",
+      "baseline_rss_mib": 316.3,
+      "candidate_rss_mib": 36.93,
+      "baseline_seconds": 0.4091,
+      "candidate_seconds": 1.032,
+      "storage_reduction_percent_approx": 29.85,
+      "outputs_bit_identical": true,
+      "rss_reduction_percent": 88.324,
+      "time_multiplier": 2.523
+    },
+    {
+      "series": "R4",
+      "scope": "Synthetic attention, 131072 synthetic context positions",
+      "baseline_rss_mib": 1055.64,
+      "candidate_rss_mib": 43.19,
+      "baseline_seconds": 0.5693,
+      "candidate_seconds": 7.085,
+      "storage_reduction_percent_approx": 14.72,
+      "outputs_bit_identical_same_arithmetic": true,
+      "rss_reduction_percent": 95.909,
+      "time_multiplier": 12.445
+    }
+  ],
+  "R5": {
+    "scope": "Separate full-native-model and real-weight-fragment experiments",
+    "verified_model_variants": 5,
+    "native_runs": 130,
+    "observation_pairs_identical": 35,
+    "single_token_interventions": 60,
+    "micro_cases": 120,
+    "micro_nonresident_bit_identical_comparisons": 90,
+    "additional_compression_selected_quantized_data_percent_range": [
+      1.28,
+      2.11
+    ],
+    "all_quality_checks_passed": false,
+    "native_runtime_savings_proven": false
+  },
+  "R6": {
+    "scope": "Repeated real-weight-fragment microbenchmark, not full LLM decoding",
+    "cases": 120,
+    "bit_identical_outputs": 360,
+    "local_memory_evidence_chains_verified": 120,
+    "conservative_variant_speedup_range": [
+      1.43,
+      2.17
+    ],
+    "baseline_peak_rss_mib_range": [
+      38.1,
+      39.3
+    ],
+    "candidate_peak_rss_mib_range": [
+      102.6,
+      115.2
+    ],
+    "speed_improvement_costs_more_ram": true,
+    "small_cache_dense_workload_hits_percent": 0,
+    "artificial_locality_speedups_are_not_native_llm_speedups": true
+  },
+  "R7": {
+    "scope": "Complete public low-bit checkpoints in a native inference engine; no SSI compressed-loader integration",
+    "environment": {
+      "ram_limit_gib": 8,
+      "gpu": false,
+      "system_swap": false,
+      "cpu_family": "Intel Xeon Platinum 8573C",
+      "inference_threads": 4,
+      "context_limit_tokens": 512,
+      "concurrent_requests": 1
+    },
+    "models": [
+      {
+        "model": "Bonsai 2 27B PQ2_0",
+        "model_file_bytes": 7206168928,
+        "peak_process_rss_bytes": 7657750528,
+        "simple_cases_passed": 3,
+        "simple_cases_total": 3,
+        "reply_wall_seconds": [
+          8.852991910000128,
+          45.54614627900082,
+          83.29980488000001
+        ],
+        "decode_tokens_per_second": [
+          1.1213949255758222,
+          0.1855809365323404,
+          0.1396520572097997
+        ]
+      },
+      {
+        "model": "Qwen2.5-Coder 32B Instruct Q2_K",
+        "model_file_bytes": 12313098944,
+        "peak_process_rss_bytes": 7924760576,
+        "simple_cases_passed": 3,
+        "simple_cases_total": 3,
+        "reply_wall_seconds": [
+          72.41589273899808,
+          104.88107436599967,
+          147.51607401
+        ],
+        "decode_tokens_per_second": [
+          0.07741676961806747,
+          0.11948649959878425,
+          0.10317561709795145
+        ]
+      },
+      {
+        "model": "Llama 3.1 70B Instruct IQ2_XXS",
+        "model_file_bytes": 19097389632,
+        "peak_process_rss_bytes": 7652532224,
+        "simple_cases_passed": 3,
+        "simple_cases_total": 3,
+        "reply_wall_seconds": [
+          186.132227064998,
+          315.89144369600035,
+          371.62508536099995
+        ],
+        "decode_tokens_per_second": [
+          0.03469999133541216,
+          0.036927011297292894,
+          0.05465344943029578
+        ]
+      }
+    ],
+    "oom_events": 0,
+    "all_final_servers_exit_code_zero": true,
+    "largest_tested_parameters_billions": 70,
+    "absolute_upper_bound_established": false,
+    "timing_confounds": [
+      "Bonsai ran during a concurrent model download.",
+      "The final 70B configuration differs from the 27B/32B configurations.",
+      "The original interrupted 70B attempt is retained privately and is not counted as a completed quality failure."
+    ]
+  },
+  "claim_boundaries": [
+    "Synthetic and fragment-microbenchmark savings are not full-model memory or speed savings.",
+    "R5 QA includes failures and inconclusive token-budget outcomes; observation equivalence is not task correctness.",
+    "No full-model R3/R4/R5/R6 compressed-runtime integration was tested.",
+    "Large checkpoints relied on file-backed paging; RSS smaller than file size does not mean all weights fit in RAM.",
+    "No matched full-resident R7 baseline, so no percentage memory saving is claimed for R7.",
+    "No GPU/VRAM savings, target i5/GTX 960 result, general quality equivalence, long-context capability, Frankenmerge or skill mapping is demonstrated.",
+    "Exact installed VPS model-digest parity is unverified.",
+    "These results do not promote production models or change existing D4/D5 training status."
+  ],
+  "private_evidence_commitments": [
+    {
+      "series": "R1",
+      "archive_sha256": "2122a387e9f532da210808aede232c9053a99a18aa08d9b59a3e0902b5d35e06"
+    },
+    {
+      "series": "R2",
+      "archive_sha256": "ec92b62a676dee9cdb3f103917db612e14194c7e26a9f8cdf1bd3e45953d9479"
+    },
+    {
+      "series": "LEGO_AUDIT",
+      "archive_sha256": "274636b785cd283892c3be1f4ef629be1d059f19d4c5b3a005d805d845b7230d"
+    },
+    {
+      "series": "R3",
+      "archive_sha256": "01cd5d68793a26ae283ebd51dfafc61109bd9a5b332c538261f25a8410eb96c1"
+    },
+    {
+      "series": "R4",
+      "archive_sha256": "85753a7e33610cc01530705254ba33e71ffe31d546341fb2fe758f2da45b1f84"
+    },
+    {
+      "series": "R5",
+      "archive_sha256": "8f4eed0fde7290b2ed520302f5d38ba6e706100eb3ed5a252dd5becba885db8d"
+    },
+    {
+      "series": "R6",
+      "archive_sha256": "44447535f5c26d59ba0b5c2ff85d64661e8d9aeee0c1eff9f5a1e272cae2ddeb"
+    },
+    {
+      "series": "R7",
+      "archive_sha256": "59b78461851135e23320fd9aa374ba575a45075889085f103ed55a5ee327bfac"
+    }
+  ]
+}
