@@ -678,3 +678,14 @@ The system boundaries in this C4 remain unchanged: **Director decides; SCC repre
 **Decision:** [`SSI_MULTICONTROL_GLOBAL_ARCHITECTURE_DECISION_R1`](SYSTEM/SSI_MULTICONTROL_GLOBAL_ARCHITECTURE_DECISION_R1_20261018.md).
 LEGO MultiControl is planned as a **shared, optional, SSI-wide, domain-neutral compatibility/evidence/composite-control service** — **NOT** a subsidiary component of MultiQuant. Conceptual canonical coordination is near SSI DIRECTOR, but processing and archived datasets remain on appropriate nodes. Domain adapters will eventually serve MultiQuant, historical micronetworks, LEGO Decomposer/Pocket/META, CODEX, ROBERT, Universal Lab/Zero Lab, robotics/drones and Router V10. Existing SCC, Director, Router, Champion registries and Evidence/Notary retain their own authority; no execution or automatic promotion rights are delegated to MultiControl. 
 **Status: `PLANNED / GLOBAL_SSI / SHADOW_ONLY` (design-only, not deployed).** Native SCC conformance audit R9.111/R9.113 remains `NOT_READY`; no production services or registries were changed by this documentation update.
+
+
+## Universal Lab Hermes first contact and client workflow — 2026-10-22
+
+**Evidence class: current author/operator report; no new independent runtime test.** The SSI author reports an existing Hermes assistant before Universal Lab login, answering SSI questions and linking to relevant information. Visitors can describe a project and request temporary access or login credentials; access approval remains separate.
+
+The Hermes module runs on the Director's computer with a RAM budget set aside according to the operator. The final container/swap/other isolation design remains open. A small task-specialized SSI model after distillation and memory optimization is a future replacement goal; the interface is intended to show the actual serving model. Public responses may be slow; a faster logged-in work path is described without a numerical latency guarantee.
+
+The reported client workflow continues through a camera/translation meeting, with CZARA Shadow preparing/running a problem-specific experiment or benchmark during the needs discussion. Results and solution proposals can be reviewed during the meeting, followed by operator-sent benchmark information by email and separately qualified implementation work. Preserve proposal, execution, validation and delivery status for each case.
+
+See the [full dated operator report and status table](SYSTEM/UNIVERSAL_LAB_HERMES_CLIENT_WORKFLOW_OPERATOR_REPORT_20261022.md). This first-contact module is distinct from A16 narration and the historical public web-Director plan. This report does not establish every SCC/MultiQuant/Router binding or universal readiness of proposed client solutions.
