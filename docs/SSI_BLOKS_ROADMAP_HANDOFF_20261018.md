@@ -2,6 +2,8 @@
 
 Status: dokument kierunkowy. Migracja produkcyjna: NOT_READY.
 
+> **Aktualizacja 23.10.2026:** przygotowanie środowiska Dyrektora i testy M8R1 zostały wykonane. Obowiązujący punkt kontynuacji jest po zaliczonym M8R1, nie przed transferem kodu. Zobacz [raport migracji M1–M8R1](../RESULTS/SSI_DIRECTOR_MIGRATION_M1_M8R1_20261023.md) i dopisek na końcu tego dokumentu. Poniższe starsze etapy zachowano jako historię; pełne przełączenie produkcyjne nadal nie zostało odebrane.
+
 ## Trzy rownolegle obszary
 1. **BLOKS Warehouse**: katalogowanie historycznych zasobow, rodowod, warianty, integralnosc, kwalifikacja, zaleznosci i bezpieczny reuse.
 2. **BLOKS MultiControl Global**: wspolny mechanizm kontroli kompozycji dla Dyrektora, CODEX-a, Roberta, mikrosieci, MultiQuant i laboratoriow. Tryb SHADOW_ONLY: kontroluje, proponuje i zglasza HOLD, ale nie wykonuje misji ani nie modyfikuje rejestrow.
@@ -111,3 +113,21 @@ Objąć ten zasób monitoringiem, kopią zapasową i cotygodniowym przeglądem u
 **Stan tego dopisku:** wymaganie migracyjne zapisane; bez przenoszenia danych, zmian usług lub potwierdzenia produkcyjnej integracji. Nie są to wykonane testy.
 
 **Punkt kontynuacji:** rozliczyć istniejącą kopię Organizera i jej powiązanie z interfejsem w bieżącym wydaniu migracyjnym, zamiast traktować serwer jako pusty lub ponawiać szerokie skanowanie całego SSI.
+
+---
+
+## Wykonana migracja u Dyrektora — aktualizacja 23.10.2026
+
+Pełny zapis etapów i ich granic: **[SSI DIRECTOR — M1–M8R1](../RESULTS/SSI_DIRECTOR_MIGRATION_M1_M8R1_20261023.md)**. Podstawą są raporty i terminal operatora, nie nowe testy wykonane przy publikacji notatki.
+
+**Wykonano:** transfer i weryfikację 1595 plików kodu, kontrolowaną poprawkę i złożenie kopii, uruchomienie odbiorowego WWW, przywrócenie Hermesa przed logowaniem z kontrolą przypięcia modelu, transfer 17 archiwów MultiQ i przygotowanie 45 plików kandydatów. M8R1 zaliczyło izolację i **107 testów na VPS: 23 + 39 + 16 + 29**.
+
+**Aktualny punkt kontynuacji: `M8R1_NATIVE_CONTRACTS_VERIFIED_SHADOW_ONLY`.** Nie powtarzać zaliczonych etapów ani budować zastępczego SCC, routerów lub pamięci. Następne zadanie to jedna rzeczywista, uprawniona ścieżka obserwacyjna misji i powiązanie jej wyników z istniejącymi rejestrami i Research Memory. R9 pozostaje doradcą, a `HOLD_NO_ELIGIBLE_MODEL` nie jest awarią ani zgodą na domyślną kwalifikację modeli.
+
+Wynik 107 PASS dotyczy kontraktów, syntetycznych zadań i jednorazowych baz. Nie stanowi testu jakości LLM ani pełnego odbioru V10/S10, wszystkich mikrosieci, zakładek i mostów. Generowanie odpowiedzi Hermesa i pełny cykl rzeczywistego konta mają osobny odbiór. ZIP z najnowszym wynikiem M8R1 nie został jeszcze odczytany; podstawą tej liczby jest terminal właściciela.
+
+**Późniejsze uzgodnienie ról serwerów:** DIRECTOR — Dyrektor i Universal Lab; ROBERT — Robert oraz niezależny CODEX; MODELS/CORE24 — usługi modeli. Zastępuje to wcześniejszy plan osobnego VPS CODEX-a, bez deklarowania ukończonego wdrożenia wszystkich wykonawców. MSI nadal działa jako panel, archiwum i warsztat, NODE-01 jest opcjonalnym rozszerzeniem, Lenovo pozostaje poza aktywną infrastrukturą. Wycofany SSI Start nie jest przywracany.
+
+**Nadal do odbioru:** rzeczywiste kwalifikacje i połączenia misji, pełny zakres Universal Lab z konferencją, tłumaczeniami i uprawnieniami, pamięci i mikrosieci, Organizer, ciągłość Notariusza, backup/odtworzenie, monitoring oraz cotygodniowe utrzymanie. Nie kopiować ponownie Organizera w ciemno, nie resetować kont, nie podpisywać zaległości nowym kluczem i nie powtarzać dawnych misji.
+
+**Pełne przełączenie produkcyjne: niewykonane / `NOT_READY`.** Aktualizacja dokumentacji nie zmienia usług, modeli, baz ani publicznego przekierowania.
