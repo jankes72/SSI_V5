@@ -48,7 +48,7 @@ Zachowujemy właściwe wejście: **Hermes i informacje o SSI → opis potrzeby o
 
 Raport M6R1 potwierdza stronę Hermesa i zgodność przypięcia modelu, ale zapisuje generation_tested=false. Test rzeczywistej odpowiedzi pozostaje osobnym odbiorem. Podgląd migracyjny nie jest jeszcze przełączonym publicznym wejściem produkcyjnym.
 
-Zakres całej migracji nadal obejmuje Operation Center, Charlie, Roberta i niezależnego CODEX-a, Cz arę/Shadow, ZeroLab, benchmarki, umiejętności i szkolenia, SCC, V10/S10, Research Memory i dodatkowe mikrosieci pamięci, BLOKS, Evidence i Notariusza. Obejmuje również konferencję, tłumaczenia i uprawnienia. Obecność zakładki nie dowodzi wykonania zadania przez jej most.
+Zakres całej migracji nadal obejmuje Operation Center, Charlie, Roberta i niezależnego CODEX-a, Czarę/Shadow, ZeroLab, benchmarki, umiejętności i szkolenia, SCC, V10/S10, Research Memory i dodatkowe mikrosieci pamięci, BLOKS, Evidence i Notariusza. Obejmuje również konferencję, tłumaczenia i uprawnienia. Obecność zakładki nie dowodzi wykonania zadania przez jej most.
 
 MSI pozostaje włączonym panelem, archiwum i warsztatem; lokalne zdolności NODE-01 są opcjonalnym rozszerzeniem. Nie przywracamy wycofanego SSI Start. Organizer „Świata piłki / Hipnozy”, monitoring, backup, odtwarzanie i cotygodniowe utrzymanie pozostają obowiązkowymi elementami odbioru.
 
