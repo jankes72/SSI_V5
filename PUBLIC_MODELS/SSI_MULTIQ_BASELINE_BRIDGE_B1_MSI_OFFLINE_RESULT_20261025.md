@@ -33,3 +33,9 @@ Instructions for the second model/CPU operator and honest price/latency/resource
 3. The 32-case **BF16 GPU**, **CPU plain IQ2** and **same-hardware MultiQuant enabled** runs have **not** been completed. No validated quality/time/cost advantage exists from B1.
 
 **Publication boundary:** bounded test result and identifiers only; no program code, private logs, filesystem locations, model weights, credentials or raw operator data.
+
+## Later update — BF16 B1 completed and archive verified
+
+The offline observations above describe the earlier MSI preparation stage. Subsequently, `SSI_BF16_B1_20261025T135837Z` completed **5 pilot calls plus 32×3 full calls**. Archive CRC and all 11 manifest hashes passed; independent rescoring confirmed **32/32 in each repeat (96/96)**. The GPU and temporary storage were independently confirmed stopped at **$0.00/h**. This later evidence supersedes only the earlier statement that the BF16 32-case arm had not run; it does not assert that the archive has been copied to MSI or that CPU/module comparison has completed.
+
+[Verified BF16 result and limitations](BENCHMARKS/SSI_MULTIQ_B1_BF16_RESULTS_20261025.md) · [Public metrics and pairing hashes](BENCHMARKS/SSI_MULTIQ_B1_BF16_PUBLIC_EVIDENCE_20261025.json). CPU token parity, GGUF lineage and same-hardware module ablation remain pending. Original private archives and all source code remain unpublished.
