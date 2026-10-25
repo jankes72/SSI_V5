@@ -8,9 +8,19 @@
 **Evidence boundary:** software-only unless a document explicitly states otherwise.  
 **History rule:** earlier dated truth/status files remain preserved and are not retroactively rewritten.
 
+## Migration + MultiQuant — active core / archive handoff — 2026-10-25
+
+**[Current coordination supplement: scope, skill audit R2 and 80 GB gate](RESULTS/SSI_MIGRATION_MULTIQ_CORE_ARCHIVE_HANDOFF_R1_20261025.md)** · [Machine-readable handoff](RESULTS/SSI_MIGRATION_MULTIQ_CORE_ARCHIVE_HANDOFF_PUBLIC_R1_20261025.json).
+
+User-approved packaging scope: **required SSI engine + principal skills/competencies and dependencies active; historical copies and inactive material archived subject to retention**. No source moves/deletions or registry promotions were performed. The minimized core size and operation without NOUT1 remain unverified; the earlier broad candidate was **100.14 GB**, not the new core size.
+
+MSI skill-audit R2 hardware report has now been reviewed: **241,218 candidates; 2,661 catalog locations / 379 unique file contents; 304 duplicate groups**. Logical repeated catalog bytes do not establish physical savings or whole-package identity. Follow-up found **520 QUALIFIED Czara records and 120 referenced historical PASS training runs**, without current executable requalification. MultiQuant R15/R19/R21 and RAM Guard R3/R4 were cross-checked at main `00f7287230cce6999b5c938e792ad084420b7819`; their bounded experimental PASS does not confer native SCC or migration acceptance.
+
+The supplement updates the earlier checkpoint's R2-awaiting-report statement and adds the active/archive scope. Read it before the earlier snapshot below. It requests an explicit response from the MultiQuant track; no response or integration acceptance is implied.
+
 ## Migration checkpoint — 2026-10-25
 
-**[Latest migration report](RESULTS/SSI_MIGRATION_CHECKPOINT_20261025.md)** · [Machine-readable summary](RESULTS/SSI_MIGRATION_CHECKPOINT_PUBLIC_20261025.json).
+**[Earlier migration checkpoint](RESULTS/SSI_MIGRATION_CHECKPOINT_20261025.md)** · [Machine-readable summary](RESULTS/SSI_MIGRATION_CHECKPOINT_PUBLIC_20261025.json).
 
 Director: M8R1 **107 contract tests PASS / SHADOW_ONLY**, followed by M9 staged training inputs, **0 training runs** in that step. Robert: corrected **P3C R2 self-test PASS / STAGED, DISABLED**, without production state binding or a running queue consumer. CORE24: **13 metadata tags**, not a completed model/mission qualification matrix.
 

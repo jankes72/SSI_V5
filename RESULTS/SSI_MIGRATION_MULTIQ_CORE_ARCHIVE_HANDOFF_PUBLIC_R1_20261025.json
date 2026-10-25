@@ -1,0 +1,171 @@
+{
+  "schema": "ssi.public.migration.multiq.handoff.r1",
+  "handoff_id": "SSI_MIGRATION_MULTIQ_CORE_ARCHIVE_HANDOFF_R1_20261025",
+  "date": "2026-10-25",
+  "status": "USER_AUTHORIZED_SCOPE_NOT_DEPLOYED_INTEGRATION_PENDING",
+  "repository": "jankes72/SSI_V5",
+  "reviewed_main_sha": "00f7287230cce6999b5c938e792ad084420b7819",
+  "supersedes_fields_in_earlier_checkpoint": [
+    "skills.r2.hardware_result_received",
+    "skills.r2.status",
+    "plans.active_archive_scope"
+  ],
+  "earlier_checkpoint": "RESULTS/SSI_MIGRATION_CHECKPOINT_PUBLIC_20261025.json",
+  "decision": {
+    "active": "Entire required SSI engine plus principal skills/competencies and their dependency closure",
+    "archive": "Historical installations, consolidation copies, inactive variants and workshop material subject to native retention and active dependency checks",
+    "sources_deleted_or_moved": false,
+    "registry_promotions": false
+  },
+  "active_components": [
+    "Director and Universal Lab",
+    "Native SCC and versioned mission contracts",
+    "Router V10/S10 and authoritative skill registers",
+    "Active Research Memory and actor identity",
+    "CONTINUUM, queues, unfinished missions, checkpoints, recovery",
+    "Evidence/Notary chain heads, verification and retained history references",
+    "Permissions and existing communication with Robert/CODEX/CORE24",
+    "Skill, micronetwork and archive indexes"
+  ],
+  "invariants": [
+    "Preserve IDs, actor identity, versions, provenance, ACL, executable bodies, dependencies and evidence links",
+    "Do not promote skills from catalog labels, Python AST validity or synthetic test PASS",
+    "Do not merge mutable actor state solely because bytes match",
+    "Do not choose canonical skills by file time or copy count",
+    "Active skill dependencies must be available without NOUT1 or the skill must explicitly remain archive-dependent",
+    "Archive classification is not deletion or an independently verified backup"
+  ],
+  "storage": {
+    "unit": "decimal bytes",
+    "disk_budget_bytes": 80000000000,
+    "planning_growth_margin_bytes": 10000000000,
+    "payload_upper_bound_before_os_and_other_overhead_bytes": 70000000000,
+    "acceptance_formula": "active unpacked payload + required runtime/data not already counted + OS/container overhead + growth reserve <= available disk budget; count each item once",
+    "previous_broad_candidate_regular_file_bytes": 100139242402,
+    "previous_broad_candidate_is_minimized_core": false,
+    "minimized_core_bytes": null,
+    "fits_80gb": null,
+    "dependency_closure_verified": false,
+    "allocated_space_verified": false,
+    "nout1_independence_runtime_tested": false,
+    "nout1_target_role": "Optional archive/backup storage",
+    "model_weight_policy": "Use shared CORE24 model service; do not duplicate weights on Director without a specific requirement"
+  },
+  "skills_audit": {
+    "evidence_kind": "Operator-provided audit archives reviewed locally; no fresh execution on MSI",
+    "r2": {
+      "status": "PARTIAL_AUDIT_REVIEW_REQUIRED",
+      "hardware_result_received": true,
+      "discovery_complete_in_selected_scope": true,
+      "processing_complete_in_selected_scope": true,
+      "candidates_processed": 241218,
+      "catalog_locations": 2661,
+      "unique_catalog_file_contents": 379,
+      "duplicate_catalog_groups": 304,
+      "extra_catalog_locations": 2282,
+      "logical_extra_catalog_bytes": 56345385024,
+      "logical_bytes_are_proven_physical_savings": false,
+      "full_skill_package_identity_proven": false,
+      "same_id_different_record_variants": 411,
+      "all_ssi_skills_discovered": false
+    },
+    "followup": {
+      "catalog_structures_inspected": 225,
+      "current_canonical_member_selection_proven": false,
+      "czara_registry_qualified_records": 520,
+      "referenced_training_runs_found": 120,
+      "historical_training_status": "PASS",
+      "current_executable_binding_proven": false,
+      "runtime_requalification_performed": false
+    }
+  },
+  "scc": {
+    "language_reference": "SCC_BLOCKS_MISSION_LANGUAGE_AND_AMNEZJA3_ATTRIBUTION_20261014.md",
+    "historical_reference": "A27, 2026-10-14",
+    "preserved_contracts": [
+      "ssi.mission.goal.r1",
+      "ssi.mission.intent.r1"
+    ],
+    "authoritative_current_director_parser_verified": false,
+    "synthetic_multiq_json_is_native_scc_syntax": false,
+    "target_connection": "SCC -> native mission contract -> Router V10/S10 -> Research Memory / MultiQuant adapter -> executor -> Evidence",
+    "end_to_end_runtime_accepted": false,
+    "upstream_attribution_preserved": true
+  },
+  "multiq_review": [
+    {
+      "label": "R15 ACTIVE/LONGTERM",
+      "commit": "4605241062d329d81a47d9e1090b0c496a90d8e4",
+      "path": "PUBLIC_MODELS/SSI_MULTIQ_V7_16_R15_DUAL_TIER_QUOTA_20261025.md",
+      "boundary": "10/10 isolated wrapper; actual test tiers 96 bytes each; no production 4 GiB quota acceptance"
+    },
+    {
+      "label": "R19 resumption",
+      "commit": "8392ab83a6252e1b1462f6ee4207f767a4c2a73e",
+      "path": "PUBLIC_MODELS/SSI_MULTIQ_V7_16_R19_STEP_RESUMPTION_20261025.md",
+      "boundary": "10/10 synthetic step resumption; no production recovery or external exactly-once guarantee"
+    },
+    {
+      "label": "R21 concurrent missions",
+      "commit": "624a03943875d7af0361bd8da93c7aab93393d78",
+      "path": "PUBLIC_MODELS/SSI_MULTIQ_V7_16_R21_MULTI_MISSION_CONCURRENCY_20261025.md",
+      "boundary": "10/10 isolated synthetic tests; native SCC and multi-host execution not accepted"
+    },
+    {
+      "label": "RAM Guard R3",
+      "commit": "8c0077d7f06911f43b67dc4b3fc6d845dd6b1aeb",
+      "path": "PUBLIC_MODELS/SSI_MULTIQ_RAMGUARD_R3_PASSIVE_METRICS_AND_TEST_BACKUP_20261025.md",
+      "boundary": "Passive zram observation and tiny same-host test-store copies; no proven performance gain, disk-size reduction or full SSI backup"
+    },
+    {
+      "label": "RAM Guard R4",
+      "commit": "00f7287230cce6999b5c938e792ad084420b7819",
+      "path": "PUBLIC_MODELS/SSI_MULTIQ_RAMGUARD_R4_OFFHOST_SYNTHETIC_COPY_20261025.md",
+      "boundary": "12 files / 24,960 bytes copied from two tiny synthetic stores to MSI; SQLite and SHA readback PASS; not whole-SSI backup or application recovery"
+    }
+  ],
+  "coordination": {
+    "migration_next": [
+      "Identify authoritative engine, parser and main registers",
+      "Produce exact active/archive/unresolved manifests with private paths and hashes retained privately",
+      "Close dependencies and measure unpacked and allocated size",
+      "Stage without NOUT1; verify mission, restart and bounded recovery"
+    ],
+    "multiq_requested_response": [
+      "Reference this handoff ID and reviewed migration commit",
+      "Separate actual runtime/state requirements from synthetic fixtures",
+      "Map existing SCC contracts and identify missing bindings without inventing a replacement grammar",
+      "State retention, checkpoint, claim/fencing and evidence requirements for the adapter",
+      "Report measured disk/RAM values separately and state exactly which cases were executed"
+    ],
+    "response_record_fields": [
+      "handoff_id",
+      "reviewed_migration_commit",
+      "reviewed_multiq_commit",
+      "claims_confirmed",
+      "conflicts_or_missing_bindings",
+      "required_active_dependencies",
+      "measured_bytes_and_scope",
+      "next_bounded_acceptance_gate"
+    ],
+    "other_model_response_received": false
+  },
+  "acceptance": {
+    "production_cutover": false,
+    "full_system_backup_restore_accepted": false,
+    "one_native_mission_on_staging_required": true,
+    "restart_recovery_required": true,
+    "archive_restore_and_reference_integrity_required": true
+  },
+  "evidence": [
+    {
+      "label": "MSI_SKILL_AUDIT_R2",
+      "sha256": "e837c80f03939506430cf6c66f422d8b61a80e4edd17ed64863a89da1e3c1ef6"
+    },
+    {
+      "label": "DIRECTOR_80GB_PREFLIGHT_R1",
+      "sha256": "d5523703f67721cbe48f95bb0a7bd25272bf57e65c9c6255d3670138f44da021"
+    }
+  ],
+  "public_policy": "Sanitized decisions, results and limits only; no private code, source payloads, databases, credentials, host addresses or private filesystem paths"
+}
