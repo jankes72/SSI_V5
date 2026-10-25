@@ -136,3 +136,11 @@ Raw answers, pliki dowodowe, cennik/koszt przypisany do konta, logi hostów, pe�
 - `PUBLIC_ADVANTAGE_CLAIM: NONE`
 
 **Najbliższa decyzja:** zweryfikować lokalny wynik B1 (archiwum i hash zadań), potwierdzić SHA/pochodzenie GGUF, przygotować rejestr rzeczywistych stawek i limit wydatku dla BF16, sprawdzić zgodność tokenizera, a następnie wykonać mały pilot i pełną kampanię — dopiero po zgodzie operatora na koszt i ryzyko obciążenia.
+
+## X. Aktualizacja wykonania — 2026-10-25, po zamrożeniu protokołu
+
+Powyższe statusy z chwili przyjęcia protokołu pozostają zapisem historycznym. **Tor A BF16 został zakończony i zweryfikowany:** 5 prób pilotażowych, następnie 32×3, wynik 32/32 w każdym przebiegu (96/96). Operator przed sesją jawnie zniósł wcześniejszy globalny limit kosztu i czasu; zachowano ustalone pytania, kolejność, parametry generacji i ocenę. Powtórzenia greedy dotyczą tych samych 32 zadań i nie są niezależnymi zadaniami. Archiwum zapisano na NOUT1, przekazano do weryfikacji, a panel potwierdził zatrzymanie compute i tymczasowego storage oraz $0.00/h. Oryginalnych danych nie zmieniano.
+
+[Raport BF16 B1](SSI_MULTIQ_B1_BF16_RESULTS_20261025.md) · [Metryki, oceny i hashe 32 promptów/tokenów](SSI_MULTIQ_B1_BF16_PUBLIC_EVIDENCE_20261025.json).
+
+Aktualny status toru A: `BF16_ARM_VERIFIED_COMPLETE_POD_STOPPED_PAIRING_PENDING`. Zgodność tokenów CPU, pochodzenie GGUF, koszt według szczegółowego rachunku i wyniki B/C pozostają do udokumentowania. Referencja jest dostępna bez ponownego uruchamiania GPU; brak podstaw do twierdzenia o przewadze MultiQuant lub kwalifikacji produkcyjnej.
