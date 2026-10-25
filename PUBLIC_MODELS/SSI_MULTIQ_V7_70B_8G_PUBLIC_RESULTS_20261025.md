@@ -104,6 +104,14 @@ Paczka źródłowa pozostaje prywatna. Ten publiczny wpis udostępnia wyniki, me
 - Pełna zgodność historycznych ustawień generacji i wyrenderowanych promptów CPU z referencją BF16 nie została potwierdzona. Do następnej serii należy przypiąć model i tokenizer, zapisać identyczne wiadomości i szablon, uzgodnić parametry generacji oraz osobno mierzyć pobieranie, ładowanie, prefill i generację.
 - Kolejne porównania powinny obejmować większy, z góry ustalony zestaw pytań, powtórzenia i automatyczny zapis odpowiedzi oraz telemetrii obu wariantów. Statusy RAM Guard i syntetycznych testów pamięci SSI są dokumentowane osobno; niniejszy wynik nie zmienia ich zakresu walidacji.
 
+## Referencja BF16 B1 — pełna seria zweryfikowana
+
+**Aktualizacja 2026-10-25:** wykonano 5 prób pilotażowych i pełne 32×3. Niezależne ponowne ocenienie archiwum potwierdziło **32/32 w każdym powtórzeniu, łącznie 96/96**, bez pominięć, timeoutów i OOM. Mediana odpowiedzi: **0,244743 s**, p95: **0,447384 s**, na załadowanym modelu. Pobieranie, ładowanie i skrypt inferencji zajęły **508,477 s**; nie jest to pełny czas płatnego zasobu. Panel RunPod po zakończeniu potwierdził zatrzymanie compute i storage oraz **$0.00/h**.
+
+[Pełny raport B1, metodologia, weryfikacja i ograniczenia](BENCHMARKS/SSI_MULTIQ_B1_BF16_RESULTS_20261025.md) · [Dane maszynowe i hashe do parowania z CPU](BENCHMARKS/SSI_MULTIQ_B1_BF16_PUBLIC_EVIDENCE_20261025.json).
+
+Referencja BF16 jest zakończona. Porównanie CPU/IQ2 oraz przewaga modułów MultiQuant pozostają niepotwierdzone do dostarczenia wyników, zgodności tokenizacji i pochodzenia GGUF. 96 wywołań to trzy powtórzenia 32 zadań; nie jest to ogólny benchmark jakości ani test natywnego SCC.
+
 ## Wnioski i ograniczenia
 
 1. Inferencja krótkiej odpowiedzi modelu 70B IQ2_XXS zakończyła się poprawnie przy **MemoryMax=8 GiB** i skonfigurowanym swapie.
@@ -114,7 +122,7 @@ Paczka źródłowa pozostaje prywatna. Ten publiczny wpis udostępnia wyniki, me
 
 ## Kolejne etapy
 
-- **Referencja BF16:** test bazowy wykonany i wynik zapisany; procedura sprawdzona, Pod zatrzymany. Następny etap: kontrolowana seria wspólnych pytań dla referencji BF16 i wariantu SSI MultiQuant, po ponownym uruchomieniu środowiska GPU.
+- **Referencja BF16:** pojedynczy test oraz pełny B1 32×3 wykonane, archiwa zweryfikowane, Pod zatrzymany. Następny etap: zgodność tokenizacji i pochodzenia GGUF oraz wykonanie odpowiadającej serii CPU; ponowne uruchomienie GPU nie jest potrzebne do samego odczytu zapisanej referencji.
 - **V7.15:** kontrolowane porównanie sposobów ładowania danych przy jednakowym modelu, zadaniu i budżecie pamięci. **Status: zaplanowany / w toku, bez opublikowanych wyników.**
 - Powtórzenia w porównywalnych warunkach, rozdzielenie efektu cache i I/O, dłuższe zadania, walidacja jakości.
 - Ewaluacja potencjalnych optymalizacji SSI MultiQuant dopiero po mierzalnej poprawie względem niezmienionego punktu odniesienia.
