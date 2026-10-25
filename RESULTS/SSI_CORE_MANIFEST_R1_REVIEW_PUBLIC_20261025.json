@@ -1,0 +1,78 @@
+{
+  "schema": "ssi.public.core.manifest.review.r1",
+  "date": "2026-10-25",
+  "status": "MEASURED_BROAD_SCOPE_MINIMIZED_CORE_PENDING",
+  "input_evidence": {
+    "archive_sha256": "d810ac2998722581802f64997dd419c335b89330536afcce82b0c98c2f7e648b",
+    "zip_crc_verified": true,
+    "member_sha256_verified": true,
+    "tool_hashes_match_delivered_package": true,
+    "evidence_kind": "Operator-generated MSI metadata report reviewed locally; no fresh VPS execution"
+  },
+  "inventory": {
+    "metadata_entries": 904568,
+    "regular_file_locations": 771261,
+    "symlinks_not_followed": 110,
+    "selected_scope_scan_complete": true,
+    "all_ssi_sources_proven": false,
+    "total_regular_logical_path_bytes": 146178267105
+  },
+  "planning": {
+    "archive_candidate_regular_logical_bytes": 59832729895,
+    "remaining_broad_regular_logical_bytes": 86345537210,
+    "additional_git_history_candidate_regular_logical_bytes": 8050116246,
+    "conditional_remaining_after_git_exclusion_regular_logical_bytes": 78295420964,
+    "conditional_remaining_plus_10gb_reserve_bytes": 88295420964,
+    "three_other_python_environments_regular_logical_bytes": 20200817032,
+    "source_moves_or_deletions_performed": false,
+    "archive_restore_verified": false,
+    "git_runtime_dependency_check_pending": true,
+    "environment_consolidation_compatible": null,
+    "environment_consolidation_compatibility_status": "NOT_TESTED",
+    "logical_path_bytes_are_reclaimable_space": false,
+    "final_minimized_core_bytes": null,
+    "fits_80gb": null,
+    "os_and_other_overhead_still_to_budget": true
+  },
+  "engine": {
+    "native_python_files_read_as_ast": 26,
+    "dependency_edges": 334,
+    "regular_files_classified_active_candidate": 27,
+    "active_hint_regular_logical_bytes": 891241,
+    "active_hint_bytes_are_full_engine": false,
+    "declared_czara_qualified_records": 520,
+    "current_executable_requalification": false,
+    "authoritative_current_scc_parser_accepted": false,
+    "importlib_target_binding": "UNRESOLVED",
+    "uvicorn_application_binding": "UNRESOLVED",
+    "luna_source_search_root": "TARGETED_FOLLOWUP_REQUIRED",
+    "dynamic_and_data_dependency_closure_verified": false
+  },
+  "next_step": {
+    "kind": "TARGETED_STATIC_DEPENDENCY_INTAKE",
+    "listed_native_source_files": 613,
+    "listed_source_regular_logical_bytes": 3975732,
+    "whole_tree_rescan_required": false,
+    "local_synthetic_tests_passed": 7,
+    "msi_result_received": false,
+    "staging_acceptance_still_required": true
+  },
+  "preservation": [
+    "Retain principal competencies and required engine dependencies",
+    "Retain actor identity, live state, unfinished missions, checkpoint and evidence continuity",
+    "Do not delete SQLite WAL files or reset state to reduce size",
+    "Archive classification does not establish an independent backup",
+    "NOUT1 independence requires staging mission and recovery acceptance"
+  ],
+  "cross_project": {
+    "reviewed_main_sha": "94c730b8e18ee8c7b2f8c7f9adf17d7026c8d998",
+    "bf16_report_commit": "c7f25df939856086e154d897ec1ec44157f8ec2e",
+    "bf16_report": "PUBLIC_MODELS/BENCHMARKS/SSI_MULTIQ_B1_BF16_RESULTS_20261025.md",
+    "bf16_result": "Published reference reports 32 tasks x 3 = 96/96, not independent questions or native SCC mission execution",
+    "fse01_report": "PUBLIC_MODELS/SSI_MULTIQ_FSE01_FIRST_PRODUCT_REAL_HARDWARE_KICKOFF_R1_20261025.md",
+    "fse01_status": "Product kickoff; CPU and module validation pending",
+    "model_weight_policy": "No default replication of CORE24/MultiQuant model weights on Director; active adapter contracts and required state retained"
+  },
+  "full_system_production_acceptance": false,
+  "public_data_policy": "Sanitized results and limitations; no raw manifest, code, source payloads, private filesystem paths, host addresses, databases or credentials"
+}

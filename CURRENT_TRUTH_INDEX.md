@@ -8,6 +8,14 @@
 **Evidence boundary:** software-only unless a document explicitly states otherwise.  
 **History rule:** earlier dated truth/status files remain preserved and are not retroactively rewritten.
 
+## Measured core manifest R1 — 2026-10-25
+
+**[Latest measured migration supplement](RESULTS/SSI_CORE_MANIFEST_R1_REVIEW_20261025.md)** · [Machine-readable results](RESULTS/SSI_CORE_MANIFEST_R1_REVIEW_PUBLIC_20261025.json).
+
+Operator report verified: **146.18 GB** in the selected regular-file inventory, including **59.83 GB archive candidates**. The remainder is **86.35 GB**. Separating another **8.05 GB of Git history**, subject to runtime reference checks, would leave **78.30 GB before reserve and overhead**; adding a 10 GB reserve gives **88.30 GB**. These are broad planning profiles, not an accepted minimal core or reclaimed disk space.
+
+The 27 ACTIVE_CANDIDATE file hints are **not the complete engine**. Dynamic Director startup, Uvicorn application binding, Luna search roots and environment compatibility require targeted follow-up. The next intake lists 613 source files (~4 MB), rather than repeating the whole inventory. No source deletions, state resets, skill promotions or production cutover occurred. MultiQuant's newly published BF16 B1 reference and FSE-01 kickoff keep separate acceptance boundaries.
+
 ## Migration + MultiQuant — active core / archive handoff — 2026-10-25
 
 **[Current coordination supplement: scope, skill audit R2 and 80 GB gate](RESULTS/SSI_MIGRATION_MULTIQ_CORE_ARCHIVE_HANDOFF_R1_20261025.md)** · [Machine-readable handoff](RESULTS/SSI_MIGRATION_MULTIQ_CORE_ARCHIVE_HANDOFF_PUBLIC_R1_20261025.json).
