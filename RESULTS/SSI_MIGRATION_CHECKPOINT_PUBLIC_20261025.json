@@ -1,0 +1,205 @@
+{
+  "schema": "ssi.public.migration.checkpoint.r1",
+  "date": "2026-10-25",
+  "scope": "Evidence available in this migration session; no fresh live-server retest",
+  "overall_status": "MIGRATION_IN_PROGRESS_NOT_PRODUCTION_ACCEPTED",
+  "director": {
+    "m8r1": {
+      "status": "M8R1_NATIVE_CONTRACTS_VERIFIED_SHADOW_ONLY",
+      "tests_passed": 107,
+      "synthetic_tasks": true,
+      "native_v10_called": false,
+      "native_s10_called": false,
+      "notary_signatures_verified": false,
+      "production_cutover": false
+    },
+    "m9": {
+      "status": "M9_TRAINING_INPUTS_STAGED_RECONCILIATION_REQUIRED",
+      "files_verified": 20,
+      "baseline_files_rechecked": 72,
+      "trainings_executed": 0,
+      "models_called": 0,
+      "production_activation": false
+    }
+  },
+  "robert": {
+    "stage": "P3C_CANDIDATE_STAGED_VERIFIED_DISABLED",
+    "worker_selftest": "PASS",
+    "systemd_unit_installed": false,
+    "queue_consumer_started": false,
+    "state_binding_performed": false
+  },
+  "core24": {
+    "metadata_tags_observed": 13,
+    "full_model_mission_matrix_qualified": false
+  },
+  "scc": {
+    "offline_tests_passed": 67,
+    "live_server_execution_qualified_by_this_audit": false,
+    "language_reference": {
+      "version": "A27",
+      "public_reference_date": "2026-10-14",
+      "deployment": "AUTHOR_OPERATOR_REPORTED_AT_HISTORICAL_DATE",
+      "historical_reproduced_python_tests": 22,
+      "historical_reproduced_javascript_assertions": 10,
+      "rerun_for_this_publication": false,
+      "notation": "SSI_MISJA 1 ... KONIEC",
+      "preserved_contracts": [
+        "ssi.mission.goal.r1",
+        "ssi.mission.intent.r1"
+      ],
+      "scope": "Declarative goal validation and linear planning; not complete Champion execution",
+      "source_public_document": "SCC_BLOCKS_MISSION_LANGUAGE_AND_AMNEZJA3_ATTRIBUTION_20261014.md"
+    },
+    "r11_1_discovery": {
+      "public_document": "PUBLIC_MODELS/SSI_MULTIQ_V7_16_R11_1_SCC_CONTRACT_DISCOVERY_20261025.md",
+      "finding": "PUBLIC_A27_DOCUMENTATION_LOCATED",
+      "core24_name_filter_discovery": "NO_MATCHES_IN_SELECTED_LOCATIONS_NOT_PROOF_OF_ABSENCE",
+      "authoritative_current_director_parser_verified": false,
+      "multiquant_synthetic_json_fixture_is_native_scc_syntax": false
+    },
+    "connections": {
+      "goal_to_intent": "HISTORICALLY_DOCUMENTED_A27_CURRENT_RUNTIME_VERIFICATION_PENDING",
+      "router_v10_s10": "NATIVE_EXECUTION_NOT_EXERCISED_BY_M8R1",
+      "research_memory": "SYNTHETIC_ROUNDTRIP_ACL_IDEMPOTENCY_VERIFIED_NOT_PRODUCTION_STATE_ACCEPTANCE",
+      "multiquant": "OBSERVATION_ADAPTER_TESTS_ONLY_NO_NATIVE_PRODUCTION_Q_D_MISSION_ACCEPTED",
+      "robert_codex_core24": "STAGED_DISABLED_AND_METADATA_ONLY",
+      "langgraph": "PROPOSED_ADAPTER",
+      "n8n": "PROPOSED_SYNCHRONIZATION"
+    }
+  },
+  "storage": {
+    "node_storage_write_read_reported_verified": true,
+    "active_swap_approx_gib": 12,
+    "client_disk_access_reported_verified": [
+      "MSI",
+      "NOUT2"
+    ],
+    "all_vps_storage_bindings_verified": false
+  },
+  "backup": {
+    "nout2": {
+      "status": "INVENTORIED_SCOPE_BACKED_UP_RESTORE_PENDING",
+      "main_source_files": 151440,
+      "main_sqlite_copies": 1765,
+      "supplement_source_files": 37,
+      "supplement_sqlite_copies": 1,
+      "source_exceptions_reconciled": true,
+      "all_source_locations_proven": false,
+      "application_restore_tested": false,
+      "archive_payload_independently_read_for_publication": false
+    },
+    "msi": {
+      "status": "SPACE_BLOCKED_SCOPE_AUDITED_NOT_BACKED_UP",
+      "source_regular_files": 2708523,
+      "source_bytes": 512707446896,
+      "required_bytes_reported_indirectly": 691343212632,
+      "free_bytes_at_backup_start_reported_indirectly": 476044476416,
+      "independent_original_backup_zip_read": false
+    },
+    "full_ssi_backup_verified": false,
+    "cross_database_point_in_time_proven": false,
+    "all_nodes_application_restore_tested": false
+  },
+  "skills": {
+    "r1": {
+      "status": "PARTIAL_AUDIT_REVIEW_REQUIRED",
+      "stop_reason": "CANDIDATE_LIMIT",
+      "metadata_entries": 1972694,
+      "candidate_files": 150000,
+      "content_bytes_read": 0,
+      "catalog_locations_compared": 0,
+      "duplicate_or_qualification_conclusions_supported": false
+    },
+    "r2": {
+      "status": "LOCAL_TESTED_TOOL_AWAITING_MSI_REPORT",
+      "tests_passed": 27,
+      "hardware_result_received": false
+    },
+    "full_skill_packages_deduplicated": false,
+    "registry_promotions_performed": false
+  },
+  "plans": {
+    "bounded_vps_cores_and_indexed_external_skill_store": "PLANNED_NOT_ACCEPTED",
+    "minimum_core_sizes_proven": false,
+    "langgraph_n8n_native_adapters": "PROPOSED_NOT_DEPLOYMENT_EVIDENCE",
+    "active_actor_state_and_memory_to_remain_on_vps": true
+  },
+  "evidence": [
+    {
+      "label": "DIRECTOR_M8R1",
+      "sha256": "e9cb70163b2918f1e5a96975836e157e950474fb802a021b499308b6237f594d",
+      "evidence_kind": "operator_report_or_receipt",
+      "independent_live_retest_performed_for_publication": false
+    },
+    {
+      "label": "DIRECTOR_M9",
+      "sha256": "874008816b0d6c012f303989b4a44ee8f5eaf2f1072a68c1656ab4c66fd96fca",
+      "evidence_kind": "operator_report_or_receipt",
+      "independent_live_retest_performed_for_publication": false
+    },
+    {
+      "label": "ROBERT_P3C_R2",
+      "sha256": "4cf39ae72f8f3fbcea2afcbf9514773861c5fe9e99c5d37373d42e74c13f9187",
+      "evidence_kind": "operator_report_or_receipt",
+      "independent_live_retest_performed_for_publication": false
+    },
+    {
+      "label": "STORAGE_NODE01",
+      "sha256": "46f3aedaa45d1bc1e8ef6cb895b4ffc924ad7f6102817b1ed7914f2eb1e7aac6",
+      "evidence_kind": "operator_report_or_receipt",
+      "independent_live_retest_performed_for_publication": false
+    },
+    {
+      "label": "MSI_DISK_CLIENT",
+      "sha256": "1745021fff026b51542528e28e8761cb197fe8815a6bbce872e49fa7fba0f295",
+      "evidence_kind": "operator_report_or_receipt",
+      "independent_live_retest_performed_for_publication": false
+    },
+    {
+      "label": "NOUT2_DISK_CLIENT",
+      "sha256": "68770769b539ca98c4acc9c16f63be89c9374272893a3501e52ea0ad341fe288",
+      "evidence_kind": "operator_report_or_receipt",
+      "independent_live_retest_performed_for_publication": false
+    },
+    {
+      "label": "NOUT2_MAIN_BACKUP",
+      "sha256": "91ce070a921a7a7c248f06c8c52ff681d40ad90208100ebcf6c95baa1258af10",
+      "evidence_kind": "operator_report_or_receipt",
+      "independent_live_retest_performed_for_publication": false
+    },
+    {
+      "label": "NOUT2_SUPPLEMENT",
+      "sha256": "3f17da8e8abfc317d07159564b7d0075738e2099e34df51db2aa8dff8e77a950",
+      "evidence_kind": "operator_report_or_receipt",
+      "independent_live_retest_performed_for_publication": false
+    },
+    {
+      "label": "MSI_SCOPE_AUDIT",
+      "sha256": "c3f648037e68f59ec2e972a3e51739c08f81ea6ca2b4737b140187656cdc56ee",
+      "evidence_kind": "operator_report_or_receipt",
+      "independent_live_retest_performed_for_publication": false
+    },
+    {
+      "label": "MSI_SKILL_AUDIT_R1",
+      "sha256": "c4dcfd48adfeebfb4b340ff5585b40cfafd2c052ee784db5cb8863a26b2a9530",
+      "evidence_kind": "operator_report_or_receipt",
+      "independent_live_retest_performed_for_publication": false
+    },
+    {
+      "label": "SCC_OFFLINE_AUDIT_TOOL_PACKAGE",
+      "sha256": "041a0258eb9a773610261b094737987bb5f6fef1fe974e3a005f556bc5a40674",
+      "evidence_kind": "local_tested_tool_package",
+      "tests_passed": 67
+    },
+    {
+      "label": "MSI_SKILL_AUDIT_R2_TOOL_PACKAGE",
+      "sha256": "3beb9664a5e0679c92235b010a5e371a6878f1a9e9495ea8944b6d7b1f4f7b84",
+      "evidence_kind": "local_tested_tool_package",
+      "tests_passed": 27,
+      "operator_hardware_result_received": false
+    }
+  ],
+  "public_data_policy": "Sanitized results only: no proprietary code, databases, client information, credentials, infrastructure addresses, private filesystem paths or disk identifiers.",
+  "test_count_boundary": "Suites measure different scopes. Do not sum their counts as a system acceptance benchmark."
+}

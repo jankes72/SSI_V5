@@ -3,10 +3,22 @@
 > **Canonical architecture:** [SSI V5 — C4 Architecture](SSI_V5_C4_ARCHITECTURE.md) — single source of truth for the current public system structure. Update the C4 there instead of duplicating architecture diagrams across documents.
 
 
-**Status:** `CURRENT POINTER / 2026-10-18`  
+**Status:** `CURRENT POINTER / 2026-10-25`  
 **Repository role:** public R&D, evidence and external-validation hub with a published research portal; proprietary implementation remains private.  
 **Evidence boundary:** software-only unless a document explicitly states otherwise.  
 **History rule:** earlier dated truth/status files remain preserved and are not retroactively rewritten.
+
+## Migration checkpoint — 2026-10-25
+
+**[Latest migration report](RESULTS/SSI_MIGRATION_CHECKPOINT_20261025.md)** · [Machine-readable summary](RESULTS/SSI_MIGRATION_CHECKPOINT_PUBLIC_20261025.json).
+
+Director: M8R1 **107 contract tests PASS / SHADOW_ONLY**, followed by M9 staged training inputs, **0 training runs** in that step. Robert: corrected **P3C R2 self-test PASS / STAGED, DISABLED**, without production state binding or a running queue consumer. CORE24: **13 metadata tags**, not a completed model/mission qualification matrix.
+
+NOUT2: the inventoried scope has a main backup plus verified supplement; application restore remains pending. MSI: **477.50 GiB / 2,708,523 files** in the selected inventory, with the backup blocked by space requirements. Skill-content audit R1 stopped at **150,000 candidates before content comparison**; its zero result fields are not duplicate/qualification findings. R2 passed **27 local tool tests** and awaits the MSI report.
+
+**SCC / MultiQuant R11.1:** [the public A27 reference from 14 October was located](SCC_BLOCKS_MISSION_LANGUAGE_AND_AMNEZJA3_ATTRIBUTION_20261014.md). A name-filtered CORE24 search with no hits does not establish SCC is absent. The latest checkpoint maps SCC → native intent → Router / Research Memory / MultiQuant / executors and distinguishes documented contracts, synthetic checks and pending runtime bindings. Current authoritative Director parser verification remains pending; LangGraph/n8n are proposed adapters.
+
+**Full migration, all-node backup/restore and end-to-end production missions remain unaccepted.** The checkpoint distinguishes execution evidence, staging, local tool tests and proposed architecture; prior dated reports remain unchanged. Separate MultiQuant research results keep their own scope.
 
 ## Global SSI MultiControl ownership — 2026-10-18
 
