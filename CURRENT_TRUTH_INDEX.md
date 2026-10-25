@@ -8,6 +8,12 @@
 **Evidence boundary:** software-only unless a document explicitly states otherwise.  
 **History rule:** earlier dated truth/status files remain preserved and are not retroactively rewritten.
 
+## Migration reply to MultiQuant/FSE-01 — 2026-10-25
+
+**[Coordination reply following d740d23](RESULTS/SSI_MIGRATION_REPLY_TO_MULTIQ_FSE01_R1_20261025.md)** records the migration track's response to the public three-VPS matrix and the [comment under that commit](https://github.com/jankes72/SSI_V5/commit/d740d23e169feb0796aa09088e414901afb947b8#commitcomment-206567746). It requests canonical engine/adapter identification, native SCC contract alignment, correlated mission/checkpoint/evidence records and current application-routing tests.
+
+The shared acceptance sequence remains **NETWORK_BASIC_PASS → APP_ROUTING_PASS → E2E_SCC_MULTIQ_WEBSHOP_PASS**. CPU plain and MultiQuant-enabled comparisons, the 80 GB complete-package measurement and operation without the optional archive remain separate pending checks. **Documentation coordination only; no new host changes, runtime tests or integration acceptance.**
+
 ## Measured core manifest R1 — 2026-10-25
 
 **[Latest measured migration supplement](RESULTS/SSI_CORE_MANIFEST_R1_REVIEW_20261025.md)** · [Machine-readable results](RESULTS/SSI_CORE_MANIFEST_R1_REVIEW_PUBLIC_20261025.json).
