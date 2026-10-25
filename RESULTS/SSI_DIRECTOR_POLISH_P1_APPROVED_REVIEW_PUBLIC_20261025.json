@@ -1,0 +1,30 @@
+{
+  "schema": "ssi.director.polish.p1.approved-public-review.r1",
+  "date": "2026-10-25",
+  "publication_authorized": true,
+  "status": "SOURCE_VERSION_CONTINUITY_CONFIRMED_RUNTIME_PENDING",
+  "source_file_count": 5,
+  "m9_matching_source_files": 5,
+  "components": [
+    "SCC_A27",
+    "TRANSITION_BINDING_A26",
+    "NATIVE_TRAINING_BRIDGE",
+    "EVIDENCE_A28",
+    "RESEARCH_MEMORY_CORE"
+  ],
+  "static_findings": {
+    "a26_execution_enabled": false,
+    "execution_evidence_adapter": "NOT_BOUND",
+    "execution_evidence_confirmation": "REJECTED_BY_CURRENT_STATIC_READER"
+  },
+  "live_application_binding": "NOT_TESTED",
+  "complete_mission": "NOT_TESTED",
+  "package_80gb": "NOT_MEASURED",
+  "directory_deletion": "NOT_CONFIRMED",
+  "new_runtime_tests": 0,
+  "new_training_runs": 0,
+  "new_model_calls": 0,
+  "proprietary_code_published": false,
+  "private_infrastructure_details_published": false,
+  "reference_multiquant_commit": "ee7544beea25cc482a5726f7eab8f8e9bd537f0d"
+}
