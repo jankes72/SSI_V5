@@ -32,3 +32,24 @@ A previous controlled mmap run V7.13 using the same short task and 8 GiB memory 
 4. Continue work toward reproducible comparisons with multiple trials and explicit safeguards.
 
 **No speedup or product qualification is claimed.**
+
+## Post-run memory investigation (2026-10-25)
+
+A read-only examination of **98** sampled cgroup metrics further characterized the failed Direct I/O run:
+
+| Metric | Observed value |
+|---|---:|
+| Maximum `memory.current` | 8.000 GiB |
+| Maximum `memory.peak` | 8.000 GiB |
+| Maximum `memory.swap.current` | **7.958 GiB** |
+| Delta `memory.events max` | 53,436 |
+| Delta `memory.stat pgmajfault` | 33 |
+| Delta `memory.stat workingset_refault_file` | 0 |
+| Sampled delta `memory.events oom` | 0 |
+| Sampled delta `memory.events oom_kill` | 0 |
+
+**Interpretation:** The Direct I/O run reached both its memory limit and almost all permitted swap capacity. This strong memory pressure is consistent with the observed unit-level OOM kill. The final OOM kill is reported by systemd, whereas `oom_kill=0` in the sampled metrics may reflect the last sample preceding termination; it should not be presented as evidence that no OOM kill occurred.
+
+The much lower major-page-fault and file-refault counts than the mmap run do **not** mean improved performance: the Direct I/O run failed without producing an answer. The experiment does not establish that all bytes written were swap traffic, nor does it isolate the exact allocation that triggered OOM.
+
+**Decision:** retain standard mmap as the currently successful reference; avoid retrying Direct I/O at this memory/swap budget pending a memory-allocation analysis. Do not claim that an SSI-specific optimization was tested here.
