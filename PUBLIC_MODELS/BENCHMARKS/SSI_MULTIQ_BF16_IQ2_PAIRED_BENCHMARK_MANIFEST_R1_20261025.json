@@ -1,0 +1,215 @@
+{
+  "schema": "ssi.multiquant.public_benchmark_protocol.b1.r1",
+  "date": "2026-10-25",
+  "status": "TASK_SET_FROZEN_NOT_EXECUTED_ON_PAIRED_MODELS",
+  "task_suite": {
+    "path": "PUBLIC_MODELS/BENCHMARKS/SSI_MULTIQ_B1_SUITE_32_20261025.jsonl",
+    "cases": 32,
+    "category_counts": {
+      "math": 8,
+      "warehouse": 8,
+      "extraction": 6,
+      "grounded": 6,
+      "scc_reference_text": 4
+    },
+    "system_message": "Answer with only the requested value. No explanation or additional words.",
+    "canonical_json_sha256_from_B1": "8d9ee566d99f95d6f068b877c73d0f077207d5ff3cb8770ef64a1f913d71d553",
+    "jsonl_sha256_from_B1": "7122063baa94f744588a2405d140ea6e26c2941ee8ff7f7dcd199602e58158e8",
+    "test_suite_origin": "SSI_MULTIQ_BASELINE_BRIDGE_B1.py; generated tasks only, not publishing private implementation",
+    "limitations": [
+      "Public development set; not a hidden benchmark",
+      "SCC-like strings are synthetic and do not test native parser",
+      "Short tasks do not represent long-context/multi-step real missions"
+    ]
+  },
+  "model_reference": {
+    "model_id": "meta-llama/Llama-3.1-70B-Instruct",
+    "source_revision": "1605565b47bb9346c5515c34102e054115b4f98b",
+    "architecture": "Llama 3.1 70B Instruct",
+    "gpu_baseline_precision": "BF16",
+    "gpu_hardware_in_prior_single_question_reference": "2 x A100-SXM4-80GB",
+    "reference_result_json_sha256": "190603823f22a61820f0690a61e93b1cf05d3a56f37347f97aff7731448843e9",
+    "published_reference_commit": "e540ba601368d36c86296ef2c4a7b60b3fa2ee80",
+    "status": "ONE_SIMPLE_QUESTION_PASS_ONLY_POD_STOPPED",
+    "cpu_gguf_quantization": "IQ2_XXS",
+    "cpu_gguf_bytes_observed": 19097389632,
+    "cpu_gguf_file_sha256": "REQUIRED_BEFORE_COMPARISON_NOT_YET_PUBLISHED",
+    "cpu_conversion_source_revision": "VERIFY_BEFORE_MODEL_ATTRIBUTION"
+  },
+  "arms": [
+    {
+      "id": "BF16_GPU_REFERENCE",
+      "backend": "Transformers",
+      "precision": "BF16",
+      "machine": "RunPod 2 x A100 80GB GPU",
+      "status": "READY_TO_PLAN_NOT_RUNNING"
+    },
+    {
+      "id": "IQ2_CPU_PLAIN",
+      "backend": "llama.cpp",
+      "precision": "IQ2_XXS GGUF",
+      "machine": "CORE24 CPU; cgroup memory limit explicitly recorded",
+      "status": "READY_TO_PLAN_NOT_RUNNING"
+    },
+    {
+      "id": "IQ2_CPU_MULTIQ_ENABLED",
+      "backend": "same model and hardware as IQ2_CPU_PLAIN",
+      "precision": "SAME_GGUF_BITS",
+      "machine": "CORE24 CPU same constrained environment",
+      "status": "NOT_QUALIFIED_OR_BOUND_TO_REAL_INFERENCE",
+      "requirement": "Evidence of an actually executed MultiQuant optimization path before claiming a model speed or memory benefit"
+    },
+    {
+      "id": "IQ2_CPU_MULTIQ_DISABLED",
+      "backend": "same executable/runtime as enabled mode with flags disabled",
+      "precision": "SAME_GGUF_BITS",
+      "machine": "same CORE24 hardware",
+      "status": "OPTIONAL_ONLY_WHEN_FLAG_CONTROL_EXISTS"
+    }
+  ],
+  "shared_run_settings": {
+    "identical_cases_and_order": true,
+    "input_messages": "Read exact messages array from frozen suite. No prompt rewording, added examples, RAG tools or implicit system variations.",
+    "chat_template": "Pinned Llama 3.1 instruct chat-template; log rendered prompt hash per task and tokenizer input token IDs hash on each engine.",
+    "tokenizer_revision": "Match BF16 and GGUF lineage; if hashes or token IDs differ, mark PROMPT_PARITY_FAIL and do not claim paired quality equivalence.",
+    "do_sample": false,
+    "num_beams": 1,
+    "seed": 0,
+    "max_new_tokens": 96,
+    "use_cache": true,
+    "eos_behavior": "Document EOS/EOT/pad IDs and any engine-specific stop sequences; verify comparable early stopping.",
+    "concurrency": 1,
+    "context_window": "Record exact backend context-window setting and admitted prompt tokens.",
+    "time_metrics": "Always split cold startup/download/load from warm prompt prefill/decoding. Same hardware arms must be evaluated in matched cache regimes.",
+    "trial_plan": "Smoke pilot of M01/W03/E01/G04/S03; after approved budget, 32 cases x 3 sequential runs per available arm; record all failures and incomplete runs.",
+    "order_rule": "Use precommitted case permutation and apply identical ordering; balance cold/warm state for same-hardware ablations.",
+    "gpu_paid_run_gate": "Operator approval required for exact spend cap and actual GPU/storage per-hour rates before starting any paid Pod.",
+    "runtime_integrity_gate": "Record model IDs/revisions, quantization file hash and inference engine commit; if model lineage cannot be established, report as mismatch without attribution."
+  },
+  "scoring": {
+    "rule_name": "normalized_exact.r1",
+    "normalization": [
+      "Unicode NFC",
+      "Strip leading and trailing whitespace",
+      "Collapse repeated internal whitespace to one ASCII space",
+      "Casefold letter characters",
+      "Keep digits/signs/punctuation unchanged; no numeric tolerance (4.0 does not equal 4)"
+    ],
+    "eligible_cases": 32,
+    "statuses": [
+      "CORRECT",
+      "INCORRECT",
+      "TIMEOUT",
+      "OOM",
+      "BACKEND_ERROR",
+      "FORMAT_ERROR",
+      "PROMPT_PARITY_FAIL",
+      "SKIPPED_DUE_TO_BUDGET"
+    ],
+    "denominator": "All 32 cases when full arm completed; missing/failed answers are not silently excluded; report incomplete campaigns separately.",
+    "category_report": true,
+    "paired_task_diff_required": true,
+    "minimum_quality_reporting": "per case raw/normalized answers in private evidence, exact-match score per category and total, failure counts, paired error analysis",
+    "limitations": "32 short public tasks too small to establish production usefulness or robust model superiority; larger blind held-out tasks required."
+  },
+  "telemetry_required": {
+    "time": [
+      "host_utc_start",
+      "host_utc_end",
+      "wall_s_per_request",
+      "ttft_s_if_streamed",
+      "prefill_s_if_available",
+      "decode_s_if_available",
+      "load_s",
+      "model_download_s",
+      "generated_tokens",
+      "tokens_per_second",
+      "p50_wall_s",
+      "p95_wall_s"
+    ],
+    "cpu": [
+      "CPU_process_seconds",
+      "cgroup_cpu_usec",
+      "peak_RSS_bytes",
+      "cgroup_memory_peak_bytes",
+      "cgroup_swap_peak_bytes",
+      "major_faults_delta",
+      "cgroup_io_read_bytes_delta",
+      "cgroup_io_write_bytes_delta",
+      "disk_psi_delta",
+      "memory_psi_delta",
+      "zram_mm_stat_before_after"
+    ],
+    "gpu": [
+      "GPU_type_count",
+      "GPU_utilization_samples",
+      "GPU_memory_allocated_peak_bytes_per_device",
+      "GPU_memory_used_peak_bytes_per_device",
+      "GPU_power_w_samples_if_available",
+      "gpu_compute_billed_seconds"
+    ],
+    "model": [
+      "model_id",
+      "source_revision",
+      "gguf_sha256_if_cpu",
+      "tokenizer_revision",
+      "backend_commit_or_version",
+      "prompt_rendered_sha256",
+      "input_token_ids_sha256",
+      "output_token_ids",
+      "context_window",
+      "decoding_settings"
+    ],
+    "money": [
+      "currency",
+      "actual_gpu_rate_per_hour",
+      "gpu_billed_seconds",
+      "actual_storage_rate_per_hour",
+      "storage_billed_seconds",
+      "network_egress_fee_if_any",
+      "CPU_host_allocated_cost_method",
+      "actual_CPU_host_bill_if_used",
+      "credits_and_discounts_separately",
+      "cost_cold_start_total",
+      "cost_amortized_per_request",
+      "cost_per_correct_answer"
+    ],
+    "scientific": [
+      "run_id",
+      "task_id",
+      "arm_id",
+      "trial_index",
+      "test_suite_sha256",
+      "answer_status",
+      "raw_output_private",
+      "normalized_answer",
+      "expected_exact",
+      "error_or_exit_code",
+      "cache_regime",
+      "host_load_background",
+      "time_source"
+    ]
+  },
+  "cost_rules": {
+    "GPU": "actual provider compute rate x billed seconds / 3600 + actual storage/egress; include all billed warmup/load/idle/setup time; quote marginal warm-only cost separately",
+    "CPU": "declare reserved VPS flat-rate allocation OR incremental metered rate; never treat sunk fixed VPS price as universally zero; include storage and resource allocation assumptions",
+    "per_completed_task": "total run cost / all finished tasks, with failure counts disclosed",
+    "per_correct_answer": "total campaign cost / number of correct answered tasks; null when zero correct",
+    "energy": "kWh estimates only if real GPU power and CPU/mains telemetry available; no invented energy or carbon figure",
+    "hardware_comparability": "Cross hardware BF16 GPU vs IQ2 CPU gives observed end-to-end time/cost and quality; cannot attribute time difference to MultiQuant.",
+    "module_attribution": "Only CPU IQ2 vs CPU IQ2 with actual MultiQuant modules on the same host, model, context, cgroup and matched cache may attribute a measured change to modules; document any remaining confounders."
+  },
+  "claims_gates": {
+    "public_ready": "Suite frozen, operator records both arms, prompt/tokenizer parity, complete denominators, independent reruns, and cost provenance verified",
+    "performance_advantage": "Same hardware/model controlled ablation plus time/load/quality measurements and explicit uncertainty; no conclusion from cross-hardware numbers",
+    "production_qualified": false,
+    "native_SCC_end_to_end_qualified": false,
+    "current_model_quality_benchmark_completed": false,
+    "benchmark_run_status": "NONE_RUN_BY_THIS_MANIFEST"
+  },
+  "related_commits": {
+    "r5_inventory": "b161f97ada58f958703a78105a27b06bf6f1ac57",
+    "bf16_reference": "e540ba601368d36c86296ef2c4a7b60b3fa2ee80",
+    "migration_handoff": "e1f41fc9fce673d087144088e1c30e546a602ad3"
+  }
+}
