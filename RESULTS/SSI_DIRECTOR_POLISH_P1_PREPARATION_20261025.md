@@ -6,6 +6,10 @@
 
 Użytkownik zlecił równoległe dopracowanie Dyrektora podczas pracy toru MultiQuant. „Polish” oznacza tutaj dopracowanie i odbiór istniejącego SSI. Jest to plan i przygotowanie narzędzia odczytu, bez deklaracji wdrożenia lub gotowości pierwszego produktu.
 
+## Uzupełnienie: zatwierdzony wynik kontroli
+
+**[Podsumowanie P1 zatwierdzone do publikacji](SSI_DIRECTOR_POLISH_P1_APPROVED_REVIEW_20261025.md)** potwierdza 5/5 plików zgodnych z M9 i wskazuje brak integracji wykonawcy oraz weryfikacji dowodów w zbadanej ścieżce A26. Odczyt plików wykonano; powiązanie z aplikacją, kompletna misja i budżet 80 GB pozostają otwarte. Poniżej zachowano wcześniejszy plan jako historyczny punkt wyjścia.
+
 ## Stan wyjściowy i podział prac
 
 - [Checkpoint migracji](SSI_MIGRATION_CHECKPOINT_20261025.md): M8R1 — **107 testów kontraktowych PASS / SHADOW_ONLY**. M9 — przygotowane materiały, bez wykonanych szkoleń w tamtym etapie; historia wymaga rozliczenia.
