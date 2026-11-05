@@ -1,20 +1,23 @@
 # SSI V5
 
 
-## SSI V5: rozwój trwa — dwa produkty w przygotowaniu
+## SSI V5: rozwój trwa — trzy produkty w przygotowaniu
 
 **Aktualizacja: 5 listopada 2026 r. / Update: 5 November 2026**
 
-**PL:** Prace nad SSI V5 **nie zostały wstrzymane**. Kolektyw współpracujących agentów AI, pod kierunkiem człowieka, kontynuuje rozwój, a dotychczasowy dorobek jest porządkowany, zabezpieczany i stopniowo przenoszony do prywatnej infrastruktury serwerowej. Równolegle powstają **dwa niezależne produkty z myślą o przyszłych klientach**:
+**PL:** Prace nad SSI V5 **nie zostały wstrzymane**. Kolektyw współpracujących agentów AI pod kierunkiem człowieka rozwija i zabezpiecza swój dorobek, a kolejne elementy są przygotowywane i stopniowo przenoszone do prywatnej infrastruktury serwerowej. Równolegle rozwijamy **trzy odrębne produkty komercyjne**:
 
-1. **HERCULES — Public Offer & Bot Insights** *(Adaptive Backpack & Labyrinth)*. Rozwijane rozwiązanie wspierające analizę witryn internetowych, ich widoczności w wyszukiwarkach oraz interakcji z botami. Jego celem jest pomagać właścicielom stron w podejmowaniu decyzji na podstawie pomiarów i kontrolowanych testów.
-2. **SSI Private AI + MultiQuant Studio**. Rozwijana oferta prywatnych asystentów AI dla firm: praca z wiedzą i dokumentami organizacji, kontrolowany dostęp do informacji oraz dobór odpowiednich modeli do zadań i kosztów. Osobną częścią projektu są badania nad efektywniejszym wykorzystaniem modeli AI.
+1. **HERCULES — Public Offer & Bot Insights** *(Adaptive Backpack & Labyrinth)* — planowana pomoc w mierzeniu widoczności stron internetowych, analizie interakcji z botami i ocenie rezultatów kontrolowanych testów.
+2. **SSI Private AI** — przygotowywana platforma prywatnych asystentów firmowych, wyszukiwania wiedzy w dokumentach, kontroli dostępu oraz ekonomicznego doboru modeli AI.
+3. **SSI MultiQuant Studio** — rozwijany samodzielny zestaw narzędzi i usług do optymalizacji modeli AI dla firm: analiza wymagań sprzętowych, zmniejszanie rozmiaru modeli, sprawdzanie jakości i przygotowanie do bezpiecznego wdrażania. **Kierunek R&D: Adaptive Precision & Quality Recovery**, czyli badanie, jak zmniejszać wymagania pamięciowe i ograniczać utratę jakości.
 
-**EN:** **SSI V5 development continues.** Under human oversight, the SSI AI-agent collective is preserving and progressively moving its development work into private server environments. Two commercial products are being developed in parallel: **HERCULES — Public Offer & Bot Insights**, focused on evidence-led website visibility and bot analysis, and **SSI Private AI + MultiQuant Studio**, focused on business knowledge assistants, controlled data access and efficient AI-model use.
+**Wybrane osiągnięcie badawcze / Research milestone:** w kontrolowanych testach na **niewielkich fragmentach rzeczywistych wag dużego modelu** wykazaliśmy zmniejszenie objętości wybranej próbki o blisko **50%** przy **poniżej 1% względnego błędu numerycznego wag**. Badamy też poprawianie jakości za pomocą adapterów w eksperymentach laboratoryjnych. **Nie jest to dowód tej samej dokładności odpowiedzi ani osiągnięć dla kompletnego modelu.**
 
-**Status / Development notice:** oba produkty są **w fazie rozwoju i weryfikacji**, a nie publicznie dostępnymi, ukończonymi usługami. Nazwy i opisy powyżej są zapowiedziami kierunku prac, a nie deklaracją osiągniętych wyników, gwarancją efektów SEO ani certyfikacją bezpieczeństwa. Publiczne repozytorium SSI V5 przedstawia misję i postępy na wysokim poziomie; kod wdrożeniowy, materiały klientów, szczegóły architektury, algorytmy, eksperymentalne modele i know-how pozostają poza tą publikacją.
+**EN:** **SSI V5 development continues.** Under human oversight, the SSI AI-agent collective is preserving its work and progressively preparing components for private server infrastructure. Three commercial offerings are in development: **HERCULES — Public Offer & Bot Insights** (evidence-led website visibility and bot analysis), **SSI Private AI** (private enterprise knowledge assistants), and **SSI MultiQuant Studio** (model optimization, quality assessment and deployment preparation). MultiQuant research has shown promising numerical fidelity on selected real-model weight fragments while reducing their stored size; these are **limited research results, not full-model or production performance claims**.
 
-**Zainteresowanie / Interest:** rozmowę o przyszłej współpracy lub pilotażu można rozpocząć przez [GitHub Issues](https://github.com/jankes72/SSI_V5/issues). Publikacja tej zapowiedzi nie oznacza uruchomienia sprzedaży ani wdrożenia produkcyjnego.
+**Status / Development notice:** wszystkie trzy produkty są **w rozwoju i weryfikacji**, nie są obecnie deklarowane jako ukończone publicznie dostępne usługi. Nazwy i opisy nie oznaczają potwierdzonej sprzedaży, gwarancji SEO ani certyfikacji bezpieczeństwa. Kod, algorytmy i szczegółowe metody badawcze, modelowe artefakty, infrastruktura, dane i know-how nie są przedmiotem tej publicznej zapowiedzi.
+
+**Zainteresowanie / Interest:** kontakt w sprawie przyszłej współpracy lub pilotażu: [GitHub Issues](https://github.com/jankes72/SSI_V5/issues). Sama deklaracja nie oznacza uruchomienia sprzedaży ani produkcji.
 
 ---
 
