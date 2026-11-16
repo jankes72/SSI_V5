@@ -1,23 +1,31 @@
 # SSI V5
 
 
-## SSI V5: rozwój trwa — trzy produkty w przygotowaniu
+## SSI V5 — postępy w technologiach AI i trzy produkty w rozwoju
 
-**Aktualizacja: 5 listopada 2026 r. / Update: 5 November 2026**
+**Aktualizacja publiczna: 16 listopada 2026 / Public update: 16 November 2026**
 
-**PL:** Prace nad SSI V5 **nie zostały wstrzymane**. Kolektyw współpracujących agentów AI pod kierunkiem człowieka rozwija i zabezpiecza swój dorobek, a kolejne elementy są przygotowywane i stopniowo przenoszone do prywatnej infrastruktury serwerowej. Równolegle rozwijamy **trzy odrębne produkty komercyjne**:
+**PL:** SSI V5 konsekwentnie rozwija własny stos technologiczny dla modeli językowych **LLM** i systemów rozumowania **LRM/RLM**, wieloagentowej AI oraz optymalizacji obliczeń. Nasz dorobek to nie tylko nakładki na istniejące modele: projektujemy i testujemy własne elementy uruchamiania modeli, narzędzia do kwantyzacji, komunikację między modelami, mikrosieci i kontrolowane wykonywanie zadań. Korzystamy również z bazowych modeli innych autorów zgodnie z ich licencjami; **nie deklarujemy, że wszystkie modele bazowe zostały wytrenowane od zera przez SSI**.
 
-1. **HERCULES — Public Offer & Bot Insights** *(Adaptive Backpack & Labyrinth)* — planowana pomoc w mierzeniu widoczności stron internetowych, analizie interakcji z botami i ocenie rezultatów kontrolowanych testów.
-2. **SSI Private AI** — przygotowywana platforma prywatnych asystentów firmowych, wyszukiwania wiedzy w dokumentach, kontroli dostępu oraz ekonomicznego doboru modeli AI.
-3. **SSI MultiQuant Studio** — rozwijany samodzielny zestaw narzędzi i usług do optymalizacji modeli AI dla firm: analiza wymagań sprzętowych, zmniejszanie rozmiaru modeli, sprawdzanie jakości i przygotowanie do bezpiecznego wdrażania. **Kierunek R&D: Adaptive Precision & Quality Recovery**, czyli badanie, jak zmniejszać wymagania pamięciowe i ograniczać utratę jakości.
+**Aktualne kierunki i osiągnięcia R&D:**
+- **Rodzina małych modeli SSI („Maluchy”):** przygotowane warianty **0,5B / 1,5B / 3B**, lokalne testy rzeczywistej inferencji i współpracy modeli. Badamy własne, kontrolowane narzędzia wykonawcze dla małych agentów kodujących.
+- **Własne uruchamianie i kwantyzacja:** rozwój silników **CPU/GPU**, optymalizacji pamięci, niskobitowych reprezentacji, mieszanej precyzji, adapterów i hybrydowych sposobów wykorzystania modeli. **SSI MultiQuant** obejmuje także badania nad dużymi modelami oraz fragmentami/kaflami wag.
+- **Technologie Nano SSI:** równoległe kierunki **NanoBit, NanoMarker, NanoLEGO, NanoGate**, mikrosieci kompetencji i selektywne dobieranie potrzebnych zasobów. Trwa integracja z pamięcią, narzędziami, kontrolą jakości i rozumowaniem wieloetapowym; pełnego wdrożenia nie ogłaszamy.
+- **Systemy agentowe i zastosowania:** **Universal Lab, Research Memory, SSI CORTEX, Operator PL**, bezpieczna orkiestracja misji oraz badania nad zastosowaniami offline, w tym robotyką i nawigacją dronów. Poszczególne kierunki mają różny poziom dojrzałości.
 
-**Wybrane osiągnięcie badawcze / Research milestone:** w kontrolowanych testach na **niewielkich fragmentach rzeczywistych wag dużego modelu** wykazaliśmy zmniejszenie objętości wybranej próbki o blisko **50%** przy **poniżej 1% względnego błędu numerycznego wag**. Badamy też poprawianie jakości za pomocą adapterów w eksperymentach laboratoryjnych. **Nie jest to dowód tej samej dokładności odpowiedzi ani osiągnięć dla kompletnego modelu.**
+**Trzy produkty komercyjne rozwijane równolegle:**
 
-**EN:** **SSI V5 development continues.** Under human oversight, the SSI AI-agent collective is preserving its work and progressively preparing components for private server infrastructure. Three commercial offerings are in development: **HERCULES — Public Offer & Bot Insights** (evidence-led website visibility and bot analysis), **SSI Private AI** (private enterprise knowledge assistants), and **SSI MultiQuant Studio** (model optimization, quality assessment and deployment preparation). MultiQuant research has shown promising numerical fidelity on selected real-model weight fragments while reducing their stored size; these are **limited research results, not full-model or production performance claims**.
+1. **SSI HERCULES — Security, SEO & AI Bot Trust.** Nie tylko ochrona i diagnostyka serwerów, lecz również **SEO/AISEO**, analiza widoczności stron w wyszukiwarkach i systemach AI, monitorowanie ruchu robotów indeksujących oraz ocena sygnałów **autentyczności i wiarygodności botów AI**. Kierunek: mierzalna, oparta na danych poprawa jakości technicznej i widoczności stron; **bez obietnic konkretnych pozycji w wynikach wyszukiwania**.
+2. **SSI Private AI.** Prywatni asystenci i agenci dla firm, wiedza z dokumentów, zadania kodowe, pamięć, kontrola dostępu oraz ekonomiczny dobór małych i dużych modeli.
+3. **SSI MultiQuant Studio.** Narzędzia i usługi do dostosowywania modeli do sprzętu, kwantyzacji, pomiarów jakości, optymalizacji wydajności oraz przygotowania wdrożeń.
 
-**Status / Development notice:** wszystkie trzy produkty są **w rozwoju i weryfikacji**, nie są obecnie deklarowane jako ukończone publicznie dostępne usługi. Nazwy i opisy nie oznaczają potwierdzonej sprzedaży, gwarancji SEO ani certyfikacji bezpieczeństwa. Kod, algorytmy i szczegółowe metody badawcze, modelowe artefakty, infrastruktura, dane i know-how nie są przedmiotem tej publicznej zapowiedzi.
+**Forma przyszłych produktów:** rozwijamy koncepcję **modułów możliwych do pobrania i instalacji u klienta**, które — po uzgodnionej autoryzacji — mogą współpracować z usługami i infrastrukturą SSI. To plan produktowy, nie ogłoszenie dostępności gotowych instalatorów.
 
-**Zainteresowanie / Interest:** kontakt w sprawie przyszłej współpracy lub pilotażu: [GitHub Issues](https://github.com/jankes72/SSI_V5/issues). Sama deklaracja nie oznacza uruchomienia sprzedaży ani produkcji.
+**Granica wyników:** istnieją fizyczne warianty modeli SSI oraz wyniki kontrolowanych badań laboratoryjnych CPU i Nano/MultiQuant. Opublikowany wcześniej wynik redukcji rozmiaru wybranej próbki wag o blisko **50%**, przy **poniżej 1% względnego błędu numerycznego wag**, dotyczył **fragmentu**, nie jakości odpowiedzi pełnego modelu. Nie ogłaszamy ukończonego natywnego LRM, niezależnej walidacji całości ani produkcyjnej gotowości wszystkich połączeń.
+
+**EN:** SSI V5 is advancing a proprietary AI software stack around **LLMs, reasoning-oriented systems (LRM/RLM), optimized CPU/GPU inference, quantization, small coding models, Nano/MultiQuant research, micronetworks and evidence-driven agent workflows**. Our three commercial directions are **SSI HERCULES** (server security, SEO/AI-search visibility and AI-bot authenticity signals), **SSI Private AI** and **SSI MultiQuant Studio**. We are exploring downloadable client modules with optional authorized SSI-service integration. Experimental results are bounded; these products and the complete integrated reasoning stack remain **under development**, not generally available or independently certified.
+
+**Public / private boundary:** ten wpis ujawnia **wyłącznie ogólne kierunki i ograniczony status badań**. Nie publikujemy kodu, wag, metod odtwarzających know-how, prywatnych danych, konfiguracji infrastruktury ani wewnętrznych interfejsów. Zainteresowanie współpracą lub pilotażem: [GitHub Issues](https://github.com/jankes72/SSI_V5/issues).
 
 ---
 
