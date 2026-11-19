@@ -1,0 +1,26 @@
+{
+  "schema": "ssi.director.polish.preparation.p1",
+  "date": "2026-10-25",
+  "status": "PREPARATION_ONLY",
+  "reference_commit": "0d3e3cbe5126d5c764d7c4fce78442ee979e3f0e",
+  "tool_tests": {
+    "scope": "LOCAL_SYNTHETIC_TOOL_TESTS",
+    "passed": 10
+  },
+  "host_audit": "PENDING",
+  "production_activation": false,
+  "training_executed": false,
+  "model_calls": 0,
+  "package_80gb": "NOT_MEASURED",
+  "native_runtime_binding": "PENDING",
+  "integration_e2e": "PENDING",
+  "steps": [
+    "P1_RUNTIME_IDENTITY_AND_BINDINGS",
+    "P2_PRINCIPAL_SKILLS_VERSIONED_DEPENDENCIES",
+    "P3_TRAINING_HISTORY_RECONCILIATION",
+    "P4_CHECKPOINT_RECOVERY_IDEMPOTENCY",
+    "P5_NATIVE_SCC_MULTIQ_EXECUTOR_EVIDENCE",
+    "P6_SIZE_AND_OPTIONAL_NODE_INDEPENDENCE"
+  ],
+  "private_code_published": false
+}

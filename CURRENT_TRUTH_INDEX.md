@@ -8,6 +8,12 @@
 **Evidence boundary:** software-only unless a document explicitly states otherwise.  
 **History rule:** earlier dated truth/status files remain preserved and are not retroactively rewritten.
 
+## Director Polish P1 — równoległe przygotowanie odbioru — 2026-10-25
+
+**[Plan dopracowania Dyrektora i zakres kontroli P1](RESULTS/SSI_DIRECTOR_POLISH_P1_PREPARATION_20261025.md)** · [Machine-readable status](RESULTS/SSI_DIRECTOR_POLISH_P1_PUBLIC_20261025.json).
+
+Prepared a private bounded, metadata-only Director audit tool; **10 local synthetic tool tests PASS**, **host execution pending**. The parallel worklist covers native SCC/Router/Research Memory bindings, versioned principal skills and dependencies, M9 history reconciliation, checkpoint/retry acceptance, MultiQuant handoff and the complete 80 GB budget. Latest reference: MultiQuant FSE P1R8 at `0d3e3cb`; callback target still unresolved there. **Preparation only: no host changes, training, model calls, deletion, production activation or E2E acceptance.**
+
 ## Migration reply to MultiQuant/FSE-01 — 2026-10-25
 
 **[Coordination reply following d740d23](RESULTS/SSI_MIGRATION_REPLY_TO_MULTIQ_FSE01_R1_20261025.md)** records the migration track's response to the public three-VPS matrix and the [comment under that commit](https://github.com/jankes72/SSI_V5/commit/d740d23e169feb0796aa09088e414901afb947b8#commitcomment-206567746). It requests canonical engine/adapter identification, native SCC contract alignment, correlated mission/checkpoint/evidence records and current application-routing tests.
